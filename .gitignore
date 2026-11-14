@@ -7,3 +7,14 @@ __pycache__/
 firmware/**/build/
 results/phase_02/unit/test_core
 results/phase_02/.runner.lock
+
+# Auto-generated per run - do not track
+firmware/generated-conf.h
+
+# GUI / headless run result directories (large, runtime-generated)
+results/attempts/
+results/phase_05/20*/
+results/phase_04/20*/
+results/phase_03/20*/
+results/phase_02/20*/
+results/phase_01/20*/
