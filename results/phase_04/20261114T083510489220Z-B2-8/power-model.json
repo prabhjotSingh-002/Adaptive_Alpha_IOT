@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "name": "z1-mcu-radio-3v-8mhz-v1",
+  "target": "z1",
+  "frequency": 32768,
+  "millivolts": 3000,
+  "nanoamps": [4626000, 427100, 0, 16974000, 18374000],
+  "cpu_curve_nanoamps": 4200000,
+  "cpu_curve_uncertainty_nanoamps": 200000,
+  "lpm3_nanoamps": 1100,
+  "radio_idle_nanoamps": 426000,
+  "radio_tx_nanoamps": 17400000,
+  "radio_listen_nanoamps": 18800000,
+  "sources": ["https://www.ti.com/lit/ds/symlink/msp430f2617.pdf", "https://www.ti.com/lit/ds/symlink/cc2420.pdf"],
+  "scope": "MCU and radio component model, not whole board or physical measurement; CPU current read approximately from TI Figure 8-2 at 3V/8MHz/25C. Radio idle baseline included in MCU timelines, removed from TX/listen increments. LPM3 requires DMA-disabled build and DCO request guard. Deep LPM must remain zero."
+}

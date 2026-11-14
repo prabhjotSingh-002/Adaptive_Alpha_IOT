@@ -1,0 +1,245 @@
+{
+  "recorded_utc": "2026-11-14T07:09:50.529319+00:00",
+  "status": "in_progress_not_complete",
+  "software_backend_runs": [
+    {
+      "manifest": "results/phase_04/20261114T063051801657Z-B1-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "c777007a63d50b2f735c05ecb4b4477a2cf0e59f7f075d7bbbeea3086c5f90f7"
+    },
+    {
+      "manifest": "results/phase_04/20261114T063600050168Z-B1-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "0d2e0eacbe06916ca58082ba8fee63ce8093afebffb2a11e76795deedcd5fc58"
+    },
+    {
+      "manifest": "results/phase_04/20261114T063637664055Z-B1-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "054b9e40757c5ddebfcf9faca4a84601b88ddf714b13f00deb68c0802abc16f1"
+    },
+    {
+      "manifest": "results/phase_04/20261114T063723306303Z-B1-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "59d89a42d04756901aacd80e91b3ba8e5511b2ca1237a25238d21159152aa464"
+    },
+    {
+      "manifest": "results/phase_04/20261114T063810775784Z-B1-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "84165df0e32bb28af7cbba260885c28e7f607866640712f38360edd59e825392"
+    },
+    {
+      "manifest": "results/phase_04/20261114T063855388895Z-B1-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "740e9b81eeb2ed8460a8b55b83accff7d90d38260eeda5b81f0f512be0d072a2"
+    },
+    {
+      "manifest": "results/phase_04/20261114T063940888779Z-B1-2/manifest.json",
+      "status": "passed",
+      "purpose": "profile_return",
+      "hash": "e83b542c37919444c5e6abf3df055a1cc7ff896af7dbf545c298aa05f869ddbf"
+    },
+    {
+      "manifest": "results/phase_04/20261114T064029127843Z-B1-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "7a1a795dc0c322473c5e3080b44c85e3230885259396b2a36b5a6d68a00fd87b"
+    },
+    {
+      "manifest": "results/phase_04/20261114T064119722939Z-B1-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "32af8f6e6c99183839260f6138a46a45b31d47dafd361bf47cfccd8580a0d474"
+    },
+    {
+      "manifest": "results/phase_04/20261114T064208752539Z-B1-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "4812c253c00491db8b5281e0b53c8cf56b946989d37c5b9813594438db9ec82c"
+    },
+    {
+      "manifest": "results/phase_04/20261114T064250055277Z-B1-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "17256535e2a3729eeb416662f68514f728659dc4dfb772a7578dad61f8a0d682"
+    },
+    {
+      "manifest": "results/phase_04/20261114T064336912679Z-B2-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "e4eae9c5bdf7967268eb417e842384c9ecbb0d4a23aed1a75b39290ddc0e19b1"
+    },
+    {
+      "manifest": "results/phase_04/20261114T064421188682Z-B2-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "05389c378a40b16fbde9f2a25ea719922dbee2b6bc9ed4d89ed86bc900394e45"
+    },
+    {
+      "manifest": "results/phase_04/20261114T064504869147Z-B2-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "5a04fcd261af901a1cd17679a5943a2d1ebf51126a09753abecf08eacb4d3db6"
+    },
+    {
+      "manifest": "results/phase_04/20261114T064547419563Z-B2-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "1332eca2e6ee297a8c4a606fc4e1e6abbe523d64fd19703f3a9369b48bfe53d0"
+    },
+    {
+      "manifest": "results/phase_04/20261114T064632681300Z-B2-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "35e06497673d56b6b4dbd99e131861b47bca605fd3a3ce67b9841c0d03791eef"
+    },
+    {
+      "manifest": "results/phase_04/20261114T064716230644Z-B2-2/manifest.json",
+      "status": "passed",
+      "purpose": "profile_return",
+      "hash": "a6b03ae7e1905791a0b6f6a420a4a6e132d00a906ecd2bd83075f73dd83ba149"
+    },
+    {
+      "manifest": "results/phase_04/20261114T064802282885Z-B2-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "2ba10cc8ef6f702f2318d76885040528d3dfd4f5622da2e2cfe19f9137ec5ddd"
+    },
+    {
+      "manifest": "results/phase_04/20261114T064847891358Z-B2-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "4476d439254a0190adfcd3defb8c0ffeb3016561cc679b555418f3db5341de49"
+    },
+    {
+      "manifest": "results/phase_04/20261114T064927377106Z-B2-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "4fce0829667e5becff8f475d1a1faba409003e1056efe3c382e30c7b203ee0e5"
+    },
+    {
+      "manifest": "results/phase_04/20261114T065005886360Z-B2-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "01a67e2d8c8513167f4f1847de2de9f0036a75b4b32ed38c8766410198f21e0c"
+    },
+    {
+      "manifest": "results/phase_04/20261114T065047332062Z-B4-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "897992667d7b72cb56debf523be3ce9f77d9f00935415afe979237ba7f3926e2"
+    },
+    {
+      "manifest": "results/phase_04/20261114T065127676672Z-B5-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "2a49505d809526fea5c83d34b47c162d4172f52363ed5d8a1452882496428b29"
+    },
+    {
+      "manifest": "results/phase_04/20261114T065210541770Z-B2-2/manifest.json",
+      "status": "passed",
+      "purpose": "functional",
+      "hash": "55f8013a3b3c07a19854bf5c1252cf51498e2a5ad70936eeaf536d250ab90cf9"
+    },
+    {
+      "manifest": "results/phase_04/20261114T065311875465Z-B2-2/manifest.json",
+      "status": "passed",
+      "purpose": "functional",
+      "hash": "72e4226c3f5d89a2e918e59705dc543b7937d2162a6ba8874fb43c1aa9be5276"
+    },
+    {
+      "manifest": "results/phase_04/20261114T065413425942Z-B1-8/manifest.json",
+      "status": "passed",
+      "purpose": "functional",
+      "hash": "47a1f65d56e41bf43c0d9167ad6b59297be1c19972789f4878e0b4e96a0d1692"
+    },
+    {
+      "manifest": "results/phase_04/20261114T065550757430Z-B2-8/manifest.json",
+      "status": "passed",
+      "purpose": "functional",
+      "hash": "d8faf34d7b229d7edf2f6cf793bb7e4bd98006a5b7d3d8fea75dda79ff671291"
+    },
+    {
+      "manifest": "results/phase_04/20261114T065725646751Z-B4-8/manifest.json",
+      "status": "failed",
+      "purpose": "functional",
+      "hash": "47d3f668174ae6d2cfaf197a59533facfafa49ef8b8c6239114da0e905fa79c7"
+    },
+    {
+      "manifest": "results/phase_04/20261114T065857010232Z-B1-8/manifest.json",
+      "status": "passed",
+      "purpose": "functional",
+      "hash": "52aa42a3eb1fa3045700c32376d8326fda46d0784ca05abfe2c296b06893483b"
+    },
+    {
+      "manifest": "results/phase_04/20261114T070039903084Z-B2-8/manifest.json",
+      "status": "passed",
+      "purpose": "functional",
+      "hash": "12a5f349531651671b009b34a48e99f3e1e5904b0b6fbee44ebac4b127359e86"
+    },
+    {
+      "manifest": "results/phase_04/20261114T070217816028Z-B4-8/manifest.json",
+      "status": "failed",
+      "purpose": "functional",
+      "hash": "8e77872035c376ce54f292997bc22f1767ad6aeeb34e492489c16ebb1568a606"
+    },
+    {
+      "manifest": "results/phase_04/20261114T070425862495Z-B4-8/manifest.json",
+      "status": "passed",
+      "purpose": "functional",
+      "hash": "ea11dc21a27db14de72648cce0f1e183b6e3ea1f4a085171ebd38170cee7b397"
+    },
+    {
+      "manifest": "results/phase_04/20261114T070903748685Z-B1-2/manifest.json",
+      "status": "passed",
+      "purpose": "security",
+      "hash": "9a440be4fa9235cd7d382ff40def2f8802189c8f4575b97f096f8fe9b7289fb2"
+    }
+  ],
+  "excluded_hardware_aes_application_manifests": [
+    "results/phase_04/20261113T201854256422Z-B2-2/manifest.json",
+    "results/phase_04/20261113T201950433776Z-B2-2/manifest.json",
+    "results/phase_04/20261113T202025520403Z-B2-2/manifest.json",
+    "results/phase_04/20261113T202112863904Z-B2-2/manifest.json",
+    "results/phase_04/20261113T202230174156Z-B2-2/manifest.json",
+    "results/phase_04/20261113T202559430948Z-B2-2/manifest.json",
+    "results/phase_04/20261113T202636104292Z-B2-2/manifest.json",
+    "results/phase_04/20261113T205100984042Z-B2-2/manifest.json",
+    "results/phase_04/20261113T205601100722Z-B1-2/manifest.json",
+    "results/phase_04/20261113T205636297552Z-B1-2/manifest.json",
+    "results/phase_04/20261113T205744358053Z-B1-8/manifest.json",
+    "results/phase_04/20261113T205926652008Z-B1-2/manifest.json",
+    "results/phase_04/20261113T210119018233Z-B1-8/manifest.json",
+    "results/phase_04/20261114T053854549903Z-B1-8/manifest.json",
+    "results/phase_04/20261114T054039517811Z-B1-8/manifest.json",
+    "results/phase_04/20261114T055542960383Z-B2-2/manifest.json",
+    "results/phase_04/20261114T055834736669Z-B2-2/manifest.json",
+    "results/phase_04/20261114T060055056210Z-B1-8/manifest.json",
+    "results/phase_04/20261114T060455316206Z-B2-2/manifest.json",
+    "results/phase_04/20261114T060647799699Z-B5-2/manifest.json",
+    "results/phase_04/20261114T061056684166Z-B2-2/manifest.json",
+    "results/phase_04/20261114T061312499438Z-B2-2/manifest.json",
+    "results/phase_04/20261114T061840012815Z-B1-2/manifest.json",
+    "results/phase_04/20261114T061928860268Z-B1-2/manifest.json",
+    "results/phase_04/20261114T062029764338Z-B1-2/manifest.json",
+    "results/phase_04/20261114T062113822887Z-B1-2/manifest.json",
+    "results/phase_04/20261114T062216559229Z-B1-2/manifest.json",
+    "results/phase_04/20261114T062307030508Z-B1-2/manifest.json",
+    "results/phase_04/20261114T062346615446Z-B1-2/manifest.json",
+    "results/phase_04/20261114T062429906815Z-B1-2/manifest.json",
+    "results/phase_04/20261114T062516980281Z-B1-2/manifest.json"
+  ],
+  "exclusion_reason": "Pinned MSPSim CC2420 lacks SAES; wrong-key packet accepted under default hardware AES. Exclusion is qualification metadata; original artifacts/status retained. Direct reference Ascon primitive KATs are unaffected.",
+  "deadline_regression_fixed_run": "results/phase_04/20261114T070425862495Z-B4-8",
+  "remaining": [
+    "tightened sensor-reset receive proof",
+    "repeat static/boundary/lifetime groups after deadline fix",
+    "final expanded mote KATs and legacy regression",
+    "measurement sanity/overhead review and final report/gate audit"
+  ]
+}

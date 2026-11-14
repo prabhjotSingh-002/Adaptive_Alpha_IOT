@@ -1,0 +1,151 @@
+make: Entering directory '/workspace/firmware/sensor'
+  MKDIR     build/sky/obj/.deps
+  CC        sensor.c
+  CC        ../common/protocol.c
+  CC        ../aggregate/aggregate.c
+  CC        ../crypto/aes_ccm.c
+  CC        ../crypto/secure_packet.c
+  CC        ../crypto/boot_gate.c
+  CC        ../crypto/ascon_aead.c
+  CC        ../../external/ascon-c/crypto_aead/asconaead128/ref/aead.c
+  CC        ../../external/contiki-ng/arch/dev/sensor/sht11/sht11.c
+  CC        ../../external/contiki-ng/arch/dev/sensor/sht11/sht11-sensor.c
+  CC        ../../external/contiki-ng/arch/platform/sky/dev/light-sensor.c
+  CC        ../../external/contiki-ng/arch/platform/sky/dev/battery-sensor.c
+  CC        ../../external/contiki-ng/arch/platform/sky/dev/button-sensor.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/f1xxx/spi-legacy.c
+  CC        ../../external/contiki-ng/arch/dev/etc/ds2411/ds2411.c
+  CC        ../../external/contiki-ng/arch/platform/sky/dev/xmem.c
+  CC        ../../external/contiki-ng/os/lib/sensors.c
+  CC        ../../external/contiki-ng/arch/dev/radio/cc2420/cc2420.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/./cc2420-arch.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/./cc2420-arch-sfd.c
+  CC        ../../external/contiki-ng/arch/platform/sky/dev/sky-sensors.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/./uip-ipchksum.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/f1xxx/uart1.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/./slip_uart1.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/dev/uart-putchar.c
+  CC        ../../external/contiki-ng/arch/platform/sky/./platform.c
+  CC        ../../external/contiki-ng/os/lib/crc16.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/f1xxx/msp430.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/./flash.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/f1xxx/clock.c
+  CC        ../../external/contiki-ng/os/dev/leds.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/./leds-arch.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/./watchdog.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/./lpm.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/f1xxx/rtimer-arch.c
+  CC        ../../external/contiki-ng/arch/cpu/msp430/./int-master.c
+  CC        ../../external/contiki-ng/arch/dev/radio/cc2420/cc2420-tsch-15ms.c
+  CC        ../../external/contiki-ng/os/contiki-main.c
+  CC        ../../external/contiki-ng/os/dev/button-hal.c
+  CC        ../../external/contiki-ng/os/dev/gpio-hal.c
+  CC        ../../external/contiki-ng/os/dev/nullradio.c
+  CC        ../../external/contiki-ng/os/dev/serial-line.c
+  CC        ../../external/contiki-ng/os/dev/slip.c
+  CC        ../../external/contiki-ng/os/dev/spi.c
+  CC        ../../external/contiki-ng/os/lib/aes-128.c
+  CC        ../../external/contiki-ng/os/lib/assert.c
+  CC        ../../external/contiki-ng/os/lib/bitrev.c
+  CC        ../../external/contiki-ng/os/lib/cbor.c
+  CC        ../../external/contiki-ng/os/lib/ccm-star.c
+  CC        ../../external/contiki-ng/os/lib/circular-list.c
+  CC        ../../external/contiki-ng/os/lib/csprng.c
+  CC        ../../external/contiki-ng/os/lib/dbl-circ-list.c
+  CC        ../../external/contiki-ng/os/lib/dbl-list.c
+  CC        ../../external/contiki-ng/os/lib/ecc-curve.c
+  CC        ../../external/contiki-ng/os/lib/heapmem.c
+  CC        ../../external/contiki-ng/os/lib/hexconv.c
+  CC        ../../external/contiki-ng/os/lib/ifft.c
+  CC        ../../external/contiki-ng/os/lib/iq-seeder.c
+  CC        ../../external/contiki-ng/os/lib/list.c
+  CC        ../../external/contiki-ng/os/lib/memb.c
+  CC        ../../external/contiki-ng/os/lib/random.c
+  CC        ../../external/contiki-ng/os/lib/ringbuf.c
+  CC        ../../external/contiki-ng/os/lib/ringbufindex.c
+  CC        ../../external/contiki-ng/os/lib/sfc16-prng.c
+  CC        ../../external/contiki-ng/os/lib/sfc32-prng.c
+  CC        ../../external/contiki-ng/os/lib/sha-256.c
+  CC        ../../external/contiki-ng/os/lib/trickle-timer.c
+  CC        ../../external/contiki-ng/os/net/link-stats.c
+  CC        ../../external/contiki-ng/os/net/linkaddr.c
+  CC        ../../external/contiki-ng/os/net/nbr-table.c
+  CC        ../../external/contiki-ng/os/net/net-debug.c
+  CC        ../../external/contiki-ng/os/net/netstack.c
+  CC        ../../external/contiki-ng/os/net/packetbuf.c
+  CC        ../../external/contiki-ng/os/net/queuebuf.c
+  CC        ../../external/contiki-ng/os/net/ipv6/ip64-addr.c
+  CC        ../../external/contiki-ng/os/net/ipv6/psock.c
+  CC        ../../external/contiki-ng/os/net/ipv6/sicslowpan.c
+  CC        ../../external/contiki-ng/os/net/ipv6/simple-udp.c
+  CC        ../../external/contiki-ng/os/net/ipv6/tcp-socket.c
+  CC        ../../external/contiki-ng/os/net/ipv6/tcpip.c
+  CC        ../../external/contiki-ng/os/net/ipv6/udp-socket.c
+  CC        ../../external/contiki-ng/os/net/ipv6/uip-ds6-nbr.c
+  CC        ../../external/contiki-ng/os/net/ipv6/uip-ds6-route.c
+  CC        ../../external/contiki-ng/os/net/ipv6/uip-ds6.c
+  CC        ../../external/contiki-ng/os/net/ipv6/uip-icmp6.c
+  CC        ../../external/contiki-ng/os/net/ipv6/uip-nameserver.c
+  CC        ../../external/contiki-ng/os/net/ipv6/uip-nd6.c
+  CC        ../../external/contiki-ng/os/net/ipv6/uip-packetqueue.c
+  CC        ../../external/contiki-ng/os/net/ipv6/uip-sr.c
+  CC        ../../external/contiki-ng/os/net/ipv6/uip-udp-packet.c
+  CC        ../../external/contiki-ng/os/net/ipv6/uip6.c
+  CC        ../../external/contiki-ng/os/net/ipv6/uipbuf.c
+  CC        ../../external/contiki-ng/os/net/ipv6/uiplib.c
+  CC        ../../external/contiki-ng/os/net/mac/anti-replay.c
+  CC        ../../external/contiki-ng/os/net/mac/ccm-star-packetbuf.c
+  CC        ../../external/contiki-ng/os/net/mac/mac-sequence.c
+  CC        ../../external/contiki-ng/os/net/mac/csma/csma-output.c
+  CC        ../../external/contiki-ng/os/net/mac/csma/csma-security.c
+  CC        ../../external/contiki-ng/os/net/mac/csma/csma.c
+  CC        ../../external/contiki-ng/os/net/mac/framer/frame802154.c
+  CC        ../../external/contiki-ng/os/net/mac/framer/frame802154e-ie.c
+  CC        ../../external/contiki-ng/os/net/mac/framer/framer-802154.c
+  CC        ../../external/contiki-ng/os/net/mac/framer/nullframer.c
+  CC        ../../external/contiki-ng/os/net/routing/rpl-lite/rpl-dag-root.c
+  CC        ../../external/contiki-ng/os/net/routing/rpl-lite/rpl-dag.c
+  CC        ../../external/contiki-ng/os/net/routing/rpl-lite/rpl-ext-header.c
+  CC        ../../external/contiki-ng/os/net/routing/rpl-lite/rpl-icmp6.c
+  CC        ../../external/contiki-ng/os/net/routing/rpl-lite/rpl-mrhof.c
+  CC        ../../external/contiki-ng/os/net/routing/rpl-lite/rpl-nbr-policy.c
+  CC        ../../external/contiki-ng/os/net/routing/rpl-lite/rpl-neighbor.c
+  CC        ../../external/contiki-ng/os/net/routing/rpl-lite/rpl-of0.c
+  CC        ../../external/contiki-ng/os/net/routing/rpl-lite/rpl-timers.c
+  CC        ../../external/contiki-ng/os/net/routing/rpl-lite/rpl.c
+  CC        ../../external/contiki-ng/os/storage/cfs/cfs-coffee.c
+  CC        ../../external/contiki-ng/os/sys/atomic.c
+  CC        ../../external/contiki-ng/os/sys/autostart.c
+  CC        ../../external/contiki-ng/os/sys/compower.c
+  CC        ../../external/contiki-ng/os/sys/ctimer.c
+  CC        ../../external/contiki-ng/os/sys/energest.c
+  CC        ../../external/contiki-ng/os/sys/etimer.c
+  CC        ../../external/contiki-ng/os/sys/log.c
+  CC        ../../external/contiki-ng/os/sys/mutex.c
+  CC        ../../external/contiki-ng/os/sys/node-id.c
+  CC        ../../external/contiki-ng/os/sys/process-mutex.c
+  CC        ../../external/contiki-ng/os/sys/process.c
+  CC        ../../external/contiki-ng/os/sys/rtimer.c
+  CC        ../../external/contiki-ng/os/sys/stack-check.c
+  CC        ../../external/contiki-ng/os/sys/stimer.c
+  CC        ../../external/contiki-ng/os/sys/timer.c
+  LD        build/sky/sensor.sky
+/usr/local/bin/../lib/gcc/msp430/4.7.4/../../../../msp430/bin/ld: build/sky/sensor.sky section `.text' will not fit in region `rom'
+/usr/local/bin/../lib/gcc/msp430/4.7.4/../../../../msp430/bin/ld: section .vectors loaded at [000000000000ffe0,000000000000ffff] overlaps section .text loaded at [0000000000004000,0000000000010921]
+/usr/local/bin/../lib/gcc/msp430/4.7.4/../../../../msp430/bin/ld: region `rom' overflowed by 4136 bytes
+/usr/local/bin/../lib/gcc/msp430/4.7.4/mmpy-16/libcrt0.a(_copy_data.o): In function `__do_copy_data':
+/tmp/tmp.MzG3DtmtF0/gcc-4.7.4-msp430/msp430/mmpy-16/libgcc/../../../../gcc-4.7.4/libgcc/config/msp430/crt0.S:208:(.init4+0x12): relocation truncated to fit: R_MSP430_16_BYTE against symbol `__data_load_start' defined in *ABS* section in build/sky/sensor.sky
+build/sky/obj/contiki-main.o: In function `main':
+contiki-main.c:(.init9+0x30): relocation truncated to fit: R_MSP430_16 against symbol `cc2420_driver' defined in .rodata section in build/sky/obj/cc2420.o
+contiki-main.c:(.init9+0x38): relocation truncated to fit: R_MSP430_16 against symbol `csma_driver' defined in .rodata section in build/sky/obj/csma.o
+contiki-main.c:(.init9+0x3c): relocation truncated to fit: R_MSP430_16 against symbol `sicslowpan_driver' defined in .rodata section in build/sky/obj/sicslowpan.o
+contiki-main.c:(.init9+0x58): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+contiki-main.c:(.init9+0x5c): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+contiki-main.c:(.init9+0x60): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+contiki-main.c:(.init9+0x6c): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+contiki-main.c:(.init9+0x70): relocation truncated to fit: R_MSP430_16 against symbol `puts' defined in .text.puts section in /usr/local/bin/../lib/gcc/msp430/4.7.4/../../../../msp430/lib/mmpy-16/libc.a(puts.o)
+contiki-main.c:(.init9+0x7c): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+contiki-main.c:(.init9+0x80): additional relocation overflows omitted from the output
+collect2: error: ld returned 1 exit status
+make: *** [../../external/contiki-ng/Makefile.include:647: build/sky/sensor.sky] Error 1
+make: Leaving directory '/workspace/firmware/sensor'

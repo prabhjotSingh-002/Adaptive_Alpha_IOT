@@ -1,0 +1,2 @@
+PASS: codec caps 1/2/4, bounds, malformed packets, queue/byte caps, deadline/wrap, send interruption, ring rotation, dedup
+cap variants checked: 3

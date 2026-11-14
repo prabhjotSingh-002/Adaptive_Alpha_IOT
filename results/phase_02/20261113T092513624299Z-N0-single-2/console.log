@@ -1,0 +1,42 @@
+[32mINFO  [main] [Cooja.java:1147] - Loading /workspace/results/phase_02/20261113T092513624299Z-N0-single-2/scenario.csc random seed: null[0;39m
+> make -j1 root.cooja TARGET=cooja
+  MKDIR     build/cooja/obj/.deps
+  CC        root.c
+  CC        ../common/protocol.c
+  CC        ../aggregate/aggregate.c
+  CC        ../../external/contiki-ng/arch/platform/cooja/sys/cooja_mt.c
+  CC        ../../external/contiki-ng/arch/platform/cooja/./rtimer-arch.c
+  CC        ../../external/contiki-ng/arch/platform/cooja/dev/watchdog.c
+  CC        ../../external/contiki-ng/arch/platform/cooja/./int-master.c
+  CC        ../../external/contiki-ng/arch/platform/cooja/dev/beep.c
+../../external/contiki-ng/arch/platform/cooja/dev/beep.c: In function 'beep_alarm':
+../../external/contiki-ng/arch/platform/cooja/dev/beep.c:38:16: error: unused parameter 'alarmmode' [-Werror=unused-parameter]
+   38 | beep_alarm(int alarmmode, int len)
+      |            ~~~~^~~~~~~~~
+../../external/contiki-ng/arch/platform/cooja/dev/beep.c:38:31: error: unused parameter 'len' [-Werror=unused-parameter]
+   38 | beep_alarm(int alarmmode, int len)
+      |                           ~~~~^~~
+../../external/contiki-ng/arch/platform/cooja/dev/beep.c: In function 'beep_beep':
+../../external/contiki-ng/arch/platform/cooja/dev/beep.c:44:15: error: unused parameter 'i' [-Werror=unused-parameter]
+   44 | beep_beep(int i)
+      |           ~~~~^
+../../external/contiki-ng/arch/platform/cooja/dev/beep.c: In function 'beep_down':
+../../external/contiki-ng/arch/platform/cooja/dev/beep.c:56:15: error: unused parameter 'd' [-Werror=unused-parameter]
+   56 | beep_down(int d)
+      |           ~~~~^
+../../external/contiki-ng/arch/platform/cooja/dev/beep.c: In function 'beep_quick':
+../../external/contiki-ng/arch/platform/cooja/dev/beep.c:80:16: error: unused parameter 'n' [-Werror=unused-parameter]
+   80 | beep_quick(int n)
+      |            ~~~~^
+../../external/contiki-ng/arch/platform/cooja/dev/beep.c: In function 'beep_long':
+../../external/contiki-ng/arch/platform/cooja/dev/beep.c:85:29: error: unused parameter 'len' [-Werror=unused-parameter]
+   85 | void beep_long(clock_time_t len)
+      |                ~~~~~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+make: *** [../../external/contiki-ng/Makefile.include:565: build/cooja/obj/beep.o] Error 1
+Compilation process returned error code 2
+[1;91mERROR [main] [Cooja.java:1154] - Failed to load simulation: Compilation failed[0;39m
+[1;91mERROR [main] [Cooja.java:1160] - TEST /workspace/results/phase_02/20261113T092513624299Z-N0-single-2/scenario.csc FAILED
+[0;39m
+[1;91mERROR [main] [Cooja.java:1183] - Failed tests:
+/workspace/results/phase_02/20261113T092513624299Z-N0-single-2/scenario.csc seed: null[0;39m

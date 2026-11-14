@@ -1,0 +1,33 @@
+{
+  "scope": "targeted host repairs only; no phase validation",
+  "phase6_started": false,
+  "phase4_phase5_validation": "deferred_by_user",
+  "policy_tests": {
+    "count": 19,
+    "exit_code": 0,
+    "execution": "pinned official container"
+  },
+  "initial_host_failure": "FileNotFoundError: gcc; zero tests ran",
+  "source_hashes": {
+    "firmware/policy/policy.h": "9cbd56029153fdfede7a059de60686f0fad5a344201c8877d7e5032f6a410c1b",
+    "firmware/policy/policy.c": "36ab47af34322f893e0cef8ccf3f211a1d5a787fe8aa4aa0d4fef5a0354af8ec",
+    "firmware/sensor/sensor.c": "7e2f48e76395512d5be12154dffb464fa34e5a44812484a1428cde431b0dc8c5",
+    "firmware/project-conf.h": "57a6aa7a1d583fd1d9ec2f2ef7a94519048cd9873f3c6e6af38531ec199361d3",
+    "host/run_experiment.py": "58a8ae002345e7a77379fcf9247c0c2d6f3852db295aac1756a541d79e358859",
+    "host/calibrate.py": "f763a947eec66475cb7b3ae37fa009019083b9ec201d6030dfc09aefc0522723",
+    "host/analysis.py": "c776337b7d5a908c5617d5c5fee26272ce5d83562f936c39124f8848d4952d9d",
+    "host/plots.py": "5d571d7b10a02d9a0a603cccf1b8f51abf23235951408f55b11971613498cff7",
+    "tests/unit/test_policy.py": "d1a448a3b8e12560846020a0fa02718a94da2f5d85d9df7b627f0c0cfe183357",
+    "tests/unit/test_priority_repairs.py": "8492669d6bb819cbb7e47a22b5e363b4cd2320bfa4eefa32f8c2a00dcfb689ef"
+  },
+  "host_guard_statistics_tests": {
+    "count": 3,
+    "exit_code": 0,
+    "execution": "pinned official container"
+  },
+  "commands": [
+    "python3 -B -m unittest discover -s tests/unit -p test_policy.py -v",
+    "python3 -B -m unittest discover -s tests/unit -p test_priority_repairs.py -v",
+    "python3 -m py_compile host/run_experiment.py host/calibrate.py host/analysis.py host/plots.py"
+  ]
+}

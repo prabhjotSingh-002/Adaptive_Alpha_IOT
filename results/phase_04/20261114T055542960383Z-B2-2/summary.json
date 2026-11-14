@@ -1,0 +1,63 @@
+{
+  "security": "Ascon-AEAD128 authenticated pilot",
+  "lifetime": null,
+  "stack_max_usage": {
+    "2": 778,
+    "1": 916,
+    "3": 778
+  },
+  "energy_measurement": {
+    "scope": "component_model",
+    "model_validated": true,
+    "reconciliation": {
+      "1": {
+        "total_nj": 5761251768,
+        "samples": 100,
+        "reconciled": true
+      },
+      "2": {
+        "total_nj": 5763449586,
+        "samples": 100,
+        "reconciled": true
+      },
+      "3": {
+        "total_nj": 5706122215,
+        "samples": 99,
+        "reconciled": true
+      }
+    },
+    "samples": {
+      "2": 100,
+      "1": 100,
+      "3": 99
+    }
+  },
+  "security_test_injections": 0,
+  "security_test_rejections": 0,
+  "rejection_reasons": {},
+  "unique_authenticated_delivered": 48,
+  "generated": 48,
+  "submitted_readings": 48,
+  "explicit_drops": 0,
+  "unique_delivered": 48,
+  "missing_readings": 0,
+  "packets_submitted": 48,
+  "packets_accepted": 48,
+  "packet_pdr": 1.0,
+  "application_packet_bytes": 1776,
+  "reading_pdr": 1.0,
+  "p95_delay_ms": 73.41999999999825,
+  "max_hold_ms": 0,
+  "duplicates": 0,
+  "batch_counts": [
+    1
+  ],
+  "radio": {
+    "captured_frames": 136,
+    "captured_frame_bytes": 6528,
+    "data_frames": 76,
+    "max_frame_bytes": 102,
+    "fragment_frames": 0,
+    "unclassified_data_frames": 0
+  }
+}

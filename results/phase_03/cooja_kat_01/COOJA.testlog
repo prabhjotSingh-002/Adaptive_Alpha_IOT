@@ -1,0 +1,12 @@
+Random seed: 123456
+382000,1,[INFO: Main      ] - Routing: RPL Lite
+382000,1,[INFO: Main      ] - Net: sicslowpan
+382000,1,[INFO: Main      ] - MAC: CSMA
+382000,1,[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+382000,1,[INFO: Main      ] - 802.15.4 Default channel: 26
+382000,1,[INFO: Main      ] Node ID: 1
+382000,1,[INFO: Main      ] Link-layer address: 0001.0001.0001.0001
+382000,1,[INFO: Main      ] Tentative link-local IPv6 address: fe80::201:1:1:1
+382000,1,PHASE3_KAT_PASS
+TEST OK
+Test ended at simulation time: 382000

@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "host/run_experiment.py",
+    "--phase",
+    "4",
+    "--mode",
+    "B2",
+    "--clients",
+    "2",
+    "--target",
+    "z1",
+    "--reorder-test",
+    "--timeout-seconds",
+    "300"
+  ],
+  "status": "passed",
+  "started_utc": "2026-11-14T06:13:12.312104+00:00",
+  "ended_utc": "2026-11-14T06:13:44.897942+00:00"
+}

@@ -1,0 +1,55 @@
+{
+  "section": "all",
+  "status": "running",
+  "started": "2026-11-14T08:28:46.915390+00:00",
+  "cases": [
+    {
+      "name": "B1--attack-test",
+      "command": [
+        "/usr/bin/python3",
+        "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+        "--phase",
+        "4",
+        "--timeout-seconds",
+        "300",
+        "--mode",
+        "B1",
+        "--clients",
+        "2",
+        "--target",
+        "z1",
+        "--attack-test"
+      ],
+      "started": "2026-11-14T08:28:46.915435+00:00",
+      "log": "results/phase_04/validation-20261114T082846915124Z/01-B1--attack-test.log",
+      "exit_code": 0,
+      "status": "passed",
+      "ended": "2026-11-14T08:29:13.161791+00:00",
+      "log_sha256": "6739a0637a4947ff271c6d671f607e795faca22b28f37e47e4dbbe0bc3ffc7fb"
+    },
+    {
+      "name": "B1--root-reset-test",
+      "command": [
+        "/usr/bin/python3",
+        "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+        "--phase",
+        "4",
+        "--timeout-seconds",
+        "300",
+        "--mode",
+        "B1",
+        "--clients",
+        "2",
+        "--target",
+        "z1",
+        "--root-reset-test"
+      ],
+      "started": "2026-11-14T08:29:13.162338+00:00",
+      "log": "results/phase_04/validation-20261114T082846915124Z/02-B1--root-reset-test.log",
+      "exit_code": 0,
+      "status": "passed",
+      "ended": "2026-11-14T08:29:40.522515+00:00",
+      "log_sha256": "616b9e96960f83f48339068cafd812cffb8e2cd65fa6fd8503094443ed35cb6c"
+    }
+  ]
+}

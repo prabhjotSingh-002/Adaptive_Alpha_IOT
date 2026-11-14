@@ -1,0 +1,2 @@
+MODULES += $(CONTIKI_NG_REPO)/os
+MODULES_REL += ../policy

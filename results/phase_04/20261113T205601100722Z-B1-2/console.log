@@ -1,0 +1,14 @@
+[32mINFO  [main] [Cooja.java:1147] - Loading /workspace/results/phase_04/20261113T205601100722Z-B1-2/scenario.csc random seed: null[0;39m
+> make -j1 root.z1 TARGET=z1 ASCON_IMPL=ref
+  MKDIR     build/z1/obj/.deps
+  CC        root.c
+root.c: In function ‘process_thread_root_process’:
+root.c:64:3: error: format ‘%u’ expects argument of type ‘unsigned int’, but argument 3 has type ‘long unsigned int’ [-Werror=format]
+cc1: all warnings being treated as errors
+make: *** [../../external/contiki-ng/Makefile.include:565: build/z1/obj/root.o] Error 1
+Compilation process returned error code 2
+[1;91mERROR [main] [Cooja.java:1154] - Failed to load simulation: Compilation failed[0;39m
+[1;91mERROR [main] [Cooja.java:1160] - TEST /workspace/results/phase_04/20261113T205601100722Z-B1-2/scenario.csc FAILED
+[0;39m
+[1;91mERROR [main] [Cooja.java:1183] - Failed tests:
+/workspace/results/phase_04/20261113T205601100722Z-B1-2/scenario.csc seed: null[0;39m

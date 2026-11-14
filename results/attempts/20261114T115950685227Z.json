@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "host/run_experiment.py",
+    "--phase",
+    "5",
+    "--mode",
+    "B6",
+    "--clients",
+    "8",
+    "--seed",
+    "123458",
+    "--target",
+    "z1",
+    "--power-model"
+  ],
+  "status": "failed",
+  "started_utc": "2026-11-14T11:59:50.685278+00:00",
+  "error": "RuntimeError: RuntimeError: Cooja/build failed; inspect console.log",
+  "ended_utc": "2026-11-14T11:59:53.952185+00:00"
+}

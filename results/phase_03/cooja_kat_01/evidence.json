@@ -1,0 +1,11 @@
+{
+  "scope": "cooja_kat_01",
+  "artifacts_sha256": {
+    "console.log": "efa71d2f92a697b894c56d507684dd72dd6f7aa8910c796db39b1546529f7990",
+    "scenario.csc": "f98212e69b3bc76bd1cc0f866b4b15ea30d3071ea9e30fa3069f1b099701f0db",
+    "COOJA.testlog": "fb26636e785164ce6976dd7a06fbd50ed003664c0f39e2dc88fff1b05db77cfa",
+    "mtype946284594.cooja": "676e4b24730ab8b7acbdf329215dbb45b6ea5c0cd6c97645715a0c368e56cefd"
+  },
+  "source_pin": "a304687372e2917d325d4d71cf68610fe9a6279b",
+  "qualification": "actual native Cooja test; test-specific firmware"
+}

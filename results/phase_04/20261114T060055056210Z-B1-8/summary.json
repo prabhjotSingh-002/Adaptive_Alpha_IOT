@@ -1,0 +1,105 @@
+{
+  "security": "AES-128-CCM authenticated pilot",
+  "lifetime": null,
+  "stack_max_usage": {
+    "8": 578,
+    "2": 578,
+    "6": 578,
+    "4": 578,
+    "1": 676,
+    "7": 578,
+    "9": 578,
+    "5": 578,
+    "3": 578
+  },
+  "energy_measurement": {
+    "scope": "component_model",
+    "model_validated": true,
+    "reconciliation": {
+      "1": {
+        "total_nj": 5775559718,
+        "samples": 100,
+        "reconciled": true
+      },
+      "2": {
+        "total_nj": 5766542622,
+        "samples": 100,
+        "reconciled": true
+      },
+      "3": {
+        "total_nj": 5713999859,
+        "samples": 99,
+        "reconciled": true
+      },
+      "4": {
+        "total_nj": 5807253517,
+        "samples": 100,
+        "reconciled": true
+      },
+      "5": {
+        "total_nj": 5712389740,
+        "samples": 99,
+        "reconciled": true
+      },
+      "6": {
+        "total_nj": 5774049290,
+        "samples": 100,
+        "reconciled": true
+      },
+      "7": {
+        "total_nj": 5770359548,
+        "samples": 100,
+        "reconciled": true
+      },
+      "8": {
+        "total_nj": 5764131951,
+        "samples": 100,
+        "reconciled": true
+      },
+      "9": {
+        "total_nj": 5704490319,
+        "samples": 99,
+        "reconciled": true
+      }
+    },
+    "samples": {
+      "8": 100,
+      "2": 100,
+      "6": 100,
+      "4": 100,
+      "1": 100,
+      "7": 100,
+      "9": 99,
+      "5": 99,
+      "3": 99
+    }
+  },
+  "security_test_injections": 0,
+  "security_test_rejections": 0,
+  "rejection_reasons": {},
+  "unique_authenticated_delivered": 187,
+  "generated": 192,
+  "submitted_readings": 187,
+  "explicit_drops": 5,
+  "unique_delivered": 187,
+  "missing_readings": 5,
+  "packets_submitted": 187,
+  "packets_accepted": 187,
+  "packet_pdr": 1.0,
+  "application_packet_bytes": 6919,
+  "reading_pdr": 0.9739583333333334,
+  "p95_delay_ms": 124.6450000000055,
+  "max_hold_ms": 3000,
+  "duplicates": 0,
+  "batch_counts": [
+    1
+  ],
+  "radio": {
+    "captured_frames": 778,
+    "captured_frame_bytes": 37471,
+    "data_frames": 420,
+    "max_frame_bytes": 102,
+    "fragment_frames": 0,
+    "unclassified_data_frames": 0
+  }
+}

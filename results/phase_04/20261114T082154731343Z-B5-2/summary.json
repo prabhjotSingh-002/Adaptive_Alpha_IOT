@@ -1,0 +1,37 @@
+{
+  "security": "Ascon-AEAD128 authenticated pilot",
+  "network_energy_nj": null,
+  "energy_per_delivered_reading_nj": null,
+  "energy_window": null,
+  "lifetime": null,
+  "stack_max_usage": {},
+  "energy_measurement": null,
+  "security_test_injections": 0,
+  "security_test_rejections": 0,
+  "rejection_reasons": {},
+  "unique_authenticated_delivered": 48,
+  "generated": 48,
+  "submitted_readings": 48,
+  "explicit_drops": 0,
+  "unique_delivered": 48,
+  "missing_readings": 0,
+  "packets_submitted": 12,
+  "packets_accepted": 12,
+  "packet_pdr": 1.0,
+  "application_packet_bytes": 804,
+  "reading_pdr": 1.0,
+  "p95_delay_ms": 1533.1379999999976,
+  "max_hold_ms": 1500,
+  "duplicates": 0,
+  "batch_counts": [
+    4
+  ],
+  "radio": {
+    "captured_frames": 62,
+    "captured_frame_bytes": 3759,
+    "data_frames": 37,
+    "max_frame_bytes": 108,
+    "fragment_frames": 0,
+    "unclassified_data_frames": 0
+  }
+}

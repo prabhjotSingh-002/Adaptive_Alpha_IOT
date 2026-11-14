@@ -1,0 +1,95 @@
+{
+  "scope": "partial resolution-plan implementation; not Phase 4 completion",
+  "runs": {
+    "results/phase_04/20261113T201854256422Z-B2-2": {
+      "status": "passed",
+      "error": null,
+      "exit_code": 0,
+      "command": [
+        "sg",
+        "docker",
+        "-c",
+        "docker run --rm --name adaptivealpha-20261113t201854256422z-b2-2 --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/external/contiki-ng,destination=/home/user/contiki-ng --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT,destination=/workspace contiker/contiki-ng@sha256:b14d5afb0a2a852d9e72bbed607ead03f6ccc5f4d4dee44f0799110be2f4b609 bash -c 'set -eu; cd /workspace/firmware/sensor; make TARGET=z1 clean; cd ../root; make TARGET=z1 clean; /home/user/contiki-ng/tools/cooja/build/install/cooja/bin/cooja --no-gui --contiki=/home/user/contiki-ng --logdir=/workspace/results/phase_04/20261113T201854256422Z-B2-2 /workspace/results/phase_04/20261113T201854256422Z-B2-2/scenario.csc'"
+      ]
+    },
+    "results/phase_04/20261113T201950433776Z-B2-2": {
+      "status": "passed",
+      "error": null,
+      "exit_code": 0,
+      "command": [
+        "sg",
+        "docker",
+        "-c",
+        "docker run --rm --name adaptivealpha-20261113t201950433776z-b2-2 --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/external/contiki-ng,destination=/home/user/contiki-ng --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT,destination=/workspace contiker/contiki-ng@sha256:b14d5afb0a2a852d9e72bbed607ead03f6ccc5f4d4dee44f0799110be2f4b609 bash -c 'set -eu; cd /workspace/firmware/sensor; make TARGET=z1 clean; cd ../root; make TARGET=z1 clean; touch /workspace/results/phase_04/20261113T201950433776Z-B2-2/build-clean-complete; /home/user/contiki-ng/tools/cooja/build/install/cooja/bin/cooja --no-gui --contiki=/home/user/contiki-ng --logdir=/workspace/results/phase_04/20261113T201950433776Z-B2-2 /workspace/results/phase_04/20261113T201950433776Z-B2-2/scenario.csc'"
+      ]
+    },
+    "results/phase_04/20261113T202025520403Z-B2-2": {
+      "status": "failed",
+      "error": "ValueError: No traffic reached locked root after replacement",
+      "exit_code": 0,
+      "command": [
+        "sg",
+        "docker",
+        "-c",
+        "docker run --rm --name adaptivealpha-20261113t202025520403z-b2-2 --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/external/contiki-ng,destination=/home/user/contiki-ng --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT,destination=/workspace contiker/contiki-ng@sha256:b14d5afb0a2a852d9e72bbed607ead03f6ccc5f4d4dee44f0799110be2f4b609 bash -c 'set -eu; cd /workspace/firmware/sensor; make TARGET=z1 clean; cd ../root; make TARGET=z1 clean; touch /workspace/results/phase_04/20261113T202025520403Z-B2-2/build-clean-complete; /home/user/contiki-ng/tools/cooja/build/install/cooja/bin/cooja --no-gui --contiki=/home/user/contiki-ng --logdir=/workspace/results/phase_04/20261113T202025520403Z-B2-2 /workspace/results/phase_04/20261113T202025520403Z-B2-2/scenario.csc'"
+      ]
+    },
+    "results/phase_04/20261113T202112863904Z-B2-2": {
+      "status": "failed",
+      "error": "ValueError: No traffic reached locked root after replacement",
+      "exit_code": 0,
+      "command": [
+        "sg",
+        "docker",
+        "-c",
+        "docker run --rm --name adaptivealpha-20261113t202112863904z-b2-2 --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/external/contiki-ng,destination=/home/user/contiki-ng --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT,destination=/workspace contiker/contiki-ng@sha256:b14d5afb0a2a852d9e72bbed607ead03f6ccc5f4d4dee44f0799110be2f4b609 bash -c 'set -eu; cd /workspace/firmware/sensor; make TARGET=z1 clean; cd ../root; make TARGET=z1 clean; touch /workspace/results/phase_04/20261113T202112863904Z-B2-2/build-clean-complete; /home/user/contiki-ng/tools/cooja/build/install/cooja/bin/cooja --no-gui --contiki=/home/user/contiki-ng --logdir=/workspace/results/phase_04/20261113T202112863904Z-B2-2 /workspace/results/phase_04/20261113T202112863904Z-B2-2/scenario.csc'"
+      ]
+    },
+    "results/phase_04/20261113T202230174156Z-B2-2": {
+      "status": "passed",
+      "error": null,
+      "exit_code": 0,
+      "command": [
+        "sg",
+        "docker",
+        "-c",
+        "docker run --rm --name adaptivealpha-20261113t202230174156z-b2-2 --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/external/contiki-ng,destination=/home/user/contiki-ng --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT,destination=/workspace contiker/contiki-ng@sha256:b14d5afb0a2a852d9e72bbed607ead03f6ccc5f4d4dee44f0799110be2f4b609 bash -c 'set -eu; cd /workspace/firmware/sensor; make TARGET=z1 clean; cd ../root; make TARGET=z1 clean; touch /workspace/results/phase_04/20261113T202230174156Z-B2-2/build-clean-complete; /home/user/contiki-ng/tools/cooja/build/install/cooja/bin/cooja --no-gui --contiki=/home/user/contiki-ng --logdir=/workspace/results/phase_04/20261113T202230174156Z-B2-2 /workspace/results/phase_04/20261113T202230174156Z-B2-2/scenario.csc'"
+      ]
+    },
+    "results/phase_03/20261113T202303602395Z-B1-2": {
+      "status": "passed",
+      "error": null,
+      "exit_code": 0,
+      "command": [
+        "sg",
+        "docker",
+        "-c",
+        "docker run --rm --name adaptivealpha-20261113t202303602395z-b1-2 --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/external/contiki-ng,destination=/home/user/contiki-ng --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT,destination=/workspace contiker/contiki-ng@sha256:b14d5afb0a2a852d9e72bbed607ead03f6ccc5f4d4dee44f0799110be2f4b609 bash -c 'set -eu; cd /workspace/firmware/sensor; make TARGET=cooja clean; cd ../root; make TARGET=cooja clean; touch /workspace/results/phase_03/20261113T202303602395Z-B1-2/build-clean-complete; /home/user/contiki-ng/tools/cooja/build/install/cooja/bin/cooja --no-gui --contiki=/home/user/contiki-ng --logdir=/workspace/results/phase_03/20261113T202303602395Z-B1-2 /workspace/results/phase_03/20261113T202303602395Z-B1-2/scenario.csc'"
+      ]
+    }
+  },
+  "hashes": {
+    "results/phase_04/20261113T201854256422Z-B2-2/manifest.json": "10cd9df3a441993134c6727cef968d6c448766f537c026e68d7f7067c2490a57",
+    "results/phase_04/20261113T201950433776Z-B2-2/manifest.json": "c64ca27efa99986dcc75e434432dbfd5c1a46366d35fbd98f960f8d0fe5347de",
+    "results/phase_04/20261113T202025520403Z-B2-2/manifest.json": "0e73d3d4404496dbba286afb5e3d29f8ea0747049e98e315aa490b1cf799d960",
+    "results/phase_04/20261113T202112863904Z-B2-2/manifest.json": "793588bed6d6fd144fe15f5116c4973ddaa2b415f03127a82b3c886c2275670a",
+    "results/phase_04/20261113T202230174156Z-B2-2/manifest.json": "603edadca90d60fa7c234a41fd96f8609c94093a28f5e45e9a6fd22b067c9576",
+    "results/phase_03/20261113T202303602395Z-B1-2/manifest.json": "fc185448393266b156509b192b80277bc10a54683621ec374d2bfa2dba6fd832",
+    "results/phase_04/resolution-host-20261114.log": "4803f21fd142afeb7d0b59fb979145c2d653cb3c45739650ec82220006be7712",
+    "results/phase_04/resolution-python-final2-20261114.log": "f53a1b734e19c4e8e59cf3005c78e4b2e4bf0933df4acdc07c05403803d3ce20",
+    "firmware/crypto/boot_gate.c": "9d432e3199132f46d0772f7265e9ed6aa8932ced1c205e9a65691c680aeb8281",
+    "firmware/crypto/boot_gate.h": "cd2c48f397f3b52d234d9b22415d2edc3d484372a97268a1a80bb82ecdd68cce",
+    "firmware/crypto/ascon-backend.mk": "8716f2751ef47fcadf8cde83c36cc97861fb83823453bbf4af0c202ae80fdd96",
+    "firmware/root/root.c": "0c08dc8d4bf3d1608f9f4e4bee4fdfce7dbeb24d19a91d84ac5638e590d5fa0e",
+    "firmware/sensor/sensor.c": "57097ae4f84c38157218efd8ebabec4d61e83e2da8418bd5bb218d1eaa6055b1",
+    "host/scenario_target.py": "8a672a45915190c970e8762d1b00c06d4a1b3556dfce6c1c65cf24fe8578f624",
+    "host/run_experiment.py": "cdcdfec60c6b005298d976cc27242f5714f7f8336184c15f9fa28a04e249d197",
+    "host/parse_logs.py": "f0566add89c76a0ace68308664821295febd6a5751b93045ab1ef1786555168f",
+    "host/metrics.py": "b8331b12c7adde7b823c0cf26a67fa00c60e11a1f84baa659d69be9162702efb",
+    "scripts/test_phase4_ascon.sh": "91d55f5ca7d8550ec9845430cd647e181be34460956d36ab68525782a73f6c58",
+    "scripts/phase4_kat_scenario.py": "87193b4fd35d7e4af8c3538cab6cc03d52ef744bebdecfd9ba0660c317ec5cf3",
+    "scripts/phase3_boot_scenario.py": "f47d213159227e5a8ccc074191f888115b91279af0b3608ddf2b468e5147cc26",
+    "scripts/phase3_reset_scenario.py": "ec6c6d83aa5e789d10ac802826e751d2e3e17dea5f8aa892a84af6457b976099",
+    "tests/security/test_ascon_packet.c": "23a6b7060e28cb7edf4dfa67148c3c05f62460f393cf29adc7dc10aad7d03955"
+  }
+}

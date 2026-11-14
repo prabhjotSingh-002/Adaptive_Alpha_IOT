@@ -1,0 +1,52 @@
+make: Entering directory '/workspace/firmware/root'
+----------------- Make variables: --------------
+##### "TARGET": ________________________________ z1
+##### "BOARD": _________________________________ 
+##### "BOARD_REVISION": ________________________ 
+##### "MAKE_MAC": ______________________________ MAKE_MAC_CSMA
+##### "MAKE_NET": ______________________________ MAKE_NET_IPV6
+##### "MAKE_ROUTING": __________________________ MAKE_ROUTING_RPL_LITE
+----------------- C variables: -----------------
+##### "PROJECT_CONF_PATH": _____________________ == "project-conf.h"
+##### "CONTIKI_VERSION_STRING": ________________ == "Contiki-NG-a304687"
+##### "FRAME802154_CONF_VERSION":_______________ == FRAME802154_IEEE802154_2006
+##### "IEEE802154_CONF_PANID":__________________ == 0xabcd
+##### "IEEE802154_CONF_DEFAULT_CHANNEL": _______ == 26
+##### "RPL_CONF_MOP": __________________________ -> RPL_MOP_NON_STORING
+##### "RPL_CONF_OF_OCP": __________________________ -> RPL_OCP_MRHOF
+##### "QUEUEBUF_CONF_NUM": _____________________ == 8
+##### "NBR_TABLE_CONF_MAX_NEIGHBORS": __________ == 8
+##### "NETSTACK_MAX_ROUTE_ENTRIES": ____________ == 8
+##### "UIP_CONF_BUFFER_SIZE": __________________ == 140
+##### "UIP_CONF_UDP": __________________________ == 1
+##### "UIP_CONF_UDP_CONNS": ____________________ == 2
+##### "UIP_CONF_TCP": __________________________ == 0
+##### "UIP_CONF_TCP_CONNS": ____________________ == 0
+##### "UIP_CONF_ND6_SEND_RA": __________________ == 0
+##### "UIP_CONF_ND6_SEND_NS": __________________ == 0
+##### "UIP_CONF_ND6_SEND_NA": __________________ == 1
+##### "UIP_CONF_ND6_AUTOFILL_NBR_CACHE": _______ == 1
+##### "SICSLOWPAN_CONF_FRAG": __________________ == 1
+##### "SICSLOWPAN_CONF_COMPRESSION": ___________ == SICSLOWPAN_COMPRESSION_IPHC
+##### "ENERGEST_CONF_ON": ______________________ == 0
+##### "LOG_CONF_LEVEL_RPL": ____________________ == 0
+##### "LOG_CONF_LEVEL_TCPIP": __________________ == 0
+##### "LOG_CONF_LEVEL_IPV6": ___________________ == 0
+##### "LOG_CONF_LEVEL_6LOWPAN": ________________ == 0
+##### "LOG_CONF_LEVEL_NULLNET": ________________ == 0
+##### "LOG_CONF_LEVEL_MAC": ____________________ == 0
+##### "LOG_CONF_LEVEL_FRAMER": _________________ == 0
+##### "LOG_CONF_LEVEL_6TOP": ___________________ == 0
+##### "LOG_CONF_LEVEL_COAP": ___________________ == 0
+##### "LOG_CONF_LEVEL_DTLS": ___________________ == 0
+##### "LOG_CONF_LEVEL_SNMP": ___________________ == 0
+##### "LOG_CONF_LEVEL_LWM2M": __________________ == 0
+##### "LOG_CONF_LEVEL_SYS": ____________________ == 0
+##### "LOG_CONF_LEVEL_MAIN": ___________________ == 3
+------------------------------------------------
+'==' Means the flag is set to a given a value
+'->' Means the flag is unset, but will default to a given value
+'><' Means the flag is unset and has no default value
+To view more Make variables, edit ../../external/contiki-ng/Makefile.include, rule 'viewconf'
+To view more C variables, edit ../../external/contiki-ng/tools/viewconf/viewconf.c
+make: Leaving directory '/workspace/firmware/root'

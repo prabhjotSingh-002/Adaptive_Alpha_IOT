@@ -1,0 +1,23 @@
+{
+  "seed": 123456,
+  "warmup_ms": 60000,
+  "period_ms": 1000,
+  "readings_per_sensor": 24,
+  "deadline_ms": 3000,
+  "drain_ms": 15000,
+  "payload_budget": 67,
+  "reserved_bytes": 16,
+  "modes": {
+    "B1": 1,
+    "B2": 1,
+    "B4": 4,
+    "B5": 4
+  },
+  "phase": 4,
+  "mode_profiles": {
+    "B1": 1,
+    "B2": 2,
+    "B4": 1,
+    "B5": 2
+  }
+}

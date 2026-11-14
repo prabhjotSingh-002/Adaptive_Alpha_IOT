@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+    "--phase",
+    "4",
+    "--timeout-seconds",
+    "300",
+    "--mode",
+    "B5",
+    "--clients",
+    "2",
+    "--target",
+    "z1",
+    "--critical-reading",
+    "2"
+  ],
+  "status": "passed",
+  "started_utc": "2026-11-14T08:04:17.103231+00:00",
+  "ended_utc": "2026-11-14T08:04:48.378239+00:00"
+}

@@ -1,0 +1,31 @@
+passed /home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_04/20261114T065857010232Z-B1-8 
+passed /home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_04/20261114T070039903084Z-B2-8 
+failed /home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_04/20261114T070217816028Z-B4-8 KeyboardInterrupt: 
+Traceback (most recent call last):
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py", line 411, in <module>
+    main()
+    ~~~~^^
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py", line 363, in main
+    outputs.append(run(mode,args.clients,base,pins,override))
+                   ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py", line 280, in run
+    if interrupted is not None: raise interrupted
+                                ^^^^^^^^^^^^^^^^^
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py", line 244, in run
+    result = subprocess.run(command, stdout=log, stderr=subprocess.STDOUT, timeout=config.get("host_timeout_s", 900))
+  File "/usr/lib/python3.14/subprocess.py", line 557, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 1221, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 2179, in _communicate
+    self.wait(timeout=self._remaining_time(endtime))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 1279, in wait
+    return self._wait(timeout=timeout)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 2078, in _wait
+    time.sleep(delay)
+    ~~~~~~~~~~^^^^^^^
+KeyboardInterrupt

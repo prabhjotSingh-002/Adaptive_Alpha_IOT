@@ -1,0 +1,21 @@
+{
+  "runs": [
+    "results/phase_04/20261114T081252222076Z-B1-8",
+    "results/phase_04/20261114T081511268004Z-B2-8",
+    "results/phase_04/20261114T081658871885Z-B4-8",
+    "results/phase_04/20261114T081819417074Z-B5-8"
+  ],
+  "generation_identical": false,
+  "comparison_eligible": true,
+  "generation_rows": 192,
+  "timing_contract": "emulated_125ms_service_bound",
+  "actual_generation_rows": [
+    192,
+    192,
+    192,
+    192
+  ],
+  "max_local_jitter_ms": 15,
+  "max_global_jitter_us": 16439,
+  "scope": "paired engineering pilot; no inferential conclusion"
+}

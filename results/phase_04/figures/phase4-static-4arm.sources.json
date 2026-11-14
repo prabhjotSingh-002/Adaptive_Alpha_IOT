@@ -1,0 +1,38 @@
+{
+  "figure": "results/phase_04/figures/phase4-static-4arm.png",
+  "arms": 4,
+  "runs": 12,
+  "seeds": [
+    123456,
+    123457,
+    123458
+  ],
+  "modes": [
+    "B1",
+    "B2",
+    "B4",
+    "B5"
+  ],
+  "run_dirs": [
+    "results/phase_04/20261114T065413425942Z-B1-8",
+    "results/phase_04/20261114T065550757430Z-B2-8",
+    "results/phase_04/20261114T070425862495Z-B4-8",
+    "results/phase_04/20261114T081120795319Z-B5-8",
+    "results/phase_04/20261114T081252222076Z-B1-8",
+    "results/phase_04/20261114T070039903084Z-B2-8",
+    "results/phase_04/20261114T081658871885Z-B4-8",
+    "results/phase_04/20261114T081819417074Z-B5-8",
+    "results/phase_04/20261114T083350114195Z-B1-8",
+    "results/phase_04/20261114T083510489220Z-B2-8",
+    "results/phase_04/20261114T083631080729Z-B4-8",
+    "results/phase_04/20261114T083747256510Z-B5-8"
+  ],
+  "metrics": [
+    "reading_pdr",
+    "p95_delay_ms",
+    "packets_submitted",
+    "energy_per_delivered_reading_nj"
+  ],
+  "bootstrap_ci": "95% percentile, 2000 resamples, seed=42",
+  "baseline": "B1"
+}

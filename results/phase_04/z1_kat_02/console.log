@@ -1,0 +1,9 @@
+[32mINFO  [main] [Cooja.java:1147] - Loading /workspace/results/phase_04/z1_kat_02/scenario.csc random seed: null[0;39m
+> make -j1 ascon_kat.z1 TARGET=z1 ASCON_IMPL=opt32_lowsize
+make: 'ascon_kat.z1' is up to date.
+[32mINFO  [main] [LogScriptEngine.java:231] - Script timeout in 60000 ms[0;39m
+[32mINFO  [sim] [Simulation.java:450] - Runtime: 1204 ms. Simulated time: 1722 ms. Speedup: 1.430232558139535[0;39m
+[1;91mERROR [main] [Cooja.java:1175] - TEST /workspace/results/phase_04/z1_kat_02/scenario.csc FAILED
+[0;39m
+[1;91mERROR [main] [Cooja.java:1183] - Failed tests:
+/workspace/results/phase_04/z1_kat_02/scenario.csc seed: null[0;39m

@@ -1,0 +1,11 @@
+{
+  "scope": "cooja_boot_01",
+  "artifacts_sha256": {
+    "console.log": "9fda7ff9f58f7fb98f7ed3ada61538b810d03e95e95cc848f680d9318a4f96cc",
+    "mtype686482149.cooja": "51bfb34a5c25a007365cf83601c12336b870a5f8b685813c2f4c217263ef188e",
+    "scenario.csc": "da95303fa3c7d14bb3a39c6a8c2557b47a4b7a2d01ac53d1e05f57fc04ece4d0",
+    "COOJA.testlog": "857f199cc1ec5dc435c0e5f4d9d961052a2284a7b37fa3133b929243a491ba38"
+  },
+  "source_pin": "a304687372e2917d325d4d71cf68610fe9a6279b",
+  "qualification": "actual native Cooja test; test-specific firmware"
+}

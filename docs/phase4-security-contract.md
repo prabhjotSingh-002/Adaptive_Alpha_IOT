@@ -1,0 +1,18 @@
+# Phase 4 security integration contract
+
+Status: implementation target; host-level pieces exist, but complete application integration and verification are pending. The authoritative details are in `PLANS/PHASE_04_IMPLEMENTATION_PLAN.md` and `tmp/phase_04_implementation_plan.md`.
+
+N0 (profile 0) is unprotected. Profile 1 is AES-128-CCM; profile 2 is standardized Ascon-AEAD128. Unknown or disabled profiles must fail closed. Both protected profiles use independent 16-byte test keys and 16-byte tags. B1/B2 select AES/Ascon with cap 1; B4/B5 select AES/Ascon with cap 4.
+
+The shared 11-byte header is authenticated as AAD; each reading occupies 10 bytes and capacity is four. The protected wire lengths are 37, 47, 57 and 67 bytes. AES retains the Phase 3 13-byte nonce. Ascon uses `RSL | profile | direction | sender_BE | epoch_BE | counter_BE | 00 00 00`, 16 bytes. Counters range from 1 to UINT32_MAX-1; consume before invoking encryption and fail closed on exhaustion.
+
+Provision only explicitly allowed sender/profile/epoch contexts with independent OS-random simulator test keys. Validate every declared slot and its metadata before activating the set; do not use a zero-key sentinel. A one-use grant must remain outside mote RAM; resets must not reactivate a reused key and counter. The test provisioning is not a production key-management scheme, and whole-simulation rollback is outside its guarantee.
+
+Implemented static-set provisioning uses one eight-byte metadata record per slot: version=1, profile:u8, sender:BE16, epoch:BE16, ready=1, reserved=0. Keys and metadata have separately checked simulator symbol sizes; the four-byte grant is written last. Every record must match its preinitialized context before any activation. Invalid metadata consumes the grant and locks the whole set. This currently covers the static selected profile across configured senders; application-level dual-profile provisioning/selection remains pending.
+
+Root selects only an already provisioned bounded context. Authentication and strict body validation precede committing replay state or releasing readings. Replay windows are per sender/profile/epoch; reading deduplication is shared per sender. Switching away from and back to a profile must retain its counter and replay state. No invalid message, unknown profile or failed grant may trigger plaintext fallback.
+
+The versioned event and manifest schema must explicitly carry phase, purpose, profile, allowed set, epoch, config identity, target, and when applicable model/timer identity. Purposes are functional, security, calibration, static comparison and lifetime. Legacy Phase 2/3 evidence keeps its existing interpretation; new authenticated receive events must represent successful verification, not merely a header claim. Exact final field layouts and provisioning metadata remain to be implemented and tested before claiming this contract is met.
+
+
+Implementation update, 14 November: new Phase 4 runs provision two independent profiles per sender and retain contexts through controlled AES→Ascon→AES selection. Root bounds context lookup by configured sender/profile; the existing atomic provisioning set validates both profiles, while reading dedup remains shared. Schema2 carries actual sealed/verified profile/epoch/counter identity and a runtime configuration ID. Native/Z1 root+2 return tests and native static four-arm regressions exist; exhaustive reset/provisioning/schema and full-target resource acceptance are still pending. See the latest journal and `dual-schema-energy-evidence-20261114.json`. Earlier static-only paragraphs describe their historical implementation scope.

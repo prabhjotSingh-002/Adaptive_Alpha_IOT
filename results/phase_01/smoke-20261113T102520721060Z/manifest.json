@@ -1,0 +1,46 @@
+{
+  "run_id": "smoke-20261113T102520721060Z",
+  "pins": {
+    "contiki_ng_commit": "a304687372e2917d325d4d71cf68610fe9a6279b",
+    "cooja_commit": "fabff3ee41eeeb6f3de7bd11f7c9cdf0a7d7dfc4",
+    "candidate_container": "contiker/contiki-ng:1a8be2d47fc7ef835f45461dbf014155d59be3e8a58e8779149d7645a7b1266c",
+    "container_status": "toolchain verified; Cooja built; two 9-node headless runs passed",
+    "cooja_java_required": 25,
+    "gradle_wrapper_distribution": "gradle-9.6.1-bin.zip",
+    "master_sha256": "2fad0d0b731e4b57409e3500bd18597c34e83991b6e495b2d60b94daab0bc385",
+    "container_image": "contiker/contiki-ng@sha256:b14d5afb0a2a852d9e72bbed607ead03f6ccc5f4d4dee44f0799110be2f4b609",
+    "container_selection_reason": "source hash tag not found; official develop pulled and digest pinned"
+  },
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--mount",
+    "type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/external/contiki-ng,destination=/home/user/contiki-ng",
+    "--mount",
+    "type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT,destination=/workspace",
+    "contiker/contiki-ng@sha256:b14d5afb0a2a852d9e72bbed607ead03f6ccc5f4d4dee44f0799110be2f4b609",
+    "/home/user/contiki-ng/tools/cooja/build/install/cooja/bin/cooja",
+    "--no-gui",
+    "--contiki=/home/user/contiki-ng",
+    "--logdir=/workspace/results/phase_01/smoke-20261113T102520721060Z",
+    "/workspace/simulations/scenarios/phase1-rpl-9.csc"
+  ],
+  "status": "passed",
+  "scenario_sha256": "81aa390d396308a55840e1f62d9b1464abff2f130ffe6ce703f6c567fd90a318",
+  "exit_code": 0,
+  "clients_with_response": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "artifacts_sha256": {
+    "console.log": "e055bd6fb640dd5fdc17023abbcdecaf19a214c6c2d89354c82a613bf738afb5",
+    "COOJA.testlog": "c0bbf57c2d7d5a36082a6d85c5ceba74d15918d94d35dfdb5c972ecbce27419a"
+  }
+}

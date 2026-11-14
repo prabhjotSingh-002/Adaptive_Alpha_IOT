@@ -1,0 +1,9 @@
+external/
+results/setup/*.log
+results/raw/
+__pycache__/
+.venv/
+
+firmware/**/build/
+results/phase_02/unit/test_core
+results/phase_02/.runner.lock

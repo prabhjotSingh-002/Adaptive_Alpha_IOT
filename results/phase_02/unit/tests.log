@@ -1,0 +1,17 @@
+PASS: codec caps 1/2/4, bounds, malformed packets, queue/byte caps, deadline/wrap, send interruption, ring rotation, dedup
+cap variants checked: 3
+test_bad_deadline_fails (test_metrics.MetricsTests) ... ok
+test_corruption_fails (test_metrics.MetricsTests) ... ok
+test_duplicate_not_counted_twice (test_metrics.MetricsTests) ... ok
+test_known_delivery_and_global_latency (test_metrics.MetricsTests) ... ok
+test_missing_done_fails (test_metrics.MetricsTests) ... ok
+test_missing_generator_fails (test_metrics.MetricsTests) ... ok
+test_parse_incomplete_and_malformed (test_metrics.MetricsTests) ... ok
+test_radio_fragment_dispatch_at_mac_boundary (test_metrics.MetricsTests) ... ok
+test_stale_config_fails (test_metrics.MetricsTests) ... ok
+test_unlogged_submission_loss_fails (test_metrics.MetricsTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.005s
+
+OK

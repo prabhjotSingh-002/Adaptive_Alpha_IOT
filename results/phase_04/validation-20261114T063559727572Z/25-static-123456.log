@@ -1,0 +1,14 @@
+passed /home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_04/20261114T065413425942Z-B1-8 
+passed /home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_04/20261114T065550757430Z-B2-8 
+failed /home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_04/20261114T065725646751Z-B4-8 ValueError: Invalid submission/count/byte/deadline bound
+Traceback (most recent call last):
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py", line 411, in <module>
+    main()
+    ~~~~^^
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py", line 363, in main
+    outputs.append(run(mode,args.clients,base,pins,override))
+                   ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py", line 281, in run
+    if manifest["status"] != "passed": raise RuntimeError(manifest.get("error", "failed"))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ValueError: Invalid submission/count/byte/deadline bound

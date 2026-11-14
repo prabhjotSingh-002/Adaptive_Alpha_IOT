@@ -1,0 +1,37 @@
+{
+  "scope": "A02 rejection verdict production integration; A03 captured-byte subcheck only. Full Phase 4 remains incomplete.",
+  "host_exit_code": 0,
+  "python_exit_code": 0,
+  "python_tests": 15,
+  "runs": {
+    "20261113T205100984042Z-B2-2": "passed",
+    "20261113T205137739194Z-B1-2": "passed"
+  },
+  "reason_registry": {
+    "1": "format",
+    "2": "profile",
+    "3": "context",
+    "4": "locked",
+    "5": "replay precheck (not authenticated)",
+    "6": "authentication",
+    "7": "authenticated body"
+  },
+  "hashes": {
+    "firmware/crypto/secure_packet.c": "a53b55fda7e5a9060f62081443f22eb507073b573e29a2f2d4ea56edb51f2c6a",
+    "firmware/crypto/secure_packet.h": "f9cf89895b5d32aaff1e48f5d9b90b2aad5a95cb2d9ab2e5de99c2f099d8df0b",
+    "firmware/root/root.c": "f3a56cb7aa129438ab531757df503dd37c844a885ffe28b7fb1962ec232fe3b9",
+    "host/parse_logs.py": "2ea65d1503bfedbfbf515cf82561c71774acbfd371230f1647aded2089e651eb",
+    "host/metrics.py": "d1bd4ccf1f5da1c7d0055a76a2ada247c61c5ea01c05aa55f97fc719edb54766",
+    "tests/security/test_ascon_packet.c": "7fd097b8e30d2b71cde049e328e03dbc47426c523ca18d06a82e950de60b3945",
+    "tests/unit/test_metrics.py": "ad5ccfa23c4f003e91bf5853825876b3ef9fe3e81ea690c106a29f04998094f7",
+    "results/phase_04/rejection-status-host-20261114.log": "cbc8cdcb1f4d894335e5de523ec389fcbb9a008ce2094d3b9dc0e38161f42165",
+    "results/phase_04/rejection-status-host-approved-20261114.log": "cdd8cd3c411c2ed6ff89b94697c50f924b226d9d58b55170ed61a9592c3de6ca",
+    "results/phase_04/rejection-status-python-20261114.log": "c298ed79e060f024ea5f89bea652bf07d26af9b00110dfe1d9544709f521b24a",
+    "results/phase_04/20261113T205100984042Z-B2-2/manifest.json": "2520294ac9010279f4e3ff60d65bc18c731cc2085b373d5bfa8776bb91eb8aee",
+    "results/phase_04/20261113T205100984042Z-B2-2/summary.json": "8bbcae1e286f207881e65c2161c05d3adaff239bcfa97f12025ae27b67ea6686",
+    "results/phase_04/20261113T205100984042Z-B2-2/COOJA.testlog": "0ddddc6a4ae48fa87e37313f670981aa1aa533c4098488b6e2e40cefc28caede",
+    "results/phase_04/20261113T205137739194Z-B1-2/manifest.json": "c3cb1f11308d20140d9b45ba9f6811fc39c3f75654d253740be0ce67e4863bc2",
+    "results/phase_04/20261113T205137739194Z-B1-2/summary.json": "af16b4fa0a0b7d21169d48387a82f90004376f36a50137f77b72a191d99a706c",
+    "results/phase_04/20261113T205137739194Z-B1-2/COOJA.testlog": "cccada982fc8c8bb0067eb452aa9f9312511a345e5b8241ca9cf61cda34c7db7"
+  }
+}

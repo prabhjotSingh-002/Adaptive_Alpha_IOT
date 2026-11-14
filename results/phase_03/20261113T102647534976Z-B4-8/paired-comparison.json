@@ -1,0 +1,9 @@
+{
+  "runs": [
+    "results/phase_03/20261113T102628771598Z-B1-8",
+    "results/phase_03/20261113T102647534976Z-B4-8"
+  ],
+  "generation_identical": true,
+  "generation_rows": 192,
+  "scope": "single paired seed engineering pilot"
+}

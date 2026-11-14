@@ -1,0 +1,20 @@
+{
+  "scope": "static selected-profile provisioning set only; dual-profile application work remains pending",
+  "runs": {
+    "results/phase_04/20261113T202559430948Z-B2-2": "failed",
+    "results/phase_04/20261113T202636104292Z-B2-2": "passed",
+    "results/phase_03/20261113T202709373776Z-B1-2": "passed"
+  },
+  "hashes": {
+    "results/phase_04/20261113T202559430948Z-B2-2/manifest.json": "1ace557ed99241dfbfdbd57ebcbecb6624497c67d3937512315f17008532bda9",
+    "results/phase_04/20261113T202636104292Z-B2-2/manifest.json": "64ce1fa488432ec9ee7670e4884a6ce79571eaa13ba6c1b49b1833f8e4e561d7",
+    "results/phase_03/20261113T202709373776Z-B1-2/manifest.json": "2e8c213b884647fd577fa3bbb73050590318ebf15095f4958bcef0bd9fc2a18c",
+    "results/phase_04/provision-set-host-20261114.log": "cac23de8b57edc1eecf8c96361fb48eb6d0875ef00d2f061385fff1ffea55eb2",
+    "firmware/crypto/boot_gate.c": "163fed29e199d8b01f25ab0e3141f77518df57410593d301f6107cfcbe46d67f",
+    "firmware/crypto/boot_gate.h": "18e516ec2fc3335313026b82762f290a22521e3ddd4d5e0bcdb2f6db4177415f",
+    "firmware/root/root.c": "817fa58435791fbd2f7c279fe1de31f8c39672fff116cc914c19dac99c712289",
+    "firmware/sensor/sensor.c": "311cffb1d6696a081fc251edfd952a3c36e6dbae26cda2dfe48c386b8c9998ac",
+    "host/run_experiment.py": "2f8bbd79b5ae11499435f69686b721c4717683c529b9755eea5e659a82757d68",
+    "tests/security/test_ascon_packet.c": "a7d113395063ebbd4381e46def53cd895e0dd8729ea4127ce3e382cc11b5e96b"
+  }
+}

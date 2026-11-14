@@ -1,0 +1,11 @@
+{
+  "contiki_ng_commit": "a304687372e2917d325d4d71cf68610fe9a6279b",
+  "cooja_commit": "fabff3ee41eeeb6f3de7bd11f7c9cdf0a7d7dfc4",
+  "candidate_container": "contiker/contiki-ng:1a8be2d47fc7ef835f45461dbf014155d59be3e8a58e8779149d7645a7b1266c",
+  "container_status": "toolchain verified; Cooja built; two 9-node headless runs passed",
+  "cooja_java_required": 25,
+  "gradle_wrapper_distribution": "gradle-9.6.1-bin.zip",
+  "master_sha256": "2fad0d0b731e4b57409e3500bd18597c34e83991b6e495b2d60b94daab0bc385",
+  "container_image": "contiker/contiki-ng@sha256:b14d5afb0a2a852d9e72bbed607ead03f6ccc5f4d4dee44f0799110be2f4b609",
+  "container_selection_reason": "source hash tag not found; official develop pulled and digest pinned"
+}

@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+    "--phase",
+    "4",
+    "--timeout-seconds",
+    "300",
+    "--mode",
+    "all",
+    "--clients",
+    "8",
+    "--target",
+    "z1",
+    "--power-model",
+    "--seed",
+    "123458"
+  ],
+  "status": "failed",
+  "started_utc": "2026-11-14T08:19:37.683899+00:00",
+  "error": "RuntimeError: ValueError: Missing model/counter snapshots",
+  "ended_utc": "2026-11-14T08:20:59.151145+00:00"
+}

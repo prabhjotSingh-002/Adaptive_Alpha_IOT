@@ -1,0 +1,210 @@
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 1572521, "sim_time_ms": 1572.521, "node_id": 2, "event_type": "META2", "config_id": 3662347873, "profile": 1, "profile_count": 2, "switch_test": 0}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 1574425, "sim_time_ms": 1574.425, "node_id": 2, "event_type": "BOOT_REQUEST", "profile": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 1578251, "sim_time_ms": 1578.251, "node_id": 2, "event_type": "SCHEDULE", "local_ms": 820, "warmup_ms": 60000, "period_ms": 1000, "total": 24}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 1580720, "sim_time_ms": 1580.72, "node_id": 2, "event_type": "READY", "cap": 1, "deadline_ms": 3000, "period_ms": 1000, "total": 24}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 1703570, "sim_time_ms": 1703.57, "node_id": 2, "event_type": "CONTEXT_READY", "profile": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 1719279, "sim_time_ms": 1719.279, "node_id": 1, "event_type": "META2", "config_id": 3662347873, "profile": 1, "profile_count": 2, "switch_test": 0}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 1722510, "sim_time_ms": 1722.51, "node_id": 1, "event_type": "BOOT_REQUEST", "profile": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 1842620, "sim_time_ms": 1842.62, "node_id": 1, "event_type": "CONTEXT_READY", "profile": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 1844181, "sim_time_ms": 1844.181, "node_id": 1, "event_type": "ROOT_READY", "profile": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 2235741, "sim_time_ms": 2235.741, "node_id": 3, "event_type": "META2", "config_id": 3662347873, "profile": 1, "profile_count": 2, "switch_test": 0}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 2237645, "sim_time_ms": 2237.645, "node_id": 3, "event_type": "BOOT_REQUEST", "profile": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 2241471, "sim_time_ms": 2241.471, "node_id": 3, "event_type": "SCHEDULE", "local_ms": 820, "warmup_ms": 60000, "period_ms": 1000, "total": 24}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 2243940, "sim_time_ms": 2243.94, "node_id": 3, "event_type": "READY", "cap": 1, "deadline_ms": 3000, "period_ms": 1000, "total": 24}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 2366790, "sim_time_ms": 2366.79, "node_id": 3, "event_type": "CONTEXT_READY", "profile": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 60829419, "sim_time_ms": 60829.419, "node_id": 2, "event_type": "GEN", "reading_id": 1, "created_ms": 60078, "value": 201}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 60843216, "sim_time_ms": 60843.216, "node_id": 2, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 1, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 1, "last_id": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 60866873, "sim_time_ms": 60866.873, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 1, "epoch": 1, "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 60870441, "sim_time_ms": 60870.441, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 1, "epoch": 1, "counter": 1, "reading_id": 1, "created_ms": 60078, "value": 201, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 61492626, "sim_time_ms": 61492.626, "node_id": 3, "event_type": "GEN", "reading_id": 1, "created_ms": 60078, "value": 301}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 61506325, "sim_time_ms": 61506.325, "node_id": 3, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 1, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 1, "last_id": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 61828379, "sim_time_ms": 61828.379, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 61832355, "sim_time_ms": 61832.355, "node_id": 2, "event_type": "GEN", "reading_id": 2, "created_ms": 61078, "value": 202}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 61845915, "sim_time_ms": 61845.915, "node_id": 2, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 2, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 2, "last_id": 2}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 62492617, "sim_time_ms": 62492.617, "node_id": 3, "event_type": "GEN", "reading_id": 2, "created_ms": 61078, "value": 302}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 62506317, "sim_time_ms": 62506.317, "node_id": 3, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 2, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 2, "last_id": 2}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 62828380, "sim_time_ms": 62828.38, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 62832357, "sim_time_ms": 62832.357, "node_id": 2, "event_type": "GEN", "reading_id": 3, "created_ms": 62078, "value": 203}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 62838421, "sim_time_ms": 62838.421, "node_id": 1, "event_type": "META2", "config_id": 3662347873, "profile": 1, "profile_count": 2, "switch_test": 0}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 62841652, "sim_time_ms": 62841.652, "node_id": 1, "event_type": "BOOT_REQUEST", "profile": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 62846366, "sim_time_ms": 62846.366, "node_id": 2, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 3, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 3, "last_id": 3}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 63492640, "sim_time_ms": 63492.64, "node_id": 3, "event_type": "GEN", "reading_id": 3, "created_ms": 62078, "value": 303}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 63506436, "sim_time_ms": 63506.436, "node_id": 3, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 3, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 3, "last_id": 3}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 63834351, "sim_time_ms": 63834.351, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 63838388, "sim_time_ms": 63838.388, "node_id": 2, "event_type": "GEN", "reading_id": 4, "created_ms": 63078, "value": 204}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 63852163, "sim_time_ms": 63852.163, "node_id": 2, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 4, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 4, "last_id": 4}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 64498596, "sim_time_ms": 64498.596, "node_id": 3, "event_type": "GEN", "reading_id": 4, "created_ms": 63078, "value": 304}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 64512380, "sim_time_ms": 64512.38, "node_id": 3, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 4, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 4, "last_id": 4}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 64828380, "sim_time_ms": 64828.38, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 64832349, "sim_time_ms": 64832.349, "node_id": 2, "event_type": "GEN", "reading_id": 5, "created_ms": 64078, "value": 205}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 65492624, "sim_time_ms": 65492.624, "node_id": 3, "event_type": "GEN", "reading_id": 5, "created_ms": 64078, "value": 305}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 65828403, "sim_time_ms": 65828.403, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 65832381, "sim_time_ms": 65832.381, "node_id": 2, "event_type": "GEN", "reading_id": 6, "created_ms": 65078, "value": 206}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 65833900, "sim_time_ms": 65833.9, "node_id": 2, "event_type": "DROP", "reading_id": 6, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 65857844, "sim_time_ms": 65857.844, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 66492628, "sim_time_ms": 66492.628, "node_id": 3, "event_type": "GEN", "reading_id": 6, "created_ms": 65078, "value": 306}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 66494147, "sim_time_ms": 66494.147, "node_id": 3, "event_type": "DROP", "reading_id": 6, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 66828380, "sim_time_ms": 66828.38, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 66832355, "sim_time_ms": 66832.355, "node_id": 2, "event_type": "GEN", "reading_id": 7, "created_ms": 66078, "value": 207}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 66833875, "sim_time_ms": 66833.875, "node_id": 2, "event_type": "DROP", "reading_id": 7, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 66841202, "sim_time_ms": 66841.202, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 67492629, "sim_time_ms": 67492.629, "node_id": 3, "event_type": "GEN", "reading_id": 7, "created_ms": 66078, "value": 307}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 67494148, "sim_time_ms": 67494.148, "node_id": 3, "event_type": "DROP", "reading_id": 7, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 67828367, "sim_time_ms": 67828.367, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 67832338, "sim_time_ms": 67832.338, "node_id": 2, "event_type": "GEN", "reading_id": 8, "created_ms": 67078, "value": 208}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 67833720, "sim_time_ms": 67833.72, "node_id": 2, "event_type": "DROP", "reading_id": 5, "reason": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 67880614, "sim_time_ms": 67880.614, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 68492616, "sim_time_ms": 68492.616, "node_id": 3, "event_type": "GEN", "reading_id": 8, "created_ms": 67078, "value": 308}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 68493999, "sim_time_ms": 68493.999, "node_id": 3, "event_type": "DROP", "reading_id": 5, "reason": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 68828367, "sim_time_ms": 68828.367, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 68832335, "sim_time_ms": 68832.335, "node_id": 2, "event_type": "GEN", "reading_id": 9, "created_ms": 68078, "value": 209}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 68833854, "sim_time_ms": 68833.854, "node_id": 2, "event_type": "DROP", "reading_id": 9, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 68880614, "sim_time_ms": 68880.614, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 69492615, "sim_time_ms": 69492.615, "node_id": 3, "event_type": "GEN", "reading_id": 9, "created_ms": 68078, "value": 309}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 69494134, "sim_time_ms": 69494.134, "node_id": 3, "event_type": "DROP", "reading_id": 9, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 69828367, "sim_time_ms": 69828.367, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 69832544, "sim_time_ms": 69832.544, "node_id": 2, "event_type": "GEN", "reading_id": 10, "created_ms": 69078, "value": 210}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 69834269, "sim_time_ms": 69834.269, "node_id": 2, "event_type": "DROP", "reading_id": 10, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 69880614, "sim_time_ms": 69880.614, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 70492823, "sim_time_ms": 70492.823, "node_id": 3, "event_type": "GEN", "reading_id": 10, "created_ms": 69078, "value": 310}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 70494548, "sim_time_ms": 70494.548, "node_id": 3, "event_type": "DROP", "reading_id": 10, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 70828376, "sim_time_ms": 70828.376, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 70832556, "sim_time_ms": 70832.556, "node_id": 2, "event_type": "GEN", "reading_id": 11, "created_ms": 70078, "value": 211}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 70833939, "sim_time_ms": 70833.939, "node_id": 2, "event_type": "DROP", "reading_id": 8, "reason": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 70880614, "sim_time_ms": 70880.614, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 71492835, "sim_time_ms": 71492.835, "node_id": 3, "event_type": "GEN", "reading_id": 11, "created_ms": 70078, "value": 311}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 71494218, "sim_time_ms": 71494.218, "node_id": 3, "event_type": "DROP", "reading_id": 8, "reason": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 71828366, "sim_time_ms": 71828.366, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 71832543, "sim_time_ms": 71832.543, "node_id": 2, "event_type": "GEN", "reading_id": 12, "created_ms": 71078, "value": 212}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 71834268, "sim_time_ms": 71834.268, "node_id": 2, "event_type": "DROP", "reading_id": 12, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 71864989, "sim_time_ms": 71864.989, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 72492823, "sim_time_ms": 72492.823, "node_id": 3, "event_type": "GEN", "reading_id": 12, "created_ms": 71078, "value": 312}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 72494548, "sim_time_ms": 72494.548, "node_id": 3, "event_type": "DROP", "reading_id": 12, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 72828380, "sim_time_ms": 72828.38, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 72832559, "sim_time_ms": 72832.559, "node_id": 2, "event_type": "GEN", "reading_id": 13, "created_ms": 72078, "value": 213}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 72834284, "sim_time_ms": 72834.284, "node_id": 2, "event_type": "DROP", "reading_id": 13, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 72849379, "sim_time_ms": 72849.379, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 73492820, "sim_time_ms": 73492.82, "node_id": 3, "event_type": "GEN", "reading_id": 13, "created_ms": 72078, "value": 313}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 73494545, "sim_time_ms": 73494.545, "node_id": 3, "event_type": "DROP", "reading_id": 13, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 73828353, "sim_time_ms": 73828.353, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 73832524, "sim_time_ms": 73832.524, "node_id": 2, "event_type": "GEN", "reading_id": 14, "created_ms": 73078, "value": 214}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 73834112, "sim_time_ms": 73834.112, "node_id": 2, "event_type": "DROP", "reading_id": 11, "reason": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 73864973, "sim_time_ms": 73864.973, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 74492822, "sim_time_ms": 74492.822, "node_id": 3, "event_type": "GEN", "reading_id": 14, "created_ms": 73078, "value": 314}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 74494411, "sim_time_ms": 74494.411, "node_id": 3, "event_type": "DROP", "reading_id": 11, "reason": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 74828353, "sim_time_ms": 74828.353, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 74832524, "sim_time_ms": 74832.524, "node_id": 2, "event_type": "GEN", "reading_id": 15, "created_ms": 74078, "value": 215}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 74834249, "sim_time_ms": 74834.249, "node_id": 2, "event_type": "DROP", "reading_id": 15, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 74857161, "sim_time_ms": 74857.161, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 75492824, "sim_time_ms": 75492.824, "node_id": 3, "event_type": "GEN", "reading_id": 15, "created_ms": 74078, "value": 315}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 75494549, "sim_time_ms": 75494.549, "node_id": 3, "event_type": "DROP", "reading_id": 15, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 75828353, "sim_time_ms": 75828.353, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 75832525, "sim_time_ms": 75832.525, "node_id": 2, "event_type": "GEN", "reading_id": 16, "created_ms": 75078, "value": 216}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 75834250, "sim_time_ms": 75834.25, "node_id": 2, "event_type": "DROP", "reading_id": 16, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 75841545, "sim_time_ms": 75841.545, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 76492825, "sim_time_ms": 76492.825, "node_id": 3, "event_type": "GEN", "reading_id": 16, "created_ms": 75078, "value": 316}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 76494549, "sim_time_ms": 76494.549, "node_id": 3, "event_type": "DROP", "reading_id": 16, "reason": 13}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 76828353, "sim_time_ms": 76828.353, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 76832526, "sim_time_ms": 76832.526, "node_id": 2, "event_type": "GEN", "reading_id": 17, "created_ms": 76078, "value": 217}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 76834115, "sim_time_ms": 76834.115, "node_id": 2, "event_type": "DROP", "reading_id": 14, "reason": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 76872786, "sim_time_ms": 76872.786, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 77466256, "sim_time_ms": 77466.256, "node_id": 2, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 5, "count": 1, "bytes": 37, "hold_ms": 625, "first_id": 17, "last_id": 17}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 77492825, "sim_time_ms": 77492.825, "node_id": 3, "event_type": "GEN", "reading_id": 17, "created_ms": 76078, "value": 317}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 77494413, "sim_time_ms": 77494.413, "node_id": 3, "event_type": "DROP", "reading_id": 14, "reason": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 77506209, "sim_time_ms": 77506.209, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 77828352, "sim_time_ms": 77828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 77832521, "sim_time_ms": 77832.521, "node_id": 2, "event_type": "GEN", "reading_id": 18, "created_ms": 77078, "value": 218}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 77846496, "sim_time_ms": 77846.496, "node_id": 2, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 6, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 18, "last_id": 18}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 77853754, "sim_time_ms": 77853.754, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 77904638, "sim_time_ms": 77904.638, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 78004718, "sim_time_ms": 78004.718, "node_id": 3, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 5, "count": 1, "bytes": 37, "hold_ms": 500, "first_id": 17, "last_id": 17}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 78076864, "sim_time_ms": 78076.864, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 78492820, "sim_time_ms": 78492.82, "node_id": 3, "event_type": "GEN", "reading_id": 18, "created_ms": 77078, "value": 318}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 78507201, "sim_time_ms": 78507.201, "node_id": 3, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 6, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 18, "last_id": 18}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 78522645, "sim_time_ms": 78522.645, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 78828352, "sim_time_ms": 78828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 78832524, "sim_time_ms": 78832.524, "node_id": 2, "event_type": "GEN", "reading_id": 19, "created_ms": 78078, "value": 219}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 78846495, "sim_time_ms": 78846.495, "node_id": 2, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 7, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 19, "last_id": 19}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 78872786, "sim_time_ms": 78872.786, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 78912451, "sim_time_ms": 78912.451, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 79492823, "sim_time_ms": 79492.823, "node_id": 3, "event_type": "GEN", "reading_id": 19, "created_ms": 78078, "value": 319}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 79507200, "sim_time_ms": 79507.2, "node_id": 3, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 7, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 19, "last_id": 19}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 79537800, "sim_time_ms": 79537.8, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 79828352, "sim_time_ms": 79828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 79832524, "sim_time_ms": 79832.524, "node_id": 2, "event_type": "GEN", "reading_id": 20, "created_ms": 79078, "value": 220}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 79846494, "sim_time_ms": 79846.494, "node_id": 2, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 8, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 20, "last_id": 20}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 79880598, "sim_time_ms": 79880.598, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 79896826, "sim_time_ms": 79896.826, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 80492821, "sim_time_ms": 80492.821, "node_id": 3, "event_type": "GEN", "reading_id": 20, "created_ms": 79078, "value": 320}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 80507197, "sim_time_ms": 80507.197, "node_id": 3, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 8, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 20, "last_id": 20}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 80584750, "sim_time_ms": 80584.75, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 80828362, "sim_time_ms": 80828.362, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 80832527, "sim_time_ms": 80832.527, "node_id": 2, "event_type": "GEN", "reading_id": 21, "created_ms": 80078, "value": 221}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 80846508, "sim_time_ms": 80846.508, "node_id": 2, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 9, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 21, "last_id": 21}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 80853760, "sim_time_ms": 80853.76, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 80865576, "sim_time_ms": 80865.576, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 81492826, "sim_time_ms": 81492.826, "node_id": 3, "event_type": "GEN", "reading_id": 21, "created_ms": 80078, "value": 321}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 81507203, "sim_time_ms": 81507.203, "node_id": 3, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 9, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 21, "last_id": 21}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 81544188, "sim_time_ms": 81544.188, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 81828352, "sim_time_ms": 81828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 81832522, "sim_time_ms": 81832.522, "node_id": 2, "event_type": "GEN", "reading_id": 22, "created_ms": 81078, "value": 222}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 81846709, "sim_time_ms": 81846.709, "node_id": 2, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 10, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 22, "last_id": 22}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 81853935, "sim_time_ms": 81853.935, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 81889014, "sim_time_ms": 81889.014, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 82492819, "sim_time_ms": 82492.819, "node_id": 3, "event_type": "GEN", "reading_id": 22, "created_ms": 81078, "value": 322}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 82507400, "sim_time_ms": 82507.4, "node_id": 3, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 10, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 22, "last_id": 22}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 82584749, "sim_time_ms": 82584.749, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 82828352, "sim_time_ms": 82828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 82832518, "sim_time_ms": 82832.518, "node_id": 2, "event_type": "GEN", "reading_id": 23, "created_ms": 82078, "value": 223}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 82846694, "sim_time_ms": 82846.694, "node_id": 2, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 11, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 23, "last_id": 23}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 82872786, "sim_time_ms": 82872.786, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 82880643, "sim_time_ms": 82880.643, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 83492815, "sim_time_ms": 83492.815, "node_id": 3, "event_type": "GEN", "reading_id": 23, "created_ms": 82078, "value": 323}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 83507398, "sim_time_ms": 83507.398, "node_id": 3, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 11, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 23, "last_id": 23}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 83592501, "sim_time_ms": 83592.501, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 83828352, "sim_time_ms": 83828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 83832521, "sim_time_ms": 83832.521, "node_id": 2, "event_type": "GEN", "reading_id": 24, "created_ms": 83078, "value": 224}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 83846707, "sim_time_ms": 83846.707, "node_id": 2, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 12, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 24, "last_id": 24}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 83848130, "sim_time_ms": 83848.13, "node_id": 2, "event_type": "DONE", "generated": 24}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 83855350, "sim_time_ms": 83855.35, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 83863178, "sim_time_ms": 83863.178, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 84492818, "sim_time_ms": 84492.818, "node_id": 3, "event_type": "GEN", "reading_id": 24, "created_ms": 83078, "value": 324}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 84507405, "sim_time_ms": 84507.405, "node_id": 3, "event_type": "TX", "profile": 1, "epoch": 1, "counter": 12, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 24, "last_id": 24}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 84508827, "sim_time_ms": 84508.827, "node_id": 3, "event_type": "DONE", "generated": 24}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 84561238, "sim_time_ms": 84561.238, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 84828352, "sim_time_ms": 84828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 84849348, "sim_time_ms": 84849.348, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 85828352, "sim_time_ms": 85828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 85864973, "sim_time_ms": 85864.973, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 86828352, "sim_time_ms": 86828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 86857161, "sim_time_ms": 86857.161, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 87828352, "sim_time_ms": 87828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 87857161, "sim_time_ms": 87857.161, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 88828352, "sim_time_ms": 88828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 88836981, "sim_time_ms": 88836.981, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 89828352, "sim_time_ms": 89828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 89841536, "sim_time_ms": 89841.536, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 90828362, "sim_time_ms": 90828.362, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 90836993, "sim_time_ms": 90836.993, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 91828352, "sim_time_ms": 91828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 91836981, "sim_time_ms": 91836.981, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 92828352, "sim_time_ms": 92828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 92836985, "sim_time_ms": 92836.985, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 93828352, "sim_time_ms": 93828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 93849348, "sim_time_ms": 93849.348, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 94828352, "sim_time_ms": 94828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 94864973, "sim_time_ms": 94864.973, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 95828352, "sim_time_ms": 95828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 95872786, "sim_time_ms": 95872.786, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 96828352, "sim_time_ms": 96828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 96864973, "sim_time_ms": 96864.973, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 97828352, "sim_time_ms": 97828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 97836983, "sim_time_ms": 97836.983, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 98828352, "sim_time_ms": 98828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 98880598, "sim_time_ms": 98880.598, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 99828352, "sim_time_ms": 99828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 99841536, "sim_time_ms": 99841.536, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 100828362, "sim_time_ms": 100828.362, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 100836993, "sim_time_ms": 100836.993, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 101828352, "sim_time_ms": 101828.352, "node_id": 2, "event_type": "RESET_PROBE", "counter": 1}
+{"run_id": "20261114T075347477453Z-B1-2", "sim_time_us": 101872786, "sim_time_ms": 101872.786, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}

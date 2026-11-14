@@ -1,0 +1,8 @@
+[32mINFO  [main] [Cooja.java:1147] - Loading /workspace/results/phase_03/cooja_reset_01/scenario.csc random seed: null[0;39m
+> make -j1 reset_kat.cooja TARGET=cooja
+  CC        reset_kat.c
+  LD        build/cooja/reset_kat.cooja
+[32mINFO  [main] [LogScriptEngine.java:231] - Script timeout in 60000 ms[0;39m
+[32mINFO  [sim] [Simulation.java:450] - Runtime: 320 ms. Simulated time: 2618 ms. Speedup: 8.18125[0;39m
+[32mINFO  [main] [Cooja.java:1173] - TEST OK
+[0;39m

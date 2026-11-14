@@ -1,0 +1,27 @@
+Random seed: 123456
+382000,1,[INFO: Main      ] - Routing: RPL Lite
+382000,1,[INFO: Main      ] - Net: sicslowpan
+382000,1,[INFO: Main      ] - MAC: CSMA
+382000,1,[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+382000,1,[INFO: Main      ] - 802.15.4 Default channel: 26
+382000,1,[INFO: Main      ] Node ID: 1
+382000,1,[INFO: Main      ] Link-layer address: 0001.0001.0001.0001
+382000,1,[INFO: Main      ] Tentative link-local IPv6 address: fe80::201:1:1:1
+382000,1,RESET_BOOT_REQUEST
+HARNESS_GRANT_ONCE
+507000,1,RESET_FIRST_SEALED
+HARNESS_REPLACED_MOTE
+743000,1,[INFO: Main      ] Starting Contiki-NG-a304687
+743000,1,[INFO: Main      ] - Routing: RPL Lite
+743000,1,[INFO: Main      ] - Net: sicslowpan
+743000,1,[INFO: Main      ] - MAC: CSMA
+743000,1,[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+743000,1,[INFO: Main      ] - 802.15.4 Default channel: 26
+743000,1,[INFO: Main      ] Node ID: 1
+743000,1,[INFO: Main      ] Link-layer address: 0001.0001.0001.0001
+743000,1,[INFO: Main      ] Tentative link-local IPv6 address: fe80::201:1:1:1
+743000,1,RESET_BOOT_REQUEST
+HARNESS_REFUSED_REGRANT
+2618000,1,RESET_LOCKED_16_TICKS
+TEST OK
+Test ended at simulation time: 2618000

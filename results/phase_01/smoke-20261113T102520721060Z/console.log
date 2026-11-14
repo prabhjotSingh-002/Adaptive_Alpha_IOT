@@ -1,0 +1,10 @@
+[32mINFO  [main] [Cooja.java:1147] - Loading /workspace/simulations/scenarios/phase1-rpl-9.csc random seed: null[0;39m
+> make -j1 udp-server.cooja TARGET=cooja
+  LD        build/cooja/udp-server.cooja
+> make -j1 udp-client.cooja TARGET=cooja
+  LD        build/cooja/udp-client.cooja
+[32mINFO  [main] [LogScriptEngine.java:231] - Script timeout in 600000 ms[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] -  5% completed,  9.0 sec remaining[0;39m
+[32mINFO  [sim] [Simulation.java:450] - Runtime: 697 ms. Simulated time: 48496 ms. Speedup: 69.57819225251076[0;39m
+[32mINFO  [main] [Cooja.java:1173] - TEST OK
+[0;39m

@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+    "--phase",
+    "4",
+    "--timeout-seconds",
+    "300",
+    "--mode",
+    "all",
+    "--clients",
+    "8",
+    "--target",
+    "z1",
+    "--power-model",
+    "--seed",
+    "123456"
+  ],
+  "status": "failed",
+  "started_utc": "2026-11-14T06:54:13.285388+00:00",
+  "error": "RuntimeError: ValueError: Invalid submission/count/byte/deadline bound",
+  "ended_utc": "2026-11-14T06:58:56.321703+00:00"
+}

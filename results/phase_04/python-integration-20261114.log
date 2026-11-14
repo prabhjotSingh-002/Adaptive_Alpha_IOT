@@ -1,0 +1,18 @@
+test_ascon_accounting_and_unknown_profile (test_metrics.MetricsTests.test_ascon_accounting_and_unknown_profile) ... ok
+test_bad_deadline_fails (test_metrics.MetricsTests.test_bad_deadline_fails) ... ok
+test_corruption_fails (test_metrics.MetricsTests.test_corruption_fails) ... ok
+test_duplicate_not_counted_twice (test_metrics.MetricsTests.test_duplicate_not_counted_twice) ... ok
+test_known_delivery_and_global_latency (test_metrics.MetricsTests.test_known_delivery_and_global_latency) ... ok
+test_missing_done_fails (test_metrics.MetricsTests.test_missing_done_fails) ... ok
+test_missing_generator_fails (test_metrics.MetricsTests.test_missing_generator_fails) ... ok
+test_parse_incomplete_and_malformed (test_metrics.MetricsTests.test_parse_incomplete_and_malformed) ... ok
+test_radio_fragment_dispatch_at_mac_boundary (test_metrics.MetricsTests.test_radio_fragment_dispatch_at_mac_boundary) ... ok
+test_secure_accounting_requires_authentication_and_context (test_metrics.MetricsTests.test_secure_accounting_requires_authentication_and_context) ... ok
+test_secure_packet_cannot_double_count_tag_budget (test_metrics.MetricsTests.test_secure_packet_cannot_double_count_tag_budget) ... ok
+test_stale_config_fails (test_metrics.MetricsTests.test_stale_config_fails) ... ok
+test_unlogged_submission_loss_fails (test_metrics.MetricsTests.test_unlogged_submission_loss_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.003s
+
+OK

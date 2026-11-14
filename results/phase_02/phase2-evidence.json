@@ -1,0 +1,260 @@
+{
+  "recorded_utc": "2026-11-13T09:45:37.778962+00:00",
+  "status": "Phase 2 automated engineering work complete; stopped before Phase 3",
+  "scope": "unprotected N0 only; one paired seed, not publication evidence",
+  "runs": [
+    {
+      "run_id": "20261113T092355028182Z-N0-single-2",
+      "status": "failed",
+      "clients": 2,
+      "mode": "N0-single",
+      "period_ms": 1000,
+      "payload_budget": 67,
+      "error": "Cooja/build failed; inspect console.log"
+    },
+    {
+      "run_id": "20261113T092513624299Z-N0-single-2",
+      "status": "failed",
+      "clients": 2,
+      "mode": "N0-single",
+      "period_ms": 1000,
+      "payload_budget": 67,
+      "error": "Cooja/build failed; inspect console.log"
+    },
+    {
+      "run_id": "20261113T092609386793Z-N0-single-2",
+      "status": "failed",
+      "clients": 2,
+      "mode": "N0-single",
+      "period_ms": 1000,
+      "payload_budget": 67,
+      "error": "Cooja/build failed; inspect console.log"
+    },
+    {
+      "run_id": "20261113T092654004942Z-N0-single-2",
+      "status": "passed",
+      "clients": 2,
+      "mode": "N0-single",
+      "period_ms": 1000,
+      "payload_budget": 67,
+      "error": "",
+      "generated": 48,
+      "unique_delivered": 48,
+      "packets_submitted": 48,
+      "application_packet_bytes": 1008,
+      "p95_delay_ms": 43.31600000000326,
+      "max_hold_ms": 0,
+      "reading_pdr": 1.0,
+      "batch_counts": [
+        1
+      ],
+      "fragment_frames": 0
+    },
+    {
+      "run_id": "20261113T092721488290Z-N0-batch-2",
+      "status": "passed",
+      "clients": 2,
+      "mode": "N0-batch",
+      "period_ms": 1000,
+      "payload_budget": 67,
+      "error": "",
+      "generated": 48,
+      "unique_delivered": 48,
+      "packets_submitted": 16,
+      "application_packet_bytes": 656,
+      "p95_delay_ms": 3038.3060000000028,
+      "max_hold_ms": 3000,
+      "reading_pdr": 1.0,
+      "batch_counts": [
+        3
+      ],
+      "fragment_frames": 0
+    },
+    {
+      "run_id": "20261113T093535634015Z-N0-single-2",
+      "status": "passed",
+      "clients": 2,
+      "mode": "N0-single",
+      "period_ms": 1000,
+      "payload_budget": 67,
+      "error": "",
+      "generated": 48,
+      "unique_delivered": 48,
+      "packets_submitted": 48,
+      "application_packet_bytes": 1008,
+      "p95_delay_ms": 43.31600000000326,
+      "max_hold_ms": 0,
+      "reading_pdr": 1.0,
+      "batch_counts": [
+        1
+      ],
+      "fragment_frames": 0
+    },
+    {
+      "run_id": "20261113T093559206972Z-N0-batch-2",
+      "status": "passed",
+      "clients": 2,
+      "mode": "N0-batch",
+      "period_ms": 1000,
+      "payload_budget": 67,
+      "error": "",
+      "generated": 48,
+      "unique_delivered": 48,
+      "packets_submitted": 16,
+      "application_packet_bytes": 656,
+      "p95_delay_ms": 3039.3060000000028,
+      "max_hold_ms": 3000,
+      "reading_pdr": 1.0,
+      "batch_counts": [
+        3
+      ],
+      "fragment_frames": 0
+    },
+    {
+      "run_id": "20261113T093713547602Z-N0-single-8",
+      "status": "passed",
+      "clients": 8,
+      "mode": "N0-single",
+      "period_ms": 1000,
+      "payload_budget": 67,
+      "error": "",
+      "generated": 192,
+      "unique_delivered": 192,
+      "packets_submitted": 192,
+      "application_packet_bytes": 4032,
+      "p95_delay_ms": 103.55399999999966,
+      "max_hold_ms": 0,
+      "reading_pdr": 1.0,
+      "batch_counts": [
+        1
+      ],
+      "fragment_frames": 0
+    },
+    {
+      "run_id": "20261113T093733639048Z-N0-batch-8",
+      "status": "passed",
+      "clients": 8,
+      "mode": "N0-batch",
+      "period_ms": 1000,
+      "payload_budget": 67,
+      "error": "",
+      "generated": 192,
+      "unique_delivered": 192,
+      "packets_submitted": 64,
+      "application_packet_bytes": 2624,
+      "p95_delay_ms": 3074.685600000003,
+      "max_hold_ms": 3000,
+      "reading_pdr": 1.0,
+      "batch_counts": [
+        3
+      ],
+      "fragment_frames": 0
+    },
+    {
+      "run_id": "20261113T093944037183Z-N0-batch-2",
+      "status": "passed",
+      "clients": 2,
+      "mode": "N0-batch",
+      "period_ms": 500,
+      "payload_budget": 67,
+      "error": "",
+      "generated": 48,
+      "unique_delivered": 48,
+      "packets_submitted": 12,
+      "application_packet_bytes": 612,
+      "p95_delay_ms": 1532.6259999999952,
+      "max_hold_ms": 1500,
+      "reading_pdr": 1.0,
+      "batch_counts": [
+        4
+      ],
+      "fragment_frames": 0
+    },
+    {
+      "run_id": "20261113T094002866908Z-N0-batch-2",
+      "status": "passed",
+      "clients": 2,
+      "mode": "N0-batch",
+      "period_ms": 4000,
+      "payload_budget": 67,
+      "error": "",
+      "generated": 48,
+      "unique_delivered": 48,
+      "packets_submitted": 48,
+      "application_packet_bytes": 1008,
+      "p95_delay_ms": 3044.0160000000033,
+      "max_hold_ms": 3000,
+      "reading_pdr": 1.0,
+      "batch_counts": [
+        1
+      ],
+      "fragment_frames": 0
+    },
+    {
+      "run_id": "20261113T094021560664Z-N0-batch-2",
+      "status": "passed",
+      "clients": 2,
+      "mode": "N0-batch",
+      "period_ms": 1000,
+      "payload_budget": 47,
+      "error": "",
+      "generated": 48,
+      "unique_delivered": 48,
+      "packets_submitted": 24,
+      "application_packet_bytes": 744,
+      "p95_delay_ms": 1038.2859999999957,
+      "max_hold_ms": 1000,
+      "reading_pdr": 1.0,
+      "batch_counts": [
+        2
+      ],
+      "fragment_frames": 0
+    }
+  ],
+  "primary_pair": [
+    "20261113T093713547602Z-N0-single-8",
+    "20261113T093733639048Z-N0-batch-8"
+  ],
+  "phase1_regression": "results/phase_01/smoke-20261113T094208160354Z/manifest.json",
+  "formal_gates": {
+    "G0_human": "pending",
+    "G1_automated": "passed",
+    "G2": "not implemented",
+    "G3": "N0 count/deadline/size checks passed; protected gate pending"
+  },
+  "source_hashes": {
+    "firmware/generated-conf.h": "2634f1a9d400a0e0be80cccff2c8e0e39550067c22c44aa8a70f5aa7bdc07918",
+    "firmware/project-conf.h": "cc8a368bf5f07f1950dd5f9f38cc787a4d3273f2e2eec92f5ca47d08b9101364",
+    "firmware/Makefile": "486679def05600a507d0c4eb447ab635808b72108f3a4ca6bd336a1009bb036d",
+    "firmware/root/root.c": "1c23ef56abd7ec5f3b7a0de4d564b5ea80942611d2e16664a5b7a0d4e3faf4eb",
+    "firmware/root/project-conf.h": "01fc554a8f2631b1642083e4dc02a8cd08c5788e082f2c7858b8cb805329af62",
+    "firmware/root/Makefile": "5ee2a7c560d50dbc275cc92d2d2089ccbb7d5cb4ecc59bc40981a90e234e8f97",
+    "firmware/sensor/project-conf.h": "01fc554a8f2631b1642083e4dc02a8cd08c5788e082f2c7858b8cb805329af62",
+    "firmware/sensor/Makefile": "e71da0fad3e93dd110d10ea3c3bb0c685e494309fddaf1545ee3e94b03f43904",
+    "firmware/sensor/sensor.c": "997d386664dfa918d0e9a55650ab8a60d9481296c522359aaaf939b4118f674a",
+    "firmware/common/protocol.h": "e80260448459ec25d8e81fcd4802d0d48267d20b5a7f54e1609c16291e3e661c",
+    "firmware/common/events.h": "28bc2d92c3809618da4bb5f3de4a1e78f0756b2280659cdaff88f2fc4ed32f1f",
+    "firmware/common/protocol.c": "1083c1178b0afc0559eaf6d46f119e097eb5aba6d0214e7b848905025f6c40ec",
+    "firmware/aggregate/aggregate.h": "d4f2b38ad774ac16a234f7696b05e0920758d840f0ded7f9a36f90a0a66ccb9e",
+    "firmware/aggregate/aggregate.c": "bae672e0182bb7aea54f1d1374e443f443534e356f62827c75779739413d5c1d",
+    "host/run_experiment.py": "7b6f79f9eb7ac7ed178c966e1090ad607d63a19b70c34ed1c04ee9760dfb8cc6",
+    "host/plots.py": "0523167e3319324e310efa9ae1189739c09664e6661466369f9d48cce5a6c227",
+    "host/parse_logs.py": "71956a34044dea1bf49bb3271da8dde165ddc0a169c71741ebcc0c1b67aa52c5",
+    "host/metrics.py": "92cf334635dea8026df27d701c5247903c164c5f8f9263a75d2daa75a4cfaeaa",
+    "tests/unit/test_core.c": "ef9ce4d0a2fb9da4f44b3dce6ead479f6661fb8e2e4e37b7de5c475391d05492",
+    "tests/unit/test_metrics.py": "5d7027c7d23b6085c8af2e1993d0808ddcab0f22be853bdafdf5b3aa3ea68390",
+    "configs/phase2.json": "68e3a6ce31e4a4462aebbcae2705d88751bb8229e1b6405294d37ba0e84ef7f1",
+    "scripts/install_docker.sh": "c5758c7c542f919d14b54a055c2008374d0a45529390b2790d79db559c3bef5a",
+    "scripts/test_phase2.sh": "a5f89518a82489609083a5fe98ca1f2bb36d8e55eef7d02b746ad62c12ab010e",
+    "scripts/prepare_phase1.py": "77444e860ee614f405db08164016a8559971dcb2a8d1db40a8d582f6af203a08",
+    "scripts/smoke.sh": "db0aff0b3fdef5438eb8fa6579dd77e7a65fa64c89e8f6416353129a240f837e",
+    "scripts/phase1_container.sh": "98084188de0506ab24b4a0289b25bf9b2a74086345cdd6c130d890747ee459b3",
+    "scripts/smoke.py": "37e710e78dfe301f39c193c0dd78a714880ddde2b10ba9f7854c1dea7b174529"
+  },
+  "plan_hashes": {
+    "PLANS/IMPLEMENTATION_AND_DECISION_REVIEW.md": "69b6033b2301d61c160c5d8f8ecc1107afb0bfe9fd0c73063d23b92d861d3e3a",
+    "PLANS/MASTER_IMPLEMENTATION_PLAN.md": "2fad0d0b731e4b57409e3500bd18597c34e83991b6e495b2d60b94daab0bc385"
+  },
+  "test_log": "results/phase_02/unit/tests.log",
+  "chart": "results/phase_02/pilot-comparison.png"
+}

@@ -1,0 +1,32 @@
+{
+  "security": "AES-128-CCM authenticated pilot",
+  "energy_measurement": null,
+  "security_test_injections": 0,
+  "security_test_rejections": 0,
+  "rejection_reasons": {},
+  "unique_authenticated_delivered": 48,
+  "generated": 48,
+  "submitted_readings": 48,
+  "explicit_drops": 0,
+  "unique_delivered": 48,
+  "missing_readings": 0,
+  "packets_submitted": 16,
+  "packets_accepted": 16,
+  "packet_pdr": 1.0,
+  "application_packet_bytes": 912,
+  "reading_pdr": 1.0,
+  "p95_delay_ms": 3039.818000000005,
+  "max_hold_ms": 3000,
+  "duplicates": 0,
+  "batch_counts": [
+    3
+  ],
+  "radio": {
+    "captured_frames": 73,
+    "captured_frame_bytes": 4255,
+    "data_frames": 43,
+    "max_frame_bytes": 102,
+    "fragment_frames": 0,
+    "unclassified_data_frames": 0
+  }
+}

@@ -1,0 +1,32 @@
+[32mINFO  [main] [Cooja.java:1147] - Loading /workspace/results/phase_02/20261113T092355028182Z-N0-single-2/scenario.csc random seed: null[0;39m
+> make -j1 root.cooja TARGET=cooja
+  MKDIR     build/cooja/obj/.deps
+  CC        root.c
+In file included from ../../external/contiki-ng/os/sys/process.h:58,
+                 from ../../external/contiki-ng/os/contiki.h:40,
+                 from root.c:1:
+root.c: In function 'process_thread_root_process':
+root.c:25:30: error: unused parameter 'ev' [-Werror=unused-parameter]
+   25 | PROCESS_THREAD(root_process, ev, data) {
+../../external/contiki-ng/os/sys/pt.h:265:35: note: in definition of macro 'PT_THREAD'
+  265 | #define PT_THREAD(name_args) char name_args
+      |                                   ^~~~~~~~~
+root.c:25:1: note: in expansion of macro 'PROCESS_THREAD'
+   25 | PROCESS_THREAD(root_process, ev, data) {
+      | ^~~~~~~~~~~~~~
+root.c:25:34: error: unused parameter 'data' [-Werror=unused-parameter]
+   25 | PROCESS_THREAD(root_process, ev, data) {
+../../external/contiki-ng/os/sys/pt.h:265:35: note: in definition of macro 'PT_THREAD'
+  265 | #define PT_THREAD(name_args) char name_args
+      |                                   ^~~~~~~~~
+root.c:25:1: note: in expansion of macro 'PROCESS_THREAD'
+   25 | PROCESS_THREAD(root_process, ev, data) {
+      | ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+make: *** [../../external/contiki-ng/Makefile.include:565: build/cooja/obj/root.o] Error 1
+Compilation process returned error code 2
+[1;91mERROR [main] [Cooja.java:1154] - Failed to load simulation: Compilation failed[0;39m
+[1;91mERROR [main] [Cooja.java:1160] - TEST /workspace/results/phase_02/20261113T092355028182Z-N0-single-2/scenario.csc FAILED
+[0;39m
+[1;91mERROR [main] [Cooja.java:1183] - Failed tests:
+/workspace/results/phase_02/20261113T092355028182Z-N0-single-2/scenario.csc seed: null[0;39m

@@ -1,0 +1,991 @@
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2040879, "sim_time_ms": 2040.879, "node_id": 1, "event_type": "ENERGY_TIMER", "frequency": 32768, "bits": 16}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2044370, "sim_time_ms": 2044.37, "node_id": 1, "event_type": "META2", "config_id": 909792687, "profile": 2, "profile_count": 2, "switch_test": 0}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2047636, "sim_time_ms": 2047.636, "node_id": 1, "event_type": "BOOT_REQUEST", "profile": 2}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2156928, "sim_time_ms": 2156.928, "node_id": 2, "event_type": "ENERGY_TIMER", "frequency": 32768, "bits": 16}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2160419, "sim_time_ms": 2160.419, "node_id": 2, "event_type": "META2", "config_id": 909792687, "profile": 2, "profile_count": 2, "switch_test": 0}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2162336, "sim_time_ms": 2162.336, "node_id": 2, "event_type": "BOOT_REQUEST", "profile": 2}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2165649, "sim_time_ms": 2165.649, "node_id": 2, "event_type": "SCHEDULE", "local_ms": 828, "warmup_ms": 60000, "period_ms": 1000, "total": 24}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2168117, "sim_time_ms": 2168.117, "node_id": 2, "event_type": "READY", "cap": 1, "deadline_ms": 3000, "period_ms": 1000, "total": 24}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2172406, "sim_time_ms": 2172.406, "node_id": 1, "event_type": "CONTEXT_READY", "profile": 2}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2173970, "sim_time_ms": 2173.97, "node_id": 1, "event_type": "ROOT_READY", "profile": 2}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2229881, "sim_time_ms": 2229.881, "node_id": 3, "event_type": "ENERGY_TIMER", "frequency": 32768, "bits": 16}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2233372, "sim_time_ms": 2233.372, "node_id": 3, "event_type": "META2", "config_id": 909792687, "profile": 2, "profile_count": 2, "switch_test": 0}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2235290, "sim_time_ms": 2235.29, "node_id": 3, "event_type": "BOOT_REQUEST", "profile": 2}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2238603, "sim_time_ms": 2238.603, "node_id": 3, "event_type": "SCHEDULE", "local_ms": 828, "warmup_ms": 60000, "period_ms": 1000, "total": 24}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2241071, "sim_time_ms": 2241.071, "node_id": 3, "event_type": "READY", "cap": 1, "deadline_ms": 3000, "period_ms": 1000, "total": 24}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2288348, "sim_time_ms": 2288.348, "node_id": 2, "event_type": "CONTEXT_READY", "profile": 2}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 2361302, "sim_time_ms": 2361.302, "node_id": 3, "event_type": "CONTEXT_READY", "profile": 2}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 3054012, "sim_time_ms": 3054.012, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 28384, "lpm": 31268, "deep": 0, "tx": 0, "listen": 33930}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 3057711, "sim_time_ms": 3057.711, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 3077372, "sim_time_ms": 3077.372, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 70320625, "remaining_nj": 18446744073639230990}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 3078947, "sim_time_ms": 3078.947, "node_id": 1, "event_type": "ROUTE", "parent": 0, "rank": 128}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 3170069, "sim_time_ms": 3170.069, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 28557, "lpm": 31095, "deep": 0, "tx": 0, "listen": 33930}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 3173717, "sim_time_ms": 3173.717, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 3186895, "sim_time_ms": 3186.895, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 70387130, "remaining_nj": 4429612870}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 3188246, "sim_time_ms": 3188.246, "node_id": 2, "event_type": "ROUTE", "parent": 0, "rank": 0}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 3243021, "sim_time_ms": 3243.021, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 28557, "lpm": 31095, "deep": 0, "tx": 0, "listen": 33930}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 3246669, "sim_time_ms": 3246.669, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 3266324, "sim_time_ms": 3266.324, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 70387130, "remaining_nj": 18446744073639164485}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 3267675, "sim_time_ms": 3267.675, "node_id": 3, "event_type": "ROUTE", "parent": 0, "rank": 0}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 4054012, "sim_time_ms": 4054.012, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 30765, "lpm": 61655, "deep": 0, "tx": 0, "listen": 66698}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 4057711, "sim_time_ms": 4057.711, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 4078011, "sim_time_ms": 4078.011, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 127639231, "remaining_nj": 18446744073581912384}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 4170069, "sim_time_ms": 4170.069, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 30824, "lpm": 61596, "deep": 0, "tx": 0, "listen": 66698}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 4173717, "sim_time_ms": 4173.717, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 4187520, "sim_time_ms": 4187.52, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 127661912, "remaining_nj": 4372338088}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 4243031, "sim_time_ms": 4243.031, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 31036, "lpm": 61384, "deep": 0, "tx": 0, "listen": 66698}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 4246679, "sim_time_ms": 4246.679, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 4266998, "sim_time_ms": 4266.998, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 127743409, "remaining_nj": 18446744073581808206}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 5055256, "sim_time_ms": 5055.256, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 33334, "lpm": 91854, "deep": 0, "tx": 102, "listen": 99363}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 5058955, "sim_time_ms": 5058.955, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 5079236, "sim_time_ms": 5079.236, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 185015351, "remaining_nj": 18446744073524536264}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 5170080, "sim_time_ms": 5170.08, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 33068, "lpm": 92120, "deep": 0, "tx": 0, "listen": 99466}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 5173728, "sim_time_ms": 5173.728, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 5187519, "sim_time_ms": 5187.519, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 184927852, "remaining_nj": 4315072148}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 5243030, "sim_time_ms": 5243.03, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 33494, "lpm": 91694, "deep": 0, "tx": 0, "listen": 99466}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 5246678, "sim_time_ms": 5246.678, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 5266967, "sim_time_ms": 5266.967, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 185091615, "remaining_nj": 18446744073524460000}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 6056505, "sim_time_ms": 6056.505, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 35725, "lpm": 122231, "deep": 0, "tx": 102, "listen": 132131}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 6060204, "sim_time_ms": 6060.204, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 6080483, "sim_time_ms": 6080.483, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 242337802, "remaining_nj": 18446744073467213813}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 6171318, "sim_time_ms": 6171.318, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 35312, "lpm": 122644, "deep": 0, "tx": 0, "listen": 132234}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 6174966, "sim_time_ms": 6174.966, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 6188752, "sim_time_ms": 6188.752, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 242193792, "remaining_nj": 4257806208}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 6244267, "sim_time_ms": 6244.267, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 35951, "lpm": 122005, "deep": 0, "tx": 0, "listen": 132234}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 6247915, "sim_time_ms": 6247.915, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 6268224, "sim_time_ms": 6268.224, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 242439437, "remaining_nj": 18446744073467112178}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 7056503, "sim_time_ms": 7056.503, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 38187, "lpm": 152537, "deep": 0, "tx": 102, "listen": 164899}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 7060202, "sim_time_ms": 7060.202, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 7080475, "sim_time_ms": 7080.475, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 299687546, "remaining_nj": 18446744073409864069}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 7171325, "sim_time_ms": 7171.325, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 37598, "lpm": 153126, "deep": 0, "tx": 0, "listen": 165002}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 7174973, "sim_time_ms": 7174.973, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 7188759, "sim_time_ms": 7188.759, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 299475878, "remaining_nj": 4200524122}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 7244266, "sim_time_ms": 7244.266, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 38449, "lpm": 152275, "deep": 0, "tx": 0, "listen": 165002}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 7247914, "sim_time_ms": 7247.914, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 7268213, "sim_time_ms": 7268.213, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 299803020, "remaining_nj": 18446744073409748595}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 8056507, "sim_time_ms": 8056.507, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 40618, "lpm": 182874, "deep": 0, "tx": 102, "listen": 197667}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 8060206, "sim_time_ms": 8060.206, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 8080476, "sim_time_ms": 8080.476, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 357025373, "remaining_nj": 18446744073352526242}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 8171323, "sim_time_ms": 8171.323, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 39884, "lpm": 183608, "deep": 0, "tx": 0, "listen": 197770}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 8174971, "sim_time_ms": 8174.971, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 8188770, "sim_time_ms": 8188.77, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 356757964, "remaining_nj": 4143242036}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 8244274, "sim_time_ms": 8244.274, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 40947, "lpm": 182545, "deep": 0, "tx": 0, "listen": 197770}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 8247922, "sim_time_ms": 8247.922, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 8268221, "sim_time_ms": 8268.221, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 357166604, "remaining_nj": 18446744073352385011}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 9056495, "sim_time_ms": 9056.495, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 43050, "lpm": 213210, "deep": 0, "tx": 102, "listen": 230435}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 9060194, "sim_time_ms": 9060.194, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 9080445, "sim_time_ms": 9080.445, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 414363584, "remaining_nj": 18446744073295188031}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 9171315, "sim_time_ms": 9171.315, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 42170, "lpm": 214090, "deep": 0, "tx": 0, "listen": 230538}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 9174963, "sim_time_ms": 9174.963, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 9188771, "sim_time_ms": 9188.771, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 414040050, "remaining_nj": 4085959950}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 9244263, "sim_time_ms": 9244.263, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 43445, "lpm": 212815, "deep": 0, "tx": 0, "listen": 230538}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 9247911, "sim_time_ms": 9247.911, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 9268206, "sim_time_ms": 9268.206, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 414530186, "remaining_nj": 18446744073295021429}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 10056497, "sim_time_ms": 10056.497, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 45481, "lpm": 243547, "deep": 0, "tx": 102, "listen": 263203}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 10060196, "sim_time_ms": 10060.196, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 10080465, "sim_time_ms": 10080.465, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 471701411, "remaining_nj": 18446744073237850204}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 10171322, "sim_time_ms": 10171.322, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 44455, "lpm": 244573, "deep": 0, "tx": 0, "listen": 263306}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 10174970, "sim_time_ms": 10174.97, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 10188768, "sim_time_ms": 10188.768, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 471321751, "remaining_nj": 4028678249}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 10244280, "sim_time_ms": 10244.28, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 45943, "lpm": 243085, "deep": 0, "tx": 0, "listen": 263306}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 10247928, "sim_time_ms": 10247.928, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 10268217, "sim_time_ms": 10268.217, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 471893769, "remaining_nj": 18446744073237657846}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 11056522, "sim_time_ms": 11056.522, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 47912, "lpm": 273884, "deep": 0, "tx": 102, "listen": 295971}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 11060221, "sim_time_ms": 11060.221, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 11080489, "sim_time_ms": 11080.489, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 529039238, "remaining_nj": 18446744073180512377}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 11171325, "sim_time_ms": 11171.325, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 46741, "lpm": 275055, "deep": 0, "tx": 0, "listen": 296074}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 11174973, "sim_time_ms": 11174.973, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 11188771, "sim_time_ms": 11188.771, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 528603838, "remaining_nj": 3971396162}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 11244274, "sim_time_ms": 11244.274, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 48441, "lpm": 273355, "deep": 0, "tx": 0, "listen": 296074}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 11247922, "sim_time_ms": 11247.922, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 11268217, "sim_time_ms": 11268.217, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 529257353, "remaining_nj": 18446744073180294262}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 12056507, "sim_time_ms": 12056.507, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 50417, "lpm": 304147, "deep": 0, "tx": 102, "listen": 328739}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 12060206, "sim_time_ms": 12060.206, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 12080493, "sim_time_ms": 12080.493, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 586405512, "remaining_nj": 18446744073123146103}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 12171322, "sim_time_ms": 12171.322, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 49099, "lpm": 305465, "deep": 0, "tx": 0, "listen": 328842}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 12174970, "sim_time_ms": 12174.97, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 12188784, "sim_time_ms": 12188.784, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 585913602, "remaining_nj": 3914086398}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 12244284, "sim_time_ms": 12244.284, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 51011, "lpm": 303553, "deep": 0, "tx": 0, "listen": 328842}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 12247932, "sim_time_ms": 12247.932, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 12268241, "sim_time_ms": 12268.241, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 586648614, "remaining_nj": 18446744073122903001}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 13056498, "sim_time_ms": 13056.498, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 52849, "lpm": 334483, "deep": 0, "tx": 102, "listen": 361507}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 13060197, "sim_time_ms": 13060.197, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 13080452, "sim_time_ms": 13080.452, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 643743724, "remaining_nj": 18446744073065807891}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 13171315, "sim_time_ms": 13171.315, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 51385, "lpm": 335947, "deep": 0, "tx": 0, "listen": 361610}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 13174963, "sim_time_ms": 13174.963, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 13188751, "sim_time_ms": 13188.751, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 643195687, "remaining_nj": 3856804313}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 13244269, "sim_time_ms": 13244.269, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 53511, "lpm": 333821, "deep": 0, "tx": 0, "listen": 361610}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 13247917, "sim_time_ms": 13247.917, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 13268202, "sim_time_ms": 13268.202, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 644012966, "remaining_nj": 18446744073065538649}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 14056507, "sim_time_ms": 14056.507, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 55489, "lpm": 364611, "deep": 0, "tx": 204, "listen": 394172}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 14060206, "sim_time_ms": 14060.206, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 14080516, "sim_time_ms": 14080.516, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 701147138, "remaining_nj": 18446744073008404477}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 14171327, "sim_time_ms": 14171.327, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 53671, "lpm": 366429, "deep": 0, "tx": 0, "listen": 394378}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 14174975, "sim_time_ms": 14174.975, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 14188780, "sim_time_ms": 14188.78, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 700477774, "remaining_nj": 3799522226}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 14244275, "sim_time_ms": 14244.275, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 56009, "lpm": 364091, "deep": 0, "tx": 0, "listen": 394378}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 14247923, "sim_time_ms": 14247.923, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 14268239, "sim_time_ms": 14268.239, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 701376549, "remaining_nj": 18446744073008175066}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 15056509, "sim_time_ms": 15056.509, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 57951, "lpm": 394917, "deep": 0, "tx": 204, "listen": 426940}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 15060208, "sim_time_ms": 15060.208, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 15080494, "sim_time_ms": 15080.494, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 758496882, "remaining_nj": 18446744072951054733}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 15171334, "sim_time_ms": 15171.334, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 55957, "lpm": 396911, "deep": 0, "tx": 0, "listen": 427146}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 15174982, "sim_time_ms": 15174.982, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 15188802, "sim_time_ms": 15188.802, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 757759859, "remaining_nj": 3742240141}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 15244284, "sim_time_ms": 15244.284, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 58509, "lpm": 394359, "deep": 0, "tx": 0, "listen": 427146}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 15247932, "sim_time_ms": 15247.932, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 15268247, "sim_time_ms": 15268.247, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 758740901, "remaining_nj": 18446744072950810714}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 16056515, "sim_time_ms": 16056.515, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 60383, "lpm": 425253, "deep": 0, "tx": 204, "listen": 459708}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 16060214, "sim_time_ms": 16060.214, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 16080506, "sim_time_ms": 16080.506, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 815835094, "remaining_nj": 18446744072893716521}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 16171333, "sim_time_ms": 16171.333, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 58243, "lpm": 427393, "deep": 0, "tx": 0, "listen": 459914}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 16174981, "sim_time_ms": 16174.981, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 16188800, "sim_time_ms": 16188.8, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 815041945, "remaining_nj": 3684958055}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 16244286, "sim_time_ms": 16244.286, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 61009, "lpm": 424627, "deep": 0, "tx": 0, "listen": 459914}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 16247934, "sim_time_ms": 16247.934, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 16268239, "sim_time_ms": 16268.239, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 816105253, "remaining_nj": 18446744072893446362}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 17056515, "sim_time_ms": 17056.515, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 62816, "lpm": 455588, "deep": 0, "tx": 204, "listen": 492476}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 17060214, "sim_time_ms": 17060.214, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 17080486, "sim_time_ms": 17080.486, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 873173689, "remaining_nj": 18446744072836377926}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 17171331, "sim_time_ms": 17171.331, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 60529, "lpm": 457875, "deep": 0, "tx": 0, "listen": 492682}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 17174979, "sim_time_ms": 17174.979, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 17188772, "sim_time_ms": 17188.772, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 872324031, "remaining_nj": 3627675969}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 17244283, "sim_time_ms": 17244.283, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 63509, "lpm": 454895, "deep": 0, "tx": 0, "listen": 492682}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 17247931, "sim_time_ms": 17247.931, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 17268234, "sim_time_ms": 17268.234, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 873469604, "remaining_nj": 18446744072836082011}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 18056509, "sim_time_ms": 18056.509, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 65248, "lpm": 485924, "deep": 0, "tx": 204, "listen": 525244}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 18060208, "sim_time_ms": 18060.208, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 18080508, "sim_time_ms": 18080.508, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 930511901, "remaining_nj": 18446744072779039714}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 18171322, "sim_time_ms": 18171.322, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 62814, "lpm": 488358, "deep": 0, "tx": 0, "listen": 525450}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 18174970, "sim_time_ms": 18174.97, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 18188777, "sim_time_ms": 18188.777, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 929605732, "remaining_nj": 3570394268}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 18244271, "sim_time_ms": 18244.271, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 66009, "lpm": 485163, "deep": 0, "tx": 0, "listen": 525450}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 18247919, "sim_time_ms": 18247.919, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 18268221, "sim_time_ms": 18268.221, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 930833957, "remaining_nj": 18446744072778717658}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 19056512, "sim_time_ms": 19056.512, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 67681, "lpm": 516259, "deep": 0, "tx": 204, "listen": 558012}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 19060211, "sim_time_ms": 19060.211, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 19080500, "sim_time_ms": 19080.5, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 987850496, "remaining_nj": 18446744072721701119}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 19171327, "sim_time_ms": 19171.327, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 65100, "lpm": 518840, "deep": 0, "tx": 0, "listen": 558218}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 19174975, "sim_time_ms": 19174.975, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 19188776, "sim_time_ms": 19188.776, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 986887818, "remaining_nj": 3513112182}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 19244280, "sim_time_ms": 19244.28, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 68507, "lpm": 515433, "deep": 0, "tx": 0, "listen": 558218}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 19247928, "sim_time_ms": 19247.928, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 19268243, "sim_time_ms": 19268.243, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 988197540, "remaining_nj": 18446744072721354075}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 20056520, "sim_time_ms": 20056.52, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 70113, "lpm": 546595, "deep": 0, "tx": 204, "listen": 590780}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 20060219, "sim_time_ms": 20060.219, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 20081113, "sim_time_ms": 20081.113, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1045188708, "remaining_nj": 18446744072664362907}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 20171332, "sim_time_ms": 20171.332, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 67385, "lpm": 549323, "deep": 0, "tx": 0, "listen": 590986}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 20174980, "sim_time_ms": 20174.98, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 20189412, "sim_time_ms": 20189.412, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1044169519, "remaining_nj": 3455830481}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 20244289, "sim_time_ms": 20244.289, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 71007, "lpm": 545701, "deep": 0, "tx": 0, "listen": 590986}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 20247937, "sim_time_ms": 20247.937, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 20268870, "sim_time_ms": 20268.87, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1045561892, "remaining_nj": 18446744072663989723}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 21056517, "sim_time_ms": 21056.517, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 72566, "lpm": 576910, "deep": 0, "tx": 204, "listen": 623548}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 21060216, "sim_time_ms": 21060.216, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 21081113, "sim_time_ms": 21081.113, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1102534992, "remaining_nj": 18446744072607016623}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 21171340, "sim_time_ms": 21171.34, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 69692, "lpm": 579784, "deep": 0, "tx": 0, "listen": 623754}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 21174988, "sim_time_ms": 21174.988, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 21189395, "sim_time_ms": 21189.395, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1101459679, "remaining_nj": 3398540321}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 21244305, "sim_time_ms": 21244.305, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 73526, "lpm": 575950, "deep": 0, "tx": 0, "listen": 623754}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 21247953, "sim_time_ms": 21247.953, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 21268872, "sim_time_ms": 21268.872, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1102933548, "remaining_nj": 18446744072606618067}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 22056524, "sim_time_ms": 22056.524, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 75091, "lpm": 607153, "deep": 0, "tx": 204, "listen": 656316}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 22060223, "sim_time_ms": 22060.223, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 22081119, "sim_time_ms": 22081.119, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1159908954, "remaining_nj": 18446744072549642661}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 22171326, "sim_time_ms": 22171.326, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 72071, "lpm": 610173, "deep": 0, "tx": 0, "listen": 656522}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 22174974, "sim_time_ms": 22174.974, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 22189392, "sim_time_ms": 22189.392, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1158777516, "remaining_nj": 3341222484}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 22244285, "sim_time_ms": 22244.285, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 76117, "lpm": 606127, "deep": 0, "tx": 0, "listen": 656522}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 22247933, "sim_time_ms": 22247.933, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 22268844, "sim_time_ms": 22268.844, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1160332882, "remaining_nj": 18446744072549218733}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 23056518, "sim_time_ms": 23056.518, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 77544, "lpm": 637468, "deep": 0, "tx": 204, "listen": 689084}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 23060217, "sim_time_ms": 23060.217, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 23081103, "sim_time_ms": 23081.103, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1217255238, "remaining_nj": 18446744072492296377}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 23171326, "sim_time_ms": 23171.326, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 74378, "lpm": 640634, "deep": 0, "tx": 0, "listen": 689290}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 23174974, "sim_time_ms": 23174.974, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 23189382, "sim_time_ms": 23189.382, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1216067674, "remaining_nj": 3283932326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 23244291, "sim_time_ms": 23244.291, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 78636, "lpm": 636376, "deep": 0, "tx": 0, "listen": 689290}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 23247939, "sim_time_ms": 23247.939, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 23268853, "sim_time_ms": 23268.853, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1217704538, "remaining_nj": 18446744072491847077}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 24056521, "sim_time_ms": 24056.521, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 79996, "lpm": 667784, "deep": 0, "tx": 204, "listen": 721852}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 24060220, "sim_time_ms": 24060.22, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 24081106, "sim_time_ms": 24081.106, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1274601138, "remaining_nj": 18446744072434950477}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 24171333, "sim_time_ms": 24171.333, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 76683, "lpm": 671097, "deep": 0, "tx": 0, "listen": 722058}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 24174981, "sim_time_ms": 24174.981, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 24189409, "sim_time_ms": 24189.409, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1273357064, "remaining_nj": 3226642936}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 24244275, "sim_time_ms": 24244.275, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 81155, "lpm": 666625, "deep": 0, "tx": 0, "listen": 722058}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 24247923, "sim_time_ms": 24247.923, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 24268878, "sim_time_ms": 24268.878, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1275076193, "remaining_nj": 18446744072434475422}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 25056512, "sim_time_ms": 25056.512, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 82448, "lpm": 698100, "deep": 0, "tx": 204, "listen": 754620}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 25060211, "sim_time_ms": 25060.211, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 25081098, "sim_time_ms": 25081.098, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1331947038, "remaining_nj": 18446744072377604577}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 25171346, "sim_time_ms": 25171.346, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 78990, "lpm": 701558, "deep": 0, "tx": 0, "listen": 754826}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 25174994, "sim_time_ms": 25174.994, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 25189416, "sim_time_ms": 25189.416, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1330647223, "remaining_nj": 3169352777}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 25244286, "sim_time_ms": 25244.286, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 83675, "lpm": 696873, "deep": 0, "tx": 0, "listen": 754826}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 25247934, "sim_time_ms": 25247.934, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 25268847, "sim_time_ms": 25268.847, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1332448234, "remaining_nj": 18446744072377103381}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 26056510, "sim_time_ms": 26056.51, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 84900, "lpm": 728416, "deep": 0, "tx": 204, "listen": 787388}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 26060209, "sim_time_ms": 26060.209, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 26081094, "sim_time_ms": 26081.094, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1389292938, "remaining_nj": 18446744072320258677}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 26171338, "sim_time_ms": 26171.338, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 81297, "lpm": 732019, "deep": 0, "tx": 0, "listen": 787594}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 26174986, "sim_time_ms": 26174.986, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 26189415, "sim_time_ms": 26189.415, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1387937382, "remaining_nj": 3112062618}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 26244290, "sim_time_ms": 26244.29, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 86194, "lpm": 727122, "deep": 0, "tx": 0, "listen": 787594}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 26247938, "sim_time_ms": 26247.938, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 26268877, "sim_time_ms": 26268.877, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1389819891, "remaining_nj": 18446744072319731724}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 27056511, "sim_time_ms": 27056.511, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 87352, "lpm": 758732, "deep": 0, "tx": 204, "listen": 820156}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 27060211, "sim_time_ms": 27060.211, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 27081101, "sim_time_ms": 27081.101, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1446638837, "remaining_nj": 18446744072262912778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 27171320, "sim_time_ms": 27171.32, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 83604, "lpm": 762480, "deep": 0, "tx": 0, "listen": 820362}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 27174968, "sim_time_ms": 27174.968, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 27189389, "sim_time_ms": 27189.389, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1445227540, "remaining_nj": 3054772460}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 27244285, "sim_time_ms": 27244.285, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 88714, "lpm": 757370, "deep": 0, "tx": 0, "listen": 820362}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 27247933, "sim_time_ms": 27247.933, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 27268862, "sim_time_ms": 27268.862, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1447191930, "remaining_nj": 18446744072262359685}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 28056506, "sim_time_ms": 28056.506, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 89804, "lpm": 789048, "deep": 0, "tx": 204, "listen": 852924}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 28060205, "sim_time_ms": 28060.205, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 28081128, "sim_time_ms": 28081.128, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1503984737, "remaining_nj": 18446744072205566878}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 28171341, "sim_time_ms": 28171.341, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 85911, "lpm": 792941, "deep": 0, "tx": 0, "listen": 853130}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 28174989, "sim_time_ms": 28174.989, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 28189423, "sim_time_ms": 28189.423, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1502517700, "remaining_nj": 2997482300}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 28244283, "sim_time_ms": 28244.283, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 91233, "lpm": 787619, "deep": 0, "tx": 0, "listen": 853130}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 28247931, "sim_time_ms": 28247.931, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 28268848, "sim_time_ms": 28268.848, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1504563587, "remaining_nj": 18446744072204988028}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 29056502, "sim_time_ms": 29056.502, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 92257, "lpm": 819363, "deep": 0, "tx": 204, "listen": 885692}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 29060201, "sim_time_ms": 29060.201, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 29081135, "sim_time_ms": 29081.135, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1561331021, "remaining_nj": 18446744072148220594}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 29171324, "sim_time_ms": 29171.324, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 88218, "lpm": 823402, "deep": 0, "tx": 0, "listen": 885898}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 29174972, "sim_time_ms": 29174.972, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 29189396, "sim_time_ms": 29189.396, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1559807858, "remaining_nj": 2940192142}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 29244293, "sim_time_ms": 29244.293, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 93752, "lpm": 817868, "deep": 0, "tx": 0, "listen": 885898}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 29247941, "sim_time_ms": 29247.941, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 29268863, "sim_time_ms": 29268.863, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1561935242, "remaining_nj": 18446744072147616373}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 30056530, "sim_time_ms": 30056.53, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 94919, "lpm": 849469, "deep": 0, "tx": 306, "listen": 918357}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 30060229, "sim_time_ms": 30060.229, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 30081104, "sim_time_ms": 30081.104, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1618742893, "remaining_nj": 18446744072090808722}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 30171335, "sim_time_ms": 30171.335, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 90525, "lpm": 853863, "deep": 0, "tx": 0, "listen": 918666}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 30174983, "sim_time_ms": 30174.983, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 30189417, "sim_time_ms": 30189.417, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1617098016, "remaining_nj": 2882901984}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 30244281, "sim_time_ms": 30244.281, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 96271, "lpm": 848117, "deep": 0, "tx": 0, "listen": 918666}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 30247929, "sim_time_ms": 30247.929, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 30268856, "sim_time_ms": 30268.856, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1619306898, "remaining_nj": 18446744072090244717}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 31056533, "sim_time_ms": 31056.533, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 97401, "lpm": 879755, "deep": 0, "tx": 306, "listen": 951125}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 31060232, "sim_time_ms": 31060.232, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 31081107, "sim_time_ms": 31081.107, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1676100326, "remaining_nj": 18446744072033451289}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 31171335, "sim_time_ms": 31171.335, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 92833, "lpm": 884323, "deep": 0, "tx": 0, "listen": 951434}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 31174983, "sim_time_ms": 31174.983, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 31189408, "sim_time_ms": 31189.408, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1674388559, "remaining_nj": 2825611441}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 31244301, "sim_time_ms": 31244.301, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 98790, "lpm": 878366, "deep": 0, "tx": 0, "listen": 951434}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 31247949, "sim_time_ms": 31247.949, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 31268873, "sim_time_ms": 31268.873, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1676678555, "remaining_nj": 18446744072032873060}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 32056527, "sim_time_ms": 32056.527, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 99925, "lpm": 909999, "deep": 0, "tx": 306, "listen": 983893}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 32060227, "sim_time_ms": 32060.227, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 32081109, "sim_time_ms": 32081.109, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1733473904, "remaining_nj": 18446744071976077711}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 32171340, "sim_time_ms": 32171.34, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 95212, "lpm": 914712, "deep": 0, "tx": 0, "listen": 984202}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 32174988, "sim_time_ms": 32174.988, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 32189397, "sim_time_ms": 32189.397, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1731706397, "remaining_nj": 2768293603}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 32244910, "sim_time_ms": 32244.91, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 101381, "lpm": 908543, "deep": 0, "tx": 0, "listen": 984202}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 32248558, "sim_time_ms": 32248.558, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 32269470, "sim_time_ms": 32269.47, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1734077889, "remaining_nj": 18446744071975473726}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 33057758, "sim_time_ms": 33057.758, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 102610, "lpm": 940082, "deep": 0, "tx": 306, "listen": 1016661}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 33061457, "sim_time_ms": 33061.457, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 33082356, "sim_time_ms": 33082.356, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1790909373, "remaining_nj": 18446744071918642242}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 33171959, "sim_time_ms": 33171.959, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 97750, "lpm": 944942, "deep": 0, "tx": 0, "listen": 1016970}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 33175607, "sim_time_ms": 33175.607, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 33190032, "sim_time_ms": 33190.032, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1789085357, "remaining_nj": 2710914643}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 33245528, "sim_time_ms": 33245.528, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 104153, "lpm": 938539, "deep": 0, "tx": 0, "listen": 1016970}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 33249176, "sim_time_ms": 33249.176, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 33270087, "sim_time_ms": 33270.087, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1791546803, "remaining_nj": 18446744071918004812}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 34057765, "sim_time_ms": 34057.765, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 105103, "lpm": 970357, "deep": 0, "tx": 306, "listen": 1049429}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 34061464, "sim_time_ms": 34061.464, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 34082340, "sim_time_ms": 34082.34, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1848271035, "remaining_nj": 18446744071861280580}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 34172565, "sim_time_ms": 34172.565, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 100077, "lpm": 975383, "deep": 0, "tx": 0, "listen": 1049738}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 34176213, "sim_time_ms": 34176.213, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 34190597, "sim_time_ms": 34190.597, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1846383204, "remaining_nj": 2653616796}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 34245520, "sim_time_ms": 34245.52, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 106712, "lpm": 968748, "deep": 0, "tx": 0, "listen": 1049738}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 34249168, "sim_time_ms": 34249.168, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 34270064, "sim_time_ms": 34270.064, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1848933835, "remaining_nj": 18446744071860617780}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 35058383, "sim_time_ms": 35058.383, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 107596, "lpm": 1000632, "deep": 0, "tx": 306, "listen": 1082197}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 35062082, "sim_time_ms": 35062.082, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 35082972, "sim_time_ms": 35082.972, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1905632696, "remaining_nj": 18446744071803918919}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 35173181, "sim_time_ms": 35173.181, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 102422, "lpm": 1005806, "deep": 0, "tx": 0, "listen": 1082506}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 35176829, "sim_time_ms": 35176.829, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 35191190, "sim_time_ms": 35191.19, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1903687971, "remaining_nj": 2596312029}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 35245527, "sim_time_ms": 35245.527, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 109271, "lpm": 998957, "deep": 0, "tx": 0, "listen": 1082506}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 35249175, "sim_time_ms": 35249.175, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 35270065, "sim_time_ms": 35270.065, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1906320869, "remaining_nj": 18446744071803230746}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 36058375, "sim_time_ms": 36058.375, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 110109, "lpm": 1030887, "deep": 0, "tx": 306, "listen": 1114965}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 36062074, "sim_time_ms": 36062.074, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 36082978, "sim_time_ms": 36082.978, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1963002045, "remaining_nj": 18446744071746549570}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 36173193, "sim_time_ms": 36173.193, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 104787, "lpm": 1036209, "deep": 0, "tx": 0, "listen": 1115274}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 36176840, "sim_time_ms": 36176.84, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 36191253, "sim_time_ms": 36191.253, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1961000426, "remaining_nj": 2538999574}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 36246149, "sim_time_ms": 36246.149, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 111830, "lpm": 1029166, "deep": 0, "tx": 0, "listen": 1115274}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 36249797, "sim_time_ms": 36249.797, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 36270692, "sim_time_ms": 36270.692, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 1963707901, "remaining_nj": 18446744071745843714}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 37058363, "sim_time_ms": 37058.363, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 112628, "lpm": 1061135, "deep": 0, "tx": 306, "listen": 1147733}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 37062071, "sim_time_ms": 37062.071, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 37082952, "sim_time_ms": 37082.952, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2020373662, "remaining_nj": 18446744071689177953}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 37173194, "sim_time_ms": 37173.194, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 107154, "lpm": 1066610, "deep": 0, "tx": 0, "listen": 1148042}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 37176841, "sim_time_ms": 37176.841, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 37191239, "sim_time_ms": 37191.239, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2018313650, "remaining_nj": 2481686350}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 37246146, "sim_time_ms": 37246.146, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 114409, "lpm": 1059355, "deep": 0, "tx": 0, "listen": 1148042}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 37249794, "sim_time_ms": 37249.794, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 37270684, "sim_time_ms": 37270.684, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2021102623, "remaining_nj": 18446744071688448992}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 38058366, "sim_time_ms": 38058.366, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 115133, "lpm": 1091398, "deep": 0, "tx": 306, "listen": 1180501}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 38062071, "sim_time_ms": 38062.071, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 38082966, "sim_time_ms": 38082.966, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2077739936, "remaining_nj": 18446744071631811679}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 38173189, "sim_time_ms": 38173.189, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 109520, "lpm": 1097012, "deep": 0, "tx": 0, "listen": 1180810}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 38176837, "sim_time_ms": 38176.837, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 38191204, "sim_time_ms": 38191.204, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2075626489, "remaining_nj": 2424373511}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 38246141, "sim_time_ms": 38246.141, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 116988, "lpm": 1089544, "deep": 0, "tx": 0, "listen": 1180810}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 38249789, "sim_time_ms": 38249.789, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 38270649, "sim_time_ms": 38270.649, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2078497343, "remaining_nj": 18446744071631054272}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 39058368, "sim_time_ms": 39058.368, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 117639, "lpm": 1121660, "deep": 0, "tx": 306, "listen": 1213269}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 39062071, "sim_time_ms": 39062.071, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 39082956, "sim_time_ms": 39082.956, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2135106595, "remaining_nj": 18446744071574445020}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 39173204, "sim_time_ms": 39173.204, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 111885, "lpm": 1127415, "deep": 0, "tx": 0, "listen": 1213578}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 39176851, "sim_time_ms": 39176.851, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 39191241, "sim_time_ms": 39191.241, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2132938945, "remaining_nj": 2367061055}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 39246780, "sim_time_ms": 39246.78, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 119696, "lpm": 1119604, "deep": 0, "tx": 28, "listen": 1213548}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 39250430, "sim_time_ms": 39250.43, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 39271340, "sim_time_ms": 39271.34, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2135934702, "remaining_nj": 18446744071573616913}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 40058378, "sim_time_ms": 40058.378, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 120145, "lpm": 1151922, "deep": 0, "tx": 306, "listen": 1246037}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 40062076, "sim_time_ms": 40062.076, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 40082967, "sim_time_ms": 40082.967, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2192473253, "remaining_nj": 18446744071517078362}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 40173199, "sim_time_ms": 40173.199, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 114251, "lpm": 1157817, "deep": 0, "tx": 0, "listen": 1246346}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 40176848, "sim_time_ms": 40176.848, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 40191232, "sim_time_ms": 40191.232, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2190251784, "remaining_nj": 2309748216}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 40246775, "sim_time_ms": 40246.775, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 122296, "lpm": 1149772, "deep": 0, "tx": 28, "listen": 1246316}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 40250431, "sim_time_ms": 40250.431, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 40271330, "sim_time_ms": 40271.33, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2193337496, "remaining_nj": 18446744071516214119}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 41058375, "sim_time_ms": 41058.375, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 122651, "lpm": 1182184, "deep": 0, "tx": 306, "listen": 1278805}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 41062074, "sim_time_ms": 41062.074, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 41082976, "sim_time_ms": 41082.976, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2249839912, "remaining_nj": 18446744071459711703}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 41173210, "sim_time_ms": 41173.21, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 116617, "lpm": 1188219, "deep": 0, "tx": 0, "listen": 1279114}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 41176858, "sim_time_ms": 41176.858, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 41191246, "sim_time_ms": 41191.246, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2247564623, "remaining_nj": 2252435377}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 41246778, "sim_time_ms": 41246.778, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 124896, "lpm": 1179940, "deep": 0, "tx": 28, "listen": 1279084}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 41250431, "sim_time_ms": 41250.431, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 41271343, "sim_time_ms": 41271.343, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2250740290, "remaining_nj": 18446744071458811325}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 42058368, "sim_time_ms": 42058.368, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 125228, "lpm": 1212375, "deep": 0, "tx": 306, "listen": 1311573}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 42062071, "sim_time_ms": 42062.071, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 42082939, "sim_time_ms": 42082.939, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2307233863, "remaining_nj": 18446744071402317752}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 42173203, "sim_time_ms": 42173.203, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 119054, "lpm": 1218550, "deep": 0, "tx": 0, "listen": 1311882}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 42176851, "sim_time_ms": 42176.851, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 42191243, "sim_time_ms": 42191.243, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2304904757, "remaining_nj": 2195095243}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 42246774, "sim_time_ms": 42246.774, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 127567, "lpm": 1210037, "deep": 0, "tx": 28, "listen": 1311852}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 42250431, "sim_time_ms": 42250.431, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 42271323, "sim_time_ms": 42271.323, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2308170378, "remaining_nj": 18446744071401381237}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 43058363, "sim_time_ms": 43058.363, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 127733, "lpm": 1242638, "deep": 0, "tx": 306, "listen": 1344341}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 43062071, "sim_time_ms": 43062.071, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 43082960, "sim_time_ms": 43082.96, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2364600137, "remaining_nj": 18446744071344951478}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 43173196, "sim_time_ms": 43173.196, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 121420, "lpm": 1248952, "deep": 0, "tx": 0, "listen": 1344650}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 43176844, "sim_time_ms": 43176.844, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 43191228, "sim_time_ms": 43191.228, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2362217596, "remaining_nj": 2137782404}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 43246757, "sim_time_ms": 43246.757, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 130167, "lpm": 1240205, "deep": 0, "tx": 28, "listen": 1344620}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 43250431, "sim_time_ms": 43250.431, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 43271327, "sim_time_ms": 43271.327, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2365573172, "remaining_nj": 18446744071343978443}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 44058365, "sim_time_ms": 44058.365, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 130324, "lpm": 1272815, "deep": 0, "tx": 306, "listen": 1377109}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 44062071, "sim_time_ms": 44062.071, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 44082965, "sim_time_ms": 44082.965, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2421999472, "remaining_nj": 18446744071287552143}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 44173826, "sim_time_ms": 44173.826, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 123910, "lpm": 1279230, "deep": 0, "tx": 28, "listen": 1377388}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 44177476, "sim_time_ms": 44177.476, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 44191870, "sim_time_ms": 44191.87, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2419571151, "remaining_nj": 2080428849}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 44246770, "sim_time_ms": 44246.77, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 132830, "lpm": 1270310, "deep": 0, "tx": 28, "listen": 1377388}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 44250431, "sim_time_ms": 44250.431, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 44271333, "sim_time_ms": 44271.333, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2423000185, "remaining_nj": 18446744071286551430}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 45058360, "sim_time_ms": 45058.36, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 132830, "lpm": 1303077, "deep": 0, "tx": 306, "listen": 1409877}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 45062071, "sim_time_ms": 45062.071, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 45082953, "sim_time_ms": 45082.953, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2479366131, "remaining_nj": 18446744071230185484}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 45173820, "sim_time_ms": 45173.82, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 126297, "lpm": 1309611, "deep": 0, "tx": 28, "listen": 1410156}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 45177476, "sim_time_ms": 45177.476, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 45191872, "sim_time_ms": 45191.872, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2476892063, "remaining_nj": 2023107937}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 45246776, "sim_time_ms": 45246.776, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 135430, "lpm": 1300478, "deep": 0, "tx": 28, "listen": 1410156}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 45250430, "sim_time_ms": 45250.43, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 45271324, "sim_time_ms": 45271.324, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2480402979, "remaining_nj": 18446744071229148636}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 46058364, "sim_time_ms": 46058.364, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 135336, "lpm": 1333339, "deep": 0, "tx": 306, "listen": 1442645}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 46062076, "sim_time_ms": 46062.076, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 46082989, "sim_time_ms": 46082.989, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2536732789, "remaining_nj": 18446744071172818826}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 46173859, "sim_time_ms": 46173.859, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 128906, "lpm": 1339771, "deep": 0, "tx": 28, "listen": 1442926}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 46177323, "sim_time_ms": 46177.323, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 46191703, "sim_time_ms": 46191.703, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2534301721, "remaining_nj": 1965698279}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 46246765, "sim_time_ms": 46246.765, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 138030, "lpm": 1330646, "deep": 0, "tx": 28, "listen": 1442924}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 46250430, "sim_time_ms": 46250.43, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 46271329, "sim_time_ms": 46271.329, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2537805772, "remaining_nj": 18446744071171745843}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 47058353, "sim_time_ms": 47058.353, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 138146, "lpm": 1363297, "deep": 0, "tx": 408, "listen": 1475310}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 47061885, "sim_time_ms": 47061.885, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 47082798, "sim_time_ms": 47082.798, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2594201555, "remaining_nj": 18446744071115350060}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 47174461, "sim_time_ms": 47174.461, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 131740, "lpm": 1369705, "deep": 0, "tx": 136, "listen": 1475585}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 47177910, "sim_time_ms": 47177.91, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 47192318, "sim_time_ms": 47192.318, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2591778944, "remaining_nj": 1908221056}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 47246763, "sim_time_ms": 47246.763, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 140630, "lpm": 1360814, "deep": 0, "tx": 28, "listen": 1475692}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 47250431, "sim_time_ms": 47250.431, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 47271324, "sim_time_ms": 47271.324, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2595208567, "remaining_nj": 18446744071114343048}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 48058368, "sim_time_ms": 48058.368, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 140675, "lpm": 1393536, "deep": 0, "tx": 408, "listen": 1508078}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 48061901, "sim_time_ms": 48061.901, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 48082786, "sim_time_ms": 48082.786, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2651577055, "remaining_nj": 18446744071057974560}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 48174471, "sim_time_ms": 48174.471, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 134173, "lpm": 1400040, "deep": 0, "tx": 136, "listen": 1508353}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 48177911, "sim_time_ms": 48177.911, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 48192285, "sim_time_ms": 48192.285, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2649117540, "remaining_nj": 1850882460}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 48246784, "sim_time_ms": 48246.784, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 143230, "lpm": 1390982, "deep": 0, "tx": 28, "listen": 1508460}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 48250432, "sim_time_ms": 48250.432, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 48271315, "sim_time_ms": 48271.315, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2652611361, "remaining_nj": 18446744071056940254}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 49058366, "sim_time_ms": 49058.366, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 143175, "lpm": 1423804, "deep": 0, "tx": 408, "listen": 1540846}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 49061898, "sim_time_ms": 49061.898, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 49082773, "sim_time_ms": 49082.773, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2708941408, "remaining_nj": 18446744071000610207}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 49174474, "sim_time_ms": 49174.474, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 136605, "lpm": 1430376, "deep": 0, "tx": 136, "listen": 1541121}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 49177910, "sim_time_ms": 49177.91, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 49192287, "sim_time_ms": 49192.287, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2706455751, "remaining_nj": 1793544249}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 49246768, "sim_time_ms": 49246.768, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 145830, "lpm": 1421150, "deep": 0, "tx": 28, "listen": 1541228}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 49250430, "sim_time_ms": 49250.43, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 49271335, "sim_time_ms": 49271.335, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2710014154, "remaining_nj": 18446744070999537461}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 50058373, "sim_time_ms": 50058.373, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 145839, "lpm": 1453908, "deep": 0, "tx": 408, "listen": 1573614}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 50061930, "sim_time_ms": 50061.93, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 50082806, "sim_time_ms": 50082.806, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2766368804, "remaining_nj": 18446744070943182811}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 50174474, "sim_time_ms": 50174.474, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 139868, "lpm": 1459881, "deep": 0, "tx": 352, "listen": 1573673}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 50177910, "sim_time_ms": 50177.91, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 50192300, "sim_time_ms": 50192.3, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2764085730, "remaining_nj": 1735914270}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 50246783, "sim_time_ms": 50246.783, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 148431, "lpm": 1451317, "deep": 0, "tx": 28, "listen": 1573996}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 50250431, "sim_time_ms": 50250.431, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 50271332, "sim_time_ms": 50271.332, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2767417333, "remaining_nj": 18446744070942134282}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 51058366, "sim_time_ms": 51058.366, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 148340, "lpm": 1484175, "deep": 0, "tx": 408, "listen": 1606382}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 51061898, "sim_time_ms": 51061.898, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 51082781, "sim_time_ms": 51082.781, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2823733541, "remaining_nj": 18446744070885818074}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 51174467, "sim_time_ms": 51174.467, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 142300, "lpm": 1490217, "deep": 0, "tx": 352, "listen": 1606441}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 51177910, "sim_time_ms": 51177.91, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 51192284, "sim_time_ms": 51192.284, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2821423941, "remaining_nj": 1678576059}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 51246775, "sim_time_ms": 51246.775, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 151031, "lpm": 1481485, "deep": 0, "tx": 28, "listen": 1606764}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 51250431, "sim_time_ms": 51250.431, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 51271315, "sim_time_ms": 51271.315, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2824820127, "remaining_nj": 18446744070884731488}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 52058363, "sim_time_ms": 52058.363, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 150988, "lpm": 1514295, "deep": 0, "tx": 408, "listen": 1639150}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 52061895, "sim_time_ms": 52061.895, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 52082769, "sim_time_ms": 52082.769, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2881154787, "remaining_nj": 18446744070828396828}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 52174460, "sim_time_ms": 52174.46, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 145212, "lpm": 1520073, "deep": 0, "tx": 460, "listen": 1639101}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 52177910, "sim_time_ms": 52177.91, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 52192307, "sim_time_ms": 52192.307, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2878932833, "remaining_nj": 1621067167}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 52193943, "sim_time_ms": 52193.943, "node_id": 2, "event_type": "ROUTE", "parent": 1, "rank": 332}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 52246763, "sim_time_ms": 52246.763, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 153702, "lpm": 1511582, "deep": 0, "tx": 28, "listen": 1639532}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 52250431, "sim_time_ms": 52250.431, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 52271330, "sim_time_ms": 52271.33, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2882250215, "remaining_nj": 18446744070827301400}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 53058400, "sim_time_ms": 53058.4, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 153694, "lpm": 1544357, "deep": 0, "tx": 510, "listen": 1671815}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 53061931, "sim_time_ms": 53061.931, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 53082810, "sim_time_ms": 53082.81, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2938583574, "remaining_nj": 18446744070770968041}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 53174480, "sim_time_ms": 53174.48, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 147831, "lpm": 1550222, "deep": 0, "tx": 460, "listen": 1671869}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 53177910, "sim_time_ms": 53177.91, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 53192291, "sim_time_ms": 53192.291, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2936342931, "remaining_nj": 1563657069}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 53246772, "sim_time_ms": 53246.772, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 156302, "lpm": 1541750, "deep": 0, "tx": 28, "listen": 1672300}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 53250430, "sim_time_ms": 53250.43, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 53271309, "sim_time_ms": 53271.309, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2939653009, "remaining_nj": 18446744070769898606}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 54058362, "sim_time_ms": 54058.362, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 156195, "lpm": 1574624, "deep": 0, "tx": 510, "listen": 1704583}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 54061894, "sim_time_ms": 54061.894, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 54082782, "sim_time_ms": 54082.782, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2995948310, "remaining_nj": 18446744070713603305}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 54174481, "sim_time_ms": 54174.481, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 150265, "lpm": 1580556, "deep": 0, "tx": 460, "listen": 1704637}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 54177912, "sim_time_ms": 54177.912, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 54192315, "sim_time_ms": 54192.315, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2993681910, "remaining_nj": 1506318090}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 54246769, "sim_time_ms": 54246.769, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 158902, "lpm": 1571918, "deep": 0, "tx": 28, "listen": 1705068}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 54250431, "sim_time_ms": 54250.431, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 54271347, "sim_time_ms": 54271.347, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 2997055803, "remaining_nj": 18446744070712495812}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 55058371, "sim_time_ms": 55058.371, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 158695, "lpm": 1604892, "deep": 0, "tx": 510, "listen": 1737351}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 55061930, "sim_time_ms": 55061.93, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 55082803, "sim_time_ms": 55082.803, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3053312662, "remaining_nj": 18446744070656238953}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 55174476, "sim_time_ms": 55174.476, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 152700, "lpm": 1610889, "deep": 0, "tx": 460, "listen": 1737405}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 55177910, "sim_time_ms": 55177.91, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 55192297, "sim_time_ms": 55192.297, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3051021276, "remaining_nj": 1448978724}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 55246764, "sim_time_ms": 55246.764, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 161503, "lpm": 1602085, "deep": 0, "tx": 28, "listen": 1737836}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 55250430, "sim_time_ms": 55250.43, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 55271336, "sim_time_ms": 55271.336, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3054458981, "remaining_nj": 18446744070655092634}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 56058376, "sim_time_ms": 56058.376, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 161224, "lpm": 1635131, "deep": 0, "tx": 510, "listen": 1770119}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 56061930, "sim_time_ms": 56061.93, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 56082808, "sim_time_ms": 56082.808, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3110688161, "remaining_nj": 18446744070598863454}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 56174465, "sim_time_ms": 56174.465, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 155134, "lpm": 1641223, "deep": 0, "tx": 460, "listen": 1770173}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 56177911, "sim_time_ms": 56177.911, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 56192309, "sim_time_ms": 56192.309, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3108360256, "remaining_nj": 1391639744}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 56246761, "sim_time_ms": 56246.761, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 164104, "lpm": 1632252, "deep": 0, "tx": 28, "listen": 1770604}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 56250431, "sim_time_ms": 56250.431, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 56271337, "sim_time_ms": 56271.337, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3111862160, "remaining_nj": 18446744070597689455}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 57058350, "sim_time_ms": 57058.35, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 163725, "lpm": 1665398, "deep": 0, "tx": 510, "listen": 1802887}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 57061882, "sim_time_ms": 57061.882, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 57082764, "sim_time_ms": 57082.764, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3168052898, "remaining_nj": 18446744070541498717}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 57174469, "sim_time_ms": 57174.469, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 157569, "lpm": 1671556, "deep": 0, "tx": 460, "listen": 1802941}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 57177910, "sim_time_ms": 57177.91, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 57192301, "sim_time_ms": 57192.301, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3165699620, "remaining_nj": 1334300380}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 57246755, "sim_time_ms": 57246.755, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 166705, "lpm": 1662419, "deep": 0, "tx": 28, "listen": 1803372}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 57250431, "sim_time_ms": 57250.431, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 57271358, "sim_time_ms": 57271.358, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3169265339, "remaining_nj": 18446744070540286276}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 58058353, "sim_time_ms": 58058.353, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 166522, "lpm": 1695369, "deep": 0, "tx": 555, "listen": 1835608}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 58061885, "sim_time_ms": 58061.885, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 58082775, "sim_time_ms": 58082.775, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3225522290, "remaining_nj": 18446744070484029325}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 58174481, "sim_time_ms": 58174.481, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 160516, "lpm": 1701377, "deep": 0, "tx": 549, "listen": 1835619}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 58177912, "sim_time_ms": 58177.912, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 58192316, "sim_time_ms": 58192.316, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3223222718, "remaining_nj": 1276777282}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 58246770, "sim_time_ms": 58246.77, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 169431, "lpm": 1692461, "deep": 0, "tx": 57, "listen": 1836110}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 58250431, "sim_time_ms": 58250.431, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 58271323, "sim_time_ms": 58271.323, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3226711169, "remaining_nj": 18446744070482840446}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 59058362, "sim_time_ms": 59058.362, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 169022, "lpm": 1725637, "deep": 0, "tx": 555, "listen": 1868376}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 59061894, "sim_time_ms": 59061.894, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 59082740, "sim_time_ms": 59082.74, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3282886642, "remaining_nj": 18446744070426664973}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 59174487, "sim_time_ms": 59174.487, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 162966, "lpm": 1731695, "deep": 0, "tx": 549, "listen": 1868387}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 59177917, "sim_time_ms": 59177.917, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 59192296, "sim_time_ms": 59192.296, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3280567849, "remaining_nj": 1219432151}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 59246762, "sim_time_ms": 59246.762, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 172031, "lpm": 1722629, "deep": 0, "tx": 57, "listen": 1868878}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 59250430, "sim_time_ms": 59250.43, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 59271309, "sim_time_ms": 59271.309, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3284113963, "remaining_nj": 18446744070425437652}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 60058373, "sim_time_ms": 60058.373, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 171521, "lpm": 1755906, "deep": 0, "tx": 555, "listen": 1901144}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 60061930, "sim_time_ms": 60061.93, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 60082811, "sim_time_ms": 60082.811, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3340250609, "remaining_nj": 18446744070369301006}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 60174478, "sim_time_ms": 60174.478, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 165415, "lpm": 1762014, "deep": 0, "tx": 549, "listen": 1901155}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 60177910, "sim_time_ms": 60177.91, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 60192299, "sim_time_ms": 60192.299, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3337912595, "remaining_nj": 1162087405}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 60246780, "sim_time_ms": 60246.78, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 174631, "lpm": 1752797, "deep": 0, "tx": 57, "listen": 1901646}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 60250431, "sim_time_ms": 60250.431, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 60271352, "sim_time_ms": 60271.352, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3341516758, "remaining_nj": 18446744070368034857}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 61058379, "sim_time_ms": 61058.379, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 174022, "lpm": 1786173, "deep": 0, "tx": 555, "listen": 1933912}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 61061930, "sim_time_ms": 61061.93, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 438}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 61082807, "sim_time_ms": 61082.807, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3397615346, "remaining_nj": 18446744070311936269}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 61174474, "sim_time_ms": 61174.474, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 167864, "lpm": 1792333, "deep": 0, "tx": 549, "listen": 1933923}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 61177910, "sim_time_ms": 61177.91, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 61192283, "sim_time_ms": 61192.283, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3395257342, "remaining_nj": 1104742658}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 61246773, "sim_time_ms": 61246.773, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 177232, "lpm": 1782964, "deep": 0, "tx": 57, "listen": 1934414}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 61250430, "sim_time_ms": 61250.43, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 326}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 61271331, "sim_time_ms": 61271.331, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3398919936, "remaining_nj": 18446744070310631679}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 61414207, "sim_time_ms": 61414.207, "node_id": 2, "event_type": "GEN", "reading_id": 1, "created_ms": 60078, "value": 201}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 61429006, "sim_time_ms": 61429.006, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 1, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 1, "last_id": 1}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 61446982, "sim_time_ms": 61446.982, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 1}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 61450550, "sim_time_ms": 61450.55, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 1, "reading_id": 1, "created_ms": 60078, "value": 201, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 61487140, "sim_time_ms": 61487.14, "node_id": 3, "event_type": "GEN", "reading_id": 1, "created_ms": 60078, "value": 301}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62058404, "sim_time_ms": 62058.404, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 177280, "lpm": 1815685, "deep": 0, "tx": 555, "listen": 1966681}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62061284, "sim_time_ms": 62061.284, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 884}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62082144, "sim_time_ms": 62082.144, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3455272850, "remaining_nj": 18446744070254278765}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62174503, "sim_time_ms": 62174.503, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 171560, "lpm": 1821406, "deep": 0, "tx": 733, "listen": 1966505}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62177478, "sim_time_ms": 62177.478, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62191865, "sim_time_ms": 62191.865, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3453054552, "remaining_nj": 1046945448}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62246824, "sim_time_ms": 62246.824, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 180313, "lpm": 1812652, "deep": 0, "tx": 57, "listen": 1967184}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62250288, "sim_time_ms": 62250.288, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62271194, "sim_time_ms": 62271.194, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3456511039, "remaining_nj": 18446744070253040576}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62414188, "sim_time_ms": 62414.188, "node_id": 2, "event_type": "GEN", "reading_id": 2, "created_ms": 61078, "value": 202}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62428958, "sim_time_ms": 62428.958, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 2, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 2, "last_id": 2}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62468265, "sim_time_ms": 62468.265, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 2}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62471834, "sim_time_ms": 62471.834, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 2, "reading_id": 2, "created_ms": 61078, "value": 202, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62487131, "sim_time_ms": 62487.131, "node_id": 3, "event_type": "GEN", "reading_id": 2, "created_ms": 61078, "value": 302}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 62488636, "sim_time_ms": 62488.636, "node_id": 3, "event_type": "DROP", "reading_id": 2, "reason": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63058384, "sim_time_ms": 63058.384, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 180578, "lpm": 1845154, "deep": 0, "tx": 555, "listen": 1999448}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63061275, "sim_time_ms": 63061.275, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 884}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63082114, "sim_time_ms": 63082.114, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3512942248, "remaining_nj": 18446744070196609367}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63174491, "sim_time_ms": 63174.491, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 175029, "lpm": 1850704, "deep": 0, "tx": 816, "listen": 1999190}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63177479, "sim_time_ms": 63177.479, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63191257, "sim_time_ms": 63191.257, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3510780730, "remaining_nj": 989219270}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63246818, "sim_time_ms": 63246.818, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 183310, "lpm": 1842423, "deep": 0, "tx": 57, "listen": 1999951}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63250282, "sim_time_ms": 63250.282, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63271129, "sim_time_ms": 63271.129, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3514064766, "remaining_nj": 18446744070195486849}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63414187, "sim_time_ms": 63414.187, "node_id": 2, "event_type": "GEN", "reading_id": 3, "created_ms": 62078, "value": 203}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63428958, "sim_time_ms": 63428.958, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 3, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 3, "last_id": 3}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63446934, "sim_time_ms": 63446.934, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 3}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63450502, "sim_time_ms": 63450.502, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 3, "reading_id": 3, "created_ms": 62078, "value": 203, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63487131, "sim_time_ms": 63487.131, "node_id": 3, "event_type": "GEN", "reading_id": 3, "created_ms": 62078, "value": 303}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 63488635, "sim_time_ms": 63488.635, "node_id": 3, "event_type": "DROP", "reading_id": 3, "reason": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64058399, "sim_time_ms": 64058.399, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 183642, "lpm": 1874858, "deep": 0, "tx": 555, "listen": 2032216}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64061283, "sim_time_ms": 64061.283, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 884}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64082151, "sim_time_ms": 64082.151, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3570523413, "remaining_nj": 18446744070139028202}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64174496, "sim_time_ms": 64174.496, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 178238, "lpm": 1880263, "deep": 0, "tx": 898, "listen": 2031875}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64177479, "sim_time_ms": 64177.479, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64191243, "sim_time_ms": 64191.243, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3568405444, "remaining_nj": 931594556}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64246805, "sim_time_ms": 64246.805, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 186069, "lpm": 1872432, "deep": 0, "tx": 57, "listen": 2032719}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64250269, "sim_time_ms": 64250.269, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64271131, "sim_time_ms": 64271.131, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3571528683, "remaining_nj": 18446744070138022932}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64414187, "sim_time_ms": 64414.187, "node_id": 2, "event_type": "GEN", "reading_id": 4, "created_ms": 63078, "value": 204}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64428958, "sim_time_ms": 64428.958, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 4, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 4, "last_id": 4}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64483890, "sim_time_ms": 64483.89, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 4}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64487130, "sim_time_ms": 64487.13, "node_id": 3, "event_type": "GEN", "reading_id": 4, "created_ms": 63078, "value": 304}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64487459, "sim_time_ms": 64487.459, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 4, "reading_id": 4, "created_ms": 63078, "value": 204, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 64488512, "sim_time_ms": 64488.512, "node_id": 3, "event_type": "DROP", "reading_id": 1, "reason": 1}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65058392, "sim_time_ms": 65058.392, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 186713, "lpm": 1904555, "deep": 0, "tx": 555, "listen": 2064984}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65061283, "sim_time_ms": 65061.283, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 884}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65082135, "sim_time_ms": 65082.135, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3628107269, "remaining_nj": 18446744070081444346}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65174486, "sim_time_ms": 65174.486, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 181639, "lpm": 1909630, "deep": 0, "tx": 981, "listen": 2064560}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65177479, "sim_time_ms": 65177.479, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65191242, "sim_time_ms": 65191.242, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3626105520, "remaining_nj": 873894480}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65247427, "sim_time_ms": 65247.427, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 189239, "lpm": 1902030, "deep": 0, "tx": 165, "listen": 2065379}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65250864, "sim_time_ms": 65250.864, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65271755, "sim_time_ms": 65271.755, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3629136754, "remaining_nj": 18446744070080414861}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65414180, "sim_time_ms": 65414.18, "node_id": 2, "event_type": "GEN", "reading_id": 5, "created_ms": 64078, "value": 205}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65428951, "sim_time_ms": 65428.951, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 5, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 5, "last_id": 5}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65483890, "sim_time_ms": 65483.89, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 5}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65487124, "sim_time_ms": 65487.124, "node_id": 3, "event_type": "GEN", "reading_id": 5, "created_ms": 64078, "value": 305}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65487452, "sim_time_ms": 65487.452, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 5, "reading_id": 5, "created_ms": 64078, "value": 205, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 65488628, "sim_time_ms": 65488.628, "node_id": 3, "event_type": "DROP", "reading_id": 5, "reason": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66058390, "sim_time_ms": 66058.39, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 189777, "lpm": 1934259, "deep": 0, "tx": 555, "listen": 2097752}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66061281, "sim_time_ms": 66061.281, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 884}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66082144, "sim_time_ms": 66082.144, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3685688434, "remaining_nj": 18446744070023863181}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66175104, "sim_time_ms": 66175.104, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 184862, "lpm": 1939175, "deep": 0, "tx": 1064, "listen": 2097245}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66178076, "sim_time_ms": 66178.076, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66191854, "sim_time_ms": 66191.854, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3683737171, "remaining_nj": 816262829}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66247414, "sim_time_ms": 66247.414, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 192019, "lpm": 1932018, "deep": 0, "tx": 165, "listen": 2098147}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66250864, "sim_time_ms": 66250.864, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66271731, "sim_time_ms": 66271.731, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3686608744, "remaining_nj": 18446744070022942871}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66414184, "sim_time_ms": 66414.184, "node_id": 2, "event_type": "GEN", "reading_id": 6, "created_ms": 65078, "value": 206}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66428954, "sim_time_ms": 66428.954, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 6, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 6, "last_id": 6}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66446930, "sim_time_ms": 66446.93, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 6}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66450495, "sim_time_ms": 66450.495, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 6, "reading_id": 6, "created_ms": 65078, "value": 206, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66487127, "sim_time_ms": 66487.127, "node_id": 3, "event_type": "GEN", "reading_id": 6, "created_ms": 65078, "value": 306}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 66488632, "sim_time_ms": 66488.632, "node_id": 3, "event_type": "DROP", "reading_id": 6, "reason": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67058388, "sim_time_ms": 67058.388, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 192841, "lpm": 1963963, "deep": 0, "tx": 555, "listen": 2130520}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67061279, "sim_time_ms": 67061.279, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 884}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67082137, "sim_time_ms": 67082.137, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3743269600, "remaining_nj": 18446744069966282015}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67175089, "sim_time_ms": 67175.089, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 188100, "lpm": 1968705, "deep": 0, "tx": 1146, "listen": 2129929}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67178061, "sim_time_ms": 67178.061, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67191834, "sim_time_ms": 67191.834, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3741371350, "remaining_nj": 758628650}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67247419, "sim_time_ms": 67247.419, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 194798, "lpm": 1962007, "deep": 0, "tx": 165, "listen": 2130915}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67250864, "sim_time_ms": 67250.864, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67271738, "sim_time_ms": 67271.738, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3744080349, "remaining_nj": 18446744069965471266}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67414185, "sim_time_ms": 67414.185, "node_id": 2, "event_type": "GEN", "reading_id": 7, "created_ms": 66078, "value": 207}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67428956, "sim_time_ms": 67428.956, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 7, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 7, "last_id": 7}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67446932, "sim_time_ms": 67446.932, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 7}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67450498, "sim_time_ms": 67450.498, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 7, "reading_id": 7, "created_ms": 66078, "value": 207, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67487128, "sim_time_ms": 67487.128, "node_id": 3, "event_type": "GEN", "reading_id": 7, "created_ms": 66078, "value": 307}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 67488510, "sim_time_ms": 67488.51, "node_id": 3, "event_type": "DROP", "reading_id": 4, "reason": 1}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68058379, "sim_time_ms": 68058.379, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 195912, "lpm": 1993660, "deep": 0, "tx": 555, "listen": 2163288}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68061269, "sim_time_ms": 68061.269, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 884}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68082135, "sim_time_ms": 68082.135, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3800853456, "remaining_nj": 18446744069908698159}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68175105, "sim_time_ms": 68175.105, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 191492, "lpm": 1998081, "deep": 0, "tx": 1228, "listen": 2162613}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68178076, "sim_time_ms": 68178.076, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68191843, "sim_time_ms": 68191.843, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3799064730, "remaining_nj": 700935270}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68247440, "sim_time_ms": 68247.44, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 197997, "lpm": 1991576, "deep": 0, "tx": 273, "listen": 2163575}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68250871, "sim_time_ms": 68250.871, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68271762, "sim_time_ms": 68271.762, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3801699569, "remaining_nj": 18446744069907852046}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68414186, "sim_time_ms": 68414.186, "node_id": 2, "event_type": "GEN", "reading_id": 8, "created_ms": 67078, "value": 208}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68428956, "sim_time_ms": 68428.956, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 8, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 8, "last_id": 8}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68446931, "sim_time_ms": 68446.931, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 8}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68450498, "sim_time_ms": 68450.498, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 8, "reading_id": 8, "created_ms": 67078, "value": 208, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68487129, "sim_time_ms": 68487.129, "node_id": 3, "event_type": "GEN", "reading_id": 8, "created_ms": 67078, "value": 308}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 68488633, "sim_time_ms": 68488.633, "node_id": 3, "event_type": "DROP", "reading_id": 8, "reason": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69058401, "sim_time_ms": 69058.401, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 199186, "lpm": 2023154, "deep": 0, "tx": 657, "listen": 2195953}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69061283, "sim_time_ms": 69061.283, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 884}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69082150, "sim_time_ms": 69082.15, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3858500595, "remaining_nj": 18446744069851051020}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69175103, "sim_time_ms": 69175.103, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 194880, "lpm": 2027461, "deep": 0, "tx": 1310, "listen": 2195297}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69178074, "sim_time_ms": 69178.074, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69191835, "sim_time_ms": 69191.835, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3856756574, "remaining_nj": 643243426}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69247438, "sim_time_ms": 69247.438, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 200777, "lpm": 2021564, "deep": 0, "tx": 273, "listen": 2196343}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69250868, "sim_time_ms": 69250.868, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69271779, "sim_time_ms": 69271.779, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3859171559, "remaining_nj": 18446744069850380056}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69414184, "sim_time_ms": 69414.184, "node_id": 2, "event_type": "GEN", "reading_id": 9, "created_ms": 68078, "value": 209}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69428954, "sim_time_ms": 69428.954, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 9, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 9, "last_id": 9}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69460453, "sim_time_ms": 69460.453, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 9}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69464018, "sim_time_ms": 69464.018, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 9, "reading_id": 9, "created_ms": 68078, "value": 209, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69487127, "sim_time_ms": 69487.127, "node_id": 3, "event_type": "GEN", "reading_id": 9, "created_ms": 68078, "value": 309}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 69488632, "sim_time_ms": 69488.632, "node_id": 3, "event_type": "DROP", "reading_id": 9, "reason": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70058385, "sim_time_ms": 70058.385, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 202334, "lpm": 2052774, "deep": 0, "tx": 657, "listen": 2228721}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70061275, "sim_time_ms": 70061.275, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 884}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70082127, "sim_time_ms": 70082.127, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3916114051, "remaining_nj": 18446744069793437564}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70175093, "sim_time_ms": 70175.093, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 198428, "lpm": 2056681, "deep": 0, "tx": 1495, "listen": 2227879}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70178064, "sim_time_ms": 70178.064, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70191843, "sim_time_ms": 70191.843, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3914498404, "remaining_nj": 585501596}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70247426, "sim_time_ms": 70247.426, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 203708, "lpm": 2051401, "deep": 0, "tx": 273, "listen": 2229111}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70250864, "sim_time_ms": 70250.864, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70271757, "sim_time_ms": 70271.757, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3916701596, "remaining_nj": 18446744069792850019}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70414393, "sim_time_ms": 70414.393, "node_id": 2, "event_type": "GEN", "reading_id": 10, "created_ms": 69078, "value": 210}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70429808, "sim_time_ms": 70429.808, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 10, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 10, "last_id": 10}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70476284, "sim_time_ms": 70476.284, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 10}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70480263, "sim_time_ms": 70480.263, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 10, "reading_id": 10, "created_ms": 69078, "value": 210, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70487336, "sim_time_ms": 70487.336, "node_id": 3, "event_type": "GEN", "reading_id": 10, "created_ms": 69078, "value": 310}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 70488718, "sim_time_ms": 70488.718, "node_id": 3, "event_type": "DROP", "reading_id": 7, "reason": 1}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71058370, "sim_time_ms": 71058.37, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 205424, "lpm": 2082452, "deep": 0, "tx": 657, "listen": 2261489}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71061261, "sim_time_ms": 71061.261, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 884}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71082098, "sim_time_ms": 71082.098, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3973705212, "remaining_nj": 18446744069735846403}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71175101, "sim_time_ms": 71175.101, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 201858, "lpm": 2086019, "deep": 0, "tx": 1578, "listen": 2260564}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71178073, "sim_time_ms": 71178.073, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71191833, "sim_time_ms": 71191.833, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3972209629, "remaining_nj": 527790371}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71247412, "sim_time_ms": 71247.412, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 206898, "lpm": 2080979, "deep": 0, "tx": 380, "listen": 2261770}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71250864, "sim_time_ms": 71250.864, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71271748, "sim_time_ms": 71271.748, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 3974314120, "remaining_nj": 18446744069735237495}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71414404, "sim_time_ms": 71414.404, "node_id": 2, "event_type": "GEN", "reading_id": 11, "created_ms": 70078, "value": 211}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71429819, "sim_time_ms": 71429.819, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 11, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 11, "last_id": 11}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71468471, "sim_time_ms": 71468.471, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 11}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71472452, "sim_time_ms": 71472.452, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 11, "reading_id": 11, "created_ms": 70078, "value": 211, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71487348, "sim_time_ms": 71487.348, "node_id": 3, "event_type": "GEN", "reading_id": 11, "created_ms": 70078, "value": 311}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 71489058, "sim_time_ms": 71489.058, "node_id": 3, "event_type": "DROP", "reading_id": 11, "reason": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72058374, "sim_time_ms": 72058.374, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 208552, "lpm": 2112092, "deep": 0, "tx": 657, "listen": 2294257}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72061265, "sim_time_ms": 72061.265, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 884}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72082123, "sim_time_ms": 72082.123, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4031310980, "remaining_nj": 18446744069678240635}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72175098, "sim_time_ms": 72175.098, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 205181, "lpm": 2115464, "deep": 0, "tx": 1661, "listen": 2293249}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72178069, "sim_time_ms": 72178.069, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72191840, "sim_time_ms": 72191.84, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4029879720, "remaining_nj": 470120280}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72247473, "sim_time_ms": 72247.473, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 210173, "lpm": 2110472, "deep": 0, "tx": 488, "listen": 2294431}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72250935, "sim_time_ms": 72250.935, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72271835, "sim_time_ms": 72271.835, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4031964236, "remaining_nj": 18446744069677587379}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72273478, "sim_time_ms": 72273.478, "node_id": 3, "event_type": "ROUTE", "parent": 2, "rank": 487}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72414393, "sim_time_ms": 72414.393, "node_id": 2, "event_type": "GEN", "reading_id": 12, "created_ms": 71078, "value": 212}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72429813, "sim_time_ms": 72429.813, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 12, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 12, "last_id": 12}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72447995, "sim_time_ms": 72447.995, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 12}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72452004, "sim_time_ms": 72452.004, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 12, "reading_id": 12, "created_ms": 71078, "value": 212, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72487337, "sim_time_ms": 72487.337, "node_id": 3, "event_type": "GEN", "reading_id": 12, "created_ms": 71078, "value": 312}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 72489047, "sim_time_ms": 72489.047, "node_id": 3, "event_type": "DROP", "reading_id": 12, "reason": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73058395, "sim_time_ms": 73058.395, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 211675, "lpm": 2141737, "deep": 0, "tx": 657, "listen": 2327025}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73061283, "sim_time_ms": 73061.283, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 884}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73082178, "sim_time_ms": 73082.178, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4088914826, "remaining_nj": 18446744069620636789}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73175095, "sim_time_ms": 73175.095, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 208605, "lpm": 2144808, "deep": 0, "tx": 1743, "listen": 2325934}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73178067, "sim_time_ms": 73178.067, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73191845, "sim_time_ms": 73191.845, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4087587086, "remaining_nj": 412412914}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73247416, "sim_time_ms": 73247.416, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 213033, "lpm": 2140379, "deep": 0, "tx": 488, "listen": 2327198}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73250864, "sim_time_ms": 73250.864, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73271758, "sim_time_ms": 73271.758, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4089465259, "remaining_nj": 18446744069620086356}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73414390, "sim_time_ms": 73414.39, "node_id": 2, "event_type": "GEN", "reading_id": 13, "created_ms": 72078, "value": 213}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73429812, "sim_time_ms": 73429.812, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 13, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 13, "last_id": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73447991, "sim_time_ms": 73447.991, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73451996, "sim_time_ms": 73451.996, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 13, "reading_id": 13, "created_ms": 72078, "value": 213, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73487320, "sim_time_ms": 73487.32, "node_id": 3, "event_type": "GEN", "reading_id": 13, "created_ms": 72078, "value": 313}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 73488908, "sim_time_ms": 73488.908, "node_id": 3, "event_type": "DROP", "reading_id": 10, "reason": 1}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74058394, "sim_time_ms": 74058.394, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 214762, "lpm": 2171418, "deep": 0, "tx": 657, "listen": 2359793}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74061284, "sim_time_ms": 74061.284, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 884}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74082134, "sim_time_ms": 74082.134, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4146504832, "remaining_nj": 18446744069563046783}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74175098, "sim_time_ms": 74175.098, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 211882, "lpm": 2174299, "deep": 0, "tx": 1825, "listen": 2358618}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74178069, "sim_time_ms": 74178.069, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74191825, "sim_time_ms": 74191.825, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4145236258, "remaining_nj": 354763742}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74247413, "sim_time_ms": 74247.413, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 215816, "lpm": 2170364, "deep": 0, "tx": 488, "listen": 2359966}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74250864, "sim_time_ms": 74250.864, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74271769, "sim_time_ms": 74271.769, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4146938402, "remaining_nj": 18446744069562613213}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74414379, "sim_time_ms": 74414.379, "node_id": 2, "event_type": "GEN", "reading_id": 14, "created_ms": 73078, "value": 214}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74429795, "sim_time_ms": 74429.795, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 14, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 14, "last_id": 14}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74447954, "sim_time_ms": 74447.954, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 14}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74451962, "sim_time_ms": 74451.962, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 14, "reading_id": 14, "created_ms": 73078, "value": 214, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74487323, "sim_time_ms": 74487.323, "node_id": 3, "event_type": "GEN", "reading_id": 14, "created_ms": 73078, "value": 314}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 74489033, "sim_time_ms": 74489.033, "node_id": 3, "event_type": "DROP", "reading_id": 14, "reason": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75058394, "sim_time_ms": 75058.394, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 217847, "lpm": 2201101, "deep": 0, "tx": 657, "listen": 2392561}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75061284, "sim_time_ms": 75061.284, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 884}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75082121, "sim_time_ms": 75082.121, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4204094070, "remaining_nj": 18446744069505457545}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75175106, "sim_time_ms": 75175.106, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 215135, "lpm": 2203814, "deep": 0, "tx": 1907, "listen": 2391302}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75178077, "sim_time_ms": 75178.077, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75191826, "sim_time_ms": 75191.826, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4202876203, "remaining_nj": 297123797}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75247408, "sim_time_ms": 75247.408, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 218602, "lpm": 2200346, "deep": 0, "tx": 488, "listen": 2392734}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75250864, "sim_time_ms": 75250.864, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 472}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75271740, "sim_time_ms": 75271.74, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4204412698, "remaining_nj": 18446744069505138917}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75416864, "sim_time_ms": 75416.864, "node_id": 2, "event_type": "GEN", "reading_id": 15, "created_ms": 74078, "value": 215}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75432101, "sim_time_ms": 75432.101, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 15, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 15, "last_id": 15}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75484055, "sim_time_ms": 75484.055, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 15}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75487334, "sim_time_ms": 75487.334, "node_id": 3, "event_type": "GEN", "reading_id": 15, "created_ms": 74078, "value": 315}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75488035, "sim_time_ms": 75488.035, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 15, "reading_id": 15, "created_ms": 74078, "value": 215, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75489044, "sim_time_ms": 75489.044, "node_id": 3, "event_type": "DROP", "reading_id": 15, "reason": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75625344, "sim_time_ms": 75625.344, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 1, "count": 1, "bytes": 37, "hold_ms": 2125, "first_id": 13, "last_id": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75680741, "sim_time_ms": 75680.741, "node_id": 1, "event_type": "PACKET", "sender": 3, "profile": 2, "epoch": 1, "counter": 1}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 75684514, "sim_time_ms": 75684.514, "node_id": 1, "event_type": "RX", "sender": 3, "profile": 2, "epoch": 1, "counter": 1, "reading_id": 13, "created_ms": 72078, "value": 313, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76058402, "sim_time_ms": 76058.402, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 221847, "lpm": 2229869, "deep": 0, "tx": 711, "listen": 2425274}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76061284, "sim_time_ms": 76061.284, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76082122, "sim_time_ms": 76082.122, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4262026450, "remaining_nj": 18446744069447525165}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76175109, "sim_time_ms": 76175.109, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 219440, "lpm": 2232277, "deep": 0, "tx": 2244, "listen": 2423730}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76178080, "sim_time_ms": 76178.08, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76191829, "sim_time_ms": 76191.829, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4260886194, "remaining_nj": 239113806}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76247428, "sim_time_ms": 76247.428, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 222593, "lpm": 2229124, "deep": 0, "tx": 677, "listen": 2425312}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76250432, "sim_time_ms": 76250.432, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76271313, "sim_time_ms": 76271.313, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4262324353, "remaining_nj": 18446744069447227262}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76414381, "sim_time_ms": 76414.381, "node_id": 2, "event_type": "GEN", "reading_id": 16, "created_ms": 75078, "value": 216}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76429791, "sim_time_ms": 76429.791, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 16, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 16, "last_id": 16}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76484059, "sim_time_ms": 76484.059, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 16}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76487337, "sim_time_ms": 76487.337, "node_id": 3, "event_type": "GEN", "reading_id": 16, "created_ms": 75078, "value": 316}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76488040, "sim_time_ms": 76488.04, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 16, "reading_id": 16, "created_ms": 75078, "value": 216, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76502569, "sim_time_ms": 76502.569, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 2, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 16, "last_id": 16}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76593611, "sim_time_ms": 76593.611, "node_id": 1, "event_type": "PACKET", "sender": 3, "profile": 2, "epoch": 1, "counter": 2}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 76597388, "sim_time_ms": 76597.388, "node_id": 1, "event_type": "RX", "sender": 3, "profile": 2, "epoch": 1, "counter": 2, "reading_id": 16, "created_ms": 75078, "value": 316, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77058381, "sim_time_ms": 77058.381, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 225523, "lpm": 2258961, "deep": 0, "tx": 711, "listen": 2458042}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77061266, "sim_time_ms": 77061.266, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77082139, "sim_time_ms": 77082.139, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4319842881, "remaining_nj": 18446744069389708734}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77175108, "sim_time_ms": 77175.108, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 223053, "lpm": 2261432, "deep": 0, "tx": 2418, "listen": 2456322}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77178079, "sim_time_ms": 77178.079, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77191852, "sim_time_ms": 77191.852, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4318652739, "remaining_nj": 181347261}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77247407, "sim_time_ms": 77247.407, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 226051, "lpm": 2258434, "deep": 0, "tx": 768, "listen": 2457988}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77250378, "sim_time_ms": 77250.378, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77271282, "sim_time_ms": 77271.282, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4320043635, "remaining_nj": 18446744069389507980}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77414381, "sim_time_ms": 77414.381, "node_id": 2, "event_type": "GEN", "reading_id": 17, "created_ms": 76078, "value": 217}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77429792, "sim_time_ms": 77429.792, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 17, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 17, "last_id": 17}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77452809, "sim_time_ms": 77452.809, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 17}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77456790, "sim_time_ms": 77456.79, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 17, "reading_id": 17, "created_ms": 76078, "value": 217, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77487337, "sim_time_ms": 77487.337, "node_id": 3, "event_type": "GEN", "reading_id": 17, "created_ms": 76078, "value": 317}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77502569, "sim_time_ms": 77502.569, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 3, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 17, "last_id": 17}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77570162, "sim_time_ms": 77570.162, "node_id": 1, "event_type": "PACKET", "sender": 3, "profile": 2, "epoch": 1, "counter": 3}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 77573939, "sim_time_ms": 77573.939, "node_id": 1, "event_type": "RX", "sender": 3, "profile": 2, "epoch": 1, "counter": 3, "reading_id": 17, "created_ms": 76078, "value": 317, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78058396, "sim_time_ms": 78058.396, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 229199, "lpm": 2288053, "deep": 0, "tx": 711, "listen": 2490810}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78061281, "sim_time_ms": 78061.281, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78082134, "sim_time_ms": 78082.134, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4377659311, "remaining_nj": 18446744069331892304}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78175101, "sim_time_ms": 78175.101, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 226672, "lpm": 2290581, "deep": 0, "tx": 2591, "listen": 2488913}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78178072, "sim_time_ms": 78178.072, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78191828, "sim_time_ms": 78191.828, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4376418355, "remaining_nj": 123581645}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78247430, "sim_time_ms": 78247.43, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 229508, "lpm": 2287745, "deep": 0, "tx": 859, "listen": 2490664}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78250433, "sim_time_ms": 78250.433, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78271325, "sim_time_ms": 78271.325, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4377762532, "remaining_nj": 18446744069331789083}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78414378, "sim_time_ms": 78414.378, "node_id": 2, "event_type": "GEN", "reading_id": 18, "created_ms": 77078, "value": 218}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78429795, "sim_time_ms": 78429.795, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 18, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 18, "last_id": 18}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78447956, "sim_time_ms": 78447.956, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 18}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78451963, "sim_time_ms": 78451.963, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 18, "reading_id": 18, "created_ms": 77078, "value": 218, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78487334, "sim_time_ms": 78487.334, "node_id": 3, "event_type": "GEN", "reading_id": 18, "created_ms": 77078, "value": 318}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78502572, "sim_time_ms": 78502.572, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 4, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 18, "last_id": 18}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78528111, "sim_time_ms": 78528.111, "node_id": 1, "event_type": "PACKET", "sender": 3, "profile": 2, "epoch": 1, "counter": 4}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 78531914, "sim_time_ms": 78531.914, "node_id": 1, "event_type": "RX", "sender": 3, "profile": 2, "epoch": 1, "counter": 4, "reading_id": 18, "created_ms": 77078, "value": 318, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79058398, "sim_time_ms": 79058.398, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 232877, "lpm": 2317143, "deep": 0, "tx": 711, "listen": 2523578}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79061283, "sim_time_ms": 79061.283, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79082131, "sim_time_ms": 79082.131, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4435476511, "remaining_nj": 18446744069274075104}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79175106, "sim_time_ms": 79175.106, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 230606, "lpm": 2319415, "deep": 0, "tx": 2764, "listen": 2521504}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79178078, "sim_time_ms": 79178.078, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79191195, "sim_time_ms": 79191.195, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4434305065, "remaining_nj": 65694935}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79248032, "sim_time_ms": 79248.032, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 233221, "lpm": 2316800, "deep": 0, "tx": 1052, "listen": 2523238}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79251007, "sim_time_ms": 79251.007, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79271890, "sim_time_ms": 79271.89, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4435566766, "remaining_nj": 18446744069273984849}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79414381, "sim_time_ms": 79414.381, "node_id": 2, "event_type": "GEN", "reading_id": 19, "created_ms": 78078, "value": 219}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79429791, "sim_time_ms": 79429.791, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 19, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 19, "last_id": 19}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79452809, "sim_time_ms": 79452.809, "node_id": 1, "event_type": "PACKET", "sender": 2, "profile": 2, "epoch": 1, "counter": 19}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79456790, "sim_time_ms": 79456.79, "node_id": 1, "event_type": "RX", "sender": 2, "profile": 2, "epoch": 1, "counter": 19, "reading_id": 19, "created_ms": 78078, "value": 219, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79487337, "sim_time_ms": 79487.337, "node_id": 3, "event_type": "GEN", "reading_id": 19, "created_ms": 78078, "value": 319}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79502569, "sim_time_ms": 79502.569, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 5, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 19, "last_id": 19}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79562370, "sim_time_ms": 79562.37, "node_id": 1, "event_type": "PACKET", "sender": 3, "profile": 2, "epoch": 1, "counter": 5}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 79566147, "sim_time_ms": 79566.147, "node_id": 1, "event_type": "RX", "sender": 3, "profile": 2, "epoch": 1, "counter": 5, "reading_id": 19, "created_ms": 78078, "value": 319, "duplicate": 0, "auth_ok": true}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80058412, "sim_time_ms": 80058.412, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 236551, "lpm": 2346237, "deep": 0, "tx": 711, "listen": 2556346}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80061284, "sim_time_ms": 80061.284, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80082121, "sim_time_ms": 80082.121, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4493292173, "remaining_nj": 18446744069216259442}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80175115, "sim_time_ms": 80175.115, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 234324, "lpm": 2348465, "deep": 0, "tx": 2938, "listen": 2554095}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80178086, "sim_time_ms": 80178.086, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80190586, "sim_time_ms": 80190.586, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4492110292, "remaining_nj": 7889708}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80248070, "sim_time_ms": 80248.07, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 236735, "lpm": 2346054, "deep": 0, "tx": 1143, "listen": 2555914}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80251042, "sim_time_ms": 80251.042, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80271938, "sim_time_ms": 80271.938, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4493307575, "remaining_nj": 18446744069216244040}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80425090, "sim_time_ms": 80425.09, "node_id": 2, "event_type": "ENERGY_RAW", "cpu": 235723, "lpm": 2355258, "deep": 0, "tx": 2938, "listen": 2562287}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80428062, "sim_time_ms": 80428.062, "node_id": 2, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80436806, "sim_time_ms": 80436.806, "node_id": 2, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4506748922, "remaining_nj": 0}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80444573, "sim_time_ms": 80444.573, "node_id": 2, "event_type": "DEPLETED", "total_nj": 4506748922}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80444573, "sim_time_ms": 80444.573, "node_id": 2, "event_type": "REMOVED", "terminal": 1}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80487335, "sim_time_ms": 80487.335, "node_id": 3, "event_type": "GEN", "reading_id": 20, "created_ms": 79078, "value": 320}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 80502567, "sim_time_ms": 80502.567, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 6, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 20, "last_id": 20}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 81058382, "sim_time_ms": 81058.382, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 239038, "lpm": 2376517, "deep": 0, "tx": 711, "listen": 2589114}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 81061267, "sim_time_ms": 81061.267, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 81082139, "sim_time_ms": 81082.139, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4550651488, "remaining_nj": 18446744069158900127}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 81248061, "sim_time_ms": 81248.061, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 241343, "lpm": 2374214, "deep": 0, "tx": 1865, "listen": 2587946}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 81251033, "sim_time_ms": 81251.033, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 81271933, "sim_time_ms": 81271.933, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4551366195, "remaining_nj": 18446744069158185420}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 81487339, "sim_time_ms": 81487.339, "node_id": 3, "event_type": "GEN", "reading_id": 21, "created_ms": 80078, "value": 321}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 81502572, "sim_time_ms": 81502.572, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 7, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 21, "last_id": 21}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 82058361, "sim_time_ms": 82058.361, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 241561, "lpm": 2406762, "deep": 0, "tx": 711, "listen": 2621882}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 82061245, "sim_time_ms": 82061.245, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 82082113, "sim_time_ms": 82082.113, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4608024682, "remaining_nj": 18446744069101526933}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 82248071, "sim_time_ms": 82248.071, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 246027, "lpm": 2402299, "deep": 0, "tx": 2588, "listen": 2619979}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 82251043, "sim_time_ms": 82251.043, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 82271931, "sim_time_ms": 82271.931, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4609457303, "remaining_nj": 18446744069100094312}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 82273768, "sim_time_ms": 82273.768, "node_id": 3, "event_type": "ROUTE", "parent": 0, "rank": 65535}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 82487359, "sim_time_ms": 82487.359, "node_id": 3, "event_type": "GEN", "reading_id": 22, "created_ms": 81078, "value": 322}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 83058377, "sim_time_ms": 83058.377, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 244039, "lpm": 2437052, "deep": 0, "tx": 711, "listen": 2654650}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 83061262, "sim_time_ms": 83061.262, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 83082147, "sim_time_ms": 83082.147, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4665380577, "remaining_nj": 18446744069044171038}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 83248059, "sim_time_ms": 83248.059, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 248853, "lpm": 2432241, "deep": 0, "tx": 2588, "listen": 2652747}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 83251030, "sim_time_ms": 83251.03, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 83271945, "sim_time_ms": 83271.945, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4666946976, "remaining_nj": 18446744069042604639}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 83487355, "sim_time_ms": 83487.355, "node_id": 3, "event_type": "GEN", "reading_id": 23, "created_ms": 82078, "value": 323}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 83489065, "sim_time_ms": 83489.065, "node_id": 3, "event_type": "DROP", "reading_id": 23, "reason": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 84058369, "sim_time_ms": 84058.369, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 246518, "lpm": 2467341, "deep": 0, "tx": 711, "listen": 2687418}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 84061254, "sim_time_ms": 84061.254, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 84082131, "sim_time_ms": 84082.131, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4722736856, "remaining_nj": 18446744068986814759}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 84248067, "sim_time_ms": 84248.067, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 251676, "lpm": 2462186, "deep": 0, "tx": 2588, "listen": 2685515}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 84251039, "sim_time_ms": 84251.039, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 84271952, "sim_time_ms": 84271.952, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4724435496, "remaining_nj": 18446744068985116119}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 84487358, "sim_time_ms": 84487.358, "node_id": 3, "event_type": "GEN", "reading_id": 24, "created_ms": 83078, "value": 324}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 84489069, "sim_time_ms": 84489.069, "node_id": 3, "event_type": "DROP", "reading_id": 24, "reason": 13}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 85058361, "sim_time_ms": 85058.361, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 248997, "lpm": 2497630, "deep": 0, "tx": 711, "listen": 2720186}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 85061246, "sim_time_ms": 85061.246, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 85082121, "sim_time_ms": 85082.121, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4780093134, "remaining_nj": 18446744068929458481}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 85248072, "sim_time_ms": 85248.072, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 254499, "lpm": 2492131, "deep": 0, "tx": 2588, "listen": 2718283}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 85251077, "sim_time_ms": 85251.077, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 85271991, "sim_time_ms": 85271.991, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4781924017, "remaining_nj": 18446744068927627598}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 85486123, "sim_time_ms": 85486.123, "node_id": 3, "event_type": "DROP", "reading_id": 22, "reason": 1}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 85487545, "sim_time_ms": 85487.545, "node_id": 3, "event_type": "DONE", "generated": 24}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 86058388, "sim_time_ms": 86058.388, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 251475, "lpm": 2527920, "deep": 0, "tx": 711, "listen": 2752954}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 86061273, "sim_time_ms": 86061.273, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 86082129, "sim_time_ms": 86082.129, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4837449029, "remaining_nj": 18446744068872102586}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 86248069, "sim_time_ms": 86248.069, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 257271, "lpm": 2522127, "deep": 0, "tx": 2588, "listen": 2751051}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 86251040, "sim_time_ms": 86251.04, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 86271942, "sim_time_ms": 86271.942, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4839392930, "remaining_nj": 18446744068870158685}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 87058383, "sim_time_ms": 87058.383, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 253954, "lpm": 2558209, "deep": 0, "tx": 711, "listen": 2785722}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 87061268, "sim_time_ms": 87061.268, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 87082131, "sim_time_ms": 87082.131, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4894805309, "remaining_nj": 18446744068814746306}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 87248073, "sim_time_ms": 87248.073, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 259953, "lpm": 2552212, "deep": 0, "tx": 2588, "listen": 2783819}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 87251078, "sim_time_ms": 87251.078, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 87271993, "sim_time_ms": 87271.993, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4896827208, "remaining_nj": 18446744068812724407}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 88058354, "sim_time_ms": 88058.354, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 256433, "lpm": 2588498, "deep": 0, "tx": 711, "listen": 2818490}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 88061238, "sim_time_ms": 88061.238, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 88082122, "sim_time_ms": 88082.122, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4952161588, "remaining_nj": 18446744068757390027}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 88248046, "sim_time_ms": 88248.046, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 262614, "lpm": 2582319, "deep": 0, "tx": 2588, "listen": 2816587}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 88251017, "sim_time_ms": 88251.017, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 88271917, "sim_time_ms": 88271.917, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 4954253451, "remaining_nj": 18446744068755298164}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 89058373, "sim_time_ms": 89058.373, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 258911, "lpm": 2618788, "deep": 0, "tx": 711, "listen": 2851258}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 89061258, "sim_time_ms": 89061.258, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 89082141, "sim_time_ms": 89082.141, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5009517483, "remaining_nj": 18446744068700034132}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 89248056, "sim_time_ms": 89248.056, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 265272, "lpm": 2612429, "deep": 0, "tx": 2588, "listen": 2849355}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 89251027, "sim_time_ms": 89251.027, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 89271952, "sim_time_ms": 89271.952, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5011678542, "remaining_nj": 18446744068697873073}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 90058359, "sim_time_ms": 90058.359, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 261390, "lpm": 2649077, "deep": 0, "tx": 711, "listen": 2884026}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 90061243, "sim_time_ms": 90061.243, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 90082113, "sim_time_ms": 90082.113, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5066873761, "remaining_nj": 18446744068642677854}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 90248045, "sim_time_ms": 90248.045, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 267932, "lpm": 2642537, "deep": 0, "tx": 2588, "listen": 2882123}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 90251016, "sim_time_ms": 90251.016, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 90271921, "sim_time_ms": 90271.921, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5069104401, "remaining_nj": 18446744068640447214}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 91058375, "sim_time_ms": 91058.375, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 263868, "lpm": 2679367, "deep": 0, "tx": 711, "listen": 2916794}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 91061259, "sim_time_ms": 91061.259, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 91082116, "sim_time_ms": 91082.116, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5124229656, "remaining_nj": 18446744068585321959}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 91248046, "sim_time_ms": 91248.046, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 270591, "lpm": 2672646, "deep": 0, "tx": 2588, "listen": 2914891}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 91251017, "sim_time_ms": 91251.017, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 91271913, "sim_time_ms": 91271.913, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5126529876, "remaining_nj": 18446744068583021739}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 92058366, "sim_time_ms": 92058.366, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 266389, "lpm": 2709614, "deep": 0, "tx": 711, "listen": 2949562}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 92061250, "sim_time_ms": 92061.25, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 92082120, "sim_time_ms": 92082.12, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5181602080, "remaining_nj": 18446744068527949535}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 92248063, "sim_time_ms": 92248.063, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 273302, "lpm": 2702703, "deep": 0, "tx": 2588, "listen": 2947659}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 92251035, "sim_time_ms": 92251.035, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 92271952, "sim_time_ms": 92271.952, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5183975341, "remaining_nj": 18446744068525576274}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 93058375, "sim_time_ms": 93058.375, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 269104, "lpm": 2739667, "deep": 0, "tx": 711, "listen": 2982330}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 93061260, "sim_time_ms": 93061.26, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 93082128, "sim_time_ms": 93082.128, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5239049083, "remaining_nj": 18446744068470502532}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 93248058, "sim_time_ms": 93248.058, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 276198, "lpm": 2732575, "deep": 0, "tx": 2588, "listen": 2980427}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 93251030, "sim_time_ms": 93251.03, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 93271952, "sim_time_ms": 93271.952, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5241491923, "remaining_nj": 18446744068468059692}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 94058375, "sim_time_ms": 94058.375, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 271583, "lpm": 2769956, "deep": 0, "tx": 711, "listen": 3015098}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 94061260, "sim_time_ms": 94061.26, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 94082116, "sim_time_ms": 94082.116, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5296405363, "remaining_nj": 18446744068413146252}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 94248066, "sim_time_ms": 94248.066, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 278858, "lpm": 2762683, "deep": 0, "tx": 2588, "listen": 3013195}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 94251037, "sim_time_ms": 94251.037, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 94271935, "sim_time_ms": 94271.935, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5298917783, "remaining_nj": 18446744068410633832}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 95058372, "sim_time_ms": 95058.372, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 274061, "lpm": 2800246, "deep": 0, "tx": 711, "listen": 3047866}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 95061257, "sim_time_ms": 95061.257, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 95082117, "sim_time_ms": 95082.117, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5353761257, "remaining_nj": 18446744068355790358}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 95248077, "sim_time_ms": 95248.077, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 281517, "lpm": 2792792, "deep": 0, "tx": 2588, "listen": 3045963}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 95251078, "sim_time_ms": 95251.078, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 95271973, "sim_time_ms": 95271.973, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5356343258, "remaining_nj": 18446744068353208357}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 96058373, "sim_time_ms": 96058.373, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 276539, "lpm": 2830536, "deep": 0, "tx": 711, "listen": 3080634}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 96061258, "sim_time_ms": 96061.258, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 96082116, "sim_time_ms": 96082.116, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5411117151, "remaining_nj": 18446744068298434464}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 96248050, "sim_time_ms": 96248.05, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 284177, "lpm": 2822900, "deep": 0, "tx": 2588, "listen": 3078731}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 96251021, "sim_time_ms": 96251.021, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 96271902, "sim_time_ms": 96271.902, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5413769117, "remaining_nj": 18446744068295782498}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 97058381, "sim_time_ms": 97058.381, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 279017, "lpm": 2860826, "deep": 0, "tx": 711, "listen": 3113402}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 97061266, "sim_time_ms": 97061.266, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 97082107, "sim_time_ms": 97082.107, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5468473046, "remaining_nj": 18446744068241078569}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 97248068, "sim_time_ms": 97248.068, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 286835, "lpm": 2853010, "deep": 0, "tx": 2588, "listen": 3111499}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 97251040, "sim_time_ms": 97251.04, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 97271955, "sim_time_ms": 97271.955, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5471194208, "remaining_nj": 18446744068238357407}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 98058365, "sim_time_ms": 98058.365, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 281699, "lpm": 2890912, "deep": 0, "tx": 813, "listen": 3146067}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 98061249, "sim_time_ms": 98061.249, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 98082113, "sim_time_ms": 98082.113, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5525892608, "remaining_nj": 18446744068183659007}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 98248056, "sim_time_ms": 98248.056, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 289495, "lpm": 2883118, "deep": 0, "tx": 2588, "listen": 3144267}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 98251027, "sim_time_ms": 98251.027, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 98271921, "sim_time_ms": 98271.921, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5528620067, "remaining_nj": 18446744068180931548}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 99058372, "sim_time_ms": 99058.372, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 284177, "lpm": 2921202, "deep": 0, "tx": 813, "listen": 3178835}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 99061257, "sim_time_ms": 99061.257, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 99082127, "sim_time_ms": 99082.127, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5583248503, "remaining_nj": 18446744068126303112}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 99248066, "sim_time_ms": 99248.066, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 292154, "lpm": 2913227, "deep": 0, "tx": 2588, "listen": 3177035}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 99251037, "sim_time_ms": 99251.037, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 99271935, "sim_time_ms": 99271.935, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5586045541, "remaining_nj": 18446744068123506074}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 100058372, "sim_time_ms": 100058.372, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 286656, "lpm": 2951491, "deep": 0, "tx": 813, "listen": 3211603}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 100061257, "sim_time_ms": 100061.257, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 100082129, "sim_time_ms": 100082.129, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5640604782, "remaining_nj": 18446744068068946833}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 100248065, "sim_time_ms": 100248.065, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 294813, "lpm": 2943336, "deep": 0, "tx": 2588, "listen": 3209803}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 100251036, "sim_time_ms": 100251.036, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 100271936, "sim_time_ms": 100271.936, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5643471017, "remaining_nj": 18446744068066080598}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 101058374, "sim_time_ms": 101058.374, "node_id": 1, "event_type": "ENERGY_RAW", "cpu": 289135, "lpm": 2981780, "deep": 0, "tx": 813, "listen": 3244371}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 101061259, "sim_time_ms": 101061.259, "node_id": 1, "event_type": "STACK", "reserved": 1536, "used": 888}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 101082128, "sim_time_ms": 101082.128, "node_id": 1, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5697961060, "remaining_nj": 18446744068011590555}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 101248055, "sim_time_ms": 101248.055, "node_id": 3, "event_type": "ENERGY_RAW", "cpu": 297472, "lpm": 2973445, "deep": 0, "tx": 2588, "listen": 3242571}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 101251026, "sim_time_ms": 101251.026, "node_id": 3, "event_type": "STACK", "reserved": 1502, "used": 778}
+{"run_id": "20261114T055834736669Z-B2-2", "sim_time_us": 101271935, "sim_time_ms": 101271.935, "node_id": 3, "event_type": "ENERGY_MODEL", "model_id": 1, "total_nj": 5700896491, "remaining_nj": 18446744068008655124}

@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "run_id": "20261113T101907182564Z-B4-2",
+  "mode": "B4",
+  "status": "passed",
+  "security": "AES-128-CCM",
+  "pins": {
+    "contiki_ng_commit": "a304687372e2917d325d4d71cf68610fe9a6279b",
+    "cooja_commit": "fabff3ee41eeeb6f3de7bd11f7c9cdf0a7d7dfc4",
+    "candidate_container": "contiker/contiki-ng:1a8be2d47fc7ef835f45461dbf014155d59be3e8a58e8779149d7645a7b1266c",
+    "container_status": "toolchain verified; Cooja built; two 9-node headless runs passed",
+    "cooja_java_required": 25,
+    "gradle_wrapper_distribution": "gradle-9.6.1-bin.zip",
+    "master_sha256": "2fad0d0b731e4b57409e3500bd18597c34e83991b6e495b2d60b94daab0bc385",
+    "container_image": "contiker/contiki-ng@sha256:b14d5afb0a2a852d9e72bbed607ead03f6ccc5f4d4dee44f0799110be2f4b609",
+    "container_selection_reason": "source hash tag not found; official develop pulled and digest pinned"
+  },
+  "config": {
+    "seed": 123456,
+    "warmup_ms": 60000,
+    "period_ms": 1000,
+    "readings_per_sensor": 24,
+    "deadline_ms": 3000,
+    "drain_ms": 15000,
+    "payload_budget": 47,
+    "reserved_bytes": 16,
+    "profile": 1,
+    "modes": {
+      "B1": 1,
+      "B4": 4
+    }
+  },
+  "config_sha256": "0e3f6afd22f177628ed16fa62f5cf7ed7ff89f3a212d8050a1b57e08ab428ede",
+  "config_file_sha256": "4f92c7fdaf7781bb4724b27a34c8d4c178d1c159e1a1592b1066561f4c72b929",
+  "clients": 2,
+  "effective_cap": 2,
+  "scenario_sha256": "2ff27853126e85d59b8ee7580d316181cbb9e477f5eadae9d641287f1176575f",
+  "source_hashes": {
+    "firmware/aggregate/aggregate.c": "bae672e0182bb7aea54f1d1374e443f443534e356f62827c75779739413d5c1d",
+    "firmware/aggregate/aggregate.h": "d4f2b38ad774ac16a234f7696b05e0920758d840f0ded7f9a36f90a0a66ccb9e",
+    "firmware/common/events.h": "28bc2d92c3809618da4bb5f3de4a1e78f0756b2280659cdaff88f2fc4ed32f1f",
+    "firmware/common/protocol.c": "1083c1178b0afc0559eaf6d46f119e097eb5aba6d0214e7b848905025f6c40ec",
+    "firmware/common/protocol.h": "e80260448459ec25d8e81fcd4802d0d48267d20b5a7f54e1609c16291e3e661c",
+    "firmware/crypto/aes_ccm.c": "f184f51573250ba1de85edc0d58929af8cfdeccda7c11839c8681fa9e38fb672",
+    "firmware/crypto/aes_ccm.h": "17012f41cf12a43ecb34a6dd54ad3df36a1f3b30ebc70609df3884ecc27afa7f",
+    "firmware/crypto/boot_gate.c": "e5b83da5bec1a5700dcdd35ad5c6dd0ab05be7678170506e227fcf0de21d6854",
+    "firmware/crypto/boot_gate.h": "68b956083fe7a7a8309ffab2d4126076d61bf802d0e7a77726ba5f574902d260",
+    "firmware/crypto/secure_packet.c": "23fc08c12c4d47888f3e4243fadf05dc5d7c96b7b9eee2901a43f29373fafa88",
+    "firmware/crypto/secure_packet.h": "4f258fa2a3bb67a726cf3cbecae68c692386eaafcd1416ae11f3e740f1e7994b",
+    "firmware/generated-conf.h": "a3df5b3a38893f316608d96b018b115d70c902c1d45bbe0543b420268bb02b34",
+    "firmware/project-conf.h": "98c7ade3092da343d26ed76c3e2d83abb6b75bbedd83ea1e07c536a802654490",
+    "firmware/root/project-conf.h": "01fc554a8f2631b1642083e4dc02a8cd08c5788e082f2c7858b8cb805329af62",
+    "firmware/root/root.c": "984cba84020fe48c31658263903acf7880b46d16d89a1149f424ca4e1f753fde",
+    "firmware/security_test/boot_kat.c": "2fd65f8c903be4d088ad107f9ce997eebc4c9d481382960fb9326918b8ec194a",
+    "firmware/security_test/crypto_kat.c": "4cc44980ebdca22a8fdeff2950ebb76952d53735d3dcd247d1de1650b100ad3b",
+    "firmware/security_test/reset_kat.c": "61f0209b9bc803d28518feac3bc674e7caef2fbd9d18e8ef56d08ef650f04b74",
+    "firmware/sensor/project-conf.h": "01fc554a8f2631b1642083e4dc02a8cd08c5788e082f2c7858b8cb805329af62",
+    "firmware/sensor/sensor.c": "4d823435114cc92569fd5ce4420e35a8e8032c297de37e319d8b112322d1a722",
+    "host/metrics.py": "d9bb4c6e303d545297fdb59faa4d028090338c31441981841b9a52bec3e6b6e9",
+    "host/parse_logs.py": "124565f3b8b91ce04988ec3d410d3d181fd2e74076d5e4aaf483e55f33361d90",
+    "host/plots.py": "0523167e3319324e310efa9ae1189739c09664e6661466369f9d48cce5a6c227",
+    "host/run_experiment.py": "8ac47d97f506385075547d32a42fcd5cb88b9b5c3743a780ee7678302679e345"
+  },
+  "git_sha": "HEAD",
+  "working_tree": "uncommitted source hashes authoritative",
+  "python": "3.14.4 (main, Jun 18 2026, 14:25:02) [GCC 15.2.0]",
+  "platform": "native-cooja",
+  "build_flags": "TARGET=cooja -j1",
+  "master_sha256": "2fad0d0b731e4b57409e3500bd18597c34e83991b6e495b2d60b94daab0bc385",
+  "command": [
+    "sg",
+    "docker",
+    "-c",
+    "docker run --rm --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/external/contiki-ng,destination=/home/user/contiki-ng --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT,destination=/workspace contiker/contiki-ng@sha256:b14d5afb0a2a852d9e72bbed607ead03f6ccc5f4d4dee44f0799110be2f4b609 bash -c 'set -eu; cd /workspace/firmware/sensor; make TARGET=cooja clean; cd ../root; make TARGET=cooja clean; /home/user/contiki-ng/tools/cooja/build/install/cooja/bin/cooja --no-gui --contiki=/home/user/contiki-ng --logdir=/workspace/results/phase_03/20261113T101907182564Z-B4-2 /workspace/results/phase_03/20261113T101907182564Z-B4-2/scenario.csc'"
+  ],
+  "exit_code": 0,
+  "binary_hashes": {
+    "firmware/sensor/build/cooja/mtype967154669.cooja": "2f39081093ba13264990ca1022c4838da4b8e434f656177321a5ff45faee468a",
+    "firmware/root/build/cooja/mtype746996725.cooja": "877c51591a769ef66e86f2c54bd698b5fdb50c76fe916f623422e1dc408d7bc0"
+  },
+  "artifact_hashes": {
+    "console.log": "097a3306d19fe5e0b0cf76ad6b25c7994c30daebb7a5ac7eae394b6bc5744d87",
+    "scenario.csc": "2ff27853126e85d59b8ee7580d316181cbb9e477f5eadae9d641287f1176575f",
+    "test-keys.json": "3a58af69d5994efafda5f90880e07903a5bfa942322b80a2b5181b43931f142a",
+    "COOJA.testlog": "c471c1b37c172e1ac1fe43eaf89cc8527009e6e2b24d12e48adcd8d88eb09708",
+    "summary.json": "9b8f6b978204502df0f2e47082648a02ceb4da895443b61cb1c82605f35896cb",
+    "events.jsonl": "73f3a1836d2bfea1f69409087e55db0ce2c1277e00a197035672d6e521c9118e"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "security": "Ascon-AEAD128 authenticated pilot",
+  "lifetime": {
+    "battery_nodes": [
+      2,
+      3
+    ],
+    "fnd": {
+      "event": true,
+      "time_ms": 80444.573,
+      "censored": false
+    },
+    "hnd": {
+      "event": true,
+      "time_ms": 80444.573,
+      "censored": false
+    },
+    "functional": {
+      "event": true,
+      "crossing_ms": 75000,
+      "confirmation_ms": 85000,
+      "censor_ms": null
+    },
+    "scheduled_readings": 48,
+    "scheduled_delivered": 24,
+    "scheduled_shortfall": 24,
+    "service_window_ms": 10000,
+    "service_persistence_ms": 10000,
+    "delivery_bound_ms": 5000,
+    "service_minimum": 0.95
+  },
+  "stack_max_usage": {
+    "1": 888,
+    "2": 778,
+    "3": 778
+  },
+  "energy_measurement": {
+    "scope": "component_model",
+    "model_validated": true,
+    "reconciliation": {
+      "1": {
+        "total_nj": 5697961060,
+        "samples": 99,
+        "reconciled": true
+      },
+      "2": {
+        "total_nj": 4506748922,
+        "samples": 79,
+        "reconciled": true
+      },
+      "3": {
+        "total_nj": 5700896491,
+        "samples": 99,
+        "reconciled": true
+      }
+    },
+    "samples": {
+      "1": 99,
+      "2": 79,
+      "3": 99
+    }
+  },
+  "security_test_injections": 0,
+  "security_test_rejections": 0,
+  "rejection_reasons": {},
+  "unique_authenticated_delivered": 24,
+  "generated": 43,
+  "submitted_readings": 26,
+  "explicit_drops": 17,
+  "unique_delivered": 24,
+  "missing_readings": 19,
+  "packets_submitted": 26,
+  "packets_accepted": 24,
+  "packet_pdr": 0.9230769230769231,
+  "application_packet_bytes": 962,
+  "reading_pdr": 0.5581395348837209,
+  "p95_delay_ms": 106.53365000000554,
+  "max_hold_ms": 2125,
+  "duplicates": 0,
+  "batch_counts": [
+    1
+  ],
+  "radio": {
+    "captured_frames": 115,
+    "captured_frame_bytes": 6231,
+    "data_frames": 72,
+    "max_frame_bytes": 102,
+    "fragment_frames": 0,
+    "unclassified_data_frames": 0
+  }
+}

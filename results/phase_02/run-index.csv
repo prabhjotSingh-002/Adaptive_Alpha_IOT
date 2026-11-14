@@ -1,0 +1,13 @@
+application_packet_bytes,batch_counts,clients,error,fragment_frames,generated,max_hold_ms,mode,p95_delay_ms,packets_submitted,payload_budget,period_ms,reading_pdr,run_id,status,unique_delivered
+,,2,Cooja/build failed; inspect console.log,,,,N0-single,,,67,1000,,20261113T092355028182Z-N0-single-2,failed,
+,,2,Cooja/build failed; inspect console.log,,,,N0-single,,,67,1000,,20261113T092513624299Z-N0-single-2,failed,
+,,2,Cooja/build failed; inspect console.log,,,,N0-single,,,67,1000,,20261113T092609386793Z-N0-single-2,failed,
+1008,[1],2,,0,48,0,N0-single,43.31600000000326,48,67,1000,1.0,20261113T092654004942Z-N0-single-2,passed,48
+656,[3],2,,0,48,3000,N0-batch,3038.3060000000028,16,67,1000,1.0,20261113T092721488290Z-N0-batch-2,passed,48
+1008,[1],2,,0,48,0,N0-single,43.31600000000326,48,67,1000,1.0,20261113T093535634015Z-N0-single-2,passed,48
+656,[3],2,,0,48,3000,N0-batch,3039.3060000000028,16,67,1000,1.0,20261113T093559206972Z-N0-batch-2,passed,48
+4032,[1],8,,0,192,0,N0-single,103.55399999999966,192,67,1000,1.0,20261113T093713547602Z-N0-single-8,passed,192
+2624,[3],8,,0,192,3000,N0-batch,3074.685600000003,64,67,1000,1.0,20261113T093733639048Z-N0-batch-8,passed,192
+612,[4],2,,0,48,1500,N0-batch,1532.6259999999952,12,67,500,1.0,20261113T093944037183Z-N0-batch-2,passed,48
+1008,[1],2,,0,48,3000,N0-batch,3044.0160000000033,48,67,4000,1.0,20261113T094002866908Z-N0-batch-2,passed,48
+744,[2],2,,0,48,1000,N0-batch,1038.2859999999957,24,47,1000,1.0,20261113T094021560664Z-N0-batch-2,passed,48

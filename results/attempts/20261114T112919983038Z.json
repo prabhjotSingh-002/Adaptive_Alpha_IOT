@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "host/run_experiment.py",
+    "--help"
+  ],
+  "status": "failed",
+  "started_utc": "2026-11-14T11:29:19.983086+00:00",
+  "error": "SystemExit: 0",
+  "ended_utc": "2026-11-14T11:29:20.010708+00:00"
+}

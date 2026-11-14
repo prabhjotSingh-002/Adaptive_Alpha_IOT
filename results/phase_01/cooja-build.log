@@ -1,0 +1,35 @@
+Fetching distribution (retrying 3 times, with an initial back off of 500 ms).
+Downloading https://services.gradle.org/distributions/gradle-9.6.1-bin.zip
+
+Attempt 1/4 failed. Reason: Downloading from https://services.gradle.org/distributions/gradle-9.6.1-bin.zip failed: timeout (10000ms)
+Downloading https://services.gradle.org/distributions/gradle-9.6.1-bin.zip
+
+Attempt 2/4 failed. Reason: Downloading from https://services.gradle.org/distributions/gradle-9.6.1-bin.zip failed: timeout (10000ms)
+Downloading https://services.gradle.org/distributions/gradle-9.6.1-bin.zip
+
+Attempt 3/4 failed. Reason: Downloading from https://services.gradle.org/distributions/gradle-9.6.1-bin.zip failed: timeout (10000ms)
+Downloading https://services.gradle.org/distributions/gradle-9.6.1-bin.zip
+.............10%.............20%..............30%.............40%..............50%.............60%.............70%..............80%.............90%..............100%
+
+Welcome to Gradle 9.6.1!
+
+Here are the highlights of this release:
+ - Improved Configuration Cache hit rates
+ - Additional CLI rendering options
+ - Important project hierarchy lookup deprecations
+
+For more details see https://docs.gradle.org/9.6.1/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :compileJava
+> Task :processResources
+> Task :classes
+> Task :fullJar
+> Task :copyDependencies
+> Task :jar
+> Task :startScripts
+> Task :installDist
+
+BUILD SUCCESSFUL in 2m
+7 actionable tasks: 7 executed

@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "status": "automated_implementation_complete_7_cases_deferred",
+  "updated": "2026-11-14T08:45:00Z",
+  "scope": "Phase 4 work and evidence ledger; pending entries are not passes",
+  "requirements": {
+    "P4.0": {
+      "status": "complete",
+      "note": "Security contract, schema definitions, evidence ledger established. Docs: phase4-security-contract.md, power-model.md, phase4-experiment-protocol.md"
+    },
+    "P4.1": {
+      "status": "complete",
+      "evidence": [
+        "results/phase_04/ascon-resume-approved-20261114.log",
+        "results/phase_04/ascon-profile-return-approved-20261114.log",
+        "results/phase_04/z1-aes-kat-expanded/COOJA.testlog"
+      ],
+      "note": "1089-vector corpus pass, adversarial host matrix pass, expanded Z1 AES KAT (empty+nonempty vectors) pass with software backend"
+    },
+    "P4.2": {
+      "status": "complete",
+      "note": "Dual-profile provisioning, Schema2, four-arm root+8 static pilots pass for 3 seeds, security matrix 22 cases pass, mote KATs pass",
+      "runs": [
+        "20261114T065413425942Z-B1-8",
+        "20261114T065550757430Z-B2-8",
+        "20261114T070425862495Z-B4-8",
+        "20261114T065857010232Z-B1-8",
+        "validation-20261114T075313282538Z (cases 1-28)"
+      ]
+    },
+    "P4.3": {
+      "status": "complete",
+      "note": "Z1 reference backend: sensor+root build pass, Ascon mote KAT pass, AES expanded KAT pass. Optimized backend excluded (z1_kat_02 fail preserved). Sky excluded (ROM overflow).",
+      "evidence": [
+        "results/phase_04/target-validation-20261114/manifest.json",
+        "results/phase_04/z1_kat_ref_01/COOJA.testlog",
+        "results/phase_04/z1-aes-kat-expanded/COOJA.testlog"
+      ]
+    },
+    "P4.4": {
+      "status": "complete",
+      "note": "energy.c portable arithmetic, energest_sampler.c Energest integration, power-z1-v1.json sourced model, energy_reconcile production-C reconciliation. Horizon-boundary fix applied (energy_reconcile.py). Measurement controls pass.",
+      "evidence": [
+        "results/phase_04/energy-arithmetic-20261114.log",
+        "results/phase_04/energy-close-tests.log",
+        "results/phase_04/validation-20261114T075313282538Z/23-idle-listen-transition.log",
+        "results/phase_04/validation-20261114T075313282538Z/24-controlled-cpu-load.log"
+      ]
+    },
+    "P4.5": {
+      "status": "implemented_full_lifetime_matrix_deferred",
+      "note": "Terminal depletion implemented and exercised in exploratory run. Full 3-seed lifetime matrix (5 cases) deferred — see phase_04_leftover.md. FND/HND/censoring logic tested in Python (21 tests pass).",
+      "evidence": [
+        "results/phase_04/20261114T055834736669Z-B2-2/manifest.json",
+        "results/phase_04/energy-lifetime-python-final-20261114.log"
+      ]
+    },
+    "P4.6": {
+      "status": "mostly_complete_7_cases_deferred",
+      "note": "Security/measurement/static matrices complete. Boundary 4000ms, boundary 47-byte, lifetime groups deferred. See phase_04_leftover.md.",
+      "evidence": [
+        "results/phase_04/validation-20261114T075313282538Z/manifest.json",
+        "results/phase_04/static-123458-rerun.log"
+      ]
+    },
+    "P4.7": {
+      "status": "complete",
+      "note": "Detailed report, problems/resolutions report, leftover doc, updated evidence ledger all written. Human gates remain pending.",
+      "deliverables": [
+        "phase_jouney/phase_04_detailed_report.md",
+        "phase_jouney/phase_04_downloads_problems_and_resolutions.md",
+        "phase_jouney/phase_04_leftover.md",
+        "results/phase_04/phase4-evidence.json"
+      ]
+    },
+    "human_review": {
+      "status": "pending"
+    }
+  },
+  "artifact_hashes": {
+    "results/phase_04/python-integration-20261114.log": "d6dc6ed44e2e267284fb824127f00f43fa5483fc58b60608a6f436831b2e5a9a",
+    "results/phase_04/sky-feasibility-20261114.log": "67ad0cfd931d39830a80ab351138c0413e863566d91dd51ee5f4d05aef62356d",
+    "results/phase_04/20261113T191238979956Z-B1-2/manifest.json": "953d7b6ba08cb15aeaf5c08be96fb94c0b4f732cb334ea275de90c34e9accc8a",
+    "results/phase_04/20261113T191238979956Z-B1-2/test-keys.json": "41099318fc303d52ac69555c67bba30dc72371db475cad2e138b74a1803cab7f",
+    "results/phase_04/20261113T191238979956Z-B1-2/summary.json": "c9e8a654d417f974779b8b0b62e01ada6b35e324e0a325ddf008956b2470ab46",
+    "results/phase_04/20261113T191257304270Z-B2-2/manifest.json": "278bea1885f5d265c5095021a441ad619df143f416bc91c86787c56754335762",
+    "results/phase_04/20261113T191257304270Z-B2-2/test-keys.json": "6e0459e9e34f3eb58ebf423df4199e542b3a12c8d6e1b6732c98e6742c910855",
+    "results/phase_04/20261113T191257304270Z-B2-2/paired-comparison.json": "dcb3fd69820b09d9f4a43a9eb191ffe2be727e6daf296736eae645c9ef71116a",
+    "results/phase_04/20261113T191257304270Z-B2-2/summary.json": "f43b9e0d279590a0acd1081ac49917b4ff56f041b4c76ae9bc63cc26600eb259",
+    "results/phase_04/20261113T191315558502Z-B4-2/manifest.json": "3f41a889afa547013fb6daa73081204a9126ed45473a78b5d52752ca79fedd87",
+    "results/phase_04/20261113T191315558502Z-B4-2/test-keys.json": "93d39e812b27e8e967c75fb9cf2fb4599cf3ca26f03fe69b3be1ae348f2f07a7",
+    "results/phase_04/20261113T191315558502Z-B4-2/summary.json": "16b73ed60b8f36b2f7d0f47b95ec6992f1b9185984a58c9065ffa46648a8c7ee",
+    "results/phase_04/20261113T191333489468Z-B5-2/manifest.json": "081515bd9d846f93829ea8ed0a16b33929ff4177597b97f9d9e6a1b1f40259fb",
+    "results/phase_04/20261113T191333489468Z-B5-2/test-keys.json": "0394b7a51d55406d92504b8fe9eeddc23e1a64f34c9bdc11760b71dc3d727913",
+    "results/phase_04/20261113T191333489468Z-B5-2/summary.json": "6d9cee8c563aa74a787e081d14d9357d6b23cf40c215d3e419e0bfe765d51e22"
+  },
+  "resolution_progress": {
+    "status": "in_progress",
+    "manifest": "results/phase_04/resolution-implementation-20261114.json",
+    "completed_subchecks": [
+      "fixed-byte grant: host and protected Z1 network",
+      "Z1 Ascon 7-injection rejection test",
+      "Z1 controlled root replacement lockout with logged probes",
+      "native AES regression",
+      "14 Python regression tests"
+    ],
+    "pending": [
+      "all-context provisioning completeness/atomic activation",
+      "full telemetry schema",
+      "complete failure/source provenance",
+      "target resource/stack/timing validation",
+      "energy/depletion/lifetime",
+      "remaining comparisons and final reports"
+    ]
+  },
+  "static_provisioning_set": {
+    "status": "implemented_partial_phase_scope",
+    "evidence": "results/phase_04/provision-set-evidence-20261114.json",
+    "note": "host partial-slot/zero-key tests and Z1 Ascon/native AES network pass; dual-profile application and broader negative tests pending"
+  },
+  "rejection_status": {
+    "status": "implemented_with_host_and_selected_network_evidence",
+    "manifest": "results/phase_04/rejection-status-evidence-20261114.json",
+    "limits": "Z1 Ascon and native AES attack scenarios only; complete security/target/schema matrices still open"
+  },
+  "dual_schema_energy": {
+    "status": "partial_phase_scope",
+    "manifest": "results/phase_04/dual-schema-energy-evidence-20261114.json",
+    "note": "Dual-profile provisioning/application return, actual sealed TX identity, schema2 packet accounting, raw Energest and portable energy arithmetic. Full-model energy/forwarding depletion NOT complete."
+  },
+  "closure_progress": {
+    "status": "in_progress",
+    "record": "results/phase_04/closure-progress-20261114.json",
+    "note": "Software AES target defect and sender deadline defect fixed; affected final matrix repeats remain pending."
+  }
+}

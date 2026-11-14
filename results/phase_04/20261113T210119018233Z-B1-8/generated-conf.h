@@ -1,0 +1,17 @@
+/* Generated from the resolved experiment config. */
+#define LAB_BATCH_CAP 1u
+#define LAB_DEADLINE_MS 3000u
+#define LAB_PERIOD_MS 1000u
+#define LAB_WARMUP_MS 180000u
+#define LAB_TOTAL_READINGS 24u
+#define LAB_LAST_NODE 9u
+#define LAB_PAYLOAD_BUDGET 67u
+#define LAB_RESERVED_BYTES 16u
+#define LAB_ENERGY_TELEMETRY 0u
+#define LAB_SCHEMA 2u
+#define LAB_CONFIG_ID 2929432559u
+#define LAB_DUAL_PROFILE 1u
+#define LAB_SWITCH_TEST 1u
+#define LAB_PROFILE 1u
+#define LAB_ROOT_RESET_TEST 0u
+#define LAB_ATTACK_TEST 0u

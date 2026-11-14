@@ -1,0 +1,13 @@
+Random seed: 123456
+1688586,1,[INFO: Main      ] - Routing: RPL Lite
+1691220,1,[INFO: Main      ] - Net: sicslowpan
+1693426,1,[INFO: Main      ] - MAC: CSMA
+1696731,1,[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+1700353,1,[INFO: Main      ] - 802.15.4 Default channel: 26
+1702521,1,[INFO: Main      ] Node ID: 1
+1707219,1,[INFO: Main      ] Link-layer address: c10c.0000.0000.0001
+1714954,1,[INFO: Main      ] Tentative link-local IPv6 address: fe80::c30c:0:0:1
+1718261,1,[INFO: Z1        ] CC2420 CCA threshold -45
+1781892,1,PHASE3_KAT_PASS
+TEST OK
+Test ended at simulation time: 1781892

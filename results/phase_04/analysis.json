@@ -1,0 +1,366 @@
+{
+  "phases": [
+    4
+  ],
+  "min_clients": 8,
+  "total_runs": 18,
+  "modes": [
+    "B1",
+    "B2",
+    "B4",
+    "B5"
+  ],
+  "baseline": "B1",
+  "bootstrap_ci": "95% percentile, n_boot=4000, seed=42",
+  "per_mode": {
+    "B1": {
+      "n_runs": 6,
+      "seeds": [
+        123456,
+        123457,
+        123458
+      ],
+      "reading_pdr": {
+        "n": 6,
+        "mean": 0.9696180555555555,
+        "median": 0.9713541666666667,
+        "std": 0.006088777054427149,
+        "ci_lo": 0.9644097222222223,
+        "ci_hi": 0.9730902777777778,
+        "min": 0.9583333333333334,
+        "max": 0.9739583333333334
+      },
+      "p95_delay_ms": {
+        "n": 6,
+        "mean": 142.11409166666658,
+        "median": 133.44987500000389,
+        "std": 18.59591267742045,
+        "ci_lo": 129.41489458333658,
+        "ci_hi": 154.97967249999627,
+        "min": 124.6450000000055,
+        "max": 165.74539999999106
+      },
+      "energy_per_delivered_reading_nj": {
+        "n": 5,
+        "mean": 247233663.47787428,
+        "median": 247472930.89247313,
+        "std": 1518311.5872692172,
+        "ci_lo": 246172272.61268473,
+        "ci_hi": 248380656.755157,
+        "min": 245846766.45989305,
+        "max": 249527556.35326087
+      },
+      "packets_submitted": {
+        "n": 6,
+        "mean": 186.16666666666666,
+        "median": 186.5,
+        "std": 1.1690451944500122,
+        "ci_lo": 185.16666666666666,
+        "ci_hi": 186.83333333333334,
+        "min": 184.0,
+        "max": 187.0
+      },
+      "application_packet_bytes": {
+        "n": 6,
+        "mean": 6888.166666666667,
+        "median": 6900.5,
+        "std": 43.254672194650446,
+        "ci_lo": 6851.166666666667,
+        "ci_hi": 6912.833333333333,
+        "min": 6808.0,
+        "max": 6919.0
+      },
+      "policy": null
+    },
+    "B2": {
+      "n_runs": 5,
+      "seeds": [
+        123456,
+        123457,
+        123458
+      ],
+      "reading_pdr": {
+        "n": 5,
+        "mean": 0.9677083333333334,
+        "median": 0.96875,
+        "std": 0.005705443307345475,
+        "ci_lo": 0.9625,
+        "ci_hi": 0.971875,
+        "min": 0.9583333333333334,
+        "max": 0.9739583333333334
+      },
+      "p95_delay_ms": {
+        "n": 5,
+        "mean": 152.45285999999686,
+        "median": 142.19749999999476,
+        "std": 26.25639998977768,
+        "ci_lo": 133.04589999999413,
+        "ci_hi": 172.7748600000015,
+        "min": 119.31849999999322,
+        "max": 181.56300000000556
+      },
+      "energy_per_delivered_reading_nj": {
+        "n": 5,
+        "mean": 247501031.78667808,
+        "median": 247473336.30107528,
+        "std": 1319268.250221684,
+        "ci_lo": 246501830.5910183,
+        "ci_hi": 248649327.1840697,
+        "min": 245854160.11764705,
+        "max": 249535079.36413044
+      },
+      "packets_submitted": {
+        "n": 5,
+        "mean": 186.0,
+        "median": 186.0,
+        "std": 1.224744871391589,
+        "ci_lo": 185.0,
+        "ci_hi": 186.8,
+        "min": 184.0,
+        "max": 187.0
+      },
+      "application_packet_bytes": {
+        "n": 5,
+        "mean": 6882.0,
+        "median": 6882.0,
+        "std": 45.3155602414888,
+        "ci_lo": 6845.0,
+        "ci_hi": 6911.6,
+        "min": 6808.0,
+        "max": 6919.0
+      },
+      "policy": null
+    },
+    "B4": {
+      "n_runs": 4,
+      "seeds": [
+        123456,
+        123457,
+        123458
+      ],
+      "reading_pdr": {
+        "n": 4,
+        "mean": 0.98046875,
+        "median": 0.984375,
+        "std": 0.0078125,
+        "ci_lo": 0.97265625,
+        "ci_hi": 0.984375,
+        "min": 0.96875,
+        "max": 0.984375
+      },
+      "p95_delay_ms": {
+        "n": 4,
+        "mean": 2985.820737500001,
+        "median": 2988.1483000000007,
+        "std": 14.642323658339064,
+        "ci_lo": 2971.435862500003,
+        "ci_hi": 2997.8780499999993,
+        "min": 2965.8647500000043,
+        "max": 3001.1215999999986
+      },
+      "energy_per_delivered_reading_nj": {
+        "n": 4,
+        "mean": 243928892.70127153,
+        "median": 243177218.8994709,
+        "std": 1709749.2092761644,
+        "ci_lo": 242951649.37301588,
+        "ci_hi": 245657809.83132786,
+        "min": 242876449.95238096,
+        "max": 246484683.05376345
+      },
+      "packets_submitted": {
+        "n": 4,
+        "mean": 62.75,
+        "median": 63.0,
+        "std": 0.5,
+        "ci_lo": 62.25,
+        "ci_hi": 63.0,
+        "min": 62.0,
+        "max": 63.0
+      },
+      "application_packet_bytes": {
+        "n": 4,
+        "mean": 3576.75,
+        "median": 3591.0,
+        "std": 28.5,
+        "ci_lo": 3548.25,
+        "ci_hi": 3591.0,
+        "min": 3534.0,
+        "max": 3591.0
+      },
+      "policy": null
+    },
+    "B5": {
+      "n_runs": 3,
+      "seeds": [
+        123456,
+        123457,
+        123458
+      ],
+      "reading_pdr": {
+        "n": 3,
+        "mean": 0.9791666666666666,
+        "median": 0.984375,
+        "std": 0.009021097956087904,
+        "ci_lo": 0.96875,
+        "ci_hi": 0.984375,
+        "min": 0.96875,
+        "max": 0.984375
+      },
+      "p95_delay_ms": {
+        "n": 3,
+        "mean": 3004.8212000000026,
+        "median": 3010.0180000000078,
+        "std": 16.930924455566842,
+        "ci_lo": 2985.900999999998,
+        "ci_hi": 3018.5446000000024,
+        "min": 2985.900999999998,
+        "max": 3018.5446000000024
+      },
+      "energy_per_delivered_reading_nj": {
+        "n": 3,
+        "mean": 244171889.75994197,
+        "median": 243171531.35978836,
+        "std": 1996629.896731702,
+        "ci_lo": 242873182.29100528,
+        "ci_hi": 246470955.62903225,
+        "min": 242873182.29100528,
+        "max": 246470955.62903225
+      },
+      "packets_submitted": {
+        "n": 3,
+        "mean": 62.666666666666664,
+        "median": 63.0,
+        "std": 0.5773502691896258,
+        "ci_lo": 62.0,
+        "ci_hi": 63.0,
+        "min": 62.0,
+        "max": 63.0
+      },
+      "application_packet_bytes": {
+        "n": 3,
+        "mean": 3572.0,
+        "median": 3591.0,
+        "std": 32.90896534380867,
+        "ci_lo": 3534.0,
+        "ci_hi": 3591.0,
+        "min": 3534.0,
+        "max": 3591.0
+      },
+      "policy": null
+    }
+  },
+  "pairwise_vs_baseline": {
+    "B2": {
+      "reading_pdr": {
+        "mean_diff": -0.0019097222222220767,
+        "ci_lo": -0.0078125,
+        "ci_hi": 0.00434027777777779,
+        "pct_change": -0.2,
+        "note": "pilot_estimate_unpaired"
+      },
+      "p95_delay_ms": {
+        "mean_diff": 10.338768333330279,
+        "ci_lo": -12.719791250003277,
+        "ci_hi": 33.56469166666679,
+        "pct_change": 7.27,
+        "note": "pilot_estimate_unpaired"
+      },
+      "energy_per_delivered_reading_nj": {
+        "mean_diff": 267368.30880379677,
+        "ci_lo": -1329224.0523783616,
+        "ci_hi": 1802035.105343338,
+        "pct_change": 0.11,
+        "note": "adequate"
+      },
+      "packets_submitted": {
+        "mean_diff": -0.1666666666666572,
+        "ci_lo": -1.3333333333333428,
+        "ci_hi": 1.0041666666666815,
+        "pct_change": -0.09,
+        "note": "pilot_estimate_unpaired"
+      },
+      "application_packet_bytes": {
+        "mean_diff": -6.16666666666697,
+        "ci_lo": -49.33333333333303,
+        "ci_hi": 37.154166666667216,
+        "pct_change": -0.09,
+        "note": "pilot_estimate_unpaired"
+      }
+    },
+    "B4": {
+      "reading_pdr": {
+        "mean_diff": 0.01085069444444453,
+        "ci_lo": 0.003472222222222321,
+        "ci_hi": 0.01736111111111116,
+        "pct_change": 1.12,
+        "note": "pilot_estimate_unpaired"
+      },
+      "p95_delay_ms": {
+        "mean_diff": 2843.7066458333347,
+        "ci_lo": 2826.2894675000066,
+        "ci_hi": 2860.1434427083313,
+        "pct_change": 2001.0,
+        "note": "pilot_estimate_unpaired"
+      },
+      "energy_per_delivered_reading_nj": {
+        "mean_diff": -3304770.776602745,
+        "ci_lo": -4972891.946783572,
+        "ci_hi": -1421788.671527387,
+        "pct_change": -1.34,
+        "note": "pilot_estimate_unpaired"
+      },
+      "packets_submitted": {
+        "mean_diff": -123.41666666666666,
+        "ci_lo": -124.16666666666669,
+        "ci_hi": -122.33333333333334,
+        "pct_change": -66.29,
+        "note": "pilot_estimate_unpaired"
+      },
+      "application_packet_bytes": {
+        "mean_diff": -3311.416666666667,
+        "ci_lo": -3344.666666666667,
+        "ci_hi": -3272.5,
+        "pct_change": -48.07,
+        "note": "pilot_estimate_unpaired"
+      }
+    },
+    "B5": {
+      "reading_pdr": {
+        "mean_diff": 0.00954861111111116,
+        "ci_lo": 0.0026041666666666297,
+        "ci_hi": 0.01649305555555558,
+        "pct_change": 0.98,
+        "note": "pilot_estimate_unpaired"
+      },
+      "p95_delay_ms": {
+        "mean_diff": 2862.707108333336,
+        "ci_lo": 2845.092709166674,
+        "ci_hi": 2879.8048750000044,
+        "pct_change": 2014.37,
+        "note": "pilot_estimate_unpaired"
+      },
+      "energy_per_delivered_reading_nj": {
+        "mean_diff": -3061773.7179323137,
+        "ci_lo": -4891428.349338014,
+        "ci_hi": -1097451.1533742256,
+        "pct_change": -1.24,
+        "note": "pilot_estimate_unpaired"
+      },
+      "packets_submitted": {
+        "mean_diff": -123.5,
+        "ci_lo": -124.33333333333334,
+        "ci_hi": -122.5,
+        "pct_change": -66.34,
+        "note": "pilot_estimate_unpaired"
+      },
+      "application_packet_bytes": {
+        "mean_diff": -3316.166666666667,
+        "ci_lo": -3350.345833333333,
+        "ci_hi": -3275.833333333333,
+        "pct_change": -48.14,
+        "note": "pilot_estimate_unpaired"
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "seed": 123456,
+  "warmup_ms": 60000,
+  "period_ms": 1000,
+  "readings_per_sensor": 24,
+  "deadline_ms": 3000,
+  "drain_ms": 15000,
+  "payload_budget": 67,
+  "reserved_bytes": 16,
+  "modes": {
+    "B1": 1,
+    "B2": 1,
+    "B4": 4,
+    "B5": 4,
+    "B3": 1,
+    "B6": 1,
+    "P1": 1
+  },
+  "phase": 5,
+  "mode_profiles": {
+    "B1": 1,
+    "B2": 2,
+    "B4": 1,
+    "B5": 2,
+    "B3": 1,
+    "B6": 1,
+    "P1": 1
+  },
+  "mode_policy": {
+    "B1": 0,
+    "B2": 0,
+    "B4": 0,
+    "B5": 0,
+    "B3": 1,
+    "B6": 2,
+    "P1": 3
+  },
+  "calibration_seed": 223457,
+  "b3_threshold_nj_hi": 6000000000,
+  "b3_threshold_nj_lo": 3000000000,
+  "b6_profile": 2,
+  "p1_transition_cost_nj": 50000,
+  "p1_min_dwell_ms": 2000,
+  "p1_margin_nj": 10000
+}

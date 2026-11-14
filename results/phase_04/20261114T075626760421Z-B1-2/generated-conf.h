@@ -1,0 +1,26 @@
+/* Generated from the resolved experiment config. */
+#define LAB_BATCH_CAP 1u
+#define LAB_DEADLINE_MS 3000u
+#define LAB_PERIOD_MS 1000u
+#define LAB_WARMUP_MS 60000u
+#define LAB_TOTAL_READINGS 24u
+#define LAB_LAST_NODE 3u
+#define LAB_PAYLOAD_BUDGET 67u
+#define LAB_RESERVED_BYTES 16u
+#define LAB_FLUSH_LEAD_MS 125u
+#define LAB_RADIO_OFF_UNTIL 0u
+#define LAB_CPU_WORK_ITERATIONS 0u
+#define LAB_ENERGY_SAMPLE_MS 125u
+#define LAB_DEPLETION_NODE 0u
+#define LAB_ENERGY_MODEL 0u
+#define LAB_ENERGY_TELEMETRY 0u
+#define LAB_SCHEMA 2u
+#define LAB_CONFIG_ID 1522214941u
+#define LAB_DUAL_PROFILE 1u
+#define LAB_SWITCH_TEST 0u
+#define LAB_RADIO_LOSS_TEST 0u
+#define LAB_REORDER_TEST 0u
+#define LAB_CRITICAL_READING 0u
+#define LAB_PROFILE 1u
+#define LAB_ROOT_RESET_TEST 0u
+#define LAB_ATTACK_TEST 0u

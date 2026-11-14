@@ -1,0 +1,13 @@
+# Phase 3 security contract and limitations
+
+Phase 2 N0 remains profile 0, epoch 0, and is unprotected. The Phase 3 AES-128-CCM profile is 1 with a 16-byte authentication tag and 13-byte nonce; unknown profiles and profile 0 are rejected in secure runs.
+
+The existing 11-byte big-endian v1 header is version:u8, sender:u16, profile:u8, epoch:u16, counter:u32, count:u8. All 11 bytes are authenticated AAD. Each plaintext reading is id:u32, local-created-ms:u32, value:u16; counts 1/2/3/4 yield wire lengths 37/47/57/67 bytes including tag. IPv6 source suffix is a routing sanity check, not cryptographic identity. Outer IP/MAC fields are not all application AAD. Reading-ID ordering and exact sizes are validated.
+
+Nonce bytes: 52 53 4c, profile 01, direction 00, sender:u16, epoch:u16, counter:u32, all big-endian. Zero and UINT32_MAX are rejected; counter UINT32_MAX-1 is the last usable value. Counter is consumed before invoking AEAD; failures do not reuse it. Root keeps a separate 32-counter replay window per sender and commits it only after tag and body verification. Existing reading-ID dedup remains separate.
+
+The adapter wraps the pinned Contiki CCM*/AES-128 code. The backend decrypts in place and calculates a MIC, so the wrapper uses bounded private scratch, compares all 16 tag bytes, wipes scratch and releases no caller plaintext on failure. The backend uses a global key schedule: callers must not interleave set_key/AEAD. Native Cooja callbacks run cooperatively in this setup; MAC link-layer security defaults disabled. Table-based AES is not claimed side-channel resistant.
+
+Per-run OS-random, per-sender test keys are injected through the simulator memory mailbox, with a one-use host-side grant per mote. Both root and sensors start locked. Tests exercised security-context reinitialization, fresh native mote replacement, and actual root replacement with incoming packets; no automatic grant is given again. This is a simulator-only experiment control, not a durable secure boot, production key provisioning, or proof against restoring a whole simulation snapshot. OS randomness makes key collisions improbable; no persistent registry checks previous-run key collisions. A new run provisions fresh keys. Never use these published test fixtures as secrets.
+
+Only native Cooja functionality, observed network/radio counters and native binary sizes are established. No physical-device crypto timing, battery life, certified implementation, broad side-channel security or statistical performance guarantee follows. No online negotiation, Ascon, energy model or adaptive policy is implemented in this phase.

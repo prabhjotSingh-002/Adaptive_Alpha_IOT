@@ -1,0 +1,99 @@
+{
+  "security": "Ascon-AEAD128 authenticated pilot",
+  "network_energy_nj": 11639544548,
+  "energy_per_delivered_reading_nj": 242490511.41666666,
+  "energy_window": "boot_to_horizon_including_warmup_and_drain",
+  "lifetime": null,
+  "stack_max_usage": {
+    "1": 888,
+    "2": 780,
+    "3": 780
+  },
+  "energy_measurement": {
+    "scope": "component_model",
+    "model_validated": true,
+    "reconciliation": {
+      "1": {
+        "total_nj": 5818548066,
+        "samples": 99,
+        "reconciled": true,
+        "state_contributions_nj": {
+          "cpu_with_idle_radio": 254595738,
+          "lpm_with_idle_radio": 104408549,
+          "deep": 0,
+          "tx_increment": 1411046,
+          "listen_increment": 5458132733
+        },
+        "fixed_trace_cpu_current_sensitivity_nj": [
+          5807540901,
+          5829555232
+        ]
+      },
+      "2": {
+        "total_nj": 5819718553,
+        "samples": 99,
+        "reconciled": true,
+        "state_contributions_nj": {
+          "cpu_with_idle_radio": 256195808,
+          "lpm_with_idle_radio": 104260899,
+          "deep": 0,
+          "tx_increment": 4400973,
+          "listen_increment": 5454860873
+        },
+        "fixed_trace_cpu_current_sensitivity_nj": [
+          5808642210,
+          5830794896
+        ]
+      },
+      "3": {
+        "total_nj": 5819825995,
+        "samples": 99,
+        "reconciled": true,
+        "state_contributions_nj": {
+          "cpu_with_idle_radio": 256335570,
+          "lpm_with_idle_radio": 104247996,
+          "deep": 0,
+          "tx_increment": 4391649,
+          "listen_increment": 5454850780
+        },
+        "fixed_trace_cpu_current_sensitivity_nj": [
+          5808743610,
+          5830908381
+        ]
+      }
+    },
+    "samples": {
+      "1": 99,
+      "2": 99,
+      "3": 99
+    }
+  },
+  "security_test_injections": 0,
+  "security_test_rejections": 0,
+  "rejection_reasons": {},
+  "unique_authenticated_delivered": 48,
+  "generated": 48,
+  "submitted_readings": 48,
+  "explicit_drops": 0,
+  "unique_delivered": 48,
+  "missing_readings": 0,
+  "packets_submitted": 48,
+  "packets_accepted": 48,
+  "packet_pdr": 1.0,
+  "application_packet_bytes": 1776,
+  "reading_pdr": 1.0,
+  "p95_delay_ms": 75.95369999999457,
+  "max_hold_ms": 0,
+  "duplicates": 0,
+  "batch_counts": [
+    1
+  ],
+  "radio": {
+    "captured_frames": 136,
+    "captured_frame_bytes": 6528,
+    "data_frames": 76,
+    "max_frame_bytes": 102,
+    "fragment_frames": 0,
+    "unclassified_data_frames": 0
+  }
+}

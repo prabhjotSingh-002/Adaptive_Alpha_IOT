@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "host/run_experiment.py",
+    "--phase",
+    "5",
+    "--mode",
+    "P1",
+    "--clients",
+    "8",
+    "--seed",
+    "123458",
+    "--target",
+    "z1",
+    "--power-model"
+  ],
+  "status": "passed",
+  "started_utc": "2026-11-14T12:15:35.404629+00:00",
+  "ended_utc": "2026-11-14T12:17:56.021229+00:00"
+}

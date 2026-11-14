@@ -1,0 +1,29 @@
+[32mINFO  [main] [Cooja.java:1147] - Loading /workspace/results/phase_05/20261114T115931857462Z-B3-8/scenario.csc random seed: null[0;39m
+> make -j1 root.z1 TARGET=z1 ASCON_IMPL=ref
+  MKDIR     build/z1/obj/.deps
+  CC        root.c
+  CC        ../common/protocol.c
+  CC        ../aggregate/aggregate.c
+  CC        ../crypto/aes_ccm.c
+  CC        ../crypto/secure_packet.c
+  CC        ../crypto/boot_gate.c
+  CC        ../energy/energy.c
+  CC        ../energy/energest_sampler.c
+../energy/energest_sampler.c: In function ‘lab_energy_remaining_nj’:
+../energy/energest_sampler.c:7:3: error: implicit declaration of function ‘lab_energy_remaining’ [-Werror=implicit-function-declaration]
+../energy/energest_sampler.c:7:32: error: ‘account’ undeclared (first use in this function)
+../energy/energest_sampler.c:7:32: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../energy/energest_sampler.c:16:0:
+../energy/energy.h: At top level:
+../energy/energy.h:26:10: error: conflicting types for ‘lab_energy_remaining’
+../energy/energest_sampler.c:7:10: note: previous implicit declaration of ‘lab_energy_remaining’ was here
+../energy/energest_sampler.c: In function ‘lab_energy_remaining_nj’:
+../energy/energest_sampler.c:11:1: error: control reaches end of non-void function [-Werror=return-type]
+cc1: all warnings being treated as errors
+make: *** [../../external/contiki-ng/Makefile.include:565: build/z1/obj/energest_sampler.o] Error 1
+Compilation process returned error code 2
+[1;91mERROR [main] [Cooja.java:1154] - Failed to load simulation: Compilation failed[0;39m
+[1;91mERROR [main] [Cooja.java:1160] - TEST /workspace/results/phase_05/20261114T115931857462Z-B3-8/scenario.csc FAILED
+[0;39m
+[1;91mERROR [main] [Cooja.java:1183] - Failed tests:
+/workspace/results/phase_05/20261114T115931857462Z-B3-8/scenario.csc seed: null[0;39m

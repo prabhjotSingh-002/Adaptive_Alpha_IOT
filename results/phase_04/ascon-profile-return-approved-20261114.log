@@ -1,0 +1,3 @@
+Ascon official empty KAT, roundtrip, bad tag isolation and bounds: PASS
+PASS: 1089 official Ascon-AEAD128 vectors, seal and open
+Ascon secure packet dispatch, isolation and replay: PASS

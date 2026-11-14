@@ -1,0 +1,25 @@
+{
+  "security": "AES-128-CCM authenticated pilot",
+  "unique_authenticated_delivered": 192,
+  "generated": 192,
+  "submitted_readings": 192,
+  "explicit_drops": 0,
+  "unique_delivered": 192,
+  "missing_readings": 0,
+  "packets_submitted": 64,
+  "application_packet_bytes": 3648,
+  "reading_pdr": 1.0,
+  "p95_delay_ms": 3079.7060000000024,
+  "max_hold_ms": 3000,
+  "duplicates": 0,
+  "batch_counts": [
+    3
+  ],
+  "radio": {
+    "captured_frames": 374,
+    "data_frames": 207,
+    "max_frame_bytes": 115,
+    "fragment_frames": 0,
+    "unclassified_data_frames": 0
+  }
+}

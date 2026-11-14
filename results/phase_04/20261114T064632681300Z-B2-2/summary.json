@@ -1,0 +1,37 @@
+{
+  "security": "Ascon-AEAD128 security test",
+  "network_energy_nj": null,
+  "energy_per_delivered_reading_nj": null,
+  "energy_window": null,
+  "lifetime": null,
+  "stack_max_usage": {},
+  "energy_measurement": null,
+  "security_test_injections": 0,
+  "security_test_rejections": 0,
+  "rejection_reasons": {},
+  "unique_authenticated_delivered": 47,
+  "generated": 48,
+  "submitted_readings": 48,
+  "explicit_drops": 0,
+  "unique_delivered": 47,
+  "missing_readings": 1,
+  "packets_submitted": 48,
+  "packets_accepted": 47,
+  "packet_pdr": 0.9791666666666666,
+  "application_packet_bytes": 1776,
+  "reading_pdr": 0.9791666666666666,
+  "p95_delay_ms": 73.83129999999801,
+  "max_hold_ms": 0,
+  "duplicates": 0,
+  "batch_counts": [
+    1
+  ],
+  "radio": {
+    "captured_frames": 145,
+    "captured_frame_bytes": 7303,
+    "data_frames": 86,
+    "max_frame_bytes": 102,
+    "fragment_frames": 0,
+    "unclassified_data_frames": 0
+  }
+}

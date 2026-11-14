@@ -1,0 +1,50 @@
+{
+  "scope": "Phase 3 engineering evidence; formal human reviews and further research validation pending",
+  "primary_pair": [
+    "20261113T103709606387Z-B1-8",
+    "20261113T103749292302Z-B4-8"
+  ],
+  "attack_test": "20261113T103630420731Z-B1-2",
+  "root_reset_test": "20261113T102318076649Z-B1-2",
+  "batch_boundary_tests": [
+    "20261113T101818257792Z-B4-2",
+    "20261113T101843424820Z-B4-2",
+    "20261113T101907182564Z-B4-2"
+  ],
+  "expected_timeout_failure": "20261113T103314659067Z-B1-2",
+  "manifests_sha256": {
+    "20261113T103329824959Z-B1-8": "09fe49712d4c12c21c34d5034d4949e2aa570b100b62dfd611545c82dede6720",
+    "20261113T103348476937Z-B4-8": "4e2a9d400ba6693679f945ed1223ef1cc3b3da449e31ec2345345b30c06c7b7a",
+    "20261113T102810541246Z-B1-2": "6f26f9e904a1ae2ae8eec0209b10dbf3bbfe73f932c148935ed4b46e10e7eecf",
+    "20261113T102318076649Z-B1-2": "591910356b1dc80c05f2fb01d62025d21a59c16386523a8e4b64e3f89bbef5dd",
+    "20261113T101818257792Z-B4-2": "20c8e5c9547814c7631e625a1cd14116bfa586a07294dcfc5d9570c264459447",
+    "20261113T101843424820Z-B4-2": "e6e8e4d8ba165b62fa51ef3cce9f326a68a48da3a49389c97c4f5f68eadbcb85",
+    "20261113T101907182564Z-B4-2": "e66d0f9d10cd7052ccce6025dff24c9a4b7e496dddb4333db0dc7f56880a6726",
+    "20261113T103314659067Z-B1-2": "735428eb3e95ac17ebf29636d61713aea835bfa092376f370c0e705c3683ab86",
+    "20261113T103709606387Z-B1-8": "05d40fbda4dc7a4d5f7455c54b8d5125d0c258585640bd526610a1bb663f8817",
+    "20261113T103749292302Z-B4-8": "afcd52b5a87e8e3ae8c669fab354c505e4729a49cc7acc9d3a27abc5a1ba6f30",
+    "20261113T103630420731Z-B1-2": "ae676211a60bfeceab39c5e4ce1613ac040e21fcbfa6d5252ae2304743a432f5"
+  },
+  "single_mote_tests": {
+    "cooja_kat_01": "11262576ca0e1ce63a52c10fdb62a5fe6816986e9b05d9fa4deb100bf619825d",
+    "cooja_boot_01": "038db9236401b63f1bcc81c7bae7968f42692a19d46cf933e95cfb68fa8e6b31",
+    "cooja_reset_01": "67f053f7a5da865ae420559df12bfbb26b457c54f403deb451ff9abff62c35ca"
+  },
+  "host_test_logs": {
+    "crypto-tests-reviewed.log": "b318d8dcbbec5805e937f4db21fe55e22e7037806a92decbea02ebafc2bc639c",
+    "n0-core-tests.log": "0e7ca498de282e2d865aae45a95149f104b3d88510100b3e869446df186cef3f",
+    "python-tests-final.log": "7c4d9926186ba4bb1736715b3040d5c983dcfef8e568c59fb7dce36cef22f3f5",
+    "native-size.log": "2d0728fce03baa28dd3a46f2fd07ef8393b7a76f6e97adee529e08a730496af9",
+    "python-tests-reviewed.log": "7c4d9926186ba4bb1736715b3040d5c983dcfef8e568c59fb7dce36cef22f3f5"
+  },
+  "vectors_sha256": "0e3c96761bd8f1a0b4dfe666146c32f7d367a49968375ff091b8da9ecaa673aa",
+  "plot": {
+    "path": "results/phase_03/pilot-phase3.png",
+    "sha256": "d0e3b47ede2b11f89d36c3d4da06ee74ef320bc1a1955dbb630e386ac36554c4",
+    "source_runs": [
+      "20261113T103709606387Z-B1-8",
+      "20261113T103749292302Z-B4-8"
+    ]
+  },
+  "phase1_smoke": "results/phase_01/smoke-20261113T102520721060Z/manifest.json"
+}

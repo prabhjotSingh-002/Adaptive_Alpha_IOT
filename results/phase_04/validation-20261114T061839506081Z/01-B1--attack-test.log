@@ -1,0 +1,12 @@
+failed /home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_04/20261114T061840012815Z-B1-2 ValueError: Received unknown reading/packet
+Traceback (most recent call last):
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py", line 400, in <module>
+    main()
+    ~~~~^^
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py", line 352, in main
+    outputs.append(run(mode,args.clients,base,pins,override))
+                   ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py", line 275, in run
+    if manifest["status"] != "passed": raise RuntimeError(manifest.get("error", "failed"))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ValueError: Received unknown reading/packet

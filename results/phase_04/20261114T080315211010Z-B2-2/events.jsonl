@@ -1,0 +1,158 @@
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 1574288, "sim_time_ms": 1574.288, "node_id": 2, "event_type": "META2", "config_id": 3883870071, "profile": 2, "profile_count": 2, "switch_test": 0}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 1576193, "sim_time_ms": 1576.193, "node_id": 2, "event_type": "BOOT_REQUEST", "profile": 2}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 1580018, "sim_time_ms": 1580.018, "node_id": 2, "event_type": "SCHEDULE", "local_ms": 820, "warmup_ms": 60000, "period_ms": 1000, "total": 24}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 1582487, "sim_time_ms": 1582.487, "node_id": 2, "event_type": "READY", "cap": 1, "deadline_ms": 3000, "period_ms": 1000, "total": 24}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 1705336, "sim_time_ms": 1705.336, "node_id": 2, "event_type": "CONTEXT_READY", "profile": 2}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 1719279, "sim_time_ms": 1719.279, "node_id": 1, "event_type": "META2", "config_id": 3883870071, "profile": 2, "profile_count": 2, "switch_test": 0}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 1722510, "sim_time_ms": 1722.51, "node_id": 1, "event_type": "BOOT_REQUEST", "profile": 2}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 2237508, "sim_time_ms": 2237.508, "node_id": 3, "event_type": "META2", "config_id": 3883870071, "profile": 2, "profile_count": 2, "switch_test": 0}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 2239413, "sim_time_ms": 2239.413, "node_id": 3, "event_type": "BOOT_REQUEST", "profile": 2}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 2243238, "sim_time_ms": 2243.238, "node_id": 3, "event_type": "SCHEDULE", "local_ms": 820, "warmup_ms": 60000, "period_ms": 1000, "total": 24}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 2245707, "sim_time_ms": 2245.707, "node_id": 3, "event_type": "READY", "cap": 1, "deadline_ms": 3000, "period_ms": 1000, "total": 24}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 2368556, "sim_time_ms": 2368.556, "node_id": 3, "event_type": "CONTEXT_READY", "profile": 2}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 60831186, "sim_time_ms": 60831.186, "node_id": 2, "event_type": "GEN", "reading_id": 1, "created_ms": 60078, "value": 201}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 60845902, "sim_time_ms": 60845.902, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 1, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 1, "last_id": 1}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 60859710, "sim_time_ms": 60859.71, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 61494395, "sim_time_ms": 61494.395, "node_id": 3, "event_type": "GEN", "reading_id": 1, "created_ms": 60078, "value": 301}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 61509112, "sim_time_ms": 61509.112, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 1, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 1, "last_id": 1}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 61517039, "sim_time_ms": 61517.039, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 61831177, "sim_time_ms": 61831.177, "node_id": 2, "event_type": "GEN", "reading_id": 2, "created_ms": 61078, "value": 202}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 61845893, "sim_time_ms": 61845.893, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 2, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 2, "last_id": 2}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 61875335, "sim_time_ms": 61875.335, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 62494385, "sim_time_ms": 62494.385, "node_id": 3, "event_type": "GEN", "reading_id": 2, "created_ms": 61078, "value": 302}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 62509107, "sim_time_ms": 62509.107, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 2, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 2, "last_id": 2}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 62546306, "sim_time_ms": 62546.306, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 62831176, "sim_time_ms": 62831.176, "node_id": 2, "event_type": "GEN", "reading_id": 3, "created_ms": 62078, "value": 203}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 62845892, "sim_time_ms": 62845.892, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 3, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 3, "last_id": 3}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 62853884, "sim_time_ms": 62853.884, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 63494385, "sim_time_ms": 63494.385, "node_id": 3, "event_type": "GEN", "reading_id": 3, "created_ms": 62078, "value": 303}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 63509106, "sim_time_ms": 63509.106, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 3, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 3, "last_id": 3}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 63554120, "sim_time_ms": 63554.12, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 63831176, "sim_time_ms": 63831.176, "node_id": 2, "event_type": "GEN", "reading_id": 4, "created_ms": 63078, "value": 204}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 63845893, "sim_time_ms": 63845.893, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 4, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 4, "last_id": 4}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 63890960, "sim_time_ms": 63890.96, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 64494385, "sim_time_ms": 64494.385, "node_id": 3, "event_type": "GEN", "reading_id": 4, "created_ms": 63078, "value": 304}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 64509111, "sim_time_ms": 64509.111, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 4, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 4, "last_id": 4}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 64517038, "sim_time_ms": 64517.038, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 64831169, "sim_time_ms": 64831.169, "node_id": 2, "event_type": "GEN", "reading_id": 5, "created_ms": 64078, "value": 205}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 64845887, "sim_time_ms": 64845.887, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 5, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 5, "last_id": 5}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 64890960, "sim_time_ms": 64890.96, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 65494377, "sim_time_ms": 65494.377, "node_id": 3, "event_type": "GEN", "reading_id": 5, "created_ms": 64078, "value": 305}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 65509107, "sim_time_ms": 65509.107, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 5, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 5, "last_id": 5}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 65522871, "sim_time_ms": 65522.871, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 65831173, "sim_time_ms": 65831.173, "node_id": 2, "event_type": "GEN", "reading_id": 6, "created_ms": 65078, "value": 206}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 65845892, "sim_time_ms": 65845.892, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 6, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 6, "last_id": 6}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 65853882, "sim_time_ms": 65853.882, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 66494381, "sim_time_ms": 66494.381, "node_id": 3, "event_type": "GEN", "reading_id": 6, "created_ms": 65078, "value": 306}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 66509112, "sim_time_ms": 66509.112, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 6, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 6, "last_id": 6}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 66517039, "sim_time_ms": 66517.039, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 66832263, "sim_time_ms": 66832.263, "node_id": 2, "event_type": "GEN", "reading_id": 7, "created_ms": 66078, "value": 207}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 66847007, "sim_time_ms": 66847.007, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 7, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 7, "last_id": 7}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 66859709, "sim_time_ms": 66859.709, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 67494382, "sim_time_ms": 67494.382, "node_id": 3, "event_type": "GEN", "reading_id": 7, "created_ms": 66078, "value": 307}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 67509106, "sim_time_ms": 67509.106, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 7, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 7, "last_id": 7}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 67546306, "sim_time_ms": 67546.306, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 67831174, "sim_time_ms": 67831.174, "node_id": 2, "event_type": "GEN", "reading_id": 8, "created_ms": 67078, "value": 208}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 67845891, "sim_time_ms": 67845.891, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 8, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 8, "last_id": 8}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 67859709, "sim_time_ms": 67859.709, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 68494383, "sim_time_ms": 68494.383, "node_id": 3, "event_type": "GEN", "reading_id": 8, "created_ms": 67078, "value": 308}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 68509106, "sim_time_ms": 68509.106, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 8, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 8, "last_id": 8}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 68530682, "sim_time_ms": 68530.682, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 68831173, "sim_time_ms": 68831.173, "node_id": 2, "event_type": "GEN", "reading_id": 9, "created_ms": 68078, "value": 209}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 68845889, "sim_time_ms": 68845.889, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 9, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 9, "last_id": 9}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 68867523, "sim_time_ms": 68867.523, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 69494381, "sim_time_ms": 69494.381, "node_id": 3, "event_type": "GEN", "reading_id": 9, "created_ms": 68078, "value": 309}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 69509111, "sim_time_ms": 69509.111, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 9, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 9, "last_id": 9}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 69517038, "sim_time_ms": 69517.038, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 69831382, "sim_time_ms": 69831.382, "node_id": 2, "event_type": "GEN", "reading_id": 10, "created_ms": 69078, "value": 210}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 69846717, "sim_time_ms": 69846.717, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 10, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 10, "last_id": 10}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 69883148, "sim_time_ms": 69883.148, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 70494590, "sim_time_ms": 70494.59, "node_id": 3, "event_type": "GEN", "reading_id": 10, "created_ms": 69078, "value": 310}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 70509936, "sim_time_ms": 70509.936, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 10, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 10, "last_id": 10}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 70546307, "sim_time_ms": 70546.307, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 70831394, "sim_time_ms": 70831.394, "node_id": 2, "event_type": "GEN", "reading_id": 11, "created_ms": 70078, "value": 211}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 70846726, "sim_time_ms": 70846.726, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 11, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 11, "last_id": 11}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 70875334, "sim_time_ms": 70875.334, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 71494602, "sim_time_ms": 71494.602, "node_id": 3, "event_type": "GEN", "reading_id": 11, "created_ms": 70078, "value": 311}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 71509937, "sim_time_ms": 71509.937, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 11, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 11, "last_id": 11}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 71546306, "sim_time_ms": 71546.306, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 71831382, "sim_time_ms": 71831.382, "node_id": 2, "event_type": "GEN", "reading_id": 12, "created_ms": 71078, "value": 212}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 71846722, "sim_time_ms": 71846.722, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 12, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 12, "last_id": 12}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 71854711, "sim_time_ms": 71854.711, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 72494590, "sim_time_ms": 72494.59, "node_id": 3, "event_type": "GEN", "reading_id": 12, "created_ms": 71078, "value": 312}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 72509942, "sim_time_ms": 72509.942, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 12, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 12, "last_id": 12}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 72517869, "sim_time_ms": 72517.869, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 72831379, "sim_time_ms": 72831.379, "node_id": 2, "event_type": "GEN", "reading_id": 13, "created_ms": 72078, "value": 213}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 72846722, "sim_time_ms": 72846.722, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 13, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 13, "last_id": 13}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 72854712, "sim_time_ms": 72854.712, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 73494587, "sim_time_ms": 73494.587, "node_id": 3, "event_type": "GEN", "reading_id": 13, "created_ms": 72078, "value": 313}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 73509941, "sim_time_ms": 73509.941, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 13, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 13, "last_id": 13}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 73517868, "sim_time_ms": 73517.868, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 73831368, "sim_time_ms": 73831.368, "node_id": 2, "event_type": "GEN", "reading_id": 14, "created_ms": 73078, "value": 214}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 73846722, "sim_time_ms": 73846.722, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 14, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 14, "last_id": 14}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 73854693, "sim_time_ms": 73854.693, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 74494589, "sim_time_ms": 74494.589, "node_id": 3, "event_type": "GEN", "reading_id": 14, "created_ms": 73078, "value": 314}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 74509936, "sim_time_ms": 74509.936, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 14, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 14, "last_id": 14}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 74522870, "sim_time_ms": 74522.87, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 74831369, "sim_time_ms": 74831.369, "node_id": 2, "event_type": "GEN", "reading_id": 15, "created_ms": 74078, "value": 215}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 74846717, "sim_time_ms": 74846.717, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 15, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 15, "last_id": 15}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 74867504, "sim_time_ms": 74867.504, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 75494591, "sim_time_ms": 75494.591, "node_id": 3, "event_type": "GEN", "reading_id": 15, "created_ms": 74078, "value": 315}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 75509936, "sim_time_ms": 75509.936, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 15, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 15, "last_id": 15}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 75538496, "sim_time_ms": 75538.496, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 75831370, "sim_time_ms": 75831.37, "node_id": 2, "event_type": "GEN", "reading_id": 16, "created_ms": 75078, "value": 216}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 75846717, "sim_time_ms": 75846.717, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 16, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 16, "last_id": 16}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 75875317, "sim_time_ms": 75875.317, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 76494592, "sim_time_ms": 76494.592, "node_id": 3, "event_type": "GEN", "reading_id": 16, "created_ms": 75078, "value": 316}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 76509936, "sim_time_ms": 76509.936, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 16, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 16, "last_id": 16}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 76546306, "sim_time_ms": 76546.306, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 76831370, "sim_time_ms": 76831.37, "node_id": 2, "event_type": "GEN", "reading_id": 17, "created_ms": 76078, "value": 217}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 76846717, "sim_time_ms": 76846.717, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 17, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 17, "last_id": 17}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 76890942, "sim_time_ms": 76890.942, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 77494592, "sim_time_ms": 77494.592, "node_id": 3, "event_type": "GEN", "reading_id": 17, "created_ms": 76078, "value": 317}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 77509936, "sim_time_ms": 77509.936, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 17, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 17, "last_id": 17}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 77530682, "sim_time_ms": 77530.682, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 77831367, "sim_time_ms": 77831.367, "node_id": 2, "event_type": "GEN", "reading_id": 18, "created_ms": 77078, "value": 218}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 77846716, "sim_time_ms": 77846.716, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 18, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 18, "last_id": 18}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 77875317, "sim_time_ms": 77875.317, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 78494589, "sim_time_ms": 78494.589, "node_id": 3, "event_type": "GEN", "reading_id": 18, "created_ms": 77078, "value": 318}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 78509942, "sim_time_ms": 78509.942, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 18, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 18, "last_id": 18}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 78517871, "sim_time_ms": 78517.871, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 78831370, "sim_time_ms": 78831.37, "node_id": 2, "event_type": "GEN", "reading_id": 19, "created_ms": 78078, "value": 219}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 78846716, "sim_time_ms": 78846.716, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 19, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 19, "last_id": 19}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 78890942, "sim_time_ms": 78890.942, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 79494592, "sim_time_ms": 79494.592, "node_id": 3, "event_type": "GEN", "reading_id": 19, "created_ms": 78078, "value": 319}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 79509941, "sim_time_ms": 79509.941, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 19, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 19, "last_id": 19}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 79517868, "sim_time_ms": 79517.868, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 79831370, "sim_time_ms": 79831.37, "node_id": 2, "event_type": "GEN", "reading_id": 20, "created_ms": 79078, "value": 220}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 79846717, "sim_time_ms": 79846.717, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 20, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 20, "last_id": 20}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 79883129, "sim_time_ms": 79883.129, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 80494590, "sim_time_ms": 80494.59, "node_id": 3, "event_type": "GEN", "reading_id": 20, "created_ms": 79078, "value": 320}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 80509942, "sim_time_ms": 80509.942, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 20, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 20, "last_id": 20}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 80517869, "sim_time_ms": 80517.869, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 80831375, "sim_time_ms": 80831.375, "node_id": 2, "event_type": "GEN", "reading_id": 21, "created_ms": 80078, "value": 221}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 80846716, "sim_time_ms": 80846.716, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 21, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 21, "last_id": 21}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 80859692, "sim_time_ms": 80859.692, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 81494595, "sim_time_ms": 81494.595, "node_id": 3, "event_type": "GEN", "reading_id": 21, "created_ms": 80078, "value": 321}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 81509941, "sim_time_ms": 81509.941, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 21, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 21, "last_id": 21}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 81517868, "sim_time_ms": 81517.868, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 81831368, "sim_time_ms": 81831.368, "node_id": 2, "event_type": "GEN", "reading_id": 22, "created_ms": 81078, "value": 222}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 81846722, "sim_time_ms": 81846.722, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 22, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 22, "last_id": 22}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 81854692, "sim_time_ms": 81854.692, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 82494597, "sim_time_ms": 82494.597, "node_id": 3, "event_type": "GEN", "reading_id": 22, "created_ms": 81078, "value": 322}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 82509942, "sim_time_ms": 82509.942, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 22, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 22, "last_id": 22}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 82517801, "sim_time_ms": 82517.801, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 82831364, "sim_time_ms": 82831.364, "node_id": 2, "event_type": "GEN", "reading_id": 23, "created_ms": 82078, "value": 223}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 82846722, "sim_time_ms": 82846.722, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 23, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 23, "last_id": 23}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 82854694, "sim_time_ms": 82854.694, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 83494584, "sim_time_ms": 83494.584, "node_id": 3, "event_type": "GEN", "reading_id": 23, "created_ms": 82078, "value": 323}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 83509936, "sim_time_ms": 83509.936, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 23, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 23, "last_id": 23}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 83530682, "sim_time_ms": 83530.682, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 83831367, "sim_time_ms": 83831.367, "node_id": 2, "event_type": "GEN", "reading_id": 24, "created_ms": 83078, "value": 224}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 83846716, "sim_time_ms": 83846.716, "node_id": 2, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 24, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 24, "last_id": 24}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 83848139, "sim_time_ms": 83848.139, "node_id": 2, "event_type": "DONE", "generated": 24}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 83859692, "sim_time_ms": 83859.692, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 84494587, "sim_time_ms": 84494.587, "node_id": 3, "event_type": "GEN", "reading_id": 24, "created_ms": 83078, "value": 324}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 84509941, "sim_time_ms": 84509.941, "node_id": 3, "event_type": "TX", "profile": 2, "epoch": 1, "counter": 24, "count": 1, "bytes": 37, "hold_ms": 0, "first_id": 24, "last_id": 24}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 84511363, "sim_time_ms": 84511.363, "node_id": 3, "event_type": "DONE", "generated": 24}
+{"run_id": "20261114T080315211010Z-B2-2", "sim_time_us": 84519280, "sim_time_ms": 84519.28, "node_id": 1, "event_type": "REJECT", "length": 37, "reason": 4, "header_authenticated": false}

@@ -1,0 +1,58 @@
+{
+  "recorded_utc": "2026-11-13T09:07:06.264160+00:00",
+  "automated_phase1": "passed",
+  "G0_human_verification": "pending: two students per master",
+  "seed": 123456,
+  "nodes": 9,
+  "root": 1,
+  "client_ids": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "root_request_events": 18,
+  "client_response_events": {
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 4,
+    "6": 1,
+    "7": 1,
+    "8": 2,
+    "9": 1
+  },
+  "simulation_end_us": 48496368,
+  "pins": {
+    "contiki_ng_commit": "a304687372e2917d325d4d71cf68610fe9a6279b",
+    "cooja_commit": "fabff3ee41eeeb6f3de7bd11f7c9cdf0a7d7dfc4",
+    "candidate_container": "contiker/contiki-ng:1a8be2d47fc7ef835f45461dbf014155d59be3e8a58e8779149d7645a7b1266c",
+    "container_status": "toolchain verified; Cooja built; two 9-node headless runs passed",
+    "cooja_java_required": 25,
+    "gradle_wrapper_distribution": "gradle-9.6.1-bin.zip",
+    "master_sha256": "2fad0d0b731e4b57409e3500bd18597c34e83991b6e495b2d60b94daab0bc385",
+    "container_image": "contiker/contiki-ng@sha256:b14d5afb0a2a852d9e72bbed607ead03f6ccc5f4d4dee44f0799110be2f4b609",
+    "container_selection_reason": "source hash tag not found; official develop pulled and digest pinned"
+  },
+  "hashes": {
+    "simulations/scenarios/phase1-rpl-9.csc": "81aa390d396308a55840e1f62d9b1464abff2f130ffe6ce703f6c567fd90a318",
+    "results/phase_01/toolchain.log": "49db1ffc49a0edf57301335ceb8d5d982474532118c7640d2cd2a3a3c484fb55",
+    "results/phase_01/cooja-run.log": "ec3bb8f4e8f25daecc90eaa23c0eb51346cb3248cb99b3153aa8905df3131456",
+    "results/phase_01/cooja-build.log": "d19fc4058eaf7722c157e1d97b75eb927f771c814e9394ff1bc43ac93cb2c2aa",
+    "results/phase_01/COOJA.testlog": "c0bbf57c2d7d5a36082a6d85c5ceba74d15918d94d35dfdb5c972ecbce27419a",
+    "external/contiki-ng/examples/rpl-udp/build/cooja/mtype445591329.cooja": "ba6207663488c230ac73eb6c4d24082873ada91209a9f180842057c948ae2b65",
+    "external/contiki-ng/examples/rpl-udp/build/cooja/mtype655174980.cooja": "26c1a631864c1491bcc03ef66577cbc80f3aee8fd987beed40ce447234f44cb1",
+    "external/contiki-ng/examples/rpl-udp/build/cooja/mtype848022923.cooja": "ba6207663488c230ac73eb6c4d24082873ada91209a9f180842057c948ae2b65",
+    "external/contiki-ng/examples/rpl-udp/build/cooja/mtype7445627.cooja": "26c1a631864c1491bcc03ef66577cbc80f3aee8fd987beed40ce447234f44cb1",
+    "external/contiki-ng/tools/cooja/build/install/cooja/lib/cooja-full.jar": "fd3f25510a257c1e0d9ef146fe1c00306ce7fd6880673825b3b5bc59b8b01b3d"
+  },
+  "limitations": [
+    "unchanged unprotected tutorial firmware; not sensor-reading or security results",
+    "no comparative energy/performance claim",
+    "GUI and independent human reproduction not yet verified"
+  ]
+}

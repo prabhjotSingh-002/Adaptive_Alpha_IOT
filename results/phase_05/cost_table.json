@@ -1,0 +1,46 @@
+{
+  "produced_utc": "2026-11-14T09:11:12.130795+00:00",
+  "source_runs": 21,
+  "source_seed_filter": null,
+  "per_mode": {
+    "B2": {
+      "mean_nj_per_delivered_reading": 229361704.60833967,
+      "samples": 9,
+      "profile": 2,
+      "cap": 1
+    },
+    "B1": {
+      "mean_nj_per_delivered_reading": 247233663.4778743,
+      "samples": 5,
+      "profile": 1,
+      "cap": 1
+    },
+    "B4": {
+      "mean_nj_per_delivered_reading": 243928892.70127153,
+      "samples": 4,
+      "profile": 1,
+      "cap": 4
+    },
+    "B5": {
+      "mean_nj_per_delivered_reading": 244171889.75994197,
+      "samples": 3,
+      "profile": 2,
+      "cap": 4
+    }
+  },
+  "b6_winner_mode": "B2",
+  "b6_profile": 2,
+  "p1_cost_nj": [
+    [
+      247233663,
+      0,
+      243928892
+    ],
+    [
+      229361704,
+      0,
+      244171889
+    ]
+  ],
+  "note": "cost_nj[profile-1][cap_index] where cap_index 0=cap1 1=cap2 2=cap4; 0 means no data"
+}

@@ -1,0 +1,39 @@
+{
+  "security": "AES-128-CCM security test",
+  "network_energy_nj": null,
+  "energy_per_delivered_reading_nj": null,
+  "energy_window": null,
+  "lifetime": null,
+  "stack_max_usage": {},
+  "energy_measurement": null,
+  "security_test_injections": 0,
+  "security_test_rejections": 52,
+  "rejection_reasons": {
+    "4": 52
+  },
+  "unique_authenticated_delivered": 1,
+  "generated": 48,
+  "submitted_readings": 23,
+  "explicit_drops": 25,
+  "unique_delivered": 1,
+  "missing_readings": 47,
+  "packets_submitted": 23,
+  "packets_accepted": 1,
+  "packet_pdr": 0.043478260869565216,
+  "application_packet_bytes": 851,
+  "reading_pdr": 0.020833333333333332,
+  "p95_delay_ms": 25.955000000001746,
+  "max_hold_ms": 2000,
+  "duplicates": 0,
+  "batch_counts": [
+    1
+  ],
+  "radio": {
+    "captured_frames": 425,
+    "captured_frame_bytes": 21421,
+    "data_frames": 248,
+    "max_frame_bytes": 102,
+    "fragment_frames": 0,
+    "unclassified_data_frames": 0
+  }
+}
