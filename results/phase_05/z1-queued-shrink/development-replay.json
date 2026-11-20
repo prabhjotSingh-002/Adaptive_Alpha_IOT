@@ -1,0 +1,369 @@
+{
+  "seed": 123459,
+  "calibration_seed": 223457,
+  "scores": {
+    "recent_rate": {
+      "cases": 294,
+      "exact": 135,
+      "abstentions": 0,
+      "false_affordable_actions": 112,
+      "one_fit_cases": 20,
+      "one_fit_exact": 4
+    },
+    "rate_conditioned": {
+      "cases": 294,
+      "exact": 106,
+      "abstentions": 98,
+      "false_affordable_actions": 135,
+      "one_fit_cases": 20,
+      "one_fit_exact": 0
+    }
+  },
+  "calibration_manifests": {
+    "results/phase_04/20261119T203436344512Z-B1-2": "02056487f9a87c33f34d5c2719b9398409326aef8b8bc0ab187e0de1f4f2d38c",
+    "results/phase_04/20261119T203526122093Z-B1-2": "0cb1e95dfc68d5b75121dfab60353a63c5fa11aa6b58e9c5e1be4d4b156903b8",
+    "results/phase_04/20261119T203616071041Z-B1-2": "95b0a34775664a66d9a8656f94e2765c1832792d7aac2fa33fe1cc13844484fc",
+    "results/phase_04/20261119T203705490270Z-B2-2": "d2cdffc9599ec0c7495b9ff849ab2865c0f55211f90c7461ad9aebc6336cf3cc",
+    "results/phase_04/20261119T203758087372Z-B2-2": "2a8cf61247d25febed8ffb98806f9219a53e4132af5191f5bb1d53799b9a809b",
+    "results/phase_04/20261119T203848960286Z-B2-2": "a36609a03bdea772a014039661d47bcc37e6d31a898d9ece46ecb11fe601d109"
+  },
+  "grid_sha256": "47b072f523d4174806e607858d902f5d33613a07a5cb0b2a92ce0004aaa26031",
+  "forecasts": [
+    {
+      "node": 2,
+      "ordinal": 0,
+      "candidate_nj": [
+        null,
+        null
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 1,
+      "candidate_nj": [
+        116167755.60844687,
+        116215871.57778528
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 2,
+      "candidate_nj": [
+        115654431.02137886,
+        115691561.29735105
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 3,
+      "candidate_nj": [
+        115010248.03929588,
+        115033592.11275375
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 4,
+      "candidate_nj": [
+        115654658.26586756,
+        115691793.40511405
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 5,
+      "candidate_nj": [
+        115010264.67022415,
+        115033609.09960161
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 6,
+      "candidate_nj": [
+        114933409.99961667,
+        114955109.6571162
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 7,
+      "candidate_nj": [
+        114933409.99961667,
+        114955109.6571162
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 8,
+      "candidate_nj": [
+        114933409.99961667,
+        114955109.6571162
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 9,
+      "candidate_nj": [
+        114933409.99961667,
+        114955109.6571162
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 10,
+      "candidate_nj": [
+        114933409.99961667,
+        114955109.6571162
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 11,
+      "candidate_nj": [
+        114933409.99961667,
+        114955109.6571162
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 12,
+      "candidate_nj": [
+        114933410.39637241,
+        114955110.06236294
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 13,
+      "candidate_nj": [
+        114933410.39637241,
+        114955110.06236294
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 14,
+      "candidate_nj": [
+        null,
+        null
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 15,
+      "candidate_nj": [
+        null,
+        null
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 16,
+      "candidate_nj": [
+        null,
+        null
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 17,
+      "candidate_nj": [
+        null,
+        null
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 18,
+      "candidate_nj": [
+        null,
+        null
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 19,
+      "candidate_nj": [
+        null,
+        null
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 20,
+      "candidate_nj": [
+        114933410.22003631,
+        114955109.88225305
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 0,
+      "candidate_nj": [
+        null,
+        null
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 1,
+      "candidate_nj": [
+        116168473.83914185,
+        116214765.47443107
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 2,
+      "candidate_nj": [
+        115683835.52898628,
+        115708452.56576347
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 3,
+      "candidate_nj": [
+        115075647.82085912,
+        115073064.72896844
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 4,
+      "candidate_nj": [
+        115684045.76176463,
+        115708672.20083416
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 5,
+      "candidate_nj": [
+        115075665.92483129,
+        115073083.64260903
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 6,
+      "candidate_nj": [
+        115003104.95653062,
+        114997277.5122512
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 7,
+      "candidate_nj": [
+        115003104.95653062,
+        114997277.5122512
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 8,
+      "candidate_nj": [
+        null,
+        null
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 9,
+      "candidate_nj": [
+        null,
+        null
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 10,
+      "candidate_nj": [
+        null,
+        null
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 11,
+      "candidate_nj": [
+        null,
+        null
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 12,
+      "candidate_nj": [
+        null,
+        null
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 13,
+      "candidate_nj": [
+        null,
+        null
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 14,
+      "candidate_nj": [
+        115003104.95653062,
+        114997277.5122512
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 15,
+      "candidate_nj": [
+        115003104.95653062,
+        114997277.5122512
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 16,
+      "candidate_nj": [
+        115003104.95653062,
+        114997277.5122512
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 17,
+      "candidate_nj": [
+        115003104.95653062,
+        114997277.5122512
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 18,
+      "candidate_nj": [
+        115003104.95653062,
+        114997277.5122512
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 19,
+      "candidate_nj": [
+        115003104.95653062,
+        114997277.5122512
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 20,
+      "candidate_nj": [
+        115003105.12301244,
+        114997277.68617862
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "host/run_experiment.py",
+    "--phase",
+    "4",
+    "--mode",
+    "B1",
+    "--target",
+    "z1",
+    "--clients",
+    "2",
+    "--power-model",
+    "--seed",
+    "123459",
+    "--period-ms",
+    "1000",
+    "--energy-budget-nj",
+    "4097000000",
+    "--readings",
+    "96"
+  ],
+  "exit_code": 0,
+  "log_sha256": "3b9028acfcbfe23cafb26013137d84a6bc6483cad2e73cdae0e107884cbb188e",
+  "passed": true,
+  "directory": "results/phase_04/20261120T062354050925Z-B1-2",
+  "manifest_sha256": "2ee9971f7c7c8c5811e57b902d8c0b116ab6dff16945e883d366b99403189380"
+}

@@ -1,0 +1,9 @@
+test_middle_period_schedule_matches_sensor_segment_boundaries (test_lifetime.LifetimeTests.test_middle_period_schedule_matches_sensor_segment_boundaries) ... ok
+test_no_death_censored_not_observed (test_lifetime.LifetimeTests.test_no_death_censored_not_observed) ... ok
+test_odd_even_hnd_and_simultaneous_deaths (test_lifetime.LifetimeTests.test_odd_even_hnd_and_simultaneous_deaths) ... ok
+test_persistent_service_loss_and_planned_denominator (test_lifetime.LifetimeTests.test_persistent_service_loss_and_planned_denominator) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.004s
+
+OK

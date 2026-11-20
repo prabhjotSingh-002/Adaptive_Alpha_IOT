@@ -1,0 +1,53 @@
+"""Verify current-source bottleneck cutoff and energy sample sensitivity."""
+import json
+import re
+from pathlib import Path
+
+from energy_reconcile import reconcile
+from evidence import verify_artifacts
+from mechanism_checks import depletion
+from metrics import summarize
+from parse_logs import parse
+from run_experiment import digest
+
+out = Path(__file__).parent
+runs = []
+for sample in (125, 250):
+    run_id, = re.findall(r'^passed .*?/results/phase_04/(\S+)',
+                         (out/f'depletion-{sample}ms.log').read_text(), re.M)
+    path = Path('results/phase_04') / run_id
+    manifest = json.loads((path/'manifest.json').read_text())
+    archived = json.loads((path/'summary.json').read_text())
+    checks = verify_artifacts(path, manifest)
+    cfg = dict(manifest['config'])
+    if not checks or set(checks.values()) != {'OK'} or cfg['energy_sample_ms'] != sample:
+        raise ValueError(path)
+    events, frames = parse(path/'COOJA.testlog',run_id,profile=2,phase=4,schema=manifest['schema_version'])
+    cfg['energy_reconciliation'] = reconcile(events,cfg,path/'energy_reconcile',[1,2,3])
+    terminal = depletion(events,frames,cfg,cfg['energy_reconciliation'])
+    replay = summarize(events,frames,cfg,[2,3],manifest['effective_cap'])
+    if terminal != archived['mechanism_checks']['depletion'] or replay['lifetime'] != archived['lifetime']:
+        raise ValueError('Replay diverged from recorded outcome')
+    cutoff, = [e for e in events if e['event_type']=='REMOVED']
+    time = cutoff['sim_time_us']
+    before = [e for e in events if e['node_id']==3 and e['event_type']=='ROUTE' and e['sim_time_us']<time]
+    after = [e for e in events if e['node_id']==3 and e['event_type']=='ROUTE' and e['sim_time_us']>time]
+    upstream = [e for e in events if e['event_type']=='RX' and e['sender']==3 and e['auth_ok']]
+    authenticated_before = sum(before[-1]['sim_time_us']<e['sim_time_us']<time for e in upstream)
+    authenticated_after = sum(e['sim_time_us']>time for e in upstream)
+    survivor_generated = sum(e['node_id']==3 and e['event_type']=='GEN' and e['sim_time_us']>time for e in events)
+    if (terminal['removed_nodes']!=[2] or before[-1]['parent']!=2 or after[0]['parent']!=0
+            or not authenticated_before or authenticated_after or not survivor_generated):
+        raise ValueError('Forwarder cutoff evidence incomplete')
+    runs.append(dict(run=run_id,sample_ms=sample,manifest_sha256=digest(path/'manifest.json'),
+                     artifact_checks=len(checks),events=len(events),frames=len(frames),
+                     terminal=terminal,cutoff_ms=cutoff['sim_time_ms'],
+                     downstream_parent_before=before[-1],downstream_parent_after=after[0],
+                     downstream_authenticated_before=authenticated_before,
+                     downstream_authenticated_after=authenticated_after,
+                     survivor_generated_after=survivor_generated,lifetime=replay['lifetime']))
+(out/'depletion-replay.json').write_text(json.dumps(runs,indent=2)+'\n')
+for run in runs:
+    print(run['sample_ms'],run['run'],run['cutoff_ms'],
+          run['downstream_authenticated_before'],run['downstream_authenticated_after'],
+          run['artifact_checks'])

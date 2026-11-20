@@ -1,0 +1,8 @@
+{
+  "seed": 123460,
+  "arms": ["hold", "switch"],
+  "command_prefix": ["python3", "-B", "host/run_experiment.py", "--phase", "5", "--mode", "P1", "--target", "z1", "--clients", "2", "--power-model", "--seed", "123460", "--period-ms", "500", "--readings", "12", "--queued-shrink"],
+  "anchor": "First policy tick with two queued readings",
+  "window_us": 2000000,
+  "admission": "Both sensors must start Ascon cap four, have two queued readings at the anchor and deliver matching generated identities. Switch must emit the two queued readings in separate AES cap-one packets."
+}

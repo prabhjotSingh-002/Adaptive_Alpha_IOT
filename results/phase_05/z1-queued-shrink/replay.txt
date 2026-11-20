@@ -1,0 +1,52 @@
+"""Compare a rate-conditioned absolute-demand baseline on the saved grid."""
+from collections import Counter
+import json
+from pathlib import Path
+from statistics import median
+
+from audit_battery_forecast import calibration, generation_times, predict
+from diagnose_affordability import details
+from evaluate_affordability import OUT, load_control
+from run_experiment import digest
+
+out = Path(__file__).parent
+archived = Path("results/phase_05/z1-changing-traffic-20261120/calibration-inputs.json")
+paths = [Path(entry) for entry in json.loads(archived.read_text())]
+table = calibration(paths)
+old = json.loads((OUT / "result.json").read_text())
+nodes = load_control("changing", "B1", old["seed"])[1]
+model = json.loads(Path("configs/power-z1-v1.json").read_text())
+forecasts = {}
+scores = {name: Counter() for name in ("recent_rate", "rate_conditioned")}
+for row in old["changing"]:
+    node, ordinal = key = row["node"], row["ordinal"]
+    if key not in forecasts:
+        events = nodes[node]
+        generation = generation_times(events)
+        start = generation[0] + details(events, ordinal, model)["start_us"]
+        past = [time for time in generation if time <= start]
+        recent = past[-4:]
+        intervals = [b - a for a, b in zip(recent, recent[1:])]
+        age = start - past[-1] if past else 0
+        rate = 100_000_000 / max(median(intervals), age) if intervals else None
+        forecasts[key] = [predict(table, node, profile, 1, rate) if rate is not None else None
+                          for profile in (1, 2)]
+    for name, costs in (("recent_rate", row["forecast_nj"]),
+                        ("rate_conditioned", forecasts[key])):
+        counter = scores[name]
+        predicted = [cost <= row["budget_nj"] if cost is not None else None for cost in costs]
+        observed = row["actual"]
+        counter["cases"] += 1
+        counter["exact"] += predicted == observed
+        counter["abstentions"] += None in predicted
+        counter["false_affordable_actions"] += sum(a is True and not b for a, b in zip(predicted, observed))
+        if sum(observed) == 1:
+            counter["one_fit_cases"] += 1
+            counter["one_fit_exact"] += predicted == observed
+report = dict(seed=old["seed"], calibration_seed=223457, scores=scores,
+              calibration_manifests={str(path): digest(path / "manifest.json") for path in paths},
+              grid_sha256=digest(OUT / "result.json"),
+              forecasts=[dict(node=node, ordinal=ordinal, candidate_nj=cost)
+                         for (node, ordinal), cost in forecasts.items()])
+(out / "development-replay.json").write_text(json.dumps(report, indent=2) + "\n")
+print(scores)

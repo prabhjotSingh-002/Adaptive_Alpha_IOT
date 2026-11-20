@@ -1,0 +1,2 @@
+Paired component differences, nJ: {2: {'cpu': 946337.1305636568, 'lpm': -88066.67058622278, 'deep': 0.0, 'tx': 394606.658786948, 'listen': -460429.93236893415}, 3: {'cpu': 947836.5188160129, 'lpm': -88174.69257968152, 'deep': 0.0, 'tx': 393596.427554548, 'listen': -463619.36955052614}}
+Whole-run packet submissions: {'hold': 6, 'switch': 24}

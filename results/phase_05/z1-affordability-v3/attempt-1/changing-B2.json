@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "host/run_experiment.py",
+    "--phase",
+    "4",
+    "--mode",
+    "B2",
+    "--target",
+    "z1",
+    "--clients",
+    "2",
+    "--power-model",
+    "--seed",
+    "123459",
+    "--period-ms",
+    "500",
+    "--middle-period-ms",
+    "4000",
+    "--readings",
+    "27"
+  ],
+  "exit_code": 1,
+  "log_sha256": "e18dc1a3d0cebcb60cee8d33cfc508ad1ecc1bdaeaa49c01082d9e45e18d5b5a",
+  "passed": false
+}

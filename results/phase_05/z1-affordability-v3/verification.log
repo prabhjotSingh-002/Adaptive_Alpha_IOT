@@ -1,0 +1,14 @@
+host/run_affordability_controls.py: OK
+results/phase_05/z1-affordability-v3/protocol.json: OK
+host/evaluate_affordability.py: OK
+results/phase_05/z1-ranking-diagnosis-20261120/holdout-result.json: OK
+results/phase_05/z1-affordability-v3/changing-B1.json: OK
+results/phase_05/z1-affordability-v3/changing-B1.log: OK
+results/phase_05/z1-affordability-v3/changing-B2.json: OK
+results/phase_05/z1-affordability-v3/changing-B2.log: OK
+results/phase_05/z1-affordability-v3/finite-B1.json: OK
+results/phase_05/z1-affordability-v3/finite-B1.log: OK
+results/phase_05/z1-affordability-v3/finite-B2.json: OK
+results/phase_05/z1-affordability-v3/finite-B2.log: OK
+results/phase_05/z1-affordability-v3/evaluation.log: OK
+results/phase_05/z1-affordability-v3/result.json: OK

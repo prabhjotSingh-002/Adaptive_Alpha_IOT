@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "host/run_experiment.py",
+    "--phase",
+    "4",
+    "--mode",
+    "B1",
+    "--target",
+    "z1",
+    "--clients",
+    "2",
+    "--power-model",
+    "--seed",
+    "123459",
+    "--period-ms",
+    "500",
+    "--middle-period-ms",
+    "4000",
+    "--readings",
+    "27"
+  ],
+  "exit_code": 0,
+  "log_sha256": "5c6b501de8d1504af48b0e17abae6e3383ace102e64ff2b0838e86ec32a62095",
+  "passed": true,
+  "directory": "results/phase_04/20261120T062035750767Z-B1-2",
+  "manifest_sha256": "623a5be2a597b587c97c92d970fc0ce71938e73d189b1ac8fe92771a86cceb84"
+}

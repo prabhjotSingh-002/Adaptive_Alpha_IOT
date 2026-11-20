@@ -1,0 +1,1 @@
+python3 -B host/run_experiment.py --phase 4 --mode B1 --target z1 --clients 2 --power-model --seed 123461 --period-ms 500 --middle-period-ms 4000 --readings 27 --energy-budget-nj 4500000000

@@ -1,0 +1,8444 @@
+{
+  "seed": 123459,
+  "calibration_sha256": "ab90fb6a3c54eecda9f9dd1bb3f8415d7e0920535237e5341bbf4152989776d6",
+  "offsets_nj": {
+    "2": 20770.952326223254,
+    "3": 19758.914943546057
+  },
+  "counts": {
+    "paired_windows": 42,
+    "grid_cases": 294,
+    "exact": 135,
+    "one_action": 20,
+    "one_action_exact": 4
+  },
+  "changing_pass": false,
+  "finite_pass": true,
+  "joint_policy_qualified": false,
+  "changing": [
+    {
+      "node": 2,
+      "ordinal": 0,
+      "budget_nj": 115714674.51593699,
+      "forecast_nj": [
+        115814674.51593699,
+        115835445.46826321
+      ],
+      "observed_nj": [
+        116162516.1228961,
+        116211088.0213101
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 0,
+      "budget_nj": 115764674.51593699,
+      "forecast_nj": [
+        115814674.51593699,
+        115835445.46826321
+      ],
+      "observed_nj": [
+        116162516.1228961,
+        116211088.0213101
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 0,
+      "budget_nj": 115789674.51593699,
+      "forecast_nj": [
+        115814674.51593699,
+        115835445.46826321
+      ],
+      "observed_nj": [
+        116162516.1228961,
+        116211088.0213101
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 0,
+      "budget_nj": 115814674.51593699,
+      "forecast_nj": [
+        115814674.51593699,
+        115835445.46826321
+      ],
+      "observed_nj": [
+        116162516.1228961,
+        116211088.0213101
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 0,
+      "budget_nj": 115839674.51593699,
+      "forecast_nj": [
+        115814674.51593699,
+        115835445.46826321
+      ],
+      "observed_nj": [
+        116162516.1228961,
+        116211088.0213101
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 0,
+      "budget_nj": 115864674.51593699,
+      "forecast_nj": [
+        115814674.51593699,
+        115835445.46826321
+      ],
+      "observed_nj": [
+        116162516.1228961,
+        116211088.0213101
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 0,
+      "budget_nj": 115914674.51593699,
+      "forecast_nj": [
+        115814674.51593699,
+        115835445.46826321
+      ],
+      "observed_nj": [
+        116162516.1228961,
+        116211088.0213101
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 1,
+      "budget_nj": 116213219.31404454,
+      "forecast_nj": [
+        116313219.31404454,
+        116333990.26637076
+      ],
+      "observed_nj": [
+        115909561.63306856,
+        115943304.190612
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 1,
+      "budget_nj": 116263219.31404454,
+      "forecast_nj": [
+        116313219.31404454,
+        116333990.26637076
+      ],
+      "observed_nj": [
+        115909561.63306856,
+        115943304.190612
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 1,
+      "budget_nj": 116288219.31404454,
+      "forecast_nj": [
+        116313219.31404454,
+        116333990.26637076
+      ],
+      "observed_nj": [
+        115909561.63306856,
+        115943304.190612
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 1,
+      "budget_nj": 116313219.31404454,
+      "forecast_nj": [
+        116313219.31404454,
+        116333990.26637076
+      ],
+      "observed_nj": [
+        115909561.63306856,
+        115943304.190612
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 1,
+      "budget_nj": 116338219.31404454,
+      "forecast_nj": [
+        116313219.31404454,
+        116333990.26637076
+      ],
+      "observed_nj": [
+        115909561.63306856,
+        115943304.190612
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 1,
+      "budget_nj": 116363219.31404454,
+      "forecast_nj": [
+        116313219.31404454,
+        116333990.26637076
+      ],
+      "observed_nj": [
+        115909561.63306856,
+        115943304.190612
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 1,
+      "budget_nj": 116413219.31404454,
+      "forecast_nj": [
+        116313219.31404454,
+        116333990.26637076
+      ],
+      "observed_nj": [
+        115909561.63306856,
+        115943304.190612
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 2,
+      "budget_nj": 115809561.63306856,
+      "forecast_nj": [
+        115909561.63306856,
+        115930332.58539478
+      ],
+      "observed_nj": [
+        115019315.72461385,
+        115012626.39646532
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 2,
+      "budget_nj": 115859561.63306856,
+      "forecast_nj": [
+        115909561.63306856,
+        115930332.58539478
+      ],
+      "observed_nj": [
+        115019315.72461385,
+        115012626.39646532
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 2,
+      "budget_nj": 115884561.63306856,
+      "forecast_nj": [
+        115909561.63306856,
+        115930332.58539478
+      ],
+      "observed_nj": [
+        115019315.72461385,
+        115012626.39646532
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 2,
+      "budget_nj": 115909561.63306856,
+      "forecast_nj": [
+        115909561.63306856,
+        115930332.58539478
+      ],
+      "observed_nj": [
+        115019315.72461385,
+        115012626.39646532
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 2,
+      "budget_nj": 115934561.63306856,
+      "forecast_nj": [
+        115909561.63306856,
+        115930332.58539478
+      ],
+      "observed_nj": [
+        115019315.72461385,
+        115012626.39646532
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 2,
+      "budget_nj": 115959561.63306856,
+      "forecast_nj": [
+        115909561.63306856,
+        115930332.58539478
+      ],
+      "observed_nj": [
+        115019315.72461385,
+        115012626.39646532
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 2,
+      "budget_nj": 116009561.63306856,
+      "forecast_nj": [
+        115909561.63306856,
+        115930332.58539478
+      ],
+      "observed_nj": [
+        115019315.72461385,
+        115012626.39646532
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 3,
+      "budget_nj": 115077064.00336269,
+      "forecast_nj": [
+        115177064.00336269,
+        115197834.95568891
+      ],
+      "observed_nj": [
+        115304824.77521598,
+        115311072.40069678
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 3,
+      "budget_nj": 115127064.00336269,
+      "forecast_nj": [
+        115177064.00336269,
+        115197834.95568891
+      ],
+      "observed_nj": [
+        115304824.77521598,
+        115311072.40069678
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 3,
+      "budget_nj": 115152064.00336269,
+      "forecast_nj": [
+        115177064.00336269,
+        115197834.95568891
+      ],
+      "observed_nj": [
+        115304824.77521598,
+        115311072.40069678
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 3,
+      "budget_nj": 115177064.00336269,
+      "forecast_nj": [
+        115177064.00336269,
+        115197834.95568891
+      ],
+      "observed_nj": [
+        115304824.77521598,
+        115311072.40069678
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 3,
+      "budget_nj": 115202064.00336269,
+      "forecast_nj": [
+        115177064.00336269,
+        115197834.95568891
+      ],
+      "observed_nj": [
+        115304824.77521598,
+        115311072.40069678
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 3,
+      "budget_nj": 115227064.00336269,
+      "forecast_nj": [
+        115177064.00336269,
+        115197834.95568891
+      ],
+      "observed_nj": [
+        115304824.77521598,
+        115311072.40069678
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 3,
+      "budget_nj": 115277064.00336269,
+      "forecast_nj": [
+        115177064.00336269,
+        115197834.95568891
+      ],
+      "observed_nj": [
+        115304824.77521598,
+        115311072.40069678
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 4,
+      "budget_nj": 115204824.77521598,
+      "forecast_nj": [
+        115304824.77521598,
+        115325595.7275422
+      ],
+      "observed_nj": [
+        114912725.46302608,
+        114904521.4740266
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 4,
+      "budget_nj": 115254824.77521598,
+      "forecast_nj": [
+        115304824.77521598,
+        115325595.7275422
+      ],
+      "observed_nj": [
+        114912725.46302608,
+        114904521.4740266
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 4,
+      "budget_nj": 115279824.77521598,
+      "forecast_nj": [
+        115304824.77521598,
+        115325595.7275422
+      ],
+      "observed_nj": [
+        114912725.46302608,
+        114904521.4740266
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 4,
+      "budget_nj": 115304824.77521598,
+      "forecast_nj": [
+        115304824.77521598,
+        115325595.7275422
+      ],
+      "observed_nj": [
+        114912725.46302608,
+        114904521.4740266
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 4,
+      "budget_nj": 115329824.77521598,
+      "forecast_nj": [
+        115304824.77521598,
+        115325595.7275422
+      ],
+      "observed_nj": [
+        114912725.46302608,
+        114904521.4740266
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 4,
+      "budget_nj": 115354824.77521598,
+      "forecast_nj": [
+        115304824.77521598,
+        115325595.7275422
+      ],
+      "observed_nj": [
+        114912725.46302608,
+        114904521.4740266
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 4,
+      "budget_nj": 115404824.77521598,
+      "forecast_nj": [
+        115304824.77521598,
+        115325595.7275422
+      ],
+      "observed_nj": [
+        114912725.46302608,
+        114904521.4740266
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 5,
+      "budget_nj": 115036684.60434878,
+      "forecast_nj": [
+        115136684.60434878,
+        115157455.556675
+      ],
+      "observed_nj": [
+        115104358.32760274,
+        115106586.31456454
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 5,
+      "budget_nj": 115086684.60434878,
+      "forecast_nj": [
+        115136684.60434878,
+        115157455.556675
+      ],
+      "observed_nj": [
+        115104358.32760274,
+        115106586.31456454
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 5,
+      "budget_nj": 115111684.60434878,
+      "forecast_nj": [
+        115136684.60434878,
+        115157455.556675
+      ],
+      "observed_nj": [
+        115104358.32760274,
+        115106586.31456454
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 5,
+      "budget_nj": 115136684.60434878,
+      "forecast_nj": [
+        115136684.60434878,
+        115157455.556675
+      ],
+      "observed_nj": [
+        115104358.32760274,
+        115106586.31456454
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 5,
+      "budget_nj": 115161684.60434878,
+      "forecast_nj": [
+        115136684.60434878,
+        115157455.556675
+      ],
+      "observed_nj": [
+        115104358.32760274,
+        115106586.31456454
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 5,
+      "budget_nj": 115186684.60434878,
+      "forecast_nj": [
+        115136684.60434878,
+        115157455.556675
+      ],
+      "observed_nj": [
+        115104358.32760274,
+        115106586.31456454
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 5,
+      "budget_nj": 115236684.60434878,
+      "forecast_nj": [
+        115136684.60434878,
+        115157455.556675
+      ],
+      "observed_nj": [
+        115104358.32760274,
+        115106586.31456454
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 6,
+      "budget_nj": 115031945.98612653,
+      "forecast_nj": [
+        115131945.98612653,
+        115152716.93845275
+      ],
+      "observed_nj": [
+        114876872.29229076,
+        114870515.2782125
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 6,
+      "budget_nj": 115081945.98612653,
+      "forecast_nj": [
+        115131945.98612653,
+        115152716.93845275
+      ],
+      "observed_nj": [
+        114876872.29229076,
+        114870515.2782125
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 6,
+      "budget_nj": 115106945.98612653,
+      "forecast_nj": [
+        115131945.98612653,
+        115152716.93845275
+      ],
+      "observed_nj": [
+        114876872.29229076,
+        114870515.2782125
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 6,
+      "budget_nj": 115131945.98612653,
+      "forecast_nj": [
+        115131945.98612653,
+        115152716.93845275
+      ],
+      "observed_nj": [
+        114876872.29229076,
+        114870515.2782125
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 6,
+      "budget_nj": 115156945.98612653,
+      "forecast_nj": [
+        115131945.98612653,
+        115152716.93845275
+      ],
+      "observed_nj": [
+        114876872.29229076,
+        114870515.2782125
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 6,
+      "budget_nj": 115181945.98612653,
+      "forecast_nj": [
+        115131945.98612653,
+        115152716.93845275
+      ],
+      "observed_nj": [
+        114876872.29229076,
+        114870515.2782125
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 6,
+      "budget_nj": 115231945.98612653,
+      "forecast_nj": [
+        115131945.98612653,
+        115152716.93845275
+      ],
+      "observed_nj": [
+        114876872.29229076,
+        114870515.2782125
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 7,
+      "budget_nj": 115000833.80944984,
+      "forecast_nj": [
+        115100833.80944984,
+        115121604.76177606
+      ],
+      "observed_nj": [
+        115195271.65674011,
+        115202410.38674287
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 7,
+      "budget_nj": 115050833.80944984,
+      "forecast_nj": [
+        115100833.80944984,
+        115121604.76177606
+      ],
+      "observed_nj": [
+        115195271.65674011,
+        115202410.38674287
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 7,
+      "budget_nj": 115075833.80944984,
+      "forecast_nj": [
+        115100833.80944984,
+        115121604.76177606
+      ],
+      "observed_nj": [
+        115195271.65674011,
+        115202410.38674287
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 7,
+      "budget_nj": 115100833.80944984,
+      "forecast_nj": [
+        115100833.80944984,
+        115121604.76177606
+      ],
+      "observed_nj": [
+        115195271.65674011,
+        115202410.38674287
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 7,
+      "budget_nj": 115125833.80944984,
+      "forecast_nj": [
+        115100833.80944984,
+        115121604.76177606
+      ],
+      "observed_nj": [
+        115195271.65674011,
+        115202410.38674287
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 7,
+      "budget_nj": 115150833.80944984,
+      "forecast_nj": [
+        115100833.80944984,
+        115121604.76177606
+      ],
+      "observed_nj": [
+        115195271.65674011,
+        115202410.38674287
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 7,
+      "budget_nj": 115200833.80944984,
+      "forecast_nj": [
+        115100833.80944984,
+        115121604.76177606
+      ],
+      "observed_nj": [
+        115195271.65674011,
+        115202410.38674287
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 8,
+      "budget_nj": 115095271.65674011,
+      "forecast_nj": [
+        115195271.65674011,
+        115216042.60906634
+      ],
+      "observed_nj": [
+        114877511.88421024,
+        114869999.69500045
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 8,
+      "budget_nj": 115145271.65674011,
+      "forecast_nj": [
+        115195271.65674011,
+        115216042.60906634
+      ],
+      "observed_nj": [
+        114877511.88421024,
+        114869999.69500045
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 8,
+      "budget_nj": 115170271.65674011,
+      "forecast_nj": [
+        115195271.65674011,
+        115216042.60906634
+      ],
+      "observed_nj": [
+        114877511.88421024,
+        114869999.69500045
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 8,
+      "budget_nj": 115195271.65674011,
+      "forecast_nj": [
+        115195271.65674011,
+        115216042.60906634
+      ],
+      "observed_nj": [
+        114877511.88421024,
+        114869999.69500045
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 8,
+      "budget_nj": 115220271.65674011,
+      "forecast_nj": [
+        115195271.65674011,
+        115216042.60906634
+      ],
+      "observed_nj": [
+        114877511.88421024,
+        114869999.69500045
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 8,
+      "budget_nj": 115245271.65674011,
+      "forecast_nj": [
+        115195271.65674011,
+        115216042.60906634
+      ],
+      "observed_nj": [
+        114877511.88421024,
+        114869999.69500045
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 8,
+      "budget_nj": 115295271.65674011,
+      "forecast_nj": [
+        115195271.65674011,
+        115216042.60906634
+      ],
+      "observed_nj": [
+        114877511.88421024,
+        114869999.69500045
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 9,
+      "budget_nj": 114990505.0905051,
+      "forecast_nj": [
+        115090505.0905051,
+        115111276.04283132
+      ],
+      "observed_nj": [
+        115233284.91678771,
+        115233450.2996491
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 9,
+      "budget_nj": 115040505.0905051,
+      "forecast_nj": [
+        115090505.0905051,
+        115111276.04283132
+      ],
+      "observed_nj": [
+        115233284.91678771,
+        115233450.2996491
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 9,
+      "budget_nj": 115065505.0905051,
+      "forecast_nj": [
+        115090505.0905051,
+        115111276.04283132
+      ],
+      "observed_nj": [
+        115233284.91678771,
+        115233450.2996491
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 9,
+      "budget_nj": 115090505.0905051,
+      "forecast_nj": [
+        115090505.0905051,
+        115111276.04283132
+      ],
+      "observed_nj": [
+        115233284.91678771,
+        115233450.2996491
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 9,
+      "budget_nj": 115115505.0905051,
+      "forecast_nj": [
+        115090505.0905051,
+        115111276.04283132
+      ],
+      "observed_nj": [
+        115233284.91678771,
+        115233450.2996491
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 9,
+      "budget_nj": 115140505.0905051,
+      "forecast_nj": [
+        115090505.0905051,
+        115111276.04283132
+      ],
+      "observed_nj": [
+        115233284.91678771,
+        115233450.2996491
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 9,
+      "budget_nj": 115190505.0905051,
+      "forecast_nj": [
+        115090505.0905051,
+        115111276.04283132
+      ],
+      "observed_nj": [
+        115233284.91678771,
+        115233450.2996491
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 10,
+      "budget_nj": 115133284.91678771,
+      "forecast_nj": [
+        115233284.91678771,
+        115254055.86911394
+      ],
+      "observed_nj": [
+        114933448.31057455,
+        114955053.17978728
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 10,
+      "budget_nj": 115183284.91678771,
+      "forecast_nj": [
+        115233284.91678771,
+        115254055.86911394
+      ],
+      "observed_nj": [
+        114933448.31057455,
+        114955053.17978728
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 10,
+      "budget_nj": 115208284.91678771,
+      "forecast_nj": [
+        115233284.91678771,
+        115254055.86911394
+      ],
+      "observed_nj": [
+        114933448.31057455,
+        114955053.17978728
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 10,
+      "budget_nj": 115233284.91678771,
+      "forecast_nj": [
+        115233284.91678771,
+        115254055.86911394
+      ],
+      "observed_nj": [
+        114933448.31057455,
+        114955053.17978728
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 10,
+      "budget_nj": 115258284.91678771,
+      "forecast_nj": [
+        115233284.91678771,
+        115254055.86911394
+      ],
+      "observed_nj": [
+        114933448.31057455,
+        114955053.17978728
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 10,
+      "budget_nj": 115283284.91678771,
+      "forecast_nj": [
+        115233284.91678771,
+        115254055.86911394
+      ],
+      "observed_nj": [
+        114933448.31057455,
+        114955053.17978728
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 10,
+      "budget_nj": 115333284.91678771,
+      "forecast_nj": [
+        115233284.91678771,
+        115254055.86911394
+      ],
+      "observed_nj": [
+        114933448.31057455,
+        114955053.17978728
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 11,
+      "budget_nj": 115071677.72389257,
+      "forecast_nj": [
+        115171677.72389257,
+        115192448.6762188
+      ],
+      "observed_nj": [
+        115323096.09213518,
+        115332830.66792333
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 11,
+      "budget_nj": 115121677.72389257,
+      "forecast_nj": [
+        115171677.72389257,
+        115192448.6762188
+      ],
+      "observed_nj": [
+        115323096.09213518,
+        115332830.66792333
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 11,
+      "budget_nj": 115146677.72389257,
+      "forecast_nj": [
+        115171677.72389257,
+        115192448.6762188
+      ],
+      "observed_nj": [
+        115323096.09213518,
+        115332830.66792333
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 11,
+      "budget_nj": 115171677.72389257,
+      "forecast_nj": [
+        115171677.72389257,
+        115192448.6762188
+      ],
+      "observed_nj": [
+        115323096.09213518,
+        115332830.66792333
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 11,
+      "budget_nj": 115196677.72389257,
+      "forecast_nj": [
+        115171677.72389257,
+        115192448.6762188
+      ],
+      "observed_nj": [
+        115323096.09213518,
+        115332830.66792333
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 11,
+      "budget_nj": 115221677.72389257,
+      "forecast_nj": [
+        115171677.72389257,
+        115192448.6762188
+      ],
+      "observed_nj": [
+        115323096.09213518,
+        115332830.66792333
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 11,
+      "budget_nj": 115271677.72389257,
+      "forecast_nj": [
+        115171677.72389257,
+        115192448.6762188
+      ],
+      "observed_nj": [
+        115323096.09213518,
+        115332830.66792333
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 12,
+      "budget_nj": 115223096.09213518,
+      "forecast_nj": [
+        115323096.09213518,
+        115343867.0444614
+      ],
+      "observed_nj": [
+        114876289.20618466,
+        114870009.45001575
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 12,
+      "budget_nj": 115273096.09213518,
+      "forecast_nj": [
+        115323096.09213518,
+        115343867.0444614
+      ],
+      "observed_nj": [
+        114876289.20618466,
+        114870009.45001575
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 12,
+      "budget_nj": 115298096.09213518,
+      "forecast_nj": [
+        115323096.09213518,
+        115343867.0444614
+      ],
+      "observed_nj": [
+        114876289.20618466,
+        114870009.45001575
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 12,
+      "budget_nj": 115323096.09213518,
+      "forecast_nj": [
+        115323096.09213518,
+        115343867.0444614
+      ],
+      "observed_nj": [
+        114876289.20618466,
+        114870009.45001575
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 12,
+      "budget_nj": 115348096.09213518,
+      "forecast_nj": [
+        115323096.09213518,
+        115343867.0444614
+      ],
+      "observed_nj": [
+        114876289.20618466,
+        114870009.45001575
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 12,
+      "budget_nj": 115373096.09213518,
+      "forecast_nj": [
+        115323096.09213518,
+        115343867.0444614
+      ],
+      "observed_nj": [
+        114876289.20618466,
+        114870009.45001575
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 12,
+      "budget_nj": 115423096.09213518,
+      "forecast_nj": [
+        115323096.09213518,
+        115343867.0444614
+      ],
+      "observed_nj": [
+        114876289.20618466,
+        114870009.45001575
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 13,
+      "budget_nj": 115075007.75836696,
+      "forecast_nj": [
+        115175007.75836696,
+        115195778.71069318
+      ],
+      "observed_nj": [
+        115091803.51694037,
+        115205676.3971618
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 13,
+      "budget_nj": 115125007.75836696,
+      "forecast_nj": [
+        115175007.75836696,
+        115195778.71069318
+      ],
+      "observed_nj": [
+        115091803.51694037,
+        115205676.3971618
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 13,
+      "budget_nj": 115150007.75836696,
+      "forecast_nj": [
+        115175007.75836696,
+        115195778.71069318
+      ],
+      "observed_nj": [
+        115091803.51694037,
+        115205676.3971618
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 13,
+      "budget_nj": 115175007.75836696,
+      "forecast_nj": [
+        115175007.75836696,
+        115195778.71069318
+      ],
+      "observed_nj": [
+        115091803.51694037,
+        115205676.3971618
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 13,
+      "budget_nj": 115200007.75836696,
+      "forecast_nj": [
+        115175007.75836696,
+        115195778.71069318
+      ],
+      "observed_nj": [
+        115091803.51694037,
+        115205676.3971618
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 13,
+      "budget_nj": 115225007.75836696,
+      "forecast_nj": [
+        115175007.75836696,
+        115195778.71069318
+      ],
+      "observed_nj": [
+        115091803.51694037,
+        115205676.3971618
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 13,
+      "budget_nj": 115275007.75836696,
+      "forecast_nj": [
+        115175007.75836696,
+        115195778.71069318
+      ],
+      "observed_nj": [
+        115091803.51694037,
+        115205676.3971618
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 14,
+      "budget_nj": 114992443.82636708,
+      "forecast_nj": [
+        115092443.82636708,
+        115113214.7786933
+      ],
+      "observed_nj": [
+        114910959.2671222,
+        114900177.14884853
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 14,
+      "budget_nj": 115042443.82636708,
+      "forecast_nj": [
+        115092443.82636708,
+        115113214.7786933
+      ],
+      "observed_nj": [
+        114910959.2671222,
+        114900177.14884853
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 14,
+      "budget_nj": 115067443.82636708,
+      "forecast_nj": [
+        115092443.82636708,
+        115113214.7786933
+      ],
+      "observed_nj": [
+        114910959.2671222,
+        114900177.14884853
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 14,
+      "budget_nj": 115092443.82636708,
+      "forecast_nj": [
+        115092443.82636708,
+        115113214.7786933
+      ],
+      "observed_nj": [
+        114910959.2671222,
+        114900177.14884853
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 14,
+      "budget_nj": 115117443.82636708,
+      "forecast_nj": [
+        115092443.82636708,
+        115113214.7786933
+      ],
+      "observed_nj": [
+        114910959.2671222,
+        114900177.14884853
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 14,
+      "budget_nj": 115142443.82636708,
+      "forecast_nj": [
+        115092443.82636708,
+        115113214.7786933
+      ],
+      "observed_nj": [
+        114910959.2671222,
+        114900177.14884853
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 14,
+      "budget_nj": 115192443.82636708,
+      "forecast_nj": [
+        115092443.82636708,
+        115113214.7786933
+      ],
+      "observed_nj": [
+        114910959.2671222,
+        114900177.14884853
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 15,
+      "budget_nj": 114810959.2671222,
+      "forecast_nj": [
+        114910959.2671222,
+        114931730.21944842
+      ],
+      "observed_nj": [
+        115204773.83165857,
+        115296554.75861311
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 15,
+      "budget_nj": 114860959.2671222,
+      "forecast_nj": [
+        114910959.2671222,
+        114931730.21944842
+      ],
+      "observed_nj": [
+        115204773.83165857,
+        115296554.75861311
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 15,
+      "budget_nj": 114885959.2671222,
+      "forecast_nj": [
+        114910959.2671222,
+        114931730.21944842
+      ],
+      "observed_nj": [
+        115204773.83165857,
+        115296554.75861311
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 15,
+      "budget_nj": 114910959.2671222,
+      "forecast_nj": [
+        114910959.2671222,
+        114931730.21944842
+      ],
+      "observed_nj": [
+        115204773.83165857,
+        115296554.75861311
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 15,
+      "budget_nj": 114935959.2671222,
+      "forecast_nj": [
+        114910959.2671222,
+        114931730.21944842
+      ],
+      "observed_nj": [
+        115204773.83165857,
+        115296554.75861311
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 15,
+      "budget_nj": 114960959.2671222,
+      "forecast_nj": [
+        114910959.2671222,
+        114931730.21944842
+      ],
+      "observed_nj": [
+        115204773.83165857,
+        115296554.75861311
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 15,
+      "budget_nj": 115010959.2671222,
+      "forecast_nj": [
+        114910959.2671222,
+        114931730.21944842
+      ],
+      "observed_nj": [
+        115204773.83165857,
+        115296554.75861311
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 16,
+      "budget_nj": 115074711.76705098,
+      "forecast_nj": [
+        115174711.76705098,
+        115195482.7193772
+      ],
+      "observed_nj": [
+        114930334.68165992,
+        114924525.64778635
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 16,
+      "budget_nj": 115124711.76705098,
+      "forecast_nj": [
+        115174711.76705098,
+        115195482.7193772
+      ],
+      "observed_nj": [
+        114930334.68165992,
+        114924525.64778635
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 16,
+      "budget_nj": 115149711.76705098,
+      "forecast_nj": [
+        115174711.76705098,
+        115195482.7193772
+      ],
+      "observed_nj": [
+        114930334.68165992,
+        114924525.64778635
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 16,
+      "budget_nj": 115174711.76705098,
+      "forecast_nj": [
+        115174711.76705098,
+        115195482.7193772
+      ],
+      "observed_nj": [
+        114930334.68165992,
+        114924525.64778635
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 16,
+      "budget_nj": 115199711.76705098,
+      "forecast_nj": [
+        115174711.76705098,
+        115195482.7193772
+      ],
+      "observed_nj": [
+        114930334.68165992,
+        114924525.64778635
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 16,
+      "budget_nj": 115224711.76705098,
+      "forecast_nj": [
+        115174711.76705098,
+        115195482.7193772
+      ],
+      "observed_nj": [
+        114930334.68165992,
+        114924525.64778635
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 16,
+      "budget_nj": 115274711.76705098,
+      "forecast_nj": [
+        115174711.76705098,
+        115195482.7193772
+      ],
+      "observed_nj": [
+        114930334.68165992,
+        114924525.64778635
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 17,
+      "budget_nj": 115045942.68826549,
+      "forecast_nj": [
+        115145942.68826549,
+        115166713.64059171
+      ],
+      "observed_nj": [
+        115091354.36378479,
+        115204945.78268977
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 17,
+      "budget_nj": 115095942.68826549,
+      "forecast_nj": [
+        115145942.68826549,
+        115166713.64059171
+      ],
+      "observed_nj": [
+        115091354.36378479,
+        115204945.78268977
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 17,
+      "budget_nj": 115120942.68826549,
+      "forecast_nj": [
+        115145942.68826549,
+        115166713.64059171
+      ],
+      "observed_nj": [
+        115091354.36378479,
+        115204945.78268977
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 17,
+      "budget_nj": 115145942.68826549,
+      "forecast_nj": [
+        115145942.68826549,
+        115166713.64059171
+      ],
+      "observed_nj": [
+        115091354.36378479,
+        115204945.78268977
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 17,
+      "budget_nj": 115170942.68826549,
+      "forecast_nj": [
+        115145942.68826549,
+        115166713.64059171
+      ],
+      "observed_nj": [
+        115091354.36378479,
+        115204945.78268977
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 17,
+      "budget_nj": 115195942.68826549,
+      "forecast_nj": [
+        115145942.68826549,
+        115166713.64059171
+      ],
+      "observed_nj": [
+        115091354.36378479,
+        115204945.78268977
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 17,
+      "budget_nj": 115245942.68826549,
+      "forecast_nj": [
+        115145942.68826549,
+        115166713.64059171
+      ],
+      "observed_nj": [
+        115091354.36378479,
+        115204945.78268977
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 18,
+      "budget_nj": 114992877.0526066,
+      "forecast_nj": [
+        115092877.0526066,
+        115113648.00493282
+      ],
+      "observed_nj": [
+        114875827.36589898,
+        114869814.69432163
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 18,
+      "budget_nj": 115042877.0526066,
+      "forecast_nj": [
+        115092877.0526066,
+        115113648.00493282
+      ],
+      "observed_nj": [
+        114875827.36589898,
+        114869814.69432163
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 18,
+      "budget_nj": 115067877.0526066,
+      "forecast_nj": [
+        115092877.0526066,
+        115113648.00493282
+      ],
+      "observed_nj": [
+        114875827.36589898,
+        114869814.69432163
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 18,
+      "budget_nj": 115092877.0526066,
+      "forecast_nj": [
+        115092877.0526066,
+        115113648.00493282
+      ],
+      "observed_nj": [
+        114875827.36589898,
+        114869814.69432163
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 18,
+      "budget_nj": 115117877.0526066,
+      "forecast_nj": [
+        115092877.0526066,
+        115113648.00493282
+      ],
+      "observed_nj": [
+        114875827.36589898,
+        114869814.69432163
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 18,
+      "budget_nj": 115142877.0526066,
+      "forecast_nj": [
+        115092877.0526066,
+        115113648.00493282
+      ],
+      "observed_nj": [
+        114875827.36589898,
+        114869814.69432163
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 18,
+      "budget_nj": 115192877.0526066,
+      "forecast_nj": [
+        115092877.0526066,
+        115113648.00493282
+      ],
+      "observed_nj": [
+        114875827.36589898,
+        114869814.69432163
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 19,
+      "budget_nj": 114775827.36589898,
+      "forecast_nj": [
+        114875827.36589898,
+        114896598.3182252
+      ],
+      "observed_nj": [
+        115759437.78929032,
+        115571953.21035092
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 19,
+      "budget_nj": 114825827.36589898,
+      "forecast_nj": [
+        114875827.36589898,
+        114896598.3182252
+      ],
+      "observed_nj": [
+        115759437.78929032,
+        115571953.21035092
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 19,
+      "budget_nj": 114850827.36589898,
+      "forecast_nj": [
+        114875827.36589898,
+        114896598.3182252
+      ],
+      "observed_nj": [
+        115759437.78929032,
+        115571953.21035092
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 19,
+      "budget_nj": 114875827.36589898,
+      "forecast_nj": [
+        114875827.36589898,
+        114896598.3182252
+      ],
+      "observed_nj": [
+        115759437.78929032,
+        115571953.21035092
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 19,
+      "budget_nj": 114900827.36589898,
+      "forecast_nj": [
+        114875827.36589898,
+        114896598.3182252
+      ],
+      "observed_nj": [
+        115759437.78929032,
+        115571953.21035092
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 19,
+      "budget_nj": 114925827.36589898,
+      "forecast_nj": [
+        114875827.36589898,
+        114896598.3182252
+      ],
+      "observed_nj": [
+        115759437.78929032,
+        115571953.21035092
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 19,
+      "budget_nj": 114975827.36589898,
+      "forecast_nj": [
+        114875827.36589898,
+        114896598.3182252
+      ],
+      "observed_nj": [
+        115759437.78929032,
+        115571953.21035092
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 20,
+      "budget_nj": 115229686.68125327,
+      "forecast_nj": [
+        115329686.68125327,
+        115350457.6335795
+      ],
+      "observed_nj": [
+        116170477.63270658,
+        116218430.90784547
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 20,
+      "budget_nj": 115279686.68125327,
+      "forecast_nj": [
+        115329686.68125327,
+        115350457.6335795
+      ],
+      "observed_nj": [
+        116170477.63270658,
+        116218430.90784547
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 20,
+      "budget_nj": 115304686.68125327,
+      "forecast_nj": [
+        115329686.68125327,
+        115350457.6335795
+      ],
+      "observed_nj": [
+        116170477.63270658,
+        116218430.90784547
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 20,
+      "budget_nj": 115329686.68125327,
+      "forecast_nj": [
+        115329686.68125327,
+        115350457.6335795
+      ],
+      "observed_nj": [
+        116170477.63270658,
+        116218430.90784547
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 20,
+      "budget_nj": 115354686.68125327,
+      "forecast_nj": [
+        115329686.68125327,
+        115350457.6335795
+      ],
+      "observed_nj": [
+        116170477.63270658,
+        116218430.90784547
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 20,
+      "budget_nj": 115379686.68125327,
+      "forecast_nj": [
+        115329686.68125327,
+        115350457.6335795
+      ],
+      "observed_nj": [
+        116170477.63270658,
+        116218430.90784547
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 2,
+      "ordinal": 20,
+      "budget_nj": 115429686.68125327,
+      "forecast_nj": [
+        115329686.68125327,
+        115350457.6335795
+      ],
+      "observed_nj": [
+        116170477.63270658,
+        116218430.90784547
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 0,
+      "budget_nj": 115672636.03980713,
+      "forecast_nj": [
+        115772636.03980713,
+        115792394.95475067
+      ],
+      "observed_nj": [
+        116169331.29858217,
+        116209290.03253034
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 0,
+      "budget_nj": 115722636.03980713,
+      "forecast_nj": [
+        115772636.03980713,
+        115792394.95475067
+      ],
+      "observed_nj": [
+        116169331.29858217,
+        116209290.03253034
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 0,
+      "budget_nj": 115747636.03980713,
+      "forecast_nj": [
+        115772636.03980713,
+        115792394.95475067
+      ],
+      "observed_nj": [
+        116169331.29858217,
+        116209290.03253034
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 0,
+      "budget_nj": 115772636.03980713,
+      "forecast_nj": [
+        115772636.03980713,
+        115792394.95475067
+      ],
+      "observed_nj": [
+        116169331.29858217,
+        116209290.03253034
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 0,
+      "budget_nj": 115797636.03980713,
+      "forecast_nj": [
+        115772636.03980713,
+        115792394.95475067
+      ],
+      "observed_nj": [
+        116169331.29858217,
+        116209290.03253034
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 0,
+      "budget_nj": 115822636.03980713,
+      "forecast_nj": [
+        115772636.03980713,
+        115792394.95475067
+      ],
+      "observed_nj": [
+        116169331.29858217,
+        116209290.03253034
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 0,
+      "budget_nj": 115872636.03980713,
+      "forecast_nj": [
+        115772636.03980713,
+        115792394.95475067
+      ],
+      "observed_nj": [
+        116169331.29858217,
+        116209290.03253034
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 1,
+      "budget_nj": 116175868.91850367,
+      "forecast_nj": [
+        116275868.91850367,
+        116295627.83344722
+      ],
+      "observed_nj": [
+        115922943.30822676,
+        115950769.2215385
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 1,
+      "budget_nj": 116225868.91850367,
+      "forecast_nj": [
+        116275868.91850367,
+        116295627.83344722
+      ],
+      "observed_nj": [
+        115922943.30822676,
+        115950769.2215385
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 1,
+      "budget_nj": 116250868.91850367,
+      "forecast_nj": [
+        116275868.91850367,
+        116295627.83344722
+      ],
+      "observed_nj": [
+        115922943.30822676,
+        115950769.2215385
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 1,
+      "budget_nj": 116275868.91850367,
+      "forecast_nj": [
+        116275868.91850367,
+        116295627.83344722
+      ],
+      "observed_nj": [
+        115922943.30822676,
+        115950769.2215385
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 1,
+      "budget_nj": 116300868.91850367,
+      "forecast_nj": [
+        116275868.91850367,
+        116295627.83344722
+      ],
+      "observed_nj": [
+        115922943.30822676,
+        115950769.2215385
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 1,
+      "budget_nj": 116325868.91850367,
+      "forecast_nj": [
+        116275868.91850367,
+        116295627.83344722
+      ],
+      "observed_nj": [
+        115922943.30822676,
+        115950769.2215385
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 1,
+      "budget_nj": 116375868.91850367,
+      "forecast_nj": [
+        116275868.91850367,
+        116295627.83344722
+      ],
+      "observed_nj": [
+        115922943.30822676,
+        115950769.2215385
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 2,
+      "budget_nj": 115822943.30822676,
+      "forecast_nj": [
+        115922943.30822676,
+        115942702.22317031
+      ],
+      "observed_nj": [
+        114997245.64922245,
+        114990478.92700511
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 2,
+      "budget_nj": 115872943.30822676,
+      "forecast_nj": [
+        115922943.30822676,
+        115942702.22317031
+      ],
+      "observed_nj": [
+        114997245.64922245,
+        114990478.92700511
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 2,
+      "budget_nj": 115897943.30822676,
+      "forecast_nj": [
+        115922943.30822676,
+        115942702.22317031
+      ],
+      "observed_nj": [
+        114997245.64922245,
+        114990478.92700511
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 2,
+      "budget_nj": 115922943.30822676,
+      "forecast_nj": [
+        115922943.30822676,
+        115942702.22317031
+      ],
+      "observed_nj": [
+        114997245.64922245,
+        114990478.92700511
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 2,
+      "budget_nj": 115947943.30822676,
+      "forecast_nj": [
+        115922943.30822676,
+        115942702.22317031
+      ],
+      "observed_nj": [
+        114997245.64922245,
+        114990478.92700511
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 2,
+      "budget_nj": 115972943.30822676,
+      "forecast_nj": [
+        115922943.30822676,
+        115942702.22317031
+      ],
+      "observed_nj": [
+        114997245.64922245,
+        114990478.92700511
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 2,
+      "budget_nj": 116022943.30822676,
+      "forecast_nj": [
+        115922943.30822676,
+        115942702.22317031
+      ],
+      "observed_nj": [
+        114997245.64922245,
+        114990478.92700511
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 3,
+      "budget_nj": 115100556.66945001,
+      "forecast_nj": [
+        115200556.66945001,
+        115220315.58439356
+      ],
+      "observed_nj": [
+        115196624.23038192,
+        115203294.55222899
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 3,
+      "budget_nj": 115150556.66945001,
+      "forecast_nj": [
+        115200556.66945001,
+        115220315.58439356
+      ],
+      "observed_nj": [
+        115196624.23038192,
+        115203294.55222899
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 3,
+      "budget_nj": 115175556.66945001,
+      "forecast_nj": [
+        115200556.66945001,
+        115220315.58439356
+      ],
+      "observed_nj": [
+        115196624.23038192,
+        115203294.55222899
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 3,
+      "budget_nj": 115200556.66945001,
+      "forecast_nj": [
+        115200556.66945001,
+        115220315.58439356
+      ],
+      "observed_nj": [
+        115196624.23038192,
+        115203294.55222899
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 3,
+      "budget_nj": 115225556.66945001,
+      "forecast_nj": [
+        115200556.66945001,
+        115220315.58439356
+      ],
+      "observed_nj": [
+        115196624.23038192,
+        115203294.55222899
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 3,
+      "budget_nj": 115250556.66945001,
+      "forecast_nj": [
+        115200556.66945001,
+        115220315.58439356
+      ],
+      "observed_nj": [
+        115196624.23038192,
+        115203294.55222899
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 3,
+      "budget_nj": 115300556.66945001,
+      "forecast_nj": [
+        115200556.66945001,
+        115220315.58439356
+      ],
+      "observed_nj": [
+        115196624.23038192,
+        115203294.55222899
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 4,
+      "budget_nj": 115096624.23038192,
+      "forecast_nj": [
+        115196624.23038192,
+        115216383.14532547
+      ],
+      "observed_nj": [
+        114903201.82774918,
+        114893554.46777233
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 4,
+      "budget_nj": 115146624.23038192,
+      "forecast_nj": [
+        115196624.23038192,
+        115216383.14532547
+      ],
+      "observed_nj": [
+        114903201.82774918,
+        114893554.46777233
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 4,
+      "budget_nj": 115171624.23038192,
+      "forecast_nj": [
+        115196624.23038192,
+        115216383.14532547
+      ],
+      "observed_nj": [
+        114903201.82774918,
+        114893554.46777233
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 4,
+      "budget_nj": 115196624.23038192,
+      "forecast_nj": [
+        115196624.23038192,
+        115216383.14532547
+      ],
+      "observed_nj": [
+        114903201.82774918,
+        114893554.46777233
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 4,
+      "budget_nj": 115221624.23038192,
+      "forecast_nj": [
+        115196624.23038192,
+        115216383.14532547
+      ],
+      "observed_nj": [
+        114903201.82774918,
+        114893554.46777233
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 4,
+      "budget_nj": 115246624.23038192,
+      "forecast_nj": [
+        115196624.23038192,
+        115216383.14532547
+      ],
+      "observed_nj": [
+        114903201.82774918,
+        114893554.46777233
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 4,
+      "budget_nj": 115296624.23038192,
+      "forecast_nj": [
+        115196624.23038192,
+        115216383.14532547
+      ],
+      "observed_nj": [
+        114903201.82774918,
+        114893554.46777233
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 5,
+      "budget_nj": 115011756.4412178,
+      "forecast_nj": [
+        115111756.4412178,
+        115131515.35616134
+      ],
+      "observed_nj": [
+        115198046.0,
+        115094288.75431004
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 5,
+      "budget_nj": 115061756.4412178,
+      "forecast_nj": [
+        115111756.4412178,
+        115131515.35616134
+      ],
+      "observed_nj": [
+        115198046.0,
+        115094288.75431004
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 5,
+      "budget_nj": 115086756.4412178,
+      "forecast_nj": [
+        115111756.4412178,
+        115131515.35616134
+      ],
+      "observed_nj": [
+        115198046.0,
+        115094288.75431004
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 5,
+      "budget_nj": 115111756.4412178,
+      "forecast_nj": [
+        115111756.4412178,
+        115131515.35616134
+      ],
+      "observed_nj": [
+        115198046.0,
+        115094288.75431004
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 5,
+      "budget_nj": 115136756.4412178,
+      "forecast_nj": [
+        115111756.4412178,
+        115131515.35616134
+      ],
+      "observed_nj": [
+        115198046.0,
+        115094288.75431004
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 5,
+      "budget_nj": 115161756.4412178,
+      "forecast_nj": [
+        115111756.4412178,
+        115131515.35616134
+      ],
+      "observed_nj": [
+        115198046.0,
+        115094288.75431004
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 5,
+      "budget_nj": 115211756.4412178,
+      "forecast_nj": [
+        115111756.4412178,
+        115131515.35616134
+      ],
+      "observed_nj": [
+        115198046.0,
+        115094288.75431004
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 6,
+      "budget_nj": 115098046.0,
+      "forecast_nj": [
+        115198046.0,
+        115217804.91494355
+      ],
+      "observed_nj": [
+        114878180.53636578,
+        114871734.92319682
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 6,
+      "budget_nj": 115148046.0,
+      "forecast_nj": [
+        115198046.0,
+        115217804.91494355
+      ],
+      "observed_nj": [
+        114878180.53636578,
+        114871734.92319682
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 6,
+      "budget_nj": 115173046.0,
+      "forecast_nj": [
+        115198046.0,
+        115217804.91494355
+      ],
+      "observed_nj": [
+        114878180.53636578,
+        114871734.92319682
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 6,
+      "budget_nj": 115198046.0,
+      "forecast_nj": [
+        115198046.0,
+        115217804.91494355
+      ],
+      "observed_nj": [
+        114878180.53636578,
+        114871734.92319682
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 6,
+      "budget_nj": 115223046.0,
+      "forecast_nj": [
+        115198046.0,
+        115217804.91494355
+      ],
+      "observed_nj": [
+        114878180.53636578,
+        114871734.92319682
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 6,
+      "budget_nj": 115248046.0,
+      "forecast_nj": [
+        115198046.0,
+        115217804.91494355
+      ],
+      "observed_nj": [
+        114878180.53636578,
+        114871734.92319682
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 6,
+      "budget_nj": 115298046.0,
+      "forecast_nj": [
+        115198046.0,
+        115217804.91494355
+      ],
+      "observed_nj": [
+        114878180.53636578,
+        114871734.92319682
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 7,
+      "budget_nj": 114989547.08455306,
+      "forecast_nj": [
+        115089547.08455306,
+        115109305.99949661
+      ],
+      "observed_nj": [
+        115196979.2422906,
+        115201890.98109019
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 7,
+      "budget_nj": 115039547.08455306,
+      "forecast_nj": [
+        115089547.08455306,
+        115109305.99949661
+      ],
+      "observed_nj": [
+        115196979.2422906,
+        115201890.98109019
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 7,
+      "budget_nj": 115064547.08455306,
+      "forecast_nj": [
+        115089547.08455306,
+        115109305.99949661
+      ],
+      "observed_nj": [
+        115196979.2422906,
+        115201890.98109019
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 7,
+      "budget_nj": 115089547.08455306,
+      "forecast_nj": [
+        115089547.08455306,
+        115109305.99949661
+      ],
+      "observed_nj": [
+        115196979.2422906,
+        115201890.98109019
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 7,
+      "budget_nj": 115114547.08455306,
+      "forecast_nj": [
+        115089547.08455306,
+        115109305.99949661
+      ],
+      "observed_nj": [
+        115196979.2422906,
+        115201890.98109019
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 7,
+      "budget_nj": 115139547.08455306,
+      "forecast_nj": [
+        115089547.08455306,
+        115109305.99949661
+      ],
+      "observed_nj": [
+        115196979.2422906,
+        115201890.98109019
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 7,
+      "budget_nj": 115189547.08455306,
+      "forecast_nj": [
+        115089547.08455306,
+        115109305.99949661
+      ],
+      "observed_nj": [
+        115196979.2422906,
+        115201890.98109019
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 8,
+      "budget_nj": 115096979.2422906,
+      "forecast_nj": [
+        115196979.2422906,
+        115216738.15723415
+      ],
+      "observed_nj": [
+        114879152.718023,
+        114872118.49615799
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 8,
+      "budget_nj": 115146979.2422906,
+      "forecast_nj": [
+        115196979.2422906,
+        115216738.15723415
+      ],
+      "observed_nj": [
+        114879152.718023,
+        114872118.49615799
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 8,
+      "budget_nj": 115171979.2422906,
+      "forecast_nj": [
+        115196979.2422906,
+        115216738.15723415
+      ],
+      "observed_nj": [
+        114879152.718023,
+        114872118.49615799
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 8,
+      "budget_nj": 115196979.2422906,
+      "forecast_nj": [
+        115196979.2422906,
+        115216738.15723415
+      ],
+      "observed_nj": [
+        114879152.718023,
+        114872118.49615799
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 8,
+      "budget_nj": 115221979.2422906,
+      "forecast_nj": [
+        115196979.2422906,
+        115216738.15723415
+      ],
+      "observed_nj": [
+        114879152.718023,
+        114872118.49615799
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 8,
+      "budget_nj": 115246979.2422906,
+      "forecast_nj": [
+        115196979.2422906,
+        115216738.15723415
+      ],
+      "observed_nj": [
+        114879152.718023,
+        114872118.49615799
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 8,
+      "budget_nj": 115296979.2422906,
+      "forecast_nj": [
+        115196979.2422906,
+        115216738.15723415
+      ],
+      "observed_nj": [
+        114879152.718023,
+        114872118.49615799
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 9,
+      "budget_nj": 114990116.84690036,
+      "forecast_nj": [
+        115090116.84690036,
+        115109875.7618439
+      ],
+      "observed_nj": [
+        115232940.2188288,
+        115232953.06818773
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 9,
+      "budget_nj": 115040116.84690036,
+      "forecast_nj": [
+        115090116.84690036,
+        115109875.7618439
+      ],
+      "observed_nj": [
+        115232940.2188288,
+        115232953.06818773
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 9,
+      "budget_nj": 115065116.84690036,
+      "forecast_nj": [
+        115090116.84690036,
+        115109875.7618439
+      ],
+      "observed_nj": [
+        115232940.2188288,
+        115232953.06818773
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 9,
+      "budget_nj": 115090116.84690036,
+      "forecast_nj": [
+        115090116.84690036,
+        115109875.7618439
+      ],
+      "observed_nj": [
+        115232940.2188288,
+        115232953.06818773
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 9,
+      "budget_nj": 115115116.84690036,
+      "forecast_nj": [
+        115090116.84690036,
+        115109875.7618439
+      ],
+      "observed_nj": [
+        115232940.2188288,
+        115232953.06818773
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 9,
+      "budget_nj": 115140116.84690036,
+      "forecast_nj": [
+        115090116.84690036,
+        115109875.7618439
+      ],
+      "observed_nj": [
+        115232940.2188288,
+        115232953.06818773
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 9,
+      "budget_nj": 115190116.84690036,
+      "forecast_nj": [
+        115090116.84690036,
+        115109875.7618439
+      ],
+      "observed_nj": [
+        115232940.2188288,
+        115232953.06818773
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 10,
+      "budget_nj": 115132940.2188288,
+      "forecast_nj": [
+        115232940.2188288,
+        115252699.13377234
+      ],
+      "observed_nj": [
+        114963025.3579831,
+        114997085.52768749
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 10,
+      "budget_nj": 115182940.2188288,
+      "forecast_nj": [
+        115232940.2188288,
+        115252699.13377234
+      ],
+      "observed_nj": [
+        114963025.3579831,
+        114997085.52768749
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 10,
+      "budget_nj": 115207940.2188288,
+      "forecast_nj": [
+        115232940.2188288,
+        115252699.13377234
+      ],
+      "observed_nj": [
+        114963025.3579831,
+        114997085.52768749
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 10,
+      "budget_nj": 115232940.2188288,
+      "forecast_nj": [
+        115232940.2188288,
+        115252699.13377234
+      ],
+      "observed_nj": [
+        114963025.3579831,
+        114997085.52768749
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 10,
+      "budget_nj": 115257940.2188288,
+      "forecast_nj": [
+        115232940.2188288,
+        115252699.13377234
+      ],
+      "observed_nj": [
+        114963025.3579831,
+        114997085.52768749
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 10,
+      "budget_nj": 115282940.2188288,
+      "forecast_nj": [
+        115232940.2188288,
+        115252699.13377234
+      ],
+      "observed_nj": [
+        114963025.3579831,
+        114997085.52768749
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 10,
+      "budget_nj": 115332940.2188288,
+      "forecast_nj": [
+        115232940.2188288,
+        115252699.13377234
+      ],
+      "observed_nj": [
+        114963025.3579831,
+        114997085.52768749
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 11,
+      "budget_nj": 115097727.47272673,
+      "forecast_nj": [
+        115197727.47272673,
+        115217486.38767028
+      ],
+      "observed_nj": [
+        115145129.80119073,
+        115148819.91469985
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 11,
+      "budget_nj": 115147727.47272673,
+      "forecast_nj": [
+        115197727.47272673,
+        115217486.38767028
+      ],
+      "observed_nj": [
+        115145129.80119073,
+        115148819.91469985
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 11,
+      "budget_nj": 115172727.47272673,
+      "forecast_nj": [
+        115197727.47272673,
+        115217486.38767028
+      ],
+      "observed_nj": [
+        115145129.80119073,
+        115148819.91469985
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 11,
+      "budget_nj": 115197727.47272673,
+      "forecast_nj": [
+        115197727.47272673,
+        115217486.38767028
+      ],
+      "observed_nj": [
+        115145129.80119073,
+        115148819.91469985
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 11,
+      "budget_nj": 115222727.47272673,
+      "forecast_nj": [
+        115197727.47272673,
+        115217486.38767028
+      ],
+      "observed_nj": [
+        115145129.80119073,
+        115148819.91469985
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 11,
+      "budget_nj": 115247727.47272673,
+      "forecast_nj": [
+        115197727.47272673,
+        115217486.38767028
+      ],
+      "observed_nj": [
+        115145129.80119073,
+        115148819.91469985
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 11,
+      "budget_nj": 115297727.47272673,
+      "forecast_nj": [
+        115197727.47272673,
+        115217486.38767028
+      ],
+      "observed_nj": [
+        115145129.80119073,
+        115148819.91469985
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 12,
+      "budget_nj": 115130865.79506493,
+      "forecast_nj": [
+        115230865.79506493,
+        115250624.71000847
+      ],
+      "observed_nj": [
+        114876657.40672223,
+        114868715.66293493
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 12,
+      "budget_nj": 115180865.79506493,
+      "forecast_nj": [
+        115230865.79506493,
+        115250624.71000847
+      ],
+      "observed_nj": [
+        114876657.40672223,
+        114868715.66293493
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 12,
+      "budget_nj": 115205865.79506493,
+      "forecast_nj": [
+        115230865.79506493,
+        115250624.71000847
+      ],
+      "observed_nj": [
+        114876657.40672223,
+        114868715.66293493
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 12,
+      "budget_nj": 115230865.79506493,
+      "forecast_nj": [
+        115230865.79506493,
+        115250624.71000847
+      ],
+      "observed_nj": [
+        114876657.40672223,
+        114868715.66293493
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 12,
+      "budget_nj": 115255865.79506493,
+      "forecast_nj": [
+        115230865.79506493,
+        115250624.71000847
+      ],
+      "observed_nj": [
+        114876657.40672223,
+        114868715.66293493
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 12,
+      "budget_nj": 115280865.79506493,
+      "forecast_nj": [
+        115230865.79506493,
+        115250624.71000847
+      ],
+      "observed_nj": [
+        114876657.40672223,
+        114868715.66293493
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 12,
+      "budget_nj": 115330865.79506493,
+      "forecast_nj": [
+        115230865.79506493,
+        115250624.71000847
+      ],
+      "observed_nj": [
+        114876657.40672223,
+        114868715.66293493
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 13,
+      "budget_nj": 115045301.53277229,
+      "forecast_nj": [
+        115145301.53277229,
+        115165060.44771583
+      ],
+      "observed_nj": [
+        115091111.57629754,
+        115203716.97212271
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 13,
+      "budget_nj": 115095301.53277229,
+      "forecast_nj": [
+        115145301.53277229,
+        115165060.44771583
+      ],
+      "observed_nj": [
+        115091111.57629754,
+        115203716.97212271
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 13,
+      "budget_nj": 115120301.53277229,
+      "forecast_nj": [
+        115145301.53277229,
+        115165060.44771583
+      ],
+      "observed_nj": [
+        115091111.57629754,
+        115203716.97212271
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 13,
+      "budget_nj": 115145301.53277229,
+      "forecast_nj": [
+        115145301.53277229,
+        115165060.44771583
+      ],
+      "observed_nj": [
+        115091111.57629754,
+        115203716.97212271
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 13,
+      "budget_nj": 115170301.53277229,
+      "forecast_nj": [
+        115145301.53277229,
+        115165060.44771583
+      ],
+      "observed_nj": [
+        115091111.57629754,
+        115203716.97212271
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 13,
+      "budget_nj": 115195301.53277229,
+      "forecast_nj": [
+        115145301.53277229,
+        115165060.44771583
+      ],
+      "observed_nj": [
+        115091111.57629754,
+        115203716.97212271
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 13,
+      "budget_nj": 115245301.53277229,
+      "forecast_nj": [
+        115145301.53277229,
+        115165060.44771583
+      ],
+      "observed_nj": [
+        115091111.57629754,
+        115203716.97212271
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 14,
+      "budget_nj": 114991943.03822996,
+      "forecast_nj": [
+        115091943.03822996,
+        115111701.9531735
+      ],
+      "observed_nj": [
+        114910786.90145895,
+        114900234.59859242
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 14,
+      "budget_nj": 115041943.03822996,
+      "forecast_nj": [
+        115091943.03822996,
+        115111701.9531735
+      ],
+      "observed_nj": [
+        114910786.90145895,
+        114900234.59859242
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 14,
+      "budget_nj": 115066943.03822996,
+      "forecast_nj": [
+        115091943.03822996,
+        115111701.9531735
+      ],
+      "observed_nj": [
+        114910786.90145895,
+        114900234.59859242
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 14,
+      "budget_nj": 115091943.03822996,
+      "forecast_nj": [
+        115091943.03822996,
+        115111701.9531735
+      ],
+      "observed_nj": [
+        114910786.90145895,
+        114900234.59859242
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 14,
+      "budget_nj": 115116943.03822996,
+      "forecast_nj": [
+        115091943.03822996,
+        115111701.9531735
+      ],
+      "observed_nj": [
+        114910786.90145895,
+        114900234.59859242
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 14,
+      "budget_nj": 115141943.03822996,
+      "forecast_nj": [
+        115091943.03822996,
+        115111701.9531735
+      ],
+      "observed_nj": [
+        114910786.90145895,
+        114900234.59859242
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 14,
+      "budget_nj": 115191943.03822996,
+      "forecast_nj": [
+        115091943.03822996,
+        115111701.9531735
+      ],
+      "observed_nj": [
+        114910786.90145895,
+        114900234.59859242
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 15,
+      "budget_nj": 114810786.90145895,
+      "forecast_nj": [
+        114910786.90145895,
+        114930545.8164025
+      ],
+      "observed_nj": [
+        115203896.3558413,
+        115206093.55734509
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 15,
+      "budget_nj": 114860786.90145895,
+      "forecast_nj": [
+        114910786.90145895,
+        114930545.8164025
+      ],
+      "observed_nj": [
+        115203896.3558413,
+        115206093.55734509
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 15,
+      "budget_nj": 114885786.90145895,
+      "forecast_nj": [
+        114910786.90145895,
+        114930545.8164025
+      ],
+      "observed_nj": [
+        115203896.3558413,
+        115206093.55734509
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 15,
+      "budget_nj": 114910786.90145895,
+      "forecast_nj": [
+        114910786.90145895,
+        114930545.8164025
+      ],
+      "observed_nj": [
+        115203896.3558413,
+        115206093.55734509
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 15,
+      "budget_nj": 114935786.90145895,
+      "forecast_nj": [
+        114910786.90145895,
+        114930545.8164025
+      ],
+      "observed_nj": [
+        115203896.3558413,
+        115206093.55734509
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 15,
+      "budget_nj": 114960786.90145895,
+      "forecast_nj": [
+        114910786.90145895,
+        114930545.8164025
+      ],
+      "observed_nj": [
+        115203896.3558413,
+        115206093.55734509
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 15,
+      "budget_nj": 115010786.90145895,
+      "forecast_nj": [
+        114910786.90145895,
+        114930545.8164025
+      ],
+      "observed_nj": [
+        115203896.3558413,
+        115206093.55734509
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 16,
+      "budget_nj": 115073807.42064193,
+      "forecast_nj": [
+        115173807.42064193,
+        115193566.33558547
+      ],
+      "observed_nj": [
+        114957858.12642562,
+        114923326.6133871
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 16,
+      "budget_nj": 115123807.42064193,
+      "forecast_nj": [
+        115173807.42064193,
+        115193566.33558547
+      ],
+      "observed_nj": [
+        114957858.12642562,
+        114923326.6133871
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 16,
+      "budget_nj": 115148807.42064193,
+      "forecast_nj": [
+        115173807.42064193,
+        115193566.33558547
+      ],
+      "observed_nj": [
+        114957858.12642562,
+        114923326.6133871
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 16,
+      "budget_nj": 115173807.42064193,
+      "forecast_nj": [
+        115173807.42064193,
+        115193566.33558547
+      ],
+      "observed_nj": [
+        114957858.12642562,
+        114923326.6133871
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 16,
+      "budget_nj": 115198807.42064193,
+      "forecast_nj": [
+        115173807.42064193,
+        115193566.33558547
+      ],
+      "observed_nj": [
+        114957858.12642562,
+        114923326.6133871
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 16,
+      "budget_nj": 115223807.42064193,
+      "forecast_nj": [
+        115173807.42064193,
+        115193566.33558547
+      ],
+      "observed_nj": [
+        114957858.12642562,
+        114923326.6133871
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 16,
+      "budget_nj": 115273807.42064193,
+      "forecast_nj": [
+        115173807.42064193,
+        115193566.33558547
+      ],
+      "observed_nj": [
+        114957858.12642562,
+        114923326.6133871
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 17,
+      "budget_nj": 114857858.12642562,
+      "forecast_nj": [
+        114957858.12642562,
+        114977617.04136917
+      ],
+      "observed_nj": [
+        115090291.26860845,
+        115203669.99082503
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 17,
+      "budget_nj": 114907858.12642562,
+      "forecast_nj": [
+        114957858.12642562,
+        114977617.04136917
+      ],
+      "observed_nj": [
+        115090291.26860845,
+        115203669.99082503
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 17,
+      "budget_nj": 114932858.12642562,
+      "forecast_nj": [
+        114957858.12642562,
+        114977617.04136917
+      ],
+      "observed_nj": [
+        115090291.26860845,
+        115203669.99082503
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 17,
+      "budget_nj": 114957858.12642562,
+      "forecast_nj": [
+        114957858.12642562,
+        114977617.04136917
+      ],
+      "observed_nj": [
+        115090291.26860845,
+        115203669.99082503
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 17,
+      "budget_nj": 114982858.12642562,
+      "forecast_nj": [
+        114957858.12642562,
+        114977617.04136917
+      ],
+      "observed_nj": [
+        115090291.26860845,
+        115203669.99082503
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 17,
+      "budget_nj": 115007858.12642562,
+      "forecast_nj": [
+        114957858.12642562,
+        114977617.04136917
+      ],
+      "observed_nj": [
+        115090291.26860845,
+        115203669.99082503
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 17,
+      "budget_nj": 115057858.12642562,
+      "forecast_nj": [
+        114957858.12642562,
+        114977617.04136917
+      ],
+      "observed_nj": [
+        115090291.26860845,
+        115203669.99082503
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 18,
+      "budget_nj": 114991083.69894859,
+      "forecast_nj": [
+        115091083.69894859,
+        115110842.61389214
+      ],
+      "observed_nj": [
+        114878910.90884484,
+        114869998.69500196
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 18,
+      "budget_nj": 115041083.69894859,
+      "forecast_nj": [
+        115091083.69894859,
+        115110842.61389214
+      ],
+      "observed_nj": [
+        114878910.90884484,
+        114869998.69500196
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 18,
+      "budget_nj": 115066083.69894859,
+      "forecast_nj": [
+        115091083.69894859,
+        115110842.61389214
+      ],
+      "observed_nj": [
+        114878910.90884484,
+        114869998.69500196
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 18,
+      "budget_nj": 115091083.69894859,
+      "forecast_nj": [
+        115091083.69894859,
+        115110842.61389214
+      ],
+      "observed_nj": [
+        114878910.90884484,
+        114869998.69500196
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 18,
+      "budget_nj": 115116083.69894859,
+      "forecast_nj": [
+        115091083.69894859,
+        115110842.61389214
+      ],
+      "observed_nj": [
+        114878910.90884484,
+        114869998.69500196
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 18,
+      "budget_nj": 115141083.69894859,
+      "forecast_nj": [
+        115091083.69894859,
+        115110842.61389214
+      ],
+      "observed_nj": [
+        114878910.90884484,
+        114869998.69500196
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 18,
+      "budget_nj": 115191083.69894859,
+      "forecast_nj": [
+        115091083.69894859,
+        115110842.61389214
+      ],
+      "observed_nj": [
+        114878910.90884484,
+        114869998.69500196
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 19,
+      "budget_nj": 114990942.78829439,
+      "forecast_nj": [
+        115090942.78829439,
+        115110701.70323794
+      ],
+      "observed_nj": [
+        115562283.750865,
+        115577046.28692141
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 19,
+      "budget_nj": 115040942.78829439,
+      "forecast_nj": [
+        115090942.78829439,
+        115110701.70323794
+      ],
+      "observed_nj": [
+        115562283.750865,
+        115577046.28692141
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 19,
+      "budget_nj": 115065942.78829439,
+      "forecast_nj": [
+        115090942.78829439,
+        115110701.70323794
+      ],
+      "observed_nj": [
+        115562283.750865,
+        115577046.28692141
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 19,
+      "budget_nj": 115090942.78829439,
+      "forecast_nj": [
+        115090942.78829439,
+        115110701.70323794
+      ],
+      "observed_nj": [
+        115562283.750865,
+        115577046.28692141
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 19,
+      "budget_nj": 115115942.78829439,
+      "forecast_nj": [
+        115090942.78829439,
+        115110701.70323794
+      ],
+      "observed_nj": [
+        115562283.750865,
+        115577046.28692141
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 19,
+      "budget_nj": 115140942.78829439,
+      "forecast_nj": [
+        115090942.78829439,
+        115110701.70323794
+      ],
+      "observed_nj": [
+        115562283.750865,
+        115577046.28692141
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 19,
+      "budget_nj": 115190942.78829439,
+      "forecast_nj": [
+        115090942.78829439,
+        115110701.70323794
+      ],
+      "observed_nj": [
+        115562283.750865,
+        115577046.28692141
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 20,
+      "budget_nj": 115462283.750865,
+      "forecast_nj": [
+        115562283.750865,
+        115582042.66580854
+      ],
+      "observed_nj": [
+        116169825.10689986,
+        116220724.43246213
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 20,
+      "budget_nj": 115512283.750865,
+      "forecast_nj": [
+        115562283.750865,
+        115582042.66580854
+      ],
+      "observed_nj": [
+        116169825.10689986,
+        116220724.43246213
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 20,
+      "budget_nj": 115537283.750865,
+      "forecast_nj": [
+        115562283.750865,
+        115582042.66580854
+      ],
+      "observed_nj": [
+        116169825.10689986,
+        116220724.43246213
+      ],
+      "predicted": [
+        false,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 20,
+      "budget_nj": 115562283.750865,
+      "forecast_nj": [
+        115562283.750865,
+        115582042.66580854
+      ],
+      "observed_nj": [
+        116169825.10689986,
+        116220724.43246213
+      ],
+      "predicted": [
+        true,
+        false
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 20,
+      "budget_nj": 115587283.750865,
+      "forecast_nj": [
+        115562283.750865,
+        115582042.66580854
+      ],
+      "observed_nj": [
+        116169825.10689986,
+        116220724.43246213
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 20,
+      "budget_nj": 115612283.750865,
+      "forecast_nj": [
+        115562283.750865,
+        115582042.66580854
+      ],
+      "observed_nj": [
+        116169825.10689986,
+        116220724.43246213
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    },
+    {
+      "node": 3,
+      "ordinal": 20,
+      "budget_nj": 115662283.750865,
+      "forecast_nj": [
+        115562283.750865,
+        115582042.66580854
+      ],
+      "observed_nj": [
+        116169825.10689986,
+        116220724.43246213
+      ],
+      "predicted": [
+        true,
+        true
+      ],
+      "actual": [
+        false,
+        false
+      ]
+    }
+  ],
+  "finite": {
+    "B1/2": [
+      {
+        "start_us": 4830566,
+        "death_us": 73092056,
+        "remaining_nj": 3914217053,
+        "forecast_nj": 114527408.70180672,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 5831756,
+        "death_us": 73092056,
+        "remaining_nj": 3856939195,
+        "forecast_nj": 114485094.39458892,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 6831780,
+        "death_us": 73092056,
+        "remaining_nj": 3799645962,
+        "forecast_nj": 114501588.5357588,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 7831767,
+        "death_us": 73092056,
+        "remaining_nj": 3742352727,
+        "forecast_nj": 114585837.77789222,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 8831769,
+        "death_us": 73092056,
+        "remaining_nj": 3685059494,
+        "forecast_nj": 114585970.79412656,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 9831777,
+        "death_us": 73092056,
+        "remaining_nj": 3627766260,
+        "forecast_nj": 114585894.07052965,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 10831767,
+        "death_us": 73092056,
+        "remaining_nj": 3570473025,
+        "forecast_nj": 114586468.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 11831764,
+        "death_us": 73092056,
+        "remaining_nj": 3513140196,
+        "forecast_nj": 114613056.35509393,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 12831762,
+        "death_us": 73092056,
+        "remaining_nj": 3455846962,
+        "forecast_nj": 114613438.40052533,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 13831755,
+        "death_us": 73092056,
+        "remaining_nj": 3398553728,
+        "forecast_nj": 114613323.11995915,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 14831787,
+        "death_us": 73092056,
+        "remaining_nj": 3341260494,
+        "forecast_nj": 114585035.68705392,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 15831786,
+        "death_us": 73092056,
+        "remaining_nj": 3283966875,
+        "forecast_nj": 114585076.93130757,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 16831782,
+        "death_us": 73092056,
+        "remaining_nj": 3226673257,
+        "forecast_nj": 114585949.39312212,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 17831785,
+        "death_us": 73092056,
+        "remaining_nj": 3169380023,
+        "forecast_nj": 114587057.05803804,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 18831776,
+        "death_us": 73092056,
+        "remaining_nj": 3112086404,
+        "forecast_nj": 114587362.62454209,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 19832406,
+        "death_us": 73092056,
+        "remaining_nj": 3054793170,
+        "forecast_nj": 114551284.8260615,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 20832412,
+        "death_us": 73092056,
+        "remaining_nj": 2997491863,
+        "forecast_nj": 114558111.52053647,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 21832400,
+        "death_us": 73092056,
+        "remaining_nj": 2940151345,
+        "forecast_nj": 114599535.96318632,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 22832390,
+        "death_us": 73092056,
+        "remaining_nj": 2882850038,
+        "forecast_nj": 114629366.02328546,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 23832395,
+        "death_us": 73092056,
+        "remaining_nj": 2825549116,
+        "forecast_nj": 114629147.56516954,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 24832424,
+        "death_us": 73092056,
+        "remaining_nj": 2768247808,
+        "forecast_nj": 114600281.79520948,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 25832401,
+        "death_us": 73092056,
+        "remaining_nj": 2710946502,
+        "forecast_nj": 114602270.19318943,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 26832374,
+        "death_us": 73092056,
+        "remaining_nj": 2653645195,
+        "forecast_nj": 114603416.22391357,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 27832422,
+        "death_us": 73092056,
+        "remaining_nj": 2596344272,
+        "forecast_nj": 114601026.68921976,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 28832407,
+        "death_us": 73092056,
+        "remaining_nj": 2539042965,
+        "forecast_nj": 114600339.09440494,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 29832406,
+        "death_us": 73092056,
+        "remaining_nj": 2481741659,
+        "forecast_nj": 114601134.9212275,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 30832408,
+        "death_us": 73092056,
+        "remaining_nj": 2424440351,
+        "forecast_nj": 114602556.69872165,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 31832419,
+        "death_us": 73092056,
+        "remaining_nj": 2367099833,
+        "forecast_nj": 114641080.83297458,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 32833027,
+        "death_us": 73092056,
+        "remaining_nj": 2309709341,
+        "forecast_nj": 114695511.73911674,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 33833043,
+        "death_us": 73092056,
+        "remaining_nj": 2252400346,
+        "forecast_nj": 114663711.92188038,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 34834315,
+        "death_us": 73092056,
+        "remaining_nj": 2195090966,
+        "forecast_nj": 114544608.27227266,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 35834282,
+        "death_us": 73092056,
+        "remaining_nj": 2137765440,
+        "forecast_nj": 114563933.6431081,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 36834285,
+        "death_us": 73092056,
+        "remaining_nj": 2080440684,
+        "forecast_nj": 114592333.44062226,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 37834312,
+        "death_us": 73092056,
+        "remaining_nj": 2023115927,
+        "forecast_nj": 114647793.28310075,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 38834333,
+        "death_us": 73092056,
+        "remaining_nj": 1965790402,
+        "forecast_nj": 114647530.45926897,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 39834319,
+        "death_us": 73092056,
+        "remaining_nj": 1908464492,
+        "forecast_nj": 114651033.72138198,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 40834318,
+        "death_us": 73092056,
+        "remaining_nj": 1851138967,
+        "forecast_nj": 114651077.36451194,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 41834303,
+        "death_us": 73092056,
+        "remaining_nj": 1793774230,
+        "forecast_nj": 114678594.78594786,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 42834294,
+        "death_us": 73092056,
+        "remaining_nj": 1736448704,
+        "forecast_nj": 114678147.65123042,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 43834914,
+        "death_us": 73092056,
+        "remaining_nj": 1679079774,
+        "forecast_nj": 114659427.54488504,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 44834939,
+        "death_us": 73092056,
+        "remaining_nj": 1621746945,
+        "forecast_nj": 114664779.60857624,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 45834914,
+        "death_us": 73092056,
+        "remaining_nj": 1564411040,
+        "forecast_nj": 114668734.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 46835365,
+        "death_us": 73092056,
+        "remaining_nj": 1506834853,
+        "forecast_nj": 114887620.93674047,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 47835366,
+        "death_us": 73092056,
+        "remaining_nj": 1449485108,
+        "forecast_nj": 114899964.6079986,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 48835356,
+        "death_us": 73092056,
+        "remaining_nj": 1392135365,
+        "forecast_nj": 114833531.19307089,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 49835369,
+        "death_us": 73092056,
+        "remaining_nj": 1334490393,
+        "forecast_nj": 114994542.50818624,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 50835364,
+        "death_us": 73092056,
+        "remaining_nj": 1277140650,
+        "forecast_nj": 114994255.02297992,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 51835426,
+        "death_us": 73092056,
+        "remaining_nj": 1219613083,
+        "forecast_nj": 114874036.08997144,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 52835412,
+        "death_us": 73092056,
+        "remaining_nj": 1162242196,
+        "forecast_nj": 114895696.50328392,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 53835415,
+        "death_us": 73092056,
+        "remaining_nj": 1104890914,
+        "forecast_nj": 114831205.20284489,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 54835429,
+        "death_us": 73092056,
+        "remaining_nj": 1047487351,
+        "forecast_nj": 114753869.59210847,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 55834772,
+        "death_us": 73092056,
+        "remaining_nj": 990130303,
+        "forecast_nj": 114765745.35900992,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 56834772,
+        "death_us": 73092056,
+        "remaining_nj": 932787094,
+        "forecast_nj": 114760476.99556938,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 57834772,
+        "death_us": 73092056,
+        "remaining_nj": 875279981,
+        "forecast_nj": 114850322.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 58834772,
+        "death_us": 73092056,
+        "remaining_nj": 817931007,
+        "forecast_nj": 114856087.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 59834772,
+        "death_us": 73092056,
+        "remaining_nj": 760479391,
+        "forecast_nj": 114800590.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 60834772,
+        "death_us": 73092056,
+        "remaining_nj": 703130415,
+        "forecast_nj": 114800592.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 61838684,
+        "death_us": 73092056,
+        "remaining_nj": 644928578,
+        "forecast_nj": 115325236.83674732,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 62834555,
+        "death_us": 73092056,
+        "remaining_nj": 587496298,
+        "forecast_nj": 115330404.23257282,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 63834535,
+        "death_us": 73092056,
+        "remaining_nj": 529838123,
+        "forecast_nj": 115537322.11511377,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 64834540,
+        "death_us": 73092056,
+        "remaining_nj": 472093453,
+        "forecast_nj": 115382798.77270469,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 65835199,
+        "death_us": 73092056,
+        "remaining_nj": 414432971,
+        "forecast_nj": 115366850.20573169,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 66835199,
+        "death_us": 73092056,
+        "remaining_nj": 356654621,
+        "forecast_nj": 115400807.43395051,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 67835203,
+        "death_us": 73092056,
+        "remaining_nj": 298989543,
+        "forecast_nj": 115443197.11360577,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 68835199,
+        "death_us": 73092056,
+        "remaining_nj": 241240262,
+        "forecast_nj": 115414359.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 69835199,
+        "death_us": 73092056,
+        "remaining_nj": 183559405,
+        "forecast_nj": 115396810.66666667,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 70835199,
+        "death_us": 73092056,
+        "remaining_nj": 125880088,
+        "forecast_nj": 115360174.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 71834535,
+        "death_us": 73092056,
+        "remaining_nj": 68166172,
+        "forecast_nj": 115408270.36384054,
+        "predicted_affordable": false,
+        "observed_affordable": false
+      },
+      {
+        "start_us": 72834536,
+        "death_us": 73092056,
+        "remaining_nj": 10499171,
+        "forecast_nj": 115398992.51067819,
+        "predicted_affordable": false,
+        "observed_affordable": false
+      },
+      {
+        "start_us": 73084435,
+        "death_us": 73092056,
+        "remaining_nj": 0,
+        "forecast_nj": 115884596.36961173,
+        "predicted_affordable": false,
+        "observed_affordable": false
+      }
+    ],
+    "B2/2": [
+      {
+        "start_us": 4830559,
+        "death_us": 73091824,
+        "remaining_nj": 3914214362,
+        "forecast_nj": 114527694.92916507,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 5831760,
+        "death_us": 73091824,
+        "remaining_nj": 3856936889,
+        "forecast_nj": 114484995.66764706,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 6831781,
+        "death_us": 73091824,
+        "remaining_nj": 3799643656,
+        "forecast_nj": 114500746.04416701,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 7831781,
+        "death_us": 73091824,
+        "remaining_nj": 3742350421,
+        "forecast_nj": 114585264.85471903,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 8831770,
+        "death_us": 73091824,
+        "remaining_nj": 3685057187,
+        "forecast_nj": 114586086.04637985,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 9831774,
+        "death_us": 73091824,
+        "remaining_nj": 3627763953,
+        "forecast_nj": 114586736.03571741,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 10831761,
+        "death_us": 73091824,
+        "remaining_nj": 3570470719,
+        "forecast_nj": 114587231.91487943,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 11831782,
+        "death_us": 73091824,
+        "remaining_nj": 3513137890,
+        "forecast_nj": 114625604.497582,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 12831769,
+        "death_us": 73091824,
+        "remaining_nj": 3455844655,
+        "forecast_nj": 114625605.49757801,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 13831767,
+        "death_us": 73091824,
+        "remaining_nj": 3398551421,
+        "forecast_nj": 114612636.10806112,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 14831783,
+        "death_us": 73091824,
+        "remaining_nj": 3341258187,
+        "forecast_nj": 114585665.9003387,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 15831787,
+        "death_us": 73091824,
+        "remaining_nj": 3283964953,
+        "forecast_nj": 114585322.14677854,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 16831787,
+        "death_us": 73091824,
+        "remaining_nj": 3226671719,
+        "forecast_nj": 114586238.82752235,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 17831784,
+        "death_us": 73091824,
+        "remaining_nj": 3169378485,
+        "forecast_nj": 114586429.8045234,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 18831776,
+        "death_us": 73091824,
+        "remaining_nj": 3112084867,
+        "forecast_nj": 114587144.1528619,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 19832403,
+        "death_us": 73091824,
+        "remaining_nj": 3054791632,
+        "forecast_nj": 114551399.34190369,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 20832420,
+        "death_us": 73091824,
+        "remaining_nj": 2997490326,
+        "forecast_nj": 114557653.43559374,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 21832403,
+        "death_us": 73091824,
+        "remaining_nj": 2940149808,
+        "forecast_nj": 114641824.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 22832390,
+        "death_us": 73091824,
+        "remaining_nj": 2882848501,
+        "forecast_nj": 114629250.72675315,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 23832402,
+        "death_us": 73091824,
+        "remaining_nj": 2825547578,
+        "forecast_nj": 114629186.44178532,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 24832423,
+        "death_us": 73091824,
+        "remaining_nj": 2768246271,
+        "forecast_nj": 114600339.09440494,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 25832438,
+        "death_us": 73091824,
+        "remaining_nj": 2710944964,
+        "forecast_nj": 114600551.19007857,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 26832384,
+        "death_us": 73091824,
+        "remaining_nj": 2653643273,
+        "forecast_nj": 114603557.62134573,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 27832421,
+        "death_us": 73091824,
+        "remaining_nj": 2596342350,
+        "forecast_nj": 114602690.4017936,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 28832403,
+        "death_us": 73091824,
+        "remaining_nj": 2539041043,
+        "forecast_nj": 114601141.28915775,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 29832410,
+        "death_us": 73091824,
+        "remaining_nj": 2481739736,
+        "forecast_nj": 114601364.78817184,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 30832406,
+        "death_us": 73091824,
+        "remaining_nj": 2424438430,
+        "forecast_nj": 114602441.09633836,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 31832419,
+        "death_us": 73091824,
+        "remaining_nj": 2367097912,
+        "forecast_nj": 114641308.11411348,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 32833031,
+        "death_us": 73091824,
+        "remaining_nj": 2309707034,
+        "forecast_nj": 114695553.63948765,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 33833046,
+        "death_us": 73091824,
+        "remaining_nj": 2252398039,
+        "forecast_nj": 114663925.85924312,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 34834316,
+        "death_us": 73091824,
+        "remaining_nj": 2195089044,
+        "forecast_nj": 114544395.22606725,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 35834293,
+        "death_us": 73091824,
+        "remaining_nj": 2137763519,
+        "forecast_nj": 114563089.91343898,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 36834290,
+        "death_us": 73091824,
+        "remaining_nj": 2080437993,
+        "forecast_nj": 114592512.9712879,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 37834302,
+        "death_us": 73091824,
+        "remaining_nj": 2023112467,
+        "forecast_nj": 114650536.07258767,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 38834319,
+        "death_us": 73091824,
+        "remaining_nj": 1965786942,
+        "forecast_nj": 114649388.58386554,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 39834312,
+        "death_us": 73091824,
+        "remaining_nj": 1908461033,
+        "forecast_nj": 114650860.74569628,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 40834323,
+        "death_us": 73091824,
+        "remaining_nj": 1851135507,
+        "forecast_nj": 114651205.69758861,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 41834307,
+        "death_us": 73091824,
+        "remaining_nj": 1793770386,
+        "forecast_nj": 114678162.71265085,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 42834306,
+        "death_us": 73091824,
+        "remaining_nj": 1736444860,
+        "forecast_nj": 114677678.02202271,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 43834915,
+        "death_us": 73091824,
+        "remaining_nj": 1679075930,
+        "forecast_nj": 114659599.48175755,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 44834936,
+        "death_us": 73091824,
+        "remaining_nj": 1621743101,
+        "forecast_nj": 114665639.32361306,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 45834916,
+        "death_us": 73091824,
+        "remaining_nj": 1564407196,
+        "forecast_nj": 114668676.66566166,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 46835365,
+        "death_us": 73091824,
+        "remaining_nj": 1506831009,
+        "forecast_nj": 114887448.64226623,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 47835373,
+        "death_us": 73091824,
+        "remaining_nj": 1449481264,
+        "forecast_nj": 114899677.42370868,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 48835355,
+        "death_us": 73091824,
+        "remaining_nj": 1392131521,
+        "forecast_nj": 114833646.00980057,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 49835373,
+        "death_us": 73091824,
+        "remaining_nj": 1334486549,
+        "forecast_nj": 114994715.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 50835367,
+        "death_us": 73091824,
+        "remaining_nj": 1277136805,
+        "forecast_nj": 114994026.03584379,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 51835428,
+        "death_us": 73091824,
+        "remaining_nj": 1219609239,
+        "forecast_nj": 114874150.96084857,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 52835435,
+        "death_us": 73091824,
+        "remaining_nj": 1162238351,
+        "forecast_nj": 114894547.5853821,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 53835419,
+        "death_us": 73091824,
+        "remaining_nj": 1104886685,
+        "forecast_nj": 114831422.92200269,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 54835418,
+        "death_us": 73091824,
+        "remaining_nj": 1047483123,
+        "forecast_nj": 114751126.50375502,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 55834772,
+        "death_us": 73091824,
+        "remaining_nj": 990126074,
+        "forecast_nj": 114766881.48080726,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 56834772,
+        "death_us": 73091824,
+        "remaining_nj": 932782866,
+        "forecast_nj": 114760629.37573537,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 57834772,
+        "death_us": 73091824,
+        "remaining_nj": 875275753,
+        "forecast_nj": 114850321.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 58834772,
+        "death_us": 73091824,
+        "remaining_nj": 817926778,
+        "forecast_nj": 114856088.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 59834772,
+        "death_us": 73091824,
+        "remaining_nj": 760475162,
+        "forecast_nj": 114800591.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 60834772,
+        "death_us": 73091824,
+        "remaining_nj": 703126188,
+        "forecast_nj": 114800590.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 61838424,
+        "death_us": 73091824,
+        "remaining_nj": 644910510,
+        "forecast_nj": 115354015.5675736,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 62834300,
+        "death_us": 73091824,
+        "remaining_nj": 587467081,
+        "forecast_nj": 115356870.14756988,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 63834309,
+        "death_us": 73091824,
+        "remaining_nj": 529800081,
+        "forecast_nj": 115568574.08326685,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 64834311,
+        "death_us": 73091824,
+        "remaining_nj": 472044264,
+        "forecast_nj": 115422182.17799802,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 65834914,
+        "death_us": 73091824,
+        "remaining_nj": 414372634,
+        "forecast_nj": 115392540.75642118,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 66834933,
+        "death_us": 73091824,
+        "remaining_nj": 356585459,
+        "forecast_nj": 115422908.47546414,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 67834930,
+        "death_us": 73091824,
+        "remaining_nj": 298910001,
+        "forecast_nj": 115461709.30632555,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 68834945,
+        "death_us": 73091824,
+        "remaining_nj": 241150724,
+        "forecast_nj": 115434042.39574562,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 69834933,
+        "death_us": 73091824,
+        "remaining_nj": 183459488,
+        "forecast_nj": 115450339.82449026,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 70834930,
+        "death_us": 73091824,
+        "remaining_nj": 125770176,
+        "forecast_nj": 115426550.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 71834277,
+        "death_us": 73091824,
+        "remaining_nj": 68049340,
+        "forecast_nj": 115426624.32835044,
+        "predicted_affordable": false,
+        "observed_affordable": false
+      },
+      {
+        "start_us": 72834281,
+        "death_us": 73091824,
+        "remaining_nj": 10373258,
+        "forecast_nj": 115415903.72307582,
+        "predicted_affordable": false,
+        "observed_affordable": false
+      },
+      {
+        "start_us": 73084166,
+        "death_us": 73091824,
+        "remaining_nj": 0,
+        "forecast_nj": 115896089.16094176,
+        "predicted_affordable": false,
+        "observed_affordable": false
+      }
+    ],
+    "B1/3": [
+      {
+        "start_us": 5142255,
+        "death_us": 73403759,
+        "remaining_nj": 3914217053,
+        "forecast_nj": 114527408.70180672,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 6143445,
+        "death_us": 73403759,
+        "remaining_nj": 3856939195,
+        "forecast_nj": 114485094.39458892,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 7143469,
+        "death_us": 73403759,
+        "remaining_nj": 3799645962,
+        "forecast_nj": 114501588.5357588,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 8143456,
+        "death_us": 73403759,
+        "remaining_nj": 3742352727,
+        "forecast_nj": 114585837.77789222,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 9143458,
+        "death_us": 73403759,
+        "remaining_nj": 3685059494,
+        "forecast_nj": 114585970.79412656,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 10143466,
+        "death_us": 73403759,
+        "remaining_nj": 3627766260,
+        "forecast_nj": 114585894.07052965,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 11143456,
+        "death_us": 73403759,
+        "remaining_nj": 3570473025,
+        "forecast_nj": 114586468.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 12143453,
+        "death_us": 73403759,
+        "remaining_nj": 3513140196,
+        "forecast_nj": 114613056.35509393,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 13143451,
+        "death_us": 73403759,
+        "remaining_nj": 3455846962,
+        "forecast_nj": 114613438.40052533,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 14143444,
+        "death_us": 73403759,
+        "remaining_nj": 3398553728,
+        "forecast_nj": 114613323.11995915,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 15143476,
+        "death_us": 73403759,
+        "remaining_nj": 3341260494,
+        "forecast_nj": 114585035.68705392,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 16143475,
+        "death_us": 73403759,
+        "remaining_nj": 3283966875,
+        "forecast_nj": 114585076.93130757,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 17143471,
+        "death_us": 73403759,
+        "remaining_nj": 3226673257,
+        "forecast_nj": 114585949.39312212,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 18143474,
+        "death_us": 73403759,
+        "remaining_nj": 3169380023,
+        "forecast_nj": 114587057.05803804,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 19143465,
+        "death_us": 73403759,
+        "remaining_nj": 3112086404,
+        "forecast_nj": 114587362.62454209,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 20144095,
+        "death_us": 73403759,
+        "remaining_nj": 3054793170,
+        "forecast_nj": 114551284.8260615,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 21144101,
+        "death_us": 73403759,
+        "remaining_nj": 2997491863,
+        "forecast_nj": 114558111.52053647,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 22144089,
+        "death_us": 73403759,
+        "remaining_nj": 2940151345,
+        "forecast_nj": 114599535.96318632,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 23144079,
+        "death_us": 73403759,
+        "remaining_nj": 2882850038,
+        "forecast_nj": 114629366.02328546,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 24144084,
+        "death_us": 73403759,
+        "remaining_nj": 2825549116,
+        "forecast_nj": 114629147.56516954,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 25144113,
+        "death_us": 73403759,
+        "remaining_nj": 2768247808,
+        "forecast_nj": 114600281.79520948,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 26144090,
+        "death_us": 73403759,
+        "remaining_nj": 2710946502,
+        "forecast_nj": 114602270.19318943,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 27144063,
+        "death_us": 73403759,
+        "remaining_nj": 2653645195,
+        "forecast_nj": 114603416.22391357,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 28144111,
+        "death_us": 73403759,
+        "remaining_nj": 2596344272,
+        "forecast_nj": 114601026.68921976,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 29144096,
+        "death_us": 73403759,
+        "remaining_nj": 2539042965,
+        "forecast_nj": 114600339.09440494,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 30144095,
+        "death_us": 73403759,
+        "remaining_nj": 2481741659,
+        "forecast_nj": 114601134.9212275,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 31144097,
+        "death_us": 73403759,
+        "remaining_nj": 2424440351,
+        "forecast_nj": 114602556.69872165,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 32144108,
+        "death_us": 73403759,
+        "remaining_nj": 2367099833,
+        "forecast_nj": 114641080.83297458,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 33144716,
+        "death_us": 73403759,
+        "remaining_nj": 2309709341,
+        "forecast_nj": 114695511.73911674,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 34144732,
+        "death_us": 73403759,
+        "remaining_nj": 2252400346,
+        "forecast_nj": 114663711.92188038,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 35146004,
+        "death_us": 73403759,
+        "remaining_nj": 2195090966,
+        "forecast_nj": 114544608.27227266,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 36145971,
+        "death_us": 73403759,
+        "remaining_nj": 2137765440,
+        "forecast_nj": 114563933.6431081,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 37145974,
+        "death_us": 73403759,
+        "remaining_nj": 2080440684,
+        "forecast_nj": 114592333.44062226,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 38146001,
+        "death_us": 73403759,
+        "remaining_nj": 2023115927,
+        "forecast_nj": 114647793.28310075,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 39146624,
+        "death_us": 73403759,
+        "remaining_nj": 1965746997,
+        "forecast_nj": 114656423.66230975,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 40146611,
+        "death_us": 73403759,
+        "remaining_nj": 1908413783,
+        "forecast_nj": 114667170.51299354,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 41146419,
+        "death_us": 73403759,
+        "remaining_nj": 1850993891,
+        "forecast_nj": 114732038.00270496,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 42147062,
+        "death_us": 73403759,
+        "remaining_nj": 1793468854,
+        "forecast_nj": 114919014.76217113,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 43147056,
+        "death_us": 73403759,
+        "remaining_nj": 1736119110,
+        "forecast_nj": 114838205.0316974,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 44147061,
+        "death_us": 73403759,
+        "remaining_nj": 1678743610,
+        "forecast_nj": 114808951.55103475,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 45147106,
+        "death_us": 73403759,
+        "remaining_nj": 1621393482,
+        "forecast_nj": 114722759.93100172,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 46147044,
+        "death_us": 73403759,
+        "remaining_nj": 1563828083,
+        "forecast_nj": 114861144.11124311,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 47147106,
+        "death_us": 73403759,
+        "remaining_nj": 1506475648,
+        "forecast_nj": 114917834.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 48147041,
+        "death_us": 73403759,
+        "remaining_nj": 1449125135,
+        "forecast_nj": 114848053.04114923,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 49147137,
+        "death_us": 73403759,
+        "remaining_nj": 1391717543,
+        "forecast_nj": 114756326.2769427,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 50147111,
+        "death_us": 73403759,
+        "remaining_nj": 1334271273,
+        "forecast_nj": 114849842.25552106,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 51147112,
+        "death_us": 73403759,
+        "remaining_nj": 1276917685,
+        "forecast_nj": 114802249.6800909,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 52147062,
+        "death_us": 73403759,
+        "remaining_nj": 1219379579,
+        "forecast_nj": 114894848.37120928,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 53147068,
+        "death_us": 73403759,
+        "remaining_nj": 1162009460,
+        "forecast_nj": 114842854.74758472,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 54147066,
+        "death_us": 73403759,
+        "remaining_nj": 1104605129,
+        "forecast_nj": 114774220.4515591,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 55147059,
+        "death_us": 73403759,
+        "remaining_nj": 1047254232,
+        "forecast_nj": 114750346.08367942,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 56146461,
+        "death_us": 73403759,
+        "remaining_nj": 989741128,
+        "forecast_nj": 114868796.45314902,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 57146461,
+        "death_us": 73403759,
+        "remaining_nj": 932386387,
+        "forecast_nj": 114835653.19005999,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 58146461,
+        "death_us": 73403759,
+        "remaining_nj": 875039862,
+        "forecast_nj": 114701266.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 59146479,
+        "death_us": 73403759,
+        "remaining_nj": 817653031,
+        "forecast_nj": 114732323.40908931,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 60146461,
+        "death_us": 73403759,
+        "remaining_nj": 760256094,
+        "forecast_nj": 114783768.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 61146461,
+        "death_us": 73403759,
+        "remaining_nj": 702910195,
+        "forecast_nj": 114753111.33333333,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 62150305,
+        "death_us": 73403759,
+        "remaining_nj": 644748834,
+        "forecast_nj": 115285680.92126933,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 63146240,
+        "death_us": 73403759,
+        "remaining_nj": 587323758,
+        "forecast_nj": 115296717.52485767,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 64146221,
+        "death_us": 73403759,
+        "remaining_nj": 529674585,
+        "forecast_nj": 115499646.63839774,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 65146888,
+        "death_us": 73403759,
+        "remaining_nj": 471913551,
+        "forecast_nj": 115372826.2043098,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 66146888,
+        "death_us": 73403759,
+        "remaining_nj": 414252846,
+        "forecast_nj": 115383258.68322915,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 67146888,
+        "death_us": 73403759,
+        "remaining_nj": 356510884,
+        "forecast_nj": 115402667.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 68146888,
+        "death_us": 73403759,
+        "remaining_nj": 298759070,
+        "forecast_nj": 115493776.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 69146888,
+        "death_us": 73403759,
+        "remaining_nj": 241099520,
+        "forecast_nj": 115411364.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 70146888,
+        "death_us": 73403759,
+        "remaining_nj": 183440975,
+        "forecast_nj": 115318095.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 71146888,
+        "death_us": 73403759,
+        "remaining_nj": 125771430,
+        "forecast_nj": 115328090.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 72146232,
+        "death_us": 73403759,
+        "remaining_nj": 68067286,
+        "forecast_nj": 115380052.43813314,
+        "predicted_affordable": false,
+        "observed_affordable": false
+      },
+      {
+        "start_us": 73146218,
+        "death_us": 73403759,
+        "remaining_nj": 10409128,
+        "forecast_nj": 115380332.9410235,
+        "predicted_affordable": false,
+        "observed_affordable": false
+      },
+      {
+        "start_us": 73396128,
+        "death_us": 73403759,
+        "remaining_nj": 0,
+        "forecast_nj": 115867933.16853693,
+        "predicted_affordable": false,
+        "observed_affordable": false
+      }
+    ],
+    "B2/3": [
+      {
+        "start_us": 5142248,
+        "death_us": 73403496,
+        "remaining_nj": 3914214362,
+        "forecast_nj": 114527694.92916507,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 6143449,
+        "death_us": 73403496,
+        "remaining_nj": 3856936889,
+        "forecast_nj": 114484995.66764706,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 7143470,
+        "death_us": 73403496,
+        "remaining_nj": 3799643656,
+        "forecast_nj": 114500746.04416701,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 8143470,
+        "death_us": 73403496,
+        "remaining_nj": 3742350421,
+        "forecast_nj": 114585264.85471903,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 9143459,
+        "death_us": 73403496,
+        "remaining_nj": 3685057187,
+        "forecast_nj": 114586086.04637985,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 10143463,
+        "death_us": 73403496,
+        "remaining_nj": 3627763953,
+        "forecast_nj": 114586736.03571741,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 11143450,
+        "death_us": 73403496,
+        "remaining_nj": 3570470719,
+        "forecast_nj": 114587231.91487943,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 12143471,
+        "death_us": 73403496,
+        "remaining_nj": 3513137890,
+        "forecast_nj": 114625604.497582,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 13143458,
+        "death_us": 73403496,
+        "remaining_nj": 3455844655,
+        "forecast_nj": 114625605.49757801,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 14143456,
+        "death_us": 73403496,
+        "remaining_nj": 3398551421,
+        "forecast_nj": 114612636.10806112,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 15143472,
+        "death_us": 73403496,
+        "remaining_nj": 3341258187,
+        "forecast_nj": 114585665.9003387,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 16143476,
+        "death_us": 73403496,
+        "remaining_nj": 3283964953,
+        "forecast_nj": 114585322.14677854,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 17143476,
+        "death_us": 73403496,
+        "remaining_nj": 3226671719,
+        "forecast_nj": 114586238.82752235,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 18143473,
+        "death_us": 73403496,
+        "remaining_nj": 3169378485,
+        "forecast_nj": 114586429.8045234,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 19143465,
+        "death_us": 73403496,
+        "remaining_nj": 3112084867,
+        "forecast_nj": 114587144.1528619,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 20144092,
+        "death_us": 73403496,
+        "remaining_nj": 3054791632,
+        "forecast_nj": 114551399.34190369,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 21144109,
+        "death_us": 73403496,
+        "remaining_nj": 2997490326,
+        "forecast_nj": 114557653.43559374,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 22144092,
+        "death_us": 73403496,
+        "remaining_nj": 2940149808,
+        "forecast_nj": 114641824.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 23144079,
+        "death_us": 73403496,
+        "remaining_nj": 2882848501,
+        "forecast_nj": 114629250.72675315,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 24144091,
+        "death_us": 73403496,
+        "remaining_nj": 2825547578,
+        "forecast_nj": 114629186.44178532,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 25144112,
+        "death_us": 73403496,
+        "remaining_nj": 2768246271,
+        "forecast_nj": 114600339.09440494,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 26144127,
+        "death_us": 73403496,
+        "remaining_nj": 2710944964,
+        "forecast_nj": 114600551.19007857,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 27144073,
+        "death_us": 73403496,
+        "remaining_nj": 2653643273,
+        "forecast_nj": 114603557.62134573,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 28144110,
+        "death_us": 73403496,
+        "remaining_nj": 2596342350,
+        "forecast_nj": 114602690.4017936,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 29144092,
+        "death_us": 73403496,
+        "remaining_nj": 2539041043,
+        "forecast_nj": 114601141.28915775,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 30144099,
+        "death_us": 73403496,
+        "remaining_nj": 2481739736,
+        "forecast_nj": 114601364.78817184,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 31144095,
+        "death_us": 73403496,
+        "remaining_nj": 2424438430,
+        "forecast_nj": 114602441.09633836,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 32144108,
+        "death_us": 73403496,
+        "remaining_nj": 2367097912,
+        "forecast_nj": 114641308.11411348,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 33144720,
+        "death_us": 73403496,
+        "remaining_nj": 2309707034,
+        "forecast_nj": 114695553.63948765,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 34144735,
+        "death_us": 73403496,
+        "remaining_nj": 2252398039,
+        "forecast_nj": 114663925.85924312,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 35146005,
+        "death_us": 73403496,
+        "remaining_nj": 2195089044,
+        "forecast_nj": 114544395.22606725,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 36145982,
+        "death_us": 73403496,
+        "remaining_nj": 2137763519,
+        "forecast_nj": 114563089.91343898,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 37145979,
+        "death_us": 73403496,
+        "remaining_nj": 2080437993,
+        "forecast_nj": 114592512.9712879,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 38145991,
+        "death_us": 73403496,
+        "remaining_nj": 2023112467,
+        "forecast_nj": 114650536.07258767,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 39146621,
+        "death_us": 73403496,
+        "remaining_nj": 1965743537,
+        "forecast_nj": 114657650.89406301,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 40146611,
+        "death_us": 73403496,
+        "remaining_nj": 1908410323,
+        "forecast_nj": 114666597.35482001,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 41146423,
+        "death_us": 73403496,
+        "remaining_nj": 1850990431,
+        "forecast_nj": 114731502.66361643,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 42147062,
+        "death_us": 73403496,
+        "remaining_nj": 1793465394,
+        "forecast_nj": 114919014.76217113,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 43147054,
+        "death_us": 73403496,
+        "remaining_nj": 1736115650,
+        "forecast_nj": 114838549.43765242,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 44147057,
+        "death_us": 73403496,
+        "remaining_nj": 1678740150,
+        "forecast_nj": 114809257.64355133,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 45147109,
+        "death_us": 73403496,
+        "remaining_nj": 1621390406,
+        "forecast_nj": 114722089.14254858,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 46147051,
+        "death_us": 73403496,
+        "remaining_nj": 1563825007,
+        "forecast_nj": 114860543.52721019,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 47147105,
+        "death_us": 73403496,
+        "remaining_nj": 1506472573,
+        "forecast_nj": 114843213.84191187,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 48147053,
+        "death_us": 73403496,
+        "remaining_nj": 1449122059,
+        "forecast_nj": 114702833.2971667,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 49147136,
+        "death_us": 73403496,
+        "remaining_nj": 1391714468,
+        "forecast_nj": 114756326.2769427,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 50147103,
+        "death_us": 73403496,
+        "remaining_nj": 1334268198,
+        "forecast_nj": 114850989.72525688,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 51147110,
+        "death_us": 73403496,
+        "remaining_nj": 1276914610,
+        "forecast_nj": 114802784.7470898,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 52147118,
+        "death_us": 73403496,
+        "remaining_nj": 1219376503,
+        "forecast_nj": 114890833.31875011,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 53147060,
+        "death_us": 73403496,
+        "remaining_nj": 1162005616,
+        "forecast_nj": 114843367.42159972,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 54147062,
+        "death_us": 73403496,
+        "remaining_nj": 1104601669,
+        "forecast_nj": 114877132.03411254,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 55147061,
+        "death_us": 73403496,
+        "remaining_nj": 1047250772,
+        "forecast_nj": 114754786.6226067,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 56146461,
+        "death_us": 73403496,
+        "remaining_nj": 989737284,
+        "forecast_nj": 114868490.07518502,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 57146463,
+        "death_us": 73403496,
+        "remaining_nj": 932382543,
+        "forecast_nj": 114835679.52401163,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 58146461,
+        "death_us": 73403496,
+        "remaining_nj": 875036018,
+        "forecast_nj": 114701266.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 59146473,
+        "death_us": 73403496,
+        "remaining_nj": 817649187,
+        "forecast_nj": 114732782.33608831,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 60146461,
+        "death_us": 73403496,
+        "remaining_nj": 760250184,
+        "forecast_nj": 114785834.0,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 61146461,
+        "death_us": 73403496,
+        "remaining_nj": 702904284,
+        "forecast_nj": 114754489.33333333,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 62150025,
+        "death_us": 73403496,
+        "remaining_nj": 644732320,
+        "forecast_nj": 115312377.34357375,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 63145977,
+        "death_us": 73403496,
+        "remaining_nj": 587297250,
+        "forecast_nj": 115320561.05051614,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 64145959,
+        "death_us": 73403496,
+        "remaining_nj": 529638466,
+        "forecast_nj": 115529877.33280702,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 65146603,
+        "death_us": 73403496,
+        "remaining_nj": 471867437,
+        "forecast_nj": 115393694.77353588,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 66146607,
+        "death_us": 73403496,
+        "remaining_nj": 414195584,
+        "forecast_nj": 115405490.62103878,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 67146608,
+        "death_us": 73403496,
+        "remaining_nj": 356443626,
+        "forecast_nj": 115423522.4411939,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 68146621,
+        "death_us": 73403496,
+        "remaining_nj": 298682203,
+        "forecast_nj": 115512572.41199312,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 69146614,
+        "death_us": 73403496,
+        "remaining_nj": 241013041,
+        "forecast_nj": 115430238.70928387,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 70146610,
+        "death_us": 73403496,
+        "remaining_nj": 183344503,
+        "forecast_nj": 115399338.40044107,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 71146603,
+        "death_us": 73403496,
+        "remaining_nj": 125664578,
+        "forecast_nj": 115345775.40798578,
+        "predicted_affordable": true,
+        "observed_affordable": true
+      },
+      {
+        "start_us": 72145962,
+        "death_us": 73403496,
+        "remaining_nj": 67953898,
+        "forecast_nj": 115397841.79761735,
+        "predicted_affordable": false,
+        "observed_affordable": false
+      },
+      {
+        "start_us": 73145959,
+        "death_us": 73403496,
+        "remaining_nj": 10285360,
+        "forecast_nj": 115397803.32332116,
+        "predicted_affordable": false,
+        "observed_affordable": false
+      },
+      {
+        "start_us": 73395837,
+        "death_us": 73403496,
+        "remaining_nj": 0,
+        "forecast_nj": 115880207.21721262,
+        "predicted_affordable": false,
+        "observed_affordable": false
+      }
+    ]
+  }
+}

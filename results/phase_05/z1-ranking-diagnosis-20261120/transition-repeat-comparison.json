@@ -1,0 +1,14 @@
+{
+  "scope": "same-host reproduction",
+  "matched_source_hashes": true,
+  "identical_binary": true,
+  "identical_samples": true,
+  "original_by_direction": {
+    "1": 7017.51708984375,
+    "2": 7017.51708984375
+  },
+  "repeat_by_direction": {
+    "1": 7017.51708984375,
+    "2": 7017.51708984375
+  }
+}

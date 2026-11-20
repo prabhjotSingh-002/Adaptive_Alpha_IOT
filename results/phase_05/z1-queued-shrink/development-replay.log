@@ -1,0 +1,1 @@
+{'recent_rate': Counter({'cases': 294, 'exact': 135, 'false_affordable_actions': 112, 'one_fit_cases': 20, 'one_fit_exact': 4, 'abstentions': 0}), 'rate_conditioned': Counter({'cases': 294, 'false_affordable_actions': 135, 'exact': 106, 'abstentions': 98, 'one_fit_cases': 20, 'one_fit_exact': 0})}

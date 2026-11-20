@@ -1,0 +1,96 @@
+"""Replay the failed cap-one diagnostic with component accounting and abstention."""
+from bisect import bisect_right
+from collections import Counter, defaultdict
+import json
+from pathlib import Path
+from statistics import median
+
+from audit_battery_forecast import WINDOW_US, generation_times, predict, trace, windows
+from run_experiment import digest
+
+out = Path(__file__).parent
+prior = Path('results/phase_05/z1-closure-20261120/battery-forecast-v2.json')
+saved = json.loads(prior.read_text())
+table = {tuple(map(int, key.split('|'))): value for key, value in saved['calibration'].items()}
+calibration_paths = [Path('results/phase_04') / name for name in
+                     ('20261117T023634948551Z-B1-2', '20261117T023831400765Z-B2-2')]
+model_file = Path('configs/power-z1-v1.json')
+power = json.loads(model_file.read_text())
+components = ('cpu', 'lpm', 'deep', 'tx', 'listen')
+stationary = saved['validation']['stationary_static']['records']
+
+def component_costs(record, events):
+    raw = [event for event in events if event['event_type'] == 'ENERGY_RAW']
+    times = [event['sim_time_us'] for event in raw]
+    start, end = record['start_us'], record['end_us']
+    a, b = (raw[bisect_right(times, time)-1] for time in (start, end))
+    denominator = 1000 * power['frequency']
+    result = {}
+    for key, current in zip(components, power['nanoamps']):
+        coefficient = current * power['millivolts']
+        cumulative_a = a[key] * coefficient // denominator
+        cumulative_b = b[key] * coefficient // denominator
+        result[key] = (cumulative_b - cumulative_a) * WINDOW_US / (end-start)
+    if abs(sum(result.values())-record['observed_nj']) > 2:
+        raise ValueError('Counter intervals do not reconcile to the forecast window')
+    return result
+
+# Estimate an empirical lower/upper forecast-error envelope from separate data.
+# This is a one-cohort sensitivity check, not a statistical guarantee.
+errors = defaultdict(list)
+for path in calibration_paths:
+    manifest, nodes = trace(path)
+    if manifest['config']['seed'] != 223457:
+        raise ValueError(path)
+    for node, events in nodes.items():
+        gen = generation_times(events)
+        profile = manifest['config']['profile']
+        p = predict(table, node, profile, 1, 100)
+        errors[node, profile].extend(cost-p for _, _, cost in windows(events, gen[0], gen[-1]))
+
+groups = defaultdict(dict)
+traces = {}
+for row in stationary:
+    if row['cap'] != 1:
+        continue
+    directory = Path('results/phase_04') / row['run']
+    if directory not in traces:
+        _, traces[directory] = trace(directory)
+    enriched = dict(row)
+    enriched['components_nj'] = component_costs(row, traces[directory][row['node']])
+    groups[row['node'],row['window']][row['profile']] = enriched
+
+comparisons = []
+for (node, window), rows in sorted(groups.items()):
+    if set(rows) != {1,2}:
+        continue
+    midpoint = sum(r['predicted_nj'] for r in rows.values()) / 2
+    observed = [p for p,r in rows.items() if r['observed_nj'] <= midpoint]
+    baseline = [p for p,r in rows.items() if r['predicted_nj'] <= midpoint]
+    intervals = {p: [r['predicted_nj']+min(0,*errors[node,p]),
+                     r['predicted_nj']+max(0,*errors[node,p])] for p,r in rows.items()}
+    yes = [p for p,(_,high) in intervals.items() if high <= midpoint]
+    no = [p for p,(low,_) in intervals.items() if low > midpoint]
+    comparisons.append(dict(node=node,window=window,budget_nj=midpoint,
+        observed_affordable=observed,baseline_affordable=baseline,
+        conservative_selected=yes[0] if len(yes)==1 and len(no)==1 else None,
+        intervals=intervals,rows=rows))
+outcomes = Counter('abstained' if c['conservative_selected'] is None else
+                   'correct' if [c['conservative_selected']] == c['observed_affordable'] else 'wrong'
+                   for c in comparisons)
+abs_errors = [r['observed_nj']-r['predicted_nj'] for c in comparisons for r in c['rows'].values()]
+forecast_gaps = [abs(c['rows'][1]['predicted_nj']-c['rows'][2]['predicted_nj']) for c in comparisons]
+energy = [r['observed_nj'] for c in comparisons for r in c['rows'].values()]
+listen_share = [r['components_nj']['listen']/r['observed_nj'] for c in comparisons for r in c['rows'].values()]
+result = dict(forecast_file_sha256=digest(prior), power_model_sha256=digest(model_file),
+    independent_error_envelope_cohort={str(p):digest(p/'manifest.json') for p in calibration_paths},
+    matching_absolute_budget=sum(c['baseline_affordable']==c['observed_affordable'] for c in comparisons),
+    aes_cheaper_observed=sum(c['rows'][1]['observed_nj'] < c['rows'][2]['observed_nj'] for c in comparisons),
+    observed_neither_affordable=sum(not c['observed_affordable'] for c in comparisons),
+    median_signed_forecast_underestimate_nj=median(abs_errors),
+    median_forecast_action_gap_nj=median(forecast_gaps),
+    median_observed_demand_nj=median(energy),
+    median_listen_share=median(listen_share),
+    conservative_outcomes=dict(outcomes), comparisons=comparisons)
+(out/'diagnosis.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps({k:v for k,v in result.items() if k!='comparisons'}, indent=2))
