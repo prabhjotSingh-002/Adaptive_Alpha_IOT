@@ -7,7 +7,7 @@ def admit_group(directories):
     cohort=None
     seen=set()
     sources=[]
-    keys=('target','backend','warmup_ms','period_ms','readings_per_sensor','deadline_ms','drain_ms','payload_budget','reserved_bytes','power_model','energy_sample_ms','aes_backend','bottleneck','radio_off_until_ms','cpu_work_iterations','flush_lead_ms')
+    keys=('topology','target','backend','warmup_ms','period_ms','readings_per_sensor','deadline_ms','drain_ms','payload_budget','reserved_bytes','power_model','energy_sample_ms','aes_backend','bottleneck','radio_off_until_ms','cpu_work_iterations','flush_lead_ms')
     for directory in directories:
         p=Path(directory)
         m=json.loads((p/'manifest.json').read_text())

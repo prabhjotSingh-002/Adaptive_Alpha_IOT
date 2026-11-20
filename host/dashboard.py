@@ -11,6 +11,7 @@ Or directly if Flask + matplotlib + numpy are installed:
     python3 host/dashboard.py
 """
 import glob
+import re
 import hashlib
 import io
 import json
@@ -70,8 +71,15 @@ def _load_runs(force=False):
         if not force and time.time() - _cache["ts"] < 10:
             return _cache["runs"]
         runs = []
+        historical = None
+        pointer = RESULTS / 'campaigns/current.json'
+        if pointer.exists():
+            campaign_dir = PROJECT / json.loads(pointer.read_text())['directory']
+            historical = set(json.loads((campaign_dir / 'historical.json').read_text())['directories'])
         for f in sorted(glob.glob(str(RESULTS / "phase_0*/*/summary.json"))):
             try:
+                if historical is not None and str(Path(f).parent.relative_to(PROJECT)) not in historical:
+                    continue
                 s = json.loads(Path(f).read_text())
                 m = json.loads(Path(f).with_name("manifest.json").read_text())
                 status  = s.get("status") or m.get("status", "?")
@@ -720,14 +728,14 @@ async function refreshAll() {
   document.getElementById('last-refresh').textContent =
     'Refreshed ' + new Date().toLocaleTimeString();
   showToast('Data refreshed');
-  await Promise.all([fetchPhases(), fetchSummary(), fetchRuns()]);
+  await Promise.all([fetchPhases(), fetchRuns()]);
   reloadCharts();
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('last-refresh').textContent =
     'Loaded ' + new Date().toLocaleTimeString();
-  await Promise.all([fetchPhases(), fetchSummary(), fetchRuns()]);
+  await Promise.all([fetchPhases(), fetchRuns()]);
 });
 
 // Auto-refresh every 30s
@@ -737,10 +745,11 @@ setInterval(refreshAll, 30000);
 </html>"""
 
 
-@app.route("/")
-def index():
-    return render_template_string(HTML)
-
+# /historical, /, /api/campaign, /api/historical, /api/run are served by campaign_dashboard
+from campaign_dashboard import register_campaign
+register_campaign(app)
+from latest_dashboard import register_latest
+register_latest(app)
 
 if __name__ == "__main__":
     port = int(os.environ.get("DASHBOARD_PORT", 5000))

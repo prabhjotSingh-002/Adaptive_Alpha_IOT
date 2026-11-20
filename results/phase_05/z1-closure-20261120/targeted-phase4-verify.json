@@ -1,0 +1,226 @@
+[
+  {
+    "section": "measurement",
+    "status": "passed",
+    "index": "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_04/validation-20261119T205538183355Z/manifest.json",
+    "index_sha256": "7faddc1e6737c3985ce78be155214963665b0babba7ed4703ad09611b49802b6",
+    "cases": [
+      {
+        "name": "idle-listen-transition",
+        "status": "passed",
+        "log": "results/phase_04/validation-20261119T205538183355Z/01-idle-listen-transition.log",
+        "log_sha256": "cc24f50bd407726e7b514a6ebe544a929216bb989a7a68acbbe54794a28cb067",
+        "runs": [
+          {
+            "run": "20261119T205538411430Z-B2-2",
+            "status": "passed",
+            "artifact_checks": 12,
+            "manifest_sha256": "4f1bd47bd02c594982fa7a09b574d4c1b2013c33631ad466331fb09dd8d43fdc",
+            "generated": 48,
+            "authenticated": 48,
+            "max_hold_ms": 0,
+            "batch_counts": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "name": "controlled-cpu-load",
+        "status": "passed",
+        "log": "results/phase_04/validation-20261119T205538183355Z/02-controlled-cpu-load.log",
+        "log_sha256": "e7b29f52ffb3c105f8d2d67d8ff2e9fa03b18f3c004739b033800e6a237f8803",
+        "runs": [
+          {
+            "run": "20261119T205618197358Z-B2-2",
+            "status": "passed",
+            "artifact_checks": 12,
+            "manifest_sha256": "d43f0020fb3a4aa15a9883fedc822f49480560c683c2ce9bbf9f5792470ead22",
+            "generated": 48,
+            "authenticated": 48,
+            "max_hold_ms": 0,
+            "batch_counts": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "boundaries",
+    "status": "passed",
+    "index": "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_04/validation-20261119T205708869790Z/manifest.json",
+    "index_sha256": "61fb18381ea00259aca59deebfa579ca84cc767e3f91cd09476d9e99d32453c7",
+    "cases": [
+      {
+        "name": "boundary--period-ms500",
+        "status": "passed",
+        "log": "results/phase_04/validation-20261119T205708869790Z/01-boundary--period-ms500.log",
+        "log_sha256": "942b7e51c907e7a902649c1058f8360b11d78feb8cb5e142f3d8d8a95276d0aa",
+        "runs": [
+          {
+            "run": "20261119T205709090806Z-B1-2",
+            "status": "passed",
+            "artifact_checks": 10,
+            "manifest_sha256": "75fe02e22cca93dc55b0b51acfdc9d5f36e298aa83e32d2da6c1802a1cdb6525",
+            "generated": 48,
+            "authenticated": 48,
+            "max_hold_ms": 0,
+            "batch_counts": [
+              1
+            ]
+          },
+          {
+            "run": "20261119T205727760259Z-B2-2",
+            "status": "passed",
+            "artifact_checks": 11,
+            "manifest_sha256": "93e34c58631d98502915c47fc0006889e212d03d873fe878d6045d46573a0f6f",
+            "generated": 48,
+            "authenticated": 48,
+            "max_hold_ms": 0,
+            "batch_counts": [
+              1
+            ]
+          },
+          {
+            "run": "20261119T205745875015Z-B4-2",
+            "status": "passed",
+            "artifact_checks": 10,
+            "manifest_sha256": "e4262cb3f0803160e47134e7bba0e0be141552976c163e36091f0a37170cbe36",
+            "generated": 48,
+            "authenticated": 48,
+            "max_hold_ms": 1500,
+            "batch_counts": [
+              4
+            ]
+          },
+          {
+            "run": "20261119T205804714047Z-B5-2",
+            "status": "passed",
+            "artifact_checks": 10,
+            "manifest_sha256": "044f5834ef4e7f0db3635541f12580ca6fda6b670604e147b648597800fa372f",
+            "generated": 48,
+            "authenticated": 48,
+            "max_hold_ms": 1500,
+            "batch_counts": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "name": "boundary--period-ms4000",
+        "status": "passed",
+        "log": "results/phase_04/validation-20261119T205708869790Z/02-boundary--period-ms4000.log",
+        "log_sha256": "d981ac5e67ba736db273fce468bafb0ec457d368d71345000dd136c11334a59c",
+        "runs": [
+          {
+            "run": "20261119T205823001971Z-B1-2",
+            "status": "passed",
+            "artifact_checks": 10,
+            "manifest_sha256": "4b2aa9988c7cec020578bc1fcecf0babad9cc99e490310c2afee7ecd2f13253e",
+            "generated": 48,
+            "authenticated": 48,
+            "max_hold_ms": 0,
+            "batch_counts": [
+              1
+            ]
+          },
+          {
+            "run": "20261119T205841070054Z-B2-2",
+            "status": "passed",
+            "artifact_checks": 11,
+            "manifest_sha256": "9272966f2d2862c557fcda9ad0f806a84d9f27fa434ef74c57fdbbb2203da175",
+            "generated": 48,
+            "authenticated": 48,
+            "max_hold_ms": 0,
+            "batch_counts": [
+              1
+            ]
+          },
+          {
+            "run": "20261119T205859183882Z-B4-2",
+            "status": "passed",
+            "artifact_checks": 10,
+            "manifest_sha256": "59379275d0e8ca429286d5a3896b0afafa2a8401759574834f6015bb30efcfe8",
+            "generated": 48,
+            "authenticated": 48,
+            "max_hold_ms": 3000,
+            "batch_counts": [
+              1
+            ]
+          },
+          {
+            "run": "20261119T205917409181Z-B5-2",
+            "status": "passed",
+            "artifact_checks": 10,
+            "manifest_sha256": "789a18197b6020c5b128b755143b38136abbba396fbc99bc3e628c6577a4d769",
+            "generated": 48,
+            "authenticated": 48,
+            "max_hold_ms": 3000,
+            "batch_counts": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "name": "boundary--payload-budget47",
+        "status": "passed",
+        "log": "results/phase_04/validation-20261119T205708869790Z/03-boundary--payload-budget47.log",
+        "log_sha256": "36f61c40aaf18660c59528210a783c5cd645690bcbc91a6856d0ed22cdf245be",
+        "runs": [
+          {
+            "run": "20261119T205935854820Z-B1-2",
+            "status": "passed",
+            "artifact_checks": 10,
+            "manifest_sha256": "63ece2c55f33fd2e1769de31ddbf93c6f39fd5ca8ab39c0d037487cad56c1c90",
+            "generated": 48,
+            "authenticated": 48,
+            "max_hold_ms": 0,
+            "batch_counts": [
+              1
+            ]
+          },
+          {
+            "run": "20261119T205954025120Z-B2-2",
+            "status": "passed",
+            "artifact_checks": 11,
+            "manifest_sha256": "d9c93bdcb8c40338b5759950ecd6c4c1bf27a7fbbb5b4185e2522877feae340b",
+            "generated": 48,
+            "authenticated": 48,
+            "max_hold_ms": 0,
+            "batch_counts": [
+              1
+            ]
+          },
+          {
+            "run": "20261119T210012150616Z-B4-2",
+            "status": "passed",
+            "artifact_checks": 10,
+            "manifest_sha256": "ca5d393901f3fe61a43295123c05217a67cb75043a9e1b283eee5f7ba384f8aa",
+            "generated": 48,
+            "authenticated": 48,
+            "max_hold_ms": 1000,
+            "batch_counts": [
+              2
+            ]
+          },
+          {
+            "run": "20261119T210030121866Z-B5-2",
+            "status": "passed",
+            "artifact_checks": 10,
+            "manifest_sha256": "1f72bb4fb8ebd09768fed2ca7a293d41c47389a31fcebef3818f79dc5c2bf8e4",
+            "generated": 48,
+            "authenticated": 48,
+            "max_hold_ms": 1000,
+            "batch_counts": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

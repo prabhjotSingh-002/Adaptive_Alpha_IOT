@@ -15,7 +15,7 @@ bool lab_boot_gate_poll(lab_boot_gate *gate, lab_security_context *ctx);
 /* Metadata per slot: version, profile, sender BE16, epoch BE16, ready, reserved.
  * Slots and keys are contiguous and must match the preinitialized contexts. */
 #define LAB_PROVISION_SLOT_SIZE 8u
-#define LAB_PROVISION_MAX_CONTEXTS 16u
+#define LAB_PROVISION_MAX_CONTEXTS 30u
 bool lab_boot_gate_poll_set(lab_boot_gate *gate, lab_security_context *contexts,
                             size_t count, const uint8_t *metadata,
                             const uint8_t *keys);

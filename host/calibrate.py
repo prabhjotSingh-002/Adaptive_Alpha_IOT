@@ -123,7 +123,16 @@ def main():
                         help="Filter to runs with this seed (default: all seeds)")
     parser.add_argument("--out", default=str(ROOT / "results/phase_05/cost_table.json"),
                         help="Output path for cost table JSON")
+    parser.add_argument('--calibration-inputs', type=Path, help='JSON list of exact calibration run directories')
     args = parser.parse_args()
+    if args.calibration_inputs:
+        from calibration_contract import build_table
+        paths = json.loads(args.calibration_inputs.read_text())
+        result = build_table([ROOT / p for p in paths], args.seed)
+        Path(args.out).write_text(json.dumps(result, indent=2, allow_nan=False)+'\n')
+        print(result['qualification'], args.out)
+        return 0 if result['qualification']=='qualified' else 1
+
 
     results_dir = ROOT / "results/phase_04"
     rows = load_summaries(results_dir, seed=args.seed)

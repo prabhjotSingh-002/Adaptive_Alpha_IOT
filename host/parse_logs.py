@@ -24,6 +24,7 @@ FIELDS["RX2"] = ["sender", "profile", "epoch"] + FIELDS["RX"][1:]
 FIELDS["PACKET2"] = ["sender", "profile", "epoch", "counter"]
 FIELDS["POLICY_TIME"] = ["ticks", "frequency"]
 FIELDS["POLICY"] = ["profile", "cap", "reason", "residual_nj", "oldest_hold_ms", "queue_count"]
+FIELDS["FEATURE"] = ["rate_hz_x100", "samples", "age_ms"]
 FIELDS["SWITCH"] = ["old_profile", "new_profile", "old_cap", "new_cap", "reason"]
 def parse(path, run_id, profile=0, phase=None, schema=1):
     if profile not in (0, 1, 2): raise ValueError("Unsupported profile")

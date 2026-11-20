@@ -116,6 +116,13 @@ class PolicyTests(unittest.TestCase):
             if key != 'cost_nj': st[key] = getattr(state, key)
         return {key: getattr(out, key) for key, _ in Action._fields_}
 
+    def test_p1_rate_drop_overrides_dwell_and_savings(self):
+        st = make_state(initialized=True, current_profile=2, current_cap=4,
+                        last_switch_ms=61000, transition_cost_nj=2**60)
+        action = self._call('p1', st, make_features(now_ms=61001, rate_hz_x100=25))
+        self.assertEqual(action['cap'], 1)
+        self.assertTrue(action['feasible'])
+
     def test_b3_threshold_above_uint32(self):
         st = make_state(b3_threshold_nj_hi=6000000000, b3_threshold_nj_lo=3000000000)
         action = self._b3(st, make_features(residual_nj=5000000000))
@@ -187,14 +194,14 @@ class PolicyTests(unittest.TestCase):
     def test_b6_adaptive_cap_low_queue(self):
         """Choose cap before the first reading, allowing accumulation."""
         st = make_state(b6_profile=1)
-        f  = make_features(queue_count=0, oldest_hold_ms=0)
+        f  = make_features(queue_count=0, oldest_hold_ms=0, rate_hz_x100=200)
         action = self._b6(st, f)
         self.assertEqual(action["cap"], 4)
 
     def test_b6_adaptive_cap_high_queue_past_half_deadline(self):
         """4 readings queued, hold > deadline/2 → cap 4."""
         st = make_state(b6_profile=1, deadline_ms=3000, payload_budget=67, reserved_bytes=16)
-        f  = make_features(queue_count=4, oldest_hold_ms=1600)
+        f  = make_features(queue_count=4, oldest_hold_ms=1600, rate_hz_x100=200)
         action = self._b6(st, f)
         self.assertEqual(action["cap"], 4)
 
@@ -202,7 +209,7 @@ class PolicyTests(unittest.TestCase):
         """Tight payload budget limits cap to 1."""
         st = make_state(b6_profile=1, payload_budget=27, reserved_bytes=16)
         # 27 - 16 - 11 = 0 bytes for readings → max_cap = 1
-        f  = make_features(queue_count=4, oldest_hold_ms=1600)
+        f  = make_features(queue_count=4, oldest_hold_ms=1600, rate_hz_x100=200)
         action = self._b6(st, f)
         self.assertEqual(action["cap"], 1)
 
@@ -224,7 +231,7 @@ class PolicyTests(unittest.TestCase):
                         margin_nj_per_reading=0, min_dwell_ms=0,
                         current_profile=1, current_cap=1, initialized=False,
                         payload_budget=67, reserved_bytes=16)
-        f  = make_features(now_ms=5000)
+        f  = make_features(now_ms=5000, rate_hz_x100=200)
         action = self._p1(st, f)
         self.assertEqual(action["profile"], 2)
         self.assertEqual(action["cap"], 4)
@@ -299,6 +306,72 @@ class PolicyTests(unittest.TestCase):
         f  = make_features()
         action = self._p1(st, f)
         self.assertLessEqual(action["cap"], 2)
+
+    def test_invalid_initialized_profiles_fail_closed(self):
+        for fn in ('b3','b6','p1'):
+            for profile in (0,3,255):
+                action=self._call(fn,make_state(initialized=True,current_profile=profile),make_features())
+                self.assertFalse(action['feasible'])
+                self.assertEqual((action['profile'],action['cap']),(1,1))
+
+    def test_invalid_initialized_caps_fail_closed(self):
+        for cap in (0,3,255):
+            action=self._p1(make_state(initialized=True,current_cap=cap),make_features())
+            self.assertFalse(action['feasible'])
+
+    def test_deadline_equality_does_not_predict_full_cap(self):
+        for fn in ('b6','p1'):
+            st=make_state(min_dwell_ms=0,transition_cost_nj=0,margin_nj_per_reading=0)
+            a=self._call(fn,st,make_features(rate_hz_x100=100))
+            self.assertEqual(a['cap'],2)  # cap4 fill is exactly the expiry time
+            a=self._call(fn,make_state(deadline_ms=3001,min_dwell_ms=0,transition_cost_nj=0,margin_nj_per_reading=0),make_features(rate_hz_x100=100))
+            self.assertEqual(a['cap'],4)
+
+    def test_maximum_cost_and_timer_wrap_are_bounded(self):
+        a=self._p1(make_state(cost_nj=[[2**64-1,0,0],[0,0,0]],initialized=True,current_profile=1,current_cap=1),make_features())
+        self.assertTrue(a['feasible'])
+        a=self._p1(make_state(initialized=True,last_switch_ms=2**32-1000),make_features(now_ms=500))
+        self.assertEqual(a['reason'],7)  # 1500 ms modulo elapsed; still dwelling
+
+    def test_p1_high_residual_selects_cap4(self):
+        """When battery residual is ample, P1 chooses the lowest cost action (Cap 4)."""
+        costs = [[3_000_000, 2_800_000, 2_600_000],
+                 [2_900_000, 2_700_000, 1_000_000]]  # Ascon cap 4 cheapest
+        st = make_state(cost_nj=costs, min_dwell_ms=0, transition_cost_nj=0,
+                        margin_nj_per_reading=0, payload_budget=67, reserved_bytes=16)
+        f = make_features(rate_hz_x100=200, residual_nj=4_000_000_000)
+        action = self._p1(st, f)
+        self.assertEqual(action["cap"], 4)
+        self.assertEqual(action["profile"], 2)
+        self.assertTrue(action["feasible"])
+
+    def test_p1_low_residual_drops_to_cap1(self):
+        """When battery residual is below the fill demand of Cap 4, P1 drops to Cap 1."""
+        costs = [[3_000_000, 2_800_000, 2_600_000],
+                 [2_900_000, 2_700_000, 1_000_000]]
+        st = make_state(cost_nj=costs, min_dwell_ms=0, transition_cost_nj=0,
+                        margin_nj_per_reading=0, payload_budget=67, reserved_bytes=16)
+        # Demand for cap 4 at 1Hz (1000ms) with queue=0 is (4)*1000ms*57.4mJ/s ~ 230mJ
+        # Set residual to 10mJ (10,000,000 nJ) -> Cap 4 unaffordable, Cap 1 affordable
+        f = make_features(rate_hz_x100=100, queue_count=0, residual_nj=10_000_000)
+        action = self._p1(st, f)
+        self.assertEqual(action["cap"], 1)
+        self.assertTrue(action["feasible"])
+
+    def test_p1_battery_overrides_dwell_when_unaffordable(self):
+        """When current action is unaffordable, P1 overrides dwell time to switch."""
+        costs = [[3_000_000, 2_800_000, 2_600_000],
+                 [2_900_000, 2_700_000, 1_000_000]]
+        st = make_state(cost_nj=costs, min_dwell_ms=5000, current_profile=2, current_cap=4,
+                        last_switch_ms=1000, initialized=True,
+                        payload_budget=67, reserved_bytes=16)
+        # At 2Hz (500ms), Cap 4 fills before 3000ms deadline.
+        # Demand for Cap 4 is (4)*500ms*57.4mJ/s ~ 115mJ + 560uJ.
+        # Residual is 50mJ -> Cap 4 unaffordable, Cap 1 affordable.
+        f = make_features(now_ms=2000, rate_hz_x100=200, queue_count=0, residual_nj=50_000_000)
+        action = self._p1(st, f)
+        self.assertEqual(action["cap"], 1)
+        self.assertEqual(action["reason"], 11)  # LAB_POL_P1_BATTERY
 
     # ── Helpers ───────────────────────────────────────────────────────────────
 

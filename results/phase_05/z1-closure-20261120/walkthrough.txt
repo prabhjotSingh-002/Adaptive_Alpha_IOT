@@ -1,0 +1,46 @@
+"""Capture rendered dashboard pages with Firefox WebDriver."""
+import base64
+import json
+import subprocess
+import time
+from pathlib import Path
+from urllib.error import URLError
+from urllib.request import Request, urlopen
+
+out = Path(__file__).parent
+driver_url = 'http://127.0.0.1:4445'
+
+def request(path, payload=None, method=None):
+    body = json.dumps(payload).encode() if payload is not None else None
+    req = Request(driver_url + path, body, {'Content-Type': 'application/json'}, method=method)
+    with urlopen(req, timeout=45) as response:
+        return json.load(response)['value']
+
+with (out / 'geckodriver.log').open('w') as log:
+    driver = subprocess.Popen(['geckodriver', '--port', '4445'], stdout=log, stderr=log)
+    try:
+        for _ in range(20):
+            try:
+                request('/status')
+                break
+            except URLError:
+                time.sleep(.25)
+        session = request('/session', {'capabilities': {'alwaysMatch': {
+            'browserName': 'firefox', 'pageLoadStrategy': 'eager',
+            'moz:firefoxOptions': {'args': ['-headless']}}}})
+        prefix = '/session/' + session['sessionId']
+        try:
+            request(prefix + '/window/rect', {'width': 1600, 'height': 1100})
+            for name, path in [('latest', '/'), ('historical', '/historical'), ('campaign', '/campaign')]:
+                request(prefix + '/url', {'url': 'http://127.0.0.1:5051' + path})
+                time.sleep(2)
+                page = request(prefix + '/execute/sync', {'script':
+                    'return {title: document.title, excerpt: document.body.innerText.slice(0, 900), scrollWidth: document.body.scrollWidth}', 'args': []})
+                print(name, json.dumps(page), flush=True)
+                png = request(prefix + '/screenshot')
+                (out / (name + '.png')).write_bytes(base64.b64decode(png))
+        finally:
+            request(prefix, method='DELETE')
+    finally:
+        driver.terminate()
+        driver.wait(timeout=5)

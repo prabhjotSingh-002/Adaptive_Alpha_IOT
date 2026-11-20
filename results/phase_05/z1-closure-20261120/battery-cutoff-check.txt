@@ -1,0 +1,41 @@
+"""Replay chosen-action budget classification around observed terminal cutoff."""
+import json
+from pathlib import Path
+
+from audit_battery_forecast import FINITE, WINDOW_US, predict, trace
+from run_experiment import digest
+
+out = Path(__file__).parent
+forecast_path = out / "battery-forecast-v2.json"
+forecast = json.loads(forecast_path.read_text())
+table = {tuple(map(int, k.split("|"))): v for k, v in forecast["calibration"].items()}
+_, traces = trace(FINITE)
+rows = []
+for node, events in traces.items():
+    removal, = [e["sim_time_us"] for e in events if e["event_type"] == "REMOVED"]
+    action = rate = None
+    for event in events:
+        kind = event["event_type"]
+        time = event["sim_time_us"]
+        if kind == "POLICY":
+            action = event["profile"], event["cap"]
+        elif kind == "FEATURE":
+            rate = event["rate_hz_x100"]
+        elif (kind == "ENERGY_MODEL" and action and rate and
+              0 < removal-time <= 2*WINDOW_US and event["remaining_nj"] > 0):
+            cost = predict(table, node, *action, rate)
+            if cost is None:
+                continue
+            eligible = cost <= event["remaining_nj"]
+            survived = removal - time > WINDOW_US
+            rows.append(dict(node=node, start_us=time, removal_us=removal, action=action,
+                             rate_hz_x100=rate, residual_nj=event["remaining_nj"], predicted_nj=cost,
+                             predicted_affordable=eligible, survived_horizon=survived,
+                             correct=eligible == survived))
+result = dict(scope="retrospective chosen-action cutoff diagnostic, overlapping windows",
+              manifest_sha256=digest(FINITE / "manifest.json"),
+              forecast_sha256=digest(forecast_path), rows=rows,
+              observed_shortfall=sum(not row["survived_horizon"] for row in rows),
+              correct=sum(row["correct"] for row in rows))
+(out / "battery-cutoff-check.json").write_text(json.dumps(result, indent=2) + "\n")
+print(f"{result['correct']}/{len(rows)} agree; {result['observed_shortfall']} observed shortfall windows")

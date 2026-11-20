@@ -1,0 +1,83 @@
+{
+  "scope": "16-node native functional layouts; not full Phase 4/5/6 qualification",
+  "runs": [
+    {
+      "path": "results/phase_04/20261116T114322493328Z-B2-15",
+      "status": "failed",
+      "error": "RuntimeError: Cooja/build failed; inspect console.log",
+      "generated": null,
+      "delivered": null,
+      "hashes": {
+        "console.log": "cbc8cdcb1f4d894335e5de523ec389fcbb9a008ce2094d3b9dc0e38161f42165",
+        "manifest.json": "b2deb42f2c1740ef1162e53bdb775896d64a1da070e4f76fac16983daf747277",
+        "scenario.csc": "ea4b05ddeb5b65929e205d6649358448a004dda469db9044a9dd83a6e5f68ff3"
+      }
+    },
+    {
+      "path": "results/phase_04/20261116T114332382532Z-B2-15",
+      "status": "passed",
+      "error": null,
+      "generated": 360,
+      "delivered": 347,
+      "hashes": {
+        "console.log": "f5967b7d3c9a4536e573739a9930d312225169f08eff421f55a7729a2084d4d1",
+        "manifest.json": "552cffade56164a891fe13454b92f3a53b513a6d78f55be095169d0fd08add14",
+        "scenario.csc": "34f25de4243dec969233bdcd7170297cfc4688fe94560ec02d7e86b7f86b3549",
+        "COOJA.testlog": "7641561aada3bad06834caf2c778fce5343cfd4df685661454c3e6bdb59581a3",
+        "summary.json": "cecabf33217d57b8f846383b1eee5d3f8283f9712b22a0d4a9906125aa728668"
+      }
+    },
+    {
+      "path": "results/phase_04/20261116T114409355764Z-B1-15",
+      "status": "passed",
+      "error": null,
+      "generated": 360,
+      "delivered": 356,
+      "hashes": {
+        "console.log": "2c1ae94b7c93f26e04eae22e1fad3b4c29c5a64bb006993c73c3738edd86f881",
+        "manifest.json": "55e958009350a3565f780689e68a90e8019bb038e8253db07fe3c7a497c98ae6",
+        "scenario.csc": "44d76b1739581df59ade27123dc26a7fc41244b8e74aa82dc1a8f9dafe70dafe",
+        "COOJA.testlog": "1bb0647acf8a7e57ab7274273e34853cc95a5290ee56381f0901c92f05d7e407",
+        "summary.json": "24d4afada0b6223aa3d2422e7d0422cef70cc84becf2fe5f47d0cd13bc30c77d"
+      }
+    },
+    {
+      "path": "results/phase_03/20261116T114447156129Z-B1-2",
+      "status": "passed",
+      "error": null,
+      "generated": 48,
+      "delivered": 48,
+      "hashes": {
+        "console.log": "499ce49c4e01fdcd0738e310e9ac7e9f491a33f68d4699a522a7f53dcfa5aa6e",
+        "manifest.json": "44244ec4f72d65465ae39116e4413f51471931207176c679861bda2a036e133f",
+        "scenario.csc": "6230ecba33d190ad2f0561d0ba1d6db9c84dc6cc488d1efa8c8e32672bd34f7a",
+        "COOJA.testlog": "1ddbc906fbfa9114c2db9e1107140e642a76ca588bc72c10cd73bd5b3ef7f252",
+        "summary.json": "cb6dc4ef553b3a59544485c57f6cbc959038bc0b0e3de32c4f60341b29cb2ada"
+      }
+    },
+    {
+      "path": "results/phase_04/20261116T114512206683Z-B2-8",
+      "status": "passed",
+      "error": null,
+      "generated": 192,
+      "delivered": 192,
+      "hashes": {
+        "console.log": "39956d15b8c6e527f47698432acdc8715b5011554e899d499747e2fd97132b9b",
+        "manifest.json": "7df4424bf9b6982946605469716f879913b73c2361f7002e2fbcbac9354803f7",
+        "scenario.csc": "1a1be7e2270a60040c758d33eb14f4f15ce24193c0eb0dee14f5f406e50baee7",
+        "COOJA.testlog": "f9c1e6fac1d86fc4868cd6554544156f22795d3a9696296765fcf93d75ed03d7",
+        "summary.json": "bf4726f620f8236ae9190dc39de4ede345247968bbcbfa4bedf0e85388ca2941"
+      }
+    }
+  ],
+  "source_hashes": {
+    "host/topologies.py": "68541ecf2c93ad3f8a8395970b79ba543c1d9b1a304648953f8aa403f6140bc4",
+    "host/run_experiment.py": "49168cdb2bbf21ca26c109b336a69987c3211c23d8c35420aba40d719ad25993",
+    "firmware/crypto/boot_gate.h": "7dd23944e350555dd09285dee9e037bf0d0988696137b7a397a00fdc09990853",
+    "tests/unit/test_topologies.py": "aa77c063d5f4abfe8e6d9472dbdb56021d36a02fa58d9c154f19a6a3e2c06879"
+  },
+  "checks": {
+    "container_unit_tests": 47,
+    "layout_tests": 3
+  }
+}

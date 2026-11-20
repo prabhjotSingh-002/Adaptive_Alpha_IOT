@@ -1,0 +1,2 @@
+['/usr/bin/python3', '-B', 'host/calibrate.py', '--seed', '223457', '--calibration-inputs', '/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_05/z1-revised-calibration/calibration-inputs.json', '--out', '/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_05/z1-revised-calibration/cost-table-revised.json']
+qualified /home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_05/z1-revised-calibration/cost-table-revised.json

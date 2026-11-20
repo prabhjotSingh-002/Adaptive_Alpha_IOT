@@ -13,9 +13,11 @@ import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from policy_validation import validate_policy_config
+from demand_schedule import run_horizon_ms
 from parse_logs import parse
 from metrics import summarize
 from scenario_target import configure_z1
+from topologies import configure_layout, validate_layout
 
 PROJECT = Path(__file__).resolve().parents[1]
 def digest(path): return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -24,11 +26,13 @@ def container_command(pins, args, container_name=None):
     if container_name: command.extend(["--name", container_name])
     command += ["--mount", f"type=bind,source={PROJECT / 'external/contiki-ng'},destination=/home/user/contiki-ng", "--mount", f"type=bind,source={PROJECT},destination=/workspace", pins["container_image"], *args]
     return ["sg", "docker", "-c", shlex.join(command)]
+
+
 def scenario(out, clients, config, keys=None):
     tree = ET.parse(PROJECT / "simulations/scenarios/phase1-rpl-9.csc")
     root = tree.getroot(); simulation = root.find("simulation")
     simulation.find("randomseed").text = str(config["seed"])
-    for mote in list(simulation.findall("mote"))[clients + 1:]: simulation.remove(mote)
+    configure_layout(simulation, clients, config.get("topology", "legacy"))
     target = config.get("target", "cooja")
     backend = config.get("backend", "ref")
     for mote_type in simulation.findall("motetype"):
@@ -44,7 +48,7 @@ def scenario(out, clients, config, keys=None):
                     interface.find("y").text = "0"
     if target == "z1": configure_z1(simulation)
     script = root.find("plugin/plugin_config/script")
-    end = config["warmup_ms"] + config["period_ms"] * config["readings_per_sensor"] + config["deadline_ms"] + config["drain_ms"]
+    end = run_horizon_ms(config)
     script.text = r'''
 var medium = sim.getRadioMedium();
 var listener = new (Java.type("java.util.function.BiConsumer"))(function(event, unused) {
@@ -85,8 +89,10 @@ var originalTxRatio = sim.getRadioMedium().SUCCESS_RATIO_TX;
         startup = startup.replace("PROVISIONING", json.dumps(per_mote, sort_keys=True))
         script.text = startup + script.text.replace(
             r'while (true) { YIELD(); log.log(time + "," + id + "," + msg + "\n"); }',
-            r'''while (true) {
-  YIELD();
+            r'''var firstMessage = true;
+while (true) {
+  if(!firstMessage) { YIELD(); }
+  firstMessage = false;
   if (msg == "LOSS_RESTORE") {
     sim.getRadioMedium().SUCCESS_RATIO_TX = originalTxRatio;
     lossActive=false; log.log(time + ",2,RSLAB,2,LOSS,0\n"); continue;
@@ -158,6 +164,8 @@ var originalTxRatio = sim.getRadioMedium().SUCCESS_RATIO_TX;
         script.text = script.text.replace("SENSOR_RESET_TEST", "true" if config.get("sensor_reset_test") else "false")
         script.text = script.text.replace("PROVISION_FAULT", json.dumps(config.get("provision_fault") or "none"))
         script.text = script.text.replace("ROOT_RESET_TEST", "true" if config.get("root_reset_test") else "false")
+    if keys is None:
+        script.text = script.text.replace('while (true) { YIELD();', 'var firstMessage = true; while (true) { if(!firstMessage) { YIELD(); } firstMessage = false;')
     if config.get("gui_mode"):
         visual_plugins = """<plugins>
   <plugin>
@@ -206,16 +214,17 @@ def run(mode, clients, base, pins, override):
     config = dict(base); config.update(override)
     config["mode"] = mode
     validate_policy_config(config)
-    cap = config["modes"][mode]
+    cap = config.get("calibration_cap", config["modes"][mode])
     if "mode_profiles" in config: config["profile"] = config["mode_profiles"][mode]
-    if config.get("phase") == 4 and (config.get("profile"),cap) != {"B1":(1,1),"B2":(2,1),"B4":(1,4),"B5":(2,4)}.get(mode): raise ValueError("Invalid Phase4 control mapping")
+    if config.get("phase") == 4 and not config.get("calibration_cap") and (config.get("profile"),cap) != {"B1":(1,1),"B2":(2,1),"B4":(1,4),"B5":(2,4)}.get(mode): raise ValueError("Invalid Phase4 control mapping")
     if config.get("phase") == 5 and mode not in ("B1","B2","B3","B4","B5","B6","P1"): raise ValueError("Invalid Phase5 mode")
     if config.get("profile", 0) not in (0, 1, 2): raise ValueError("Unsupported profile")
     for name in ("seed", "warmup_ms", "period_ms", "readings_per_sensor", "deadline_ms", "drain_ms", "payload_budget", "reserved_bytes"):
         if type(config[name]) is not int or config[name] < 0: raise ValueError("Invalid config " + name)
-    if not 1 <= clients <= 8 or type(cap) is not int or cap not in (1, 2, 4) or not 1 <= config["readings_per_sensor"] <= 1000 or config["period_ms"] < 125 or config["period_ms"] % 125 or config["deadline_ms"] % 125 or config["deadline_ms"] > 2**31-1:
+    validate_layout(clients, config.get("topology", "legacy"), config.get("target", "cooja"), config.get("bottleneck", False))
+    if not 1 <= clients <= 15 or type(cap) is not int or cap not in (1, 2, 4) or not 1 <= config["readings_per_sensor"] <= 1000 or config["period_ms"] < 125 or config["period_ms"] % 125 or config["deadline_ms"] % 125 or config["deadline_ms"] > 2**31-1:
         raise ValueError("Unsupported pilot dimensions or timer resolution")
-    if config["warmup_ms"] + config["readings_per_sensor"] * config["period_ms"] + config["deadline_ms"] + config["drain_ms"] >= 2**31 or config["payload_budget"] > 65535:
+    if run_horizon_ms(config) >= 2**31 or config["payload_budget"] > 65535:
         raise ValueError("Pilot horizon/budget exceeds bounded representation")
     fit = (config["payload_budget"] - config["reserved_bytes"] - 11) // 10
     if fit < 1: raise ValueError("Payload cannot fit a reading")
@@ -247,8 +256,12 @@ def run(mode, clients, base, pins, override):
         defs["ENERGY_BUDGET"] = str(config["energy_budget_nj"])+"ULL"
     defs["ENERGY_TELEMETRY"] = int(bool(config.get("energy_telemetry")))
     defs["SCHEMA"] = config["schema_version"]
+    if "middle_period_ms" in config:
+        defs["MIDDLE_PERIOD_MS"] = config["middle_period_ms"]
     defs["CONFIG_ID"] = config["config_id"]
     defs["DUAL_PROFILE"] = int(bool(config.get("dual_profile")))
+    if config.get("queued_shrink"):
+        defs["QUEUED_SHRINK"] = {"hold": 1, "switch": 2}[config["queued_shrink"]]
     defs["SWITCH_TEST"] = int(bool(config.get("switch_test")))
     defs["RADIO_LOSS_TEST"] = int(bool(config.get("radio_loss_test")))
     defs["REORDER_TEST"] = int(bool(config.get("reorder_test")))
@@ -348,6 +361,20 @@ def run(mode, clients, base, pins, override):
         summary = summarize(events, frames, analysis_config, list(range(2, clients+2)), effective_cap)
         if not frames or summary["radio"]["unclassified_data_frames"]: raise ValueError("Radio capture incomplete/unsupported")
         if summary["radio"]["fragment_frames"]: raise ValueError("Unexpected fragmentation in this small-packet pilot")
+        from mechanism_checks import policy_wire, root_reset, depletion
+        mechanism = {}
+        if phase == 5 and config.get('policy_repair_version',0) >= 2:
+            mechanism['policy_wire'] = policy_wire(events, config)
+        if config.get('root_reset_test'):
+            mechanism['root_reset'] = root_reset(events)
+            raw_text = (out/'COOJA.testlog').read_text()
+            if 'ROOT_MOTE_REPLACED' not in raw_text or 'BOOT_REGRANT_REFUSED' not in raw_text:
+                raise ValueError('Missing actual root replacement/regrant refusal markers')
+        if config.get('lifetime'):
+            mechanism['depletion'] = depletion(events, frames, config, energy_result)
+        if mechanism:
+            (out/'mechanism-checks.json').write_text(json.dumps(mechanism,indent=2)+'\n')
+            summary['mechanism_checks'] = mechanism
         (out / "events.jsonl").write_text("".join(json.dumps(e)+"\n" for e in events))
         (out / "summary.json").write_text(json.dumps(summary, indent=2)+"\n")
         manifest["status"] = "passed"
@@ -377,10 +404,22 @@ def run(mode, clients, base, pins, override):
 
 def main():
     parser = argparse.ArgumentParser(); parser.add_argument("--phase", type=int, choices=[2, 3, 4, 5], default=2); parser.add_argument("--mode", choices=["N0-single", "N0-batch", "B1", "B2", "B3", "B4", "B5", "B6", "P1", "both", "all", "all5"], default="both"); parser.add_argument("--clients", type=int, default=8); parser.add_argument("--timeout-seconds", type=int, default=900); parser.add_argument("--attack-test", action="store_true"); parser.add_argument("--root-reset-test", action="store_true"); parser.add_argument("--gui", action="store_true", help="Open Cooja GUI instead of running headless (for visual inspection; results not logged to file)"); parser.add_argument("--radio-off-until-ms", type=int, default=0); parser.add_argument("--cpu-work-iterations", type=int, default=0); parser.add_argument("--radio-loss-test", action="store_true"); parser.add_argument("--reorder-test", action="store_true"); parser.add_argument("--sensor-reset-test", action="store_true"); parser.add_argument("--provision-fault", choices=["missing","version","profile","epoch"]); parser.add_argument("--critical-reading", type=int, default=0); parser.add_argument("--power-model", action="store_true"); parser.add_argument("--energy-budget-nj", type=int); parser.add_argument("--deplete-node", type=int, default=0); parser.add_argument("--bottleneck", action="store_true"); parser.add_argument("--energy-sample-ms", type=int, choices=[125,250,500], default=125); parser.add_argument("--energy-telemetry", action="store_true"); parser.add_argument("--warmup-ms", type=int); parser.add_argument("--switch-test", action="store_true"); parser.add_argument("--readings", type=int); parser.add_argument("--seed", type=int); parser.add_argument("--target", choices=["cooja", "z1"], default="cooja"); parser.add_argument("--backend", choices=["ref", "opt32_lowsize"], default="ref"); parser.add_argument("--period-ms", type=int); parser.add_argument("--payload-budget", type=int)
+    parser.add_argument("--topology", choices=["legacy", "grid16", "tree16"], default="legacy")
+    parser.add_argument('--middle-period-ms', type=int, help='Generation interval during the middle third of a Z1 workload')
+    parser.add_argument('--calibration-cap', type=int, choices=[1,2,4])
+    parser.add_argument('--preflight-only', action='store_true', help='Validate resolved runtime/table compatibility without building or simulating')
+    parser.add_argument('--require-qualified-policy', action='store_true')
+    parser.add_argument('--allow-unqualified-policy', action='store_true', help='Explicit functional diagnostic only')
     parser.add_argument("--policy-cost-table", type=Path)
+    parser.add_argument("--queued-shrink", choices=("hold", "switch"))
     args = parser.parse_args(); base = json.loads((PROJECT / f"configs/phase{args.phase}.json").read_text()); pins = json.loads((PROJECT / "results/setup/source-pins.json").read_text())
+    if args.calibration_cap is not None:
+        if args.phase != 4 or args.mode not in ('B1','B2') or not args.power_model or args.target != 'z1':
+            parser.error('Calibration cap requires static Phase 4 B1/B2 Z1 power-model run')
+        base['calibration_cap'] = args.calibration_cap
     if args.phase == 5:
-        base["policy_repair_version"] = 1
+        base["policy_repair_version"] = 2
+        base["policy_scope"] = "cost-aware with measured eight-interval traffic; residual-aware P1 ranking unvalidated"
         base["policy_calibration_status"] = "unavailable_fallback_or_configured_default"
         if args.policy_cost_table:
             table = json.loads(args.policy_cost_table.read_text())
@@ -415,6 +454,7 @@ def main():
     if args.mode not in ("both", "all") and args.mode not in base["modes"]: parser.error("mode does not belong to selected phase")
     if args.timeout_seconds < 1: parser.error("timeout must be positive")
     base["phase"] = args.phase
+    base["capture_contract"] = "initial_log_event_included_v2"
     base["radio_off_until_ms"] = args.radio_off_until_ms
     base["cpu_work_iterations"] = args.cpu_work_iterations
     if not 0<=args.radio_off_until_ms<60000 or not 0<=args.cpu_work_iterations<=10000: parser.error("invalid controlled energy workload")
@@ -435,6 +475,8 @@ def main():
     base["energy_sample_ms"] = args.energy_sample_ms
     base["deplete_node"] = args.deplete_node
     base["bottleneck"] = args.bottleneck
+    base["topology"] = args.topology
+    validate_layout(args.clients, args.topology, args.target, args.bottleneck)
     if args.power_model:
         base["power_model"] = json.loads((PROJECT/"configs/power-z1-v1.json").read_text())
         base["energy_budget_nj"] = args.energy_budget_nj if args.energy_budget_nj is not None else 2**64-1
@@ -453,12 +495,20 @@ def main():
     base["purpose"] = "profile_return" if args.switch_test else "security" if tests or args.critical_reading else "lifetime" if base.get("lifetime") else "functional"
     if args.switch_test and (args.phase != 4 or args.mode not in ("B1", "B2") or args.attack_test or args.root_reset_test):
         parser.error("switch test requires Phase 4 B1/B2 without attack/reset")
+    if args.queued_shrink:
+        if (args.phase != 5 or args.mode != "P1" or args.target != "z1"
+                or args.clients != 2 or not args.power_model or base["lifetime"]
+                or tests or args.middle_period_ms is not None or args.policy_cost_table
+                or args.period_ms != 500 or args.readings != 12):
+            parser.error("Queued shrink requires three Z1 motes, P1, power model and 12 readings at 500 ms")
+        base["queued_shrink"] = args.queued_shrink
+        base["purpose"] = "queued_shrink_measurement"
     if args.readings is not None:
         base["readings_per_sensor"] = args.readings
     if args.seed is not None:
         if args.seed < 0: parser.error("seed must be nonnegative")
         base["seed"] = args.seed
-    base["flush_lead_ms"] = 125 if args.phase==4 and args.target=="z1" else 0
+    base["flush_lead_ms"] = 125 if args.phase in (4, 5) and args.target=="z1" else 0
     base["target"] = args.target
     base["backend"] = args.backend
     base["gui_mode"] = getattr(args, "gui", False)
@@ -477,7 +527,40 @@ def main():
     if args.attack_test:
         if args.phase not in (3, 4, 5) or args.mode not in ("B1", "B2", "B3", "B6", "P1") or args.clients < 2: parser.error("attack test requires a protected mode and at least 2 clients")
         base["attack_test"] = 1
+    if args.calibration_cap is not None:
+        if base['purpose'] != 'functional': parser.error('Calibration cannot include fixtures or lifetime')
+        base['purpose'] = 'calibration'
     override = {key: val for key,val in [("period_ms", args.period_ms), ("payload_budget", args.payload_budget)] if val is not None}
+    if args.middle_period_ms is not None:
+        period = override.get("period_ms", base["period_ms"])
+        readings = base["readings_per_sensor"]
+        if (args.phase not in (4, 5) or args.target != "z1" or not args.power_model
+            or base["purpose"] not in ("functional", "calibration", "lifetime")
+            or not 27 <= readings <= 999 or readings % 3
+            or not 125 <= period <= 60000 or period % 125
+            or not 125 <= args.middle_period_ms <= 60000 or args.middle_period_ms % 125):
+            parser.error("Middle interval requires a Z1 power-model workload with 27–999 readings divisible by three and 125 ms aligned periods")
+        base["middle_period_ms"] = args.middle_period_ms
+    if args.phase == 5 and args.policy_cost_table:
+        from calibration_contract import validate_table
+        resolved = dict(base); resolved.update(override)
+        try:
+            validate_table(table, resolved, args.clients)
+            base['policy_calibration_status'] = 'qualified'
+        except ValueError:
+            if args.require_qualified_policy or not args.allow_unqualified_policy: raise
+            base['policy_calibration_status'] = 'unqualified_functional_diagnostic'
+            if base.get('lifetime') or args.power_model or args.target != 'cooja': parser.error('Unqualified table is restricted to native functional diagnostics')
+    elif args.require_qualified_policy:
+        parser.error('Qualified policy requires a compatible --policy-cost-table')
+    if args.preflight_only:
+        from calibration_contract import context
+        resolved = dict(base); resolved.update(override)
+        print(json.dumps({'status':'preflight_passed', 'context':context(resolved,args.clients),
+                          'calibration_status':base.get('policy_calibration_status'),
+                          'policy_cost_sha256':base.get('policy_cost_sha256'),
+                          'build_executed':False, 'simulation_executed':False}, indent=2))
+        return
     def frozen_sources():
         return {str(p.relative_to(PROJECT)):digest(p) for folder in ("firmware","host","configs") for p in (PROJECT/folder).rglob("*") if p.is_file() and "build" not in p.parts and p.name!="generated-conf.h" and (p.suffix in (".c",".h",".py",".mk",".json") or p.name=="Makefile")}
     frozen = frozen_sources()

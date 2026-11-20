@@ -1,0 +1,124 @@
+"""Check archived matrix evidence and current-source static controls."""
+import hashlib
+import json
+import re
+from pathlib import Path
+
+from evidence import verify_artifacts
+from energy_reconcile import reconcile
+from metrics import summarize
+from parse_logs import parse
+
+out = Path(__file__).parent
+phase4 = Path('results/phase_04')
+journal = Path('phase_jouney/phase_04_environment_and_implementation.md')
+base = phase4 / 'validation-20261114T075313282538Z/manifest.json'
+
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def load(path):
+    return json.loads(path.read_text())
+
+def check_run(run_id):
+    directory = phase4 / run_id
+    manifest = load(directory / 'manifest.json')
+    summary = load(directory / 'summary.json')
+    hashes = verify_artifacts(directory, manifest)
+    if manifest['status'] != 'passed' or not hashes or set(hashes.values()) != {'OK'}:
+        raise ValueError((run_id, manifest['status'], hashes))
+    changed = []
+    for name, sha in manifest['source_hashes'].items():
+        path = directory / 'generated-conf.h' if name == 'firmware/generated-conf.h' else Path(name)
+        if not path.is_file() or digest(path) != sha:
+            changed.append(name)
+    return dict(run_id=run_id, mode=manifest['mode'], target=manifest['platform'],
+                seed=manifest['config']['seed'], hash_count=len(hashes), source_drift=changed,
+                authenticated=summary.get('unique_authenticated_delivered'),
+                lifetime=summary.get('lifetime'),
+                manifest_sha256=digest(directory / 'manifest.json'))
+
+def run_ids(log):
+    return re.findall(r'^passed .*?/results/phase_04/(\S+)', log.read_text(), re.M)
+
+def check_group(ids, count):
+    if len(set(ids)) != count:
+        raise ValueError((count, ids))
+    return [check_run(run_id) for run_id in ids]
+
+cases = []
+for number, case in enumerate(load(base)['cases'], 1):
+    path = Path(case['log'])
+    if digest(path) != case['log_sha256']:
+        raise ValueError(path)
+    rerun = phase4 / 'static-123458-rerun.log' if number == 27 else path
+    if number != 27 and case['status'] != 'passed':
+        raise ValueError(case)
+    cases.append(dict(number=number, name=case['name'], attempt=case,
+                      accepted_log=str(rerun), accepted_log_sha256=digest(rerun),
+                      runs=check_group(run_ids(rerun), 4 if number >= 25 else 1)))
+
+# The deferred-run IDs are indexed in timestamp order in the execution journal,
+# with the remaining all-mode lifetime arms indexed by the preserved run manifests.
+notes = journal.read_text().split('## Checkpoint: Phase 4 automated')[0]
+deferred = sorted(set(re.findall(r'20261116T\d+Z-B[1245]-2', notes)))
+specs = [
+    ('boundary--period-ms4000', deferred[:4]),
+    ('boundary--payload-budget47', deferred[4:8]),
+    ('depletion-sensitivity-125', deferred[8:9]),
+    ('depletion-sensitivity-250', deferred[9:10]),
+]
+for seed in (123456, 123457, 123458):
+    ids = []
+    for path in phase4.glob('20261116T*/manifest.json'):
+        manifest = load(path)
+        cfg = manifest['config']
+        if cfg.get('seed') == seed and cfg.get('warmup_ms') == 120000 and cfg.get('bottleneck'):
+            ids.append(manifest['run_id'])
+    specs.append((f'lifetime-{seed}', sorted(ids)))
+for number, (name, ids) in enumerate(specs, 29):
+    cases.append(dict(number=number, name=name, runs=check_group(ids, 1 if number in (31, 32) else 4)))
+
+for case in cases:
+    for run in case['runs']:
+        directory = phase4 / run['run_id']
+        manifest = load(directory / 'manifest.json')
+        archived = load(directory / 'summary.json')
+        config = dict(manifest['config'])
+        events, frames = parse(directory / 'COOJA.testlog', run['run_id'],
+                               profile=config['profile'], phase=4,
+                               schema=manifest['schema_version'])
+        sensors = list(range(2, manifest['clients'] + 2))
+        if config.get('power_model'):
+            config['energy_reconciliation'] = reconcile(
+                events, config, directory / 'energy_reconcile', [1, *sensors])
+        try:
+            replay = summarize(events, frames, config, sensors, manifest['effective_cap'])
+        except ValueError as exc:
+            run['semantic_replay'] = dict(events=len(events), frames=len(frames), error=str(exc))
+            continue
+        keys = ('generated', 'unique_authenticated_delivered', 'packets_submitted',
+                'max_hold_ms', 'batch_counts', 'network_energy_nj', 'lifetime')
+        run['semantic_replay'] = dict(events=len(events), frames=len(frames),
+                                      matched=[key for key in keys if archived.get(key) == replay.get(key)],
+                                      differences={key: dict(archived=archived.get(key), replay=replay.get(key))
+                                                   for key in keys if archived.get(key) != replay.get(key)})
+        if config.get('lifetime'):
+            from mechanism_checks import depletion
+            try:
+                run['semantic_replay']['depletion'] = depletion(
+                    events, frames, config, config['energy_reconciliation'])
+            except ValueError as exc:
+                run['semantic_replay']['depletion_error'] = str(exc)
+
+current = check_group(run_ids(out / 'phase4-current-static.log'), 4)
+if any(run['source_drift'] for run in current):
+    raise ValueError('Current-source static run no longer matches the working source')
+report = dict(archived_cases=cases, archived_case_count=len(cases),
+              archived_runs=sum(len(case['runs']) for case in cases),
+              archived_hashes=sum(run['hash_count'] for case in cases for run in case['runs']),
+              current_static=current, current_source_full_matrix='pending',
+              human_review='pending', independent_reproduction='pending')
+(out / 'phase4-audit.json').write_text(json.dumps(report, indent=2) + '\n')
+print(f"Checked {report['archived_case_count']} archived cases, {report['archived_runs']} archived runs, "
+      f"{report['archived_hashes']} indexed artifact/binary hashes and {len(current)} fresh controls.")

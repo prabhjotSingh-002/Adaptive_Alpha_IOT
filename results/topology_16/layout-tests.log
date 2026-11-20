@@ -1,0 +1,8 @@
+test_invalid_combinations (test_topologies.TopologyTests.test_invalid_combinations) ... ok
+test_legacy_preserved (test_topologies.TopologyTests.test_legacy_preserved) ... ok
+test_radio_graphs (test_topologies.TopologyTests.test_radio_graphs) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.011s
+
+OK

@@ -1,7 +1,49 @@
 # Phase 4 — Detailed Implementation and Verification Report
 
-**Date:** 14 November 2026
-**Status:** Automated implementation complete; 7 matrix cases pending (documented in phase_04_leftover.md); human review and independent reproduction pending.
+**Original date:** 14 November 2026
+**Updated:** 17 November 2026
+**Status:** All 35 validation cases complete. Event-level review and artifact hash verification done. Human review and independent reproduction pending.
+
+## 17 November 2026 — Deferred cases closed and evidence verified
+
+All 7 previously deferred validation cases (cases 29–35) now have stored passed runs and have been reviewed at event level.
+
+### Event-level audit (22 deferred runs)
+Audit file: `results/phase_05/audit_17nov/phase4_deferred_event_audit.json`
+
+| Check | Result |
+|---|---|
+| Manifest status | 22/22 passed |
+| Artifact hashes | 209 checked, 0 mismatches |
+| Post-death TX from depleted node | 0 violations |
+| DEPLETED + REMOVED events in lifetime runs | Present in all 12 lifetime runs |
+| Survivor TX after depletion | Present — correct behavior (non-depleted nodes continue) |
+
+### Lifetime terminology (additive correction)
+- `crossing_ms` = first time service drops below threshold
+- `confirmation_ms` = service stays below for the full persistence window
+
+Earlier prose labelling `crossing_ms` as "functional failure confirmed" was imprecise. The stored summary fields correctly distinguish these; prose in earlier journal entries does not.
+
+Representative (B1 seed=123456): crossing at 164,000 ms, confirmed at 174,000 ms.
+
+### Case 29 — Boundary 4000 ms period
+B1/B2/B4/B5, 2 clients, native. All PDR=1.0. B4/B5 p95=3044 ms (deadline flush at slow rate). No fragmentation.
+
+### Case 30 — Boundary 47-byte payload
+B1/B2/B4/B5, 2 clients, native. All PDR=1.0. 47−11−16=20 bytes → 2 readings per batch (not 1 as earlier text stated). B4/B5 p95=1038 ms.
+
+### Cases 31–32 — Depletion sensitivity 125/250 ms sample
+B2 only, Z1, seed=223456, 9 J budget. PDR≈0.47–0.48. FND confirmed ~158–159 s. Sample interval does not affect delivery.
+
+### Cases 33–35 — Lifetime four-arm (seeds 123456/123457/123458)
+B1/B2/B4/B5, Z1, 9 J budget, bottleneck. `PAIRED_IDENTICAL_PROSPECTIVE_DEMAND_VERIFIED_ALIVE_PREFIXES` for all 3 seed groups. FND ~158 s all seeds. Functional service failure crossing ~163–165 s, confirmed ~173–175 s.
+
+### Open gates
+- G0 two-student independent review: **PENDING — human action required**
+- Phase 4 security/energy model human review: **PENDING**
+- Independent reproduction on clean machine: **PENDING**
+- Z1 binary stack safety (beyond msp430-size): **not independently verified**
 
 ---
 
@@ -143,3 +185,29 @@ Z1 application runs using default CC2420 hardware AES path (before `aes-backend.
 - Capability table structure — available in `firmware/crypto/boot_gate.h`.
 
 7 pending cases (boundary 4000ms, boundary 47-byte, 5 lifetime runs) are documented in `phase_04_leftover.md` and do not block Phase 5 implementation.
+
+
+## 17 November — items 1–3 closure
+
+Deadline harness and dashboard/evidence repairs pass 108 production-C/Python tests in the pinned container. Final-source Z1 calibration completed **six cells for 3 nodes and six for 9 nodes**, independently. Both schema-v1 tables qualify; **144 artifact/binary hashes matched**. Point-estimate B6 selection is Ascon for 3 nodes, AES for 9 nodes; n=1/cell, no superiority claim. Required cap-2 measurements are present, actual batch occupancy retained, and runtime/source/model/dependency compatibility enforced. Actual CLI rejects 3-node-to-9-node transfer before build. Evidence and complete run table: phase_jouney/final2x_phase_01.md and results/phase_05/repairs_17nov/calibration-acceptance.json. Usage: docs/calibration-v1.md.
+
+Earlier source cohorts and failures remain preserved. User deferred items 4–5: no policy/queue firmware repair or adaptive/security/depletion mechanism validation was performed in this package. Browser visual review, full semantic Phase 4 acceptance, human review and independent reproduction remain pending. No corrected-campaign restart or Phase 6 execution. Stopped at this bounded checkpoint.
+
+
+## 17 November — authorized items 4–5 bounded mechanism checkpoint
+
+Shared-C policy/queue safety, measured own-generation rate, cap-shrink chunking, initial-event capture and uniform Z1 125-ms flush-lead fixes were implemented. **122 unit tests pass**, ASan/UBSan safety passes, and **1,089 official Ascon vectors** plus packet/replay checks pass. Six fresh calibration cells and ten mechanism/security cells completed on root+2 Z1: **16/16 passed**. Raw reanalysis checked **44,020 events / 190 artifact+binary hashes**.
+
+Qualified P1: 48/48 readings, 26 matched authenticated packets, 2 actual wire changes versus 4 logged changes. Frozen 4.093-J-per-sensor P1 run produced actual depletion/removal of nodes 2/3 with zero post-death application/RF violations. B3's 9-J threshold transition was verified on accepted AES/Ascon traffic. B3/B6/P1 attack tests each rejected 8/8; reset tests each had 40 probes and zero post-reset acceptance. Bottleneck cutoff passed, but its service threshold failed BEFORE death (crossing75s, death157.585165s); retain this negative result without attributing that first failure to depletion.
+
+Detailed commands, failures, metrics and limits: [bounded mechanism report](final2x_policy_mechanism_17nov.md); evidence `results/phase_05/mechanism_17nov/`. Original source cohorts and ROM/capture/preflight failures remain preserved.
+
+**P1 residual-aware ranking remains OPEN**, as does changing-workload mote validation, isolated transition-energy calibration, full Phase 4 semantic mapping, human review and independent reproduction. Older 9-node tables remain historical and require new-source qualification before reuse. This bounded checkpoint does not close the full 2X phase. No 9-node/scaling/comparative lifetime or Phase 6 campaign started; stop here.
+
+## 20 November — reproducible evidence review
+
+The [2X Phase 3 checkpoint](final2x_phase_03_evidence_20261120.md) links all 35 archived cases to hash-checked runs and current semantic replay. Four fresh static controls verify ordinary current-source Z1 operation at one seed. Full current-source matrix coverage, independent reproduction and human acceptance remain pending.
+
+The targeted current-source refresh passed the idle/listen, controlled CPU load, 500 ms, 4000 ms and 47-byte cases. [Run and hash ledger](../results/phase_05/z1-closure-20261120/targeted-phase4-verify.json)
+
+The current-source cutoff evidence now includes both sampler settings. Both runs verified the upstream parent path, downstream authentication before removal, zero downstream authentication after removal, and exact production-C final energy reconciliation. [Cutoff audit](final2x_z1_ranking_diagnosis_20261120.md#current-source-phase-4-sampling-and-cutoff)

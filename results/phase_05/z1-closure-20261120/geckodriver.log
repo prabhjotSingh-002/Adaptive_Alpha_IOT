@@ -1,0 +1,20 @@
+1795121111555	geckodriver	INFO	Listening on 127.0.0.1:4445
+1795121111693	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/snap/firefox/current/usr/lib/firefox/firefox" "--marionette" "-headless" "-no-remote" "-profile" "/tmp/rust_mozprofileY6yHA3"
+*** You are running in headless mode.
+1795121112799	Marionette	INFO	Marionette enabled
+1795121113034	Marionette	INFO	Listening on port 37625
+Read port: 37625
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: RSLoader: Recipe new-tab-159120261002163917-to-release-157 not returned from collection nimbus-secure-experiments because it does not contain at least one required feature ID.
+console.warn: RSLoader: Recipe new-tab-160020261011195215-to-release-158 not returned from collection nimbus-secure-experiments because it does not contain at least one required feature ID.
+console.warn: RSLoader: Recipe new-tab-160220261016183914-to-release-158 not returned from collection nimbus-secure-experiments because it does not contain at least one required feature ID.
+console.warn: RSLoader: Recipe new-tab-train-hop-160420261021190336-to-release-159 not returned from collection nimbus-secure-experiments because it does not contain at least one required feature ID.
+console.warn: RSLoader: Recipe new-tab-train-hop-161020261102193311-to-release-15901 not returned from collection nimbus-secure-experiments because it does not contain at least one required feature ID.
+console.warn: RSLoader: Recipe new-tab-train-hop-16212026111830642-to-release-160 not returned from collection nimbus-secure-experiments because it does not contain at least one required feature ID.
+console.error: "Experiment desktop-release-rollout-show-relay-to-all-browsers-next-sign-up-modal-cta has unknown featureId: email-autocomplete-relay"
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: "Experiment enable-nimbus-unenrollment-synchronization has unknown featureId: nimbusStore"
+console.error: "Experiment private-window-visual-refresh-design-change-only has unknown featureId: feltPrivacy"
+1795121126647	Marionette	INFO	Stopped listening on port 37625
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 50: TypeError: can't access property "QueryInterface", aWindow.docShell is null
+1795121128034	webdriver::server	INFO	Shutting down

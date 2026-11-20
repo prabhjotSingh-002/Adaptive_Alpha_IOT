@@ -1,0 +1,18 @@
+{
+  "scope": "radio-off fixed-cap P1 decision and application; modeled CPU increment",
+  "unit": "nJ per decision",
+  "pairs_per_direction": 32,
+  "repetitions_per_window": 16,
+  "directions": {
+    "Ascon to AES": {
+      "median": 7017.51708984375,
+      "min": 6993.4844970703125,
+      "max": 7041.5496826171875
+    },
+    "AES to Ascon": {
+      "median": 7017.51708984375,
+      "min": 6993.4844970703125,
+      "max": 7041.5496826171875
+    }
+  }
+}

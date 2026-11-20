@@ -1,4 +1,5 @@
 """Only source of final Phase 2 diagnostic metrics; no authenticated claims."""
+from demand_schedule import run_horizon_ms
 import math
 
 def percentile(values, fraction):
@@ -31,11 +32,14 @@ def radio_summary(frames):
 def summarize(events, frames, config, clients, cap):
     generated, transmitted, dropped, delivered = {}, set(), set(), {}
     policy_timing = []
+    measured_features = []
     policy_state = {}
     packets = {}; done = set(); ready = set(); duplicates = 0
     profile = config.get("profile", 0)
     if profile not in (0, 1, 2): raise ValueError("Unsupported profile")
     cipher = {0: "N0", 1: "AES-128-CCM", 2: "Ascon-AEAD128"}[profile]
+    if config.get('dual_profile') and config.get('mode_policy',{}).get(config.get('mode'),0):
+        cipher = 'dual-profile AEAD (AES-128-CCM / Ascon-AEAD128)'
     deceased = {}; removed = {}; stacks = {}
     contexts = set(); root_ready = False
     metadata = set(); accepted_packets = set()
@@ -112,6 +116,10 @@ def summarize(events, frames, config, clients, cap):
             key = (node, e["reading_id"])
             if key in dropped: raise ValueError("Repeated drop")
             dropped.add(key)
+        if kind == 'FEATURE':
+            if config.get('phase') != 5 or node not in clients or not 0 <= e['rate_hz_x100'] <= 65535 or not 0 <= e['samples'] <= 8 or not 0 <= e['age_ms'] <= 2**32-1:
+                raise ValueError('Invalid measured traffic feature')
+            measured_features.append(e)
         if kind == "POLICY_TIME":
             if config.get('phase') != 5 or node not in clients or e['ticks'] < 0 or e['frequency'] <= 0:
                 raise ValueError('Invalid policy timing')
@@ -151,7 +159,7 @@ def summarize(events, frames, config, clients, cap):
     if config.get("sensor_reset_test"): planned={key for key in planned if key[0]!=2 or key[1]==1}
     expected = set(generated) if config.get("lifetime") else planned
     if config.get("lifetime"):
-        horizon=(config["warmup_ms"] + config["period_ms"]*config["readings_per_sensor"] + config["deadline_ms"] + config["drain_ms"])*1000
+        horizon=run_horizon_ms(config) * 1000
         for node in clients:
             if node not in deceased and node in energy_last and horizon-energy_last[node][0] > 2000000:
                 raise ValueError("Missing survivor final telemetry")
@@ -252,4 +260,4 @@ def summarize(events, frames, config, clients, cap):
         lifetime = lifetime_summary(events,config,clients,deceased,planned,delivered)
     network_energy = sum(v["total_nj"] for k,v in config.get("energy_reconciliation",{}).items() if int(k) in clients) if config.get("power_model") else None
     radio = radio_summary(frames)
-    return {"security": "dual-profile return security test" if config.get("switch_test") else (cipher + " security test" if any(config.get(k) for k in ("attack_test","root_reset_test","sensor_reset_test","provision_fault","radio_loss_test","reorder_test","critical_reading")) else cipher + " authenticated pilot") if profile in (1, 2) else "N0: unprotected diagnostic pilot", "network_energy_nj":network_energy, "energy_per_delivered_reading_nj":network_energy/len(delivered) if network_energy is not None and delivered else None, "energy_window":"boot_to_horizon_including_warmup_and_drain" if network_energy is not None else None, "lifetime": lifetime, "stack_max_usage": stacks, "energy_measurement": {"scope":"component_model" if config.get("power_model") else "raw_counters_only", "model_validated":bool(config.get("energy_reconciliation")), "reconciliation":config.get("energy_reconciliation"), "samples":energy_samples} if config.get("energy_telemetry") else None, "security_test_injections": len(injections), "security_test_rejections": len(rejects), "rejection_reasons": rejection_reasons, "unique_authenticated_delivered": len(delivered) if profile in (1, 2) else 0, "generated": len(generated), "submitted_readings": len(transmitted), "explicit_drops": len(dropped), "unique_delivered": len(delivered), "missing_readings": len(expected - set(delivered)), "packets_submitted": len(packets), "packets_accepted": len(accepted_packets) if schema == 2 else None, "packet_pdr": len(accepted_packets) / len(packets) if schema == 2 and packets else None, "application_packet_bytes": sum(e["bytes"] for e in packets.values()), "reading_pdr": len(delivered) / len(expected) if expected else None, "p95_delay_ms": percentile(delays, .95), "max_hold_ms": max((p["hold_ms"] for p in packets.values()), default=0), "duplicates": duplicates, "batch_counts": sorted({p["count"] for p in packets.values()}), "radio": radio, "policy": {"total_policy_ticks": len(policy_actions), "decision_and_apply_seconds":sum(policy_timing) if policy_timing else None, "timing_samples":len(policy_timing), "total_switches": len(policy_switches), "switch_reasons": {str(e["reason"]): sum(1 for s in policy_switches if s["reason"]==e["reason"]) for e in policy_switches}, "profiles_used": sorted({e["profile"] for e in policy_actions}), "caps_used": sorted({e["cap"] for e in policy_actions})} if policy_actions else None}
+    return {"security": "dual-profile return security test" if config.get("switch_test") else (cipher + " security test" if any(config.get(k) for k in ("attack_test","root_reset_test","sensor_reset_test","provision_fault","radio_loss_test","reorder_test","critical_reading")) else cipher + " authenticated pilot") if profile in (1, 2) else "N0: unprotected diagnostic pilot", "network_energy_nj":network_energy, "energy_per_delivered_reading_nj":network_energy/len(delivered) if network_energy is not None and delivered else None, "energy_window":"boot_to_horizon_including_warmup_and_drain" if network_energy is not None else None, "lifetime": lifetime, "stack_max_usage": stacks, "energy_measurement": {"scope":"component_model" if config.get("power_model") else "raw_counters_only", "model_validated":bool(config.get("energy_reconciliation")), "reconciliation":config.get("energy_reconciliation"), "samples":energy_samples} if config.get("energy_telemetry") else None, "security_test_injections": len(injections), "security_test_rejections": len(rejects), "rejection_reasons": rejection_reasons, "unique_authenticated_delivered": len(delivered) if profile in (1, 2) else 0, "generated": len(generated), "submitted_readings": len(transmitted), "explicit_drops": len(dropped), "unique_delivered": len(delivered), "missing_readings": len(expected - set(delivered)), "packets_submitted": len(packets), "packets_accepted": len(accepted_packets) if schema == 2 else None, "packet_pdr": len(accepted_packets) / len(packets) if schema == 2 and packets else None, "application_packet_bytes": sum(e["bytes"] for e in packets.values()), "reading_pdr": len(delivered) / len(expected) if expected else None, "p95_delay_ms": percentile(delays, .95), "max_hold_ms": max((p["hold_ms"] for p in packets.values()), default=0), "duplicates": duplicates, "batch_counts": sorted({p["count"] for p in packets.values()}), "radio": radio, "policy": {"total_policy_ticks": len(policy_actions), "measured_feature_events":len(measured_features), "profile_changes":sum(e["old_profile"]!=e["new_profile"] for e in policy_switches), "cap_changes":sum(e["old_cap"]!=e["new_cap"] for e in policy_switches), "startup_assignments":len({e["node_id"] for e in policy_actions}), "fallback_actions":sum(e["reason"] in (1,9,10) for e in policy_actions), "decision_and_apply_seconds":sum(policy_timing) if policy_timing else None, "timing_samples":len(policy_timing), "total_switches": len(policy_switches), "switch_reasons": {str(e["reason"]): sum(1 for s in policy_switches if s["reason"]==e["reason"]) for e in policy_switches}, "profiles_used": sorted({e["profile"] for e in policy_actions}), "caps_used": sorted({e["cap"] for e in policy_actions})} if policy_actions else None}

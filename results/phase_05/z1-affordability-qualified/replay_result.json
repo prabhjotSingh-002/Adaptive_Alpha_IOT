@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "changing_pass": false,
+  "finite_pass": true,
+  "scores": {
+    "cases": 294,
+    "exact": 242,
+    "false_affordable_actions": 31,
+    "one_fit_cases": 20,
+    "one_fit_exact": 0
+  },
+  "exact_percentage": 82.31292517006803,
+  "one_fit_percentage": 0.0,
+  "finite_false_affordable": 0,
+  "finite_crossings_count": {
+    "B1/2": 3,
+    "B1/3": 3,
+    "B2/2": 3,
+    "B2/3": 3
+  },
+  "calibration_sha256": "610ac86c2dbff62d5e2be7384993220f8dd8d508579e9f1125e5ab9a3442176b"
+}

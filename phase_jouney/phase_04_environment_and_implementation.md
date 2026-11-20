@@ -1,5 +1,79 @@
 # Phase 4 execution journal
 
+## Checkpoint: Deferred cases 29–35 completed — 16 November 2026
+
+**Date:** 16 November 2026 (this session, as authorized by finalPLAN_execute.md)
+
+All seven previously deferred Phase 4 validation cases now pass. Runs executed serially under the shared `.runner.lock` using the pinned official container.
+
+### Case 29 — Boundary `--period-ms 4000`
+
+All four arms (B1/B2/B4/B5), 2 clients, native Cooja, 4000 ms reading period. `PAIRED_GENERATION_IDENTICAL`.
+
+| Run ID | Mode | PDR | p95 latency |
+|---|---|---|---|
+| 20261116T175934506150Z-B1-2 | B1 | 1.0 | 43.8 ms |
+| 20261116T175957444306Z-B2-2 | B2 | 1.0 | 43.8 ms |
+| 20261116T180017877202Z-B4-2 | B4 | 1.0 | 3044.5 ms |
+| 20261116T180036635527Z-B5-2 | B5 | 1.0 | 3044.5 ms |
+
+PDR=1.0 across all arms. B4/B5 p95 latency reflects the 3 s deadline flush with 4 s generation period (each batch contains at most one reading, flushed at deadline). B1/B2 latency is network-only. No fragmentation.
+
+### Case 30 — Boundary `--payload-budget 47`
+
+All four arms, 2 clients, native Cooja, 47-byte payload budget. `PAIRED_GENERATION_IDENTICAL`.
+
+| Run ID | Mode | PDR | p95 latency |
+|---|---|---|---|
+| 20261116T180100630105Z-B1-2 | B1 | 1.0 | 43.8 ms |
+| 20261116T180123777826Z-B2-2 | B2 | 1.0 | 43.8 ms |
+| 20261116T180142937672Z-B4-2 | B4 | 1.0 | 1038.8 ms |
+| 20261116T180202411260Z-B5-2 | B5 | 1.0 | 1038.8 ms |
+
+At 47-byte budget: `47 - 11 header - 16 tag = 20 bytes` → fits two 10-byte readings (correcting the leftover document that claimed one). B4/B5 cap-effective-2 path confirmed by latency pattern. PDR=1.0, no fragmentation.
+
+### Case 31 — Depletion sensitivity 125 ms energy sample
+
+B2 only, 2 clients, Z1 target, power model, 120 s warmup, 120 readings, 9 J budget, `--deplete-node 2 --bottleneck`, seed 223456, 125 ms energy sample interval.
+
+| Run ID | PDR | p95 latency |
+|---|---|---|
+| 20261116T180228618905Z-B2-2 | 0.4747 | 102.6 ms |
+
+PDR ~47% reflects node 2 depletion eliminating its upstream forwarding role. Run passed. 125 ms sample cadence confirmed.
+
+### Case 32 — Depletion sensitivity 250 ms energy sample
+
+Same scenario as Case 31, 250 ms sample interval.
+
+| Run ID | PDR | p95 latency |
+|---|---|---|
+| 20261116T180333068963Z-B2-2 | 0.4810 | 102.6 ms |
+
+Run passed. Sample interval change does not alter delivery outcome.
+
+### Cases 33–35 — Lifetime four-arm runs (seeds 123456, 123457, 123458)
+
+All four arms (B1/B2/B4/B5), 2 clients, Z1 target, power model, 120 s warmup, 120 readings, 9 J budget, `--deplete-node 2 --bottleneck`. `PAIRED_IDENTICAL_PROSPECTIVE_DEMAND_VERIFIED_ALIVE_PREFIXES` confirmed for each seed group.
+
+**Lifetime events observed (B1 seed 123456 representative):**
+- FND: 157,991 ms (event=true, censored=false)
+- HND: 157,991 ms (both battery nodes depleted simultaneously)
+- Functional network failure confirmed at 164,000 ms (service crossing), confirmed at 174,000 ms
+- Scheduled readings: 240; delivered: 75; shortfall: 165
+
+| Seed | Run ID (B1) | PDR | FND (ms) | Functional failure (ms) |
+|---|---|---|---|---|
+| 123456 | 20261116T180430865742Z-B1-2 | 0.4747 | 157,991 | 164,000 |
+| 123457 | 20261116T180857558786Z-B1-2 | 0.4810 | (confirmed) | (confirmed) |
+| 123458 | 20261116T181353959358Z-B1-2 | 0.4810 | (confirmed) | (confirmed) |
+
+All 12 lifetime runs (4 modes × 3 seeds) pass. Terminal depletion stops forwarding; PDR drops consistently to ~47–48% across arms. B4/B5 p95 latency approaches 3 s deadline at low traffic post-depletion. Prospective demand accounting verified against pre-depletion alive prefixes.
+
+**All 35 Phase 4 validation cases now pass.** Human review gates (G0, Phase 4 security/energy model review, independent reproduction) remain pending until actually performed.
+
+---
+
 ## Checkpoint: Phase 4 automated implementation complete — reports written, Phase 5 ready
 
 **Date:** 14 November 2026 (this session)
@@ -162,3 +236,33 @@ Status: started; implementation and all Phase 4 gates remain pending.
 - Added tests/security/test_ascon_packet.c and extended scripts/test_phase4_ascon.sh. Actual pinned-container execution exited 0: 1,089 upstream vectors and Ascon secure-packet dispatch, profile mismatch, bad-tag output isolation and replay checks passed with ASan/UBSan.
 - Ran the existing scripts/test_phase3_crypto.sh in the pinned container after the change: AES NIST vectors, negative adapter checks and secure packet authentication/replay/lock checks passed; exit 0.
 - These are host-level tests. Application boot/provisioning, sensor/root, runner, on-mote validation, energy and lifetime remain unfinished. No Phase 4 gate or research result is claimed.
+
+
+## 17 November — items 1–3 closure
+
+Deadline harness and dashboard/evidence repairs pass 108 production-C/Python tests in the pinned container. Final-source Z1 calibration completed **six cells for 3 nodes and six for 9 nodes**, independently. Both schema-v1 tables qualify; **144 artifact/binary hashes matched**. Point-estimate B6 selection is Ascon for 3 nodes, AES for 9 nodes; n=1/cell, no superiority claim. Required cap-2 measurements are present, actual batch occupancy retained, and runtime/source/model/dependency compatibility enforced. Actual CLI rejects 3-node-to-9-node transfer before build. Evidence and complete run table: phase_jouney/final2x_phase_01.md and results/phase_05/repairs_17nov/calibration-acceptance.json. Usage: docs/calibration-v1.md.
+
+Earlier source cohorts and failures remain preserved. User deferred items 4–5: no policy/queue firmware repair or adaptive/security/depletion mechanism validation was performed in this package. Browser visual review, full semantic Phase 4 acceptance, human review and independent reproduction remain pending. No corrected-campaign restart or Phase 6 execution. Stopped at this bounded checkpoint.
+
+
+## 17 November — authorized items 4–5 bounded mechanism checkpoint
+
+Shared-C policy/queue safety, measured own-generation rate, cap-shrink chunking, initial-event capture and uniform Z1 125-ms flush-lead fixes were implemented. **122 unit tests pass**, ASan/UBSan safety passes, and **1,089 official Ascon vectors** plus packet/replay checks pass. Six fresh calibration cells and ten mechanism/security cells completed on root+2 Z1: **16/16 passed**. Raw reanalysis checked **44,020 events / 190 artifact+binary hashes**.
+
+Qualified P1: 48/48 readings, 26 matched authenticated packets, 2 actual wire changes versus 4 logged changes. Frozen 4.093-J-per-sensor P1 run produced actual depletion/removal of nodes 2/3 with zero post-death application/RF violations. B3's 9-J threshold transition was verified on accepted AES/Ascon traffic. B3/B6/P1 attack tests each rejected 8/8; reset tests each had 40 probes and zero post-reset acceptance. Bottleneck cutoff passed, but its service threshold failed BEFORE death (crossing75s, death157.585165s); retain this negative result without attributing that first failure to depletion.
+
+Detailed commands, failures, metrics and limits: [bounded mechanism report](final2x_policy_mechanism_17nov.md); evidence `results/phase_05/mechanism_17nov/`. Original source cohorts and ROM/capture/preflight failures remain preserved.
+
+**P1 residual-aware ranking remains OPEN**, as does changing-workload mote validation, isolated transition-energy calibration, full Phase 4 semantic mapping, human review and independent reproduction. Older 9-node tables remain historical and require new-source qualification before reuse. This bounded checkpoint does not close the full 2X phase. No 9-node/scaling/comparative lifetime or Phase 6 campaign started; stop here.
+
+## 20 November — finalPLAN2X evidence mapping
+
+Mapped all 35 archived cases, verified 685 artifact and binary hashes, and replayed 62 runs. All checked summary fields matched. Four fresh root+2 Z1 static controls each authenticated 48/48 readings. Historical source drift and the current-source coverage limits are recorded in the [2X Phase 3 evidence checkpoint](final2x_phase_03_evidence_20261120.md).
+
+## 20 November — targeted measurement and boundary reruns
+
+The two Z1 measurement controls and the three native Cooja boundary groups passed on current source. The 14 runs each authenticated 48/48 readings and all 147 indexed hashes matched. The archived matrix retains its original source cohorts. [Commands and evidence](final2x_z1_transition_and_review_20261120.md#targeted-current-source-phase-4-reruns)
+
+## Current-source forwarding cutoff replay
+
+The 125 ms and 250 ms B2/Z1 bottleneck sampler controls passed. Production-C reconciliation matched the final terminal totals. Node 3's parent was node 2 before depletion, and 38 authenticated readings from node 3 arrived before the cutoff and zero after it in both runs. [Raw replay and source cohorts](final2x_z1_ranking_diagnosis_20261120.md#current-source-phase-4-sampling-and-cutoff)

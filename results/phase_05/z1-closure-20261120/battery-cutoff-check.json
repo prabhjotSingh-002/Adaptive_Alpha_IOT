@@ -1,0 +1,129 @@
+{
+  "scope": "retrospective chosen-action cutoff diagnostic, overlapping windows",
+  "manifest_sha256": "fe4f63a05ec4e51e1e76cff517a1ce2e7df9725201f9e8af4cac81134d1c9232",
+  "forecast_sha256": "168d0b30be207fcd4f3c136373d9045487f43cf3b752bc54620a0794f400c8b5",
+  "rows": [
+    {
+      "node": 2,
+      "start_us": 67579289,
+      "removal_us": 71462851,
+      "action": [
+        2,
+        2
+      ],
+      "rate_hz_x100": 100,
+      "residual_nj": 220637320,
+      "predicted_nj": 115393369.77438848,
+      "predicted_affordable": true,
+      "survived_horizon": true,
+      "correct": true
+    },
+    {
+      "node": 2,
+      "start_us": 68579290,
+      "removal_us": 71462851,
+      "action": [
+        2,
+        2
+      ],
+      "rate_hz_x100": 100,
+      "residual_nj": 161686227,
+      "predicted_nj": 115393369.77438848,
+      "predicted_affordable": true,
+      "survived_horizon": true,
+      "correct": true
+    },
+    {
+      "node": 2,
+      "start_us": 69579289,
+      "removal_us": 71462851,
+      "action": [
+        2,
+        2
+      ],
+      "rate_hz_x100": 100,
+      "residual_nj": 103045214,
+      "predicted_nj": 115393369.77438848,
+      "predicted_affordable": false,
+      "survived_horizon": false,
+      "correct": true
+    },
+    {
+      "node": 2,
+      "start_us": 70578651,
+      "removal_us": 71462851,
+      "action": [
+        2,
+        2
+      ],
+      "rate_hz_x100": 100,
+      "residual_nj": 44172014,
+      "predicted_nj": 115393369.77438848,
+      "predicted_affordable": false,
+      "survived_horizon": false,
+      "correct": true
+    },
+    {
+      "node": 3,
+      "start_us": 68242439,
+      "removal_us": 72126066,
+      "action": [
+        2,
+        2
+      ],
+      "rate_hz_x100": 100,
+      "residual_nj": 220471685,
+      "predicted_nj": 115397072.00023869,
+      "predicted_affordable": true,
+      "survived_horizon": true,
+      "correct": true
+    },
+    {
+      "node": 3,
+      "start_us": 69242509,
+      "removal_us": 72126066,
+      "action": [
+        2,
+        2
+      ],
+      "rate_hz_x100": 100,
+      "residual_nj": 161529817,
+      "predicted_nj": 115397072.00023869,
+      "predicted_affordable": true,
+      "survived_horizon": true,
+      "correct": true
+    },
+    {
+      "node": 3,
+      "start_us": 70242509,
+      "removal_us": 72126066,
+      "action": [
+        2,
+        2
+      ],
+      "rate_hz_x100": 100,
+      "residual_nj": 102904949,
+      "predicted_nj": 115397072.00023869,
+      "predicted_affordable": false,
+      "survived_horizon": false,
+      "correct": true
+    },
+    {
+      "node": 3,
+      "start_us": 71241798,
+      "removal_us": 72126066,
+      "action": [
+        2,
+        2
+      ],
+      "rate_hz_x100": 100,
+      "residual_nj": 44039967,
+      "predicted_nj": 115397072.00023869,
+      "predicted_affordable": false,
+      "survived_horizon": false,
+      "correct": true
+    }
+  ],
+  "observed_shortfall": 4,
+  "correct": 8
+}

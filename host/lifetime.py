@@ -1,8 +1,11 @@
 """Lifetime/service events over a fixed battery-node population and demand."""
 import math
 
+from demand_schedule import run_horizon_ms, scheduled_offsets_ms
+
 def lifetime_summary(events,config,clients,deceased,planned,delivered):
-    horizon=config['warmup_ms']+config['period_ms']*config['readings_per_sensor']+config['deadline_ms']+config['drain_ms']
+    horizon = run_horizon_ms(config)
+    generation_offsets, _ = scheduled_offsets_ms(config)
     deaths=sorted(e['sim_time_ms'] for e in deceased.values())
     def event_at(index):
         return {'event':len(deaths)>=index,'time_ms':deaths[index-1] if len(deaths)>=index else horizon,'censored':len(deaths)<index}
@@ -13,7 +16,8 @@ def lifetime_summary(events,config,clients,deceased,planned,delivered):
         e=schedules[n]
         if (e['warmup_ms'],e['period_ms'],e['total'])!=(config['warmup_ms'],config['period_ms'],config['readings_per_sensor']): raise ValueError('Demand mismatch')
         offset=e['sim_time_ms']-e['local_ms']
-        demand.extend(((n,r),offset+config['warmup_ms']+(r-1)*config['period_ms']) for r in range(1,e['total']+1))
+        demand.extend(((n, reading), offset + created)
+                      for reading, created in enumerate(generation_offsets, 1))
     # Frozen engineering service definition: 10s cohort, 5s delivery bound,
     # <95% service persisting for 10s, evaluated at 1s resolution.
     crossing=None; confirmed=None; observed_crossing=None

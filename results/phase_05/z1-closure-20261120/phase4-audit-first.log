@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_05/z1-closure-20261120/phase4-audit.txt", line 78, in <module>
+    raise ValueError('Current-source static run no longer matches the working source')
+ValueError: Current-source static run no longer matches the working source

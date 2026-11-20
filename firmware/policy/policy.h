@@ -3,6 +3,18 @@
 #include <stdint.h>
 #include <stdbool.h>
 
+#define LAB_RATE_WINDOW 8u
+/* Measured own-generation intervals. Zero rate means startup/stale/unavailable. */
+typedef struct {
+    uint32_t intervals[LAB_RATE_WINDOW];
+    uint64_t sum_ms;
+    uint32_t last_ms;
+    uint8_t count, next;
+    bool seen;
+} lab_rate_estimator;
+void lab_rate_observe(lab_rate_estimator *s, uint32_t now_ms);
+uint16_t lab_rate_get(const lab_rate_estimator *s, uint32_t now_ms);
+
 /* Policy mode identifiers — written into LAB_POLICY_MODE by runner. */
 #define LAB_POLICY_STATIC 0u  /* B1/B2/B4/B5: no policy, sensor uses fixed profile/cap */
 #define LAB_POLICY_B3     1u  /* Battery-threshold cipher switch, fixed cap 1 */
@@ -21,6 +33,7 @@
 #define LAB_POL_P1_NOSAVE    8u  /* P1: saving < transition cost + margin */
 #define LAB_POL_NO_FEASIBLE  9u  /* No feasible action found, fallback */
 #define LAB_POL_DEPLETED    10u  /* Context depleted/locked */
+#define LAB_POL_P1_BATTERY  11u  /* P1: battery-preserving affordable action */
 
 /* Sensor-observable features passed to every policy tick. */
 typedef struct {

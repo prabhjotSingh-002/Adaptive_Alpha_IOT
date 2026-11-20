@@ -1,0 +1,4019 @@
+{
+  "archived_cases": [
+    {
+      "number": 1,
+      "name": "B1--attack-test",
+      "attempt": {
+        "name": "B1--attack-test",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B1",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--attack-test"
+        ],
+        "started": "2026-11-14T07:53:13.285973+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/01-B1--attack-test.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T07:53:47.060874+00:00",
+        "log_sha256": "37c76556c3144ece40e5fed07961e0675b5161264f8301f21b5c0a8ec73c0e72"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/01-B1--attack-test.log",
+      "accepted_log_sha256": "37c76556c3144ece40e5fed07961e0675b5161264f8301f21b5c0a8ec73c0e72",
+      "runs": [
+        {
+          "run_id": "20261114T075313618519Z-B1-2",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 47,
+          "lifetime": null,
+          "manifest_sha256": "459a5cacfbe37ffd7f7de7b6ddec63ffcccfa2242fa9e614909ecd96a963314a",
+          "semantic_replay": {
+            "events": 222,
+            "frames": 150,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "name": "B1--root-reset-test",
+      "attempt": {
+        "name": "B1--root-reset-test",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B1",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--root-reset-test"
+        ],
+        "started": "2026-11-14T07:53:47.063653+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/02-B1--root-reset-test.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T07:54:21.532579+00:00",
+        "log_sha256": "c4bf2fa3fad3070d8df75985a43aebecb7028e9ef1c7779ec3203e1376e3b708"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/02-B1--root-reset-test.log",
+      "accepted_log_sha256": "c4bf2fa3fad3070d8df75985a43aebecb7028e9ef1c7779ec3203e1376e3b708",
+      "runs": [
+        {
+          "run_id": "20261114T075347477453Z-B1-2",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 1,
+          "lifetime": null,
+          "manifest_sha256": "c423b4775b325b1707a2da07c688c2e32f0d2d2f8bead4469d8856bd0280b8e2",
+          "semantic_replay": {
+            "events": 210,
+            "frames": 451,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "name": "B1--sensor-reset-test",
+      "attempt": {
+        "name": "B1--sensor-reset-test",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B1",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--sensor-reset-test"
+        ],
+        "started": "2026-11-14T07:54:21.532998+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/03-B1--sensor-reset-test.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T07:54:52.718506+00:00",
+        "log_sha256": "784348ad8edcad231e397a3a2315eba5ee96fc61e2d3f12492977a4ca7a17b63"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/03-B1--sensor-reset-test.log",
+      "accepted_log_sha256": "784348ad8edcad231e397a3a2315eba5ee96fc61e2d3f12492977a4ca7a17b63",
+      "runs": [
+        {
+          "run_id": "20261114T075421781311Z-B1-2",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 25,
+          "lifetime": null,
+          "manifest_sha256": "68944003ebc8655576ac9c6d834aa3409416743e818adaa29146a69c51e1689b",
+          "semantic_replay": {
+            "events": 119,
+            "frames": 87,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "name": "B1--reorder-test",
+      "attempt": {
+        "name": "B1--reorder-test",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B1",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--reorder-test"
+        ],
+        "started": "2026-11-14T07:54:52.718975+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/04-B1--reorder-test.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T07:55:23.643114+00:00",
+        "log_sha256": "e8a53a13c7575c9d10abc31ac8a88da72ab0a93ea1cbbe6257dbdc07e34ae8d4"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/04-B1--reorder-test.log",
+      "accepted_log_sha256": "e8a53a13c7575c9d10abc31ac8a88da72ab0a93ea1cbbe6257dbdc07e34ae8d4",
+      "runs": [
+        {
+          "run_id": "20261114T075452962578Z-B1-2",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "e79c292ffc9b41bd0b69b29e5a0235c4daa72f9ecbb73ea6b9741639344dee1c",
+          "semantic_replay": {
+            "events": 208,
+            "frames": 136,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "name": "B1--radio-loss-test",
+      "attempt": {
+        "name": "B1--radio-loss-test",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B1",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--radio-loss-test"
+        ],
+        "started": "2026-11-14T07:55:23.643635+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/05-B1--radio-loss-test.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T07:55:55.023359+00:00",
+        "log_sha256": "68d6586a8a397662c2f1f38440420577cbe46864ac9604f866e66a57e5a03f55"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/05-B1--radio-loss-test.log",
+      "accepted_log_sha256": "68d6586a8a397662c2f1f38440420577cbe46864ac9604f866e66a57e5a03f55",
+      "runs": [
+        {
+          "run_id": "20261114T075523878673Z-B1-2",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 47,
+          "lifetime": null,
+          "manifest_sha256": "11f6e54a04b84f1cafb06aa1fb29648ab3c3b0a088d570856609f391c31daa9d",
+          "semantic_replay": {
+            "events": 208,
+            "frames": 145,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "name": "B1--switch-test",
+      "attempt": {
+        "name": "B1--switch-test",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B1",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--switch-test"
+        ],
+        "started": "2026-11-14T07:55:55.023858+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/06-B1--switch-test.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T07:56:26.523482+00:00",
+        "log_sha256": "772ed88607656fa34cfbc019793efe2d3e22e9303066dfac80f6315322268588"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/06-B1--switch-test.log",
+      "accepted_log_sha256": "772ed88607656fa34cfbc019793efe2d3e22e9303066dfac80f6315322268588",
+      "runs": [
+        {
+          "run_id": "20261114T075555269121Z-B1-2",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "47306e938bf68cedcdcc3612817f19ac811371f38ddcbebd2db67a7bcf71de3e",
+          "semantic_replay": {
+            "events": 208,
+            "frames": 136,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "name": "B1-provision-missing",
+      "attempt": {
+        "name": "B1-provision-missing",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B1",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--provision-fault",
+          "missing"
+        ],
+        "started": "2026-11-14T07:56:26.523929+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/07-B1-provision-missing.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T07:56:57.377482+00:00",
+        "log_sha256": "7cfacf910e5a1dc17a13049504f0813698f382f31ee4777746a2cbcfa037c1c8"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/07-B1-provision-missing.log",
+      "accepted_log_sha256": "7cfacf910e5a1dc17a13049504f0813698f382f31ee4777746a2cbcfa037c1c8",
+      "runs": [
+        {
+          "run_id": "20261114T075626760421Z-B1-2",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 0,
+          "lifetime": null,
+          "manifest_sha256": "78ee0915b03908768eea71a5634fc43121f9c0e3d0f02874f34e3a53a0b36b43",
+          "semantic_replay": {
+            "events": 158,
+            "frames": 136,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "name": "B1-provision-version",
+      "attempt": {
+        "name": "B1-provision-version",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B1",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--provision-fault",
+          "version"
+        ],
+        "started": "2026-11-14T07:56:57.378547+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/08-B1-provision-version.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T07:57:28.296422+00:00",
+        "log_sha256": "48802afe8deb4226e556c371e9de8a1bb53e7ee100dbe4521fdd9b94d8beb803"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/08-B1-provision-version.log",
+      "accepted_log_sha256": "48802afe8deb4226e556c371e9de8a1bb53e7ee100dbe4521fdd9b94d8beb803",
+      "runs": [
+        {
+          "run_id": "20261114T075657604929Z-B1-2",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 0,
+          "lifetime": null,
+          "manifest_sha256": "81ea1514a123b7ef94324cf00d88f4630a7a46d45643a19ece1a296f1100f706",
+          "semantic_replay": {
+            "events": 158,
+            "frames": 136,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "name": "B1-provision-profile",
+      "attempt": {
+        "name": "B1-provision-profile",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B1",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--provision-fault",
+          "profile"
+        ],
+        "started": "2026-11-14T07:57:28.297904+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/09-B1-provision-profile.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T07:57:59.341472+00:00",
+        "log_sha256": "fcb5da0670d78685ce5e2fbfddb6372ec5121b638aaa93e21588a2f84e12430b"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/09-B1-provision-profile.log",
+      "accepted_log_sha256": "fcb5da0670d78685ce5e2fbfddb6372ec5121b638aaa93e21588a2f84e12430b",
+      "runs": [
+        {
+          "run_id": "20261114T075728535783Z-B1-2",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 0,
+          "lifetime": null,
+          "manifest_sha256": "73e8f6dcb366ceea529d308d523a6a3fecfe752370a9cbc527a57c918cbfe947",
+          "semantic_replay": {
+            "events": 158,
+            "frames": 136,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "name": "B1-provision-epoch",
+      "attempt": {
+        "name": "B1-provision-epoch",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B1",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--provision-fault",
+          "epoch"
+        ],
+        "started": "2026-11-14T07:57:59.342026+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/10-B1-provision-epoch.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T07:58:29.347467+00:00",
+        "log_sha256": "e82fbe46ae10d6831eac871b2c811a911829bcb3a5ec0b031ea0c1411046b460"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/10-B1-provision-epoch.log",
+      "accepted_log_sha256": "e82fbe46ae10d6831eac871b2c811a911829bcb3a5ec0b031ea0c1411046b460",
+      "runs": [
+        {
+          "run_id": "20261114T075759575342Z-B1-2",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 0,
+          "lifetime": null,
+          "manifest_sha256": "fc3338c625bc8e1eca141b4824346a210e666c26cc1d8bae4bfdcffc00eae7fe",
+          "semantic_replay": {
+            "events": 158,
+            "frames": 136,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "name": "B2--attack-test",
+      "attempt": {
+        "name": "B2--attack-test",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B2",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--attack-test"
+        ],
+        "started": "2026-11-14T07:58:29.347942+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/11-B2--attack-test.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T07:59:00.319242+00:00",
+        "log_sha256": "d4090f620a78d4569f9ac1201af98a6fe26d24943d6cab71c82827ce54408326"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/11-B2--attack-test.log",
+      "accepted_log_sha256": "d4090f620a78d4569f9ac1201af98a6fe26d24943d6cab71c82827ce54408326",
+      "runs": [
+        {
+          "run_id": "20261114T075829576449Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 47,
+          "lifetime": null,
+          "manifest_sha256": "616df0b236d1e8dfb78e81a272dcd69f11a09b5b332e80b40e835c504ef8838b",
+          "semantic_replay": {
+            "events": 222,
+            "frames": 150,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "name": "B2--root-reset-test",
+      "attempt": {
+        "name": "B2--root-reset-test",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B2",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--root-reset-test"
+        ],
+        "started": "2026-11-14T07:59:00.320879+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/12-B2--root-reset-test.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T07:59:35.224556+00:00",
+        "log_sha256": "3d0b38a06ffcf920444c1d7fd68ddb38ca564ecace2c221d83ac16e9e2673dc0"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/12-B2--root-reset-test.log",
+      "accepted_log_sha256": "3d0b38a06ffcf920444c1d7fd68ddb38ca564ecace2c221d83ac16e9e2673dc0",
+      "runs": [
+        {
+          "run_id": "20261114T075900567756Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 1,
+          "lifetime": null,
+          "manifest_sha256": "ac1d8fcdc3308b5f0cd5fa5b99cd775b4282337241bee52f35291a48fa98eb66",
+          "semantic_replay": {
+            "events": 210,
+            "frames": 451,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "name": "B2--sensor-reset-test",
+      "attempt": {
+        "name": "B2--sensor-reset-test",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B2",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--sensor-reset-test"
+        ],
+        "started": "2026-11-14T07:59:35.226647+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/13-B2--sensor-reset-test.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:00:06.576112+00:00",
+        "log_sha256": "d9bca2e30542770dff27212231a1b65a66f2963b585656577c1be2dc0fbd0d59"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/13-B2--sensor-reset-test.log",
+      "accepted_log_sha256": "d9bca2e30542770dff27212231a1b65a66f2963b585656577c1be2dc0fbd0d59",
+      "runs": [
+        {
+          "run_id": "20261114T075935479421Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 25,
+          "lifetime": null,
+          "manifest_sha256": "e6a9423934b0b853c34cbd8197146e068ecc214a00540b25f23a827a2aac4683",
+          "semantic_replay": {
+            "events": 119,
+            "frames": 87,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "name": "B2--reorder-test",
+      "attempt": {
+        "name": "B2--reorder-test",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B2",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--reorder-test"
+        ],
+        "started": "2026-11-14T08:00:06.577319+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/14-B2--reorder-test.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:00:38.253773+00:00",
+        "log_sha256": "aef8c5ef61b2aa11246e912cce42c485a027d34730733ca2d0bc097ddee09d84"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/14-B2--reorder-test.log",
+      "accepted_log_sha256": "aef8c5ef61b2aa11246e912cce42c485a027d34730733ca2d0bc097ddee09d84",
+      "runs": [
+        {
+          "run_id": "20261114T080006812592Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "2ac0bfc40841f5be71f8c51ec289c4103ee8c3918627c45c76cae8050c6dbdc5",
+          "semantic_replay": {
+            "events": 208,
+            "frames": 136,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "name": "B2--radio-loss-test",
+      "attempt": {
+        "name": "B2--radio-loss-test",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B2",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--radio-loss-test"
+        ],
+        "started": "2026-11-14T08:00:38.255112+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/15-B2--radio-loss-test.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:01:09.422429+00:00",
+        "log_sha256": "537b9885353c66081cae116bc119fe6d2533e0cea3cebce3e2672a1006e08085"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/15-B2--radio-loss-test.log",
+      "accepted_log_sha256": "537b9885353c66081cae116bc119fe6d2533e0cea3cebce3e2672a1006e08085",
+      "runs": [
+        {
+          "run_id": "20261114T080038507432Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 47,
+          "lifetime": null,
+          "manifest_sha256": "6861bd4b30ca9f27161527074ae0be63eb17cda0185f9f6379a96f4689edbd54",
+          "semantic_replay": {
+            "events": 208,
+            "frames": 145,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "name": "B2--switch-test",
+      "attempt": {
+        "name": "B2--switch-test",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B2",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--switch-test"
+        ],
+        "started": "2026-11-14T08:01:09.424401+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/16-B2--switch-test.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:01:40.772618+00:00",
+        "log_sha256": "5b1fa416db599ed213c7b8ab185f6bf0b001d159f9a73452a93e2e0b8c1fb371"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/16-B2--switch-test.log",
+      "accepted_log_sha256": "5b1fa416db599ed213c7b8ab185f6bf0b001d159f9a73452a93e2e0b8c1fb371",
+      "runs": [
+        {
+          "run_id": "20261114T080109653329Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "81265d43857258b7717eecc2d527efe6ed93d6c75269bbfc9f849907c1b5e008",
+          "semantic_replay": {
+            "events": 208,
+            "frames": 136,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "name": "B2-provision-missing",
+      "attempt": {
+        "name": "B2-provision-missing",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B2",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--provision-fault",
+          "missing"
+        ],
+        "started": "2026-11-14T08:01:40.774448+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/17-B2-provision-missing.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:02:12.556073+00:00",
+        "log_sha256": "c7c780ccd6af8c36cc15215beb42efaa91f6df9daff26862059f93c2d6a195eb"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/17-B2-provision-missing.log",
+      "accepted_log_sha256": "c7c780ccd6af8c36cc15215beb42efaa91f6df9daff26862059f93c2d6a195eb",
+      "runs": [
+        {
+          "run_id": "20261114T080141011237Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 0,
+          "lifetime": null,
+          "manifest_sha256": "cf9c03f1ec5c175d2d0675772784a56c87a3377ee680ce879a6a2975dbe380c9",
+          "semantic_replay": {
+            "events": 158,
+            "frames": 136,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "name": "B2-provision-version",
+      "attempt": {
+        "name": "B2-provision-version",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B2",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--provision-fault",
+          "version"
+        ],
+        "started": "2026-11-14T08:02:12.556917+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/18-B2-provision-version.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:02:43.972311+00:00",
+        "log_sha256": "be668ce353492b5d507ac2d1080ebd039951e327e6cdb4a0139511527f1a92f4"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/18-B2-provision-version.log",
+      "accepted_log_sha256": "be668ce353492b5d507ac2d1080ebd039951e327e6cdb4a0139511527f1a92f4",
+      "runs": [
+        {
+          "run_id": "20261114T080212843229Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 0,
+          "lifetime": null,
+          "manifest_sha256": "7a7f07152d536bd82f606b85c65a4dd149448e7056ae808878b39ed0bdd5ff79",
+          "semantic_replay": {
+            "events": 158,
+            "frames": 136,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "name": "B2-provision-profile",
+      "attempt": {
+        "name": "B2-provision-profile",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B2",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--provision-fault",
+          "profile"
+        ],
+        "started": "2026-11-14T08:02:43.974006+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/19-B2-provision-profile.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:03:14.971330+00:00",
+        "log_sha256": "e21374ae3fb4b84b153392e4c142882294c2107558b1856f4ebd29f9a532db30"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/19-B2-provision-profile.log",
+      "accepted_log_sha256": "e21374ae3fb4b84b153392e4c142882294c2107558b1856f4ebd29f9a532db30",
+      "runs": [
+        {
+          "run_id": "20261114T080244221720Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 0,
+          "lifetime": null,
+          "manifest_sha256": "0cf7bc62e914fdadcb888e2807cf32d8b4a119c579d9ce2c8fc8f1fef462653e",
+          "semantic_replay": {
+            "events": 158,
+            "frames": 136,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "B2-provision-epoch",
+      "attempt": {
+        "name": "B2-provision-epoch",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B2",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--provision-fault",
+          "epoch"
+        ],
+        "started": "2026-11-14T08:03:14.972903+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/20-B2-provision-epoch.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:03:46.207738+00:00",
+        "log_sha256": "e1a1ac483bdee3d273c6595197918118f5c66d77c1a61bf80e0e5fd943c7742d"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/20-B2-provision-epoch.log",
+      "accepted_log_sha256": "e1a1ac483bdee3d273c6595197918118f5c66d77c1a61bf80e0e5fd943c7742d",
+      "runs": [
+        {
+          "run_id": "20261114T080315211010Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 0,
+          "lifetime": null,
+          "manifest_sha256": "00939916dc6500a5f5e592e06b0dcb44b09d28a84f1d634cdf399e667e6662ab",
+          "semantic_replay": {
+            "events": 158,
+            "frames": 136,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "name": "B4-critical",
+      "attempt": {
+        "name": "B4-critical",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B4",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--critical-reading",
+          "2"
+        ],
+        "started": "2026-11-14T08:03:46.208380+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/21-B4-critical.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:04:16.999868+00:00",
+        "log_sha256": "f43cf6622dfebfeed930ce0faae8a7c47fa7336fd5c1d101fa74c5948fe55e1b"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/21-B4-critical.log",
+      "accepted_log_sha256": "f43cf6622dfebfeed930ce0faae8a7c47fa7336fd5c1d101fa74c5948fe55e1b",
+      "runs": [
+        {
+          "run_id": "20261114T080346438811Z-B4-2",
+          "mode": "B4",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "7ac09946bcac5e50f3bf11c0a7a264172423af27fd151f5da11780b7cb14d4dc",
+          "semantic_replay": {
+            "events": 150,
+            "frames": 76,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "name": "B5-critical",
+      "attempt": {
+        "name": "B5-critical",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B5",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--critical-reading",
+          "2"
+        ],
+        "started": "2026-11-14T08:04:17.000523+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/22-B5-critical.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:04:48.426947+00:00",
+        "log_sha256": "a063e936a2571aeab82ee4c3b0ef3fa5035fb70f317127ce4e5ccc8c634858f6"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/22-B5-critical.log",
+      "accepted_log_sha256": "a063e936a2571aeab82ee4c3b0ef3fa5035fb70f317127ce4e5ccc8c634858f6",
+      "runs": [
+        {
+          "run_id": "20261114T080417239354Z-B5-2",
+          "mode": "B5",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "b6c78a224fc84c6930d7038215e14436c3374cb606908052f0360eca5c6e38a6",
+          "semantic_replay": {
+            "events": 150,
+            "frames": 76,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "name": "idle-listen-transition",
+      "attempt": {
+        "name": "idle-listen-transition",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B2",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--power-model",
+          "--radio-off-until-ms",
+          "30000",
+          "--seed",
+          "223456"
+        ],
+        "started": "2026-11-14T08:04:48.427589+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/23-idle-listen-transition.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:05:34.609051+00:00",
+        "log_sha256": "f5b5a1c892fe85ce8bc6360fbee8a0b8d391a8b6e383f4af4961c107f9353080"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/23-idle-listen-transition.log",
+      "accepted_log_sha256": "f5b5a1c892fe85ce8bc6360fbee8a0b8d391a8b6e383f4af4961c107f9353080",
+      "runs": [
+        {
+          "run_id": "20261114T080448677313Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 223456,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "4cb6c2bc1f05804fe6064a3ffd826ea97e9d2d6bdc2b4d5be994ac15bb1a2438",
+          "semantic_replay": {
+            "events": 1107,
+            "frames": 136,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "name": "controlled-cpu-load",
+      "attempt": {
+        "name": "controlled-cpu-load",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "B2",
+          "--clients",
+          "2",
+          "--target",
+          "z1",
+          "--power-model",
+          "--cpu-work-iterations",
+          "10000",
+          "--seed",
+          "223456"
+        ],
+        "started": "2026-11-14T08:05:34.611738+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/24-controlled-cpu-load.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:06:34.194403+00:00",
+        "log_sha256": "d0bd6450ebe6142e2028f0da48ee209f502b2557953cd83e654f70ea92ec50b6"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/24-controlled-cpu-load.log",
+      "accepted_log_sha256": "d0bd6450ebe6142e2028f0da48ee209f502b2557953cd83e654f70ea92ec50b6",
+      "runs": [
+        {
+          "run_id": "20261114T080534922096Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 223456,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "12a6ffadc73b9510a163b4bf618036ddf4dbc2d00cb6381d5533161c1af111d5",
+          "semantic_replay": {
+            "events": 1107,
+            "frames": 136,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "name": "static-123456",
+      "attempt": {
+        "name": "static-123456",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "all",
+          "--clients",
+          "8",
+          "--target",
+          "z1",
+          "--power-model",
+          "--seed",
+          "123456"
+        ],
+        "started": "2026-11-14T08:06:34.196341+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/25-static-123456.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:12:51.857097+00:00",
+        "log_sha256": "9bc62e917317c9b2c7aadb67b099cdbc16b2a307139f1ac990723df78753f256"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/25-static-123456.log",
+      "accepted_log_sha256": "9bc62e917317c9b2c7aadb67b099cdbc16b2a307139f1ac990723df78753f256",
+      "runs": [
+        {
+          "run_id": "20261114T080634445614Z-B1-8",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 186,
+          "lifetime": null,
+          "manifest_sha256": "b611ab46b5a9e2075e8f8b4d8480077bccdac0e176198a39250b1734e269610e",
+          "semantic_replay": {
+            "events": 3525,
+            "frames": 758,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261114T080810390882Z-B2-8",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 13,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 186,
+          "lifetime": null,
+          "manifest_sha256": "d30280224c7c851a4dc7a848abf5e4a800f4db7ef5f2f67b68e6bb2d21bb3c6d",
+          "semantic_replay": {
+            "events": 3525,
+            "frames": 773,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261114T080948730660Z-B4-8",
+          "mode": "B4",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 189,
+          "lifetime": null,
+          "manifest_sha256": "ad4318c10237244188a18b4b11a6f79edc39a31a410862fce9c2d100360ad5f5",
+          "semantic_replay": {
+            "events": 3279,
+            "frames": 370,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261114T081120795319Z-B5-8",
+          "mode": "B5",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 189,
+          "lifetime": null,
+          "manifest_sha256": "300c03d11e620edcf6746a160644efc2c8cd5e3bcb2f2c1f41cd70942d75a155",
+          "semantic_replay": {
+            "events": 3279,
+            "frames": 371,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "name": "static-123457",
+      "attempt": {
+        "name": "static-123457",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "all",
+          "--clients",
+          "8",
+          "--target",
+          "z1",
+          "--power-model",
+          "--seed",
+          "123457"
+        ],
+        "started": "2026-11-14T08:12:51.858935+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/26-static-123457.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:19:37.459813+00:00",
+        "log_sha256": "5748455d36975fef358ff5b53107a2d7b74d502c369c2d488ed9fc01bf5c8868"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/26-static-123457.log",
+      "accepted_log_sha256": "5748455d36975fef358ff5b53107a2d7b74d502c369c2d488ed9fc01bf5c8868",
+      "runs": [
+        {
+          "run_id": "20261114T081252222076Z-B1-8",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123457,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 187,
+          "lifetime": null,
+          "manifest_sha256": "0e930dbeba393774a8b78c784a6dcc372bb7d16188e21bcb8e15d572cfd362b8",
+          "semantic_replay": {
+            "events": 3524,
+            "frames": 799,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261114T081511268004Z-B2-8",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123457,
+          "hash_count": 13,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 187,
+          "lifetime": null,
+          "manifest_sha256": "c42460ec7090679678a810af61a531c1db46157b01669b935f562ef5a3b582ad",
+          "semantic_replay": {
+            "events": 3524,
+            "frames": 794,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261114T081658871885Z-B4-8",
+          "mode": "B4",
+          "target": "z1",
+          "seed": 123457,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 189,
+          "lifetime": null,
+          "manifest_sha256": "decee786e6e318f4ae57f9e154734ee1ab17ceb7357a3d94a6f61d1ecc16f26e",
+          "semantic_replay": {
+            "events": 3276,
+            "frames": 382,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261114T081819417074Z-B5-8",
+          "mode": "B5",
+          "target": "z1",
+          "seed": 123457,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 189,
+          "lifetime": null,
+          "manifest_sha256": "a5e81e190dde8620ba5b98e079119069a0510e7a0e19f4978cabaa1a51134011",
+          "semantic_replay": {
+            "events": 3276,
+            "frames": 371,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "name": "static-123458",
+      "attempt": {
+        "name": "static-123458",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "all",
+          "--clients",
+          "8",
+          "--target",
+          "z1",
+          "--power-model",
+          "--seed",
+          "123458"
+        ],
+        "started": "2026-11-14T08:19:37.496170+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/27-static-123458.log",
+        "exit_code": 1,
+        "status": "failed",
+        "ended": "2026-11-14T08:20:59.391707+00:00",
+        "log_sha256": "6397917ba5dd3310916e2d63ae1316cf23fa04514a1bd88d9a5dc9b9b82d507f"
+      },
+      "accepted_log": "results/phase_04/static-123458-rerun.log",
+      "accepted_log_sha256": "76eafe765b2d505d6ad970f95ebc751f9ecdf67d44b91fdb98161d4e5c3535ce",
+      "runs": [
+        {
+          "run_id": "20261114T083350114195Z-B1-8",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123458,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 184,
+          "lifetime": null,
+          "manifest_sha256": "116bd2c810197a19914f29f66de3976e3a606828d9cdd31b621064eb4abcaa51",
+          "semantic_replay": {
+            "events": 3513,
+            "frames": 751,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261114T083510489220Z-B2-8",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123458,
+          "hash_count": 13,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 184,
+          "lifetime": null,
+          "manifest_sha256": "799258444487343c225b1a04590b53434f7f131daca8892274586ff9d6c171d3",
+          "semantic_replay": {
+            "events": 3513,
+            "frames": 751,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261114T083631080729Z-B4-8",
+          "mode": "B4",
+          "target": "z1",
+          "seed": 123458,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 186,
+          "lifetime": null,
+          "manifest_sha256": "37b286e09436ea999c5fb7315fcb3540d9ad964da397b8b95a1334738f22a46b",
+          "semantic_replay": {
+            "events": 3269,
+            "frames": 365,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261114T083747256510Z-B5-8",
+          "mode": "B5",
+          "target": "z1",
+          "seed": 123458,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 186,
+          "lifetime": null,
+          "manifest_sha256": "eae8eb440dbe4172675f7c98c3451c5b34ef848df4df83b30ab3a903d4ac543f",
+          "semantic_replay": {
+            "events": 3268,
+            "frames": 365,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "name": "boundary--period-ms500",
+      "attempt": {
+        "name": "boundary--period-ms500",
+        "command": [
+          "/usr/bin/python3",
+          "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py",
+          "--phase",
+          "4",
+          "--timeout-seconds",
+          "300",
+          "--mode",
+          "all",
+          "--clients",
+          "2",
+          "--period-ms",
+          "500"
+        ],
+        "started": "2026-11-14T08:20:59.392751+00:00",
+        "log": "results/phase_04/validation-20261114T075313282538Z/28-boundary--period-ms500.log",
+        "exit_code": 0,
+        "status": "passed",
+        "ended": "2026-11-14T08:22:13.280687+00:00",
+        "log_sha256": "4994cba7297ac9f13c10adc82cc0b5bce1b6d1cda4b5545e1eca017103821315"
+      },
+      "accepted_log": "results/phase_04/validation-20261114T075313282538Z/28-boundary--period-ms500.log",
+      "accepted_log_sha256": "4994cba7297ac9f13c10adc82cc0b5bce1b6d1cda4b5545e1eca017103821315",
+      "runs": [
+        {
+          "run_id": "20261114T082059599887Z-B1-2",
+          "mode": "B1",
+          "target": "cooja",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "9a2362e9b79976acd534a065593d53a8b3438e6c2a6b693d96c3fcfa590d7ac7",
+          "semantic_replay": {
+            "events": 208,
+            "frames": 134,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261114T082118359654Z-B2-2",
+          "mode": "B2",
+          "target": "cooja",
+          "seed": 123456,
+          "hash_count": 11,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "9ce6f018c6d95aee38a01be1e3fe3e1f0d9b6973c80c661c6a9bf40b2c6186f6",
+          "semantic_replay": {
+            "events": 208,
+            "frames": 134,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261114T082136701701Z-B4-2",
+          "mode": "B4",
+          "target": "cooja",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "331642d762d94f095226ea8a96bf197c9de19a295d8d80c5b6b50d8ada20db8f",
+          "semantic_replay": {
+            "events": 136,
+            "frames": 62,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261114T082154731343Z-B5-2",
+          "mode": "B5",
+          "target": "cooja",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/Makefile",
+            "firmware/aggregate/aggregate.c",
+            "firmware/common/events.h",
+            "firmware/crypto/boot_gate.h",
+            "firmware/energy/energest_sampler.c",
+            "firmware/energy/energest_sampler.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/energy_reconcile.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/plots.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "188d7878877dded422b0c0c4dd284d5f4de06d3d2693d240bcc0463af24bcad4",
+          "semantic_replay": {
+            "events": 136,
+            "frames": 62,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "name": "boundary--period-ms4000",
+      "runs": [
+        {
+          "run_id": "20261116T175934506150Z-B1-2",
+          "mode": "B1",
+          "target": "cooja",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "16dc985a1b7c3606d59197f00910e9b2aefa2f0a79e7f49e2b8eeaa4f08f0f0a",
+          "semantic_replay": {
+            "events": 208,
+            "frames": 143,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261116T175957444306Z-B2-2",
+          "mode": "B2",
+          "target": "cooja",
+          "seed": 123456,
+          "hash_count": 11,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "371d372bca17760db20a3d56a0476076d9fe01231c3580ac66846159af7edd91",
+          "semantic_replay": {
+            "events": 208,
+            "frames": 143,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261116T180017877202Z-B4-2",
+          "mode": "B4",
+          "target": "cooja",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "9dfc01b2498a3b75392601c1bceebafce103a4944669cadfb2fb9a6b295bf0a1",
+          "semantic_replay": {
+            "events": 208,
+            "frames": 141,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261116T180036635527Z-B5-2",
+          "mode": "B5",
+          "target": "cooja",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "57f199c25a9495ae6733c49cf17339a387834ea4866190b3c78d775eac4768f3",
+          "semantic_replay": {
+            "events": 208,
+            "frames": 141,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "name": "boundary--payload-budget47",
+      "runs": [
+        {
+          "run_id": "20261116T180100630105Z-B1-2",
+          "mode": "B1",
+          "target": "cooja",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "c8ef6006fa4fb189fda3e9fc23d3eb8b026913d8ff6e16d64771fe1da0c02993",
+          "semantic_replay": {
+            "events": 208,
+            "frames": 137,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261116T180123777826Z-B2-2",
+          "mode": "B2",
+          "target": "cooja",
+          "seed": 123456,
+          "hash_count": 11,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "519ddf5cf8e67cf95395b7043be7a385cc451a06a758a5392c9a769dc1612edc",
+          "semantic_replay": {
+            "events": 208,
+            "frames": 137,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261116T180142937672Z-B4-2",
+          "mode": "B4",
+          "target": "cooja",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "8992c83a9c1c6e318c3d8cefc4fbfb99d19e163fa6a20092adbbc1bc490ccae2",
+          "semantic_replay": {
+            "events": 160,
+            "frames": 89,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        },
+        {
+          "run_id": "20261116T180202411260Z-B5-2",
+          "mode": "B5",
+          "target": "cooja",
+          "seed": 123456,
+          "hash_count": 10,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 48,
+          "lifetime": null,
+          "manifest_sha256": "64a16d4fe0e58fdf78babccce0b3173873e8084a69835b81daae573a11877631",
+          "semantic_replay": {
+            "events": 160,
+            "frames": 89,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {}
+          }
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "name": "depletion-sensitivity-125",
+      "runs": [
+        {
+          "run_id": "20261116T180228618905Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 223456,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 75,
+          "lifetime": {
+            "battery_nodes": [
+              2,
+              3
+            ],
+            "fnd": {
+              "event": true,
+              "time_ms": 158573.261,
+              "censored": false
+            },
+            "hnd": {
+              "event": true,
+              "time_ms": 158573.261,
+              "censored": false
+            },
+            "functional": {
+              "event": true,
+              "crossing_ms": 165000,
+              "confirmation_ms": 175000,
+              "censor_ms": null
+            },
+            "scheduled_readings": 240,
+            "scheduled_delivered": 75,
+            "scheduled_shortfall": 165,
+            "service_window_ms": 10000,
+            "service_persistence_ms": 10000,
+            "delivery_bound_ms": 5000,
+            "service_minimum": 0.95
+          },
+          "manifest_sha256": "1e85745cfcfbb8d371d029a688deb58dde7e6a4e483ec1d8c9b48a4c920d18b7",
+          "semantic_replay": {
+            "events": 2493,
+            "frames": 292,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {},
+            "depletion": {
+              "depleted_nodes": [
+                2
+              ],
+              "removed_nodes": [
+                2
+              ],
+              "post_death_application_or_rf_violations": 0,
+              "bounded_budget_nodes": [
+                2
+              ],
+              "root_budget": "unbounded",
+              "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "name": "depletion-sensitivity-250",
+      "runs": [
+        {
+          "run_id": "20261116T180333068963Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 223456,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 76,
+          "lifetime": {
+            "battery_nodes": [
+              2,
+              3
+            ],
+            "fnd": {
+              "event": true,
+              "time_ms": 159198.184,
+              "censored": false
+            },
+            "hnd": {
+              "event": true,
+              "time_ms": 159198.184,
+              "censored": false
+            },
+            "functional": {
+              "event": true,
+              "crossing_ms": 165000,
+              "confirmation_ms": 175000,
+              "censor_ms": null
+            },
+            "scheduled_readings": 240,
+            "scheduled_delivered": 76,
+            "scheduled_shortfall": 164,
+            "service_window_ms": 10000,
+            "service_persistence_ms": 10000,
+            "delivery_bound_ms": 5000,
+            "service_minimum": 0.95
+          },
+          "manifest_sha256": "d770bafcef94f3e232b75d1ae8a6531056c531f43a8a62e48633166ae60b7f5b",
+          "semantic_replay": {
+            "events": 2495,
+            "frames": 294,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {},
+            "depletion": {
+              "depleted_nodes": [
+                2
+              ],
+              "removed_nodes": [
+                2
+              ],
+              "post_death_application_or_rf_violations": 0,
+              "bounded_budget_nodes": [
+                2
+              ],
+              "root_budget": "unbounded",
+              "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "name": "lifetime-123456",
+      "runs": [
+        {
+          "run_id": "20261116T180430865742Z-B1-2",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 75,
+          "lifetime": {
+            "battery_nodes": [
+              2,
+              3
+            ],
+            "fnd": {
+              "event": true,
+              "time_ms": 157991.724,
+              "censored": false
+            },
+            "hnd": {
+              "event": true,
+              "time_ms": 157991.724,
+              "censored": false
+            },
+            "functional": {
+              "event": true,
+              "crossing_ms": 164000,
+              "confirmation_ms": 174000,
+              "censor_ms": null
+            },
+            "scheduled_readings": 240,
+            "scheduled_delivered": 75,
+            "scheduled_shortfall": 165,
+            "service_window_ms": 10000,
+            "service_persistence_ms": 10000,
+            "delivery_bound_ms": 5000,
+            "service_minimum": 0.95
+          },
+          "manifest_sha256": "1683d319a7429242522b7f9a2d18db731f1a0cedb6d0eb74a8a4504e690d68c9",
+          "semantic_replay": {
+            "events": 2496,
+            "frames": 290,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {},
+            "depletion": {
+              "depleted_nodes": [
+                2
+              ],
+              "removed_nodes": [
+                2
+              ],
+              "post_death_application_or_rf_violations": 0,
+              "bounded_budget_nodes": [
+                2
+              ],
+              "root_budget": "unbounded",
+              "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+            }
+          }
+        },
+        {
+          "run_id": "20261116T180535922718Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 13,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 75,
+          "lifetime": {
+            "battery_nodes": [
+              2,
+              3
+            ],
+            "fnd": {
+              "event": true,
+              "time_ms": 157991.459,
+              "censored": false
+            },
+            "hnd": {
+              "event": true,
+              "time_ms": 157991.459,
+              "censored": false
+            },
+            "functional": {
+              "event": true,
+              "crossing_ms": 164000,
+              "confirmation_ms": 174000,
+              "censor_ms": null
+            },
+            "scheduled_readings": 240,
+            "scheduled_delivered": 75,
+            "scheduled_shortfall": 165,
+            "service_window_ms": 10000,
+            "service_persistence_ms": 10000,
+            "delivery_bound_ms": 5000,
+            "service_minimum": 0.95
+          },
+          "manifest_sha256": "43f67a50f29b8254d9f182417f945117c93b87f153673a57cbb76241c43d53f2",
+          "semantic_replay": {
+            "events": 2496,
+            "frames": 290,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {},
+            "depletion": {
+              "depleted_nodes": [
+                2
+              ],
+              "removed_nodes": [
+                2
+              ],
+              "post_death_application_or_rf_violations": 0,
+              "bounded_budget_nodes": [
+                2
+              ],
+              "root_budget": "unbounded",
+              "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+            }
+          }
+        },
+        {
+          "run_id": "20261116T180637065241Z-B4-2",
+          "mode": "B4",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 72,
+          "lifetime": {
+            "battery_nodes": [
+              2,
+              3
+            ],
+            "fnd": {
+              "event": true,
+              "time_ms": 158245.08,
+              "censored": false
+            },
+            "hnd": {
+              "event": true,
+              "time_ms": 158245.08,
+              "censored": false
+            },
+            "functional": {
+              "event": true,
+              "crossing_ms": 163000,
+              "confirmation_ms": 173000,
+              "censor_ms": null
+            },
+            "scheduled_readings": 240,
+            "scheduled_delivered": 72,
+            "scheduled_shortfall": 168,
+            "service_window_ms": 10000,
+            "service_persistence_ms": 10000,
+            "delivery_bound_ms": 5000,
+            "service_minimum": 0.95
+          },
+          "manifest_sha256": "7bb32056cb45541d31f923ab70b090bf6504f6a137b7f5783576b7d800e34b65",
+          "semantic_replay": {
+            "events": 2390,
+            "frames": 138,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {},
+            "depletion": {
+              "depleted_nodes": [
+                2
+              ],
+              "removed_nodes": [
+                2
+              ],
+              "post_death_application_or_rf_violations": 0,
+              "bounded_budget_nodes": [
+                2
+              ],
+              "root_budget": "unbounded",
+              "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+            }
+          }
+        },
+        {
+          "run_id": "20261116T180745492043Z-B5-2",
+          "mode": "B5",
+          "target": "z1",
+          "seed": 123456,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 72,
+          "lifetime": {
+            "battery_nodes": [
+              2,
+              3
+            ],
+            "fnd": {
+              "event": true,
+              "time_ms": 158244.84,
+              "censored": false
+            },
+            "hnd": {
+              "event": true,
+              "time_ms": 158244.84,
+              "censored": false
+            },
+            "functional": {
+              "event": true,
+              "crossing_ms": 163000,
+              "confirmation_ms": 173000,
+              "censor_ms": null
+            },
+            "scheduled_readings": 240,
+            "scheduled_delivered": 72,
+            "scheduled_shortfall": 168,
+            "service_window_ms": 10000,
+            "service_persistence_ms": 10000,
+            "delivery_bound_ms": 5000,
+            "service_minimum": 0.95
+          },
+          "manifest_sha256": "0fdfdaa30539da7861ee721c851ada38f74fde8fa72607d8f10b3d4d5df94669",
+          "semantic_replay": {
+            "events": 2390,
+            "frames": 138,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {},
+            "depletion": {
+              "depleted_nodes": [
+                2
+              ],
+              "removed_nodes": [
+                2
+              ],
+              "post_death_application_or_rf_violations": 0,
+              "bounded_budget_nodes": [
+                2
+              ],
+              "root_budget": "unbounded",
+              "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "name": "lifetime-123457",
+      "runs": [
+        {
+          "run_id": "20261116T180857558786Z-B1-2",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123457,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 76,
+          "lifetime": {
+            "battery_nodes": [
+              2,
+              3
+            ],
+            "fnd": {
+              "event": true,
+              "time_ms": 158250.39,
+              "censored": false
+            },
+            "hnd": {
+              "event": true,
+              "time_ms": 158250.39,
+              "censored": false
+            },
+            "functional": {
+              "event": true,
+              "crossing_ms": 165000,
+              "confirmation_ms": 175000,
+              "censor_ms": null
+            },
+            "scheduled_readings": 240,
+            "scheduled_delivered": 76,
+            "scheduled_shortfall": 164,
+            "service_window_ms": 10000,
+            "service_persistence_ms": 10000,
+            "delivery_bound_ms": 5000,
+            "service_minimum": 0.95
+          },
+          "manifest_sha256": "3456132015f84590299057cad6820f849cd99450f7dd42049c2ae6969934e2e0",
+          "semantic_replay": {
+            "events": 2501,
+            "frames": 293,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {},
+            "depletion": {
+              "depleted_nodes": [
+                2
+              ],
+              "removed_nodes": [
+                2
+              ],
+              "post_death_application_or_rf_violations": 0,
+              "bounded_budget_nodes": [
+                2
+              ],
+              "root_budget": "unbounded",
+              "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+            }
+          }
+        },
+        {
+          "run_id": "20261116T181020179899Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123457,
+          "hash_count": 13,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 76,
+          "lifetime": {
+            "battery_nodes": [
+              2,
+              3
+            ],
+            "fnd": {
+              "event": true,
+              "time_ms": 158250.104,
+              "censored": false
+            },
+            "hnd": {
+              "event": true,
+              "time_ms": 158250.104,
+              "censored": false
+            },
+            "functional": {
+              "event": true,
+              "crossing_ms": 165000,
+              "confirmation_ms": 175000,
+              "censor_ms": null
+            },
+            "scheduled_readings": 240,
+            "scheduled_delivered": 76,
+            "scheduled_shortfall": 164,
+            "service_window_ms": 10000,
+            "service_persistence_ms": 10000,
+            "delivery_bound_ms": 5000,
+            "service_minimum": 0.95
+          },
+          "manifest_sha256": "86e1feec0c3b448bb10e5ce1816e02f55b46025d50fd09b283e372b25c28c8fd",
+          "semantic_replay": {
+            "events": 2501,
+            "frames": 293,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {},
+            "depletion": {
+              "depleted_nodes": [
+                2
+              ],
+              "removed_nodes": [
+                2
+              ],
+              "post_death_application_or_rf_violations": 0,
+              "bounded_budget_nodes": [
+                2
+              ],
+              "root_budget": "unbounded",
+              "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+            }
+          }
+        },
+        {
+          "run_id": "20261116T181129941826Z-B4-2",
+          "mode": "B4",
+          "target": "z1",
+          "seed": 123457,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 72,
+          "lifetime": {
+            "battery_nodes": [
+              2,
+              3
+            ],
+            "fnd": {
+              "event": true,
+              "time_ms": 158503.711,
+              "censored": false
+            },
+            "hnd": {
+              "event": true,
+              "time_ms": 158503.711,
+              "censored": false
+            },
+            "functional": {
+              "event": true,
+              "crossing_ms": 163000,
+              "confirmation_ms": 173000,
+              "censor_ms": null
+            },
+            "scheduled_readings": 240,
+            "scheduled_delivered": 72,
+            "scheduled_shortfall": 168,
+            "service_window_ms": 10000,
+            "service_persistence_ms": 10000,
+            "delivery_bound_ms": 5000,
+            "service_minimum": 0.95
+          },
+          "manifest_sha256": "6a0a638ff3da0246e6ed246f874c960bb9467a7089391a65887e9300d6f1ea5f",
+          "semantic_replay": {
+            "events": 2393,
+            "frames": 138,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {},
+            "depletion": {
+              "depleted_nodes": [
+                2
+              ],
+              "removed_nodes": [
+                2
+              ],
+              "post_death_application_or_rf_violations": 0,
+              "bounded_budget_nodes": [
+                2
+              ],
+              "root_budget": "unbounded",
+              "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+            }
+          }
+        },
+        {
+          "run_id": "20261116T181239744526Z-B5-2",
+          "mode": "B5",
+          "target": "z1",
+          "seed": 123457,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 72,
+          "lifetime": {
+            "battery_nodes": [
+              2,
+              3
+            ],
+            "fnd": {
+              "event": true,
+              "time_ms": 158503.489,
+              "censored": false
+            },
+            "hnd": {
+              "event": true,
+              "time_ms": 158503.489,
+              "censored": false
+            },
+            "functional": {
+              "event": true,
+              "crossing_ms": 163000,
+              "confirmation_ms": 173000,
+              "censor_ms": null
+            },
+            "scheduled_readings": 240,
+            "scheduled_delivered": 72,
+            "scheduled_shortfall": 168,
+            "service_window_ms": 10000,
+            "service_persistence_ms": 10000,
+            "delivery_bound_ms": 5000,
+            "service_minimum": 0.95
+          },
+          "manifest_sha256": "811ddb421f88ae9d94ea15f2b6d12dafef57c78c99b7ab826ca2da569a570c64",
+          "semantic_replay": {
+            "events": 2393,
+            "frames": 139,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {},
+            "depletion": {
+              "depleted_nodes": [
+                2
+              ],
+              "removed_nodes": [
+                2
+              ],
+              "post_death_application_or_rf_violations": 0,
+              "bounded_budget_nodes": [
+                2
+              ],
+              "root_budget": "unbounded",
+              "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "name": "lifetime-123458",
+      "runs": [
+        {
+          "run_id": "20261116T181353959358Z-B1-2",
+          "mode": "B1",
+          "target": "z1",
+          "seed": 123458,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 76,
+          "lifetime": {
+            "battery_nodes": [
+              2,
+              3
+            ],
+            "fnd": {
+              "event": true,
+              "time_ms": 158507.111,
+              "censored": false
+            },
+            "hnd": {
+              "event": true,
+              "time_ms": 158507.111,
+              "censored": false
+            },
+            "functional": {
+              "event": true,
+              "crossing_ms": 165000,
+              "confirmation_ms": 175000,
+              "censor_ms": null
+            },
+            "scheduled_readings": 240,
+            "scheduled_delivered": 76,
+            "scheduled_shortfall": 164,
+            "service_window_ms": 10000,
+            "service_persistence_ms": 10000,
+            "delivery_bound_ms": 5000,
+            "service_minimum": 0.95
+          },
+          "manifest_sha256": "8fba4927a5674eb643d114dde2510d66b2b04f926ff5b0c2f4078adc64526065",
+          "semantic_replay": {
+            "events": 2495,
+            "frames": 294,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {},
+            "depletion": {
+              "depleted_nodes": [
+                2
+              ],
+              "removed_nodes": [
+                2
+              ],
+              "post_death_application_or_rf_violations": 0,
+              "bounded_budget_nodes": [
+                2
+              ],
+              "root_budget": "unbounded",
+              "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+            }
+          }
+        },
+        {
+          "run_id": "20261116T181501438398Z-B2-2",
+          "mode": "B2",
+          "target": "z1",
+          "seed": 123458,
+          "hash_count": 13,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 76,
+          "lifetime": {
+            "battery_nodes": [
+              2,
+              3
+            ],
+            "fnd": {
+              "event": true,
+              "time_ms": 158506.892,
+              "censored": false
+            },
+            "hnd": {
+              "event": true,
+              "time_ms": 158506.892,
+              "censored": false
+            },
+            "functional": {
+              "event": true,
+              "crossing_ms": 165000,
+              "confirmation_ms": 175000,
+              "censor_ms": null
+            },
+            "scheduled_readings": 240,
+            "scheduled_delivered": 76,
+            "scheduled_shortfall": 164,
+            "service_window_ms": 10000,
+            "service_persistence_ms": 10000,
+            "delivery_bound_ms": 5000,
+            "service_minimum": 0.95
+          },
+          "manifest_sha256": "e9e86b398ba6589d6c4ba5d8ba2e37c213e7c87a292ebcbcd296ecdae1cb9024",
+          "semantic_replay": {
+            "events": 2495,
+            "frames": 294,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {},
+            "depletion": {
+              "depleted_nodes": [
+                2
+              ],
+              "removed_nodes": [
+                2
+              ],
+              "post_death_application_or_rf_violations": 0,
+              "bounded_budget_nodes": [
+                2
+              ],
+              "root_budget": "unbounded",
+              "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+            }
+          }
+        },
+        {
+          "run_id": "20261116T181610768218Z-B4-2",
+          "mode": "B4",
+          "target": "z1",
+          "seed": 123458,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 72,
+          "lifetime": {
+            "battery_nodes": [
+              2,
+              3
+            ],
+            "fnd": {
+              "event": true,
+              "time_ms": 158760.494,
+              "censored": false
+            },
+            "hnd": {
+              "event": true,
+              "time_ms": 158760.494,
+              "censored": false
+            },
+            "functional": {
+              "event": true,
+              "crossing_ms": 163000,
+              "confirmation_ms": 173000,
+              "censor_ms": null
+            },
+            "scheduled_readings": 240,
+            "scheduled_delivered": 72,
+            "scheduled_shortfall": 168,
+            "service_window_ms": 10000,
+            "service_persistence_ms": 10000,
+            "delivery_bound_ms": 5000,
+            "service_minimum": 0.95
+          },
+          "manifest_sha256": "d01ec2591f2c1ec34c06a62e00c7e4eb783207aa3a69c01e8fcae8500a6b385b",
+          "semantic_replay": {
+            "events": 2387,
+            "frames": 138,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {},
+            "depletion": {
+              "depleted_nodes": [
+                2
+              ],
+              "removed_nodes": [
+                2
+              ],
+              "post_death_application_or_rf_violations": 0,
+              "bounded_budget_nodes": [
+                2
+              ],
+              "root_budget": "unbounded",
+              "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+            }
+          }
+        },
+        {
+          "run_id": "20261116T181712712015Z-B5-2",
+          "mode": "B5",
+          "target": "z1",
+          "seed": 123458,
+          "hash_count": 12,
+          "source_drift": [
+            "firmware/aggregate/aggregate.c",
+            "firmware/policy/policy.c",
+            "firmware/policy/policy.h",
+            "firmware/project-conf.h",
+            "firmware/sensor/sensor.c",
+            "host/calibrate.py",
+            "host/campaign.py",
+            "host/campaign_dashboard.py",
+            "host/dashboard.py",
+            "host/metrics.py",
+            "host/parse_logs.py",
+            "host/run_dashboard.py",
+            "host/run_experiment.py"
+          ],
+          "authenticated": 72,
+          "lifetime": {
+            "battery_nodes": [
+              2,
+              3
+            ],
+            "fnd": {
+              "event": true,
+              "time_ms": 158760.257,
+              "censored": false
+            },
+            "hnd": {
+              "event": true,
+              "time_ms": 158760.257,
+              "censored": false
+            },
+            "functional": {
+              "event": true,
+              "crossing_ms": 163000,
+              "confirmation_ms": 173000,
+              "censor_ms": null
+            },
+            "scheduled_readings": 240,
+            "scheduled_delivered": 72,
+            "scheduled_shortfall": 168,
+            "service_window_ms": 10000,
+            "service_persistence_ms": 10000,
+            "delivery_bound_ms": 5000,
+            "service_minimum": 0.95
+          },
+          "manifest_sha256": "6cd03b691eb7038677f31852f111488c6cda07fd4061c1ad69068d63bfdaf67d",
+          "semantic_replay": {
+            "events": 2387,
+            "frames": 138,
+            "matched": [
+              "generated",
+              "unique_authenticated_delivered",
+              "packets_submitted",
+              "max_hold_ms",
+              "batch_counts",
+              "network_energy_nj",
+              "lifetime"
+            ],
+            "differences": {},
+            "depletion": {
+              "depleted_nodes": [
+                2
+              ],
+              "removed_nodes": [
+                2
+              ],
+              "post_death_application_or_rf_violations": 0,
+              "bounded_budget_nodes": [
+                2
+              ],
+              "root_budget": "unbounded",
+              "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "archived_case_count": 35,
+  "archived_runs": 62,
+  "archived_hashes": 685,
+  "current_static": [
+    {
+      "run_id": "20261119T204339877536Z-B1-2",
+      "mode": "B1",
+      "target": "z1",
+      "seed": 123456,
+      "hash_count": 12,
+      "source_drift": [],
+      "authenticated": 48,
+      "lifetime": null,
+      "manifest_sha256": "7af1fd5851c5983323080844e29063daf3dd3afbe4d01769dfc7be0f10422133"
+    },
+    {
+      "run_id": "20261119T204419818329Z-B2-2",
+      "mode": "B2",
+      "target": "z1",
+      "seed": 123456,
+      "hash_count": 13,
+      "source_drift": [],
+      "authenticated": 48,
+      "lifetime": null,
+      "manifest_sha256": "280ec30a6d2ad814219644e52577d7f4f7eb79cb9c111945d7f561320684bac4"
+    },
+    {
+      "run_id": "20261119T204457778867Z-B4-2",
+      "mode": "B4",
+      "target": "z1",
+      "seed": 123456,
+      "hash_count": 12,
+      "source_drift": [],
+      "authenticated": 48,
+      "lifetime": null,
+      "manifest_sha256": "775df2e8b41261eca36a4ec051d4cffc2eb3f03dae0b5da222c7c36acfede632"
+    },
+    {
+      "run_id": "20261119T204544880426Z-B5-2",
+      "mode": "B5",
+      "target": "z1",
+      "seed": 123456,
+      "hash_count": 12,
+      "source_drift": [],
+      "authenticated": 48,
+      "lifetime": null,
+      "manifest_sha256": "306298632577ffd66dc57bc6f41b95f19ebf570ef6392cf389983218b2851bc0"
+    }
+  ],
+  "current_source_full_matrix": "pending",
+  "human_review": "pending",
+  "independent_reproduction": "pending"
+}

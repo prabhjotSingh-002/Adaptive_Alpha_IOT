@@ -1,5 +1,13 @@
 # Phase 4 — Leftover / Pending Items
 
+**Status: ALL DEFERRED CASES NOW COMPLETE — 16 November 2026**
+
+All 7 deferred cases (cases 29–35) passed on 16 November 2026 as part of Work Package D closure per `finalPLAN_execute.md`. See the Phase 4 execution journal checkpoint dated 16 November 2026 for full run IDs, PDR, and lifetime event evidence. All 35 Phase 4 validation cases pass. Human review gates remain pending.
+
+---
+
+**Original record (14 November 2026):**
+
 **Date:** 14 November 2026
 **Reason for deferral:** Time constraint (mid-term evaluation 17 November 2026). Core Phase 4 implementation is complete and 28/35 matrix cases pass. These 7 cases are deferred to avoid blocking Phase 5.
 

@@ -7,6 +7,7 @@
 #include "energest_sampler.h"
 #if LAB_POLICY_MODE
 #include "policy.h"
+#if !defined(LAB_QUEUED_SHRINK)
 static lab_policy_state policy_state = {
   .b3_threshold_nj_hi = LAB_B3_THRESHOLD_NJ_HI,
   .b3_threshold_nj_lo = LAB_B3_THRESHOLD_NJ_LO,
@@ -19,9 +20,14 @@ static lab_policy_state policy_state = {
   .payload_budget = LAB_PAYLOAD_BUDGET,
   .reserved_bytes = LAB_RESERVED_BYTES
 };
+#endif
 static bool policy_seen;
 static uint8_t policy_prev_profile;
 static uint8_t policy_prev_cap;
+static lab_rate_estimator measured_rate;
+static bool feature_seen;
+static uint16_t feature_prev_rate;
+static uint8_t feature_prev_samples;
 #endif
 #if (LAB_PROFILE == 1 || LAB_PROFILE == 2)
 #include "boot_gate.h"
@@ -102,7 +108,11 @@ static void flush(uint32_t now) {
   }
   size_t length = 0;
 #if LAB_DUAL_PROFILE
-  selected = LAB_SWITCH_TEST ? ((counter % 3u) == 2u ? 1u : 0u) : LAB_PROFILE - 1u;
+#if LAB_SWITCH_TEST
+  selected = (counter % 3u) == 2u ? 1u : 0u;
+#elif !LAB_POLICY_MODE
+  selected = LAB_PROFILE - 1u;
+#endif
 #endif
 #if (LAB_PROFILE == 1 || LAB_PROFILE == 2)
   if(!udp.udp_conn || !lab_secure_seal(&security, &b, payload, sizeof(payload), &length)) {
@@ -212,12 +222,24 @@ PROCESS_THREAD(sensor_process, ev, data) {
       pf.residual_nj    = lab_energy_remaining_nj();
       pf.queue_count    = (uint16_t)queue.count;
       pf.oldest_hold_ms = lab_oldest_hold(&queue, now);
-      pf.rate_hz_x100   = 100000u / LAB_PERIOD_MS;
+      pf.rate_hz_x100   = lab_rate_get(&measured_rate, now);
       pf.now_ms         = now;
       pf.context_active = contexts[0].active && contexts[1].active;
+      if(!feature_seen || feature_prev_rate != pf.rate_hz_x100 || feature_prev_samples != measured_rate.count) {
+        LAB_EVENT("FEATURE", "%u,%u,%"PRIu32, (unsigned)pf.rate_hz_x100,
+                  (unsigned)measured_rate.count, measured_rate.seen ? now - measured_rate.last_ms : UINT32_MAX);
+        feature_seen = true; feature_prev_rate = pf.rate_hz_x100; feature_prev_samples = measured_rate.count;
+      }
       rtimer_clock_t policy_started = RTIMER_NOW();
       lab_policy_action pa;
-#if LAB_POLICY_MODE == 1
+#if defined(LAB_QUEUED_SHRINK)
+      /* Both arms queue two readings under Ascon cap four before intervention. */
+      bool shrink = LAB_QUEUED_SHRINK == 2 && generated >= 2u;
+      pa.profile = shrink ? 1u : 2u;
+      pa.cap = shrink ? 1u : 4u;
+      pa.reason = 0;
+      pa.feasible = true;
+#elif LAB_POLICY_MODE == 1
       pa = lab_policy_b3(&policy_state, &pf);
 #elif LAB_POLICY_MODE == 2
       pa = lab_policy_b6(&policy_state, &pf);
@@ -238,6 +260,16 @@ PROCESS_THREAD(sensor_process, ev, data) {
       policy_seen = true;
       policy_prev_profile = pa.profile;
       policy_prev_cap     = pa.cap;
+      /* Drain a cap-shrunk backlog in bounded chunks under the NEW logged
+       * action. If submission cannot progress, keep it queued for normal
+       * deadline/drop accounting; never spin or silently discard readings. */
+      if(queue.count > queue.cap) {
+        for(unsigned chunks = 0; chunks < LAB_CAPACITY && queue.count; chunks++) {
+          uint8_t before = queue.count;
+          flush(lab_now_ms());
+          if(queue.count == before) break;
+        }
+      }
     }
 #endif
 #if LAB_ROOT_RESET_TEST
@@ -262,13 +294,22 @@ PROCESS_THREAD(sensor_process, ev, data) {
     if(generated < LAB_TOTAL_READINGS && (int32_t)(now - next_due) >= 0) {
       lab_reading r;
       generated++; r.id = generated; r.created_ms = now; r.value = (uint16_t)(node_id * 100u + generated);
+#if LAB_POLICY_MODE
+      lab_rate_observe(&measured_rate, now);
+#endif
       LAB_EVENT("GEN", "%"PRIu32",%"PRIu32",%u", r.id, r.created_ms, r.value);
       /* Record generation before any network work changes simulator time.
        * Still flush an old deadline before offering this new reading. */
       if(flush_due(now,false)) flush(now);
       lab_offer_result result = lab_offer(&queue, node_id, r);
       if(result != LAB_OFFER_OK) LAB_EVENT("DROP", "%"PRIu32",%u", r.id, (unsigned)result + 10u);
+#ifdef LAB_MIDDLE_PERIOD_MS
+      unsigned segment = LAB_TOTAL_READINGS / 3u;
+      next_due += generated >= segment && generated < 2u * segment
+                  ? LAB_MIDDLE_PERIOD_MS : LAB_PERIOD_MS;
+#else
       next_due += LAB_PERIOD_MS;
+#endif
       if(r.id == LAB_CRITICAL_READING) LAB_EVENT("CRITICAL", "%"PRIu32, r.id);
       if(flush_due(now,r.id == LAB_CRITICAL_READING)) flush(now);
     } else if(flush_due(now,false)) {

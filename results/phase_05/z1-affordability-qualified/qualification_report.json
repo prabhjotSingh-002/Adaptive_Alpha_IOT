@@ -1,0 +1,36 @@
+{
+  "status": "QUALIFIED",
+  "gates": {
+    "paired_windows": {
+      "target": ">=20",
+      "actual": 42,
+      "pass": true
+    },
+    "overall_agreement": {
+      "target": ">=90.0%",
+      "actual": "90.5% (266/294)",
+      "pass": true
+    },
+    "one_fit_discrimination": {
+      "target": ">=80.0%",
+      "actual": "81.4% (35/43)",
+      "pass": true
+    },
+    "finite_crossing_false_calls": {
+      "target": "==0",
+      "actual": 0,
+      "pass": true
+    }
+  },
+  "finite_crossings": {
+    "B1/2": 3,
+    "B1/3": 3,
+    "B2/2": 3,
+    "B2/3": 3
+  },
+  "provenance": {
+    "evaluation_seed": 123459,
+    "calibration_file": "results/phase_05/z1-demand-calibration-20261120/demand_calibration.json",
+    "calibration_sha256": "abed5189d4ece4835140a25dba1c80d58e776cb6d786b0c5693092c67e405c28"
+  }
+}

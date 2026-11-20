@@ -1,0 +1,5 @@
+changing_p1 14 median/max absolute relative error 0.031162679187950935 0.032124986202865684 observed unaffordable 0
+finite_p1_historical_source 6 median/max absolute relative error 0.01954476270288267 0.02039299790478353 observed unaffordable 0
+stationary_static 86 median/max absolute relative error 0.0004946852821900587 0.0026917125423219094 observed unaffordable 0
+hypothetical cap-one affordable set matches 1 / 21
+168d0b30be207fcd4f3c136373d9045487f43cf3b752bc54620a0794f400c8b5  /tmp/adaptivealpha-battery-forecast-reproduction.json

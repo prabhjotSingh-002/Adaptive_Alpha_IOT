@@ -1,0 +1,47 @@
+"""Index the fresh targeted validation manifests and verify their raw outcomes."""
+import json
+import re
+from pathlib import Path
+
+from evidence import verify_artifacts
+from run_experiment import digest
+
+out = Path(__file__).parent
+records = []
+for section in ('measurement', 'boundaries'):
+    section_log = out / f'current-{section}.log'
+    folder = Path(section_log.read_text().splitlines()[-1])
+    index_path = folder / 'manifest.json'
+    index = json.loads(index_path.read_text())
+    if index['section'] != section:
+        raise ValueError(index_path)
+    cases = []
+    for case in index['cases']:
+        case_path = Path(case['log'])
+        if digest(case_path) != case['log_sha256']:
+            raise ValueError(case_path)
+        runs = []
+        for state, run in re.findall(r'^(passed|failed) .*?/results/phase_04/(\S+)',
+                                     case_path.read_text(), re.M):
+            run_dir = Path('results/phase_04') / run
+            manifest = json.loads((run_dir / 'manifest.json').read_text())
+            checks = verify_artifacts(run_dir, manifest)
+            if manifest['status'] != state or not checks or set(checks.values()) != {'OK'}:
+                raise ValueError((run_dir, checks))
+            summary_path = run_dir / 'summary.json'
+            summary = json.loads(summary_path.read_text()) if summary_path.exists() else {}
+            runs.append(dict(run=run, status=state, artifact_checks=len(checks),
+                             manifest_sha256=digest(run_dir / 'manifest.json'),
+                             generated=summary.get('generated'),
+                             authenticated=summary.get('unique_authenticated_delivered'),
+                             max_hold_ms=summary.get('max_hold_ms'),
+                             batch_counts=summary.get('batch_counts')))
+        count = 1 if section == 'measurement' else 4
+        if case['status'] == 'passed' and len(runs) != count:
+            raise ValueError((case_path, runs))
+        cases.append(dict(name=case['name'], status=case['status'], log=str(case_path),
+                          log_sha256=case['log_sha256'], runs=runs))
+    records.append(dict(section=section, status=index['status'], index=str(index_path),
+                        index_sha256=digest(index_path), cases=cases))
+(out / 'targeted-phase4-verify.json').write_text(json.dumps(records, indent=2) + '\n')
+print([(r['section'], r['status'], len(r['cases'])) for r in records])

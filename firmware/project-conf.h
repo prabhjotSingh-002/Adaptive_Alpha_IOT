@@ -1,6 +1,9 @@
 #ifndef PROJECT_CONF_H_
 #define PROJECT_CONF_H_
 #include "generated-conf.h"
+/* Keep all structured RSLAB evidence; omit generic OS startup descriptions to
+ * fit both AEADs plus measured policy state in Z1 ROM. Same for every arm. */
+#define LOG_CONF_LEVEL_MAIN LOG_LEVEL_NONE
 /* RPL source-route graph counts the root as a node. */
 #define NETSTACK_MAX_ROUTE_ENTRIES LAB_LAST_NODE
 #if LAB_SCHEMA == 2

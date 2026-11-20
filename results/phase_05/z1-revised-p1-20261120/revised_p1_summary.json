@@ -1,0 +1,312 @@
+{
+  "security": "dual-profile AEAD (AES-128-CCM / Ascon-AEAD128) authenticated pilot",
+  "network_energy_nj": 32805887997,
+  "energy_per_delivered_reading_nj": 395251662.61445785,
+  "energy_window": "boot_to_horizon_including_warmup_and_drain",
+  "lifetime": {
+    "battery_nodes": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "fnd": {
+      "event": true,
+      "time_ms": 71297.953,
+      "censored": false
+    },
+    "hnd": {
+      "event": true,
+      "time_ms": 71461.319,
+      "censored": false
+    },
+    "functional": {
+      "event": true,
+      "crossing_ms": 77000,
+      "confirmation_ms": 87000,
+      "censor_ms": null
+    },
+    "scheduled_readings": 192,
+    "scheduled_delivered": 83,
+    "scheduled_shortfall": 109,
+    "service_window_ms": 10000,
+    "service_persistence_ms": 10000,
+    "delivery_bound_ms": 5000,
+    "service_minimum": 0.95
+  },
+  "stack_max_usage": {
+    "8": 786,
+    "2": 786,
+    "6": 786,
+    "4": 786,
+    "1": 888,
+    "7": 786,
+    "9": 786,
+    "5": 786,
+    "3": 786
+  },
+  "energy_measurement": {
+    "scope": "component_model",
+    "model_validated": true,
+    "reconciliation": {
+      "1": {
+        "total_nj": 5763485332,
+        "samples": 100,
+        "reconciled": true,
+        "state_contributions_nj": {
+          "cpu_with_idle_radio": 134516817,
+          "lpm_with_idle_radio": 116721745,
+          "deep": 0,
+          "tx_increment": 2206702,
+          "listen_increment": 5510040068
+        },
+        "fixed_trace_cpu_current_sensitivity_nj": [
+          5757669646,
+          5769301019
+        ]
+      },
+      "2": {
+        "total_nj": 4103597699,
+        "samples": 70,
+        "reconciled": true,
+        "state_contributions_nj": {
+          "cpu_with_idle_radio": 177517103,
+          "lpm_with_idle_radio": 74157974,
+          "deep": 0,
+          "tx_increment": 2259539,
+          "listen_increment": 3849663083
+        },
+        "fixed_trace_cpu_current_sensitivity_nj": [
+          4095922943,
+          4111272454
+        ]
+      },
+      "3": {
+        "total_nj": 4099873314,
+        "samples": 70,
+        "reconciled": true,
+        "state_contributions_nj": {
+          "cpu_with_idle_radio": 181207682,
+          "lpm_with_idle_radio": 73657036,
+          "deep": 0,
+          "tx_increment": 2466223,
+          "listen_increment": 3842542373
+        },
+        "fixed_trace_cpu_current_sensitivity_nj": [
+          4092039000,
+          4107707627
+        ]
+      },
+      "4": {
+        "total_nj": 4104366756,
+        "samples": 70,
+        "reconciled": true,
+        "state_contributions_nj": {
+          "cpu_with_idle_radio": 194431762,
+          "lpm_with_idle_radio": 72275987,
+          "deep": 0,
+          "tx_increment": 7260363,
+          "listen_increment": 3830398644
+        },
+        "fixed_trace_cpu_current_sensitivity_nj": [
+          4095960714,
+          4112772799
+        ]
+      },
+      "5": {
+        "total_nj": 4098226151,
+        "samples": 70,
+        "reconciled": true,
+        "state_contributions_nj": {
+          "cpu_with_idle_radio": 179395427,
+          "lpm_with_idle_radio": 73824354,
+          "deep": 0,
+          "tx_increment": 2432035,
+          "listen_increment": 3842574335
+        },
+        "fixed_trace_cpu_current_sensitivity_nj": [
+          4090470188,
+          4105982114
+        ]
+      },
+      "6": {
+        "total_nj": 4098504071,
+        "samples": 70,
+        "reconciled": true,
+        "state_contributions_nj": {
+          "cpu_with_idle_radio": 179770245,
+          "lpm_with_idle_radio": 73789749,
+          "deep": 0,
+          "tx_increment": 3187287,
+          "listen_increment": 3841756790
+        },
+        "fixed_trace_cpu_current_sensitivity_nj": [
+          4090731903,
+          4106276239
+        ]
+      },
+      "7": {
+        "total_nj": 4098279175,
+        "samples": 70,
+        "reconciled": true,
+        "state_contributions_nj": {
+          "cpu_with_idle_radio": 179425073,
+          "lpm_with_idle_radio": 73821617,
+          "deep": 0,
+          "tx_increment": 2237783,
+          "listen_increment": 3842794702
+        },
+        "fixed_trace_cpu_current_sensitivity_nj": [
+          4090521931,
+          4106036420
+        ]
+      },
+      "8": {
+        "total_nj": 4102468031,
+        "samples": 70,
+        "reconciled": true,
+        "state_contributions_nj": {
+          "cpu_with_idle_radio": 176268557,
+          "lpm_with_idle_radio": 74273247,
+          "deep": 0,
+          "tx_increment": 2236229,
+          "listen_increment": 3849689998
+        },
+        "fixed_trace_cpu_current_sensitivity_nj": [
+          4094847255,
+          4110088807
+        ]
+      },
+      "9": {
+        "total_nj": 4100572800,
+        "samples": 70,
+        "reconciled": true,
+        "state_contributions_nj": {
+          "cpu_with_idle_radio": 174131460,
+          "lpm_with_idle_radio": 74470557,
+          "deep": 0,
+          "tx_increment": 1634824,
+          "listen_increment": 3850335959
+        },
+        "fixed_trace_cpu_current_sensitivity_nj": [
+          4093044419,
+          4108101181
+        ]
+      }
+    },
+    "samples": {
+      "8": 70,
+      "2": 70,
+      "6": 70,
+      "4": 70,
+      "1": 100,
+      "7": 70,
+      "9": 70,
+      "5": 70,
+      "3": 70
+    }
+  },
+  "security_test_injections": 0,
+  "security_test_rejections": 0,
+  "rejection_reasons": {},
+  "unique_authenticated_delivered": 83,
+  "generated": 88,
+  "submitted_readings": 84,
+  "explicit_drops": 4,
+  "unique_delivered": 83,
+  "missing_readings": 5,
+  "packets_submitted": 53,
+  "packets_accepted": 52,
+  "packet_pdr": 0.9811320754716981,
+  "application_packet_bytes": 2271,
+  "reading_pdr": 0.9431818181818182,
+  "p95_delay_ms": 1140.5061000000044,
+  "max_hold_ms": 2875,
+  "duplicates": 0,
+  "batch_counts": [
+    1,
+    2
+  ],
+  "radio": {
+    "captured_frames": 320,
+    "captured_frame_bytes": 16522,
+    "data_frames": 180,
+    "max_frame_bytes": 105,
+    "fragment_frames": 0,
+    "unclassified_data_frames": 0
+  },
+  "policy": {
+    "total_policy_ticks": 4450,
+    "measured_feature_events": 72,
+    "profile_changes": 17,
+    "cap_changes": 17,
+    "startup_assignments": 8,
+    "fallback_actions": 0,
+    "decision_and_apply_seconds": 1.276153564453125,
+    "timing_samples": 4450,
+    "total_switches": 17,
+    "switch_reasons": {
+      "6": 9,
+      "11": 8
+    },
+    "profiles_used": [
+      1,
+      2
+    ],
+    "caps_used": [
+      1,
+      2
+    ]
+  },
+  "mechanism_checks": {
+    "policy_wire": {
+      "measured_feature_events": 72,
+      "sealed_packets_matched_to_policy": 53,
+      "authenticated_packets_matched_to_tx": 52,
+      "tx_profiles": [
+        1,
+        2
+      ],
+      "rx_profiles": [
+        1,
+        2
+      ],
+      "profile_changes": 17,
+      "wire_profile_changes": 15,
+      "cap_changes": 17,
+      "startup_assignments": 8,
+      "fallback_actions": 0,
+      "scope": "measured local traffic and cost-aware policy; residual-aware P1 ranking unvalidated"
+    },
+    "depletion": {
+      "depleted_nodes": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "removed_nodes": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "post_death_application_or_rf_violations": 0,
+      "bounded_budget_nodes": "all sensors",
+      "root_budget": "unbounded",
+      "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+    }
+  }
+}

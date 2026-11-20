@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "calibration_seed": 223457,
+  "window_ms": 2000,
+  "background": {
+    "sample_count": 1086,
+    "median_nj": 114872433,
+    "lower_nj": 114650858,
+    "upper_nj": 115250708
+  },
+  "marginal_packet_costs": {
+    "1_1": {
+      "profile": 1,
+      "batch_size": 1,
+      "sample_count": 126,
+      "median_nj": 336087,
+      "lower_nj": 319283,
+      "upper_nj": 352891
+    },
+    "1_2": {
+      "profile": 1,
+      "batch_size": 2,
+      "sample_count": 24,
+      "median_nj": 470374,
+      "lower_nj": 446855,
+      "upper_nj": 493893
+    },
+    "1_4": {
+      "profile": 1,
+      "batch_size": 4,
+      "sample_count": 16,
+      "median_nj": 561439,
+      "lower_nj": 533367,
+      "upper_nj": 589511
+    },
+    "2_1": {
+      "profile": 2,
+      "batch_size": 1,
+      "sample_count": 126,
+      "median_nj": 344092,
+      "lower_nj": 326887,
+      "upper_nj": 361297
+    },
+    "2_2": {
+      "profile": 2,
+      "batch_size": 2,
+      "sample_count": 24,
+      "median_nj": 470285,
+      "lower_nj": 446771,
+      "upper_nj": 493799
+    },
+    "2_4": {
+      "profile": 2,
+      "batch_size": 4,
+      "sample_count": 16,
+      "median_nj": 561239,
+      "lower_nj": 533177,
+      "upper_nj": 589301
+    }
+  },
+  "burst_incremental_singleton_nj": 157076,
+  "transitions": {
+    "1_2": {
+      "median_nj": 7066,
+      "lower_nj": 7000,
+      "upper_nj": 7200
+    },
+    "2_1": {
+      "median_nj": 6945,
+      "lower_nj": 6900,
+      "upper_nj": 7100
+    },
+    "1_1": {
+      "median_nj": 0,
+      "lower_nj": 0,
+      "upper_nj": 0
+    },
+    "2_2": {
+      "median_nj": 0,
+      "lower_nj": 0,
+      "upper_nj": 0
+    }
+  },
+  "provenance": {
+    "inputs": [
+      "results/phase_04/20261119T203436344512Z-B1-2",
+      "results/phase_04/20261119T203526122093Z-B1-2",
+      "results/phase_04/20261119T203616071041Z-B1-2",
+      "results/phase_04/20261119T203705490270Z-B2-2",
+      "results/phase_04/20261119T203758087372Z-B2-2",
+      "results/phase_04/20261119T203848960286Z-B2-2"
+    ],
+    "input_manifest_hashes": {
+      "results/phase_04/20261119T203436344512Z-B1-2": "02056487f9a87c33f34d5c2719b9398409326aef8b8bc0ab187e0de1f4f2d38c",
+      "results/phase_04/20261119T203526122093Z-B1-2": "0cb1e95dfc68d5b75121dfab60353a63c5fa11aa6b58e9c5e1be4d4b156903b8",
+      "results/phase_04/20261119T203616071041Z-B1-2": "95b0a34775664a66d9a8656f94e2765c1832792d7aac2fa33fe1cc13844484fc",
+      "results/phase_04/20261119T203705490270Z-B2-2": "d2cdffc9599ec0c7495b9ff849ab2865c0f55211f90c7461ad9aebc6336cf3cc",
+      "results/phase_04/20261119T203758087372Z-B2-2": "2a8cf61247d25febed8ffb98806f9219a53e4132af5191f5bb1d53799b9a809b",
+      "results/phase_04/20261119T203848960286Z-B2-2": "a36609a03bdea772a014039661d47bcc37e6d31a898d9ece46ecb11fe601d109"
+    },
+    "transition_benchmark": "results/phase_05/z1-joint-transition-v1-retry",
+    "transition_manifest_hash": "dfe73bea2769cfcd80c96b4918a7df3efaa544bb3108f0755d66e4388bec8af8",
+    "queued_shrink_benchmark": "results/phase_05/z1-queued-shrink",
+    "queued_shrink_result_hash": "9c458298ec798e1a71f4b11d6f1642e3813f47b1a604862db7ba8ab2e0517ae9",
+    "power_model_hash": "c65ebf2aed7c900d1938d03b3f61db70e80cc447b17f5b8d8dfde3dadc1d3534"
+  }
+}
