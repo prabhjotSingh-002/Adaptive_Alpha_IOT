@@ -1,0 +1,28 @@
+from pathlib import Path
+import json
+
+from audit_battery_forecast import trace, generation_times
+from demand_schedule import run_horizon_ms
+from evidence import verify_artifacts
+from run_experiment import digest
+
+out = Path(__file__).parent
+path = Path((out / "finite-changing.log").read_text().split()[1])
+manifest, nodes = trace(path)
+summary = json.loads((path / "summary.json").read_text())
+report = dict(manifest=str(path / "manifest.json"),
+              manifest_sha256=digest(path / "manifest.json"),
+              verified_artifacts=len(verify_artifacts(path, manifest)),
+              horizon_ms=run_horizon_ms(manifest["config"]),
+              delivered=summary["unique_authenticated_delivered"],
+              generated=summary["generated"], lifetime=summary["lifetime"])
+for events in nodes.values():
+    times = generation_times(events)
+    if not any(3900000 < b - a < 4100000 for a, b in zip(times, times[1:])):
+        raise ValueError("Middle schedule did not execute")
+    if sum(event["event_type"] == "DEPLETED" for event in events) != 1:
+        raise ValueError("Expected one terminal depletion per sensor")
+if report["lifetime"]["scheduled_readings"] != 54:
+    raise ValueError("Unexpected prospective demand")
+(out / "finite-changing-result.json").write_text(json.dumps(report, indent=2) + "\n")
+print(json.dumps(report))

@@ -1,0 +1,7 @@
+{
+  "seed": 123459,
+  "calibration_seed": 123458,
+  "method": "Predict two-second demand from the preceding measured two-second energy rate. Use AES as the reference on paired changing-traffic controls and add the historical per-node median Ascon-minus-AES demand difference to forecast Ascon. Use the active action's own preceding energy rate for the finite-run survival check.",
+  "evaluation": "Three Z1 motes, paired B1/B2 changing-traffic 500/4000/500 ms with 27 readings, and paired B1/B2 finite 4.097 J runs at 1000 ms with 96 readings. Cap one throughout. Match changing windows by generation-relative ordinal. Use an action-independent synthetic budget grid fixed at the preceding AES observation plus offsets -100000, -50000, -25000, 0, 25000, 50000, 100000 nJ. Finite windows use the actual logged residual and terminal depletion time.",
+  "acceptance": "Require at least 20 matched changing windows total, exact affordable-set agreement >=90% overall and >=80% on cases with exactly one observed affordable action (at least 10 such cases). Require at least one actual finite-budget crossing per sensor in each arm and zero false-affordable predictions in crossing windows. Cap-one success alone is diagnostic and does not qualify the joint ranker. Qualification also requires matching multi-cap and joint-transition evidence before a revised nine-node P1 run."
+}

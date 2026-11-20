@@ -1,0 +1,104 @@
+"""Verify the matched intervention and measure two-second component demand."""
+from bisect import bisect_left, bisect_right
+import json
+from pathlib import Path
+import re
+
+from audit_battery_forecast import trace
+from parse_logs import parse
+from run_experiment import digest
+
+out = Path(__file__).parent
+protocol = json.loads((out / "protocol.json").read_text())
+arms = {}
+settings = {}
+summary = {}
+records = {}
+model = json.loads(Path("configs/power-z1-v1.json").read_text())
+components = ("cpu", "lpm", "deep", "tx", "listen")
+for arm in protocol["arms"]:
+    log = out / f"{arm}.log"
+    path, = re.findall(r"^passed (\S+)", log.read_text(), re.M)
+    path = Path(path)
+    manifest, nodes = trace(path)
+    config = manifest["config"]
+    _, frames = parse(path / "COOJA.testlog", manifest["run_id"],
+                      profile=config["profile"], phase=5, schema=config["schema_version"])
+    if config["seed"] != protocol["seed"] or config["queued_shrink"] != arm:
+        raise ValueError("Unexpected intervention")
+    settings[arm] = (
+        manifest["pins"],
+        {key: value for key, value in manifest["source_hashes"].items()
+         if key != "firmware/generated-conf.h"},
+        [config[key] for key in ("period_ms", "readings_per_sensor", "warmup_ms",
+                                  "deadline_ms", "energy_sample_ms", "power_model")],
+    )
+    records[arm] = dict(manifest=str(path / "manifest.json"),
+                        manifest_sha256=digest(path / "manifest.json"), log_sha256=digest(log))
+    summary[arm] = json.loads((path / "summary.json").read_text())
+    arms[arm] = {}
+    for node, events in nodes.items():
+        policy = [event for event in events if event["event_type"] == "POLICY"]
+        anchor = next(event for event in policy if event["queue_count"] == 2)
+        index = policy.index(anchor)
+        expected = (2, 4) if arm == "hold" else (1, 1)
+        if (index == 0 or (policy[index - 1]["profile"], policy[index - 1]["cap"]) != (2, 4)
+                or (anchor["profile"], anchor["cap"]) != expected):
+            raise ValueError(f"Missing matched initial action or intervention on node {node}")
+        start = anchor["sim_time_us"]
+        target = start + protocol["window_us"]
+        energy = [event for event in events if event["event_type"] == "ENERGY_MODEL"]
+        model_times = [event["sim_time_us"] for event in energy]
+        left = energy[bisect_left(model_times, start) - 1]
+        right = energy[bisect_left(model_times, target)]
+        raw = [event for event in events if event["event_type"] == "ENERGY_RAW"]
+        raw_times = [event["sim_time_us"] for event in raw]
+        before, after = [raw[bisect_right(raw_times, event["sim_time_us"]) - 1]
+                         for event in (left, right)]
+        durations = right["sim_time_us"] - left["sim_time_us"]
+        delta = {}
+        for component, current in zip(components, model["nanoamps"]):
+            factor = current * model["millivolts"]
+            denominator = model["frequency"] * 1000
+            delta[component] = (after[component] * factor // denominator
+                                - before[component] * factor // denominator)
+        if sum(delta.values()) != right["total_nj"] - left["total_nj"]:
+            raise ValueError(f"Component reconciliation failed on node {node}")
+        packets = [event for event in events if event["event_type"] == "TX"]
+        queued_packets = [event for event in packets if event["first_id"] <= 2]
+        if arm == "switch" and (
+            [(event["profile"], event["count"], event["first_id"])
+             for event in queued_packets] != [(1, 1, 1), (1, 1, 2)]
+            or any(not start <= event["sim_time_us"] < target for event in queued_packets)
+        ):
+            raise ValueError(f"Queued AES singleton submissions missing on node {node}")
+        arms[arm][node] = dict(
+            anchor_us=start, oldest_hold_ms=anchor["oldest_hold_ms"],
+            measured_start_us=left["sim_time_us"], measured_end_us=right["sim_time_us"],
+            component_nj=delta, normalized_component_nj={
+                name: value * protocol["window_us"] / durations for name, value in delta.items()
+            }, packets_in_window=sum(start <= p["sim_time_us"] < target for p in packets),
+            radio_frames_in_window=sum(frame["node_id"] == node and start <= frame["sim_time_us"] < target
+                                       for frame in frames),
+            queued_packets=[{key: event[key] for key in ("sim_time_us", "profile", "count", "first_id")}
+                            for event in queued_packets],
+            generation_ids=[event["reading_id"] for event in events if event["event_type"] == "GEN"],
+            queue_at_window_end=policy[bisect_right([event["sim_time_us"] for event in policy],
+                                                   target) - 1]["queue_count"])
+if settings["switch"] != settings["hold"]:
+    raise ValueError("Incompatible matched arms")
+pairs = {}
+for node, switched in arms["switch"].items():
+    held = arms["hold"][node]
+    if (switched["generation_ids"] != held["generation_ids"]
+            or abs(switched["oldest_hold_ms"] - held["oldest_hold_ms"]) > 125):
+        raise ValueError(f"Unmatched initial work on node {node}")
+    pairs[node] = {key: switched["normalized_component_nj"][key]
+                   - held["normalized_component_nj"][key] for key in components}
+if any(result["unique_authenticated_delivered"] != 24 for result in summary.values()):
+    raise ValueError("Expected all 24 readings authenticated under both arms")
+report = dict(status="passed", runs=records, arms=arms, switch_minus_hold_nj=pairs,
+              whole_run_packets={arm: row["packets_submitted"] for arm, row in summary.items()})
+(out / "result.json").write_text(json.dumps(report, indent=2) + "\n")
+print("Paired component differences, nJ:", pairs)
+print("Whole-run packet submissions:", report["whole_run_packets"])

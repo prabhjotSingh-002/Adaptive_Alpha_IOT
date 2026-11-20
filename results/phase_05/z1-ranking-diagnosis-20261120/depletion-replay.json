@@ -1,0 +1,148 @@
+[
+  {
+    "run": "20261120T055947035616Z-B2-2",
+    "sample_ms": 125,
+    "manifest_sha256": "13d75f2a2a746e4b0c9da398b4a5a8b523178452e30cbc1af6bd728d07ad7285",
+    "artifact_checks": 13,
+    "events": 2495,
+    "frames": 294,
+    "terminal": {
+      "depleted_nodes": [
+        2
+      ],
+      "removed_nodes": [
+        2
+      ],
+      "post_death_application_or_rf_violations": 0,
+      "bounded_budget_nodes": [
+        2
+      ],
+      "root_budget": "unbounded",
+      "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+    },
+    "cutoff_ms": 158665.923,
+    "downstream_parent_before": {
+      "run_id": "20261120T055947035616Z-B2-2",
+      "sim_time_us": 72240616,
+      "sim_time_ms": 72240.616,
+      "node_id": 3,
+      "event_type": "ROUTE",
+      "parent": 2,
+      "rank": 528
+    },
+    "downstream_parent_after": {
+      "run_id": "20261120T055947035616Z-B2-2",
+      "sim_time_us": 161240885,
+      "sim_time_ms": 161240.885,
+      "node_id": 3,
+      "event_type": "ROUTE",
+      "parent": 0,
+      "rank": 65535
+    },
+    "downstream_authenticated_before": 38,
+    "downstream_authenticated_after": 0,
+    "survivor_generated_after": 82,
+    "lifetime": {
+      "battery_nodes": [
+        2,
+        3
+      ],
+      "fnd": {
+        "event": true,
+        "time_ms": 158665.923,
+        "censored": false
+      },
+      "hnd": {
+        "event": true,
+        "time_ms": 158665.923,
+        "censored": false
+      },
+      "functional": {
+        "event": true,
+        "crossing_ms": 165000,
+        "confirmation_ms": 175000,
+        "censor_ms": null
+      },
+      "scheduled_readings": 240,
+      "scheduled_delivered": 76,
+      "scheduled_shortfall": 164,
+      "service_window_ms": 10000,
+      "service_persistence_ms": 10000,
+      "delivery_bound_ms": 5000,
+      "service_minimum": 0.95
+    }
+  },
+  {
+    "run": "20261120T060114103160Z-B2-2",
+    "sample_ms": 250,
+    "manifest_sha256": "0bee0d0f1b048dc7b0d2bd12303bec4c0b3aca7e3e918487525884f7182be59e",
+    "artifact_checks": 13,
+    "events": 2498,
+    "frames": 294,
+    "terminal": {
+      "depleted_nodes": [
+        2
+      ],
+      "removed_nodes": [
+        2
+      ],
+      "post_death_application_or_rf_violations": 0,
+      "bounded_budget_nodes": [
+        2
+      ],
+      "root_budget": "unbounded",
+      "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+    },
+    "cutoff_ms": 159415.889,
+    "downstream_parent_before": {
+      "run_id": "20261120T060114103160Z-B2-2",
+      "sim_time_us": 72240587,
+      "sim_time_ms": 72240.587,
+      "node_id": 3,
+      "event_type": "ROUTE",
+      "parent": 2,
+      "rank": 528
+    },
+    "downstream_parent_after": {
+      "run_id": "20261120T060114103160Z-B2-2",
+      "sim_time_us": 161240885,
+      "sim_time_ms": 161240.885,
+      "node_id": 3,
+      "event_type": "ROUTE",
+      "parent": 0,
+      "rank": 65535
+    },
+    "downstream_authenticated_before": 38,
+    "downstream_authenticated_after": 0,
+    "survivor_generated_after": 82,
+    "lifetime": {
+      "battery_nodes": [
+        2,
+        3
+      ],
+      "fnd": {
+        "event": true,
+        "time_ms": 159415.889,
+        "censored": false
+      },
+      "hnd": {
+        "event": true,
+        "time_ms": 159415.889,
+        "censored": false
+      },
+      "functional": {
+        "event": true,
+        "crossing_ms": 165000,
+        "confirmation_ms": 175000,
+        "censor_ms": null
+      },
+      "scheduled_readings": 240,
+      "scheduled_delivered": 76,
+      "scheduled_shortfall": 164,
+      "service_window_ms": 10000,
+      "service_persistence_ms": 10000,
+      "delivery_bound_ms": 5000,
+      "service_minimum": 0.95
+    }
+  }
+]

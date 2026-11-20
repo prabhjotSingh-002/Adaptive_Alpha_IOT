@@ -1,0 +1,22 @@
+{
+  "evaluation_inputs": {
+    "results/phase_04/20261120T060204286049Z-B1-2": "188f2b48834e105428c581c1d43fa055dd68396b2a009159e7e13b342a836441",
+    "results/phase_04/20261120T060244279814Z-B2-2": "9670e489439d256b5b301d0411c20bf41dbb2b9c8531e5d878d80b4a455c9568"
+  },
+  "forecast_file_sha256": "168d0b30be207fcd4f3c136373d9045487f43cf3b752bc54620a0794f400c8b5",
+  "power_model_sha256": "c65ebf2aed7c900d1938d03b3f61db70e80cc447b17f5b8d8dfde3dadc1d3534",
+  "independent_error_envelope_cohort": {
+    "results/phase_04/20261117T023634948551Z-B1-2": "fe3a9c536bf60d491ba4f5af391fb38e449631ed51e29143ddbf88723752246d",
+    "results/phase_04/20261117T023831400765Z-B2-2": "97ae0da35e10928aa5dd20c3de9be7b1f37c2ad23ecdd79e38e61d3b0ff0b40f"
+  },
+  "matching_absolute_budget": 0,
+  "aes_cheaper_observed": 20,
+  "observed_neither_affordable": 22,
+  "median_signed_forecast_underestimate_nj": 65114.0532316342,
+  "median_forecast_action_gap_nj": 24765.157520845532,
+  "median_observed_demand_nj": 115563564.12801535,
+  "median_listen_share": 0.9514256488002069,
+  "conservative_outcomes": {
+    "abstained": 22
+  }
+}

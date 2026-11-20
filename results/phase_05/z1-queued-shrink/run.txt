@@ -1,0 +1,10 @@
+import json
+from pathlib import Path
+import subprocess
+
+out = Path("results/phase_05/z1-queued-shrink")
+protocol = json.loads((out / "protocol.json").read_text())
+for arm in protocol["arms"]:
+    with (out / f"{arm}.log").open("x") as log:
+        subprocess.run([*protocol["command_prefix"], arm], stdout=log,
+                       stderr=subprocess.STDOUT, check=True)

@@ -1,0 +1,10 @@
+{
+  "seed": 123458,
+  "scope": "Three-node stationary Z1, cap one, 1000 ms schedule, B1 and B2",
+  "forecast": "Use the original changing-traffic two-second forecast without fitting to this seed",
+  "point_budget": "Use the midpoint of the two predicted demands for each matched node/window",
+  "uncertainty": "Use the existing min/max error envelopes from the historical stationary cap-one calibration seed 223457, inclusive of zero. Select only if exactly one action has an upper bound within budget and the other has a lower bound above budget",
+  "acceptance": "Count point-budget agreement, observed relative ranking, and conservative correct, wrong or abstained windows separately. All-abstention cannot establish residual-aware ranking",
+  "pairing": "Same topology, target, power-model, schedule, seed, and substantive source hashes. Pair same-node ordinal windows anchored to each run's first GEN event",
+  "role_of_prior_seed": "Seed 123456 was used to diagnose the failure and is not the new holdout"
+}

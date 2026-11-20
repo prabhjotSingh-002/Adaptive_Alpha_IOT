@@ -1,0 +1,2 @@
+{'paired_windows': 42, 'grid_cases': 294, 'exact': 135, 'one_action': 20, 'one_action_exact': 4} changing pass: False finite pass: True
+Finite crossings and false-affordable counts: {'B1/2': (3, 0), 'B2/2': (3, 0), 'B1/3': (3, 0), 'B2/3': (3, 0)}

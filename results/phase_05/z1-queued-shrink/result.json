@@ -1,0 +1,233 @@
+{
+  "status": "passed",
+  "runs": {
+    "hold": {
+      "manifest": "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_05/20261120T065200554325Z-P1-2/manifest.json",
+      "manifest_sha256": "e7e0e500280a1e07cd3df70d8e857db67e7b73179227ece735def91d66c01f25",
+      "log_sha256": "e0bf8c3caa10f48bc766d5e10d4a4594b9e3cf0f115238b5f95819f90c173016"
+    },
+    "switch": {
+      "manifest": "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_05/20261120T065252116752Z-P1-2/manifest.json",
+      "manifest_sha256": "7c2e81ca9abde8c0f9934cbabe6f96422c49fba76234c932603cf418d171c495",
+      "log_sha256": "76d838cf03c1c62d4a69b8179b9a78c65d15e421cdd21f28852e51b475a50378"
+    }
+  },
+  "arms": {
+    "hold": {
+      "2": {
+        "anchor_us": 61927744,
+        "oldest_hold_ms": 625,
+        "measured_start_us": 61069764,
+        "measured_end_us": 64069350,
+        "component_nj": {
+          "cpu": 10756636,
+          "lpm": 2850783,
+          "deep": 0,
+          "tx": 335668,
+          "listen": 164999283
+        },
+        "normalized_component_nj": {
+          "cpu": 7172080.413763766,
+          "lpm": 1900784.3082345363,
+          "deep": 0.0,
+          "tx": 223809.5523848958,
+          "listen": 110014704.02915603
+        },
+        "packets_in_window": 1,
+        "radio_frames_in_window": 1,
+        "queued_packets": [
+          {
+            "sim_time_us": 62824639,
+            "profile": 2,
+            "count": 4,
+            "first_id": 1
+          }
+        ],
+        "generation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "queue_at_window_end": 1
+      },
+      "3": {
+        "anchor_us": 61997084,
+        "oldest_hold_ms": 625,
+        "measured_start_us": 61139026,
+        "measured_end_us": 64138682,
+        "component_nj": {
+          "cpu": 10682096,
+          "lpm": 2857665,
+          "deep": 0,
+          "tx": 177158,
+          "listen": 165172548
+        },
+        "normalized_component_nj": {
+          "cpu": 7122214.013873591,
+          "lpm": 1905328.477665439,
+          "deep": 0.0,
+          "tx": 118118.87763130173,
+          "listen": 110127659.97167675
+        },
+        "packets_in_window": 1,
+        "radio_frames_in_window": 1,
+        "queued_packets": [
+          {
+            "sim_time_us": 62893955,
+            "profile": 2,
+            "count": 4,
+            "first_id": 1
+          }
+        ],
+        "generation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "queue_at_window_end": 1
+      }
+    },
+    "switch": {
+      "2": {
+        "anchor_us": 61927741,
+        "oldest_hold_ms": 625,
+        "measured_start_us": 61069763,
+        "measured_end_us": 64070163,
+        "component_nj": {
+          "cpu": 12179250,
+          "lpm": 2719439,
+          "deep": 0,
+          "tx": 927748,
+          "listen": 164353322
+        },
+        "normalized_component_nj": {
+          "cpu": 8118417.544327423,
+          "lpm": 1812717.6376483135,
+          "deep": 0.0,
+          "tx": 618416.2111718438,
+          "listen": 109554274.0967871
+        },
+        "packets_in_window": 6,
+        "radio_frames_in_window": 6,
+        "queued_packets": [
+          {
+            "sim_time_us": 61943714,
+            "profile": 1,
+            "count": 1,
+            "first_id": 1
+          },
+          {
+            "sim_time_us": 61957608,
+            "profile": 1,
+            "count": 1,
+            "first_id": 2
+          }
+        ],
+        "generation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "queue_at_window_end": 0
+      },
+      "3": {
+        "anchor_us": 61997079,
+        "oldest_hold_ms": 625,
+        "measured_start_us": 61139036,
+        "measured_end_us": 64139470,
+        "component_nj": {
+          "cpu": 12106827,
+          "lpm": 2726125,
+          "deep": 0,
+          "tx": 767684,
+          "listen": 164519858
+        },
+        "normalized_component_nj": {
+          "cpu": 8070050.532689604,
+          "lpm": 1817153.7850857575,
+          "deep": 0.0,
+          "tx": 511715.3051858498,
+          "listen": 109664040.60212623
+        },
+        "packets_in_window": 6,
+        "radio_frames_in_window": 6,
+        "queued_packets": [
+          {
+            "sim_time_us": 62013046,
+            "profile": 1,
+            "count": 1,
+            "first_id": 1
+          },
+          {
+            "sim_time_us": 62026940,
+            "profile": 1,
+            "count": 1,
+            "first_id": 2
+          }
+        ],
+        "generation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "queue_at_window_end": 0
+      }
+    }
+  },
+  "switch_minus_hold_nj": {
+    "2": {
+      "cpu": 946337.1305636568,
+      "lpm": -88066.67058622278,
+      "deep": 0.0,
+      "tx": 394606.658786948,
+      "listen": -460429.93236893415
+    },
+    "3": {
+      "cpu": 947836.5188160129,
+      "lpm": -88174.69257968152,
+      "deep": 0.0,
+      "tx": 393596.427554548,
+      "listen": -463619.36955052614
+    }
+  },
+  "whole_run_packets": {
+    "hold": 6,
+    "switch": 24
+  }
+}

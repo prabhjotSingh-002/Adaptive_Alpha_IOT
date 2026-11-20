@@ -1,0 +1,9 @@
+passed /home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_04/20261120T062120955010Z-B2-2 
+Traceback (most recent call last):
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py", line 610, in <module>
+    main()
+    ~~~~^^
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/run_experiment.py", line 563, in main
+    if frozen_sources()!=frozen: raise ValueError("Source changed during comparison")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Source changed during comparison

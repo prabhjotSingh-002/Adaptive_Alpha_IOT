@@ -1,0 +1,3 @@
+db35a58f1a911390e6fc479a3a10e2cec0b98538dd006c654da89360900ed625  host/run_affordability_controls.py
+dfe8dd537d904fe0588014b144daaf166502ab3a18b7c2fdddfac34f0f405eed  results/phase_05/z1-affordability-v3/protocol.json
+a97b262ddb1948a2885aa45613f213b54bf023caa498b47c69a03a7305c34692  host/evaluate_affordability.py
