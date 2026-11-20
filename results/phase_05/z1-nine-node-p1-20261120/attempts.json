@@ -1,0 +1,64 @@
+[
+  {
+    "name": "p1-qualified-functional",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--mode",
+      "P1",
+      "--clients",
+      "8",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "123456",
+      "--policy-cost-table",
+      "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_05/z1-nine-node-20261120/cost-table-v1.json",
+      "--require-qualified-policy"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-19T20:07:21.781898+00:00",
+    "exit_code": 0,
+    "wall_seconds": 208.73381209373474,
+    "manifests": [
+      "results/phase_05/20261119T200722249256Z-P1-8/manifest.json"
+    ],
+    "manifest_sha256": "0881a75ea19309e81d7f5add24e81d17b503834b67097628ceab20d09d98bfa6"
+  },
+  {
+    "name": "p1-qualified-finite",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--mode",
+      "P1",
+      "--clients",
+      "8",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "123456",
+      "--policy-cost-table",
+      "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_05/z1-nine-node-20261120/cost-table-v1.json",
+      "--require-qualified-policy",
+      "--energy-budget-nj",
+      "4097000000"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-19T20:10:50.670224+00:00",
+    "exit_code": 0,
+    "wall_seconds": 131.43117475509644,
+    "manifests": [
+      "results/phase_05/20261119T201051437412Z-P1-8/manifest.json"
+    ],
+    "manifest_sha256": "dcad6b4c56b1a0f13fa70e0c6c4f3e8e29c8db422d420cb3afcaf88f74443156"
+  }
+]

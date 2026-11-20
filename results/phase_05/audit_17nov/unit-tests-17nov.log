@@ -1,0 +1,73 @@
+test_duplicate_seeds_rejected (test_campaign.CampaignTests) ... ok
+test_protocol_tampering_rejected (test_campaign.CampaignTests) ... ok
+test_topologies_must_not_pool (test_campaign.CampaignTests) ... ok
+test_no_death_censored_not_observed (test_lifetime.LifetimeTests) ... ok
+test_odd_even_hnd_and_simultaneous_deaths (test_lifetime.LifetimeTests) ... ok
+test_persistent_service_loss_and_planned_denominator (test_lifetime.LifetimeTests) ... ok
+test_ascon_accounting_and_unknown_profile (test_metrics.MetricsTests) ... ok
+test_bad_deadline_fails (test_metrics.MetricsTests) ... ok
+test_corruption_fails (test_metrics.MetricsTests) ... ok
+test_duplicate_not_counted_twice (test_metrics.MetricsTests) ... ok
+test_dynamic_policy_batch (test_metrics.MetricsTests) ... ok
+test_energy_telemetry_missing_regression_and_wrap (test_metrics.MetricsTests) ... ok
+test_known_delivery_and_global_latency (test_metrics.MetricsTests) ... ok
+test_missing_done_fails (test_metrics.MetricsTests) ... ok
+test_missing_generator_fails (test_metrics.MetricsTests) ... ok
+test_parse_incomplete_and_malformed (test_metrics.MetricsTests) ... ok
+test_phase4_completion_marker (test_metrics.MetricsTests) ... ok
+test_protected_rejection_reason_contract (test_metrics.MetricsTests) ... ok
+test_radio_fragment_dispatch_at_mac_boundary (test_metrics.MetricsTests) ... ok
+test_schema2_completion_and_legacy_isolation (test_metrics.MetricsTests) ... ok
+test_schema2_packet_identity_and_metadata (test_metrics.MetricsTests) ... ok
+test_secure_accounting_requires_authentication_and_context (test_metrics.MetricsTests) ... ok
+test_secure_packet_cannot_double_count_tag_budget (test_metrics.MetricsTests) ... ok
+test_stale_config_fails (test_metrics.MetricsTests) ... ok
+test_unlogged_submission_loss_fails (test_metrics.MetricsTests) ... ok
+test_b3_high_residual_uses_aes (test_policy.PolicyTests)
+Above hi threshold → AES. ... ok
+test_b3_hysteresis_holds_current (test_policy.PolicyTests)
+Inside band → keep current choice. ... ok
+test_b3_inactive_context_fallback (test_policy.PolicyTests)
+Inactive context → safe fallback AES cap 1. ... ok
+test_b3_low_residual_uses_ascon (test_policy.PolicyTests)
+Below lo threshold → Ascon. ... ok
+test_b3_no_auth_downgrade (test_policy.PolicyTests)
+B3 never returns profile 0. ... ok
+test_b3_threshold_above_uint32 (test_policy.PolicyTests) ... ok
+test_b6_adaptive_cap_high_queue_past_half_deadline (test_policy.PolicyTests)
+4 readings queued, hold > deadline/2 → cap 4. ... ok
+test_b6_adaptive_cap_low_queue (test_policy.PolicyTests)
+Choose cap before the first reading, allowing accumulation. ... ok
+test_b6_cap_limited_by_payload_budget (test_policy.PolicyTests)
+Tight payload budget limits cap to 1. ... ok
+test_b6_fixed_cipher_from_calibration (test_policy.PolicyTests)
+B6 always uses b6_profile regardless of residual. ... ok
+test_b6_invalid_b6_profile_fallback (test_policy.PolicyTests)
+b6_profile=0 is invalid → fallback. ... ok
+test_b6_slow_traffic_cannot_batch (test_policy.PolicyTests) ... ok
+test_p1_dwell_prevents_rapid_switch (test_policy.PolicyTests)
+P1 respects dwell timer. ... ok
+test_p1_inactive_context_fallback (test_policy.PolicyTests) ... ok
+test_p1_max_cap_respects_budget (test_policy.PolicyTests)
+max_cap with 47-byte budget = 2 readings (47-16-11)/10 = 2. ... ok
+test_p1_no_auth_downgrade (test_policy.PolicyTests)
+P1 never returns profile 0. ... ok
+test_p1_no_feasible_action_fallback (test_policy.PolicyTests)
+P1 falls back when no cost data available. ... ok
+test_p1_no_switch_when_saving_below_margin (test_policy.PolicyTests)
+P1 doesn't switch if saving < transition_cost + margin. ... ok
+test_p1_rate_drop_overrides_dwell_and_savings (test_policy.PolicyTests) ... ok
+test_p1_selects_min_cost_action (test_policy.PolicyTests)
+P1 selects the cheapest feasible action. ... ok
+test_seed_required (test_priority_repairs.CalibrationGuardTests) ... ok
+test_constant_paired_difference (test_priority_repairs.PairingTests) ... ok
+test_unmatched_arrays_rejected (test_priority_repairs.PairingTests) ... ok
+test_tampering_and_escape_are_reported (test_resolution_audit.AuditTests) ... ok
+test_invalid_combinations (test_topologies.TopologyTests) ... ok
+test_legacy_preserved (test_topologies.TopologyTests) ... ok
+test_radio_graphs (test_topologies.TopologyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 0.585s
+
+OK

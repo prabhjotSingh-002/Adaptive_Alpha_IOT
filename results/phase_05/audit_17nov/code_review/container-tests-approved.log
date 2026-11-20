@@ -1,0 +1,164 @@
+test_qualified_table_all_modes_present (test_calibration.CalibrationQualifiedTableTests) ... ok
+test_qualified_table_b6_winner_profile (test_calibration.CalibrationQualifiedTableTests) ... ok
+test_qualified_table_cap2_unavailable (test_calibration.CalibrationQualifiedTableTests) ... ok
+test_qualified_table_exists (test_calibration.CalibrationQualifiedTableTests) ... ok
+test_qualified_table_no_nan_or_negative (test_calibration.CalibrationQualifiedTableTests) ... ok
+test_qualified_table_seed (test_calibration.CalibrationQualifiedTableTests) ... ok
+test_qualified_table_source_records_present (test_calibration.CalibrationQualifiedTableTests) ... ok
+test_seed_required_in_load (test_calibration.CalibrationSeedIsolationTests)
+calibrate.load_summaries raises ValueError without seed. ... ok
+test_wrong_seed_excluded (test_calibration.CalibrationSeedIsolationTests)
+load_summaries with explicit seed only admits matching runs. ... ok
+test_b6_winner_empty_raises (test_calibration.CalibrationTableTests) ... ok
+test_b6_winner_lowest_cost (test_calibration.CalibrationTableTests) ... ok
+test_build_cost_table_all_modes (test_calibration.CalibrationTableTests) ... ok
+test_cap2_always_zero_unavailable (test_calibration.CalibrationTableTests)
+Cap-2 is never measured — must stay 0 in cost array. ... ok
+test_multiple_seeds_averaged (test_calibration.CalibrationTableTests)
+Multiple runs for same mode are averaged. ... ok
+test_p1_cost_array_shape (test_calibration.CalibrationTableTests) ... ok
+test_duplicate_seeds_rejected (test_campaign.CampaignTests) ... ok
+test_protocol_tampering_rejected (test_campaign.CampaignTests) ... ok
+test_topologies_must_not_pool (test_campaign.CampaignTests) ... ok
+test_cap1_budget_exact (test_deadline_flush.DeadlineFlushTests) ... ok
+test_cap_clamped_by_budget (test_deadline_flush.DeadlineFlushTests)
+When budget fits fewer readings than requested cap, cap is clamped. ... ok
+test_commit_on_send_exact_count (test_deadline_flush.DeadlineFlushTests) ... ok
+test_commit_on_send_rejects_over_count (test_deadline_flush.DeadlineFlushTests) ... ok
+test_critical_flush_overrides_all (test_deadline_flush.DeadlineFlushTests) ... ok
+test_flush_above_deadline (test_deadline_flush.DeadlineFlushTests) ... FAIL
+test_flush_at_exact_deadline (test_deadline_flush.DeadlineFlushTests)
+Equality: hold >= deadline_ms must trigger flush. ... FAIL
+test_flush_when_cap_full (test_deadline_flush.DeadlineFlushTests) ... ok
+test_no_flush_below_deadline (test_deadline_flush.DeadlineFlushTests) ... ok
+test_no_flush_empty_queue (test_deadline_flush.DeadlineFlushTests) ... ok
+test_offer_full_after_cap (test_deadline_flush.DeadlineFlushTests) ... ok
+test_oldest_hold_empty_is_zero (test_deadline_flush.DeadlineFlushTests) ... ok
+test_oldest_reading_governs_deadline (test_deadline_flush.DeadlineFlushTests)
+Second reading arrives later; flush uses OLDEST created_ms. ... FAIL
+test_out_of_order_rejected (test_deadline_flush.DeadlineFlushTests) ... ok
+test_readings_not_lost_before_commit (test_deadline_flush.DeadlineFlushTests)
+Existing readings survive until commit_on_send is called. ... FAIL
+test_wrong_source_rejected (test_deadline_flush.DeadlineFlushTests) ... ok
+test_p1_z1_actual_switches (test_evidence.ActualRunIntegrityTests) ... ok
+test_p1_z1_both_profiles_used (test_evidence.ActualRunIntegrityTests) ... ok
+test_p1_z1_costs_in_generated_conf (test_evidence.ActualRunIntegrityTests) ... ok
+test_p1_z1_manifest_passed (test_evidence.ActualRunIntegrityTests) ... ok
+test_p1_z1_run_exists (test_evidence.ActualRunIntegrityTests) ... ok
+test_security_runs_all_injections_rejected (test_evidence.ActualRunIntegrityTests)
+All 6 security regression runs must reject all injections. ... ok
+test_clean_run_all_ok (test_evidence.ArtifactVerificationTests) ... ok
+test_empty_artifact_hashes (test_evidence.ArtifactVerificationTests) ... ok
+test_missing_artifact_detected (test_evidence.ArtifactVerificationTests) ... ok
+test_multiple_artifacts_one_tampered (test_evidence.ArtifactVerificationTests) ... ok
+test_no_manifest_returns_none (test_evidence.ArtifactVerificationTests) ... ok
+test_tampered_artifact_detected (test_evidence.ArtifactVerificationTests) ... ok
+test_absolute_path_rejected (test_evidence.PathContainmentTests) ... ok
+test_dotdot_rejected (test_evidence.PathContainmentTests)
+.. in run_id should be rejected before filesystem access. ... ok
+test_valid_run_id_accepted (test_evidence.PathContainmentTests) ... ok
+test_no_death_censored_not_observed (test_lifetime.LifetimeTests) ... ok
+test_odd_even_hnd_and_simultaneous_deaths (test_lifetime.LifetimeTests) ... ok
+test_persistent_service_loss_and_planned_denominator (test_lifetime.LifetimeTests) ... ok
+test_ascon_accounting_and_unknown_profile (test_metrics.MetricsTests) ... ok
+test_bad_deadline_fails (test_metrics.MetricsTests) ... ok
+test_corruption_fails (test_metrics.MetricsTests) ... ok
+test_duplicate_not_counted_twice (test_metrics.MetricsTests) ... ok
+test_dynamic_policy_batch (test_metrics.MetricsTests) ... ok
+test_energy_telemetry_missing_regression_and_wrap (test_metrics.MetricsTests) ... ok
+test_known_delivery_and_global_latency (test_metrics.MetricsTests) ... ok
+test_missing_done_fails (test_metrics.MetricsTests) ... ok
+test_missing_generator_fails (test_metrics.MetricsTests) ... ok
+test_parse_incomplete_and_malformed (test_metrics.MetricsTests) ... ok
+test_phase4_completion_marker (test_metrics.MetricsTests) ... ok
+test_protected_rejection_reason_contract (test_metrics.MetricsTests) ... ok
+test_radio_fragment_dispatch_at_mac_boundary (test_metrics.MetricsTests) ... ok
+test_schema2_completion_and_legacy_isolation (test_metrics.MetricsTests) ... ok
+test_schema2_packet_identity_and_metadata (test_metrics.MetricsTests) ... ok
+test_secure_accounting_requires_authentication_and_context (test_metrics.MetricsTests) ... ok
+test_secure_packet_cannot_double_count_tag_budget (test_metrics.MetricsTests) ... ok
+test_stale_config_fails (test_metrics.MetricsTests) ... ok
+test_unlogged_submission_loss_fails (test_metrics.MetricsTests) ... ok
+test_b3_high_residual_uses_aes (test_policy.PolicyTests)
+Above hi threshold → AES. ... ok
+test_b3_hysteresis_holds_current (test_policy.PolicyTests)
+Inside band → keep current choice. ... ok
+test_b3_inactive_context_fallback (test_policy.PolicyTests)
+Inactive context → safe fallback AES cap 1. ... ok
+test_b3_low_residual_uses_ascon (test_policy.PolicyTests)
+Below lo threshold → Ascon. ... ok
+test_b3_no_auth_downgrade (test_policy.PolicyTests)
+B3 never returns profile 0. ... ok
+test_b3_threshold_above_uint32 (test_policy.PolicyTests) ... ok
+test_b6_adaptive_cap_high_queue_past_half_deadline (test_policy.PolicyTests)
+4 readings queued, hold > deadline/2 → cap 4. ... ok
+test_b6_adaptive_cap_low_queue (test_policy.PolicyTests)
+Choose cap before the first reading, allowing accumulation. ... ok
+test_b6_cap_limited_by_payload_budget (test_policy.PolicyTests)
+Tight payload budget limits cap to 1. ... ok
+test_b6_fixed_cipher_from_calibration (test_policy.PolicyTests)
+B6 always uses b6_profile regardless of residual. ... ok
+test_b6_invalid_b6_profile_fallback (test_policy.PolicyTests)
+b6_profile=0 is invalid → fallback. ... ok
+test_b6_slow_traffic_cannot_batch (test_policy.PolicyTests) ... ok
+test_p1_dwell_prevents_rapid_switch (test_policy.PolicyTests)
+P1 respects dwell timer. ... ok
+test_p1_inactive_context_fallback (test_policy.PolicyTests) ... ok
+test_p1_max_cap_respects_budget (test_policy.PolicyTests)
+max_cap with 47-byte budget = 2 readings (47-16-11)/10 = 2. ... ok
+test_p1_no_auth_downgrade (test_policy.PolicyTests)
+P1 never returns profile 0. ... ok
+test_p1_no_feasible_action_fallback (test_policy.PolicyTests)
+P1 falls back when no cost data available. ... ok
+test_p1_no_switch_when_saving_below_margin (test_policy.PolicyTests)
+P1 doesn't switch if saving < transition_cost + margin. ... ok
+test_p1_rate_drop_overrides_dwell_and_savings (test_policy.PolicyTests) ... ok
+test_p1_selects_min_cost_action (test_policy.PolicyTests)
+P1 selects the cheapest feasible action. ... ok
+test_seed_required (test_priority_repairs.CalibrationGuardTests) ... ok
+test_constant_paired_difference (test_priority_repairs.PairingTests) ... ok
+test_unmatched_arrays_rejected (test_priority_repairs.PairingTests) ... ok
+test_tampering_and_escape_are_reported (test_resolution_audit.AuditTests) ... ok
+test_invalid_combinations (test_topologies.TopologyTests) ... ok
+test_legacy_preserved (test_topologies.TopologyTests) ... ok
+test_radio_graphs (test_topologies.TopologyTests) ... ok
+
+======================================================================
+FAIL: test_flush_above_deadline (test_deadline_flush.DeadlineFlushTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/tests/unit/test_deadline_flush.py", line 173, in test_flush_above_deadline
+    self.assertTrue(self.lib.lab_should_flush(ctypes.byref(a), 3001, False))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_flush_at_exact_deadline (test_deadline_flush.DeadlineFlushTests)
+Equality: hold >= deadline_ms must trigger flush.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/tests/unit/test_deadline_flush.py", line 168, in test_flush_at_exact_deadline
+    self.assertTrue(self.lib.lab_should_flush(ctypes.byref(a), 3000, False))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_oldest_reading_governs_deadline (test_deadline_flush.DeadlineFlushTests)
+Second reading arrives later; flush uses OLDEST created_ms.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/tests/unit/test_deadline_flush.py", line 183, in test_oldest_reading_governs_deadline
+    self.assertEqual(hold, 3000)
+AssertionError: 2900 != 3000
+
+======================================================================
+FAIL: test_readings_not_lost_before_commit (test_deadline_flush.DeadlineFlushTests)
+Existing readings survive until commit_on_send is called.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/tests/unit/test_deadline_flush.py", line 231, in test_readings_not_lost_before_commit
+    self.assertEqual(a.count, 3)
+AssertionError: 2 != 3
+
+----------------------------------------------------------------------
+Ran 98 tests in 1.172s
+
+FAILED (failures=4)

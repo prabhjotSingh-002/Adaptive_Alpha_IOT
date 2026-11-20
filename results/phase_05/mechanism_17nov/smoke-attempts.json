@@ -1,0 +1,53 @@
+[
+  {
+    "name": "native-no-cost-fallback",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--clients",
+      "2",
+      "--seed",
+      "123456",
+      "--mode",
+      "P1",
+      "--target",
+      "cooja"
+    ],
+    "started": 1794881567.363664,
+    "status": "passed",
+    "exit_code": 0,
+    "seconds": 20.02549648284912,
+    "manifests": [
+      "results/phase_05/20261117T021247600241Z-P1-2/manifest.json"
+    ]
+  },
+  {
+    "name": "z1-measured-batching",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--clients",
+      "2",
+      "--seed",
+      "123456",
+      "--mode",
+      "B6",
+      "--target",
+      "z1",
+      "--power-model"
+    ],
+    "started": 1794881587.4384217,
+    "status": "failed",
+    "exit_code": 1,
+    "seconds": 19.06076216697693,
+    "manifests": [
+      "results/phase_05/20261117T021307655729Z-B6-2/manifest.json"
+    ]
+  }
+]

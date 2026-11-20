@@ -1,0 +1,13 @@
+{
+  "test_command": "sg docker -c docker run [pinned image, workspace mount] bash -c \"cd /workspace && python3 -B -m unittest discover -s tests/unit -p test_policy.py -v\"",
+  "container": "contiker/contiki-ng@sha256:b14d5afb0a2a852d9e72bbed607ead03f6ccc5f4d4dee44f0799110be2f4b609",
+  "exit_code": 0,
+  "tests_run": 20,
+  "outcome": "OK",
+  "initial_error": "sg: setgid() failed: Invalid argument; retried with escalated execution",
+  "scope": "Host tests compiling production policy.c; no simulation evidence",
+  "source_hashes": {
+    "firmware/policy/policy.c": "e1289ab73673d31cf1715d9dea704e6633d5641160d028870f9de480fa49b8b0",
+    "tests/unit/test_policy.py": "0efe46c4a39ab0e590b3d4600beea896e0e3d99db0d6927d7fc795ce7434f8a7"
+  }
+}

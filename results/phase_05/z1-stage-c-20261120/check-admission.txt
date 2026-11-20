@@ -1,0 +1,83 @@
+import copy
+import hashlib
+import json
+import subprocess
+import sys
+from pathlib import Path
+
+from calibration_contract import sha, sources, validate_table
+from evidence import verify_artifacts
+
+out = Path(__file__).parent
+directory = Path('results/phase_05/20261119T201051437412Z-P1-8')
+table_path = Path('results/phase_05/z1-nine-node-20261120/cost-table-v1.json')
+m = json.loads((directory / 'manifest.json').read_text())
+c = m['config']
+assert (m['clients'], c['seed'], c['topology'], c['energy_budget_nj'], c['deplete_node']) == (8, 123456, 'legacy', 4097000000, 0)
+assert c['warmup_ms'] + c['readings_per_sensor'] * c['period_ms'] + c['deadline_ms'] + c['drain_ms'] == 102000
+validate_table(json.loads(table_path.read_text()), c, 8)
+
+def signature(manifest):
+    config = {k:v for k,v in manifest['config'].items() if k not in ('mode','profile','config_id')}
+    source = {k:v for k,v in manifest['source_hashes'].items() if k != 'firmware/generated-conf.h'}
+    return dict(config=config, clients=manifest['clients'], sources=source,
+                dependencies=manifest['dependency_hashes'], pins=manifest['pins'])
+
+frozen = signature(m)
+assert frozen['sources'] == sources()
+assert c['policy_cost_sha256'] == sha(table_path)
+modes = ['B1','B2','B3','B4','B5','B6','P1']
+commands = {mode:[sys.executable,'-B','host/run_experiment.py','--phase','5','--mode',mode,
+                  '--clients','8','--target','z1','--power-model','--seed','123456',
+                  '--policy-cost-table',str(table_path),'--require-qualified-policy',
+                  '--energy-budget-nj','4097000000'] for mode in modes}
+protocol = dict(cohort=frozen, horizon_ms=102000, modes=modes, commands=commands,
+                p1_outcome_known_before_freeze=True, root_budget='unbounded',
+                saved_p1=str(directory), saved_p1_manifest_sha256=sha(directory/'manifest.json'))
+path = out/'protocol.json'
+if path.exists():
+    assert json.loads(path.read_text()) == protocol
+else:
+    path.write_text(json.dumps(protocol,indent=2)+'\n')
+
+def admit(manifest, run):
+    config = manifest['config']
+    if signature(manifest) != frozen:
+        raise ValueError('Comparison settings mismatch')
+    if (manifest['status'] != 'passed' or manifest['mode'] not in modes
+        or manifest['mode'] != config['mode'] or not config['lifetime']
+        or config['purpose'] != 'lifetime' or config['policy_calibration_status'] != 'qualified'):
+        raise ValueError('Ineligible run')
+    digest = hashlib.sha256(json.dumps(config,sort_keys=True).encode()).hexdigest()
+    checks = verify_artifacts(run,manifest)
+    if (digest != manifest['config_sha256'] or sha(run/'scenario.csc') != manifest['scenario_sha256']
+        or not {'summary.json','events.jsonl','scenario.csc','generated-conf.h','COOJA.testlog'}.issubset(checks)
+        or len(manifest['binary_hashes']) != 2 or set(checks.values()) != {'OK'}):
+        raise ValueError('Evidence integrity mismatch')
+    return checks
+
+checks = admit(m,directory)
+rejected = []
+for key, value in [('seed',123457),('energy_budget_nj',4098000000),('topology','other'),('period_ms',2000),('policy_cost_sha256','0'*64),('artifact', '0'*64),('source','0'*64),('clients',2)]:
+    bad = copy.deepcopy(m)
+    if key == 'artifact':
+        bad['artifact_hashes']['summary.json'] = value
+    elif key == 'source':
+        bad['source_hashes']['host/run_experiment.py'] = value
+    elif key == 'clients':
+        bad[key] = value
+    else:
+        bad['config'][key] = value
+    try:
+        admit(bad,directory)
+    except ValueError:
+        rejected.append(key)
+    else:
+        raise AssertionError('Accepted mismatch: '+key)
+preflights = {}
+for mode, command in commands.items():
+    preflights[mode] = json.loads(subprocess.check_output(command+['--preflight-only'],text=True))
+    assert preflights[mode]['status'] == 'preflight_passed'
+(out/'admission.json').write_text(json.dumps(dict(protocol_sha256=sha(path),p1_checks=checks,
+    rejected_mismatches=rejected,preflights=preflights),indent=2)+'\n')
+print(f'P1 admitted, {len(checks)} hashes verified, {len(rejected)} mismatches rejected, {len(preflights)} preflights passed')

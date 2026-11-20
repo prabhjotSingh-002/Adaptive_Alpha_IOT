@@ -1,0 +1,7 @@
+{
+  "canonical_lock_free": true,
+  "final_protocol_status": "passed",
+  "bounded_runs": 16,
+  "residual_aware_p1": "open",
+  "next_phase_started": false
+}

@@ -1,0 +1,18 @@
+GNU size (GNU Binutils) 2.22 (mspgcc dev 20120911)
+Copyright 2011 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+   text	   data	    bss	    dec	    hex	filename
+  53788	    344	   6588	  60720	   ed30	/workspace/results/phase_04/20261119T191047113613Z-B1-8/binaries/root-root.z1
+  54581	    348	   5850	  60779	   ed6b	/workspace/results/phase_04/20261119T191047113613Z-B1-8/binaries/sensor-sensor.z1
+  53788	    344	   6588	  60720	   ed30	/workspace/results/phase_04/20261119T191238765737Z-B1-8/binaries/root-root.z1
+  54581	    348	   5850	  60779	   ed6b	/workspace/results/phase_04/20261119T191238765737Z-B1-8/binaries/sensor-sensor.z1
+  53788	    344	   6588	  60720	   ed30	/workspace/results/phase_04/20261119T191434910853Z-B1-8/binaries/root-root.z1
+  54581	    348	   5850	  60779	   ed6b	/workspace/results/phase_04/20261119T191434910853Z-B1-8/binaries/sensor-sensor.z1
+  53788	    344	   6588	  60720	   ed30	/workspace/results/phase_04/20261119T191622767325Z-B2-8/binaries/root-root.z1
+  54581	    348	   5850	  60779	   ed6b	/workspace/results/phase_04/20261119T191622767325Z-B2-8/binaries/sensor-sensor.z1
+  53788	    344	   6588	  60720	   ed30	/workspace/results/phase_04/20261119T191812314950Z-B2-8/binaries/root-root.z1
+  54581	    348	   5850	  60779	   ed6b	/workspace/results/phase_04/20261119T191812314950Z-B2-8/binaries/sensor-sensor.z1
+  53788	    344	   6588	  60720	   ed30	/workspace/results/phase_04/20261119T192008597849Z-B2-8/binaries/root-root.z1
+  54581	    348	   5850	  60779	   ed6b	/workspace/results/phase_04/20261119T192008597849Z-B2-8/binaries/sensor-sensor.z1

@@ -1,0 +1,19 @@
+{
+  "scope": "items 4\u20135; root+2 only; separate calibration and evaluation",
+  "calibration_seed": 223457,
+  "evaluation_seed": 123456,
+  "quality": {
+    "min_pdr": 0.95,
+    "max_p95_ms": 5000
+  },
+  "finite_budget_rule": "Round median static AES cap1 node energy at first GEN plus half the declared generation span up to next 1e6 nJ; freeze before P1 finite outcomes",
+  "b3_bottleneck_budget_nj": 9000000000,
+  "b3_bottleneck_readings": 120,
+  "root_power": "unbounded",
+  "source_sha256": "ce25924037078ab7d02586ca09bd1f1e6326d0d4a762183809d23c225d8a2722",
+  "limitations": [
+    "single-seed mechanism evidence",
+    "P1 residual-aware ranking unvalidated",
+    "no comparative lifetime or scaling claim"
+  ]
+}

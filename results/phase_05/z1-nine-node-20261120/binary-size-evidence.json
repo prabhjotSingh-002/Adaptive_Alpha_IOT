@@ -1,0 +1,81 @@
+{
+  "tool": "GNU size (GNU Binutils) 2.22 (mspgcc dev 20120911)",
+  "binaries": [
+    {
+      "text": 53788,
+      "data": 344,
+      "bss": 6588,
+      "file": "/workspace/results/phase_04/20261119T191047113613Z-B1-8/binaries/root-root.z1"
+    },
+    {
+      "text": 54581,
+      "data": 348,
+      "bss": 5850,
+      "file": "/workspace/results/phase_04/20261119T191047113613Z-B1-8/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53788,
+      "data": 344,
+      "bss": 6588,
+      "file": "/workspace/results/phase_04/20261119T191238765737Z-B1-8/binaries/root-root.z1"
+    },
+    {
+      "text": 54581,
+      "data": 348,
+      "bss": 5850,
+      "file": "/workspace/results/phase_04/20261119T191238765737Z-B1-8/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53788,
+      "data": 344,
+      "bss": 6588,
+      "file": "/workspace/results/phase_04/20261119T191434910853Z-B1-8/binaries/root-root.z1"
+    },
+    {
+      "text": 54581,
+      "data": 348,
+      "bss": 5850,
+      "file": "/workspace/results/phase_04/20261119T191434910853Z-B1-8/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53788,
+      "data": 344,
+      "bss": 6588,
+      "file": "/workspace/results/phase_04/20261119T191622767325Z-B2-8/binaries/root-root.z1"
+    },
+    {
+      "text": 54581,
+      "data": 348,
+      "bss": 5850,
+      "file": "/workspace/results/phase_04/20261119T191622767325Z-B2-8/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53788,
+      "data": 344,
+      "bss": 6588,
+      "file": "/workspace/results/phase_04/20261119T191812314950Z-B2-8/binaries/root-root.z1"
+    },
+    {
+      "text": 54581,
+      "data": 348,
+      "bss": 5850,
+      "file": "/workspace/results/phase_04/20261119T191812314950Z-B2-8/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53788,
+      "data": 344,
+      "bss": 6588,
+      "file": "/workspace/results/phase_04/20261119T192008597849Z-B2-8/binaries/root-root.z1"
+    },
+    {
+      "text": 54581,
+      "data": 348,
+      "bss": 5850,
+      "file": "/workspace/results/phase_04/20261119T192008597849Z-B2-8/binaries/sensor-sensor.z1"
+    }
+  ],
+  "max_text_plus_data_bytes": 54929,
+  "max_data_plus_bss_bytes": 6932,
+  "minimum_observed_stack_reserved_minus_used_bytes": 344,
+  "scope": "Linker fit and observed stack usage in the six static calibration runs"
+}

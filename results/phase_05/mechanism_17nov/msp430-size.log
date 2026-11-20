@@ -1,0 +1,38 @@
+GNU size (GNU Binutils) 2.22 (mspgcc dev 20120911)
+Copyright 2011 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+   text	   data	    bss	    dec	    hex	filename
+  53776	    344	   5706	  59826	   e9b2	/workspace/results/phase_04/20261117T023634948551Z-B1-2/binaries/root-root.z1
+  54579	    348	   5736	  60663	   ecf7	/workspace/results/phase_04/20261117T023634948551Z-B1-2/binaries/sensor-sensor.z1
+  53776	    344	   5706	  59826	   e9b2	/workspace/results/phase_04/20261117T023714431056Z-B1-2/binaries/root-root.z1
+  54579	    348	   5736	  60663	   ecf7	/workspace/results/phase_04/20261117T023714431056Z-B1-2/binaries/sensor-sensor.z1
+  53776	    344	   5706	  59826	   e9b2	/workspace/results/phase_04/20261117T023753194817Z-B1-2/binaries/root-root.z1
+  54579	    348	   5736	  60663	   ecf7	/workspace/results/phase_04/20261117T023753194817Z-B1-2/binaries/sensor-sensor.z1
+  53776	    344	   5706	  59826	   e9b2	/workspace/results/phase_04/20261117T023831400765Z-B2-2/binaries/root-root.z1
+  54579	    348	   5736	  60663	   ecf7	/workspace/results/phase_04/20261117T023831400765Z-B2-2/binaries/sensor-sensor.z1
+  53776	    344	   5706	  59826	   e9b2	/workspace/results/phase_04/20261117T023910366789Z-B2-2/binaries/root-root.z1
+  54579	    348	   5736	  60663	   ecf7	/workspace/results/phase_04/20261117T023910366789Z-B2-2/binaries/sensor-sensor.z1
+  53776	    344	   5706	  59826	   e9b2	/workspace/results/phase_04/20261117T023948665737Z-B2-2/binaries/root-root.z1
+  54579	    348	   5736	  60663	   ecf7	/workspace/results/phase_04/20261117T023948665737Z-B2-2/binaries/sensor-sensor.z1
+  53776	    344	   5706	  59826	   e9b2	/workspace/results/phase_05/20261117T024032053990Z-P1-2/binaries/root-root.z1
+  56694	    448	   5792	  62934	   f5d6	/workspace/results/phase_05/20261117T024032053990Z-P1-2/binaries/sensor-sensor.z1
+  53798	    344	   5706	  59848	   e9c8	/workspace/results/phase_05/20261117T024127105801Z-P1-2/binaries/root-root.z1
+  56716	    448	   5792	  62956	   f5ec	/workspace/results/phase_05/20261117T024127105801Z-P1-2/binaries/sensor-sensor.z1
+  53798	    344	   5706	  59848	   e9c8	/workspace/results/phase_05/20261117T024208744064Z-B3-2/binaries/root-root.z1
+  55977	    448	   5792	  62217	   f309	/workspace/results/phase_05/20261117T024208744064Z-B3-2/binaries/sensor-sensor.z1
+  53798	    344	   5706	  59848	   e9c8	/workspace/results/phase_04/20261117T024314393934Z-B1-2/binaries/root-root.z1
+  54601	    348	   5736	  60685	   ed0d	/workspace/results/phase_04/20261117T024314393934Z-B1-2/binaries/sensor-sensor.z1
+  50841	    330	   5456	  56627	   dd33	/workspace/results/phase_05/20261117T024408479815Z-B3-2/binaries/root-root.z1
+  53812	    434	   5770	  60016	   ea70	/workspace/results/phase_05/20261117T024408479815Z-B3-2/binaries/sensor-sensor.z1
+  50841	    330	   5456	  56627	   dd33	/workspace/results/phase_05/20261117T024451744653Z-B3-2/binaries/root-root.z1
+  53251	    434	   5630	  59315	   e7b3	/workspace/results/phase_05/20261117T024451744653Z-B3-2/binaries/sensor-sensor.z1
+  50841	    330	   5456	  56627	   dd33	/workspace/results/phase_05/20261117T024536275754Z-B6-2/binaries/root-root.z1
+  53886	    434	   5770	  60090	   eaba	/workspace/results/phase_05/20261117T024536275754Z-B6-2/binaries/sensor-sensor.z1
+  50841	    330	   5456	  56627	   dd33	/workspace/results/phase_05/20261117T024617823636Z-B6-2/binaries/root-root.z1
+  53325	    434	   5630	  59389	   e7fd	/workspace/results/phase_05/20261117T024617823636Z-B6-2/binaries/sensor-sensor.z1
+  50841	    330	   5456	  56627	   dd33	/workspace/results/phase_05/20261117T024700243978Z-P1-2/binaries/root-root.z1
+  54551	    434	   5770	  60755	   ed53	/workspace/results/phase_05/20261117T024700243978Z-P1-2/binaries/sensor-sensor.z1
+  50841	    330	   5456	  56627	   dd33	/workspace/results/phase_05/20261117T024742346478Z-P1-2/binaries/root-root.z1
+  53990	    434	   5630	  60054	   ea96	/workspace/results/phase_05/20261117T024742346478Z-P1-2/binaries/sensor-sensor.z1

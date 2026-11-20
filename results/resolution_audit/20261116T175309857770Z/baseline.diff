@@ -1,0 +1,238 @@
+diff --git a/.gitignore b/.gitignore
+index 515253b..65d5cc4 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -18,3 +18,6 @@ results/phase_04/20*/
+ results/phase_03/20*/
+ results/phase_02/20*/
+ results/phase_01/20*/
++
++# Local pinned dashboard dependencies
++results/dashboard-deps/
+diff --git a/firmware/crypto/boot_gate.h b/firmware/crypto/boot_gate.h
+index 0b57afd..3518a1b 100644
+--- a/firmware/crypto/boot_gate.h
++++ b/firmware/crypto/boot_gate.h
+@@ -15,7 +15,7 @@ bool lab_boot_gate_poll(lab_boot_gate *gate, lab_security_context *ctx);
+ /* Metadata per slot: version, profile, sender BE16, epoch BE16, ready, reserved.
+  * Slots and keys are contiguous and must match the preinitialized contexts. */
+ #define LAB_PROVISION_SLOT_SIZE 8u
+-#define LAB_PROVISION_MAX_CONTEXTS 16u
++#define LAB_PROVISION_MAX_CONTEXTS 30u
+ bool lab_boot_gate_poll_set(lab_boot_gate *gate, lab_security_context *contexts,
+                             size_t count, const uint8_t *metadata,
+                             const uint8_t *keys);
+diff --git a/firmware/generated-conf.h b/firmware/generated-conf.h
+index 04b9973..ce70042 100644
+--- a/firmware/generated-conf.h
++++ b/firmware/generated-conf.h
+@@ -4,7 +4,7 @@
+ #define LAB_PERIOD_MS 1000u
+ #define LAB_WARMUP_MS 60000u
+ #define LAB_TOTAL_READINGS 24u
+-#define LAB_LAST_NODE 9u
++#define LAB_LAST_NODE 16u
+ #define LAB_PAYLOAD_BUDGET 67u
+ #define LAB_RESERVED_BYTES 16u
+ #define LAB_FLUSH_LEAD_MS 0u
+@@ -15,7 +15,7 @@
+ #define LAB_ENERGY_MODEL 0u
+ #define LAB_ENERGY_TELEMETRY 0u
+ #define LAB_SCHEMA 2u
+-#define LAB_CONFIG_ID 1939544980u
++#define LAB_CONFIG_ID 3029969923u
+ #define LAB_DUAL_PROFILE 1u
+ #define LAB_SWITCH_TEST 0u
+ #define LAB_RADIO_LOSS_TEST 0u
+@@ -24,10 +24,11 @@
+ #define LAB_PROFILE 1u
+ #define LAB_ROOT_RESET_TEST 0u
+ #define LAB_ATTACK_TEST 0u
+-#define LAB_POLICY_MODE 1u
++#define LAB_POLICY_MODE 2u
+ #define LAB_B3_THRESHOLD_NJ_HI 6000000000ULL
+ #define LAB_B3_THRESHOLD_NJ_LO 3000000000ULL
+ #define LAB_B6_PROFILE 2u
+ #define LAB_P1_TRANSITION_COST_NJ 50000ULL
+ #define LAB_P1_MIN_DWELL_MS 2000u
+ #define LAB_P1_MARGIN_NJ 10000ULL
++#define LAB_P1_COSTS {{0ULL,0ULL,0ULL},{0ULL,0ULL,0ULL}}
+diff --git a/firmware/sensor/sensor.c b/firmware/sensor/sensor.c
+index a905a14..41c81ac 100644
+--- a/firmware/sensor/sensor.c
++++ b/firmware/sensor/sensor.c
+@@ -102,7 +102,11 @@ static void flush(uint32_t now) {
+   }
+   size_t length = 0;
+ #if LAB_DUAL_PROFILE
+-  selected = LAB_SWITCH_TEST ? ((counter % 3u) == 2u ? 1u : 0u) : LAB_PROFILE - 1u;
++#if LAB_SWITCH_TEST
++  selected = (counter % 3u) == 2u ? 1u : 0u;
++#elif !LAB_POLICY_MODE
++  selected = LAB_PROFILE - 1u;
++#endif
+ #endif
+ #if (LAB_PROFILE == 1 || LAB_PROFILE == 2)
+   if(!udp.udp_conn || !lab_secure_seal(&security, &b, payload, sizeof(payload), &length)) {
+diff --git a/host/comparison_guard.py b/host/comparison_guard.py
+index d363105..d0d52ec 100644
+--- a/host/comparison_guard.py
++++ b/host/comparison_guard.py
+@@ -7,7 +7,7 @@ def admit_group(directories):
+     cohort=None
+     seen=set()
+     sources=[]
+-    keys=('target','backend','warmup_ms','period_ms','readings_per_sensor','deadline_ms','drain_ms','payload_budget','reserved_bytes','power_model','energy_sample_ms','aes_backend','bottleneck','radio_off_until_ms','cpu_work_iterations','flush_lead_ms')
++    keys=('topology','target','backend','warmup_ms','period_ms','readings_per_sensor','deadline_ms','drain_ms','payload_budget','reserved_bytes','power_model','energy_sample_ms','aes_backend','bottleneck','radio_off_until_ms','cpu_work_iterations','flush_lead_ms')
+     for directory in directories:
+         p=Path(directory)
+         m=json.loads((p/'manifest.json').read_text())
+diff --git a/host/dashboard.py b/host/dashboard.py
+index 1f830e2..f789a9f 100644
+--- a/host/dashboard.py
++++ b/host/dashboard.py
+@@ -11,6 +11,7 @@ Or directly if Flask + matplotlib + numpy are installed:
+     python3 host/dashboard.py
+ """
+ import glob
++import re
+ import hashlib
+ import io
+ import json
+@@ -70,8 +71,15 @@ def _load_runs(force=False):
+         if not force and time.time() - _cache["ts"] < 10:
+             return _cache["runs"]
+         runs = []
++        historical = None
++        pointer = RESULTS / 'campaigns/current.json'
++        if pointer.exists():
++            campaign_dir = PROJECT / json.loads(pointer.read_text())['directory']
++            historical = set(json.loads((campaign_dir / 'historical.json').read_text())['directories'])
+         for f in sorted(glob.glob(str(RESULTS / "phase_0*/*/summary.json"))):
+             try:
++                if historical is not None and str(Path(f).parent.relative_to(PROJECT)) not in historical:
++                    continue
+                 s = json.loads(Path(f).read_text())
+                 m = json.loads(Path(f).with_name("manifest.json").read_text())
+                 status  = s.get("status") or m.get("status", "?")
+@@ -720,14 +728,14 @@ async function refreshAll() {
+   document.getElementById('last-refresh').textContent =
+     'Refreshed ' + new Date().toLocaleTimeString();
+   showToast('Data refreshed');
+-  await Promise.all([fetchPhases(), fetchSummary(), fetchRuns()]);
++  await Promise.all([fetchPhases(), fetchRuns()]);
+   reloadCharts();
+ }
+ 
+ document.addEventListener('DOMContentLoaded', async () => {
+   document.getElementById('last-refresh').textContent =
+     'Loaded ' + new Date().toLocaleTimeString();
+-  await Promise.all([fetchPhases(), fetchSummary(), fetchRuns()]);
++  await Promise.all([fetchPhases(), fetchRuns()]);
+ });
+ 
+ // Auto-refresh every 30s
+@@ -737,11 +745,16 @@ setInterval(refreshAll, 30000);
+ </html>"""
+ 
+ 
+-@app.route("/")
++@app.route("/historical")
+ def index():
+-    return render_template_string(HTML)
++    archive = re.sub(r"  <!-- Mode comparison table -->.*?  <!-- All runs table -->", "  <!-- All runs table -->", HTML, flags=re.S)
++    banner = '<body><div style="padding:18px;background:#513b16;color:white">Historical/exploratory run archive. <a href="/">Open fresh campaign results</a></div>'
++    return render_template_string(archive.replace("<body>", banner))
+ 
+ 
++from campaign_dashboard import register_campaign
++register_campaign(app)
++
+ if __name__ == "__main__":
+     port = int(os.environ.get("DASHBOARD_PORT", 5000))
+     host = os.environ.get("DASHBOARD_HOST", "0.0.0.0")
+diff --git a/host/run_dashboard.py b/host/run_dashboard.py
+index f862112..309b5f0 100644
+--- a/host/run_dashboard.py
++++ b/host/run_dashboard.py
+@@ -28,18 +28,18 @@ def main():
+ 
+     # Install flask + run dashboard inside container
+     cmd_inner = (
+-        "pip3 install -q flask && "
++        "test -d /workspace/results/dashboard-deps/flask || exit 1; "
+         f"cd /workspace && "
+-        f"DASHBOARD_PORT={port} python3 host/dashboard.py"
++        f"PYTHONPATH=/workspace/results/dashboard-deps DASHBOARD_PORT={port} python3 host/dashboard.py"
+     )
+ 
+     docker_cmd = [
+         "sg", "docker", "-c",
+         shlex.join([
+             "docker", "run", "--rm",
+-            "-p", f"{port}:{port}",
++            "-p", f"127.0.0.1:{port}:{port}",
+             "--mount", f"type=bind,source={WORKSPACE}/external/contiki-ng,destination=/home/user/contiki-ng",
+-            "--mount", f"type=bind,source={WORKSPACE},destination=/workspace",
++            "--mount", f"type=bind,source={WORKSPACE},destination=/workspace,readonly",
+             CONTAINER,
+             "bash", "-c", cmd_inner,
+         ])
+@@ -50,7 +50,8 @@ def main():
+     print(f"[run_dashboard] Press Ctrl+C to stop.", flush=True)
+ 
+     try:
+-        subprocess.run(docker_cmd)
++        result = subprocess.run(docker_cmd)
++        raise SystemExit(result.returncode)
+     except KeyboardInterrupt:
+         print("\n[run_dashboard] Stopped.", flush=True)
+ 
+diff --git a/host/run_experiment.py b/host/run_experiment.py
+index f51d97a..c0d8d47 100644
+--- a/host/run_experiment.py
++++ b/host/run_experiment.py
+@@ -16,6 +16,7 @@ from policy_validation import validate_policy_config
+ from parse_logs import parse
+ from metrics import summarize
+ from scenario_target import configure_z1
++from topologies import configure_layout, validate_layout
+ 
+ PROJECT = Path(__file__).resolve().parents[1]
+ def digest(path): return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+@@ -28,7 +29,7 @@ def scenario(out, clients, config, keys=None):
+     tree = ET.parse(PROJECT / "simulations/scenarios/phase1-rpl-9.csc")
+     root = tree.getroot(); simulation = root.find("simulation")
+     simulation.find("randomseed").text = str(config["seed"])
+-    for mote in list(simulation.findall("mote"))[clients + 1:]: simulation.remove(mote)
++    configure_layout(simulation, clients, config.get("topology", "legacy"))
+     target = config.get("target", "cooja")
+     backend = config.get("backend", "ref")
+     for mote_type in simulation.findall("motetype"):
+@@ -213,7 +214,8 @@ def run(mode, clients, base, pins, override):
+     if config.get("profile", 0) not in (0, 1, 2): raise ValueError("Unsupported profile")
+     for name in ("seed", "warmup_ms", "period_ms", "readings_per_sensor", "deadline_ms", "drain_ms", "payload_budget", "reserved_bytes"):
+         if type(config[name]) is not int or config[name] < 0: raise ValueError("Invalid config " + name)
+-    if not 1 <= clients <= 8 or type(cap) is not int or cap not in (1, 2, 4) or not 1 <= config["readings_per_sensor"] <= 1000 or config["period_ms"] < 125 or config["period_ms"] % 125 or config["deadline_ms"] % 125 or config["deadline_ms"] > 2**31-1:
++    validate_layout(clients, config.get("topology", "legacy"), config.get("target", "cooja"), config.get("bottleneck", False))
++    if not 1 <= clients <= 15 or type(cap) is not int or cap not in (1, 2, 4) or not 1 <= config["readings_per_sensor"] <= 1000 or config["period_ms"] < 125 or config["period_ms"] % 125 or config["deadline_ms"] % 125 or config["deadline_ms"] > 2**31-1:
+         raise ValueError("Unsupported pilot dimensions or timer resolution")
+     if config["warmup_ms"] + config["readings_per_sensor"] * config["period_ms"] + config["deadline_ms"] + config["drain_ms"] >= 2**31 or config["payload_budget"] > 65535:
+         raise ValueError("Pilot horizon/budget exceeds bounded representation")
+@@ -377,6 +379,7 @@ def run(mode, clients, base, pins, override):
+ 
+ def main():
+     parser = argparse.ArgumentParser(); parser.add_argument("--phase", type=int, choices=[2, 3, 4, 5], default=2); parser.add_argument("--mode", choices=["N0-single", "N0-batch", "B1", "B2", "B3", "B4", "B5", "B6", "P1", "both", "all", "all5"], default="both"); parser.add_argument("--clients", type=int, default=8); parser.add_argument("--timeout-seconds", type=int, default=900); parser.add_argument("--attack-test", action="store_true"); parser.add_argument("--root-reset-test", action="store_true"); parser.add_argument("--gui", action="store_true", help="Open Cooja GUI instead of running headless (for visual inspection; results not logged to file)"); parser.add_argument("--radio-off-until-ms", type=int, default=0); parser.add_argument("--cpu-work-iterations", type=int, default=0); parser.add_argument("--radio-loss-test", action="store_true"); parser.add_argument("--reorder-test", action="store_true"); parser.add_argument("--sensor-reset-test", action="store_true"); parser.add_argument("--provision-fault", choices=["missing","version","profile","epoch"]); parser.add_argument("--critical-reading", type=int, default=0); parser.add_argument("--power-model", action="store_true"); parser.add_argument("--energy-budget-nj", type=int); parser.add_argument("--deplete-node", type=int, default=0); parser.add_argument("--bottleneck", action="store_true"); parser.add_argument("--energy-sample-ms", type=int, choices=[125,250,500], default=125); parser.add_argument("--energy-telemetry", action="store_true"); parser.add_argument("--warmup-ms", type=int); parser.add_argument("--switch-test", action="store_true"); parser.add_argument("--readings", type=int); parser.add_argument("--seed", type=int); parser.add_argument("--target", choices=["cooja", "z1"], default="cooja"); parser.add_argument("--backend", choices=["ref", "opt32_lowsize"], default="ref"); parser.add_argument("--period-ms", type=int); parser.add_argument("--payload-budget", type=int)
++    parser.add_argument("--topology", choices=["legacy", "grid16", "tree16"], default="legacy")
+     parser.add_argument("--policy-cost-table", type=Path)
+     args = parser.parse_args(); base = json.loads((PROJECT / f"configs/phase{args.phase}.json").read_text()); pins = json.loads((PROJECT / "results/setup/source-pins.json").read_text())
+     if args.phase == 5:
+@@ -435,6 +438,8 @@ def main():
+     base["energy_sample_ms"] = args.energy_sample_ms
+     base["deplete_node"] = args.deplete_node
+     base["bottleneck"] = args.bottleneck
++    base["topology"] = args.topology
++    validate_layout(args.clients, args.topology, args.target, args.bottleneck)
+     if args.power_model:
+         base["power_model"] = json.loads((PROJECT/"configs/power-z1-v1.json").read_text())
+         base["energy_budget_nj"] = args.energy_budget_nj if args.energy_budget_nj is not None else 2**64-1

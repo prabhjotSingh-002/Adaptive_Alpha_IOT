@@ -1,0 +1,14 @@
+{
+  "host/calibrate.py": "f763a947eec66475cb7b3ae37fa009019083b9ec201d6030dfc09aefc0522723",
+  "host/policy_validation.py": "72e77dccc0ebed9d6c7c2ee16c230af717122bb8a7cb58be9e472d1fab8af7fa",
+  "host/run_experiment.py": "49168cdb2bbf21ca26c109b336a69987c3211c23d8c35420aba40d719ad25993",
+  "host/run_campaign.py": "60254f6349e68de881e25a44e67808d35db33a800798b6bca216194440f27c35",
+  "host/campaign.py": "f524fb0167103b9ac7bc3b5400121d41a6be2671e7bf25b90145d3663f054c2d",
+  "host/campaign_dashboard.py": "bbf773a380dc73ae68d7f22a7666056cb7e9c3e0656afa25b72c6b87850c9fbb",
+  "firmware/policy/policy.c": "e1289ab73673d31cf1715d9dea704e6633d5641160d028870f9de480fa49b8b0",
+  "firmware/sensor/sensor.c": "672a3d19af654446f74742067ef63458c2c50bc22cb3f333b764e86a2d921914",
+  "firmware/aggregate/aggregate.c": "bae672e0182bb7aea54f1d1374e443f443534e356f62827c75779739413d5c1d",
+  "firmware/common/protocol.h": "e80260448459ec25d8e81fcd4802d0d48267d20b5a7f54e1609c16291e3e661c",
+  "tests/unit/test_deadline_flush.py": "a80167c394716fc8b7e9c4fc929aca3bc4b4492957626b9d226637b2295cbe7d",
+  "tests/unit/test_evidence.py": "e85f8bfacab8e6c847b82eabe2a13cbbcf24490ab6e2600f4e10cfaa12ce3e35"
+}

@@ -1,0 +1,465 @@
+[
+  {
+    "name": "cal-B1-cap1",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "4",
+      "--mode",
+      "B1",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "223457",
+      "--calibration-cap",
+      "1"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:36:34.739999+00:00",
+    "exit_code": 0,
+    "wall_seconds": 39.368921995162964,
+    "manifests": [
+      "results/phase_04/20261117T023634948551Z-B1-2/manifest.json"
+    ],
+    "manifest_sha256": "fe3a9c536bf60d491ba4f5af391fb38e449631ed51e29143ddbf88723752246d"
+  },
+  {
+    "name": "cal-B1-cap2",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "4",
+      "--mode",
+      "B1",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "223457",
+      "--calibration-cap",
+      "2"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:37:14.205962+00:00",
+    "exit_code": 0,
+    "wall_seconds": 38.67441654205322,
+    "manifests": [
+      "results/phase_04/20261117T023714431056Z-B1-2/manifest.json"
+    ],
+    "manifest_sha256": "4f153ca20b76fbf103f146fe01e468f352e45740dfb7df3ac7198cbeca56f73b"
+  },
+  {
+    "name": "cal-B1-cap4",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "4",
+      "--mode",
+      "B1",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "223457",
+      "--calibration-cap",
+      "4"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:37:52.978180+00:00",
+    "exit_code": 0,
+    "wall_seconds": 38.11670732498169,
+    "manifests": [
+      "results/phase_04/20261117T023753194817Z-B1-2/manifest.json"
+    ],
+    "manifest_sha256": "4201a43e5147b6084b903887bb79e156bcd87d0b94d3fdde419433b1446a05e4"
+  },
+  {
+    "name": "cal-B2-cap1",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "4",
+      "--mode",
+      "B2",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "223457",
+      "--calibration-cap",
+      "1"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:38:31.192103+00:00",
+    "exit_code": 0,
+    "wall_seconds": 38.831655979156494,
+    "manifests": [
+      "results/phase_04/20261117T023831400765Z-B2-2/manifest.json"
+    ],
+    "manifest_sha256": "97ae0da35e10928aa5dd20c3de9be7b1f37c2ad23ecdd79e38e61d3b0ff0b40f"
+  },
+  {
+    "name": "cal-B2-cap2",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "4",
+      "--mode",
+      "B2",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "223457",
+      "--calibration-cap",
+      "2"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:39:10.157112+00:00",
+    "exit_code": 0,
+    "wall_seconds": 38.20202112197876,
+    "manifests": [
+      "results/phase_04/20261117T023910366789Z-B2-2/manifest.json"
+    ],
+    "manifest_sha256": "d7112ba94964284c976d0d215dbe8083283737f843962bf20ef7f1b4ea22d626"
+  },
+  {
+    "name": "cal-B2-cap4",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "4",
+      "--mode",
+      "B2",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "223457",
+      "--calibration-cap",
+      "4"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:39:48.456691+00:00",
+    "exit_code": 0,
+    "wall_seconds": 42.38935327529907,
+    "manifests": [
+      "results/phase_04/20261117T023948665737Z-B2-2/manifest.json"
+    ],
+    "manifest_sha256": "f2f32b3b19f1d2cecd486b2fc4bc3979bc5881bb69020de13255ddb9a617b2f7"
+  },
+  {
+    "name": "p1-qualified-functional",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--mode",
+      "P1",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "123456",
+      "--policy-cost-table",
+      "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_05/mechanism_17nov/validation-v2/cost-table-v1.json",
+      "--require-qualified-policy"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:40:31.707060+00:00",
+    "exit_code": 0,
+    "wall_seconds": 54.94284772872925,
+    "manifests": [
+      "results/phase_05/20261117T024032053990Z-P1-2/manifest.json"
+    ],
+    "manifest_sha256": "7f1d4f0725e7ddbae7edd9b3283232cbb4be54b39b06dfcd7fd9a31f5e3497d7"
+  },
+  {
+    "name": "p1-qualified-finite",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--mode",
+      "P1",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "123456",
+      "--policy-cost-table",
+      "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/results/phase_05/mechanism_17nov/validation-v2/cost-table-v1.json",
+      "--require-qualified-policy",
+      "--energy-budget-nj",
+      "4093000000"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:41:26.752598+00:00",
+    "exit_code": 0,
+    "wall_seconds": 41.68489384651184,
+    "manifests": [
+      "results/phase_05/20261117T024127105801Z-P1-2/manifest.json"
+    ],
+    "manifest_sha256": "fe4f63a05ec4e51e1e76cff517a1ce2e7df9725201f9e8af4cac81134d1c9232"
+  },
+  {
+    "name": "b3-threshold-finite",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--mode",
+      "B3",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "123456",
+      "--readings",
+      "120",
+      "--energy-budget-nj",
+      "9000000000"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:42:08.535766+00:00",
+    "exit_code": 0,
+    "wall_seconds": 65.55766701698303,
+    "manifests": [
+      "results/phase_05/20261117T024208744064Z-B3-2/manifest.json"
+    ],
+    "manifest_sha256": "10fb6d8393133ca7412b1fe772baa127ad0eeedd516e86c127f12e8b7b33d1ae"
+  },
+  {
+    "name": "bottleneck-depletion",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "4",
+      "--mode",
+      "B1",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "123456",
+      "--readings",
+      "120",
+      "--energy-budget-nj",
+      "9000000000",
+      "--deplete-node",
+      "2",
+      "--bottleneck"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:43:14.190826+00:00",
+    "exit_code": 0,
+    "wall_seconds": 53.967246294021606,
+    "manifests": [
+      "results/phase_04/20261117T024314393934Z-B1-2/manifest.json"
+    ],
+    "manifest_sha256": "27f55bd56fdf1771543b8f397d447252dfff96821b785dcf145bd055837d1364"
+  },
+  {
+    "name": "b3-attack",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--mode",
+      "B3",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--seed",
+      "123456",
+      "--attack-test"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:44:08.266545+00:00",
+    "exit_code": 0,
+    "wall_seconds": 43.13276720046997,
+    "manifests": [
+      "results/phase_05/20261117T024408479815Z-B3-2/manifest.json"
+    ],
+    "manifest_sha256": "7ed9a9308ba17931d718d27d0b645903e8a860e7b60ede829bbcf925b596e27f"
+  },
+  {
+    "name": "b3-root-reset",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--mode",
+      "B3",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--seed",
+      "123456",
+      "--root-reset-test"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:44:51.503625+00:00",
+    "exit_code": 0,
+    "wall_seconds": 44.46322846412659,
+    "manifests": [
+      "results/phase_05/20261117T024451744653Z-B3-2/manifest.json"
+    ],
+    "manifest_sha256": "1777195fc13318448336084f8bb0aff01e9e6d81be178f6bd7e354c872844380"
+  },
+  {
+    "name": "b6-attack",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--mode",
+      "B6",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--seed",
+      "123456",
+      "--attack-test"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:45:36.064001+00:00",
+    "exit_code": 0,
+    "wall_seconds": 41.44380450248718,
+    "manifests": [
+      "results/phase_05/20261117T024536275754Z-B6-2/manifest.json"
+    ],
+    "manifest_sha256": "1b330ed8488ef5e1135d239255e9121b77ed0a490ad9b8220638841fc180c735"
+  },
+  {
+    "name": "b6-root-reset",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--mode",
+      "B6",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--seed",
+      "123456",
+      "--root-reset-test"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:46:17.609119+00:00",
+    "exit_code": 0,
+    "wall_seconds": 42.316622257232666,
+    "manifests": [
+      "results/phase_05/20261117T024617823636Z-B6-2/manifest.json"
+    ],
+    "manifest_sha256": "6771e2af9c31c3ab92ae9436834b8e44cb7d0a2a422f69f2de78cf6bae9011a9"
+  },
+  {
+    "name": "p1-attack",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--mode",
+      "P1",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--seed",
+      "123456",
+      "--attack-test"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:47:00.030568+00:00",
+    "exit_code": 0,
+    "wall_seconds": 42.00706601142883,
+    "manifests": [
+      "results/phase_05/20261117T024700243978Z-P1-2/manifest.json"
+    ],
+    "manifest_sha256": "1d67c66d804ea6f12d890be395a39e76959cc0318f9cd435fb63238ea81aa3af"
+  },
+  {
+    "name": "p1-root-reset",
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--mode",
+      "P1",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--seed",
+      "123456",
+      "--root-reset-test"
+    ],
+    "status": "passed",
+    "started_utc": "2026-11-17T02:47:42.137988+00:00",
+    "exit_code": 0,
+    "wall_seconds": 42.25944471359253,
+    "manifests": [
+      "results/phase_05/20261117T024742346478Z-P1-2/manifest.json"
+    ],
+    "manifest_sha256": "168c33fe5cd6ae26f9962cbfebfd771fdc660c1c521906733c7a21ee03730b7f"
+  }
+]

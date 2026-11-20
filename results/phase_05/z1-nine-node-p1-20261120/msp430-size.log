@@ -1,0 +1,10 @@
+GNU size (GNU Binutils) 2.22 (mspgcc dev 20120911)
+Copyright 2011 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+   text	   data	    bss	    dec	    hex	filename
+  53788	    344	   6588	  60720	   ed30	/workspace/results/phase_05/20261119T200722249256Z-P1-8/binaries/root-root.z1
+  56696	    448	   5906	  63050	   f64a	/workspace/results/phase_05/20261119T200722249256Z-P1-8/binaries/sensor-sensor.z1
+  53810	    344	   6588	  60742	   ed46	/workspace/results/phase_05/20261119T201051437412Z-P1-8/binaries/root-root.z1
+  56718	    448	   5906	  63072	   f660	/workspace/results/phase_05/20261119T201051437412Z-P1-8/binaries/sensor-sensor.z1

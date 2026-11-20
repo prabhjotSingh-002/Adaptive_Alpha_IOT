@@ -11,9 +11,19 @@
   },
   "firmware": {
     "policy_module": {
-      "files": ["firmware/policy/policy.h", "firmware/policy/policy.c"],
-      "sha256_prefixes": {"policy.h": "c58c838542b99893", "policy.c": "1db7d3f6665e47a9"},
-      "policies": ["B3", "B6", "P1"],
+      "files": [
+        "firmware/policy/policy.h",
+        "firmware/policy/policy.c"
+      ],
+      "sha256_prefixes": {
+        "policy.h": "c58c838542b99893",
+        "policy.c": "1db7d3f6665e47a9"
+      },
+      "policies": [
+        "B3",
+        "B6",
+        "P1"
+      ],
       "status": "implemented_tested"
     },
     "sensor_integration": {
@@ -44,77 +54,326 @@
     }
   },
   "unit_tests": {
-    "test_policy": {"tests": 17, "status": "all_pass"},
-    "test_metrics": {"tests": 18, "status": "all_pass"},
-    "test_lifetime": {"tests": 3, "status": "all_pass"},
+    "test_policy": {
+      "tests": 17,
+      "status": "all_pass"
+    },
+    "test_metrics": {
+      "tests": 18,
+      "status": "all_pass"
+    },
+    "test_lifetime": {
+      "tests": 3,
+      "status": "all_pass"
+    },
     "total": 38
   },
   "smoke_runs": {
-    "B3": {"run_id": "20261114T091850125887Z-B3-2", "status": "passed", "pdr": 1.0},
-    "B6": {"run_id": "20261114T091919114788Z-B6-2", "status": "passed", "pdr": 1.0},
-    "P1": {"run_id": "20261114T091937880366Z-P1-2", "status": "passed", "pdr": 1.0}
+    "B3": {
+      "run_id": "20261114T091850125887Z-B3-2",
+      "status": "passed",
+      "pdr": 1.0
+    },
+    "B6": {
+      "run_id": "20261114T091919114788Z-B6-2",
+      "status": "passed",
+      "pdr": 1.0
+    },
+    "P1": {
+      "run_id": "20261114T091937880366Z-P1-2",
+      "status": "passed",
+      "pdr": 1.0
+    }
   },
   "security_regression": {
     "attack_test": {
-      "B3": {"run_id": "20261114T115355633747Z-B3-2", "injections": 8, "rejections": 8, "status": "passed"},
-      "B6": {"run_id": "20261114T115420997857Z-B6-2", "injections": 8, "rejections": 8, "status": "passed"},
-      "P1": {"run_id": "20261114T115446511507Z-P1-2", "injections": 8, "rejections": 8, "status": "passed"}
+      "B3": {
+        "run_id": "20261114T115355633747Z-B3-2",
+        "injections": 8,
+        "rejections": 8,
+        "status": "passed"
+      },
+      "B6": {
+        "run_id": "20261114T115420997857Z-B6-2",
+        "injections": 8,
+        "rejections": 8,
+        "status": "passed"
+      },
+      "P1": {
+        "run_id": "20261114T115446511507Z-P1-2",
+        "injections": 8,
+        "rejections": 8,
+        "status": "passed"
+      }
     },
     "root_reset_test": {
-      "B3": {"run_id": "20261114T115510814937Z-B3-2", "rejections": 88, "status": "passed"},
-      "B6": {"run_id": "20261114T115534648742Z-B6-2", "rejections": 88, "status": "passed"},
-      "P1": {"run_id": "20261114T115601684324Z-P1-2", "rejections": 88, "status": "passed"}
+      "B3": {
+        "run_id": "20261114T115510814937Z-B3-2",
+        "rejections": 88,
+        "status": "passed"
+      },
+      "B6": {
+        "run_id": "20261114T115534648742Z-B6-2",
+        "rejections": 88,
+        "status": "passed"
+      },
+      "P1": {
+        "run_id": "20261114T115601684324Z-P1-2",
+        "rejections": 88,
+        "status": "passed"
+      }
     }
   },
   "z1_pilot_runs": {
     "config": {
-      "target": "z1", "clients": 8, "warmup_ms": 60000, "period_ms": 1000,
-      "readings_per_sensor": 24, "deadline_ms": 3000, "drain_ms": 15000,
-      "payload_budget": 67, "power_model": true
+      "target": "z1",
+      "clients": 8,
+      "warmup_ms": 60000,
+      "period_ms": 1000,
+      "readings_per_sensor": 24,
+      "deadline_ms": 3000,
+      "drain_ms": 15000,
+      "payload_budget": 67,
+      "power_model": true
     },
     "B3": {
       "runs": [
-        {"seed": 123456, "run_id": "20261114T120117290160Z-B3-8", "pdr": 0.9688, "energy_nj": 253867948, "p95_ms": 133.3, "switches": 8},
-        {"seed": 123457, "run_id": "20261114T120344854467Z-B3-8", "pdr": 0.9688, "energy_nj": 253555432, "p95_ms": 174.7, "switches": 8},
-        {"seed": 123458, "run_id": "20261114T120605604910Z-B3-8", "pdr": 0.9583, "energy_nj": 255957277, "p95_ms": 132.3, "switches": 8}
+        {
+          "seed": 123456,
+          "run_id": "20261114T120117290160Z-B3-8",
+          "pdr": 0.9688,
+          "energy_nj": 253867948,
+          "p95_ms": 133.3,
+          "switches": 8
+        },
+        {
+          "seed": 123457,
+          "run_id": "20261114T120344854467Z-B3-8",
+          "pdr": 0.9688,
+          "energy_nj": 253555432,
+          "p95_ms": 174.7,
+          "switches": 8
+        },
+        {
+          "seed": 123458,
+          "run_id": "20261114T120605604910Z-B3-8",
+          "pdr": 0.9583,
+          "energy_nj": 255957277,
+          "p95_ms": 132.3,
+          "switches": 8
+        }
       ],
-      "mean_energy_nj": 254460219, "mean_pdr": 0.9653, "mean_p95_ms": 146.8
+      "mean_energy_nj": 254460219,
+      "mean_pdr": 0.9653,
+      "mean_p95_ms": 146.8
     },
     "B6": {
       "runs": [
-        {"seed": 123456, "run_id": "20261114T121756262964Z-B6-8", "pdr": 0.9688, "energy_nj": 253865130, "p95_ms": 133.3, "switches": 0},
-        {"seed": 123457, "run_id": "20261114T120827744266Z-B6-8", "pdr": 0.9688, "energy_nj": 253552274, "p95_ms": 174.7, "switches": 0},
-        {"seed": 123458, "run_id": "20261114T121048633839Z-B6-8", "pdr": 0.9583, "energy_nj": 255954198, "p95_ms": 132.3, "switches": 0}
+        {
+          "seed": 123456,
+          "run_id": "20261114T121756262964Z-B6-8",
+          "pdr": 0.9688,
+          "energy_nj": 253865130,
+          "p95_ms": 133.3,
+          "switches": 0
+        },
+        {
+          "seed": 123457,
+          "run_id": "20261114T120827744266Z-B6-8",
+          "pdr": 0.9688,
+          "energy_nj": 253552274,
+          "p95_ms": 174.7,
+          "switches": 0
+        },
+        {
+          "seed": 123458,
+          "run_id": "20261114T121048633839Z-B6-8",
+          "pdr": 0.9583,
+          "energy_nj": 255954198,
+          "p95_ms": 132.3,
+          "switches": 0
+        }
       ],
-      "duplicate_runs": ["20261114T122303203171Z-B6-8", "20261114T122749326614Z-B6-8"],
+      "duplicate_runs": [
+        "20261114T122303203171Z-B6-8",
+        "20261114T122749326614Z-B6-8"
+      ],
       "note": "2 duplicate runs preserved per project rules; 3 unique seeds used for analysis",
-      "mean_energy_nj": 254457201, "mean_pdr": 0.9653, "mean_p95_ms": 146.8
+      "mean_energy_nj": 254457201,
+      "mean_pdr": 0.9653,
+      "mean_p95_ms": 146.8
     },
     "P1": {
       "runs": [
-        {"seed": 123456, "run_id": "20261114T122031479887Z-P1-8", "pdr": 0.9688, "energy_nj": 253879348, "p95_ms": 134.4, "switches": 8},
-        {"seed": 123457, "run_id": "20261114T121309376664Z-P1-8", "pdr": 0.9688, "energy_nj": 253562991, "p95_ms": 170.2, "switches": 8},
-        {"seed": 123458, "run_id": "20261114T121535529449Z-P1-8", "pdr": 0.9583, "energy_nj": 255967827, "p95_ms": 132.3, "switches": 8}
+        {
+          "seed": 123456,
+          "run_id": "20261114T122031479887Z-P1-8",
+          "pdr": 0.9688,
+          "energy_nj": 253879348,
+          "p95_ms": 134.4,
+          "switches": 8
+        },
+        {
+          "seed": 123457,
+          "run_id": "20261114T121309376664Z-P1-8",
+          "pdr": 0.9688,
+          "energy_nj": 253562991,
+          "p95_ms": 170.2,
+          "switches": 8
+        },
+        {
+          "seed": 123458,
+          "run_id": "20261114T121535529449Z-P1-8",
+          "pdr": 0.9583,
+          "energy_nj": 255967827,
+          "p95_ms": 132.3,
+          "switches": 8
+        }
       ],
-      "duplicate_runs": ["20261114T122525404803Z-P1-8", "20261114T123025682022Z-P1-8"],
+      "duplicate_runs": [
+        "20261114T122525404803Z-P1-8",
+        "20261114T123025682022Z-P1-8"
+      ],
       "note": "2 duplicate runs preserved per project rules; 3 unique seeds used for analysis",
-      "mean_energy_nj": 254470055, "mean_pdr": 0.9653, "mean_p95_ms": 145.6
+      "mean_energy_nj": 254470055,
+      "mean_pdr": 0.9653,
+      "mean_p95_ms": 145.6
     }
   },
   "phase4_baseline_for_comparison": {
-    "B1": {"mean_energy_nj": 247233663, "mean_pdr": 0.9696, "mean_p95_ms": 142.1, "n": 5},
-    "B2": {"mean_energy_nj": 247501031, "mean_pdr": 0.9677, "mean_p95_ms": 152.5, "n": 5},
-    "B4": {"mean_energy_nj": 243928892, "mean_pdr": 0.9805, "mean_p95_ms": 2985.8, "n": 4},
-    "B5": {"mean_energy_nj": 244171889, "mean_pdr": 0.9792, "mean_p95_ms": 3004.8, "n": 3}
+    "B1": {
+      "mean_energy_nj": 247233663,
+      "mean_pdr": 0.9696,
+      "mean_p95_ms": 142.1,
+      "n": 5
+    },
+    "B2": {
+      "mean_energy_nj": 247501031,
+      "mean_pdr": 0.9677,
+      "mean_p95_ms": 152.5,
+      "n": 5
+    },
+    "B4": {
+      "mean_energy_nj": 243928892,
+      "mean_pdr": 0.9805,
+      "mean_p95_ms": 2985.8,
+      "n": 4
+    },
+    "B5": {
+      "mean_energy_nj": 244171889,
+      "mean_pdr": 0.9792,
+      "mean_p95_ms": 3004.8,
+      "n": 3
+    }
   },
-  "key_observation": "B3/B6/P1 show ~+2.9% higher energy than B1 in this pilot. All three policy modes used only AES profile=1 cap=1 throughout — residual energy remained above B3 hi threshold (6e9 nJ) and P1 found no cost advantage over current action. Policy switching did not activate cipher switching in this scenario. This is an honest pilot result, not a failure.",
+  "key_observation": "B3/B6/P1 show ~+2.9% higher energy than B1 in this pilot. All three policy modes used only AES profile=1 cap=1 throughout \u2014 residual energy remained above B3 hi threshold (6e9 nJ) and P1 found no cost advantage over current action. Policy switching did not activate cipher switching in this scenario. This is an honest pilot result, not a failure.",
   "runner_bugs_fixed": [
-    "attack_test and root_reset_test restricted to phase not in (3,4) — fixed to include phase 5",
-    "energy_telemetry restricted to phase 4 Z1 only — fixed to include phase 5"
+    "attack_test and root_reset_test restricted to phase not in (3,4) \u2014 fixed to include phase 5",
+    "energy_telemetry restricted to phase 4 Z1 only \u2014 fixed to include phase 5"
   ],
   "pending": {
     "duplicate_run_cleanup": "B6 and P1 have 2 extra duplicate runs each (preserved per project rules)",
     "human_review": "Phase 5 human code review gate pending",
     "phase_6_entry": "Phase 6 entry requires explicit human authorization after reviewing this report"
+  },
+  "phase4_deferred_closure": {
+    "completed": "2026-11-16",
+    "cases_closed": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "all_35_cases_pass": true,
+    "run_ids": {
+      "case29_boundary_4000ms": [
+        "20261116T175934506150Z-B1-2",
+        "20261116T175957444306Z-B2-2",
+        "20261116T180017877202Z-B4-2",
+        "20261116T180036635527Z-B5-2"
+      ],
+      "case30_boundary_47byte": [
+        "20261116T180100630105Z-B1-2",
+        "20261116T180123777826Z-B2-2",
+        "20261116T180142937672Z-B4-2",
+        "20261116T180202411260Z-B5-2"
+      ],
+      "case31_depletion_125ms": [
+        "20261116T180228618905Z-B2-2"
+      ],
+      "case32_depletion_250ms": [
+        "20261116T180333068963Z-B2-2"
+      ],
+      "case33_lifetime_123456": [
+        "20261116T180430865742Z-B1-2",
+        "20261116T180535922718Z-B2-2",
+        "20261116T180637065241Z-B4-2",
+        "20261116T180745492043Z-B5-2"
+      ],
+      "case34_lifetime_123457": [
+        "20261116T180857558786Z-B1-2",
+        "20261116T181020179899Z-B2-2",
+        "20261116T181129941826Z-B4-2",
+        "20261116T181239744526Z-B5-2"
+      ],
+      "case35_lifetime_123458": [
+        "20261116T181353959358Z-B1-2",
+        "20261116T181501438398Z-B2-2",
+        "20261116T181610768218Z-B4-2",
+        "20261116T181712712015Z-B5-2"
+      ]
+    },
+    "lifetime_fnd_evidence": "Actual terminal depletion observed in all 3 seed groups; FND and HND at ~157991 ms, functional failure confirmed at 164000 ms (seed 123456 representative)"
+  },
+  "policy_infeasibility_fix": {
+    "date": "2026-11-16",
+    "issue": "P1 could retain a now-infeasible batch cap after traffic slowed because dwell/saving checks held the current action even when it was no longer feasible.",
+    "fix": "Added current_feasible boolean; dwell and saving checks now only apply when current action survives feasibility checks.",
+    "policy_c_hash_before": "36ab47af34322f893e0cef8ccf3f211a1d5a787fe8aa4aa0d4fef5a0354af8ec",
+    "policy_c_hash_after": "e1289ab73673d31cf1715d9dea704e6633d5641160d028870f9de480fa49b8b0",
+    "tests_pass": 20,
+    "new_test": "test_p1_rate_drop_overrides_dwell_and_savings"
+  },
+  "campaign_20261116_corrected": {
+    "date": "2026-11-16",
+    "status": "running",
+    "pid": 158217,
+    "replaces": "20261116-fresh (21/210 runs with old policy.c)",
+    "seeds": [
+      523456,
+      523457,
+      523458,
+      523459,
+      523460,
+      523461,
+      523462,
+      523463,
+      523464,
+      523465
+    ],
+    "groups": [
+      "grid16",
+      "tree16",
+      "z1-legacy8"
+    ],
+    "modes": [
+      "B1",
+      "B2",
+      "B4",
+      "B5",
+      "B3",
+      "B6",
+      "P1"
+    ],
+    "total_cells": 210,
+    "protocol_path": "results/campaigns/20261116-corrected/protocol.json",
+    "limitations": [
+      "B3/P1 do not exercise threshold/cost adaptation in native functional runs",
+      "P1 has no qualified loaded cost table; it is a fallback diagnostic",
+      "B6 uses Phase 4 calibration winner (Ascon profile 2), not newly re-qualified"
+    ]
   }
 }

@@ -1,0 +1,17 @@
+{
+  "scope": "9-node Z1 Stage B; functional and finite-budget P1; separate calibration and evaluation",
+  "calibration_seed": 223457,
+  "evaluation_seed": 123456,
+  "quality": {
+    "min_pdr": 0.95,
+    "max_p95_ms": 5000
+  },
+  "finite_budget_rule": "Round median static AES cap1 node energy at first GEN plus half the declared generation span up to next 1e6 nJ; freeze before P1 finite outcomes",
+  "root_power": "unbounded",
+  "source_sha256": "3e084ef253db976da95e6904d665eae35222e3debc7ee947c98eb372d68ac9ca",
+  "limitations": [
+    "single-seed mechanism evidence",
+    "P1 residual-aware ranking unvalidated",
+    "no comparative lifetime or scaling claim"
+  ]
+}

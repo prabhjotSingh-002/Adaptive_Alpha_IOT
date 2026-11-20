@@ -1,0 +1,189 @@
+[
+  {
+    "run": "20261116T200027621258Z-P1-2",
+    "status": "passed",
+    "target": "z1",
+    "purpose": "functional",
+    "hashes": 10,
+    "bad": [],
+    "policy": {
+      "total_policy_ticks": 1598,
+      "decision_and_apply_seconds": 0.68475341796875,
+      "timing_samples": 1599,
+      "total_switches": 2,
+      "switch_reasons": {
+        "6": 2
+      },
+      "profiles_used": [
+        1,
+        2
+      ],
+      "caps_used": [
+        1,
+        4
+      ]
+    },
+    "security": {
+      "security_test_injections": 0,
+      "security_test_rejections": 0
+    }
+  },
+  {
+    "run": "20261116T200344854678Z-B3-2",
+    "status": "passed",
+    "target": "cooja",
+    "purpose": "security",
+    "hashes": 8,
+    "bad": [],
+    "policy": {
+      "total_policy_ticks": 1620,
+      "decision_and_apply_seconds": 0.0,
+      "timing_samples": 1620,
+      "total_switches": 0,
+      "switch_reasons": {},
+      "profiles_used": [
+        1
+      ],
+      "caps_used": [
+        1
+      ]
+    },
+    "security": {
+      "security_test_injections": 8,
+      "security_test_rejections": 8
+    }
+  },
+  {
+    "run": "20261116T200404255928Z-B6-2",
+    "status": "passed",
+    "target": "cooja",
+    "purpose": "security",
+    "hashes": 8,
+    "bad": [],
+    "policy": {
+      "total_policy_ticks": 1620,
+      "decision_and_apply_seconds": 0.0,
+      "timing_samples": 1620,
+      "total_switches": 0,
+      "switch_reasons": {},
+      "profiles_used": [
+        2
+      ],
+      "caps_used": [
+        4
+      ]
+    },
+    "security": {
+      "security_test_injections": 8,
+      "security_test_rejections": 8
+    }
+  },
+  {
+    "run": "20261116T200423434444Z-P1-2",
+    "status": "passed",
+    "target": "cooja",
+    "purpose": "security",
+    "hashes": 8,
+    "bad": [],
+    "policy": {
+      "total_policy_ticks": 1620,
+      "decision_and_apply_seconds": 0.0,
+      "timing_samples": 1620,
+      "total_switches": 2,
+      "switch_reasons": {
+        "6": 2
+      },
+      "profiles_used": [
+        1,
+        2
+      ],
+      "caps_used": [
+        1,
+        4
+      ]
+    },
+    "security": {
+      "security_test_injections": 8,
+      "security_test_rejections": 8
+    }
+  },
+  {
+    "run": "20261116T200453748010Z-B3-2",
+    "status": "passed",
+    "target": "cooja",
+    "purpose": "security",
+    "hashes": 8,
+    "bad": [],
+    "policy": {
+      "total_policy_ticks": 1620,
+      "decision_and_apply_seconds": 0.0,
+      "timing_samples": 1620,
+      "total_switches": 0,
+      "switch_reasons": {},
+      "profiles_used": [
+        1
+      ],
+      "caps_used": [
+        1
+      ]
+    },
+    "security": {
+      "security_test_injections": 0,
+      "security_test_rejections": 88
+    }
+  },
+  {
+    "run": "20261116T200513471485Z-B6-2",
+    "status": "passed",
+    "target": "cooja",
+    "purpose": "security",
+    "hashes": 8,
+    "bad": [],
+    "policy": {
+      "total_policy_ticks": 1620,
+      "decision_and_apply_seconds": 0.0,
+      "timing_samples": 1620,
+      "total_switches": 0,
+      "switch_reasons": {},
+      "profiles_used": [
+        2
+      ],
+      "caps_used": [
+        4
+      ]
+    },
+    "security": {
+      "security_test_injections": 0,
+      "security_test_rejections": 53
+    }
+  },
+  {
+    "run": "20261116T200535126936Z-P1-2",
+    "status": "passed",
+    "target": "cooja",
+    "purpose": "security",
+    "hashes": 8,
+    "bad": [],
+    "policy": {
+      "total_policy_ticks": 1620,
+      "decision_and_apply_seconds": 0.0,
+      "timing_samples": 1620,
+      "total_switches": 2,
+      "switch_reasons": {
+        "6": 2
+      },
+      "profiles_used": [
+        1,
+        2
+      ],
+      "caps_used": [
+        1,
+        4
+      ]
+    },
+    "security": {
+      "security_test_injections": 0,
+      "security_test_rejections": 53
+    }
+  }
+]

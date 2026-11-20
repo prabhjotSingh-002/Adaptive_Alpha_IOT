@@ -1,0 +1,52 @@
+[
+  {
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--mode",
+      "B6",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "123456"
+    ],
+    "status": "passed",
+    "started": 1794882207.3879035,
+    "exit_code": 0,
+    "seconds": 54.04001235961914,
+    "manifests": [
+      "results/phase_05/20261117T022327674568Z-B6-2/manifest.json"
+    ]
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--mode",
+      "P1",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "123456"
+    ],
+    "status": "passed",
+    "started": 1794882261.4327536,
+    "exit_code": 0,
+    "seconds": 55.104437589645386,
+    "manifests": [
+      "results/phase_05/20261117T022421658104Z-P1-2/manifest.json"
+    ]
+  }
+]

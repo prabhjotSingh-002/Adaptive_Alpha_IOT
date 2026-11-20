@@ -1,0 +1,156 @@
+[
+  {
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "4",
+      "--mode",
+      "B1",
+      "--clients",
+      "8",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "223457",
+      "--calibration-cap",
+      "1"
+    ],
+    "exit_code": 0,
+    "manifests": [
+      "results/phase_04/20261119T191047113613Z-B1-8/manifest.json"
+    ]
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "4",
+      "--mode",
+      "B1",
+      "--clients",
+      "8",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "223457",
+      "--calibration-cap",
+      "2"
+    ],
+    "started": 1795115558.4253612,
+    "exit_code": 0,
+    "seconds": 116.1136782169342,
+    "manifests": [
+      "results/phase_04/20261119T191238765737Z-B1-8/manifest.json"
+    ]
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "4",
+      "--mode",
+      "B1",
+      "--clients",
+      "8",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "223457",
+      "--calibration-cap",
+      "4"
+    ],
+    "started": 1795115674.556424,
+    "exit_code": 0,
+    "seconds": 107.89086532592773,
+    "manifests": [
+      "results/phase_04/20261119T191434910853Z-B1-8/manifest.json"
+    ]
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "4",
+      "--mode",
+      "B2",
+      "--clients",
+      "8",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "223457",
+      "--calibration-cap",
+      "1"
+    ],
+    "started": 1795115782.455011,
+    "exit_code": 0,
+    "seconds": 109.49472761154175,
+    "manifests": [
+      "results/phase_04/20261119T191622767325Z-B2-8/manifest.json"
+    ]
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "4",
+      "--mode",
+      "B2",
+      "--clients",
+      "8",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "223457",
+      "--calibration-cap",
+      "2"
+    ],
+    "started": 1795115891.9592502,
+    "exit_code": 0,
+    "seconds": 116.24534344673157,
+    "manifests": [
+      "results/phase_04/20261119T191812314950Z-B2-8/manifest.json"
+    ]
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "4",
+      "--mode",
+      "B2",
+      "--clients",
+      "8",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "223457",
+      "--calibration-cap",
+      "4"
+    ],
+    "started": 1795116008.2155178,
+    "exit_code": 0,
+    "seconds": 115.48287582397461,
+    "manifests": [
+      "results/phase_04/20261119T192008597849Z-B2-8/manifest.json"
+    ]
+  }
+]

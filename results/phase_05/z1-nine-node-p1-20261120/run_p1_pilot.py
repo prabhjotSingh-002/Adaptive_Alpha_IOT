@@ -1,0 +1,58 @@
+"""Serial bounded mechanism protocol. Failures are retained and stop execution."""
+import datetime,fcntl,hashlib,json,statistics,subprocess,sys,time
+from pathlib import Path
+root=Path(__file__).resolve().parents[3];out=root/'results/phase_05/z1-nine-node-p1-20261120';out.mkdir(exist_ok=True)
+sys.path.insert(0,str(root/'host'))
+with (root/'results/phase_02/.runner.lock').open('a') as lock:
+ fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+(out/'containers-before.log').write_text(subprocess.check_output(['sg','docker','-c','docker ps --filter name=adaptivealpha'],text=True))
+from campaign import snapshot_sources
+from calibration_contract import validate_table
+frozen=snapshot_sources();(out/'frozen-sources.json').write_text(json.dumps(frozen,indent=2))
+protocol={'scope':'9-node Z1 Stage B; functional and finite-budget P1; separate calibration and evaluation','calibration_seed':223457,'evaluation_seed':123456,
+          'quality':{'min_pdr':0.95,'max_p95_ms':5000},'finite_budget_rule':'Round median static AES cap1 node energy at first GEN plus half the declared generation span up to next 1e6 nJ; freeze before P1 finite outcomes',
+          'root_power':'unbounded','source_sha256':hashlib.sha256(json.dumps(frozen,sort_keys=True).encode()).hexdigest(),
+          'limitations':['single-seed mechanism evidence','P1 residual-aware ranking unvalidated','no comparative lifetime or scaling claim']}
+(out/'protocol.json').write_text(json.dumps(protocol,indent=2));records=[]
+
+def job(name,phase,mode,extra):
+ if snapshot_sources()!=frozen:raise SystemExit('Source changed before '+name)
+ cmd=[sys.executable,'-B','host/run_experiment.py','--phase',str(phase),'--mode',mode,'--clients','8','--target','z1',*extra]
+ before=set((root/f'results/phase_0{phase}').glob('*/manifest.json'))
+ row={'name':name,'command':cmd,'status':'running','started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()};records.append(row)
+ (out/'attempts.json').write_text(json.dumps(records,indent=2));started=time.time()
+ with (out/(name+'.log')).open('w') as log:p=subprocess.run(cmd,cwd=root,stdout=log,stderr=subprocess.STDOUT)
+ added=set((root/f'results/phase_0{phase}').glob('*/manifest.json'))-before
+ row.update(exit_code=p.returncode,status='passed' if p.returncode==0 else 'failed',wall_seconds=time.time()-started,manifests=[str(p.relative_to(root)) for p in added])
+ (out/'attempts.json').write_text(json.dumps(records,indent=2));print(name,row['status'],flush=True)
+ if p.returncode or len(added)!=1:raise SystemExit('Stopped at failure; evidence preserved: '+name)
+ if snapshot_sources()!=frozen:raise SystemExit('Source changed during '+name)
+ d=next(iter(added)).parent;m=json.loads((d/'manifest.json').read_text());s=json.loads((d/'summary.json').read_text())
+ row['manifest_sha256']=hashlib.sha256((d/'manifest.json').read_bytes()).hexdigest();(out/'attempts.json').write_text(json.dumps(records,indent=2))
+ return d,m,s
+
+calibration=out.parent/'z1-nine-node-20261120'
+inputs=json.loads((calibration/'calibration-inputs.json').read_text())
+table_path=calibration/'cost-table-v1.json'
+table=json.loads(table_path.read_text())
+context=dict(table['context'],seed=123456)
+context.pop('clients')
+validate_table(table,context,8)
+# Derive a finite budget only from independently measured static calibration.
+cal_dir=root/inputs[0];ev=[json.loads(x) for x in (cal_dir/'events.jsonl').read_text().splitlines()];totals=[];samples=[]
+for node in range(2,10):
+ first=min(e['sim_time_ms'] for e in ev if e['event_type']=='GEN' and e['node_id']==node)
+ target=first+table['context']['readings_per_sensor']*table['context']['period_ms']/2
+ sample=min((e for e in ev if e['event_type']=='ENERGY_MODEL' and e['node_id']==node),key=lambda e:abs(e['sim_time_ms']-target))
+ totals.append(sample['total_nj']);samples.append({'node':node,'target_ms':target,'sample_ms':sample['sim_time_ms'],'total_nj':sample['total_nj']})
+budget=int((statistics.median(totals)+999999)//1000000)*1000000
+(out/'finite-budget-freeze.json').write_text(json.dumps({'budget_nj':budget,'calibration_run':inputs[0],'policy_cost_sha256':hashlib.sha256(table_path.read_bytes()).hexdigest(),'samples':samples,'horizon_ms':102000,'population':list(range(2,10)),'deplete_node':0,'root_budget':'unbounded','frozen_before_p1_evaluation':True},indent=2))
+policy_args=['--power-model','--seed','123456','--policy-cost-table',str(table_path),'--require-qualified-policy']
+preflight=[sys.executable,'-B','host/run_experiment.py','--phase','5','--mode','P1','--clients','8','--target','z1',*policy_args,'--preflight-only']
+r=subprocess.run(preflight,cwd=root,capture_output=True,text=True)
+(out/'qualified-preflight.log').write_text(r.stdout+r.stderr)
+if r.returncode:raise SystemExit('Qualified actual CLI preflight failed; no P1 build launched')
+d,m,s=job('p1-qualified-functional',5,'P1',policy_args)
+if not s['mechanism_checks']['policy_wire']['authenticated_packets_matched_to_tx']:raise SystemExit('No accepted wire controls')
+d,m,s=job('p1-qualified-finite',5,'P1',[*policy_args,'--energy-budget-nj',str(budget)])
+if not s['mechanism_checks']['depletion']['depleted_nodes']:raise SystemExit('No death observed; retain censored mechanism result')

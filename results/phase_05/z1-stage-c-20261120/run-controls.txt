@@ -1,0 +1,46 @@
+import json
+import subprocess
+from pathlib import Path
+
+out = Path(__file__).parent
+code = (out/'check-admission.txt').read_text().split('checks = admit(m,directory)')[0]
+env = {'__file__': __file__}
+exec(compile(code, str(out/'check-admission.txt'), 'exec'), env)
+protocol = env['protocol']
+admit = env['admit']
+sha = env['sha']
+runs = {'P1':protocol['saved_p1']}
+attempts_path = out/'control-attempts.json'
+attempts = json.loads(attempts_path.read_text()) if attempts_path.exists() else []
+def save():
+    attempts_path.write_text(json.dumps(attempts, indent=2)+'\n')
+
+for mode in protocol['modes'][:-1]:
+    prior = next((a for a in reversed(attempts) if a['mode']==mode and a['status']=='admitted'),None)
+    if prior:
+        run = Path(prior['directory'])
+        assert sha(run/'manifest.json') == prior['manifest_sha256']
+    else:
+        command = protocol['commands'][mode]
+        before = set(Path('results/phase_05').glob('*/manifest.json'))
+        log = out/f'{mode}-attempt-{len(attempts)+1}.log'
+        attempt = dict(mode=mode,command=command,log=str(log),status='running')
+        attempts.append(attempt)
+        save()
+        with log.open('w') as stream:
+            result = subprocess.run(command,stdout=stream,stderr=subprocess.STDOUT)
+        added = set(Path('results/phase_05').glob('*/manifest.json'))-before
+        attempt.update(exit_code=result.returncode, manifests=sorted(map(str,added)),status='failed')
+        save()
+        if result.returncode or len(added)!=1:
+            raise SystemExit(f'{mode} failed. See {log}')
+        run = added.pop().parent
+    manifest = json.loads((run/'manifest.json').read_text())
+    assert manifest['mode']==mode
+    checks = admit(manifest,run)
+    if not prior:
+        attempt.update(status='admitted',directory=str(run),manifest_sha256=sha(run/'manifest.json'),checks=checks)
+        save()
+    runs[mode]=str(run)
+    print(mode,'admitted',run,flush=True)
+(out/'selected-runs.json').write_text(json.dumps(runs,indent=2)+'\n')

@@ -1,0 +1,54 @@
+{
+  "status": "preflight_passed",
+  "context": {
+    "clients": 8,
+    "capture_contract": "initial_log_event_included_v2",
+    "target": "z1",
+    "backend": "ref",
+    "topology": "legacy",
+    "warmup_ms": 60000,
+    "period_ms": 1000,
+    "readings_per_sensor": 24,
+    "deadline_ms": 3000,
+    "drain_ms": 15000,
+    "payload_budget": 67,
+    "reserved_bytes": 16,
+    "power_model": {
+      "id": 1,
+      "name": "z1-mcu-radio-3v-8mhz-v1",
+      "target": "z1",
+      "frequency": 32768,
+      "millivolts": 3000,
+      "nanoamps": [
+        4626000,
+        427100,
+        0,
+        16974000,
+        18374000
+      ],
+      "cpu_curve_nanoamps": 4200000,
+      "cpu_curve_uncertainty_nanoamps": 200000,
+      "lpm3_nanoamps": 1100,
+      "radio_idle_nanoamps": 426000,
+      "radio_tx_nanoamps": 17400000,
+      "radio_listen_nanoamps": 18800000,
+      "sources": [
+        "https://www.ti.com/lit/ds/symlink/msp430f2617.pdf",
+        "https://www.ti.com/lit/ds/symlink/cc2420.pdf"
+      ],
+      "scope": "MCU and radio component model, not whole board or physical measurement; CPU current read approximately from TI Figure 8-2 at 3V/8MHz/25C. Radio idle baseline included in MCU timelines, removed from TX/listen increments. LPM3 requires DMA-disabled build and DCO request guard. Deep LPM must remain zero."
+    },
+    "energy_sample_ms": 125,
+    "aes_backend": "contiki_software_aes_128_driver",
+    "flush_lead_ms": 125,
+    "bottleneck": false,
+    "radio_off_until_ms": 0,
+    "cpu_work_iterations": 0,
+    "queuebuf_count": 4,
+    "dual_profile": true
+  },
+  "calibration_status": "qualified",
+  "policy_cost_sha256": "fb59e718b95d7de2c7b271b15109a186694a5d73e8fe25e23f7b653382e34878",
+  "build_executed": false,
+  "simulation_executed": false
+}

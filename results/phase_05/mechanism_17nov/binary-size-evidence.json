@@ -1,0 +1,201 @@
+{
+  "tool": "GNU size (GNU Binutils) 2.22 (mspgcc dev 20120911)",
+  "binaries": [
+    {
+      "text": 53776,
+      "data": 344,
+      "bss": 5706,
+      "file": "/workspace/results/phase_04/20261117T023634948551Z-B1-2/binaries/root-root.z1"
+    },
+    {
+      "text": 54579,
+      "data": 348,
+      "bss": 5736,
+      "file": "/workspace/results/phase_04/20261117T023634948551Z-B1-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53776,
+      "data": 344,
+      "bss": 5706,
+      "file": "/workspace/results/phase_04/20261117T023714431056Z-B1-2/binaries/root-root.z1"
+    },
+    {
+      "text": 54579,
+      "data": 348,
+      "bss": 5736,
+      "file": "/workspace/results/phase_04/20261117T023714431056Z-B1-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53776,
+      "data": 344,
+      "bss": 5706,
+      "file": "/workspace/results/phase_04/20261117T023753194817Z-B1-2/binaries/root-root.z1"
+    },
+    {
+      "text": 54579,
+      "data": 348,
+      "bss": 5736,
+      "file": "/workspace/results/phase_04/20261117T023753194817Z-B1-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53776,
+      "data": 344,
+      "bss": 5706,
+      "file": "/workspace/results/phase_04/20261117T023831400765Z-B2-2/binaries/root-root.z1"
+    },
+    {
+      "text": 54579,
+      "data": 348,
+      "bss": 5736,
+      "file": "/workspace/results/phase_04/20261117T023831400765Z-B2-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53776,
+      "data": 344,
+      "bss": 5706,
+      "file": "/workspace/results/phase_04/20261117T023910366789Z-B2-2/binaries/root-root.z1"
+    },
+    {
+      "text": 54579,
+      "data": 348,
+      "bss": 5736,
+      "file": "/workspace/results/phase_04/20261117T023910366789Z-B2-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53776,
+      "data": 344,
+      "bss": 5706,
+      "file": "/workspace/results/phase_04/20261117T023948665737Z-B2-2/binaries/root-root.z1"
+    },
+    {
+      "text": 54579,
+      "data": 348,
+      "bss": 5736,
+      "file": "/workspace/results/phase_04/20261117T023948665737Z-B2-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53776,
+      "data": 344,
+      "bss": 5706,
+      "file": "/workspace/results/phase_05/20261117T024032053990Z-P1-2/binaries/root-root.z1"
+    },
+    {
+      "text": 56694,
+      "data": 448,
+      "bss": 5792,
+      "file": "/workspace/results/phase_05/20261117T024032053990Z-P1-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53798,
+      "data": 344,
+      "bss": 5706,
+      "file": "/workspace/results/phase_05/20261117T024127105801Z-P1-2/binaries/root-root.z1"
+    },
+    {
+      "text": 56716,
+      "data": 448,
+      "bss": 5792,
+      "file": "/workspace/results/phase_05/20261117T024127105801Z-P1-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53798,
+      "data": 344,
+      "bss": 5706,
+      "file": "/workspace/results/phase_05/20261117T024208744064Z-B3-2/binaries/root-root.z1"
+    },
+    {
+      "text": 55977,
+      "data": 448,
+      "bss": 5792,
+      "file": "/workspace/results/phase_05/20261117T024208744064Z-B3-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53798,
+      "data": 344,
+      "bss": 5706,
+      "file": "/workspace/results/phase_04/20261117T024314393934Z-B1-2/binaries/root-root.z1"
+    },
+    {
+      "text": 54601,
+      "data": 348,
+      "bss": 5736,
+      "file": "/workspace/results/phase_04/20261117T024314393934Z-B1-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 50841,
+      "data": 330,
+      "bss": 5456,
+      "file": "/workspace/results/phase_05/20261117T024408479815Z-B3-2/binaries/root-root.z1"
+    },
+    {
+      "text": 53812,
+      "data": 434,
+      "bss": 5770,
+      "file": "/workspace/results/phase_05/20261117T024408479815Z-B3-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 50841,
+      "data": 330,
+      "bss": 5456,
+      "file": "/workspace/results/phase_05/20261117T024451744653Z-B3-2/binaries/root-root.z1"
+    },
+    {
+      "text": 53251,
+      "data": 434,
+      "bss": 5630,
+      "file": "/workspace/results/phase_05/20261117T024451744653Z-B3-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 50841,
+      "data": 330,
+      "bss": 5456,
+      "file": "/workspace/results/phase_05/20261117T024536275754Z-B6-2/binaries/root-root.z1"
+    },
+    {
+      "text": 53886,
+      "data": 434,
+      "bss": 5770,
+      "file": "/workspace/results/phase_05/20261117T024536275754Z-B6-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 50841,
+      "data": 330,
+      "bss": 5456,
+      "file": "/workspace/results/phase_05/20261117T024617823636Z-B6-2/binaries/root-root.z1"
+    },
+    {
+      "text": 53325,
+      "data": 434,
+      "bss": 5630,
+      "file": "/workspace/results/phase_05/20261117T024617823636Z-B6-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 50841,
+      "data": 330,
+      "bss": 5456,
+      "file": "/workspace/results/phase_05/20261117T024700243978Z-P1-2/binaries/root-root.z1"
+    },
+    {
+      "text": 54551,
+      "data": 434,
+      "bss": 5770,
+      "file": "/workspace/results/phase_05/20261117T024700243978Z-P1-2/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 50841,
+      "data": 330,
+      "bss": 5456,
+      "file": "/workspace/results/phase_05/20261117T024742346478Z-P1-2/binaries/root-root.z1"
+    },
+    {
+      "text": 53990,
+      "data": 434,
+      "bss": 5630,
+      "file": "/workspace/results/phase_05/20261117T024742346478Z-P1-2/binaries/sensor-sensor.z1"
+    }
+  ],
+  "max_text_plus_data_bytes": 57164,
+  "max_data_plus_bss_bytes": 6240,
+  "minimum_observed_stack_reserved_minus_used_bytes": 1166,
+  "scope": "linker fit and observed stack paths only; not a proof of all-path stack safety"
+}

@@ -1,0 +1,33 @@
+{
+  "tool": "GNU size (GNU Binutils) 2.22 (mspgcc dev 20120911)",
+  "binaries": [
+    {
+      "text": 53788,
+      "data": 344,
+      "bss": 6588,
+      "file": "/workspace/results/phase_05/20261119T200722249256Z-P1-8/binaries/root-root.z1"
+    },
+    {
+      "text": 56696,
+      "data": 448,
+      "bss": 5906,
+      "file": "/workspace/results/phase_05/20261119T200722249256Z-P1-8/binaries/sensor-sensor.z1"
+    },
+    {
+      "text": 53810,
+      "data": 344,
+      "bss": 6588,
+      "file": "/workspace/results/phase_05/20261119T201051437412Z-P1-8/binaries/root-root.z1"
+    },
+    {
+      "text": 56718,
+      "data": 448,
+      "bss": 5906,
+      "file": "/workspace/results/phase_05/20261119T201051437412Z-P1-8/binaries/sensor-sensor.z1"
+    }
+  ],
+  "max_text_plus_data_bytes": 57166,
+  "max_data_plus_bss_bytes": 6932,
+  "minimum_observed_stack_reserved_minus_used_bytes": 372,
+  "scope": "Linker fit and observed stack usage in the two P1 runs"
+}

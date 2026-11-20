@@ -1,0 +1,239 @@
+    PID COMMAND         COMMAND
+      1 systemd         /sbin/init splash
+      2 kthreadd        [kthreadd]
+      3 pool_workqueue_ [pool_workqueue_release]
+      4 kworker/R-rcu_g [kworker/R-rcu_gp]
+      5 kworker/R-sync_ [kworker/R-sync_wq]
+      6 kworker/R-kvfre [kworker/R-kvfree_rcu_reclaim]
+      7 kworker/R-slub_ [kworker/R-slub_flushwq]
+      8 kworker/R-netns [kworker/R-netns]
+     10 kworker/0:0H-kb [kworker/0:0H-kblockd]
+     13 kworker/R-mm_pe [kworker/R-mm_percpu_wq]
+     14 ksoftirqd/0     [ksoftirqd/0]
+     15 rcu_preempt     [rcu_preempt]
+     16 rcu_exp_par_gp_ [rcu_exp_par_gp_kthread_worker/0]
+     17 rcu_exp_gp_kthr [rcu_exp_gp_kthread_worker]
+     18 migration/0     [migration/0]
+     19 kprobe-optimize [kprobe-optimizer]
+     20 idle_inject/0   [idle_inject/0]
+     21 cpuhp/0         [cpuhp/0]
+     22 cpuhp/1         [cpuhp/1]
+     23 idle_inject/1   [idle_inject/1]
+     24 migration/1     [migration/1]
+     25 ksoftirqd/1     [ksoftirqd/1]
+     27 kworker/1:0H-kb [kworker/1:0H-kblockd]
+     28 cpuhp/2         [cpuhp/2]
+     29 idle_inject/2   [idle_inject/2]
+     30 migration/2     [migration/2]
+     31 ksoftirqd/2     [ksoftirqd/2]
+     33 kworker/2:0H-kb [kworker/2:0H-kblockd]
+     34 cpuhp/3         [cpuhp/3]
+     35 idle_inject/3   [idle_inject/3]
+     36 migration/3     [migration/3]
+     37 ksoftirqd/3     [ksoftirqd/3]
+     39 kworker/3:0H-kb [kworker/3:0H-kblockd]
+     40 kdevtmpfs       [kdevtmpfs]
+     41 kworker/R-inet_ [kworker/R-inet_frag_wq]
+     42 rcu_tasks_kthre [rcu_tasks_kthread]
+     43 rcu_tasks_rude_ [rcu_tasks_rude_kthread]
+     44 kauditd         [kauditd]
+     45 khungtaskd      [khungtaskd]
+     46 oom_reaper      [oom_reaper]
+     49 kworker/R-write [kworker/R-writeback]
+     51 kcompactd0      [kcompactd0]
+     52 ksmd            [ksmd]
+     53 khugepaged      [khugepaged]
+     54 kworker/R-kbloc [kworker/R-kblockd]
+     55 kworker/R-blkcg [kworker/R-blkcg_punt_bio]
+     56 kworker/R-kinte [kworker/R-kintegrityd]
+     57 irq/9-acpi      [irq/9-acpi]
+     59 kworker/R-tpm_d [kworker/R-tpm_dev_wq]
+     60 kworker/R-ata_s [kworker/R-ata_sff]
+     61 kworker/R-md_bi [kworker/R-md_bitmap]
+     62 kworker/R-md_ll [kworker/R-md_llbitmap_io]
+     63 kworker/R-md_ll [kworker/R-md_llbitmap_unplug]
+     64 kworker/R-edac- [kworker/R-edac-poller]
+     65 kworker/R-devfr [kworker/R-devfreq_wq]
+     66 watchdogd       [watchdogd]
+     67 kworker/R-quota [kworker/R-quota_events_unbound]
+     69 kswapd0         [kswapd0]
+     70 ecryptfs-kthrea [ecryptfs-kthread]
+     71 kworker/R-kthro [kworker/R-kthrotld]
+     72 kworker/R-acpi_ [kworker/R-acpi_thermal_pm]
+     74 hwrng           [hwrng]
+     76 kworker/R-mld   [kworker/R-mld]
+     77 kworker/R-ipv6_ [kworker/R-ipv6_addrconf]
+     78 kworker/R-kstrp [kworker/R-kstrp]
+     92 kworker/R-charg [kworker/R-charger_manager]
+    146 scsi_eh_0       [scsi_eh_0]
+    147 kworker/R-scsi_ [kworker/R-scsi_tmf_0]
+    148 scsi_eh_1       [scsi_eh_1]
+    149 kworker/R-scsi_ [kworker/R-scsi_tmf_1]
+    155 kworker/3:1H-i9 [kworker/3:1H-i915_cleanup]
+    198 kworker/0:1H-i9 [kworker/0:1H-i915_cleanup]
+    200 jbd2/sdb1-8     [jbd2/sdb1-8]
+    201 kworker/R-ext4- [kworker/R-ext4-rsv-conversion]
+    225 kworker/2:1H-i9 [kworker/2:1H-i915_cleanup]
+    252 psimon          [psimon]
+    257 systemd-journal /usr/lib/systemd/systemd-journald
+    285 kworker/1:1H-i9 [kworker/1:1H-i915_cleanup]
+    297 systemd-resolve /usr/lib/systemd/systemd-resolved
+    298 systemd-udevd   /usr/lib/systemd/systemd-udevd
+    322 psimon          [psimon]
+    734 accounts-daemon /usr/libexec/accounts-daemon
+    738 avahi-daemon    avahi-daemon: running [BlueHorizon.local]
+    739 chronyd-starter /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+    740 cron            /usr/sbin/cron -f -P
+    741 dbus-daemon     @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    748 networkd-dispat /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+    749 polkitd         /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+    752 smartd          /usr/sbin/smartd -n
+    755 snapd           /usr/lib/snapd/snapd
+    761 switcheroo-cont /usr/libexec/switcheroo-control
+    770 systemd-logind  /usr/lib/systemd/systemd-logind
+    771 thermald        /usr/sbin/thermald --systemd --dbus-enable --adaptive
+    772 udisksd         /usr/libexec/udisks2/udisksd
+    784 avahi-daemon    avahi-daemon: chroot helper
+    825 chronyd         /usr/sbin/chronyd -n -F 1
+    826 NetworkManager  /usr/sbin/NetworkManager --no-daemon
+    828 wpa_supplicant  /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+    835 chronyd         /usr/sbin/chronyd -n -F 1
+    849 rsyslogd        /usr/sbin/rsyslogd -n -iNONE
+    889 ModemManager    /usr/sbin/ModemManager
+    988 unattended-upgr /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+   1018 sddm            /usr/bin/sddm
+   1049 sddm-helper     /usr/lib/x86_64-linux-gnu/sddm/sddm-helper --socket /tmp/sddm-auth-daf04a04-e887-44fa-932b-d877e343cdc9 --id 1 --start /usr/lib/x86_64-linux-gnu/libexec/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland --user vanitas_archiviste --autologin
+   1076 systemd         /usr/lib/systemd/systemd --user
+   1081 (sd-pam)        (sd-pam)
+   1091 kworker/R-ttm   [kworker/R-ttm]
+   1094 kworker/R-kmems [kworker/R-kmemstick]
+   1100 containerd      /usr/bin/containerd
+   1101 kworker/R-cfg80 [kworker/R-cfg80211]
+   1102 card1-crtc0     [card1-crtc0]
+   1103 card1-crtc1     [card1-crtc1]
+   1104 card1-crtc2     [card1-crtc2]
+   1116 irq/132-iwlwifi [irq/132-iwlwifi]
+   1130 dbus-daemon     /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   1131 pipewire        /usr/bin/pipewire
+   1132 startplasma-way /usr/bin/startplasma-wayland
+   1141 mpris-proxy     /usr/bin/mpris-proxy
+   1161 wireplumber     /usr/bin/wireplumber
+   1164 rtkit-daemon    /usr/libexec/rtkit-daemon
+   1165 pipewire        /usr/bin/pipewire -c filter-chain.conf
+   1179 pipewire-pulse  /usr/bin/pipewire-pulse
+   1200 bluetoothd      /usr/libexec/bluetooth/bluetoothd
+   1298 krfcommd        [krfcommd]
+   1365 kwin_wayland_wr /usr/bin/kwin_wayland_wrapper --xwayland
+   1366 ssh-agent       /usr/bin/ssh-agent -D
+   1374 kwin_wayland    /usr/bin/kwin_wayland --wayland-fd 7 --socket wayland-0 --xwayland-fd 8 --xwayland-fd 9 --xwayland-display :0 --xwayland-xauthority /run/user/1000/xauth_VXHUxZ --xwayland
+   1387 xdg-permission- /usr/libexec/xdg-permission-store
+   1454 dockerd         /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+   1460 Xwayland        /usr/bin/Xwayland :0 -auth /run/user/1000/xauth_VXHUxZ -listenfd 8 -listenfd 9 -displayfd 66 -wm 70 -rootless -enable-ei-portal
+   1513 at-spi-bus-laun /usr/libexec/at-spi-bus-launcher
+   1529 dbus-daemon     /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0
+   1539 ksmserver       /usr/bin/ksmserver
+   1541 kded6           /usr/bin/kded6
+   1592 plasmashell     /usr/bin/plasmashell --no-respawn
+   1595 at-spi2-registr /usr/libexec/at-spi2-registryd --use-gnome-session
+   1638 dconf-service   /usr/libexec/dconf-service
+   1708 upowerd         /usr/libexec/upowerd
+   1743 kactivitymanage /usr/lib/x86_64-linux-gnu/libexec/kactivitymanagerd
+   1761 gmenudbusmenupr /usr/bin/gmenudbusmenuproxy
+   1765 kaccess         /usr/bin/kaccess
+   1766 polkit-kde-auth /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1
+   1768 org_kde_powerde /usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdevil
+   1772 xembedsniproxy  /usr/bin/xembedsniproxy
+   1938 power-profiles- /usr/libexec/power-profiles-daemon
+   1950 xsettingsd      /usr/bin/xsettingsd
+   1964 obexd           /usr/libexec/bluetooth/obexd
+   1972 kdeconnectd     /usr/bin/kdeconnectd
+   1977 kunifiedpush-di /usr/bin/kunifiedpush-distributor
+   1980 xdg-desktop-por /usr/libexec/xdg-desktop-portal
+   2001 agent           /usr/libexec/geoclue-2.0/demos/agent
+   2006 xdg-document-po /usr/libexec/xdg-document-portal
+   2014 DiscoverNotifie /usr/lib/x86_64-linux-gnu/libexec/DiscoverNotifier --check-delay 20
+   2024 fusermount3     fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+   2038 xdg-desktop-por /usr/libexec/xdg-desktop-portal-gtk
+   2098 xdg-desktop-por /usr/lib/x86_64-linux-gnu/libexec/xdg-desktop-portal-kde
+   2126 ksecretd        /usr/bin/ksecretd
+   2212 brave-browser-s /bin/bash /usr/bin/brave-browser-stable
+   2216 cat             cat
+   2217 cat             cat
+   2218 brave           /opt/brave.com/brave/brave
+   2220 chrome_crashpad /opt/brave.com/brave/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --user-stream-region=4,65568 --database=/home/vanitas_archiviste/.config/BraveSoftware/Brave-Browser/Crash Reports --metrics-dir=/home/vanitas_archiviste/.config/BraveSoftware/Brave-Browser --url=https://cr.brave.com --annotation=lsb-release=Ubuntu 26.04.1 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=157.1.99.56 --initial-client-fd=7 --shared-client-connection
+   2222 chrome_crashpad /opt/brave.com/brave/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/home/vanitas_archiviste/.config/BraveSoftware/Brave-Browser/Crash Reports --url=https://cr.brave.com --annotation=lsb-release=Ubuntu 26.04.1 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=157.1.99.56 --initial-client-fd=4 --shared-client-connection
+   2230 brave           /opt/brave.com/brave/brave --type=zygote --no-zygote-sandbox --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --change-stack-guard-on-fork=enable
+   2231 brave           /opt/brave.com/brave/brave --type=zygote --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --change-stack-guard-on-fork=enable
+   2233 brave           /opt/brave.com/brave/brave --type=zygote --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --change-stack-guard-on-fork=enable
+   2269 brave           /opt/brave.com/brave/brave --type=gpu-process --gpu-recent-crash-count=0 --ozone-platform=wayland --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --change-stack-guard-on-fork=enable --gpu-preferences=YAAAAAAAAACgAAACAAAAAAAAAAAAAGAASAAAAAAAAAABAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAQAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --metrics-shmem-handle=4,i,3669468176509885095,7135953977960791824,262144 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190708988185955192
+   2274 brave           /opt/brave.com/brave/brave --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-GB --service-sandbox-type=none --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,11394366081133422400,1841834582222193494,524288 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190708989122997041
+   2302 brave           /opt/brave.com/brave/brave --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-GB --service-sandbox-type=utility --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,14322248028048109992,7623866071493481107,524288 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190708990060038890
+   2352 brave           /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --extension-process --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-GB --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=8 --launch-time-ticks=30741019 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,14123663430659267806,4473201280301800158,1572864 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190708993808206286
+   2368 kwalletd6       /usr/bin/kwalletd6
+   2629 brave           /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-GB --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=19 --launch-time-ticks=46265895 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,2434539917306925960,9968891821757499149,1572864 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190709004115666625
+   2642 brave           /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-GB --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=20 --launch-time-ticks=47307024 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,16260535283328088857,6073691618691530118,1572864 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190709005052708474
+   2655 brave           /opt/brave.com/brave/brave --type=renderer --top-chrome-webui --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-GB --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=21 --launch-time-ticks=48809925 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,6232597558468713742,7221790621931113596,1572864 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190709005989750323
+   2993 brave           /opt/brave.com/brave/brave --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-GB --service-sandbox-type=none --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,15352518252219512408,15926343102798086382,524288 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190709025667629152
+   4241 fwupd           /usr/libexec/fwupd/fwupd
+   4328 knighttimed     /usr/lib/x86_64-linux-gnu/libexec/knighttimed
+   4331 geoclue         /usr/libexec/geoclue
+   9573 brave           /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-GB --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=122 --launch-time-ticks=8961569688 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,15527056952456342519,10109711528201190679,1572864 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190709100630977072
+  11254 brave           /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-GB --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=148 --launch-time-ticks=11040034329 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,1209383798532693624,3562079579772089169,1572864 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190709124994065146
+  11851 brave           /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-GB --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=158 --launch-time-ticks=11429967326 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,11751285631127701618,13763090278965785630,1572864 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190709134364483636
+  14040 irq/130-mei_me  [irq/130-mei_me]
+  15332 dolphin         /usr/bin/dolphin
+  15715 kworker/u17:0-h [kworker/u17:0-hci0]
+  15892 kworker/3:2-eve [kworker/3:2-events]
+  16685 dolphin         /usr/bin/dolphin
+  16803 konsole         /usr/bin/konsole --workdir /home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT
+  16817 bash            /bin/bash
+  16826 codex           codex
+  16964 codex           /home/vanitas_archiviste/.codex/packages/app-server-daemon/releases/0.170.0-x86_64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop
+  17785 codex           /home/vanitas_archiviste/.codex/packages/app-server-daemon/releases/0.170.0-x86_64-unknown-linux-musl/bin/codex app-server --listen unix:// --analytics-default-enabled --managed-daemon
+  18733 brave           /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-GB --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=252 --launch-time-ticks=20322394922 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,6865872198998015535,8344116215619012175,1572864 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190709222446417442
+  18884 kworker/u16:2-e [kworker/u16:2-events_unbound]
+  19015 codex-code-mode /home/vanitas_archiviste/.codex/packages/app-server-daemon/releases/0.170.0-x86_64-unknown-linux-musl/bin/codex-code-mode-host --listen grpc+stdio://
+  19603 kworker/u16:1-e [kworker/u16:1-ext4-rsv-conversion]
+  19834 brave-browser-s [brave-browser-s] <defunct>
+  19972 cupsd           /usr/sbin/cupsd -l
+  19973 dbus            /usr/lib/cups/notifier/dbus dbus://
+  19974 dbus            /usr/lib/cups/notifier/dbus dbus://
+  19975 cups-browsed    /usr/sbin/cups-browsed
+  20140 kworker/0:1-i91 [kworker/0:1-i915-unordered]
+  20252 kworker/1:0-eve [kworker/1:0-events]
+  20403 kworker/2:0-eve [kworker/2:0-events]
+  21205 brave           /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --extension-process --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-GB --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=314 --launch-time-ticks=23293643149 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,767750461055924088,14280978791448435345,1572864 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190709280543012080
+  21670 kworker/u17:2-i [kworker/u17:2-i915_flip]
+  21682 kworker/0:2-eve [kworker/0:2-events]
+  21684 kworker/2:1-eve [kworker/2:1-events]
+  21801 kworker/R-ib-co [kworker/R-ib-comp-wq]
+  21802 kworker/R-ib-co [kworker/R-ib-comp-unb-wq]
+  21803 kworker/R-ib_mc [kworker/R-ib_mcast]
+  21804 kworker/R-ib_nl [kworker/R-ib_nl_sa_wq]
+  21890 kworker/u16:3-f [kworker/u16:3-flush-8:16]
+  21908 kworker/3:1-eve [kworker/3:1-events]
+  21919 kworker/1:1-eve [kworker/1:1-events]
+  21969 brave           /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-GB --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=330 --launch-time-ticks=24268510937 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,13920607064889915055,1862411952655806660,1572864 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190709295535681664
+  22073 kworker/u17:1-h [kworker/u17:1-hci0]
+  22250 kworker/3:0-eve [kworker/3:0-events]
+  22282 kworker/0:0-i91 [kworker/0:0-i915-unordered]
+  22295 kworker/2:2-eve [kworker/2:2-events]
+  22331 kworker/u16:0-e [kworker/u16:0-ext4-rsv-conversion]
+  22348 kworker/1:2-eve [kworker/1:2-events]
+  22387 python3         python3 -B host/run_experiment.py --phase 4 --mode B1 --clients 8 --target z1 --power-model --seed 223457 --calibration-cap 1
+  22398 docker          docker run --rm --name adaptivealpha-20261119t191047113613z-b1-8 --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/external/contiki-ng,destination=/home/user/contiki-ng --mount type=bind,source=/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT,destination=/workspace contiker/contiki-ng@sha256:b14d5afb0a2a852d9e72bbed607ead03f6ccc5f4d4dee44f0799110be2f4b609 bash -c set -eu; cd /workspace; gcc -std=c11 -Wall -Wextra -Werror -Ifirmware/energy firmware/energy/energy.c host/energy_reconcile.c -o /workspace/results/phase_04/20261119T191047113613Z-B1-8/energy_reconcile; cd firmware/sensor; make TARGET=z1 clean; cd ../root; make TARGET=z1 clean; touch /workspace/results/phase_04/20261119T191047113613Z-B1-8/build-clean-complete; /home/user/contiki-ng/tools/cooja/build/install/cooja/bin/cooja --no-gui --contiki=/home/user/contiki-ng --logdir=/workspace/results/phase_04/20261119T191047113613Z-B1-8 /workspace/results/phase_04/20261119T191047113613Z-B1-8/scenario.csc
+  22407 kworker/u16:4-e [kworker/u16:4-ext4-rsv-conversion]
+  22408 kworker/u16:5-e [kworker/u16:5-events_unbound]
+  22409 kworker/u16:6-e [kworker/u16:6-events_unbound]
+  22410 kworker/u16:7-f [kworker/u16:7-flush-8:16]
+  22411 kworker/u16:8   [kworker/u16:8]
+  22424 containerd-shim /usr/bin/containerd-shim-runc-v2 -namespace moby -id 707b2b7b97547182d2466da61a4399ae394f7d377d428907b71ae7959559008f -address /run/containerd/containerd.sock
+  22448 tini            /usr/bin/tini -- /usr/sbin/gosu user bash -c set -eu; cd /workspace; gcc -std=c11 -Wall -Wextra -Werror -Ifirmware/energy firmware/energy/energy.c host/energy_reconcile.c -o /workspace/results/phase_04/20261119T191047113613Z-B1-8/energy_reconcile; cd firmware/sensor; make TARGET=z1 clean; cd ../root; make TARGET=z1 clean; touch /workspace/results/phase_04/20261119T191047113613Z-B1-8/build-clean-complete; /home/user/contiki-ng/tools/cooja/build/install/cooja/bin/cooja --no-gui --contiki=/home/user/contiki-ng --logdir=/workspace/results/phase_04/20261119T191047113613Z-B1-8 /workspace/results/phase_04/20261119T191047113613Z-B1-8/scenario.csc
+  22475 java            java -Xms400M -Xmx2048M --enable-native-access ALL-UNNAMED -classpath /home/user/contiki-ng/tools/cooja/build/install/cooja/lib/cooja-full.jar org.contikios.cooja.Main --no-gui --contiki=/home/user/contiki-ng --logdir=/workspace/results/phase_04/20261119T191047113613Z-B1-8 /workspace/results/phase_04/20261119T191047113613Z-B1-8/scenario.csc
+  24143 kworker/u17:3-h [kworker/u17:3-hci0]
+  24172 brave           /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-GB --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=334 --launch-time-ticks=24574888652 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,16976850384964154301,11198657241982831624,1572864 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190709299283849060
+  24236 brave           /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-GB --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=338 --launch-time-ticks=24583284371 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,6337103037593547629,1594072156818425898,1572864 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190709303032016456
+  24277 brave           /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=2220 --enable-crash-reporter=1a9be1a4-ad15-4e9c-aa23-66768e3c4a60, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-GB --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=339 --launch-time-ticks=24586045815 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,6907382197788782996,14512634388227149043,1572864 --field-trial-handle=3,i,6697133870884745938,1345307719443099030,262144 --variations-seed-version=main@9654aa3e97ad7859f3df3a935aff618d98e30fd1 --pseudonymization-salt-handle=7,i,1712737631014118546,4219390300592908060,4 --trace-process-track-uuid=3190709303969058305
+  24296 bash            /bin/bash -c python3 -B results/phase_05/z1-nine-node-20261120/run_remaining_calibration.py > results/phase_05/z1-nine-node-20261120/calibration-progress.log 2>&1
+  24297 python3         python3 -B results/phase_05/z1-nine-node-20261120/run_remaining_calibration.py
+  24298 ps              ps -eo pid,comm,args

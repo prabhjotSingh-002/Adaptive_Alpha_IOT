@@ -1,0 +1,26 @@
+{
+  "budget_nj": 4093000000,
+  "calibration_run": "results/phase_04/20261117T022752022122Z-B1-2",
+  "samples": [
+    {
+      "node": 2,
+      "target_ms": 73122.656,
+      "sample_ms": 72908.643,
+      "total_nj": 4092377726
+    },
+    {
+      "node": 3,
+      "target_ms": 73547.128,
+      "sample_ms": 73333.13,
+      "total_nj": 4092471741
+    }
+  ],
+  "horizon_ms": 102000,
+  "population": [
+    2,
+    3
+  ],
+  "deplete_node": 0,
+  "root_budget": "unbounded",
+  "frozen_before_p1_evaluation": true
+}

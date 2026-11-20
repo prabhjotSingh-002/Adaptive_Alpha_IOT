@@ -1,0 +1,291 @@
+{
+  "campaign": "results/campaigns/20261116-corrected",
+  "recorded_status": "stopped_at_boundary",
+  "protocol_hash_matches": true,
+  "inventory_files": 3721,
+  "runs": [
+    {
+      "directory": "results/phase_05/20261116T181817581809Z-B1-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T181854004131Z-B2-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T181923260087Z-B4-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T181945783085Z-B5-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T182007763472Z-B3-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T182034263144Z-B6-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T182100184612Z-P1-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T182129173879Z-B1-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T182154316819Z-B2-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T182218055907Z-B4-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T182246065382Z-B5-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T182315265890Z-B3-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T182345064823Z-B6-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T182412204105Z-P1-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T182440838914Z-B1-8",
+      "checked_hashes": 12,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T182649359984Z-B2-8",
+      "checked_hashes": 12,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T182907744163Z-B4-8",
+      "checked_hashes": 12,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T183119253108Z-B5-8",
+      "checked_hashes": 12,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T183322347103Z-B3-8",
+      "checked_hashes": 12,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T183719053073Z-B6-8",
+      "checked_hashes": 12,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T184102852181Z-P1-8",
+      "checked_hashes": 12,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T184501417444Z-B1-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T184526329886Z-B2-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T184549548478Z-B4-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T184612731588Z-B5-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T184635472478Z-B3-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T184702504835Z-B6-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T184728033622Z-P1-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T184754677937Z-B1-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T184818187589Z-B2-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T184841154135Z-B4-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T184902688966Z-B5-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T184924717619Z-B3-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T184951801454Z-B6-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T185017263368Z-P1-15",
+      "checked_hashes": 10,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T185044305488Z-B1-8",
+      "checked_hashes": 12,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T185241447087Z-B2-8",
+      "checked_hashes": 12,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T185447711631Z-B4-8",
+      "checked_hashes": 12,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T185635709675Z-B5-8",
+      "checked_hashes": 12,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    },
+    {
+      "directory": "results/phase_05/20261116T185822498958Z-B3-8",
+      "checked_hashes": 12,
+      "errors": [],
+      "status": "passed",
+      "qualification": "unavailable_fallback_or_configured_default"
+    }
+  ],
+  "errors": [],
+  "liveness": "Process namespace snapshot only; host writer/container absence not certified.",
+  "scope": "Integrity audit, not scientific reanalysis or calibration qualification."
+}

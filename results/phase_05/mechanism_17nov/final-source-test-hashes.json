@@ -1,0 +1,18 @@
+{
+  "firmware/policy/policy.c": "f75121cfe4e123eb858a6c03e35da9434f13e1e31b294576138e4e77222029a6",
+  "firmware/policy/policy.h": "dd06185ad7feaa57363503c8ec39c3044229d7e47fb1ffc7d4fcc32596bc94d7",
+  "firmware/aggregate/aggregate.c": "871871a39bc6f6e5ba31c6e28b7f9e54e4172b5305f488e11a8b88742c347410",
+  "firmware/sensor/sensor.c": "efa8d8c16c2eef6fadcd1730cf7c893e0ee2dfae3eb70b71cc42d816748dc276",
+  "firmware/project-conf.h": "8b096501bf52ef22393dc548a8c129edf2d4b5dbb12a51366faaaa5b1a7e19cc",
+  "host/parse_logs.py": "a095187acb31431c92c8ab8d25e033bbe1f039b49f0daad99c24be0c5399a838",
+  "host/metrics.py": "dd303c25861bead1545511d814e21558d46cdb6907a5df066977e809c6897979",
+  "host/mechanism_checks.py": "713bbbbae175e629d2eed7f70e8b96f4fddabaae8f01af6f7e38eecb8b0ee1d8",
+  "host/run_experiment.py": "b17b6d35cddfb4539cb8d30569b21aa7ef1e743b0e3a6339ca773d22f2998f39",
+  "host/calibration_contract.py": "76c395e2bde7b86e30ecfeaee7941f765c495fd5cb9e0f3e746dbfb7edb4dad0",
+  "tests/unit/test_policy.py": "6f78413b3be315ebf73b0c83737933a13d6900ad0fba78a02b887be14a656a41",
+  "tests/unit/test_measured_rate.py": "1cd30d882345a02863603f7569a5890f830ea9df97bb1aff31fcdaf4a2917d13",
+  "tests/unit/test_deadline_flush.py": "23978204a943a7a6bc0c11be4e50de54f2e60fa3c4cf798d7a1fc8da23fb6885",
+  "tests/unit/test_mechanism_checks.py": "c7a306554e3751e966c683f831a075bb1d00986ce089c6050910764f6ee61208",
+  "tests/unit/test_runner_preflight.py": "1fd9418a42efb280482abc41888f728c42d0ef2cb8fa9c17d2133908eef05615",
+  "tests/unit/test_policy_safety.c": "d1ac8113edd88cf3f3cff44ce20e30476e5346cbee8f33ecba030ac198c5810c"
+}

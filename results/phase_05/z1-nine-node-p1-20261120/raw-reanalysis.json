@@ -1,0 +1,65 @@
+[
+  {
+    "name": "p1-qualified-functional",
+    "directory": "results/phase_05/20261119T200722249256Z-P1-8",
+    "artifact_and_binary_checks": {
+      "console.log": "OK",
+      "mechanism-checks.json": "OK",
+      "scenario.csc": "OK",
+      "test-keys.json": "OK",
+      "build-clean-complete": "OK",
+      "generated-conf.h": "OK",
+      "COOJA.testlog": "OK",
+      "energy_reconcile": "OK",
+      "summary.json": "OK",
+      "events.jsonl": "OK",
+      "power-model.json": "OK",
+      "binaries/root-root.z1": "OK",
+      "binaries/sensor-sensor.z1": "OK"
+    },
+    "raw_events": 16255,
+    "radio_frames": 497,
+    "tx_profile_and_batch_size": {
+      "1:1": 14,
+      "2:2": 86
+    },
+    "depletion_ms": {},
+    "summary_reproduced_from_raw_log": true
+  },
+  {
+    "name": "p1-qualified-finite",
+    "directory": "results/phase_05/20261119T201051437412Z-P1-8",
+    "artifact_and_binary_checks": {
+      "console.log": "OK",
+      "mechanism-checks.json": "OK",
+      "scenario.csc": "OK",
+      "test-keys.json": "OK",
+      "build-clean-complete": "OK",
+      "generated-conf.h": "OK",
+      "COOJA.testlog": "OK",
+      "energy_reconcile": "OK",
+      "summary.json": "OK",
+      "events.jsonl": "OK",
+      "power-model.json": "OK",
+      "binaries/root-root.z1": "OK",
+      "binaries/sensor-sensor.z1": "OK"
+    },
+    "raw_events": 11318,
+    "radio_frames": 298,
+    "tx_profile_and_batch_size": {
+      "1:1": 14,
+      "2:2": 31
+    },
+    "depletion_ms": {
+      "8": 71299.624,
+      "4": 71325.223,
+      "2": 71462.994,
+      "6": 71477.578,
+      "7": 71628.621,
+      "9": 71934.719,
+      "5": 71941.963,
+      "3": 72001.208
+    },
+    "summary_reproduced_from_raw_log": true
+  }
+]

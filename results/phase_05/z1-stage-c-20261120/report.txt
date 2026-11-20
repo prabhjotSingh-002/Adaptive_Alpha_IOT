@@ -1,0 +1,27 @@
+import csv
+import json
+from pathlib import Path
+from evidence import verify_artifacts
+
+out = Path(__file__).parent
+runs = json.loads((out/'selected-runs.json').read_text())
+rows = []
+for mode in ['B1','B2','B3','B4','B5','B6','P1']:
+    run = Path(runs[mode])
+    m = json.loads((run/'manifest.json').read_text())
+    assert set(verify_artifacts(run,m).values()) == {'OK'}
+    s = json.loads((run/'summary.json').read_text())
+    life = s['lifetime']
+    assert s['mechanism_checks']['depletion']['post_death_application_or_rf_violations'] == 0
+    service = life['functional']
+    rows.append(dict(mode=mode, model_mj_per_reading=s['energy_per_delivered_reading_nj']/1e6 if s['energy_per_delivered_reading_nj'] is not None else None,
+                     authenticated=s['unique_authenticated_delivered'], generated=s['generated'], scheduled=life['scheduled_readings'],
+                     p95_ms=s['p95_delay_ms'], first_death_ms=life['fnd']['time_ms'], first_death_censored=life['fnd']['censored'],
+                     half_death_ms=life['hnd']['time_ms'], half_death_censored=life['hnd']['censored'],
+                     service_crossing_ms=service['crossing_ms'], service_confirmation_ms=service['confirmation_ms'],
+                     service_censor_ms=service['censor_ms'], run=str(run)))
+with (out/'comparison.csv').open('w',newline='') as file:
+    writer=csv.DictWriter(file,fieldnames=list(rows[0]))
+    writer.writeheader()
+    writer.writerows(rows)
+print(json.dumps(rows,indent=2))

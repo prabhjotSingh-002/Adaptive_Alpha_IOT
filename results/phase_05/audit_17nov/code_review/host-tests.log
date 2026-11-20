@@ -1,0 +1,146 @@
+test_qualified_table_all_modes_present (test_calibration.CalibrationQualifiedTableTests.test_qualified_table_all_modes_present) ... ok
+test_qualified_table_b6_winner_profile (test_calibration.CalibrationQualifiedTableTests.test_qualified_table_b6_winner_profile) ... ok
+test_qualified_table_cap2_unavailable (test_calibration.CalibrationQualifiedTableTests.test_qualified_table_cap2_unavailable) ... ok
+test_qualified_table_exists (test_calibration.CalibrationQualifiedTableTests.test_qualified_table_exists) ... ok
+test_qualified_table_no_nan_or_negative (test_calibration.CalibrationQualifiedTableTests.test_qualified_table_no_nan_or_negative) ... ok
+test_qualified_table_seed (test_calibration.CalibrationQualifiedTableTests.test_qualified_table_seed) ... ok
+test_qualified_table_source_records_present (test_calibration.CalibrationQualifiedTableTests.test_qualified_table_source_records_present) ... ok
+test_seed_required_in_load (test_calibration.CalibrationSeedIsolationTests.test_seed_required_in_load)
+calibrate.load_summaries raises ValueError without seed. ... ok
+test_wrong_seed_excluded (test_calibration.CalibrationSeedIsolationTests.test_wrong_seed_excluded)
+load_summaries with explicit seed only admits matching runs. ... ok
+test_b6_winner_empty_raises (test_calibration.CalibrationTableTests.test_b6_winner_empty_raises) ... ok
+test_b6_winner_lowest_cost (test_calibration.CalibrationTableTests.test_b6_winner_lowest_cost) ... ok
+test_build_cost_table_all_modes (test_calibration.CalibrationTableTests.test_build_cost_table_all_modes) ... ok
+test_cap2_always_zero_unavailable (test_calibration.CalibrationTableTests.test_cap2_always_zero_unavailable)
+Cap-2 is never measured — must stay 0 in cost array. ... ok
+test_multiple_seeds_averaged (test_calibration.CalibrationTableTests.test_multiple_seeds_averaged)
+Multiple runs for same mode are averaged. ... ok
+test_p1_cost_array_shape (test_calibration.CalibrationTableTests.test_p1_cost_array_shape) ... ok
+test_duplicate_seeds_rejected (test_campaign.CampaignTests.test_duplicate_seeds_rejected) ... ok
+test_protocol_tampering_rejected (test_campaign.CampaignTests.test_protocol_tampering_rejected) ... ok
+test_topologies_must_not_pool (test_campaign.CampaignTests.test_topologies_must_not_pool) ... ok
+setUpClass (test_deadline_flush.DeadlineFlushTests) ... ERROR
+test_p1_z1_actual_switches (test_evidence.ActualRunIntegrityTests.test_p1_z1_actual_switches) ... ok
+test_p1_z1_both_profiles_used (test_evidence.ActualRunIntegrityTests.test_p1_z1_both_profiles_used) ... ok
+test_p1_z1_costs_in_generated_conf (test_evidence.ActualRunIntegrityTests.test_p1_z1_costs_in_generated_conf) ... ok
+test_p1_z1_manifest_passed (test_evidence.ActualRunIntegrityTests.test_p1_z1_manifest_passed) ... ok
+test_p1_z1_run_exists (test_evidence.ActualRunIntegrityTests.test_p1_z1_run_exists) ... ok
+test_security_runs_all_injections_rejected (test_evidence.ActualRunIntegrityTests.test_security_runs_all_injections_rejected)
+All 6 security regression runs must reject all injections. ... ok
+test_clean_run_all_ok (test_evidence.ArtifactVerificationTests.test_clean_run_all_ok) ... ok
+test_empty_artifact_hashes (test_evidence.ArtifactVerificationTests.test_empty_artifact_hashes) ... ok
+test_missing_artifact_detected (test_evidence.ArtifactVerificationTests.test_missing_artifact_detected) ... ok
+test_multiple_artifacts_one_tampered (test_evidence.ArtifactVerificationTests.test_multiple_artifacts_one_tampered) ... ok
+test_no_manifest_returns_none (test_evidence.ArtifactVerificationTests.test_no_manifest_returns_none) ... ok
+test_tampered_artifact_detected (test_evidence.ArtifactVerificationTests.test_tampered_artifact_detected) ... ok
+test_absolute_path_rejected (test_evidence.PathContainmentTests.test_absolute_path_rejected) ... ok
+test_dotdot_rejected (test_evidence.PathContainmentTests.test_dotdot_rejected)
+.. in run_id should be rejected before filesystem access. ... ok
+test_valid_run_id_accepted (test_evidence.PathContainmentTests.test_valid_run_id_accepted) ... ok
+test_no_death_censored_not_observed (test_lifetime.LifetimeTests.test_no_death_censored_not_observed) ... ok
+test_odd_even_hnd_and_simultaneous_deaths (test_lifetime.LifetimeTests.test_odd_even_hnd_and_simultaneous_deaths) ... ok
+test_persistent_service_loss_and_planned_denominator (test_lifetime.LifetimeTests.test_persistent_service_loss_and_planned_denominator) ... ok
+test_ascon_accounting_and_unknown_profile (test_metrics.MetricsTests.test_ascon_accounting_and_unknown_profile) ... ok
+test_bad_deadline_fails (test_metrics.MetricsTests.test_bad_deadline_fails) ... ok
+test_corruption_fails (test_metrics.MetricsTests.test_corruption_fails) ... ok
+test_duplicate_not_counted_twice (test_metrics.MetricsTests.test_duplicate_not_counted_twice) ... ok
+test_dynamic_policy_batch (test_metrics.MetricsTests.test_dynamic_policy_batch) ... ok
+test_energy_telemetry_missing_regression_and_wrap (test_metrics.MetricsTests.test_energy_telemetry_missing_regression_and_wrap) ... ok
+test_known_delivery_and_global_latency (test_metrics.MetricsTests.test_known_delivery_and_global_latency) ... ok
+test_missing_done_fails (test_metrics.MetricsTests.test_missing_done_fails) ... ok
+test_missing_generator_fails (test_metrics.MetricsTests.test_missing_generator_fails) ... ok
+test_parse_incomplete_and_malformed (test_metrics.MetricsTests.test_parse_incomplete_and_malformed) ... ok
+test_phase4_completion_marker (test_metrics.MetricsTests.test_phase4_completion_marker) ... ok
+test_protected_rejection_reason_contract (test_metrics.MetricsTests.test_protected_rejection_reason_contract) ... ok
+test_radio_fragment_dispatch_at_mac_boundary (test_metrics.MetricsTests.test_radio_fragment_dispatch_at_mac_boundary) ... ok
+test_schema2_completion_and_legacy_isolation (test_metrics.MetricsTests.test_schema2_completion_and_legacy_isolation) ... ok
+test_schema2_packet_identity_and_metadata (test_metrics.MetricsTests.test_schema2_packet_identity_and_metadata) ... ok
+test_secure_accounting_requires_authentication_and_context (test_metrics.MetricsTests.test_secure_accounting_requires_authentication_and_context) ... ok
+test_secure_packet_cannot_double_count_tag_budget (test_metrics.MetricsTests.test_secure_packet_cannot_double_count_tag_budget) ... ok
+test_stale_config_fails (test_metrics.MetricsTests.test_stale_config_fails) ... ok
+test_unlogged_submission_loss_fails (test_metrics.MetricsTests.test_unlogged_submission_loss_fails) ... ok
+setUpClass (test_policy.PolicyTests) ... ERROR
+test_seed_required (test_priority_repairs.CalibrationGuardTests.test_seed_required) ... ok
+test_constant_paired_difference (test_priority_repairs.PairingTests.test_constant_paired_difference) ... ERROR
+test_unmatched_arrays_rejected (test_priority_repairs.PairingTests.test_unmatched_arrays_rejected) ... ERROR
+test_tampering_and_escape_are_reported (test_resolution_audit.AuditTests.test_tampering_and_escape_are_reported) ... ok
+test_invalid_combinations (test_topologies.TopologyTests.test_invalid_combinations) ... ok
+test_legacy_preserved (test_topologies.TopologyTests.test_legacy_preserved) ... ok
+test_radio_graphs (test_topologies.TopologyTests.test_radio_graphs) ... ok
+
+======================================================================
+ERROR: setUpClass (test_deadline_flush.DeadlineFlushTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/tests/unit/test_deadline_flush.py", line 101, in setUpClass
+    so_path = _build_lib(cls._tmp)
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/tests/unit/test_deadline_flush.py", line 37, in _build_lib
+    result = subprocess.run(cmd, capture_output=True, text=True)
+  File "/usr/lib/python3.14/subprocess.py", line 555, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 1990, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'gcc'
+
+======================================================================
+ERROR: setUpClass (test_policy.PolicyTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/tests/unit/test_policy.py", line 96, in setUpClass
+    cls.lib = ctypes.CDLL(str(build_policy_lib(cls.tmpdir.name)))
+                              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/tests/unit/test_policy.py", line 30, in build_policy_lib
+    result = subprocess.run(cmd, capture_output=True, text=True)
+  File "/usr/lib/python3.14/subprocess.py", line 555, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 1990, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'gcc'
+
+======================================================================
+ERROR: test_constant_paired_difference (test_priority_repairs.PairingTests.test_constant_paired_difference)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/tests/unit/test_priority_repairs.py", line 15, in test_constant_paired_difference
+    from analysis import _paired_diff
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/analysis.py", line 23, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+======================================================================
+ERROR: test_unmatched_arrays_rejected (test_priority_repairs.PairingTests.test_unmatched_arrays_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/tests/unit/test_priority_repairs.py", line 21, in test_unmatched_arrays_rejected
+    from analysis import _paired_diff
+  File "/home/vanitas_archiviste/myDEV_linux/adaptiveAlpha_IOT/host/analysis.py", line 23, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+----------------------------------------------------------------------
+Ran 62 tests in 0.060s
+
+FAILED (errors=4)

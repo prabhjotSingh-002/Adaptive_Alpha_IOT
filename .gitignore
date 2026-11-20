@@ -18,3 +18,6 @@ results/phase_04/20*/
 results/phase_03/20*/
 results/phase_02/20*/
 results/phase_01/20*/
+
+# Local pinned dashboard dependencies
+results/dashboard-deps/

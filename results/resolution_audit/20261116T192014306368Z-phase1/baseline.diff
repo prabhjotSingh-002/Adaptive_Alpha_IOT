@@ -1,0 +1,858 @@
+diff --git a/.gitignore b/.gitignore
+index 515253b..65d5cc4 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -18,3 +18,6 @@ results/phase_04/20*/
+ results/phase_03/20*/
+ results/phase_02/20*/
+ results/phase_01/20*/
++
++# Local pinned dashboard dependencies
++results/dashboard-deps/
+diff --git a/firmware/crypto/boot_gate.h b/firmware/crypto/boot_gate.h
+index 0b57afd..3518a1b 100644
+--- a/firmware/crypto/boot_gate.h
++++ b/firmware/crypto/boot_gate.h
+@@ -15,7 +15,7 @@ bool lab_boot_gate_poll(lab_boot_gate *gate, lab_security_context *ctx);
+ /* Metadata per slot: version, profile, sender BE16, epoch BE16, ready, reserved.
+  * Slots and keys are contiguous and must match the preinitialized contexts. */
+ #define LAB_PROVISION_SLOT_SIZE 8u
+-#define LAB_PROVISION_MAX_CONTEXTS 16u
++#define LAB_PROVISION_MAX_CONTEXTS 30u
+ bool lab_boot_gate_poll_set(lab_boot_gate *gate, lab_security_context *contexts,
+                             size_t count, const uint8_t *metadata,
+                             const uint8_t *keys);
+diff --git a/firmware/generated-conf.h b/firmware/generated-conf.h
+index 04b9973..7b6f923 100644
+--- a/firmware/generated-conf.h
++++ b/firmware/generated-conf.h
+@@ -4,7 +4,7 @@
+ #define LAB_PERIOD_MS 1000u
+ #define LAB_WARMUP_MS 60000u
+ #define LAB_TOTAL_READINGS 24u
+-#define LAB_LAST_NODE 9u
++#define LAB_LAST_NODE 3u
+ #define LAB_PAYLOAD_BUDGET 67u
+ #define LAB_RESERVED_BYTES 16u
+ #define LAB_FLUSH_LEAD_MS 0u
+@@ -15,7 +15,7 @@
+ #define LAB_ENERGY_MODEL 0u
+ #define LAB_ENERGY_TELEMETRY 0u
+ #define LAB_SCHEMA 2u
+-#define LAB_CONFIG_ID 1939544980u
++#define LAB_CONFIG_ID 2083215542u
+ #define LAB_DUAL_PROFILE 1u
+ #define LAB_SWITCH_TEST 0u
+ #define LAB_RADIO_LOSS_TEST 0u
+@@ -31,3 +31,4 @@
+ #define LAB_P1_TRANSITION_COST_NJ 50000ULL
+ #define LAB_P1_MIN_DWELL_MS 2000u
+ #define LAB_P1_MARGIN_NJ 10000ULL
++#define LAB_P1_COSTS {{0ULL,0ULL,0ULL},{0ULL,0ULL,0ULL}}
+diff --git a/firmware/policy/policy.c b/firmware/policy/policy.c
+index 22829cd..d621c09 100644
+--- a/firmware/policy/policy.c
++++ b/firmware/policy/policy.c
+@@ -116,6 +116,7 @@ lab_policy_action lab_policy_p1(lab_policy_state *s, const lab_policy_features *
+     uint8_t best_profile = 0, best_cap = 0;
+     uint64_t best_cost = UINT64_MAX;
+     bool any_feasible = false;
++    bool current_feasible = false;
+ 
+     for(uint8_t pi = 0; pi < 2; pi++) {           /* profiles 1,2 */
+         for(uint8_t ci = 0; ci < 3; ci++) {        /* caps 1,2,4 */
+@@ -125,6 +126,8 @@ lab_policy_action lab_policy_p1(lab_policy_state *s, const lab_policy_features *
+                (uint64_t)(cap - 1u) * 100000u > (uint64_t)s->deadline_ms * f->rate_hz_x100)) continue;             /* MTU infeasible */
+             if(s->cost_nj[pi][ci] == 0) continue;  /* No calibration data */
+ 
++            if(pi + 1u == s->current_profile && cap == s->current_cap)
++                current_feasible = true;
+             uint64_t est = s->cost_nj[pi][ci];
+             if(est < best_cost) {
+                 best_cost    = est;
+@@ -148,7 +151,7 @@ lab_policy_action lab_policy_p1(lab_policy_state *s, const lab_policy_features *
+     }
+ 
+     /* Dwell check. */
+-    if(s->initialized && s->min_dwell_ms > 0 &&
++    if(current_feasible && s->initialized && s->min_dwell_ms > 0 &&
+        (f->now_ms - s->last_switch_ms) < s->min_dwell_ms) {
+         lab_policy_action out;
+         out.profile  = s->current_profile;
+@@ -163,7 +166,7 @@ lab_policy_action lab_policy_p1(lab_policy_state *s, const lab_policy_features *
+     uint8_t cur_ci = (s->current_cap == 4) ? 2u : (s->current_cap == 2) ? 1u : 0u;
+     uint64_t cur_cost = s->cost_nj[s->current_profile - 1u][cur_ci];
+ 
+-    if(cur_cost > 0) {
++    if(current_feasible && cur_cost > 0) {
+         uint64_t horizon = (uint64_t)f->rate_hz_x100 * s->min_dwell_ms / 100000u;
+         if(!horizon) horizon = 1;
+         /* Compare per-reading saving against amortized transition cost. */
+diff --git a/firmware/sensor/sensor.c b/firmware/sensor/sensor.c
+index a905a14..41c81ac 100644
+--- a/firmware/sensor/sensor.c
++++ b/firmware/sensor/sensor.c
+@@ -102,7 +102,11 @@ static void flush(uint32_t now) {
+   }
+   size_t length = 0;
+ #if LAB_DUAL_PROFILE
+-  selected = LAB_SWITCH_TEST ? ((counter % 3u) == 2u ? 1u : 0u) : LAB_PROFILE - 1u;
++#if LAB_SWITCH_TEST
++  selected = (counter % 3u) == 2u ? 1u : 0u;
++#elif !LAB_POLICY_MODE
++  selected = LAB_PROFILE - 1u;
++#endif
+ #endif
+ #if (LAB_PROFILE == 1 || LAB_PROFILE == 2)
+   if(!udp.udp_conn || !lab_secure_seal(&security, &b, payload, sizeof(payload), &length)) {
+diff --git a/host/comparison_guard.py b/host/comparison_guard.py
+index d363105..d0d52ec 100644
+--- a/host/comparison_guard.py
++++ b/host/comparison_guard.py
+@@ -7,7 +7,7 @@ def admit_group(directories):
+     cohort=None
+     seen=set()
+     sources=[]
+-    keys=('target','backend','warmup_ms','period_ms','readings_per_sensor','deadline_ms','drain_ms','payload_budget','reserved_bytes','power_model','energy_sample_ms','aes_backend','bottleneck','radio_off_until_ms','cpu_work_iterations','flush_lead_ms')
++    keys=('topology','target','backend','warmup_ms','period_ms','readings_per_sensor','deadline_ms','drain_ms','payload_budget','reserved_bytes','power_model','energy_sample_ms','aes_backend','bottleneck','radio_off_until_ms','cpu_work_iterations','flush_lead_ms')
+     for directory in directories:
+         p=Path(directory)
+         m=json.loads((p/'manifest.json').read_text())
+diff --git a/host/dashboard.py b/host/dashboard.py
+index 1f830e2..f789a9f 100644
+--- a/host/dashboard.py
++++ b/host/dashboard.py
+@@ -11,6 +11,7 @@ Or directly if Flask + matplotlib + numpy are installed:
+     python3 host/dashboard.py
+ """
+ import glob
++import re
+ import hashlib
+ import io
+ import json
+@@ -70,8 +71,15 @@ def _load_runs(force=False):
+         if not force and time.time() - _cache["ts"] < 10:
+             return _cache["runs"]
+         runs = []
++        historical = None
++        pointer = RESULTS / 'campaigns/current.json'
++        if pointer.exists():
++            campaign_dir = PROJECT / json.loads(pointer.read_text())['directory']
++            historical = set(json.loads((campaign_dir / 'historical.json').read_text())['directories'])
+         for f in sorted(glob.glob(str(RESULTS / "phase_0*/*/summary.json"))):
+             try:
++                if historical is not None and str(Path(f).parent.relative_to(PROJECT)) not in historical:
++                    continue
+                 s = json.loads(Path(f).read_text())
+                 m = json.loads(Path(f).with_name("manifest.json").read_text())
+                 status  = s.get("status") or m.get("status", "?")
+@@ -720,14 +728,14 @@ async function refreshAll() {
+   document.getElementById('last-refresh').textContent =
+     'Refreshed ' + new Date().toLocaleTimeString();
+   showToast('Data refreshed');
+-  await Promise.all([fetchPhases(), fetchSummary(), fetchRuns()]);
++  await Promise.all([fetchPhases(), fetchRuns()]);
+   reloadCharts();
+ }
+ 
+ document.addEventListener('DOMContentLoaded', async () => {
+   document.getElementById('last-refresh').textContent =
+     'Loaded ' + new Date().toLocaleTimeString();
+-  await Promise.all([fetchPhases(), fetchSummary(), fetchRuns()]);
++  await Promise.all([fetchPhases(), fetchRuns()]);
+ });
+ 
+ // Auto-refresh every 30s
+@@ -737,11 +745,16 @@ setInterval(refreshAll, 30000);
+ </html>"""
+ 
+ 
+-@app.route("/")
++@app.route("/historical")
+ def index():
+-    return render_template_string(HTML)
++    archive = re.sub(r"  <!-- Mode comparison table -->.*?  <!-- All runs table -->", "  <!-- All runs table -->", HTML, flags=re.S)
++    banner = '<body><div style="padding:18px;background:#513b16;color:white">Historical/exploratory run archive. <a href="/">Open fresh campaign results</a></div>'
++    return render_template_string(archive.replace("<body>", banner))
+ 
+ 
++from campaign_dashboard import register_campaign
++register_campaign(app)
++
+ if __name__ == "__main__":
+     port = int(os.environ.get("DASHBOARD_PORT", 5000))
+     host = os.environ.get("DASHBOARD_HOST", "0.0.0.0")
+diff --git a/host/run_dashboard.py b/host/run_dashboard.py
+index f862112..309b5f0 100644
+--- a/host/run_dashboard.py
++++ b/host/run_dashboard.py
+@@ -28,18 +28,18 @@ def main():
+ 
+     # Install flask + run dashboard inside container
+     cmd_inner = (
+-        "pip3 install -q flask && "
++        "test -d /workspace/results/dashboard-deps/flask || exit 1; "
+         f"cd /workspace && "
+-        f"DASHBOARD_PORT={port} python3 host/dashboard.py"
++        f"PYTHONPATH=/workspace/results/dashboard-deps DASHBOARD_PORT={port} python3 host/dashboard.py"
+     )
+ 
+     docker_cmd = [
+         "sg", "docker", "-c",
+         shlex.join([
+             "docker", "run", "--rm",
+-            "-p", f"{port}:{port}",
++            "-p", f"127.0.0.1:{port}:{port}",
+             "--mount", f"type=bind,source={WORKSPACE}/external/contiki-ng,destination=/home/user/contiki-ng",
+-            "--mount", f"type=bind,source={WORKSPACE},destination=/workspace",
++            "--mount", f"type=bind,source={WORKSPACE},destination=/workspace,readonly",
+             CONTAINER,
+             "bash", "-c", cmd_inner,
+         ])
+@@ -50,7 +50,8 @@ def main():
+     print(f"[run_dashboard] Press Ctrl+C to stop.", flush=True)
+ 
+     try:
+-        subprocess.run(docker_cmd)
++        result = subprocess.run(docker_cmd)
++        raise SystemExit(result.returncode)
+     except KeyboardInterrupt:
+         print("\n[run_dashboard] Stopped.", flush=True)
+ 
+diff --git a/host/run_experiment.py b/host/run_experiment.py
+index f51d97a..c0d8d47 100644
+--- a/host/run_experiment.py
++++ b/host/run_experiment.py
+@@ -16,6 +16,7 @@ from policy_validation import validate_policy_config
+ from parse_logs import parse
+ from metrics import summarize
+ from scenario_target import configure_z1
++from topologies import configure_layout, validate_layout
+ 
+ PROJECT = Path(__file__).resolve().parents[1]
+ def digest(path): return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+@@ -28,7 +29,7 @@ def scenario(out, clients, config, keys=None):
+     tree = ET.parse(PROJECT / "simulations/scenarios/phase1-rpl-9.csc")
+     root = tree.getroot(); simulation = root.find("simulation")
+     simulation.find("randomseed").text = str(config["seed"])
+-    for mote in list(simulation.findall("mote"))[clients + 1:]: simulation.remove(mote)
++    configure_layout(simulation, clients, config.get("topology", "legacy"))
+     target = config.get("target", "cooja")
+     backend = config.get("backend", "ref")
+     for mote_type in simulation.findall("motetype"):
+@@ -213,7 +214,8 @@ def run(mode, clients, base, pins, override):
+     if config.get("profile", 0) not in (0, 1, 2): raise ValueError("Unsupported profile")
+     for name in ("seed", "warmup_ms", "period_ms", "readings_per_sensor", "deadline_ms", "drain_ms", "payload_budget", "reserved_bytes"):
+         if type(config[name]) is not int or config[name] < 0: raise ValueError("Invalid config " + name)
+-    if not 1 <= clients <= 8 or type(cap) is not int or cap not in (1, 2, 4) or not 1 <= config["readings_per_sensor"] <= 1000 or config["period_ms"] < 125 or config["period_ms"] % 125 or config["deadline_ms"] % 125 or config["deadline_ms"] > 2**31-1:
++    validate_layout(clients, config.get("topology", "legacy"), config.get("target", "cooja"), config.get("bottleneck", False))
++    if not 1 <= clients <= 15 or type(cap) is not int or cap not in (1, 2, 4) or not 1 <= config["readings_per_sensor"] <= 1000 or config["period_ms"] < 125 or config["period_ms"] % 125 or config["deadline_ms"] % 125 or config["deadline_ms"] > 2**31-1:
+         raise ValueError("Unsupported pilot dimensions or timer resolution")
+     if config["warmup_ms"] + config["readings_per_sensor"] * config["period_ms"] + config["deadline_ms"] + config["drain_ms"] >= 2**31 or config["payload_budget"] > 65535:
+         raise ValueError("Pilot horizon/budget exceeds bounded representation")
+@@ -377,6 +379,7 @@ def run(mode, clients, base, pins, override):
+ 
+ def main():
+     parser = argparse.ArgumentParser(); parser.add_argument("--phase", type=int, choices=[2, 3, 4, 5], default=2); parser.add_argument("--mode", choices=["N0-single", "N0-batch", "B1", "B2", "B3", "B4", "B5", "B6", "P1", "both", "all", "all5"], default="both"); parser.add_argument("--clients", type=int, default=8); parser.add_argument("--timeout-seconds", type=int, default=900); parser.add_argument("--attack-test", action="store_true"); parser.add_argument("--root-reset-test", action="store_true"); parser.add_argument("--gui", action="store_true", help="Open Cooja GUI instead of running headless (for visual inspection; results not logged to file)"); parser.add_argument("--radio-off-until-ms", type=int, default=0); parser.add_argument("--cpu-work-iterations", type=int, default=0); parser.add_argument("--radio-loss-test", action="store_true"); parser.add_argument("--reorder-test", action="store_true"); parser.add_argument("--sensor-reset-test", action="store_true"); parser.add_argument("--provision-fault", choices=["missing","version","profile","epoch"]); parser.add_argument("--critical-reading", type=int, default=0); parser.add_argument("--power-model", action="store_true"); parser.add_argument("--energy-budget-nj", type=int); parser.add_argument("--deplete-node", type=int, default=0); parser.add_argument("--bottleneck", action="store_true"); parser.add_argument("--energy-sample-ms", type=int, choices=[125,250,500], default=125); parser.add_argument("--energy-telemetry", action="store_true"); parser.add_argument("--warmup-ms", type=int); parser.add_argument("--switch-test", action="store_true"); parser.add_argument("--readings", type=int); parser.add_argument("--seed", type=int); parser.add_argument("--target", choices=["cooja", "z1"], default="cooja"); parser.add_argument("--backend", choices=["ref", "opt32_lowsize"], default="ref"); parser.add_argument("--period-ms", type=int); parser.add_argument("--payload-budget", type=int)
++    parser.add_argument("--topology", choices=["legacy", "grid16", "tree16"], default="legacy")
+     parser.add_argument("--policy-cost-table", type=Path)
+     args = parser.parse_args(); base = json.loads((PROJECT / f"configs/phase{args.phase}.json").read_text()); pins = json.loads((PROJECT / "results/setup/source-pins.json").read_text())
+     if args.phase == 5:
+@@ -435,6 +438,8 @@ def main():
+     base["energy_sample_ms"] = args.energy_sample_ms
+     base["deplete_node"] = args.deplete_node
+     base["bottleneck"] = args.bottleneck
++    base["topology"] = args.topology
++    validate_layout(args.clients, args.topology, args.target, args.bottleneck)
+     if args.power_model:
+         base["power_model"] = json.loads((PROJECT/"configs/power-z1-v1.json").read_text())
+         base["energy_budget_nj"] = args.energy_budget_nj if args.energy_budget_nj is not None else 2**64-1
+diff --git a/phase_jouney/README.md b/phase_jouney/README.md
+index 83314ac..ff8973a 100644
+--- a/phase_jouney/README.md
++++ b/phase_jouney/README.md
+@@ -7,9 +7,9 @@ This folder records **what happened in each phase**: implementation, commands, t
+ | 1 | Environment + unchanged official RPL demo (G0) | Automated work complete; stopped; two-student G0 review pending |
+ | 2 | Reading protocol, transport and aggregation | Automated work complete; N0 pilot verified; stopped before Phase 3 |
+ | 3 | AES-CCM + reproducible secure pilot | Automated implementation/pilot complete; human review and expanded validation pending |
+-| 4 | Ascon + energy and lifetime model | Started; implementation and gates pending |
+-| 5 | Adaptive policy and controls | Pending |
+-| 6 | Full experiments, reproducibility and release | Pending |
++| 4 | Ascon + energy and lifetime model | All 35 validation cases pass (cases 29–35 completed 16 Nov 2026); human review pending |
++| 5 | Adaptive policy and controls | Policy implemented; infeasibility fix applied; fresh campaign running (20261116-corrected); human review pending |
++| 6 | Full experiments, reproducibility and release | Pending — requires Phase 4/5 human review and explicit authorization |
+ 
+ Record commands, outcomes, decisions, reasons, failures and downstream impact in each phase journal. RAM affects execution concurrency, not project requirements.
+ 
+@@ -33,9 +33,14 @@ Record commands, outcomes, decisions, reasons, failures and downstream impact in
+ 
+ ## Phase 4 reading guide
+ 
+-- [Execution journal](phase_04_environment_and_implementation.md)
++- [Execution journal](phase_04_environment_and_implementation.md) — includes 16 Nov deferred case closure
++- [Detailed report](phase_04_detailed_report.md)
++- [Leftover / deferred items](phase_04_leftover.md) — all closed 16 Nov 2026
+ 
+-The final Phase 4 report has not yet been produced. Current planning is maintained at [PLANS/PHASE_04_IMPLEMENTATION_PLAN.md](../PLANS/PHASE_04_IMPLEMENTATION_PLAN.md).
++## Phase 5 reading guide
++
++- [Detailed implementation and verification report](phase_05_detailed_report.md)
++- [Execution journal](phase_05_environment_and_implementation.md) — includes 16 Nov corrected campaign and policy fix
+ 
+ ## Preserved historical records
+ 
+diff --git a/phase_jouney/phase_04_environment_and_implementation.md b/phase_jouney/phase_04_environment_and_implementation.md
+index 63e884f..15d9920 100644
+--- a/phase_jouney/phase_04_environment_and_implementation.md
++++ b/phase_jouney/phase_04_environment_and_implementation.md
+@@ -1,5 +1,79 @@
+ # Phase 4 execution journal
+ 
++## Checkpoint: Deferred cases 29–35 completed — 16 November 2026
++
++**Date:** 16 November 2026 (this session, as authorized by finalPLAN_execute.md)
++
++All seven previously deferred Phase 4 validation cases now pass. Runs executed serially under the shared `.runner.lock` using the pinned official container.
++
++### Case 29 — Boundary `--period-ms 4000`
++
++All four arms (B1/B2/B4/B5), 2 clients, native Cooja, 4000 ms reading period. `PAIRED_GENERATION_IDENTICAL`.
++
++| Run ID | Mode | PDR | p95 latency |
++|---|---|---|---|
++| 20261116T175934506150Z-B1-2 | B1 | 1.0 | 43.8 ms |
++| 20261116T175957444306Z-B2-2 | B2 | 1.0 | 43.8 ms |
++| 20261116T180017877202Z-B4-2 | B4 | 1.0 | 3044.5 ms |
++| 20261116T180036635527Z-B5-2 | B5 | 1.0 | 3044.5 ms |
++
++PDR=1.0 across all arms. B4/B5 p95 latency reflects the 3 s deadline flush with 4 s generation period (each batch contains at most one reading, flushed at deadline). B1/B2 latency is network-only. No fragmentation.
++
++### Case 30 — Boundary `--payload-budget 47`
++
++All four arms, 2 clients, native Cooja, 47-byte payload budget. `PAIRED_GENERATION_IDENTICAL`.
++
++| Run ID | Mode | PDR | p95 latency |
++|---|---|---|---|
++| 20261116T180100630105Z-B1-2 | B1 | 1.0 | 43.8 ms |
++| 20261116T180123777826Z-B2-2 | B2 | 1.0 | 43.8 ms |
++| 20261116T180142937672Z-B4-2 | B4 | 1.0 | 1038.8 ms |
++| 20261116T180202411260Z-B5-2 | B5 | 1.0 | 1038.8 ms |
++
++At 47-byte budget: `47 - 11 header - 16 tag = 20 bytes` → fits two 10-byte readings (correcting the leftover document that claimed one). B4/B5 cap-effective-2 path confirmed by latency pattern. PDR=1.0, no fragmentation.
++
++### Case 31 — Depletion sensitivity 125 ms energy sample
++
++B2 only, 2 clients, Z1 target, power model, 120 s warmup, 120 readings, 9 J budget, `--deplete-node 2 --bottleneck`, seed 223456, 125 ms energy sample interval.
++
++| Run ID | PDR | p95 latency |
++|---|---|---|
++| 20261116T180228618905Z-B2-2 | 0.4747 | 102.6 ms |
++
++PDR ~47% reflects node 2 depletion eliminating its upstream forwarding role. Run passed. 125 ms sample cadence confirmed.
++
++### Case 32 — Depletion sensitivity 250 ms energy sample
++
++Same scenario as Case 31, 250 ms sample interval.
++
++| Run ID | PDR | p95 latency |
++|---|---|---|
++| 20261116T180333068963Z-B2-2 | 0.4810 | 102.6 ms |
++
++Run passed. Sample interval change does not alter delivery outcome.
++
++### Cases 33–35 — Lifetime four-arm runs (seeds 123456, 123457, 123458)
++
++All four arms (B1/B2/B4/B5), 2 clients, Z1 target, power model, 120 s warmup, 120 readings, 9 J budget, `--deplete-node 2 --bottleneck`. `PAIRED_IDENTICAL_PROSPECTIVE_DEMAND_VERIFIED_ALIVE_PREFIXES` confirmed for each seed group.
++
++**Lifetime events observed (B1 seed 123456 representative):**
++- FND: 157,991 ms (event=true, censored=false)
++- HND: 157,991 ms (both battery nodes depleted simultaneously)
++- Functional network failure confirmed at 164,000 ms (service crossing), confirmed at 174,000 ms
++- Scheduled readings: 240; delivered: 75; shortfall: 165
++
++| Seed | Run ID (B1) | PDR | FND (ms) | Functional failure (ms) |
++|---|---|---|---|---|
++| 123456 | 20261116T180430865742Z-B1-2 | 0.4747 | 157,991 | 164,000 |
++| 123457 | 20261116T180857558786Z-B1-2 | 0.4810 | (confirmed) | (confirmed) |
++| 123458 | 20261116T181353959358Z-B1-2 | 0.4810 | (confirmed) | (confirmed) |
++
++All 12 lifetime runs (4 modes × 3 seeds) pass. Terminal depletion stops forwarding; PDR drops consistently to ~47–48% across arms. B4/B5 p95 latency approaches 3 s deadline at low traffic post-depletion. Prospective demand accounting verified against pre-depletion alive prefixes.
++
++**All 35 Phase 4 validation cases now pass.** Human review gates (G0, Phase 4 security/energy model review, independent reproduction) remain pending until actually performed.
++
++---
++
+ ## Checkpoint: Phase 4 automated implementation complete — reports written, Phase 5 ready
+ 
+ **Date:** 14 November 2026 (this session)
+diff --git a/phase_jouney/phase_04_leftover.md b/phase_jouney/phase_04_leftover.md
+index 7d13df0..4d9c81b 100644
+--- a/phase_jouney/phase_04_leftover.md
++++ b/phase_jouney/phase_04_leftover.md
+@@ -1,5 +1,13 @@
+ # Phase 4 — Leftover / Pending Items
+ 
++**Status: ALL DEFERRED CASES NOW COMPLETE — 16 November 2026**
++
++All 7 deferred cases (cases 29–35) passed on 16 November 2026 as part of Work Package D closure per `finalPLAN_execute.md`. See the Phase 4 execution journal checkpoint dated 16 November 2026 for full run IDs, PDR, and lifetime event evidence. All 35 Phase 4 validation cases pass. Human review gates remain pending.
++
++---
++
++**Original record (14 November 2026):**
++
+ **Date:** 14 November 2026
+ **Reason for deferral:** Time constraint (mid-term evaluation 17 November 2026). Core Phase 4 implementation is complete and 28/35 matrix cases pass. These 7 cases are deferred to avoid blocking Phase 5.
+ 
+diff --git a/phase_jouney/phase_05_environment_and_implementation.md b/phase_jouney/phase_05_environment_and_implementation.md
+index 895acc5..e956b77 100644
+--- a/phase_jouney/phase_05_environment_and_implementation.md
++++ b/phase_jouney/phase_05_environment_and_implementation.md
+@@ -85,3 +85,38 @@ POLICY and SWITCH events confirmed in COOJA.testlog. B3 starts with AES (residua
+ - results/phase_05/phase5-evidence.json
+ 
+ Status: initial implementation complete; full pilot runs pending.
++
++## Corrected campaign launched — 16 November 2026
++
++**Date:** 16 November 2026 (this session)
++
++**Policy.c infeasibility fix applied before campaign:** The resolution audit (lastAstra check) identified that P1's dwell/saving checks could retain a now-infeasible batch cap after traffic slowed. Fix: `current_feasible` boolean now tracks whether the current action survived feasibility checks; dwell and saving comparisons only apply when `current_feasible == true`. 20 policy host tests pass in the pinned official container (up from 19; new test: `test_p1_rate_drop_overrides_dwell_and_savings`). Source hash of `firmware/policy/policy.c` changed from `36ab47af...` to `e1289ab7...`.
++
++**Campaign 20261116-fresh invalidated by source drift:** The 21 runs from seed 523456 were produced against the old `policy.c`. Because `run_campaign.py` detects source drift and refuses to resume, those runs form a separate historical record. They remain in `results/campaigns/20261116-fresh/` and `results/phase_05/` unchanged per project preservation rules.
++
++**New campaign 20261116-corrected created:** Same protocol (seeds 523456–523465, groups grid16/tree16/z1-legacy8, 7 modes, 210 total cells) with updated `id: "20261116-corrected"` and a note referencing the replaced campaign. Campaign launched in background; PID 158217.
++
++```bash
++python3 host/run_campaign.py results/campaigns/20261116-corrected
++```
++
++Campaign is running serially under the shared `.runner.lock`. Estimated completion time ~4 hours (based on 82.6 s mean per run). Progress will be tracked in `results/campaigns/20261116-corrected/state.json`.
++
++**Verified running:** Grid16 (7/7 seed 523456 passed), Tree16 (7/7), Z1-legacy8 started (~130 s/run). No failures in the first 16 cells.
++
++**Limitations carried over from protocol:**
++- Native Cooja groups establish network metrics only; no hardware-validated CPU energy.
++- B3 uses unbounded residual energy in native functional runs; threshold switching is not exercised.
++- P1 has no qualified loaded cost table; it is a fallback diagnostic.
++- B6 uses configured Ascon (profile 2 from Phase 4 calibration), not a newly re-qualified winner.
++- These limitations are recorded in `protocol.json` and are not evidence of adaptive energy gains.
++
++**Stopping point (per finalPLAN_execute.md §10):** Phase 4/5 closure work is complete. Campaign is running. Human review gate required before Phase 6. Waiting for next user instruction.
++
++## Resolution audit started — 16 November 2026
++
++User authorized proceeding with finalPLAN_execute.md. Historical preservation baseline contains 2,866 files, with original paths, sizes and SHA-256 hashes; see `results/resolution_audit/20261116T175309857770Z`. Existing workspace diff/status preserved.
++
++Found and repaired a constraint bug: P1 could retain a now-infeasible batch cap after traffic slowed because dwell/saving checks held the current action. These checks now apply only when the current action remains feasible. Added a production-C regression for rate reduction during dwell with a prohibitive transition cost. All 20 policy host tests passed in the pinned official container. Initial sandbox sg failure and test/source evidence are recorded in policy-test-evidence.json. This is host correctness evidence, not Cooja adaptation or energy evidence.
++
++Calibration qualification, actual mote validation, depletion track, dashboard redesign and final Phase 5 closure remain pending. Phase 6 has not started.
+diff --git a/results/phase_05/phase5-evidence.json b/results/phase_05/phase5-evidence.json
+index 987a8d3..736fd3d 100644
+--- a/results/phase_05/phase5-evidence.json
++++ b/results/phase_05/phase5-evidence.json
+@@ -11,9 +11,19 @@
+   },
+   "firmware": {
+     "policy_module": {
+-      "files": ["firmware/policy/policy.h", "firmware/policy/policy.c"],
+-      "sha256_prefixes": {"policy.h": "c58c838542b99893", "policy.c": "1db7d3f6665e47a9"},
+-      "policies": ["B3", "B6", "P1"],
++      "files": [
++        "firmware/policy/policy.h",
++        "firmware/policy/policy.c"
++      ],
++      "sha256_prefixes": {
++        "policy.h": "c58c838542b99893",
++        "policy.c": "1db7d3f6665e47a9"
++      },
++      "policies": [
++        "B3",
++        "B6",
++        "P1"
++      ],
+       "status": "implemented_tested"
+     },
+     "sensor_integration": {
+@@ -44,77 +54,326 @@
+     }
+   },
+   "unit_tests": {
+-    "test_policy": {"tests": 17, "status": "all_pass"},
+-    "test_metrics": {"tests": 18, "status": "all_pass"},
+-    "test_lifetime": {"tests": 3, "status": "all_pass"},
++    "test_policy": {
++      "tests": 17,
++      "status": "all_pass"
++    },
++    "test_metrics": {
++      "tests": 18,
++      "status": "all_pass"
++    },
++    "test_lifetime": {
++      "tests": 3,
++      "status": "all_pass"
++    },
+     "total": 38
+   },
+   "smoke_runs": {
+-    "B3": {"run_id": "20261114T091850125887Z-B3-2", "status": "passed", "pdr": 1.0},
+-    "B6": {"run_id": "20261114T091919114788Z-B6-2", "status": "passed", "pdr": 1.0},
+-    "P1": {"run_id": "20261114T091937880366Z-P1-2", "status": "passed", "pdr": 1.0}
++    "B3": {
++      "run_id": "20261114T091850125887Z-B3-2",
++      "status": "passed",
++      "pdr": 1.0
++    },
++    "B6": {
++      "run_id": "20261114T091919114788Z-B6-2",
++      "status": "passed",
++      "pdr": 1.0
++    },
++    "P1": {
++      "run_id": "20261114T091937880366Z-P1-2",
++      "status": "passed",
++      "pdr": 1.0
++    }
+   },
+   "security_regression": {
+     "attack_test": {
+-      "B3": {"run_id": "20261114T115355633747Z-B3-2", "injections": 8, "rejections": 8, "status": "passed"},
+-      "B6": {"run_id": "20261114T115420997857Z-B6-2", "injections": 8, "rejections": 8, "status": "passed"},
+-      "P1": {"run_id": "20261114T115446511507Z-P1-2", "injections": 8, "rejections": 8, "status": "passed"}
++      "B3": {
++        "run_id": "20261114T115355633747Z-B3-2",
++        "injections": 8,
++        "rejections": 8,
++        "status": "passed"
++      },
++      "B6": {
++        "run_id": "20261114T115420997857Z-B6-2",
++        "injections": 8,
++        "rejections": 8,
++        "status": "passed"
++      },
++      "P1": {
++        "run_id": "20261114T115446511507Z-P1-2",
++        "injections": 8,
++        "rejections": 8,
++        "status": "passed"
++      }
+     },
+     "root_reset_test": {
+-      "B3": {"run_id": "20261114T115510814937Z-B3-2", "rejections": 88, "status": "passed"},
+-      "B6": {"run_id": "20261114T115534648742Z-B6-2", "rejections": 88, "status": "passed"},
+-      "P1": {"run_id": "20261114T115601684324Z-P1-2", "rejections": 88, "status": "passed"}
++      "B3": {
++        "run_id": "20261114T115510814937Z-B3-2",
++        "rejections": 88,
++        "status": "passed"
++      },
++      "B6": {
++        "run_id": "20261114T115534648742Z-B6-2",
++        "rejections": 88,
++        "status": "passed"
++      },
++      "P1": {
++        "run_id": "20261114T115601684324Z-P1-2",
++        "rejections": 88,
++        "status": "passed"
++      }
+     }
+   },
+   "z1_pilot_runs": {
+     "config": {
+-      "target": "z1", "clients": 8, "warmup_ms": 60000, "period_ms": 1000,
+-      "readings_per_sensor": 24, "deadline_ms": 3000, "drain_ms": 15000,
+-      "payload_budget": 67, "power_model": true
++      "target": "z1",
++      "clients": 8,
++      "warmup_ms": 60000,
++      "period_ms": 1000,
++      "readings_per_sensor": 24,
++      "deadline_ms": 3000,
++      "drain_ms": 15000,
++      "payload_budget": 67,
++      "power_model": true
+     },
+     "B3": {
+       "runs": [
+-        {"seed": 123456, "run_id": "20261114T120117290160Z-B3-8", "pdr": 0.9688, "energy_nj": 253867948, "p95_ms": 133.3, "switches": 8},
+-        {"seed": 123457, "run_id": "20261114T120344854467Z-B3-8", "pdr": 0.9688, "energy_nj": 253555432, "p95_ms": 174.7, "switches": 8},
+-        {"seed": 123458, "run_id": "20261114T120605604910Z-B3-8", "pdr": 0.9583, "energy_nj": 255957277, "p95_ms": 132.3, "switches": 8}
++        {
++          "seed": 123456,
++          "run_id": "20261114T120117290160Z-B3-8",
++          "pdr": 0.9688,
++          "energy_nj": 253867948,
++          "p95_ms": 133.3,
++          "switches": 8
++        },
++        {
++          "seed": 123457,
++          "run_id": "20261114T120344854467Z-B3-8",
++          "pdr": 0.9688,
++          "energy_nj": 253555432,
++          "p95_ms": 174.7,
++          "switches": 8
++        },
++        {
++          "seed": 123458,
++          "run_id": "20261114T120605604910Z-B3-8",
++          "pdr": 0.9583,
++          "energy_nj": 255957277,
++          "p95_ms": 132.3,
++          "switches": 8
++        }
+       ],
+-      "mean_energy_nj": 254460219, "mean_pdr": 0.9653, "mean_p95_ms": 146.8
++      "mean_energy_nj": 254460219,
++      "mean_pdr": 0.9653,
++      "mean_p95_ms": 146.8
+     },
+     "B6": {
+       "runs": [
+-        {"seed": 123456, "run_id": "20261114T121756262964Z-B6-8", "pdr": 0.9688, "energy_nj": 253865130, "p95_ms": 133.3, "switches": 0},
+-        {"seed": 123457, "run_id": "20261114T120827744266Z-B6-8", "pdr": 0.9688, "energy_nj": 253552274, "p95_ms": 174.7, "switches": 0},
+-        {"seed": 123458, "run_id": "20261114T121048633839Z-B6-8", "pdr": 0.9583, "energy_nj": 255954198, "p95_ms": 132.3, "switches": 0}
++        {
++          "seed": 123456,
++          "run_id": "20261114T121756262964Z-B6-8",
++          "pdr": 0.9688,
++          "energy_nj": 253865130,
++          "p95_ms": 133.3,
++          "switches": 0
++        },
++        {
++          "seed": 123457,
++          "run_id": "20261114T120827744266Z-B6-8",
++          "pdr": 0.9688,
++          "energy_nj": 253552274,
++          "p95_ms": 174.7,
++          "switches": 0
++        },
++        {
++          "seed": 123458,
++          "run_id": "20261114T121048633839Z-B6-8",
++          "pdr": 0.9583,
++          "energy_nj": 255954198,
++          "p95_ms": 132.3,
++          "switches": 0
++        }
++      ],
++      "duplicate_runs": [
++        "20261114T122303203171Z-B6-8",
++        "20261114T122749326614Z-B6-8"
+       ],
+-      "duplicate_runs": ["20261114T122303203171Z-B6-8", "20261114T122749326614Z-B6-8"],
+       "note": "2 duplicate runs preserved per project rules; 3 unique seeds used for analysis",
+-      "mean_energy_nj": 254457201, "mean_pdr": 0.9653, "mean_p95_ms": 146.8
++      "mean_energy_nj": 254457201,
++      "mean_pdr": 0.9653,
++      "mean_p95_ms": 146.8
+     },
+     "P1": {
+       "runs": [
+-        {"seed": 123456, "run_id": "20261114T122031479887Z-P1-8", "pdr": 0.9688, "energy_nj": 253879348, "p95_ms": 134.4, "switches": 8},
+-        {"seed": 123457, "run_id": "20261114T121309376664Z-P1-8", "pdr": 0.9688, "energy_nj": 253562991, "p95_ms": 170.2, "switches": 8},
+-        {"seed": 123458, "run_id": "20261114T121535529449Z-P1-8", "pdr": 0.9583, "energy_nj": 255967827, "p95_ms": 132.3, "switches": 8}
++        {
++          "seed": 123456,
++          "run_id": "20261114T122031479887Z-P1-8",
++          "pdr": 0.9688,
++          "energy_nj": 253879348,
++          "p95_ms": 134.4,
++          "switches": 8
++        },
++        {
++          "seed": 123457,
++          "run_id": "20261114T121309376664Z-P1-8",
++          "pdr": 0.9688,
++          "energy_nj": 253562991,
++          "p95_ms": 170.2,
++          "switches": 8
++        },
++        {
++          "seed": 123458,
++          "run_id": "20261114T121535529449Z-P1-8",
++          "pdr": 0.9583,
++          "energy_nj": 255967827,
++          "p95_ms": 132.3,
++          "switches": 8
++        }
++      ],
++      "duplicate_runs": [
++        "20261114T122525404803Z-P1-8",
++        "20261114T123025682022Z-P1-8"
+       ],
+-      "duplicate_runs": ["20261114T122525404803Z-P1-8", "20261114T123025682022Z-P1-8"],
+       "note": "2 duplicate runs preserved per project rules; 3 unique seeds used for analysis",
+-      "mean_energy_nj": 254470055, "mean_pdr": 0.9653, "mean_p95_ms": 145.6
++      "mean_energy_nj": 254470055,
++      "mean_pdr": 0.9653,
++      "mean_p95_ms": 145.6
+     }
+   },
+   "phase4_baseline_for_comparison": {
+-    "B1": {"mean_energy_nj": 247233663, "mean_pdr": 0.9696, "mean_p95_ms": 142.1, "n": 5},
+-    "B2": {"mean_energy_nj": 247501031, "mean_pdr": 0.9677, "mean_p95_ms": 152.5, "n": 5},
+-    "B4": {"mean_energy_nj": 243928892, "mean_pdr": 0.9805, "mean_p95_ms": 2985.8, "n": 4},
+-    "B5": {"mean_energy_nj": 244171889, "mean_pdr": 0.9792, "mean_p95_ms": 3004.8, "n": 3}
++    "B1": {
++      "mean_energy_nj": 247233663,
++      "mean_pdr": 0.9696,
++      "mean_p95_ms": 142.1,
++      "n": 5
++    },
++    "B2": {
++      "mean_energy_nj": 247501031,
++      "mean_pdr": 0.9677,
++      "mean_p95_ms": 152.5,
++      "n": 5
++    },
++    "B4": {
++      "mean_energy_nj": 243928892,
++      "mean_pdr": 0.9805,
++      "mean_p95_ms": 2985.8,
++      "n": 4
++    },
++    "B5": {
++      "mean_energy_nj": 244171889,
++      "mean_pdr": 0.9792,
++      "mean_p95_ms": 3004.8,
++      "n": 3
++    }
+   },
+-  "key_observation": "B3/B6/P1 show ~+2.9% higher energy than B1 in this pilot. All three policy modes used only AES profile=1 cap=1 throughout — residual energy remained above B3 hi threshold (6e9 nJ) and P1 found no cost advantage over current action. Policy switching did not activate cipher switching in this scenario. This is an honest pilot result, not a failure.",
++  "key_observation": "B3/B6/P1 show ~+2.9% higher energy than B1 in this pilot. All three policy modes used only AES profile=1 cap=1 throughout \u2014 residual energy remained above B3 hi threshold (6e9 nJ) and P1 found no cost advantage over current action. Policy switching did not activate cipher switching in this scenario. This is an honest pilot result, not a failure.",
+   "runner_bugs_fixed": [
+-    "attack_test and root_reset_test restricted to phase not in (3,4) — fixed to include phase 5",
+-    "energy_telemetry restricted to phase 4 Z1 only — fixed to include phase 5"
++    "attack_test and root_reset_test restricted to phase not in (3,4) \u2014 fixed to include phase 5",
++    "energy_telemetry restricted to phase 4 Z1 only \u2014 fixed to include phase 5"
+   ],
+   "pending": {
+     "duplicate_run_cleanup": "B6 and P1 have 2 extra duplicate runs each (preserved per project rules)",
+     "human_review": "Phase 5 human code review gate pending",
+     "phase_6_entry": "Phase 6 entry requires explicit human authorization after reviewing this report"
++  },
++  "phase4_deferred_closure": {
++    "completed": "2026-11-16",
++    "cases_closed": [
++      29,
++      30,
++      31,
++      32,
++      33,
++      34,
++      35
++    ],
++    "all_35_cases_pass": true,
++    "run_ids": {
++      "case29_boundary_4000ms": [
++        "20261116T175934506150Z-B1-2",
++        "20261116T175957444306Z-B2-2",
++        "20261116T180017877202Z-B4-2",
++        "20261116T180036635527Z-B5-2"
++      ],
++      "case30_boundary_47byte": [
++        "20261116T180100630105Z-B1-2",
++        "20261116T180123777826Z-B2-2",
++        "20261116T180142937672Z-B4-2",
++        "20261116T180202411260Z-B5-2"
++      ],
++      "case31_depletion_125ms": [
++        "20261116T180228618905Z-B2-2"
++      ],
++      "case32_depletion_250ms": [
++        "20261116T180333068963Z-B2-2"
++      ],
++      "case33_lifetime_123456": [
++        "20261116T180430865742Z-B1-2",
++        "20261116T180535922718Z-B2-2",
++        "20261116T180637065241Z-B4-2",
++        "20261116T180745492043Z-B5-2"
++      ],
++      "case34_lifetime_123457": [
++        "20261116T180857558786Z-B1-2",
++        "20261116T181020179899Z-B2-2",
++        "20261116T181129941826Z-B4-2",
++        "20261116T181239744526Z-B5-2"
++      ],
++      "case35_lifetime_123458": [
++        "20261116T181353959358Z-B1-2",
++        "20261116T181501438398Z-B2-2",
++        "20261116T181610768218Z-B4-2",
++        "20261116T181712712015Z-B5-2"
++      ]
++    },
++    "lifetime_fnd_evidence": "Actual terminal depletion observed in all 3 seed groups; FND and HND at ~157991 ms, functional failure confirmed at 164000 ms (seed 123456 representative)"
++  },
++  "policy_infeasibility_fix": {
++    "date": "2026-11-16",
++    "issue": "P1 could retain a now-infeasible batch cap after traffic slowed because dwell/saving checks held the current action even when it was no longer feasible.",
++    "fix": "Added current_feasible boolean; dwell and saving checks now only apply when current action survives feasibility checks.",
++    "policy_c_hash_before": "36ab47af34322f893e0cef8ccf3f211a1d5a787fe8aa4aa0d4fef5a0354af8ec",
++    "policy_c_hash_after": "e1289ab73673d31cf1715d9dea704e6633d5641160d028870f9de480fa49b8b0",
++    "tests_pass": 20,
++    "new_test": "test_p1_rate_drop_overrides_dwell_and_savings"
++  },
++  "campaign_20261116_corrected": {
++    "date": "2026-11-16",
++    "status": "running",
++    "pid": 158217,
++    "replaces": "20261116-fresh (21/210 runs with old policy.c)",
++    "seeds": [
++      523456,
++      523457,
++      523458,
++      523459,
++      523460,
++      523461,
++      523462,
++      523463,
++      523464,
++      523465
++    ],
++    "groups": [
++      "grid16",
++      "tree16",
++      "z1-legacy8"
++    ],
++    "modes": [
++      "B1",
++      "B2",
++      "B4",
++      "B5",
++      "B3",
++      "B6",
++      "P1"
++    ],
++    "total_cells": 210,
++    "protocol_path": "results/campaigns/20261116-corrected/protocol.json",
++    "limitations": [
++      "B3/P1 do not exercise threshold/cost adaptation in native functional runs",
++      "P1 has no qualified loaded cost table; it is a fallback diagnostic",
++      "B6 uses Phase 4 calibration winner (Ascon profile 2), not newly re-qualified"
++    ]
+   }
+-}
++}
+\ No newline at end of file
+diff --git a/tests/unit/test_policy.py b/tests/unit/test_policy.py
+index 04e7b61..44b5b8f 100644
+--- a/tests/unit/test_policy.py
++++ b/tests/unit/test_policy.py
+@@ -116,6 +116,13 @@ class PolicyTests(unittest.TestCase):
+             if key != 'cost_nj': st[key] = getattr(state, key)
+         return {key: getattr(out, key) for key, _ in Action._fields_}
+ 
++    def test_p1_rate_drop_overrides_dwell_and_savings(self):
++        st = make_state(initialized=True, current_profile=2, current_cap=4,
++                        last_switch_ms=61000, transition_cost_nj=2**60)
++        action = self._call('p1', st, make_features(now_ms=61001, rate_hz_x100=25))
++        self.assertEqual(action['cap'], 1)
++        self.assertTrue(action['feasible'])
++
+     def test_b3_threshold_above_uint32(self):
+         st = make_state(b3_threshold_nj_hi=6000000000, b3_threshold_nj_lo=3000000000)
+         action = self._b3(st, make_features(residual_nj=5000000000))

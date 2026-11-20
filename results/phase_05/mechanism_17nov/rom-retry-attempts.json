@@ -1,0 +1,27 @@
+[
+  {
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "host/run_experiment.py",
+      "--phase",
+      "5",
+      "--mode",
+      "B6",
+      "--clients",
+      "2",
+      "--target",
+      "z1",
+      "--power-model",
+      "--seed",
+      "123456"
+    ],
+    "status": "failed",
+    "started": 1794881821.2349496,
+    "exit_code": 1,
+    "seconds": 54.576590061187744,
+    "manifests": [
+      "results/phase_05/20261117T021701461503Z-B6-2/manifest.json"
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+Initial config-backup recovery read used phase_05 for a Phase 4 calibration ID and raised FileNotFoundError. Corrected to phase_04; no experimental artifact was changed. Recovered git HEAD project-conf bytes accepted only after comparison with prior manifest source hash.

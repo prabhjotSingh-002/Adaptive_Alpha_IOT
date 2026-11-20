@@ -1,0 +1,772 @@
+{
+  "runs": [
+    {
+      "name": "cal-B1-cap1",
+      "run_id": "20261117T023634948551Z-B1-2",
+      "directory": "results/phase_04/20261117T023634948551Z-B1-2",
+      "config_sha256": "bb24ec548b64263c459c8caf927d4c62344e3034cd8815993a55e750fd7c4e1b",
+      "scenario_sha256": "2aaf441d347ef910278accfaba50fed1c121b14debe610bf1f68ba811dbf55b3",
+      "binary_hashes": {
+        "binaries/root-root.z1": "b460d7d9bc6b5b55f4101301c8301842ecd4e14fc9a14db1074b9ea7710a5c22",
+        "binaries/sensor-sensor.z1": "d1b528eaae1e23d37d0bccaf04444caa7d232b26c79bbd9a7adbbe52e0ac55c3"
+      },
+      "artifact_binary_checks": 12,
+      "reading_pdr": 1.0,
+      "p95_delay_ms": 72.25799999999909,
+      "lifetime": null,
+      "policy": null,
+      "mechanism_checks": null
+    },
+    {
+      "name": "cal-B1-cap2",
+      "run_id": "20261117T023714431056Z-B1-2",
+      "directory": "results/phase_04/20261117T023714431056Z-B1-2",
+      "config_sha256": "0e45a58e4f6c548c9031d12cec05fbd4f445072a7c7ab38c388c785dccd0f25d",
+      "scenario_sha256": "57d7b716639094a9734d88928f3a51ed0467bc04a54801602ac828a4525093dc",
+      "binary_hashes": {
+        "binaries/root-root.z1": "2c83c139040f317486292f69cbff6baeb7aec931431c168a5eacba2fa9b66258",
+        "binaries/sensor-sensor.z1": "eace769e6bceb7ac2685990e78b149d7518d9f72cec9fba8fcd05529767d7ae9"
+      },
+      "artifact_binary_checks": 12,
+      "reading_pdr": 1.0,
+      "p95_delay_ms": 1076.1766500000056,
+      "lifetime": null,
+      "policy": null,
+      "mechanism_checks": null
+    },
+    {
+      "name": "cal-B1-cap4",
+      "run_id": "20261117T023753194817Z-B1-2",
+      "directory": "results/phase_04/20261117T023753194817Z-B1-2",
+      "config_sha256": "cdcce521189a013b4bbf23d477130c9cf97f6aec198ef425e856335d2fd2a3d4",
+      "scenario_sha256": "0ce549a9804362238ee793c70be40339ac43259a577113309970181d4e490482",
+      "binary_hashes": {
+        "binaries/root-root.z1": "eaaa702037a7ad622cdbe019a241a0ba592bae9d77504a95f62f02511123c968",
+        "binaries/sensor-sensor.z1": "367c1ca167d30e076654f3fea6e5ce2f6ce4d44d5ec36e97cc2be8d4c2d99d52"
+      },
+      "artifact_binary_checks": 12,
+      "reading_pdr": 1.0,
+      "p95_delay_ms": 2943.6656499999963,
+      "lifetime": null,
+      "policy": null,
+      "mechanism_checks": null
+    },
+    {
+      "name": "cal-B2-cap1",
+      "run_id": "20261117T023831400765Z-B2-2",
+      "directory": "results/phase_04/20261117T023831400765Z-B2-2",
+      "config_sha256": "c16d02e9e7a2f917d9605f1feb63a45252c61cf4c4f382f6e84368ef82ef647f",
+      "scenario_sha256": "4dc6bca40d7f20e51273aaae95b791cec48afb5ae4e2746eacce71763a3f86a7",
+      "binary_hashes": {
+        "binaries/root-root.z1": "5c6c1a0d08e7ce05b7007d568e90dee8ae0bd4657aa4e1ccaf34d9d270833742",
+        "binaries/sensor-sensor.z1": "d1403c95b8a4c069474a748ffbebc6b3896ce97d987e26e0405bba6258749bf4"
+      },
+      "artifact_binary_checks": 12,
+      "reading_pdr": 1.0,
+      "p95_delay_ms": 73.43099999999686,
+      "lifetime": null,
+      "policy": null,
+      "mechanism_checks": null
+    },
+    {
+      "name": "cal-B2-cap2",
+      "run_id": "20261117T023910366789Z-B2-2",
+      "directory": "results/phase_04/20261117T023910366789Z-B2-2",
+      "config_sha256": "b2b69b73d0bfca6de73139df55c52a3ccb1c66969760257b5153adf899e5093b",
+      "scenario_sha256": "886678dd7e2c408219952e1a9b8b03e4a31a0078cef345592d688469779df246",
+      "binary_hashes": {
+        "binaries/root-root.z1": "f55f5facd5e6f95a892a2e464131feef5d3c537b6ae9dd2f435a07dd818188c7",
+        "binaries/sensor-sensor.z1": "86c5b144cddd98bf17df084cd77d931899889bbedc490626b00eff3f079f7119"
+      },
+      "artifact_binary_checks": 12,
+      "reading_pdr": 1.0,
+      "p95_delay_ms": 1076.5480000000061,
+      "lifetime": null,
+      "policy": null,
+      "mechanism_checks": null
+    },
+    {
+      "name": "cal-B2-cap4",
+      "run_id": "20261117T023948665737Z-B2-2",
+      "directory": "results/phase_04/20261117T023948665737Z-B2-2",
+      "config_sha256": "5868fb50fe5ba8bbb24ef0c45eee74f2b664ef6c2433e470fcaf3682f1bfbd7c",
+      "scenario_sha256": "53eaf71dda60f5a996cc981d68b352124726279d6195ecc61813e2cf06645335",
+      "binary_hashes": {
+        "binaries/root-root.z1": "f375e094c2c5dd841b4ddc23f6081201265b04e587cdae3f3f4462c47bbdfd82",
+        "binaries/sensor-sensor.z1": "25702ab2c96290564daebe2f7a957f0d9b9a8919dab41003d7ca55fbe592f456"
+      },
+      "artifact_binary_checks": 12,
+      "reading_pdr": 1.0,
+      "p95_delay_ms": 2952.7750000000037,
+      "lifetime": null,
+      "policy": null,
+      "mechanism_checks": null
+    },
+    {
+      "name": "p1-qualified-functional",
+      "run_id": "20261117T024032053990Z-P1-2",
+      "directory": "results/phase_05/20261117T024032053990Z-P1-2",
+      "config_sha256": "6128435c879a9e2a24fc4f99d55c4170b45e95fe23ad265b941a5a5973ed14b5",
+      "scenario_sha256": "080a122276c5c6709982a3f16eea66846af3d2e2cf230159c65646b7753dfec3",
+      "binary_hashes": {
+        "binaries/root-root.z1": "258e16931ef9c058374e43ed98737184effa765235896d709f54d1824ce5e963",
+        "binaries/sensor-sensor.z1": "b1eb5d7ac26c6307c8ecc5678d6b319c51fc2dce43dd028cf151dd74de4821b4"
+      },
+      "artifact_binary_checks": 13,
+      "reading_pdr": 1.0,
+      "p95_delay_ms": 1072.9752999999953,
+      "lifetime": null,
+      "policy": {
+        "total_policy_ticks": 1599,
+        "measured_feature_events": 20,
+        "profile_changes": 4,
+        "cap_changes": 4,
+        "startup_assignments": 2,
+        "fallback_actions": 0,
+        "decision_and_apply_seconds": 0.294891357421875,
+        "timing_samples": 1599,
+        "total_switches": 4,
+        "switch_reasons": {
+          "6": 4
+        },
+        "profiles_used": [
+          1,
+          2
+        ],
+        "caps_used": [
+          1,
+          2
+        ]
+      },
+      "mechanism_checks": {
+        "policy_wire": {
+          "measured_feature_events": 20,
+          "sealed_packets_matched_to_policy": 26,
+          "authenticated_packets_matched_to_tx": 26,
+          "tx_profiles": [
+            1,
+            2
+          ],
+          "rx_profiles": [
+            1,
+            2
+          ],
+          "profile_changes": 4,
+          "wire_profile_changes": 2,
+          "cap_changes": 4,
+          "startup_assignments": 2,
+          "fallback_actions": 0,
+          "scope": "measured local traffic and cost-aware policy; residual-aware P1 ranking unvalidated"
+        }
+      },
+      "best_cost_actions_replayed": 1599
+    },
+    {
+      "name": "p1-qualified-finite",
+      "run_id": "20261117T024127105801Z-P1-2",
+      "directory": "results/phase_05/20261117T024127105801Z-P1-2",
+      "config_sha256": "ed9d8340a7e4a5130ecf3f77adcdb04af50612d28d1a8c7e38135006af41afa1",
+      "scenario_sha256": "1923e61fbbd2e3a4bdc784d5984fb420bf342d7582750a0824e8a80671f78b81",
+      "binary_hashes": {
+        "binaries/root-root.z1": "d0dde48e0ffd6ef8731045e67117d2d5b8a3ea75e3726dc84c49fba7c6852258",
+        "binaries/sensor-sensor.z1": "0ed56f70126f52058ecaea2a26629a5b97c938f07e1a9f91c71c99b87ef0fb36"
+      },
+      "artifact_binary_checks": 13,
+      "reading_pdr": 0.9090909090909091,
+      "p95_delay_ms": 1080.0771000000034,
+      "lifetime": {
+        "battery_nodes": [
+          2,
+          3
+        ],
+        "fnd": {
+          "event": true,
+          "time_ms": 71462.851,
+          "censored": false
+        },
+        "hnd": {
+          "event": true,
+          "time_ms": 71462.851,
+          "censored": false
+        },
+        "functional": {
+          "event": true,
+          "crossing_ms": 77000,
+          "confirmation_ms": 87000,
+          "censor_ms": null
+        },
+        "scheduled_readings": 48,
+        "scheduled_delivered": 20,
+        "scheduled_shortfall": 28,
+        "service_window_ms": 10000,
+        "service_persistence_ms": 10000,
+        "delivery_bound_ms": 5000,
+        "service_minimum": 0.95
+      },
+      "policy": {
+        "total_policy_ticks": 1114,
+        "measured_feature_events": 18,
+        "profile_changes": 2,
+        "cap_changes": 2,
+        "startup_assignments": 2,
+        "fallback_actions": 0,
+        "decision_and_apply_seconds": 0.177337646484375,
+        "timing_samples": 1114,
+        "total_switches": 2,
+        "switch_reasons": {
+          "6": 2
+        },
+        "profiles_used": [
+          1,
+          2
+        ],
+        "caps_used": [
+          1,
+          2
+        ]
+      },
+      "mechanism_checks": {
+        "policy_wire": {
+          "measured_feature_events": 18,
+          "sealed_packets_matched_to_policy": 12,
+          "authenticated_packets_matched_to_tx": 12,
+          "tx_profiles": [
+            1,
+            2
+          ],
+          "rx_profiles": [
+            1,
+            2
+          ],
+          "profile_changes": 2,
+          "wire_profile_changes": 2,
+          "cap_changes": 2,
+          "startup_assignments": 2,
+          "fallback_actions": 0,
+          "scope": "measured local traffic and cost-aware policy; residual-aware P1 ranking unvalidated"
+        },
+        "depletion": {
+          "depleted_nodes": [
+            2,
+            3
+          ],
+          "removed_nodes": [
+            2,
+            3
+          ],
+          "post_death_application_or_rf_violations": 0,
+          "bounded_budget_nodes": "all sensors",
+          "root_budget": "unbounded",
+          "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+        }
+      },
+      "best_cost_actions_replayed": 1114
+    },
+    {
+      "name": "b3-threshold-finite",
+      "run_id": "20261117T024208744064Z-B3-2",
+      "directory": "results/phase_05/20261117T024208744064Z-B3-2",
+      "config_sha256": "c7b73563fda1030231141875cef97114edf4cf97235eb2e1e6147cae96f7e4f9",
+      "scenario_sha256": "468155ac3fcd3734396f8a4537386123f6fd7c69a7599922ce44aa19bbdafae5",
+      "binary_hashes": {
+        "binaries/root-root.z1": "cbc5d05665cd4513519205e9b01b18c9814be2b222a743292b6f62c18ef4299c",
+        "binaries/sensor-sensor.z1": "91ac192427cc9f66b28a97ba4112bd999d126bf6210850574560bcce73fe321c"
+      },
+      "artifact_binary_checks": 13,
+      "reading_pdr": 1.0,
+      "p95_delay_ms": 77.51514999999708,
+      "lifetime": {
+        "battery_nodes": [
+          2,
+          3
+        ],
+        "fnd": {
+          "event": true,
+          "time_ms": 154711.285,
+          "censored": false
+        },
+        "hnd": {
+          "event": true,
+          "time_ms": 154711.285,
+          "censored": false
+        },
+        "functional": {
+          "event": true,
+          "crossing_ms": 161000,
+          "confirmation_ms": 171000,
+          "censor_ms": null
+        },
+        "scheduled_readings": 240,
+        "scheduled_delivered": 188,
+        "scheduled_shortfall": 52,
+        "service_window_ms": 10000,
+        "service_persistence_ms": 10000,
+        "delivery_bound_ms": 5000,
+        "service_minimum": 0.95
+      },
+      "policy": {
+        "total_policy_ticks": 2446,
+        "measured_feature_events": 18,
+        "profile_changes": 2,
+        "cap_changes": 0,
+        "startup_assignments": 2,
+        "fallback_actions": 0,
+        "decision_and_apply_seconds": 0.071746826171875,
+        "timing_samples": 2446,
+        "total_switches": 2,
+        "switch_reasons": {
+          "3": 2
+        },
+        "profiles_used": [
+          1,
+          2
+        ],
+        "caps_used": [
+          1
+        ]
+      },
+      "mechanism_checks": {
+        "policy_wire": {
+          "measured_feature_events": 18,
+          "sealed_packets_matched_to_policy": 188,
+          "authenticated_packets_matched_to_tx": 188,
+          "tx_profiles": [
+            1,
+            2
+          ],
+          "rx_profiles": [
+            1,
+            2
+          ],
+          "profile_changes": 2,
+          "wire_profile_changes": 2,
+          "cap_changes": 0,
+          "startup_assignments": 2,
+          "fallback_actions": 0,
+          "scope": "measured local traffic and cost-aware policy; residual-aware P1 ranking unvalidated"
+        },
+        "depletion": {
+          "depleted_nodes": [
+            2,
+            3
+          ],
+          "removed_nodes": [
+            2,
+            3
+          ],
+          "post_death_application_or_rf_violations": 0,
+          "bounded_budget_nodes": "all sensors",
+          "root_budget": "unbounded",
+          "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+        }
+      },
+      "threshold_actions_replayed": 2446
+    },
+    {
+      "name": "bottleneck-depletion",
+      "run_id": "20261117T024314393934Z-B1-2",
+      "directory": "results/phase_04/20261117T024314393934Z-B1-2",
+      "config_sha256": "9a50ade7ff2cb0ad978f3327ced06fd03cec2b66a1db151b941e6f8573cd2f48",
+      "scenario_sha256": "dc3a1dcfd1c004ab2fc767518bc009392dc7d94c400b60816bbcf9d193fe3173",
+      "binary_hashes": {
+        "binaries/root-root.z1": "d07faddd535bae3374373fe8141c46120c423f60a7c82101f3c6fd43cbf35597",
+        "binaries/sensor-sensor.z1": "58313f00cabb7782adc1270339a8e50f93984f2b37f56a252def5b2578a3f0b0"
+      },
+      "artifact_binary_checks": 13,
+      "reading_pdr": 0.8341013824884793,
+      "p95_delay_ms": 119.43300000000454,
+      "lifetime": {
+        "battery_nodes": [
+          2,
+          3
+        ],
+        "fnd": {
+          "event": true,
+          "time_ms": 157585.165,
+          "censored": false
+        },
+        "hnd": {
+          "event": true,
+          "time_ms": 157585.165,
+          "censored": false
+        },
+        "functional": {
+          "event": true,
+          "crossing_ms": 75000,
+          "confirmation_ms": 85000,
+          "censor_ms": null
+        },
+        "scheduled_readings": 240,
+        "scheduled_delivered": 181,
+        "scheduled_shortfall": 59,
+        "service_window_ms": 10000,
+        "service_persistence_ms": 10000,
+        "delivery_bound_ms": 5000,
+        "service_minimum": 0.95
+      },
+      "policy": null,
+      "mechanism_checks": {
+        "depletion": {
+          "depleted_nodes": [
+            2
+          ],
+          "removed_nodes": [
+            2
+          ],
+          "post_death_application_or_rf_violations": 0,
+          "bounded_budget_nodes": [
+            2
+          ],
+          "root_budget": "unbounded",
+          "scope": "component-model terminal mechanism; no comparative lifetime gain claim"
+        }
+      }
+    },
+    {
+      "name": "b3-attack",
+      "run_id": "20261117T024408479815Z-B3-2",
+      "directory": "results/phase_05/20261117T024408479815Z-B3-2",
+      "config_sha256": "5e47e69862c6dfde17beeed346f6072cac1a09c6f539a4e299468af6dc36b120",
+      "scenario_sha256": "838ba887d31d118289736859f27cdb0cbb315d835c6cc798c073902eda710aaf",
+      "binary_hashes": {
+        "binaries/root-root.z1": "c78f67f9d91c5e12b522c505dc3b34de39833e471a136a670c9d5cf36129c05e",
+        "binaries/sensor-sensor.z1": "9fbeb6cf3f6a437e8261b90ff782f58b49ada49fc7d67661d4d627ca72e09244"
+      },
+      "artifact_binary_checks": 11,
+      "reading_pdr": 0.9791666666666666,
+      "p95_delay_ms": 77.64809999999342,
+      "lifetime": null,
+      "policy": {
+        "total_policy_ticks": 1599,
+        "measured_feature_events": 20,
+        "profile_changes": 0,
+        "cap_changes": 0,
+        "startup_assignments": 2,
+        "fallback_actions": 0,
+        "decision_and_apply_seconds": 0.04132080078125,
+        "timing_samples": 1599,
+        "total_switches": 0,
+        "switch_reasons": {},
+        "profiles_used": [
+          1
+        ],
+        "caps_used": [
+          1
+        ]
+      },
+      "mechanism_checks": {
+        "policy_wire": {
+          "measured_feature_events": 20,
+          "sealed_packets_matched_to_policy": 47,
+          "authenticated_packets_matched_to_tx": 47,
+          "tx_profiles": [
+            1
+          ],
+          "rx_profiles": [
+            1
+          ],
+          "profile_changes": 0,
+          "wire_profile_changes": 0,
+          "cap_changes": 0,
+          "startup_assignments": 2,
+          "fallback_actions": 0,
+          "scope": "measured local traffic and cost-aware policy; residual-aware P1 ranking unvalidated"
+        }
+      }
+    },
+    {
+      "name": "b3-root-reset",
+      "run_id": "20261117T024451744653Z-B3-2",
+      "directory": "results/phase_05/20261117T024451744653Z-B3-2",
+      "config_sha256": "7ac81f0bd57b24511158ade776a3cea180697897ba1d8a490a582cb1e67f8a1c",
+      "scenario_sha256": "65aca937bb2c5e693addd3fcee2f16392191e1e9a0c72f59c407a50053fb8d92",
+      "binary_hashes": {
+        "binaries/root-root.z1": "db2e59c421f5d1b3953c5d7c11e4e1da2abc59ed132f53a5f0d9373b7a3297bc",
+        "binaries/sensor-sensor.z1": "650536c09f162915612553c3e5930442022ab5395f1fc2a93e1df58310a1d3ef"
+      },
+      "artifact_binary_checks": 11,
+      "reading_pdr": 0.020833333333333332,
+      "p95_delay_ms": 46.711999999999534,
+      "lifetime": null,
+      "policy": {
+        "total_policy_ticks": 1599,
+        "measured_feature_events": 20,
+        "profile_changes": 0,
+        "cap_changes": 0,
+        "startup_assignments": 2,
+        "fallback_actions": 0,
+        "decision_and_apply_seconds": 0.030364990234375,
+        "timing_samples": 1599,
+        "total_switches": 0,
+        "switch_reasons": {},
+        "profiles_used": [
+          1
+        ],
+        "caps_used": [
+          1
+        ]
+      },
+      "mechanism_checks": {
+        "policy_wire": {
+          "measured_feature_events": 20,
+          "sealed_packets_matched_to_policy": 26,
+          "authenticated_packets_matched_to_tx": 1,
+          "tx_profiles": [
+            1
+          ],
+          "rx_profiles": [
+            1
+          ],
+          "profile_changes": 0,
+          "wire_profile_changes": 0,
+          "cap_changes": 0,
+          "startup_assignments": 2,
+          "fallback_actions": 0,
+          "scope": "measured local traffic and cost-aware policy; residual-aware P1 ranking unvalidated"
+        },
+        "root_reset": {
+          "reset_boot_us": 62800864,
+          "authenticated_readings_before_reset": 1,
+          "post_reset_probes": 40,
+          "locked_context_rejections": 55,
+          "post_reset_acceptances": 0,
+          "scope": "fail-closed reset without regrant; no availability/recovery claim"
+        }
+      }
+    },
+    {
+      "name": "b6-attack",
+      "run_id": "20261117T024536275754Z-B6-2",
+      "directory": "results/phase_05/20261117T024536275754Z-B6-2",
+      "config_sha256": "7cdd236418039a95584617e5d617e2ada550b3c1683b8cb9ddb91ec4d2faba83",
+      "scenario_sha256": "39a0e6f7de0bcdc2ea0e5f1483da6eb0ac3acc2878ce634f4948ab760107ccfd",
+      "binary_hashes": {
+        "binaries/root-root.z1": "cfe2afe20a796421ba76a279d440b227dcc66dc02ba3b799c5d4914cec87de47",
+        "binaries/sensor-sensor.z1": "3613c806f98e551a95a64a5b57f9f9a15d9ccd501258ff4b1a0d479ee844bfd5"
+      },
+      "artifact_binary_checks": 11,
+      "reading_pdr": 0.9791666666666666,
+      "p95_delay_ms": 1079.0013000000013,
+      "lifetime": null,
+      "policy": {
+        "total_policy_ticks": 1599,
+        "measured_feature_events": 20,
+        "profile_changes": 0,
+        "cap_changes": 4,
+        "startup_assignments": 2,
+        "fallback_actions": 0,
+        "decision_and_apply_seconds": 0.145050048828125,
+        "timing_samples": 1599,
+        "total_switches": 4,
+        "switch_reasons": {
+          "5": 4
+        },
+        "profiles_used": [
+          2
+        ],
+        "caps_used": [
+          1,
+          2
+        ]
+      },
+      "mechanism_checks": {
+        "policy_wire": {
+          "measured_feature_events": 20,
+          "sealed_packets_matched_to_policy": 25,
+          "authenticated_packets_matched_to_tx": 25,
+          "tx_profiles": [
+            2
+          ],
+          "rx_profiles": [
+            2
+          ],
+          "profile_changes": 0,
+          "wire_profile_changes": 0,
+          "cap_changes": 4,
+          "startup_assignments": 2,
+          "fallback_actions": 0,
+          "scope": "measured local traffic and cost-aware policy; residual-aware P1 ranking unvalidated"
+        }
+      }
+    },
+    {
+      "name": "b6-root-reset",
+      "run_id": "20261117T024617823636Z-B6-2",
+      "directory": "results/phase_05/20261117T024617823636Z-B6-2",
+      "config_sha256": "d6f18ad8bf892e9e3801193ec2447d32d16ccdb03b3aa5e242dce1944b0c4c67",
+      "scenario_sha256": "1df182eda56a70fc28d9260f0ea3306902abc04593d0f2434011efc4c8b02478",
+      "binary_hashes": {
+        "binaries/root-root.z1": "5703e03137b3593d4a7984e0578617b21d358b27df8e56d79ef1cf51439913b4",
+        "binaries/sensor-sensor.z1": "f66f673cde728bd83c8349ed01fef55dcc1bb0d97f6518f25be722bb19349026"
+      },
+      "artifact_binary_checks": 11,
+      "reading_pdr": 0.020833333333333332,
+      "p95_delay_ms": 47.83199999999488,
+      "lifetime": null,
+      "policy": {
+        "total_policy_ticks": 1599,
+        "measured_feature_events": 20,
+        "profile_changes": 0,
+        "cap_changes": 4,
+        "startup_assignments": 2,
+        "fallback_actions": 0,
+        "decision_and_apply_seconds": 0.143280029296875,
+        "timing_samples": 1599,
+        "total_switches": 4,
+        "switch_reasons": {
+          "5": 4
+        },
+        "profiles_used": [
+          2
+        ],
+        "caps_used": [
+          1,
+          2
+        ]
+      },
+      "mechanism_checks": {
+        "policy_wire": {
+          "measured_feature_events": 20,
+          "sealed_packets_matched_to_policy": 10,
+          "authenticated_packets_matched_to_tx": 1,
+          "tx_profiles": [
+            2
+          ],
+          "rx_profiles": [
+            2
+          ],
+          "profile_changes": 0,
+          "wire_profile_changes": 0,
+          "cap_changes": 4,
+          "startup_assignments": 2,
+          "fallback_actions": 0,
+          "scope": "measured local traffic and cost-aware policy; residual-aware P1 ranking unvalidated"
+        },
+        "root_reset": {
+          "reset_boot_us": 62802221,
+          "authenticated_readings_before_reset": 1,
+          "post_reset_probes": 40,
+          "locked_context_rejections": 41,
+          "post_reset_acceptances": 0,
+          "scope": "fail-closed reset without regrant; no availability/recovery claim"
+        }
+      }
+    },
+    {
+      "name": "p1-attack",
+      "run_id": "20261117T024700243978Z-P1-2",
+      "directory": "results/phase_05/20261117T024700243978Z-P1-2",
+      "config_sha256": "29bf106ad506981e70d9d3e5210b2aa287128f2a221ae338bf12a9ab8821a674",
+      "scenario_sha256": "4d078970d7cea8fdd68f419103d14dd562749a2b70e04095a21fe7d1c675a14f",
+      "binary_hashes": {
+        "binaries/root-root.z1": "5c253ecbbe3b3d16fb71a16266d632b72b9141e615e3b2ddd83e7fa4fa94825f",
+        "binaries/sensor-sensor.z1": "e5d49bb11053ea97d925f0033c29043c2341f1c6319ae04e01857533ea78a58c"
+      },
+      "artifact_binary_checks": 11,
+      "reading_pdr": 0.9791666666666666,
+      "p95_delay_ms": 77.06519999999728,
+      "lifetime": null,
+      "policy": {
+        "total_policy_ticks": 1599,
+        "measured_feature_events": 20,
+        "profile_changes": 0,
+        "cap_changes": 0,
+        "startup_assignments": 2,
+        "fallback_actions": 1599,
+        "decision_and_apply_seconds": 0.26263427734375,
+        "timing_samples": 1599,
+        "total_switches": 0,
+        "switch_reasons": {},
+        "profiles_used": [
+          1
+        ],
+        "caps_used": [
+          1
+        ]
+      },
+      "mechanism_checks": {
+        "policy_wire": {
+          "measured_feature_events": 20,
+          "sealed_packets_matched_to_policy": 47,
+          "authenticated_packets_matched_to_tx": 47,
+          "tx_profiles": [
+            1
+          ],
+          "rx_profiles": [
+            1
+          ],
+          "profile_changes": 0,
+          "wire_profile_changes": 0,
+          "cap_changes": 0,
+          "startup_assignments": 2,
+          "fallback_actions": 1599,
+          "scope": "measured local traffic and cost-aware policy; residual-aware P1 ranking unvalidated"
+        }
+      }
+    },
+    {
+      "name": "p1-root-reset",
+      "run_id": "20261117T024742346478Z-P1-2",
+      "directory": "results/phase_05/20261117T024742346478Z-P1-2",
+      "config_sha256": "bf77fe7ed6e55d83715f6423e5caed65edc9e4e30a0ecc5352a8cb2af06a23d2",
+      "scenario_sha256": "0441b0eb65a077a7c9a202274d5776bfe34c3de970a258035bbd08a26d4dd683",
+      "binary_hashes": {
+        "binaries/root-root.z1": "949e4d8d24140fb99bb44fb77abf503d4e514f449b71e7dcf30f685c16e5ee51",
+        "binaries/sensor-sensor.z1": "1729857e07bcd43e1b77310d65ea73de559689eee6db36c192896531eab15021"
+      },
+      "artifact_binary_checks": 11,
+      "reading_pdr": 0.020833333333333332,
+      "p95_delay_ms": 46.6449999999968,
+      "lifetime": null,
+      "policy": {
+        "total_policy_ticks": 1599,
+        "measured_feature_events": 20,
+        "profile_changes": 0,
+        "cap_changes": 0,
+        "startup_assignments": 2,
+        "fallback_actions": 1599,
+        "decision_and_apply_seconds": 0.254638671875,
+        "timing_samples": 1599,
+        "total_switches": 0,
+        "switch_reasons": {},
+        "profiles_used": [
+          1
+        ],
+        "caps_used": [
+          1
+        ]
+      },
+      "mechanism_checks": {
+        "policy_wire": {
+          "measured_feature_events": 20,
+          "sealed_packets_matched_to_policy": 21,
+          "authenticated_packets_matched_to_tx": 1,
+          "tx_profiles": [
+            1
+          ],
+          "rx_profiles": [
+            1
+          ],
+          "profile_changes": 0,
+          "wire_profile_changes": 0,
+          "cap_changes": 0,
+          "startup_assignments": 2,
+          "fallback_actions": 1599,
+          "scope": "measured local traffic and cost-aware policy; residual-aware P1 ranking unvalidated"
+        },
+        "root_reset": {
+          "reset_boot_us": 62801068,
+          "authenticated_readings_before_reset": 1,
+          "post_reset_probes": 40,
+          "locked_context_rejections": 49,
+          "post_reset_acceptances": 0,
+          "scope": "fail-closed reset without regrant; no availability/recovery claim"
+        }
+      }
+    }
+  ],
+  "artifact_binary_hashes_checked": 190,
+  "raw_events_reparsed": 44020,
+  "residual_aware_p1": "unresolved; local forecast not validated",
+  "scope": "single-seed 3-node Z1 mechanisms, not comparative gains"
+}
