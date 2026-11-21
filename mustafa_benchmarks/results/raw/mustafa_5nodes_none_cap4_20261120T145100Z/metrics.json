@@ -1,0 +1,16 @@
+{
+  "run_id": "mustafa_5nodes_none_cap4_20261120T145100Z",
+  "nodes": 5,
+  "cipher": "none",
+  "batch_cap": 4,
+  "exit_code": 0,
+  "power": {
+    "duration_seconds": 119705.47,
+    "nodes_measured": 4,
+    "cpu_mw": 0.0007,
+    "rx_mw": 0.0336,
+    "tx_mw": 0.0,
+    "lpm_mw": 0.0,
+    "total_mw": 0.0342
+  }
+}

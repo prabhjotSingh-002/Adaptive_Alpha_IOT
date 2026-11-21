@@ -1,0 +1,26 @@
+{
+  "run_id": "optA_5nodes_aes_cap2_20261121T050551Z",
+  "nodes": 5,
+  "cipher": "aes",
+  "batch_cap": 2,
+  "exit_code": 0,
+  "power": {
+    "duration_seconds": 134.7,
+    "nodes_measured": 4,
+    "full_run_cpu_mw": 0.3879,
+    "post_warmup_cpu_mw": 0.3357,
+    "full_run_tx_mw": 0.0162,
+    "post_warmup_tx_mw": 0.013,
+    "rx_mw": 55.4614,
+    "lpm_mw": 0.0032,
+    "raw_total_mw": 55.8686,
+    "duty_rx_mw": 0.673,
+    "duty_total_mw": 1.0249,
+    "tx_packet_count": 12,
+    "radio_frames_count": 65,
+    "delivered_readings_count": 24,
+    "delivered_per_sensor": 6.0,
+    "tx_energy_uj_reading": 162.37,
+    "active_energy_uj_reading": 4342.17
+  }
+}

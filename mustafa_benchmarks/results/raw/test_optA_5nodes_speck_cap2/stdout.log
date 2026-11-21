@@ -1,0 +1,309 @@
+make: Entering directory '/tmp/sb_test_optA_5nodes_speck_cap2/sensor'
+  MKDIR     build/z1/obj/.deps
+  CC        sensor.c
+  CC        ../crypto/speck.c
+  CC        ../crypto/present.c
+  CC        ../common/protocol.c
+  CC        ../aggregate/aggregate.c
+  CC        ../crypto/aes_ccm.c
+  CC        ../crypto/secure_packet.c
+  CC        ../crypto/boot_gate.c
+  CC        ../energy/energy.c
+  CC        ../energy/energest_sampler.c
+  CC        ../policy/policy.c
+  CC        /workspace/external/contiki-ng/os/dev/leds.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/xmem.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/i2cmaster.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f2xxx/spi-legacy.c
+  CC        /workspace/external/contiki-ng/arch/dev/radio/cc2420/cc2420.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/cc2420-arch.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./cc2420-arch-sfd.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/./node-id-z1.c
+  CC        /workspace/external/contiki-ng/os/lib/sensors.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/button-sensor.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f2xxx/uart0.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/dev/uart-putchar.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./uip-ipchksum.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./slip_uart0.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/z1-sensors.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/adxl345.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/temperature-sensor.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/z1-phidgets.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/light-sensor.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/battery-sensor.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/sky-sensors.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/tmp102.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/./platform.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f2xxx/msp430.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./flash.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f1xxx/clock.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./leds-arch.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./watchdog.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./lpm.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f1xxx/rtimer-arch.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./int-master.c
+  CC        /workspace/external/contiki-ng/os/lib/crc16.c
+  CC        /workspace/external/contiki-ng/arch/dev/radio/cc2420/cc2420-tsch-15ms.c
+  CC        /workspace/external/contiki-ng/os/contiki-main.c
+  CC        /workspace/external/contiki-ng/os/dev/button-hal.c
+  CC        /workspace/external/contiki-ng/os/dev/gpio-hal.c
+  CC        /workspace/external/contiki-ng/os/dev/nullradio.c
+  CC        /workspace/external/contiki-ng/os/dev/serial-line.c
+  CC        /workspace/external/contiki-ng/os/dev/slip.c
+  CC        /workspace/external/contiki-ng/os/dev/spi.c
+  CC        /workspace/external/contiki-ng/os/lib/aes-128.c
+  CC        /workspace/external/contiki-ng/os/lib/assert.c
+  CC        /workspace/external/contiki-ng/os/lib/bitrev.c
+  CC        /workspace/external/contiki-ng/os/lib/cbor.c
+  CC        /workspace/external/contiki-ng/os/lib/ccm-star.c
+  CC        /workspace/external/contiki-ng/os/lib/circular-list.c
+  CC        /workspace/external/contiki-ng/os/lib/csprng.c
+  CC        /workspace/external/contiki-ng/os/lib/dbl-circ-list.c
+  CC        /workspace/external/contiki-ng/os/lib/dbl-list.c
+  CC        /workspace/external/contiki-ng/os/lib/ecc-curve.c
+  CC        /workspace/external/contiki-ng/os/lib/heapmem.c
+  CC        /workspace/external/contiki-ng/os/lib/hexconv.c
+  CC        /workspace/external/contiki-ng/os/lib/ifft.c
+  CC        /workspace/external/contiki-ng/os/lib/iq-seeder.c
+  CC        /workspace/external/contiki-ng/os/lib/list.c
+  CC        /workspace/external/contiki-ng/os/lib/memb.c
+  CC        /workspace/external/contiki-ng/os/lib/random.c
+  CC        /workspace/external/contiki-ng/os/lib/ringbuf.c
+  CC        /workspace/external/contiki-ng/os/lib/ringbufindex.c
+  CC        /workspace/external/contiki-ng/os/lib/sfc16-prng.c
+  CC        /workspace/external/contiki-ng/os/lib/sfc32-prng.c
+  CC        /workspace/external/contiki-ng/os/lib/sha-256.c
+  CC        /workspace/external/contiki-ng/os/lib/trickle-timer.c
+  CC        /workspace/external/contiki-ng/os/net/link-stats.c
+  CC        /workspace/external/contiki-ng/os/net/linkaddr.c
+  CC        /workspace/external/contiki-ng/os/net/nbr-table.c
+  CC        /workspace/external/contiki-ng/os/net/net-debug.c
+  CC        /workspace/external/contiki-ng/os/net/netstack.c
+  CC        /workspace/external/contiki-ng/os/net/packetbuf.c
+  CC        /workspace/external/contiki-ng/os/net/queuebuf.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/ip64-addr.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/psock.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/sicslowpan.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/simple-udp.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/tcp-socket.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/tcpip.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/udp-socket.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-ds6-nbr.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-ds6-route.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-ds6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-icmp6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-nameserver.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-nd6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-packetqueue.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-sr.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-udp-packet.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uipbuf.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uiplib.c
+  CC        /workspace/external/contiki-ng/os/net/mac/anti-replay.c
+  CC        /workspace/external/contiki-ng/os/net/mac/ccm-star-packetbuf.c
+  CC        /workspace/external/contiki-ng/os/net/mac/mac-sequence.c
+  CC        /workspace/external/contiki-ng/os/net/mac/csma/csma-output.c
+  CC        /workspace/external/contiki-ng/os/net/mac/csma/csma-security.c
+  CC        /workspace/external/contiki-ng/os/net/mac/csma/csma.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/frame802154.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/frame802154e-ie.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/framer-802154.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/nullframer.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-dag-root.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-dag.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-ext-header.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-icmp6.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-mrhof.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-nbr-policy.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-neighbor.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-of0.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-timers.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl.c
+  CC        /workspace/external/contiki-ng/os/storage/cfs/cfs-coffee.c
+  CC        /workspace/external/contiki-ng/os/sys/atomic.c
+  CC        /workspace/external/contiki-ng/os/sys/autostart.c
+  CC        /workspace/external/contiki-ng/os/sys/compower.c
+  CC        /workspace/external/contiki-ng/os/sys/ctimer.c
+  CC        /workspace/external/contiki-ng/os/sys/energest.c
+  CC        /workspace/external/contiki-ng/os/sys/etimer.c
+  CC        /workspace/external/contiki-ng/os/sys/log.c
+  CC        /workspace/external/contiki-ng/os/sys/mutex.c
+  CC        /workspace/external/contiki-ng/os/sys/node-id.c
+  CC        /workspace/external/contiki-ng/os/sys/process-mutex.c
+  CC        /workspace/external/contiki-ng/os/sys/process.c
+  CC        /workspace/external/contiki-ng/os/sys/rtimer.c
+  CC        /workspace/external/contiki-ng/os/sys/stack-check.c
+  CC        /workspace/external/contiki-ng/os/sys/stimer.c
+  CC        /workspace/external/contiki-ng/os/sys/timer.c
+  LD        build/z1/sensor.z1
+make: Leaving directory '/tmp/sb_test_optA_5nodes_speck_cap2/sensor'
+make: Entering directory '/tmp/sb_test_optA_5nodes_speck_cap2/root'
+  MKDIR     build/z1/obj/.deps
+  CC        root.c
+  CC        ../crypto/speck.c
+  CC        ../crypto/present.c
+  CC        ../common/protocol.c
+  CC        ../aggregate/aggregate.c
+  CC        ../crypto/aes_ccm.c
+  CC        ../crypto/secure_packet.c
+  CC        ../crypto/boot_gate.c
+  CC        ../energy/energy.c
+  CC        ../energy/energest_sampler.c
+  CC        ../policy/policy.c
+  CC        /workspace/external/contiki-ng/os/dev/leds.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/xmem.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/i2cmaster.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f2xxx/spi-legacy.c
+  CC        /workspace/external/contiki-ng/arch/dev/radio/cc2420/cc2420.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/cc2420-arch.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./cc2420-arch-sfd.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/./node-id-z1.c
+  CC        /workspace/external/contiki-ng/os/lib/sensors.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/button-sensor.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f2xxx/uart0.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/dev/uart-putchar.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./uip-ipchksum.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./slip_uart0.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/z1-sensors.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/adxl345.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/temperature-sensor.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/z1-phidgets.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/light-sensor.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/battery-sensor.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/sky-sensors.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/tmp102.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/./platform.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f2xxx/msp430.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./flash.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f1xxx/clock.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./leds-arch.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./watchdog.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./lpm.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f1xxx/rtimer-arch.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./int-master.c
+  CC        /workspace/external/contiki-ng/os/lib/crc16.c
+  CC        /workspace/external/contiki-ng/arch/dev/radio/cc2420/cc2420-tsch-15ms.c
+  CC        /workspace/external/contiki-ng/os/contiki-main.c
+  CC        /workspace/external/contiki-ng/os/dev/button-hal.c
+  CC        /workspace/external/contiki-ng/os/dev/gpio-hal.c
+  CC        /workspace/external/contiki-ng/os/dev/nullradio.c
+  CC        /workspace/external/contiki-ng/os/dev/serial-line.c
+  CC        /workspace/external/contiki-ng/os/dev/slip.c
+  CC        /workspace/external/contiki-ng/os/dev/spi.c
+  CC        /workspace/external/contiki-ng/os/lib/aes-128.c
+  CC        /workspace/external/contiki-ng/os/lib/assert.c
+  CC        /workspace/external/contiki-ng/os/lib/bitrev.c
+  CC        /workspace/external/contiki-ng/os/lib/cbor.c
+  CC        /workspace/external/contiki-ng/os/lib/ccm-star.c
+  CC        /workspace/external/contiki-ng/os/lib/circular-list.c
+  CC        /workspace/external/contiki-ng/os/lib/csprng.c
+  CC        /workspace/external/contiki-ng/os/lib/dbl-circ-list.c
+  CC        /workspace/external/contiki-ng/os/lib/dbl-list.c
+  CC        /workspace/external/contiki-ng/os/lib/ecc-curve.c
+  CC        /workspace/external/contiki-ng/os/lib/heapmem.c
+  CC        /workspace/external/contiki-ng/os/lib/hexconv.c
+  CC        /workspace/external/contiki-ng/os/lib/ifft.c
+  CC        /workspace/external/contiki-ng/os/lib/iq-seeder.c
+  CC        /workspace/external/contiki-ng/os/lib/list.c
+  CC        /workspace/external/contiki-ng/os/lib/memb.c
+  CC        /workspace/external/contiki-ng/os/lib/random.c
+  CC        /workspace/external/contiki-ng/os/lib/ringbuf.c
+  CC        /workspace/external/contiki-ng/os/lib/ringbufindex.c
+  CC        /workspace/external/contiki-ng/os/lib/sfc16-prng.c
+  CC        /workspace/external/contiki-ng/os/lib/sfc32-prng.c
+  CC        /workspace/external/contiki-ng/os/lib/sha-256.c
+  CC        /workspace/external/contiki-ng/os/lib/trickle-timer.c
+  CC        /workspace/external/contiki-ng/os/net/link-stats.c
+  CC        /workspace/external/contiki-ng/os/net/linkaddr.c
+  CC        /workspace/external/contiki-ng/os/net/nbr-table.c
+  CC        /workspace/external/contiki-ng/os/net/net-debug.c
+  CC        /workspace/external/contiki-ng/os/net/netstack.c
+  CC        /workspace/external/contiki-ng/os/net/packetbuf.c
+  CC        /workspace/external/contiki-ng/os/net/queuebuf.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/ip64-addr.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/psock.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/sicslowpan.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/simple-udp.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/tcp-socket.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/tcpip.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/udp-socket.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-ds6-nbr.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-ds6-route.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-ds6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-icmp6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-nameserver.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-nd6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-packetqueue.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-sr.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-udp-packet.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uipbuf.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uiplib.c
+  CC        /workspace/external/contiki-ng/os/net/mac/anti-replay.c
+  CC        /workspace/external/contiki-ng/os/net/mac/ccm-star-packetbuf.c
+  CC        /workspace/external/contiki-ng/os/net/mac/mac-sequence.c
+  CC        /workspace/external/contiki-ng/os/net/mac/csma/csma-output.c
+  CC        /workspace/external/contiki-ng/os/net/mac/csma/csma-security.c
+  CC        /workspace/external/contiki-ng/os/net/mac/csma/csma.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/frame802154.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/frame802154e-ie.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/framer-802154.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/nullframer.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-dag-root.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-dag.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-ext-header.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-icmp6.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-mrhof.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-nbr-policy.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-neighbor.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-of0.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-timers.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl.c
+  CC        /workspace/external/contiki-ng/os/storage/cfs/cfs-coffee.c
+  CC        /workspace/external/contiki-ng/os/sys/atomic.c
+  CC        /workspace/external/contiki-ng/os/sys/autostart.c
+  CC        /workspace/external/contiki-ng/os/sys/compower.c
+  CC        /workspace/external/contiki-ng/os/sys/ctimer.c
+  CC        /workspace/external/contiki-ng/os/sys/energest.c
+  CC        /workspace/external/contiki-ng/os/sys/etimer.c
+  CC        /workspace/external/contiki-ng/os/sys/log.c
+  CC        /workspace/external/contiki-ng/os/sys/mutex.c
+  CC        /workspace/external/contiki-ng/os/sys/node-id.c
+  CC        /workspace/external/contiki-ng/os/sys/process-mutex.c
+  CC        /workspace/external/contiki-ng/os/sys/process.c
+  CC        /workspace/external/contiki-ng/os/sys/rtimer.c
+  CC        /workspace/external/contiki-ng/os/sys/stack-check.c
+  CC        /workspace/external/contiki-ng/os/sys/stimer.c
+  CC        /workspace/external/contiki-ng/os/sys/timer.c
+  LD        build/z1/root.z1
+make: Leaving directory '/tmp/sb_test_optA_5nodes_speck_cap2/root'
+[32mINFO  [main] [Cooja.java:1147] - Loading /workspace/mustafa_benchmarks/results/raw/test_optA_5nodes_speck_cap2/scenario.csc random seed: null[0;39m
+> make -j1 root.z1 TARGET=z1 ASCON_IMPL=ref
+make: 'root.z1' is up to date.
+> make -j1 sensor.z1 TARGET=z1 ASCON_IMPL=ref
+make: 'sensor.z1' is up to date.
+[32mINFO  [main] [LogScriptEngine.java:231] - Script timeout in 135000 ms[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] -  5% completed, 48.8 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 10% completed, 25.5 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 15% completed, 17.9 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 20% completed, 14.2 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 25% completed, 11.7 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 30% completed, 10.1 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 35% completed,  8.6 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 40% completed,  7.5 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 45% completed,  6.4 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 50% completed,  5.6 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 55% completed,  4.9 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 60% completed,  4.1 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 65% completed,  3.5 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 70% completed,  2.9 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 75% completed,  2.4 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 80% completed,  1.8 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 85% completed,  1.4 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 90% completed,  0.9 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 95% completed,  0.4 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:294] - Timeout event @ 135000000[0;39m
+[32mINFO  [sim] [Simulation.java:450] - Runtime: 8468 ms. Simulated time: 135000 ms. Speedup: 15.942371280113369[0;39m
+[32mINFO  [main] [Cooja.java:1173] - TEST OK
+[0;39m

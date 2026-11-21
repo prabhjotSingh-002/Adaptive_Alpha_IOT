@@ -1,0 +1,24 @@
+{
+  "run_id": "mustafa_10nodes_aes_cap2_20261120T155704Z",
+  "nodes": 10,
+  "cipher": "aes",
+  "batch_cap": 2,
+  "exit_code": 0,
+  "power": {
+    "duration_seconds": 119.71,
+    "nodes_measured": 9,
+    "cpu_mw": 0.7142,
+    "rx_mw": 33.5141,
+    "tx_mw": 0.0249,
+    "lpm_mw": 0.0018,
+    "total_mw": 34.255,
+    "duty_rx_mw": 1.092,
+    "duty_total_mw": 1.8329,
+    "tx_packet_count": 52,
+    "radio_frames_count": 299,
+    "delivered_readings_count": 104,
+    "delivered_per_sensor": 11.6,
+    "tx_energy_uj_reading": 257.46,
+    "active_energy_uj_reading": 7656.04
+  }
+}

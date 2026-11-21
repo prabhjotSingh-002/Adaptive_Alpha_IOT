@@ -1,0 +1,26 @@
+{
+  "run_id": "optFinal_5nodes_none_cap1_20261121T060152Z",
+  "nodes": 5,
+  "cipher": "none",
+  "batch_cap": 1,
+  "exit_code": 0,
+  "power": {
+    "duration_seconds": 141.7,
+    "nodes_measured": 4,
+    "full_run_cpu_mw": 0.155,
+    "post_warmup_cpu_mw": 0.1025,
+    "full_run_tx_mw": 0.0178,
+    "post_warmup_tx_mw": 0.0193,
+    "rx_mw": 53.7151,
+    "lpm_mw": 0.0031,
+    "raw_total_mw": 53.8909,
+    "duty_rx_mw": 0.6954,
+    "duty_total_mw": 0.8204,
+    "tx_packet_count": 32,
+    "radio_frames_count": 85,
+    "delivered_readings_count": 32,
+    "delivered_per_sensor": 8.0,
+    "tx_energy_uj_reading": 197.31,
+    "active_energy_uj_reading": 1244.55
+  }
+}

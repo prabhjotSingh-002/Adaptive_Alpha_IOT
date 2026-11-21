@@ -1,0 +1,16 @@
+{
+  "run_id": "mustafa_10nodes_ascon_cap1_20261120T145602Z",
+  "nodes": 10,
+  "cipher": "ascon",
+  "batch_cap": 1,
+  "exit_code": 0,
+  "power": {
+    "duration_seconds": 119.71,
+    "nodes_measured": 9,
+    "cpu_mw": 0.67,
+    "rx_mw": 33.5541,
+    "tx_mw": 0.0122,
+    "lpm_mw": 0.0018,
+    "total_mw": 34.238
+  }
+}

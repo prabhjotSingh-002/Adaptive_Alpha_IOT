@@ -1,0 +1,676 @@
+make: Entering directory '/tmp/sb_mustafa_5nodes_present_cap1_20261120T171610Z/sensor'
+  MKDIR     build/z1/obj/.deps
+  CC        sensor.c
+  CC        ../crypto/speck.c
+  CC        ../crypto/present.c
+  CC        ../common/protocol.c
+  CC        ../aggregate/aggregate.c
+  CC        ../crypto/aes_ccm.c
+  CC        ../crypto/secure_packet.c
+  CC        ../crypto/boot_gate.c
+  CC        ../energy/energy.c
+  CC        ../energy/energest_sampler.c
+  CC        ../policy/policy.c
+  CC        /workspace/external/contiki-ng/os/dev/leds.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/xmem.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/i2cmaster.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f2xxx/spi-legacy.c
+  CC        /workspace/external/contiki-ng/arch/dev/radio/cc2420/cc2420.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/cc2420-arch.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./cc2420-arch-sfd.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/./node-id-z1.c
+  CC        /workspace/external/contiki-ng/os/lib/sensors.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/button-sensor.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f2xxx/uart0.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/dev/uart-putchar.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./uip-ipchksum.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./slip_uart0.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/z1-sensors.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/adxl345.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/temperature-sensor.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/z1-phidgets.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/light-sensor.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/battery-sensor.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/sky-sensors.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/tmp102.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/./platform.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f2xxx/msp430.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./flash.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f1xxx/clock.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./leds-arch.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./watchdog.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./lpm.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f1xxx/rtimer-arch.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./int-master.c
+  CC        /workspace/external/contiki-ng/os/lib/crc16.c
+  CC        /workspace/external/contiki-ng/arch/dev/radio/cc2420/cc2420-tsch-15ms.c
+  CC        /workspace/external/contiki-ng/os/contiki-main.c
+  CC        /workspace/external/contiki-ng/os/dev/button-hal.c
+  CC        /workspace/external/contiki-ng/os/dev/gpio-hal.c
+  CC        /workspace/external/contiki-ng/os/dev/nullradio.c
+  CC        /workspace/external/contiki-ng/os/dev/serial-line.c
+  CC        /workspace/external/contiki-ng/os/dev/slip.c
+  CC        /workspace/external/contiki-ng/os/dev/spi.c
+  CC        /workspace/external/contiki-ng/os/lib/aes-128.c
+  CC        /workspace/external/contiki-ng/os/lib/assert.c
+  CC        /workspace/external/contiki-ng/os/lib/bitrev.c
+  CC        /workspace/external/contiki-ng/os/lib/cbor.c
+  CC        /workspace/external/contiki-ng/os/lib/ccm-star.c
+  CC        /workspace/external/contiki-ng/os/lib/circular-list.c
+  CC        /workspace/external/contiki-ng/os/lib/csprng.c
+  CC        /workspace/external/contiki-ng/os/lib/dbl-circ-list.c
+  CC        /workspace/external/contiki-ng/os/lib/dbl-list.c
+  CC        /workspace/external/contiki-ng/os/lib/ecc-curve.c
+  CC        /workspace/external/contiki-ng/os/lib/heapmem.c
+  CC        /workspace/external/contiki-ng/os/lib/hexconv.c
+  CC        /workspace/external/contiki-ng/os/lib/ifft.c
+  CC        /workspace/external/contiki-ng/os/lib/iq-seeder.c
+  CC        /workspace/external/contiki-ng/os/lib/list.c
+  CC        /workspace/external/contiki-ng/os/lib/memb.c
+  CC        /workspace/external/contiki-ng/os/lib/random.c
+  CC        /workspace/external/contiki-ng/os/lib/ringbuf.c
+  CC        /workspace/external/contiki-ng/os/lib/ringbufindex.c
+  CC        /workspace/external/contiki-ng/os/lib/sfc16-prng.c
+  CC        /workspace/external/contiki-ng/os/lib/sfc32-prng.c
+  CC        /workspace/external/contiki-ng/os/lib/sha-256.c
+  CC        /workspace/external/contiki-ng/os/lib/trickle-timer.c
+  CC        /workspace/external/contiki-ng/os/net/link-stats.c
+  CC        /workspace/external/contiki-ng/os/net/linkaddr.c
+  CC        /workspace/external/contiki-ng/os/net/nbr-table.c
+  CC        /workspace/external/contiki-ng/os/net/net-debug.c
+  CC        /workspace/external/contiki-ng/os/net/netstack.c
+  CC        /workspace/external/contiki-ng/os/net/packetbuf.c
+  CC        /workspace/external/contiki-ng/os/net/queuebuf.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/ip64-addr.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/psock.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/sicslowpan.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/simple-udp.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/tcp-socket.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/tcpip.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/udp-socket.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-ds6-nbr.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-ds6-route.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-ds6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-icmp6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-nameserver.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-nd6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-packetqueue.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-sr.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-udp-packet.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uipbuf.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uiplib.c
+  CC        /workspace/external/contiki-ng/os/net/mac/anti-replay.c
+  CC        /workspace/external/contiki-ng/os/net/mac/ccm-star-packetbuf.c
+  CC        /workspace/external/contiki-ng/os/net/mac/mac-sequence.c
+  CC        /workspace/external/contiki-ng/os/net/mac/csma/csma-output.c
+  CC        /workspace/external/contiki-ng/os/net/mac/csma/csma-security.c
+  CC        /workspace/external/contiki-ng/os/net/mac/csma/csma.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/frame802154.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/frame802154e-ie.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/framer-802154.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/nullframer.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-dag-root.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-dag.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-ext-header.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-icmp6.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-mrhof.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-nbr-policy.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-neighbor.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-of0.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-timers.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl.c
+  CC        /workspace/external/contiki-ng/os/storage/cfs/cfs-coffee.c
+  CC        /workspace/external/contiki-ng/os/sys/atomic.c
+  CC        /workspace/external/contiki-ng/os/sys/autostart.c
+  CC        /workspace/external/contiki-ng/os/sys/compower.c
+  CC        /workspace/external/contiki-ng/os/sys/ctimer.c
+  CC        /workspace/external/contiki-ng/os/sys/energest.c
+  CC        /workspace/external/contiki-ng/os/sys/etimer.c
+  CC        /workspace/external/contiki-ng/os/sys/log.c
+  CC        /workspace/external/contiki-ng/os/sys/mutex.c
+  CC        /workspace/external/contiki-ng/os/sys/node-id.c
+  CC        /workspace/external/contiki-ng/os/sys/process-mutex.c
+  CC        /workspace/external/contiki-ng/os/sys/process.c
+  CC        /workspace/external/contiki-ng/os/sys/rtimer.c
+  CC        /workspace/external/contiki-ng/os/sys/stack-check.c
+  CC        /workspace/external/contiki-ng/os/sys/stimer.c
+  CC        /workspace/external/contiki-ng/os/sys/timer.c
+  LD        build/z1/sensor.z1
+make: Leaving directory '/tmp/sb_mustafa_5nodes_present_cap1_20261120T171610Z/sensor'
+make: Entering directory '/tmp/sb_mustafa_5nodes_present_cap1_20261120T171610Z/root'
+  MKDIR     build/z1/obj/.deps
+  CC        root.c
+  CC        ../crypto/speck.c
+  CC        ../crypto/present.c
+  CC        ../common/protocol.c
+  CC        ../aggregate/aggregate.c
+  CC        ../crypto/aes_ccm.c
+  CC        ../crypto/secure_packet.c
+  CC        ../crypto/boot_gate.c
+  CC        ../energy/energy.c
+  CC        ../energy/energest_sampler.c
+  CC        ../policy/policy.c
+  CC        /workspace/external/contiki-ng/os/dev/leds.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/xmem.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/i2cmaster.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f2xxx/spi-legacy.c
+  CC        /workspace/external/contiki-ng/arch/dev/radio/cc2420/cc2420.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/cc2420-arch.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./cc2420-arch-sfd.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/./node-id-z1.c
+  CC        /workspace/external/contiki-ng/os/lib/sensors.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/button-sensor.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f2xxx/uart0.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/dev/uart-putchar.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./uip-ipchksum.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./slip_uart0.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/z1-sensors.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/adxl345.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/temperature-sensor.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/z1-phidgets.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/light-sensor.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/battery-sensor.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/sky-sensors.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/dev/tmp102.c
+  CC        /workspace/external/contiki-ng/arch/platform/z1/./platform.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f2xxx/msp430.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./flash.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f1xxx/clock.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./leds-arch.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./watchdog.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./lpm.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/f1xxx/rtimer-arch.c
+  CC        /workspace/external/contiki-ng/arch/cpu/msp430/./int-master.c
+  CC        /workspace/external/contiki-ng/os/lib/crc16.c
+  CC        /workspace/external/contiki-ng/arch/dev/radio/cc2420/cc2420-tsch-15ms.c
+  CC        /workspace/external/contiki-ng/os/contiki-main.c
+  CC        /workspace/external/contiki-ng/os/dev/button-hal.c
+  CC        /workspace/external/contiki-ng/os/dev/gpio-hal.c
+  CC        /workspace/external/contiki-ng/os/dev/nullradio.c
+  CC        /workspace/external/contiki-ng/os/dev/serial-line.c
+  CC        /workspace/external/contiki-ng/os/dev/slip.c
+  CC        /workspace/external/contiki-ng/os/dev/spi.c
+  CC        /workspace/external/contiki-ng/os/lib/aes-128.c
+  CC        /workspace/external/contiki-ng/os/lib/assert.c
+  CC        /workspace/external/contiki-ng/os/lib/bitrev.c
+  CC        /workspace/external/contiki-ng/os/lib/cbor.c
+  CC        /workspace/external/contiki-ng/os/lib/ccm-star.c
+  CC        /workspace/external/contiki-ng/os/lib/circular-list.c
+  CC        /workspace/external/contiki-ng/os/lib/csprng.c
+  CC        /workspace/external/contiki-ng/os/lib/dbl-circ-list.c
+  CC        /workspace/external/contiki-ng/os/lib/dbl-list.c
+  CC        /workspace/external/contiki-ng/os/lib/ecc-curve.c
+  CC        /workspace/external/contiki-ng/os/lib/heapmem.c
+  CC        /workspace/external/contiki-ng/os/lib/hexconv.c
+  CC        /workspace/external/contiki-ng/os/lib/ifft.c
+  CC        /workspace/external/contiki-ng/os/lib/iq-seeder.c
+  CC        /workspace/external/contiki-ng/os/lib/list.c
+  CC        /workspace/external/contiki-ng/os/lib/memb.c
+  CC        /workspace/external/contiki-ng/os/lib/random.c
+  CC        /workspace/external/contiki-ng/os/lib/ringbuf.c
+  CC        /workspace/external/contiki-ng/os/lib/ringbufindex.c
+  CC        /workspace/external/contiki-ng/os/lib/sfc16-prng.c
+  CC        /workspace/external/contiki-ng/os/lib/sfc32-prng.c
+  CC        /workspace/external/contiki-ng/os/lib/sha-256.c
+  CC        /workspace/external/contiki-ng/os/lib/trickle-timer.c
+  CC        /workspace/external/contiki-ng/os/net/link-stats.c
+  CC        /workspace/external/contiki-ng/os/net/linkaddr.c
+  CC        /workspace/external/contiki-ng/os/net/nbr-table.c
+  CC        /workspace/external/contiki-ng/os/net/net-debug.c
+  CC        /workspace/external/contiki-ng/os/net/netstack.c
+  CC        /workspace/external/contiki-ng/os/net/packetbuf.c
+  CC        /workspace/external/contiki-ng/os/net/queuebuf.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/ip64-addr.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/psock.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/sicslowpan.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/simple-udp.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/tcp-socket.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/tcpip.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/udp-socket.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-ds6-nbr.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-ds6-route.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-ds6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-icmp6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-nameserver.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-nd6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-packetqueue.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-sr.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip-udp-packet.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uip6.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uipbuf.c
+  CC        /workspace/external/contiki-ng/os/net/ipv6/uiplib.c
+  CC        /workspace/external/contiki-ng/os/net/mac/anti-replay.c
+  CC        /workspace/external/contiki-ng/os/net/mac/ccm-star-packetbuf.c
+  CC        /workspace/external/contiki-ng/os/net/mac/mac-sequence.c
+  CC        /workspace/external/contiki-ng/os/net/mac/csma/csma-output.c
+  CC        /workspace/external/contiki-ng/os/net/mac/csma/csma-security.c
+  CC        /workspace/external/contiki-ng/os/net/mac/csma/csma.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/frame802154.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/frame802154e-ie.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/framer-802154.c
+  CC        /workspace/external/contiki-ng/os/net/mac/framer/nullframer.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-dag-root.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-dag.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-ext-header.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-icmp6.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-mrhof.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-nbr-policy.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-neighbor.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-of0.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl-timers.c
+  CC        /workspace/external/contiki-ng/os/net/routing/rpl-lite/rpl.c
+  CC        /workspace/external/contiki-ng/os/storage/cfs/cfs-coffee.c
+  CC        /workspace/external/contiki-ng/os/sys/atomic.c
+  CC        /workspace/external/contiki-ng/os/sys/autostart.c
+  CC        /workspace/external/contiki-ng/os/sys/compower.c
+  CC        /workspace/external/contiki-ng/os/sys/ctimer.c
+  CC        /workspace/external/contiki-ng/os/sys/energest.c
+  CC        /workspace/external/contiki-ng/os/sys/etimer.c
+  CC        /workspace/external/contiki-ng/os/sys/log.c
+  CC        /workspace/external/contiki-ng/os/sys/mutex.c
+  CC        /workspace/external/contiki-ng/os/sys/node-id.c
+  CC        /workspace/external/contiki-ng/os/sys/process-mutex.c
+  CC        /workspace/external/contiki-ng/os/sys/process.c
+  CC        /workspace/external/contiki-ng/os/sys/rtimer.c
+  CC        /workspace/external/contiki-ng/os/sys/stack-check.c
+  CC        /workspace/external/contiki-ng/os/sys/stimer.c
+  CC        /workspace/external/contiki-ng/os/sys/timer.c
+  LD        build/z1/root.z1
+make: Leaving directory '/tmp/sb_mustafa_5nodes_present_cap1_20261120T171610Z/root'
+[32mINFO  [main] [Cooja.java:1147] - Loading /workspace/mustafa_benchmarks/results/raw/mustafa_5nodes_present_cap1_20261120T171610Z/scenario.csc random seed: null[0;39m
+> make -j1 root.z1 TARGET=z1 ASCON_IMPL=ref
+make: 'root.z1' is up to date.
+> make -j1 sensor.z1 TARGET=z1 ASCON_IMPL=ref
+make: 'sensor.z1' is up to date.
+[32mINFO  [main] [LogScriptEngine.java:231] - Script timeout in 120000 ms[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] -  5% completed, 34.4 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 10% completed, 21.4 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 15% completed, 17.4 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 20% completed, 14.9 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 25% completed, 13.1 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 30% completed, 11.7 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 35% completed, 11.2 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 40% completed, 10.0 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 45% completed,  9.0 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 50% completed,  8.0 sec remaining[0;39m
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 11 PC: $0327e
+  __udivhi3 (../../../../../../../gcc-4.7.4/libgcc/config/msp430/libgcc.S) called from PC: $032b6 (elapsed: 55)
+  __divhi3 (../../../../../../../gcc-4.7.4/libgcc/config/msp430/libgcc.S) called from PC: $032ce (elapsed: 70)
+  __modhi3 (../../../../../../../gcc-4.7.4/libgcc/config/msp430/libgcc.S) called from PC: $0798a (elapsed: 75)
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1499696)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018784)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018819)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020488)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 11 PC: $0327e
+  __udivhi3 (../../../../../../../gcc-4.7.4/libgcc/config/msp430/libgcc.S) called from PC: $032b6 (elapsed: 55)
+  __divhi3 (../../../../../../../gcc-4.7.4/libgcc/config/msp430/libgcc.S) called from PC: $032ce (elapsed: 70)
+  __modhi3 (../../../../../../../gcc-4.7.4/libgcc/config/msp430/libgcc.S) called from PC: $0798a (elapsed: 75)
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1499696)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018784)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018819)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020382)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 11 PC: $0327e
+  __udivhi3 (../../../../../../../gcc-4.7.4/libgcc/config/msp430/libgcc.S) called from PC: $032b6 (elapsed: 55)
+  __divhi3 (../../../../../../../gcc-4.7.4/libgcc/config/msp430/libgcc.S) called from PC: $032ce (elapsed: 70)
+  __modhi3 (../../../../../../../gcc-4.7.4/libgcc/config/msp430/libgcc.S) called from PC: $0798a (elapsed: 75)
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1499696)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018792)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018827)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020496)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 11 PC: $0327e
+  __udivhi3 (../../../../../../../gcc-4.7.4/libgcc/config/msp430/libgcc.S) called from PC: $032b6 (elapsed: 55)
+  __divhi3 (../../../../../../../gcc-4.7.4/libgcc/config/msp430/libgcc.S) called from PC: $032ce (elapsed: 70)
+  __modhi3 (../../../../../../../gcc-4.7.4/libgcc/config/msp430/libgcc.S) called from PC: $0798a (elapsed: 75)
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1499696)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018796)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018831)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020394)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $079a0
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1498907)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7993960)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994034)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018784)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018819)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8022572)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $0794e
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1499030)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994001)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994075)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018784)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018819)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8022226)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $079a4
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1498849)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994001)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994075)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018792)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018827)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8022898)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $079b0
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1499010)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7993998)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994072)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7995942)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996996)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018793)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018828)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8022235)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $07960
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1503398)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018819)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018854)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8019803)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $0795e
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1500382)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994227)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994301)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996171)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996998)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018813)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018848)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8019719)
+[32mINFO  [sim] [LogScriptEngine.java:320] - 55% completed, 11.4 sec remaining[0;39m
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $07960
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1503171)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8019043)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8019078)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020027)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $07960
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1503171)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018826)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018861)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8019654)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 21 PC: $077b4
+  present128_encrypt_block (z1-sensors.c) called from PC: $07ac8 (elapsed: 1486077)
+  present_cbc_mac_16 (local in present.c) called from PC: $07bca (elapsed: 3651234)
+  lab_present_open (z1-sensors.c) called from PC: $0ab6c (elapsed: 7981491)
+  lab_secure_open_status (z1-sensors.c) called from PC: $083a0 (elapsed: 7982516)
+  receive (local in root.c) called from PC: $0c4bc (elapsed: 7982580)
+  process_thread_simple_udp_process (local in simple-udp.c) called from PC: $07c30 (elapsed: 7982916)
+  call_process (local in process.c) called from PC: $07e12 (elapsed: 7982951)
+  process_post_synch (z1-sensors.c) called from PC: $0cebe (elapsed: 7982963)
+  tcpip_uipcall (z1-sensors.c) called from PC: $0e822 (elapsed: 7982990)
+  uip_process (z1-sensors.c) called from PC: $0cdda (elapsed: 7986480)
+  packet_input.part.3 (local in tcpip.c) called from PC: $0ce68 (elapsed: 7986486)
+  process_thread_tcpip_process (local in tcpip.c) called from PC: $07c30 (elapsed: 7986516)
+  call_process (local in process.c) called from PC: $07e12 (elapsed: 7986551)
+  process_post_synch (z1-sensors.c) called from PC: $0ccc2 (elapsed: 7986563)
+  tcpip_input (z1-sensors.c) called from PC: $0c426 (elapsed: 7986612)
+  input (local in sicslowpan.c) called from PC: $0513e (elapsed: 7990960)
+  input_packet (local in csma.c) called from PC: $0452c (elapsed: 7993083)
+  process_thread_cc2420_process (local in cc2420.c) called from PC: $07c30 (elapsed: 7997802)
+  call_process (local in process.c) called from PC: $07d04 (elapsed: 7997837)
+  do_poll (local in process.c) called from PC: $07d3c (elapsed: 7997931)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 7997950)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $079a6
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1498890)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018766)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018801)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020312)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $079a2
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1498948)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018766)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018801)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020100)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $0796a
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1499358)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018773)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018808)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020319)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $0795c
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1499317)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018784)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018819)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020792)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 21 PC: $077b6
+  present128_encrypt_block (z1-sensors.c) called from PC: $07ac8 (elapsed: 1489699)
+  present_cbc_mac_16 (local in present.c) called from PC: $07bca (elapsed: 3653561)
+  lab_present_open (z1-sensors.c) called from PC: $0ab6c (elapsed: 7981013)
+  lab_secure_open_status (z1-sensors.c) called from PC: $083a0 (elapsed: 7982038)
+  receive (local in root.c) called from PC: $0c4bc (elapsed: 7982102)
+  process_thread_simple_udp_process (local in simple-udp.c) called from PC: $07c30 (elapsed: 7982438)
+  call_process (local in process.c) called from PC: $07e12 (elapsed: 7982473)
+  process_post_synch (z1-sensors.c) called from PC: $0cebe (elapsed: 7982485)
+  tcpip_uipcall (z1-sensors.c) called from PC: $0e822 (elapsed: 7982512)
+  uip_process (z1-sensors.c) called from PC: $0cdda (elapsed: 7985487)
+  packet_input.part.3 (local in tcpip.c) called from PC: $0ce68 (elapsed: 7985493)
+  process_thread_tcpip_process (local in tcpip.c) called from PC: $07c30 (elapsed: 7985523)
+  call_process (local in process.c) called from PC: $07e12 (elapsed: 7985558)
+  process_post_synch (z1-sensors.c) called from PC: $0ccc2 (elapsed: 7985570)
+  tcpip_input (z1-sensors.c) called from PC: $0c426 (elapsed: 7985619)
+  input (local in sicslowpan.c) called from PC: $0513e (elapsed: 7989450)
+  input_packet (local in csma.c) called from PC: $0452c (elapsed: 7993205)
+  process_thread_cc2420_process (local in cc2420.c) called from PC: $07c30 (elapsed: 7997924)
+  call_process (local in process.c) called from PC: $07d04 (elapsed: 7997959)
+  do_poll (local in process.c) called from PC: $07d3c (elapsed: 7998053)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 7998072)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $07960
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1503072)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018772)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018807)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020108)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $07998
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1498931)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018778)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018813)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020220)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $07960
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1503072)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018774)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018809)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020112)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $07960
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1503171)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8019017)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8019052)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8019119)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $0796a
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1500202)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018777)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018812)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020217)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 21 PC: $07784
+  present128_encrypt_block (z1-sensors.c) called from PC: $07ac8 (elapsed: 1488616)
+  present_cbc_mac_16 (local in present.c) called from PC: $07bca (elapsed: 3654140)
+  lab_present_open (z1-sensors.c) called from PC: $0ab6c (elapsed: 7982103)
+  lab_secure_open_status (z1-sensors.c) called from PC: $083a0 (elapsed: 7983128)
+  receive (local in root.c) called from PC: $0c4bc (elapsed: 7983192)
+  process_thread_simple_udp_process (local in simple-udp.c) called from PC: $07c30 (elapsed: 7983528)
+  call_process (local in process.c) called from PC: $07e12 (elapsed: 7983563)
+  process_post_synch (z1-sensors.c) called from PC: $0cebe (elapsed: 7983575)
+  tcpip_uipcall (z1-sensors.c) called from PC: $0e822 (elapsed: 7983602)
+  uip_process (z1-sensors.c) called from PC: $0cdda (elapsed: 7986575)
+  packet_input.part.3 (local in tcpip.c) called from PC: $0ce68 (elapsed: 7986581)
+  process_thread_tcpip_process (local in tcpip.c) called from PC: $07c30 (elapsed: 7986611)
+  call_process (local in process.c) called from PC: $07e12 (elapsed: 7986646)
+  process_post_synch (z1-sensors.c) called from PC: $0ccc2 (elapsed: 7986658)
+  tcpip_input (z1-sensors.c) called from PC: $0c426 (elapsed: 7986707)
+  input (local in sicslowpan.c) called from PC: $0513e (elapsed: 7990538)
+  input_packet (local in csma.c) called from PC: $0452c (elapsed: 7993205)
+  process_thread_cc2420_process (local in cc2420.c) called from PC: $07c30 (elapsed: 7997924)
+  call_process (local in process.c) called from PC: $07d04 (elapsed: 7997959)
+  do_poll (local in process.c) called from PC: $07d3c (elapsed: 7998053)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 7998072)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $079a2
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1498808)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018926)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018961)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020366)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $0799c
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1499955)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994227)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994301)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996171)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996998)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8018779)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8018814)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020219)
+[32mINFO  [sim] [LogScriptEngine.java:320] - 60% completed, 15.4 sec remaining[0;39m
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 8 PC: $0799c
+  present128_encrypt_block (z1-sensors.c) called from PC: $07cfc (elapsed: 1500793)
+  present_cbc_mac_16 (local in present.c) called from PC: $07d94 (elapsed: 7994228)
+  lab_present_seal (z1-sensors.c) called from PC: $0a934 (elapsed: 7994302)
+  lab_secure_seal (z1-sensors.c) called from PC: $0ab6a (elapsed: 7996172)
+  flush (local in sensor.c) called from PC: $0af56 (elapsed: 7996999)
+  process_thread_sensor_process (local in sensor.c) called from PC: $07dee (elapsed: 8019017)
+  call_process (local in process.c) called from PC: $07f66 (elapsed: 8019052)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 8020353)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 21 PC: $07782
+  present128_encrypt_block (z1-sensors.c) called from PC: $07ac8 (elapsed: 1489829)
+  present_cbc_mac_16 (local in present.c) called from PC: $07bca (elapsed: 3653592)
+  lab_present_open (z1-sensors.c) called from PC: $0ab6c (elapsed: 7981143)
+  lab_secure_open_status (z1-sensors.c) called from PC: $083a0 (elapsed: 7982168)
+  receive (local in root.c) called from PC: $0c4bc (elapsed: 7982232)
+  process_thread_simple_udp_process (local in simple-udp.c) called from PC: $07c30 (elapsed: 7982568)
+  call_process (local in process.c) called from PC: $07e12 (elapsed: 7982603)
+  process_post_synch (z1-sensors.c) called from PC: $0cebe (elapsed: 7982615)
+  tcpip_uipcall (z1-sensors.c) called from PC: $0e822 (elapsed: 7982642)
+  uip_process (z1-sensors.c) called from PC: $0cdda (elapsed: 7985958)
+  packet_input.part.3 (local in tcpip.c) called from PC: $0ce68 (elapsed: 7985964)
+  process_thread_tcpip_process (local in tcpip.c) called from PC: $07c30 (elapsed: 7985994)
+  call_process (local in process.c) called from PC: $07e12 (elapsed: 7986029)
+  process_post_synch (z1-sensors.c) called from PC: $0ccc2 (elapsed: 7986041)
+  tcpip_input (z1-sensors.c) called from PC: $0c426 (elapsed: 7986090)
+  input (local in sicslowpan.c) called from PC: $0513e (elapsed: 7990262)
+  input_packet (local in csma.c) called from PC: $0452c (elapsed: 7992929)
+  process_thread_cc2420_process (local in cc2420.c) called from PC: $07c30 (elapsed: 7997924)
+  call_process (local in process.c) called from PC: $07d04 (elapsed: 7997959)
+  do_poll (local in process.c) called from PC: $07d3c (elapsed: 7998053)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 7998072)
+WDT trigger - will set interrupt flag (no reset)
+Stack Trace: number of calls: 21 PC: $077ba
+  present128_encrypt_block (z1-sensors.c) called from PC: $07ac8 (elapsed: 1489034)
+  present_cbc_mac_16 (local in present.c) called from PC: $07bca (elapsed: 3653239)
+  lab_present_open (z1-sensors.c) called from PC: $0ab6c (elapsed: 7980249)
+  lab_secure_open_status (z1-sensors.c) called from PC: $083a0 (elapsed: 7981274)
+  receive (local in root.c) called from PC: $0c4bc (elapsed: 7981338)
+  process_thread_simple_udp_process (local in simple-udp.c) called from PC: $07c30 (elapsed: 7981674)
+  call_process (local in process.c) called from PC: $07e12 (elapsed: 7981709)
+  process_post_synch (z1-sensors.c) called from PC: $0cebe (elapsed: 7981721)
+  tcpip_uipcall (z1-sensors.c) called from PC: $0e822 (elapsed: 7981748)
+  uip_process (z1-sensors.c) called from PC: $0cdda (elapsed: 7985238)
+  packet_input.part.3 (local in tcpip.c) called from PC: $0ce68 (elapsed: 7985244)
+  process_thread_tcpip_process (local in tcpip.c) called from PC: $07c30 (elapsed: 7985274)
+  call_process (local in process.c) called from PC: $07e12 (elapsed: 7985309)
+  process_post_synch (z1-sensors.c) called from PC: $0ccc2 (elapsed: 7985321)
+  tcpip_input (z1-sensors.c) called from PC: $0c426 (elapsed: 7985370)
+  input (local in sicslowpan.c) called from PC: $0513e (elapsed: 7989718)
+  input_packet (local in csma.c) called from PC: $0452c (elapsed: 7992929)
+  process_thread_cc2420_process (local in cc2420.c) called from PC: $07c30 (elapsed: 7997924)
+  call_process (local in process.c) called from PC: $07d04 (elapsed: 7997959)
+  do_poll (local in process.c) called from PC: $07d3c (elapsed: 7998053)
+  process_run (z1-sensors.c) called from PC: $031c2 (elapsed: 7998072)
+[32mINFO  [sim] [LogScriptEngine.java:320] - 65% completed, 13.8 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 70% completed, 11.1 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 75% completed,  8.7 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 80% completed,  6.6 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 85% completed,  4.7 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 90% completed,  3.0 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:320] - 95% completed,  1.4 sec remaining[0;39m
+[32mINFO  [sim] [LogScriptEngine.java:294] - Timeout event @ 120000000[0;39m
+[32mINFO  [sim] [Simulation.java:450] - Runtime: 27009 ms. Simulated time: 120000 ms. Speedup: 4.442963456625569[0;39m
+[32mINFO  [main] [Cooja.java:1173] - TEST OK
+[0;39m

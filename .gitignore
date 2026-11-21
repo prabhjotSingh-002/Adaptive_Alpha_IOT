@@ -21,3 +21,9 @@ results/phase_01/20*/
 
 # Local pinned dashboard dependencies
 results/dashboard-deps/
+
+# Benchmark build outputs and binaries
+*.z1
+*_bin
+generated-conf.h
+mustafa_benchmarks/**/build/

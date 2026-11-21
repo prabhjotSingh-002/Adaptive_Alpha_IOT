@@ -1,0 +1,24 @@
+{
+  "run_id": "mustafa_10nodes_speck_cap1_20261120T172017Z",
+  "nodes": 10,
+  "cipher": "speck",
+  "batch_cap": 1,
+  "exit_code": 0,
+  "power": {
+    "duration_seconds": 119.71,
+    "nodes_measured": 9,
+    "cpu_mw": 0.7396,
+    "rx_mw": 33.4683,
+    "tx_mw": 0.0369,
+    "lpm_mw": 0.0018,
+    "total_mw": 34.2465,
+    "duty_rx_mw": 1.0905,
+    "duty_total_mw": 1.8688,
+    "tx_packet_count": 105,
+    "radio_frames_count": 431,
+    "delivered_readings_count": 104,
+    "delivered_per_sensor": 11.56,
+    "tx_energy_uj_reading": 381.79,
+    "active_energy_uj_reading": 8043.64
+  }
+}

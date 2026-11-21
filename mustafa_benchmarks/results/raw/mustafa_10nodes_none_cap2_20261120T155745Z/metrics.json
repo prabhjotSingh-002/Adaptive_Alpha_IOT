@@ -1,0 +1,24 @@
+{
+  "run_id": "mustafa_10nodes_none_cap2_20261120T155745Z",
+  "nodes": 10,
+  "cipher": "none",
+  "batch_cap": 2,
+  "exit_code": 0,
+  "power": {
+    "duration_seconds": 119.71,
+    "nodes_measured": 9,
+    "cpu_mw": 0.7091,
+    "rx_mw": 33.5161,
+    "tx_mw": 0.0227,
+    "lpm_mw": 0.0018,
+    "total_mw": 34.2497,
+    "duty_rx_mw": 1.0921,
+    "duty_total_mw": 1.8257,
+    "tx_packet_count": 52,
+    "radio_frames_count": 299,
+    "delivered_readings_count": 104,
+    "delivered_per_sensor": 11.6,
+    "tx_energy_uj_reading": 235.64,
+    "active_energy_uj_reading": 7581.14
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "run_id": "optA_5nodes_speck_cap2_20261121T050526Z",
+  "nodes": 5,
+  "cipher": "speck",
+  "batch_cap": 2,
+  "exit_code": 0,
+  "power": {
+    "duration_seconds": 134.7,
+    "nodes_measured": 4,
+    "full_run_cpu_mw": 0.3858,
+    "post_warmup_cpu_mw": 0.332,
+    "full_run_tx_mw": 0.0162,
+    "post_warmup_tx_mw": 0.013,
+    "rx_mw": 55.4614,
+    "lpm_mw": 0.0032,
+    "raw_total_mw": 55.8665,
+    "duty_rx_mw": 0.673,
+    "duty_total_mw": 1.0211,
+    "tx_packet_count": 12,
+    "radio_frames_count": 65,
+    "delivered_readings_count": 24,
+    "delivered_per_sensor": 6.0,
+    "tx_energy_uj_reading": 162.31,
+    "active_energy_uj_reading": 4295.41
+  }
+}

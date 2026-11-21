@@ -1,0 +1,26 @@
+{
+  "run_id": "optFinal_10nodes_aes_cap2_20261121T060243Z",
+  "nodes": 10,
+  "cipher": "aes",
+  "batch_cap": 2,
+  "exit_code": 0,
+  "power": {
+    "duration_seconds": 141.88,
+    "nodes_measured": 9,
+    "full_run_cpu_mw": 0.1902,
+    "post_warmup_cpu_mw": 0.1565,
+    "full_run_tx_mw": 0.0206,
+    "post_warmup_tx_mw": 0.0242,
+    "rx_mw": 54.308,
+    "lpm_mw": 0.0031,
+    "raw_total_mw": 54.522,
+    "duty_rx_mw": 1.1477,
+    "duty_total_mw": 1.3315,
+    "tx_packet_count": 36,
+    "radio_frames_count": 247,
+    "delivered_readings_count": 72,
+    "delivered_per_sensor": 8.0,
+    "tx_energy_uj_reading": 247.54,
+    "active_energy_uj_reading": 1848.85
+  }
+}
