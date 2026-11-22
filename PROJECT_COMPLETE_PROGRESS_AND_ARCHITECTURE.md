@@ -138,15 +138,15 @@ We implemented and benchmarked three distinct cryptographic architectures:
 
 *Measured via hardware Energest timers on Zolertia Z1 motes emulated in Cooja. Traffic period: 10s.*
 
-### Summary Table: 5 Nodes (32 Readings) vs. 10 Nodes (72 Readings)
-| Metric | 5 Nodes ($k=1$) | 5 Nodes ($k=4$) | 10 Nodes ($k=1$) | 10 Nodes ($k=4$) | Mustafa Baseline (5 / 10 Nodes) |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Packets Sent** | 32 | **8 (-75%)** | 72 | **18 (-75%)** | 32 / 72 |
-| **Speck Active CPU** | 0.1075 mW | **0.0877 mW** | 0.1801 mW | **0.1386 mW** | 0.1288 mW / 0.1745 mW |
-| **AES Active CPU** | 0.1120 mW | **0.0896 mW** | 0.1847 mW | **0.1406 mW** | 0.1814 mW / 0.2536 mW |
-| **Speck Radio Tx Power**| 0.0217 mW | **0.0133 mW** | 0.0337 mW | **0.0189 mW** | 0.3812 mW / 0.4326 mW |
-| **Speck Tx Energy/Rdg** | 221.60 $\mu$J | **135.96 $\mu$J (-38.6%)** | 345.19 $\mu$J | **193.03 $\mu$J (-44.1%)** | Unreported |
-| **Packet Delivery Ratio**| 100.0% | **100.0%** | 100.0% | **100.0%** | Unreported |
+### Summary Table: 5 Nodes (32 Readings), 10 Nodes (72 Readings), and 15 Nodes (112 Readings)
+| Metric | 5 Nodes ($k=1$) | 5 Nodes ($k=4$) | 10 Nodes ($k=1$) | 10 Nodes ($k=4$) | 15 Nodes ($k=1$) | 15 Nodes ($k=4$) | Mustafa Baseline (5 / 10 Nodes) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Packets Sent** | 32 | **8 (-75%)** | 72 | **18 (-75%)** | 107 | **27 (-75%)** | 32 / 72 |
+| **Speck Active CPU** | 0.1075 mW | **0.0877 mW** | 0.1801 mW | **0.1386 mW** | 0.2230 mW | **0.1636 mW** | 0.1288 mW / 0.1745 mW |
+| **AES Active CPU** | 0.1120 mW | **0.0896 mW** | 0.1847 mW | **0.1406 mW** | 0.2244 mW | **0.1656 mW** | 0.1814 mW / 0.2536 mW |
+| **Speck Radio Tx Power**| 0.0217 mW | **0.0133 mW** | 0.0337 mW | **0.0189 mW** | 0.0516 mW | **0.0279 mW** | 0.3812 mW / 0.4326 mW |
+| **Speck Tx Energy/Rdg** | 221.60 $\mu$J | **135.96 $\mu$J (-38.6%)** | 345.19 $\mu$J | **193.03 $\mu$J (-44.1%)** | 563.38 $\mu$J | **296.36 $\mu$J (-47.4%)** | Unreported |
+| **Packet Delivery Ratio**| 100.0% | **100.0%** | 100.0% | **100.0%** | 93.8% | **96.4%** | Unreported |
 
 ---
 

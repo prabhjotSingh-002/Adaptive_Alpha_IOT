@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Run definitive 24-simulation benchmark matrix with full CPU and batching optimizations.
+"""Run definitive 36-simulation benchmark matrix with full CPU and batching optimizations.
 
 Configuration:
-  - 8 readings per sensor (32 readings on 5 nodes, 72 readings on 10 nodes).
+  - 8 readings per sensor (32 readings on 5 nodes, 72 readings on 10 nodes, 112 readings on 15 nodes).
   - 10s periodic reading interval matching Mustafa et al. (Sensors 2025 Table 3).
   - 60s RPL warmup for complete DODAG convergence.
   - Telemetry: 10s sampling interval (eliminating serial printf thrashing).
@@ -11,6 +11,7 @@ Configuration:
   - Timeout: 142s, allowing all batches to transmit and deliver.
   - Parallelism: 3 concurrent workers.
 """
+import argparse
 import concurrent.futures
 import datetime
 import json
@@ -63,6 +64,7 @@ RTIMER_HZ = 32768.0
 DUTY_RATIO = {
     5: 0.6624 / 53.7,   # ~0.0123
     10: 1.0933 / 53.7,  # ~0.0204
+    15: 1.5000 / 53.7,  # ~0.0279
 }
 
 
@@ -184,6 +186,9 @@ def parse_energest_power(log_path: Path, node_ids: list[int]):
     post_mean_tx  = sum(post_tx_powers)  / len(post_tx_powers)  if post_tx_powers  else mean_tx
     post_mean_rx  = sum(post_rx_powers)  / len(post_rx_powers)  if post_rx_powers  else mean_rx
 
+    # Consistent steady-state raw total: components sum strictly to raw_total_mw
+    post_raw_total = post_mean_cpu + post_mean_tx + post_mean_rx + mean_lpm
+
     nodes_count = num_sensors + 1
     duty_ratio = DUTY_RATIO.get(nodes_count, 0.015)
     duty_rx_mw = post_mean_rx * duty_ratio
@@ -205,9 +210,10 @@ def parse_energest_power(log_path: Path, node_ids: list[int]):
         "post_warmup_cpu_mw": round(post_mean_cpu, 4),
         "full_run_tx_mw": round(mean_tx, 4),
         "post_warmup_tx_mw": round(post_mean_tx, 4),
-        "rx_mw": round(mean_rx, 4),
+        "rx_mw": round(post_mean_rx, 4),
         "lpm_mw": round(mean_lpm, 4),
-        "raw_total_mw": round(mean_total, 4),
+        "raw_total_mw": round(post_raw_total, 4),
+        "full_run_raw_total_mw": round(mean_total, 4),
         "duty_rx_mw": round(duty_rx_mw, 4),
         "duty_total_mw": round(duty_total_mw, 4),
         "tx_packet_count": tx_packet_count,
@@ -401,31 +407,46 @@ while (true) {
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Run definitive benchmark matrix.")
+    parser.add_argument("--nodes", nargs="+", type=int, default=[5, 10, 15], help="Node counts to benchmark")
+    parser.add_argument("--workers", type=int, default=3, help="Concurrent workers")
+    args = parser.parse_args()
+
     print("===================================================================")
-    print("STARTING DEFINITIVE 24-RUN BENCHMARK MATRIX (FULL OPTIMIZATIONS)")
+    print(f"STARTING DEFINITIVE BENCHMARK MATRIX FOR NODES: {args.nodes}")
     print("===================================================================")
     configs = []
-    for nodes in [5, 10]:
+    for nodes in args.nodes:
         for cipher in ["speck", "aes", "present", "none"]:
             for cap in [1, 2, 4]:
                 configs.append((nodes, cipher, cap))
 
     records = []
-    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+    # If partial run, load existing results to preserve them
+    out_json = RESULTS_DIR / "DEFINITIVE_BENCHMARK_RESULTS.json"
+    existing_records = {}
+    if out_json.exists():
+        try:
+            for r in json.loads(out_json.read_text()):
+                existing_records[(r["nodes"], r["cipher"], r["batch_cap"])] = r
+        except Exception:
+            pass
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as executor:
         future_to_cfg = {executor.submit(execute_run, n, c, k): (n, c, k) for n, c, k in configs}
         for future in concurrent.futures.as_completed(future_to_cfg):
             cfg = future_to_cfg[future]
             try:
                 rec = future.result()
-                records.append(rec)
+                existing_records[cfg] = rec
             except Exception as exc:
                 print(f"ERROR on {cfg}: {exc}", flush=True)
 
-    records.sort(key=lambda r: (r["nodes"], r["cipher"], r["batch_cap"]))
+    all_records = list(existing_records.values())
+    all_records.sort(key=lambda r: (r["nodes"], r["cipher"], r["batch_cap"]))
 
-    out_json = RESULTS_DIR / "DEFINITIVE_BENCHMARK_RESULTS.json"
-    out_json.write_text(json.dumps(records, indent=2))
-    print(f"\nSaved all {len(records)} records to {out_json}")
+    out_json.write_text(json.dumps(all_records, indent=2))
+    print(f"\nSaved all {len(all_records)} records to {out_json}")
 
 
 if __name__ == "__main__":

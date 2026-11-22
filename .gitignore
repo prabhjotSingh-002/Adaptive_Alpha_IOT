@@ -27,3 +27,4 @@ results/dashboard-deps/
 *_bin
 generated-conf.h
 mustafa_benchmarks/**/build/
+mustafa_benchmarks/results/raw/
