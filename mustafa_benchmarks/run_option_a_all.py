@@ -70,12 +70,13 @@ DUTY_RATIO = {
 
 def make_conf_header(target_path: Path, cap: int, cipher: str, last_node: int):
     profile = PROFILE_MAP[cipher]
+    warmup_ms = 100000 if last_node >= 15 else 60000
     lines = [
         "/* Generated for Definitive Benchmark Matrix */",
         f"#define LAB_BATCH_CAP {cap}u",
         "#define LAB_DEADLINE_MS 35000u",
         "#define LAB_PERIOD_MS 10000u",
-        "#define LAB_WARMUP_MS 60000u",
+        f"#define LAB_WARMUP_MS {warmup_ms}u",
         "#define LAB_TOTAL_READINGS 8u",
         f"#define LAB_LAST_NODE {last_node}u",
         "#define LAB_PAYLOAD_BUDGET 67u",
@@ -102,12 +103,13 @@ def make_conf_header(target_path: Path, cap: int, cipher: str, last_node: int):
     target_path.write_text("\n".join(lines) + "\n")
 
 
-def parse_energest_power(log_path: Path, node_ids: list[int]):
+def parse_energest_power(log_path: Path, node_ids: list[int], warmup_s: float = 60.0):
     """Extract raw Energest ticks, full-run power, and post-warmup window power."""
     if not log_path.exists():
         return None
 
-    ticks_at_60s = {}
+    warmup_us = int(warmup_s * 1000000)
+    ticks_at_warmup = {}
     ticks_at_end = {}
     tx_packet_count = 0
     delivered_readings_count = 0
@@ -124,8 +126,8 @@ def parse_energest_power(log_path: Path, node_ids: list[int]):
             tx  = int(match.group(6))
             rx  = int(match.group(7))
             if nid in node_ids:
-                if sim_time_us <= 60000000:
-                    ticks_at_60s[nid] = (sim_time_us, cpu, lpm, tx, rx)
+                if sim_time_us <= warmup_us:
+                    ticks_at_warmup[nid] = (sim_time_us, cpu, lpm, tx, rx)
                 ticks_at_end[nid] = (sim_time_us, cpu, lpm, tx, rx)
             duration_s = max(duration_s, sim_time_us / 1000000.0)
 
@@ -165,8 +167,8 @@ def parse_energest_power(log_path: Path, node_ids: list[int]):
 
     post_cpu_powers, post_tx_powers, post_rx_powers = [], [], []
     for nid in node_ids:
-        if nid in ticks_at_60s and nid in ticks_at_end:
-            t0, c0, _, tx0, rx0 = ticks_at_60s[nid]
+        if nid in ticks_at_warmup and nid in ticks_at_end:
+            t0, c0, _, tx0, rx0 = ticks_at_warmup[nid]
             t1, c1, _, tx1, rx1 = ticks_at_end[nid]
             dt_s = (t1 - t0) / 1000000.0
             dticks = dt_s * RTIMER_HZ
@@ -195,7 +197,7 @@ def parse_energest_power(log_path: Path, node_ids: list[int]):
     duty_total_mw = post_mean_cpu + post_mean_tx + duty_rx_mw + mean_lpm
 
     delivered_per_sensor = delivered_readings_count / float(num_sensors) if num_sensors > 0 else 0.0
-    active_duration_s = max(duration_s - 60.0, 1.0)
+    active_duration_s = max(duration_s - warmup_s, 1.0)
     if delivered_per_sensor > 0:
         tx_energy_uj_reading = (post_mean_tx * active_duration_s * 1000.0) / delivered_per_sensor
         active_energy_uj_reading = ((post_mean_cpu + post_mean_tx) * active_duration_s * 1000.0) / delivered_per_sensor
@@ -255,9 +257,10 @@ def execute_run(nodes: int, cipher: str, cap: int):
             ET.SubElement(mote_type, "firmware").text = f"{c_out}/build/{name}.z1"
 
     script_elem = root.find(".//plugin/plugin_config/script")
-    radio_listener = r"""
+    timeout_ms = 185000 if nodes >= 15 else 142000
+    radio_listener = f"""
 var medium = sim.getRadioMedium();
-var listener = new (Java.type("java.util.function.BiConsumer"))(function(event, unused) {
+var listener = new (Java.type("java.util.function.BiConsumer"))(function(event, unused) {{
   if (String(event) != "TRANSMISSION_FINISHED") return;
   var connection = medium.getLastConnection();
   if (connection == null) return;
@@ -265,10 +268,10 @@ var listener = new (Java.type("java.util.function.BiConsumer"))(function(event, 
   if (packet == null) return;
   var bytes = packet.getPacketData(); var hex = "";
   for (var i=0; i<bytes.length; i++) hex += ("0" + ((bytes[i] & 255).toString(16))).slice(-2);
-  log.log("RADIO," + sim.getSimulationTime() + "," + connection.getSource().getMote().getID() + "," + hex + "\n");
-});
+  log.log("RADIO," + sim.getSimulationTime() + "," + connection.getSource().getMote().getID() + "," + hex + "\\n");
+}});
 medium.getRadioTransmissionTriggers().addTrigger(listener, listener);
-TIMEOUT(142000, log.log("MUSTAFA_RUN_COMPLETE\n"); log.testOK());
+TIMEOUT({timeout_ms}, log.log("MUSTAFA_RUN_COMPLETE\\n"); log.testOK());
 """
     if keys is not None:
         slots = 1
@@ -382,7 +385,8 @@ while (true) {
     (run_dir / "stderr.log").write_text(res.stderr)
 
     sensor_nodes = list(range(2, nodes + 1))
-    power = parse_energest_power(run_dir / "COOJA.testlog", sensor_nodes)
+    warmup_s = 100.0 if nodes >= 15 else 60.0
+    power = parse_energest_power(run_dir / "COOJA.testlog", sensor_nodes, warmup_s=warmup_s)
 
     record = {
         "run_id": run_id,
