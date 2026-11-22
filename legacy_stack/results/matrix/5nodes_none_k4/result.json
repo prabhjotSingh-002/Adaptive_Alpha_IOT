@@ -1,0 +1,47 @@
+{
+  "sensors_measured": 4,
+  "mean_cpu_mw": 0.1523,
+  "mean_tx_mw": 0.1489,
+  "mean_rx_mw": 0.39,
+  "mean_lpm_mw": 0.0033,
+  "mean_total_mw": 0.6945,
+  "tx_packet_count": 8,
+  "delivered_readings": 32,
+  "total_expected_readings": 32,
+  "pdr_percent": 100.0,
+  "tx_energy_uj_reading": 1675.26,
+  "node_breakdown": {
+    "2": {
+      "cpu_mw": 0.1418,
+      "tx_mw": 0.1345,
+      "rx_mw": 0.3655,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.6451
+    },
+    "3": {
+      "cpu_mw": 0.184,
+      "tx_mw": 0.1736,
+      "rx_mw": 0.4489,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.8098
+    },
+    "4": {
+      "cpu_mw": 0.1581,
+      "tx_mw": 0.1548,
+      "rx_mw": 0.3939,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.71
+    },
+    "5": {
+      "cpu_mw": 0.1253,
+      "tx_mw": 0.1328,
+      "rx_mw": 0.3517,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.6131
+    }
+  },
+  "nodes": 5,
+  "cipher": "none",
+  "cap": 4,
+  "elapsed_seconds": 27.3
+}

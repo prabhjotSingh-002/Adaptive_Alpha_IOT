@@ -1,0 +1,82 @@
+{
+  "sensors_measured": 9,
+  "mean_cpu_mw": 0.1923,
+  "mean_tx_mw": 0.1667,
+  "mean_rx_mw": 0.436,
+  "mean_lpm_mw": 0.0032,
+  "mean_total_mw": 0.7983,
+  "tx_packet_count": 18,
+  "delivered_readings": 28,
+  "total_expected_readings": 72,
+  "pdr_percent": 38.89,
+  "tx_energy_uj_reading": 4823.26,
+  "node_breakdown": {
+    "2": {
+      "cpu_mw": 0.1732,
+      "tx_mw": 0.1536,
+      "rx_mw": 0.3915,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.7215
+    },
+    "3": {
+      "cpu_mw": 0.2951,
+      "tx_mw": 0.2538,
+      "rx_mw": 0.6164,
+      "lpm_mw": 0.0032,
+      "total_mw": 1.1685
+    },
+    "4": {
+      "cpu_mw": 0.1968,
+      "tx_mw": 0.1735,
+      "rx_mw": 0.4248,
+      "lpm_mw": 0.0032,
+      "total_mw": 0.7983
+    },
+    "5": {
+      "cpu_mw": 0.1443,
+      "tx_mw": 0.1355,
+      "rx_mw": 0.3621,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.6452
+    },
+    "6": {
+      "cpu_mw": 0.1909,
+      "tx_mw": 0.1548,
+      "rx_mw": 0.4832,
+      "lpm_mw": 0.0032,
+      "total_mw": 0.8321
+    },
+    "7": {
+      "cpu_mw": 0.2376,
+      "tx_mw": 0.1902,
+      "rx_mw": 0.5027,
+      "lpm_mw": 0.0032,
+      "total_mw": 0.9337
+    },
+    "8": {
+      "cpu_mw": 0.1722,
+      "tx_mw": 0.1346,
+      "rx_mw": 0.3845,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.6945
+    },
+    "9": {
+      "cpu_mw": 0.1485,
+      "tx_mw": 0.1464,
+      "rx_mw": 0.3715,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.6696
+    },
+    "10": {
+      "cpu_mw": 0.1719,
+      "tx_mw": 0.1582,
+      "rx_mw": 0.3877,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.7211
+    }
+  },
+  "nodes": 10,
+  "cipher": "speck",
+  "cap": 4,
+  "elapsed_seconds": 56.8
+}
