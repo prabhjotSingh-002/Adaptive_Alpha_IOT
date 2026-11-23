@@ -149,7 +149,6 @@ PROCESS_THREAD(sensor_process, ev, data)
       }
       dyn_ctx.buf_cnt = agg_queue.count;
       flush_reason_t reason = dyn_batch_evaluate(&dyn_ctx, (int16_t)rd.value, rd.created_ms, etx_raw, (readings_sent >= LAB_TOTAL_READINGS));
-      printf("RSLAB,%u,TICK,rd=%lu,val=%u,etx=%u,cap=%u,reason=%u\n", (unsigned)node_id, (unsigned long)reading_id, (unsigned)rd.value, etx_raw, dyn_ctx.k_cap, (unsigned)reason);
 
       bool do_flush = (reason != FLUSH_NONE);
       if(reason == FLUSH_ALARM_VOI) stat_alarm++;
