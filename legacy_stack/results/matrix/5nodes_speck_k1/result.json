@@ -1,47 +1,51 @@
 {
   "sensors_measured": 4,
-  "mean_cpu_mw": 0.2041,
-  "mean_tx_mw": 0.2079,
-  "mean_rx_mw": 0.4368,
-  "mean_lpm_mw": 0.0032,
-  "mean_total_mw": 0.852,
-  "tx_packet_count": 32,
-  "delivered_readings": 32,
-  "total_expected_readings": 32,
+  "mean_cpu_mw": 0.1692,
+  "mean_tx_mw": 0.1265,
+  "mean_rx_mw": 0.4159,
+  "mean_lpm_mw": 0.0033,
+  "mean_total_mw": 0.7149,
+  "mean_lpm_53uA_mw": 0.16,
+  "mean_total_53uA_mw": 0.8716,
+  "tx_packet_count": 48,
+  "delivered_readings": 48,
+  "total_expected_readings": 48,
   "pdr_percent": 100.0,
-  "tx_energy_uj_reading": 2338.45,
+  "tx_energy_uj_reading": 1265.25,
+  "tot_energy_uj_reading": 8716.48,
+  "mean_latency_ms": 769.4,
   "node_breakdown": {
     "2": {
-      "cpu_mw": 0.1888,
-      "tx_mw": 0.1882,
-      "rx_mw": 0.4048,
+      "cpu_mw": 0.1448,
+      "tx_mw": 0.0936,
+      "rx_mw": 0.373,
       "lpm_mw": 0.0033,
-      "total_mw": 0.785
+      "total_mw": 0.6146
     },
     "3": {
-      "cpu_mw": 0.2512,
-      "tx_mw": 0.2516,
-      "rx_mw": 0.5085,
+      "cpu_mw": 0.218,
+      "tx_mw": 0.1691,
+      "rx_mw": 0.4843,
       "lpm_mw": 0.0032,
-      "total_mw": 1.0145
+      "total_mw": 0.8746
     },
     "4": {
-      "cpu_mw": 0.218,
-      "tx_mw": 0.2242,
-      "rx_mw": 0.4603,
-      "lpm_mw": 0.0032,
-      "total_mw": 0.9057
+      "cpu_mw": 0.1888,
+      "tx_mw": 0.1498,
+      "rx_mw": 0.439,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.7808
     },
     "5": {
-      "cpu_mw": 0.1582,
-      "tx_mw": 0.1675,
-      "rx_mw": 0.3737,
+      "cpu_mw": 0.1253,
+      "tx_mw": 0.0937,
+      "rx_mw": 0.3674,
       "lpm_mw": 0.0033,
-      "total_mw": 0.7027
+      "total_mw": 0.5896
     }
   },
   "nodes": 5,
   "cipher": "speck",
   "cap": 1,
-  "elapsed_seconds": 28.1
+  "elapsed_seconds": 15.1
 }

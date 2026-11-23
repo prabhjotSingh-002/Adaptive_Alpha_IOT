@@ -16,8 +16,8 @@
     </events>
     <motetype>org.contikios.cooja.mspmote.Z1MoteType<identifier>mtype829</identifier>
       <description>Cooja Mote Type #1</description>
-      <source>/workspace/firmware/root/root.c</source>
-      <commands>make -j1 root.z1 TARGET=z1 ASCON_IMPL=ref</commands>
+      <source>/workspace/legacy_stack/firmware/root.c</source>
+      <commands>true</commands>
       <firmware>/workspace/legacy_stack/firmware/root.z1</firmware>
       <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.IPAddress</moteinterface>
@@ -30,8 +30,8 @@
     </motetype>
     <motetype>org.contikios.cooja.mspmote.Z1MoteType<identifier>mtype405</identifier>
       <description>Cooja Mote Type #2</description>
-      <source>/workspace/firmware/sensor/sensor.c</source>
-      <commands>make -j1 sensor.z1 TARGET=z1 ASCON_IMPL=ref</commands>
+      <source>/workspace/legacy_stack/firmware/sensor.c</source>
+      <commands>true</commands>
       <firmware>/workspace/legacy_stack/firmware/sensor.z1</firmware>
       <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.IPAddress</moteinterface>
@@ -112,7 +112,7 @@ var listener = new (Java.type("java.util.function.BiConsumer"))(function(event, 
   log.log("RADIO," + sim.getSimulationTime() + "," + connection.getSource().getMote().getID() + "," + hex + "\n");
 });
 medium.getRadioTransmissionTriggers().addTrigger(listener, listener);
-TIMEOUT(150000, log.log("MUSTAFA_RUN_COMPLETE\n"); log.testOK());
+TIMEOUT(240000, log.log("MUSTAFA_RUN_COMPLETE\n"); log.testOK());
 while (true) { YIELD(); log.log(time + "," + id + "," + msg + "\n"); }
 </script>
       <active>true</active>

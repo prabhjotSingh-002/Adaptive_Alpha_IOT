@@ -1,82 +1,86 @@
 {
   "sensors_measured": 9,
-  "mean_cpu_mw": 0.3675,
-  "mean_tx_mw": 0.2189,
-  "mean_rx_mw": 0.527,
+  "mean_cpu_mw": 0.3229,
+  "mean_tx_mw": 0.1442,
+  "mean_rx_mw": 0.4887,
   "mean_lpm_mw": 0.0032,
-  "mean_total_mw": 1.1165,
-  "tx_packet_count": 36,
-  "delivered_readings": 24,
-  "total_expected_readings": 72,
-  "pdr_percent": 33.33,
-  "tx_energy_uj_reading": 7386.41,
+  "mean_total_mw": 0.959,
+  "mean_lpm_53uA_mw": 0.16,
+  "mean_total_53uA_mw": 1.1158,
+  "tx_packet_count": 54,
+  "delivered_readings": 102,
+  "total_expected_readings": 108,
+  "pdr_percent": 94.44,
+  "tx_energy_uj_reading": 1526.72,
+  "tot_energy_uj_reading": 11813.9,
+  "mean_latency_ms": 6729.6,
   "node_breakdown": {
     "2": {
-      "cpu_mw": 0.3116,
-      "tx_mw": 0.1455,
-      "rx_mw": 0.3854,
+      "cpu_mw": 0.2692,
+      "tx_mw": 0.0676,
+      "rx_mw": 0.3562,
       "lpm_mw": 0.0032,
-      "total_mw": 0.8457
+      "total_mw": 0.6962
     },
     "3": {
-      "cpu_mw": 0.571,
-      "tx_mw": 0.5004,
-      "rx_mw": 1.077,
+      "cpu_mw": 0.5316,
+      "tx_mw": 0.4134,
+      "rx_mw": 0.796,
       "lpm_mw": 0.0032,
-      "total_mw": 2.1516
+      "total_mw": 1.7442
     },
     "4": {
-      "cpu_mw": 0.3825,
-      "tx_mw": 0.2247,
-      "rx_mw": 0.4919,
+      "cpu_mw": 0.3163,
+      "tx_mw": 0.1152,
+      "rx_mw": 0.422,
       "lpm_mw": 0.0032,
-      "total_mw": 1.1022
+      "total_mw": 0.8567
     },
     "5": {
-      "cpu_mw": 0.2963,
-      "tx_mw": 0.1455,
-      "rx_mw": 0.3672,
+      "cpu_mw": 0.2558,
+      "tx_mw": 0.0687,
+      "rx_mw": 0.3679,
       "lpm_mw": 0.0032,
-      "total_mw": 0.8121
+      "total_mw": 0.6957
     },
     "6": {
-      "cpu_mw": 0.3968,
-      "tx_mw": 0.2741,
-      "rx_mw": 0.5933,
+      "cpu_mw": 0.3135,
+      "tx_mw": 0.1119,
+      "rx_mw": 0.5719,
       "lpm_mw": 0.0032,
-      "total_mw": 1.2674
+      "total_mw": 1.0005
     },
     "7": {
-      "cpu_mw": 0.3933,
-      "tx_mw": 0.1979,
-      "rx_mw": 0.6384,
+      "cpu_mw": 0.3491,
+      "tx_mw": 0.1314,
+      "rx_mw": 0.7829,
       "lpm_mw": 0.0032,
-      "total_mw": 1.2328
+      "total_mw": 1.2666
     },
     "8": {
-      "cpu_mw": 0.3249,
-      "tx_mw": 0.1457,
-      "rx_mw": 0.3896,
+      "cpu_mw": 0.3496,
+      "tx_mw": 0.2495,
+      "rx_mw": 0.3753,
       "lpm_mw": 0.0032,
-      "total_mw": 0.8634
+      "total_mw": 0.9776
     },
     "9": {
-      "cpu_mw": 0.2916,
-      "tx_mw": 0.1412,
-      "rx_mw": 0.3741,
+      "cpu_mw": 0.253,
+      "tx_mw": 0.0757,
+      "rx_mw": 0.3593,
       "lpm_mw": 0.0032,
-      "total_mw": 0.8101
+      "total_mw": 0.6913
     },
     "10": {
-      "cpu_mw": 0.3392,
-      "tx_mw": 0.1947,
-      "rx_mw": 0.4261,
+      "cpu_mw": 0.2679,
+      "tx_mw": 0.0643,
+      "rx_mw": 0.3665,
       "lpm_mw": 0.0032,
-      "total_mw": 0.9633
+      "total_mw": 0.702
     }
   },
   "nodes": 10,
   "cipher": "present",
   "cap": 2,
-  "elapsed_seconds": 69.9
+  "elapsed_seconds": 47.4
 }

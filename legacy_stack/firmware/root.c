@@ -15,7 +15,7 @@
 
 static struct simple_udp_connection root_conn;
 #if (LAB_PROFILE > 0)
-#define MAX_SENSORS 16
+#define MAX_SENSORS 17
 static lab_security_context security_ctx[MAX_SENSORS];
 #endif
 static const uint8_t master_key[16] = {
@@ -54,7 +54,7 @@ rx_callback(struct simple_udp_connection *c,
   if(ok) {
     uint8_t i;
     for(i = 0; i < batch.count; i++) {
-      printf("RSLAB,1,RX,%lu,%u\n", (unsigned long)batch.readings[i].id, (unsigned)batch.readings[i].value);
+      printf("RSLAB,1,RX,%lu,%u,%lu\n", (unsigned long)batch.readings[i].id, (unsigned)batch.readings[i].value, (unsigned long)batch.readings[i].created_ms);
     }
   }
 }

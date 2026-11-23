@@ -1,0 +1,121 @@
+{
+  "sensors_measured": 14,
+  "mean_cpu_mw": 0.1491,
+  "mean_tx_mw": 0.0883,
+  "mean_rx_mw": 0.4092,
+  "mean_lpm_mw": 0.0033,
+  "mean_total_mw": 0.6498,
+  "mean_lpm_53uA_mw": 0.16,
+  "mean_total_53uA_mw": 0.8066,
+  "tx_packet_count": 42,
+  "delivered_readings": 164,
+  "total_expected_readings": 168,
+  "pdr_percent": 97.62,
+  "tx_energy_uj_reading": 904.54,
+  "tot_energy_uj_reading": 8262.31,
+  "mean_latency_ms": 16026.5,
+  "node_breakdown": {
+    "2": {
+      "cpu_mw": 0.1674,
+      "tx_mw": 0.1159,
+      "rx_mw": 0.4349,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.7215
+    },
+    "3": {
+      "cpu_mw": 0.2608,
+      "tx_mw": 0.1782,
+      "rx_mw": 0.5427,
+      "lpm_mw": 0.0032,
+      "total_mw": 0.9849
+    },
+    "4": {
+      "cpu_mw": 0.143,
+      "tx_mw": 0.0678,
+      "rx_mw": 0.3893,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.6034
+    },
+    "5": {
+      "cpu_mw": 0.1135,
+      "tx_mw": 0.0693,
+      "rx_mw": 0.3559,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.5419
+    },
+    "6": {
+      "cpu_mw": 0.164,
+      "tx_mw": 0.0953,
+      "rx_mw": 0.5079,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.7705
+    },
+    "7": {
+      "cpu_mw": 0.2164,
+      "tx_mw": 0.1376,
+      "rx_mw": 0.4952,
+      "lpm_mw": 0.0032,
+      "total_mw": 0.8525
+    },
+    "8": {
+      "cpu_mw": 0.177,
+      "tx_mw": 0.0884,
+      "rx_mw": 0.4045,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.6731
+    },
+    "9": {
+      "cpu_mw": 0.1383,
+      "tx_mw": 0.0743,
+      "rx_mw": 0.3804,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.5962
+    },
+    "10": {
+      "cpu_mw": 0.167,
+      "tx_mw": 0.0788,
+      "rx_mw": 0.3822,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.6312
+    },
+    "11": {
+      "cpu_mw": 0.1344,
+      "tx_mw": 0.0724,
+      "rx_mw": 0.3701,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.5803
+    },
+    "12": {
+      "cpu_mw": 0.0923,
+      "tx_mw": 0.0563,
+      "rx_mw": 0.3437,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.4956
+    },
+    "13": {
+      "cpu_mw": 0.1119,
+      "tx_mw": 0.0615,
+      "rx_mw": 0.3897,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.5664
+    },
+    "14": {
+      "cpu_mw": 0.0919,
+      "tx_mw": 0.056,
+      "rx_mw": 0.3577,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.5088
+    },
+    "15": {
+      "cpu_mw": 0.1093,
+      "tx_mw": 0.0845,
+      "rx_mw": 0.3741,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.5712
+    }
+  },
+  "nodes": 15,
+  "cipher": "speck",
+  "cap": 4,
+  "elapsed_seconds": 53.0
+}

@@ -23,11 +23,11 @@
 #endif
 
 #ifndef LAB_TOTAL_READINGS
-#define LAB_TOTAL_READINGS 8
+#define LAB_TOTAL_READINGS 12
 #endif
 
 #ifndef LAB_WARMUP_S
-#define LAB_WARMUP_S 60
+#define LAB_WARMUP_S 100
 #endif
 
 #ifndef LAB_PERIOD_S
@@ -82,7 +82,12 @@ PROCESS_THREAD(sensor_process, ev, data)
   /* Target Root is aaaa::1 */
   uip_ip6addr(&root_addr, 0xaaaa, 0, 0, 0, 0, 0, 0, 1);
 
-  /* Start Unified 10-second Tick Timer */
+  /* Stagger initial sensor tick to prevent synchronous ContikiMAC strobe collisions (450ms spacing) */
+  clock_time_t initial_offset = (clock_time_t)(((node_id - 2) * (CLOCK_SECOND * 45 / 100)) % (CLOCK_SECOND * 10));
+  if(initial_offset > 0) {
+    etimer_set(&tick_timer, initial_offset);
+    PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&tick_timer));
+  }
   etimer_set(&tick_timer, CLOCK_SECOND * 10);
 
   printf("RSLAB,%u,BOOT,sensor_initialized,cap=%u,profile=%u\n", (unsigned)node_id, LAB_BATCH_CAP, LAB_PROFILE);
@@ -104,12 +109,11 @@ PROCESS_THREAD(sensor_process, ev, data)
     if(seconds_elapsed >= LAB_WARMUP_S && readings_sent < LAB_TOTAL_READINGS) {
       lab_reading rd;
       rd.id = ((uint32_t)node_id << 16) | (++reading_id);
-      rd.created_ms = (uint32_t)((uint64_t)clock_time() * 1000 / CLOCK_SECOND);
+      rd.created_ms = (uint32_t)clock_seconds() * 1000 + (uint32_t)((clock_time() % CLOCK_SECOND) * 1000 / CLOCK_SECOND);
       rd.value = 250 + (uint16_t)(reading_id % 30);
 
       lab_offer(&agg_queue, (uint16_t)node_id, rd);
       readings_sent++;
-      printf("RSLAB,%u,GEN,%lu,q=%u\n", (unsigned)node_id, (unsigned long)rd.id, (unsigned)agg_queue.count);
 
       /* Flush batch if capacity reached or all readings generated */
       if(agg_queue.count >= LAB_BATCH_CAP || readings_sent >= LAB_TOTAL_READINGS) {

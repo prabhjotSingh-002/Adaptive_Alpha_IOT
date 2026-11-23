@@ -24,4 +24,16 @@
 #define UIP_CONF_ROUTER 1
 #define UIP_CONF_IPV6_RPL 1
 
+/* Queue Buffers & MAC Retransmissions */
+#ifdef IS_ROOT
+#undef QUEUEBUF_CONF_NUM
+#define QUEUEBUF_CONF_NUM 4
+#else
+#undef QUEUEBUF_CONF_NUM
+#define QUEUEBUF_CONF_NUM 8
+#endif
+
+#undef CSMA_CONF_MAX_MAC_TRANSMISSIONS
+#define CSMA_CONF_MAX_MAC_TRANSMISSIONS 5
+
 #endif /* PROJECT_CONF_H_ */

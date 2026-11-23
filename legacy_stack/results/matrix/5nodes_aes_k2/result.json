@@ -1,47 +1,51 @@
 {
   "sensors_measured": 4,
-  "mean_cpu_mw": 0.175,
-  "mean_tx_mw": 0.171,
-  "mean_rx_mw": 0.415,
+  "mean_cpu_mw": 0.1393,
+  "mean_tx_mw": 0.0917,
+  "mean_rx_mw": 0.3853,
   "mean_lpm_mw": 0.0033,
-  "mean_total_mw": 0.7642,
-  "tx_packet_count": 16,
-  "delivered_readings": 32,
-  "total_expected_readings": 32,
+  "mean_total_mw": 0.6196,
+  "mean_lpm_53uA_mw": 0.16,
+  "mean_total_53uA_mw": 0.7763,
+  "tx_packet_count": 24,
+  "delivered_readings": 48,
+  "total_expected_readings": 48,
   "pdr_percent": 100.0,
-  "tx_energy_uj_reading": 1923.22,
+  "tx_energy_uj_reading": 916.62,
+  "tot_energy_uj_reading": 7763.1,
+  "mean_latency_ms": 5794.3,
   "node_breakdown": {
     "2": {
-      "cpu_mw": 0.1575,
-      "tx_mw": 0.1455,
-      "rx_mw": 0.3759,
+      "cpu_mw": 0.1225,
+      "tx_mw": 0.0675,
+      "rx_mw": 0.3542,
       "lpm_mw": 0.0033,
-      "total_mw": 0.6821
+      "total_mw": 0.5475
     },
     "3": {
-      "cpu_mw": 0.222,
-      "tx_mw": 0.2121,
-      "rx_mw": 0.5077,
-      "lpm_mw": 0.0032,
-      "total_mw": 0.945
+      "cpu_mw": 0.1843,
+      "tx_mw": 0.1318,
+      "rx_mw": 0.444,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.7633
     },
     "4": {
-      "cpu_mw": 0.1796,
-      "tx_mw": 0.1808,
-      "rx_mw": 0.4173,
+      "cpu_mw": 0.1469,
+      "tx_mw": 0.0998,
+      "rx_mw": 0.3926,
       "lpm_mw": 0.0033,
-      "total_mw": 0.7809
+      "total_mw": 0.6426
     },
     "5": {
-      "cpu_mw": 0.1408,
-      "tx_mw": 0.1455,
-      "rx_mw": 0.359,
+      "cpu_mw": 0.1037,
+      "tx_mw": 0.0675,
+      "rx_mw": 0.3505,
       "lpm_mw": 0.0033,
-      "total_mw": 0.6486
+      "total_mw": 0.5249
     }
   },
   "nodes": 5,
   "cipher": "aes",
   "cap": 2,
-  "elapsed_seconds": 27.8
+  "elapsed_seconds": 22.7
 }
