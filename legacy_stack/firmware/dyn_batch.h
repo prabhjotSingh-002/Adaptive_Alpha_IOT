@@ -24,6 +24,7 @@ typedef enum {
 typedef struct {
   int16_t  x_baseline;      /* Smoothed calm baseline (spikes do NOT corrupt this) */
   uint32_t first_ts_ms;     /* Timestamp of oldest buffered reading */
+  uint16_t prev_etx;        /* Previous valid link metric for trend tracking */
   uint8_t  buf_cnt;         /* Current buffered count: 0..4 */
   uint8_t  k_cap;           /* Active dynamic cap: 2 or 4 */
   uint8_t  initialized;     /* Baseline init flag */
@@ -33,6 +34,7 @@ typedef struct {
 static inline void dyn_batch_init(dyn_batch_ctx_t *ctx) {
   ctx->x_baseline = 0;
   ctx->first_ts_ms = 0;
+  ctx->prev_etx = 0;
   ctx->buf_cnt = 0;
   ctx->k_cap = DYN_K_MAX;
   ctx->initialized = 0;
@@ -76,13 +78,22 @@ static inline flush_reason_t dyn_batch_evaluate(
   ctx->x_baseline = (int16_t)((ctx->x_baseline * 7 + x_t) >> 3);
   ctx->last_was_alarm = 0;
 
-  /* Gate 2: Local RPL Parent ETX Cap with Hysteresis */
+  /* Gate 2: Local RPL Parent ETX Cap with Hysteresis & Trend Filter */
 #ifndef DISABLE_ETX_CLAMP
   /* Filter out uninitialized / stale values (>= 512) and 0 */
   if(parent_etx_raw >= DYN_ETX_CLAMP_RAW && parent_etx_raw < 512) {
-    ctx->k_cap = DYN_K_LOSSY;
+    /* Only clamp when ETX actually climbed due to retries/NOACK (parent_etx_raw > prev_etx),
+       ignoring static unchanged buffer intervals and monotonic decay from initial RPL metric */
+    if(ctx->prev_etx > 0 && parent_etx_raw > ctx->prev_etx) {
+      ctx->k_cap = DYN_K_LOSSY;
+    }
   } else if(parent_etx_raw > 0 && parent_etx_raw <= DYN_ETX_RECOVER_RAW) {
     ctx->k_cap = DYN_K_MAX;
+  }
+
+  /* Track previous valid metric */
+  if(parent_etx_raw > 0 && parent_etx_raw < 512) {
+    ctx->prev_etx = parent_etx_raw;
   }
 #endif
 
