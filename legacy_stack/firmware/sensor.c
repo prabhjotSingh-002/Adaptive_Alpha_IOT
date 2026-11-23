@@ -9,6 +9,17 @@
 #include "protocol.h"
 #include "aggregate.h"
 #include "secure_packet.h"
+#if ENABLE_DYN_BATCH
+#include "dyn_batch.h"
+static dyn_batch_ctx_t dyn_ctx;
+static uint16_t stat_alarm = 0;
+static uint16_t stat_etx_cap = 0;
+static uint16_t stat_cap4 = 0;
+static uint16_t stat_aoi = 0;
+static uint16_t stat_end = 0;
+static uint16_t stat_max_etx = 0;
+static uint16_t stat_last_etx = 0;
+#endif
 #include <stdio.h>
 #include <string.h>
 
@@ -70,7 +81,12 @@ PROCESS_THREAD(sensor_process, ev, data)
   set_global_address();
 
   /* Initialize Aggregation Queue with Capacity k */
+#if ENABLE_DYN_BATCH
+  dyn_batch_init(&dyn_ctx);
+  lab_aggregate_init(&agg_queue, (uint16_t)node_id, DYN_K_MAX, 35000, 67, 16);
+#else
   lab_aggregate_init(&agg_queue, (uint16_t)node_id, LAB_BATCH_CAP, 35000, 67, 16);
+#endif
 
 #if (LAB_PROFILE > 0)
   lab_security_init_profile(&security_ctx, LAB_PROFILE, (uint16_t)node_id, 1, master_key);
@@ -108,15 +124,45 @@ PROCESS_THREAD(sensor_process, ev, data)
     /* 2. Sensor Reading Generation (Post-Warmup Window) */
     if(seconds_elapsed >= LAB_WARMUP_S && readings_sent < LAB_TOTAL_READINGS) {
       lab_reading rd;
-      rd.id = ((uint32_t)node_id << 16) | (++reading_id);
+      reading_id++;
+      rd.id = ((uint32_t)node_id << 16) | reading_id;
       rd.created_ms = (uint32_t)clock_seconds() * 1000 + (uint32_t)((clock_time() % CLOCK_SECOND) * 1000 / CLOCK_SECOND);
+
+#if ENABLE_SPIKE_TRACE
+      if(reading_id == 5 || reading_id == 10) {
+        rd.value = 330;
+      } else {
+        rd.value = 250 + (uint16_t)((reading_id + node_id) % 5);
+      }
+#else
       rd.value = 250 + (uint16_t)(reading_id % 30);
+#endif
 
       lab_offer(&agg_queue, (uint16_t)node_id, rd);
       readings_sent++;
 
+#if ENABLE_DYN_BATCH
+      uint16_t etx_raw = get_parent_etx_raw();
+      stat_last_etx = etx_raw;
+      if(etx_raw > stat_max_etx && etx_raw < 512) {
+        stat_max_etx = etx_raw;
+      }
+      dyn_ctx.buf_cnt = agg_queue.count;
+      flush_reason_t reason = dyn_batch_evaluate(&dyn_ctx, (int16_t)rd.value, rd.created_ms, etx_raw, (readings_sent >= LAB_TOTAL_READINGS));
+      printf("RSLAB,%u,TICK,rd=%lu,val=%u,etx=%u,cap=%u,reason=%u\n", (unsigned)node_id, (unsigned long)reading_id, (unsigned)rd.value, etx_raw, dyn_ctx.k_cap, (unsigned)reason);
+
+      bool do_flush = (reason != FLUSH_NONE);
+      if(reason == FLUSH_ALARM_VOI) stat_alarm++;
+      else if(reason == FLUSH_ETX_CAP) stat_etx_cap++;
+      else if(reason == FLUSH_NORMAL_CAP) stat_cap4++;
+      else if(reason == FLUSH_AOI_TIMEOUT) stat_aoi++;
+      else if(reason == FLUSH_WINDOW_END) stat_end++;
+#else
+      bool do_flush = (agg_queue.count >= LAB_BATCH_CAP || readings_sent >= LAB_TOTAL_READINGS);
+#endif
+
       /* Flush batch if capacity reached or all readings generated */
-      if(agg_queue.count >= LAB_BATCH_CAP || readings_sent >= LAB_TOTAL_READINGS) {
+      if(do_flush) {
         lab_batch batch;
         if(lab_build_batch(&agg_queue, batch_counter++, &batch)) {
           batch.sender = (uint16_t)node_id;
@@ -139,6 +185,10 @@ PROCESS_THREAD(sensor_process, ev, data)
             simple_udp_sendto(&sensor_conn, wire, wire_len, &root_addr);
             printf("RSLAB,%u,TX\n", (unsigned)node_id);
             lab_commit_on_send(&agg_queue, batch.count);
+#if ENABLE_DYN_BATCH
+            dyn_ctx.buf_cnt = agg_queue.count;
+            dyn_ctx.first_ts_ms = 0;
+#endif
           } else {
             printf("RSLAB,%u,ERR_ENCODE\n", (unsigned)node_id);
           }
@@ -146,6 +196,13 @@ PROCESS_THREAD(sensor_process, ev, data)
           printf("RSLAB,%u,ERR_BUILD\n", (unsigned)node_id);
         }
       }
+
+#if ENABLE_DYN_BATCH
+      if(readings_sent >= LAB_TOTAL_READINGS && agg_queue.count == 0) {
+        printf("RSLAB,%u,DYN_STATS,alarm=%u,etx_cap=%u,cap4=%u,aoi=%u,end=%u,max_etx=%u,last_etx=%u\n",
+               (unsigned)node_id, stat_alarm, stat_etx_cap, stat_cap4, stat_aoi, stat_end, stat_max_etx, stat_last_etx);
+      }
+#endif
     }
 
     etimer_reset(&tick_timer);
