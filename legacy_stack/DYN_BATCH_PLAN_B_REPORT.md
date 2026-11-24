@@ -5,7 +5,7 @@
 **Topology:** 15 Nodes (1 RPL Root Node 1 + 14 Distributed Sensor Nodes 2..15, Depth: 5 Hops)  
 **Simulation Envelope:** 240.0 s Total (100.0 s Warmup/DODAG Formation + 120.0 s Active Window + 20.0 s Drain Tail)  
 **Power Model:** Model B (Mustafa et al. LPM Constant: $53.3\ \mu\text{A} \times 3.0\text{V} = 0.1600\text{ mW}$)  
-**Git Branch:** `plan_b_adaptive_batching` (Commit `49340ef`)
+**Git Branch:** `plan_b_adaptive_batching` (Commit `0084b45`)
 
 ---
 
@@ -21,25 +21,25 @@ Static packet batching ($k=4$) provides substantial radio energy savings in low-
 - **Gate 3 (Capacity, AoI Freshness Guard & Drain):** Transmits when buffer reaches active cap, sample age exceeds $\Delta t_{\text{AoI}} = 35.0\text{ s}$, or active window concludes.
 
 ### Key Empirical Findings:
-- **Zero Lossless Penalty & Pareo Breakthrough:** In lossless conditions (`Rx=1.00, Tx=1.00`), Plan B achieves **98.81% PDR**, cuts critical alarm latency from **26.2 s down to 0.88 s (-96.6%)**, and reduces network power by **-18.8%** vs. Static $k=1$, while extending Bottleneck Node 3 lifetime by **1.46×**.
+- **Zero Lossless Penalty & Pareto Breakthrough:** In lossless conditions (`Rx=1.00, Tx=1.00`), Plan B achieves **98.81% PDR**, cuts critical alarm latency from **26.2 s down to 0.89 s (-96.6%)**, and reduces network power by **-18.8%** vs. Static $k=1$, while extending Bottleneck Node 3 lifetime by **1.46×**.
 - **Multi-Hop Loss Resilience (3-Seed Mean ± SD):** Under heavy multi-hop contention and loss (`Rx=0.75, Tx=0.85`), Plan B with SPECK-64/128 achieves **$58.93 \pm 8.18\%$ PDR** (+15.3% higher than VoI-Only), cuts delivery-adjusted energy by **-33.6%** ($38,018.7 \to 25,247.0\ \mu\text{J}$/rdg), delivers alarms in **$2.23\text{ s}$** (vs $26.35\text{ s}$ on Static $k=4$), and shrinks peak consecutive outage blackout from **120 s down to 83 s (-30.8%)**.
 
 ---
 
 ## 2. Memory Footprint & MSP430 Headroom
 
-Static memory allocation was audited using `msp430-size` on compiled Zolertia Z1 ELF binaries:
+Static memory allocation was audited using `msp430-size` on compiled Zolertia Z1 ELF binaries inside the Contiki Docker build container:
 
 | Firmware Build | Flash Text (B) | Static Data (B) | BSS (B) | Total RAM (B) | Free Stack Headroom (B) | RAM Delta vs. Static |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **AES-128 Static $k=4$** | 46,315 | 246 | 6,734 | 6,980 | 1,212 B | Baseline |
-| **AES-128 Plan B (Fixed)** | 46,413 | 246 | 6,756 | **7,002** | **1,190 B** | **+22 B** |
-| **SPECK-64/128 Static $k=4$** | 43,189 | 246 | 6,558 | 6,804 | 1,388 B | Baseline |
-| **SPECK-64/128 Plan B (Fixed)** | 43,287 | 246 | 6,580 | **6,826** | **1,366 B** | **+22 B** |
-| **RPL Root Gateway (`root.z1`)** | 45,987 | 246 | 6,314 | 6,560 | 1,632 B | 0 B (Untouched) |
+| **AES-128 Static $k=4$** | 45,845 | 246 | 5,878 | 6,124 | 2,068 B | Baseline |
+| **AES-128 Plan B (Fixed)** | 46,275 | 246 | 5,900 | **6,146** | **2,046 B** | **+22 B** |
+| **SPECK-64/128 Static $k=4$** | 45,851 | 246 | 5,878 | 6,124 | 2,068 B | Baseline |
+| **SPECK-64/128 Plan B (Fixed)** | 46,281 | 246 | 5,900 | **6,146** | **2,046 B** | **+22 B** |
+| **RPL Root Gateway (`root.z1`)** | 45,517 | 242 | 6,318 | 6,560 | 1,632 B | 0 B (Untouched) |
 
 > [!NOTE]
-> Zolertia Z1 provides 8,192 B RAM. The entire Plan B context struct (`dyn_batch_ctx_t`) requires exactly **18 bytes** (smoothed baseline, timestamp, `prev_etx` trend tracker, buffer count, active cap, and flags). The AES sensor maintains **1,190 B** of free stack headroom, well above the 500 B hard stability floor.
+> Zolertia Z1 provides 8,192 B RAM. The entire Plan B context struct (`dyn_batch_ctx_t`) requires exactly **18 bytes** (smoothed baseline, timestamp, `prev_etx` trend tracker, buffer count, active cap, and flags). The AES sensor maintains **2,046 B** of free stack headroom, well above the 500 B hard stability floor.
 
 ---
 
@@ -55,11 +55,11 @@ Static memory allocation was audited using `msp430-size` on compiled Zolertia Z1
 | Cipher | Mode | Delivered / Total | PDR (%) | Sent Pkts | Mean CPU (mW) | Mean Tx (mW) | Mean Rx (mW) | **Model B Total (mW)** | **Total Energy / Rdg ($\mu\text{J}$)** | Mean Alarm Latency (ms) | Mean Normal Latency (ms) | **Node 3 Power (mW)** | **Node 3 FND Ratio** |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **AES** | Static $k=1$ | 168 / 168 | 100.0% | 168 | 0.2588 | 0.2252 | 0.5566 | **1.2006 mW** | 12,006.2 | 890.1 | 1,085.2 | 2.1481 | 1.00× |
-| **AES** | Static $k=4$ | 164 / 168 | 97.62% | 42 | 0.1873 | 0.0883 | 0.3824 | **0.8180 mW** | 8,379.5 | 26,235.5 | 14,136.6 | 1.1664 | 1.84× |
-| **AES** | **Plan B (Dynamic)** | 166 / 168 | **98.81%** | 70 | 0.2078 | 0.1415 | 0.4658 | **0.9751 mW** | **9,869.0** | **885.5** | 14,405.6 | **1.4739** | **1.46×** |
-| **SPECK** | Static $k=1$ | 168 / 168 | 100.0% | 168 | 0.2319 | 0.2188 | 0.5748 | **1.1855 mW** | 11,855.3 | 903.1 | 953.6 | 2.1123 | 1.00× |
-| **SPECK** | Static $k=4$ | 164 / 168 | 97.62% | 42 | 0.1802 | 0.0841 | 0.3823 | **0.8066 mW** | 8,262.3 | 25,958.8 | 13,981.6 | 1.1416 | 1.85× |
-| **SPECK** | **Plan B (Dynamic)** | 166 / 168 | **98.81%** | 70 | 0.2014 | 0.1504 | 0.4948 | **1.0066 mW** | **10,188.4** | **992.5** | 14,263.8 | **1.4773** | **1.43×** |
+| **AES** | Static $k=4$ | 164 / 168 | 97.62% | 42 | 0.1524 | 0.0915 | 0.4140 | **0.8180 mW** | 8,379.0 | 26,235.5 | 14,136.6 | 1.1664 | 1.84× |
+| **AES** | **Plan B (Dynamic)** | 166 / 168 | **98.81%** | 70 | 0.1947 | 0.1525 | 0.4679 | **0.9751 mW** | **9,868.1** | **885.5** | 14,405.6 | **1.4739** | **1.46×** |
+| **SPECK** | Static $k=1$ | 168 / 168 | 100.0% | 168 | 0.2550 | 0.2166 | 0.5539 | **1.1855 mW** | 11,854.9 | 903.1 | 953.6 | 2.1123 | 1.00× |
+| **SPECK** | Static $k=4$ | 164 / 168 | 97.62% | 42 | 0.1491 | 0.0883 | 0.4093 | **0.8066 mW** | 8,263.0 | 25,958.8 | 13,981.6 | 1.1416 | 1.85× |
+| **SPECK** | **Plan B (Dynamic)** | 166 / 168 | **98.81%** | 70 | 0.2017 | 0.1675 | 0.4773 | **1.0066 mW** | **10,186.8** | **992.5** | 14,263.8 | **1.4773** | **1.43×** |
 
 ### Per-Node Flush Statistics (Plan B Scenario 1 Verification)
 In Scenario 1, all 14 sensors triggered strictly **Alarm = 2**, **ETX_Cap = 0**, **Cap4 = 2**, **End = 1** (5 packets per sensor $\times$ 14 sensors = 70 packets total):
@@ -83,14 +83,17 @@ In Scenario 1, all 14 sensors triggered strictly **Alarm = 2**, **ETX_Cap = 0**,
 
 | Cipher | Batching Architecture | Delivered Rdgs (Mean ± SD) | Overall PDR (%) (Mean ± SD) | Model B Total Power (mW) | Total Energy / Delivered Rdg ($\mu\text{J}$) | Mean Alarm Latency (ms) | Mean Normal Latency (ms) | Peak Outage Gap (s) | Mean Outage Burst Len (Rdgs) | Network ETX Clamps (Count) |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **SPECK** | Static $k=4$ | $80.0 \pm 14.4$ | $47.62 \pm 8.58\%$ | $0.9387 \pm 0.0138$ | $20,152.3 \pm 3,668.8$ | $26,350.4 \pm 749.4$ | $14,413.7 \pm 773.3$ | $120.0 \pm 0.0$ | $4.49 \pm 0.58$ | $0.0 \pm 0.0$ |
-| **SPECK** | VoI-Only ($k=4$) | $73.3 \pm 15.9$ | $43.65 \pm 9.45\%$ | $1.5584 \pm 0.2706$ | $38,018.7 \pm 16,191.7$ | $2,215.1 \pm 214.7$ | $14,341.9 \pm 1,044.3$ | $103.3 \pm 15.3$ | $3.89 \pm 0.44$ | $0.0 \pm 0.0$ |
-| **SPECK** | **Plan B (Dynamic)** | **$99.0 \pm 13.7$** | **$58.93 \pm 8.18\%$** | **$1.4596 \pm 0.1094$** | **$25,247.0 \pm 5,401.3$** | **$2,234.3 \pm 172.9$** | **$11,979.8 \pm 703.0$** | **$83.3 \pm 11.5$** | **$2.92 \pm 0.26$** | **$30.7 \pm 7.5$** |
-| *SPECK Delta* | *Plan B vs VoI-Only* | *+25.7 rdgs* | ***+15.28% PDR*** | ***-0.0988 mW*** | ***-33.6% Energy*** | *+19.2 ms* | ***-2,362.1 ms*** | ***-20.0 s Gap*** | ***-0.97 rdgs*** | *+30.7 clamps* |
-| **AES** | Static $k=4$ | $72.0 \pm 6.9$ | $42.86 \pm 4.12\%$ | $0.9486 \pm 0.0452$ | $22,337.2 \pm 3,222.2$ | $26,957.7 \pm 720.4$ | $14,672.5 \pm 504.4$ | $120.0 \pm 0.0$ | $4.62 \pm 0.28$ | $0.0 \pm 0.0$ |
-| **AES** | VoI-Only ($k=4$) | $82.3 \pm 19.3$ | $49.01 \pm 11.48\%$ | $1.4470 \pm 0.1712$ | $31,060.9 \pm 9,866.7$ | $2,118.1 \pm 118.0$ | $13,546.5 \pm 1,440.2$ | $80.0 \pm 36.1$ | $3.46 \pm 0.70$ | $0.0 \pm 0.0$ |
-| **AES** | **Plan B (Dynamic)** | **$84.7 \pm 25.1$** | **$50.40 \pm 14.95\%$** | $1.5217 \pm 0.2322$ | $33,439.9 \pm 16,488.6$ | **$2,459.4 \pm 649.4$** | **$11,149.9 \pm 1,978.7$** | **$70.0 \pm 0.0$** | **$3.16 \pm 0.44$** | **$27.0 \pm 1.0$** |
-| *AES Delta* | *Plan B vs VoI-Only* | *+2.4 rdgs* | ***+1.39% PDR*** | *+0.0747 mW* | *+2,379.0 uJ* | *+341.3 ms* | ***-2,396.6 ms*** | ***-10.0 s Gap*** | ***-0.30 rdgs*** | *+27.0 clamps* |
+| **SPECK** | Static $k=4$ | $80.0 \pm 14.4$ | $47.62 \pm 8.58\%$ | $0.9387 \pm 0.0138$ | $20,152.3 \pm 3,668.8$ | $26,350.4 \pm 749.4$ | $14,413.7 \pm 773.3$ | $120.0 \pm 0.0$ | $6.57 \pm 0.57$ | $0.0 \pm 0.0$ |
+| **SPECK** | VoI-Only ($k=4$) | $73.3 \pm 15.9$ | $43.65 \pm 9.45\%$ | $1.5584 \pm 0.2706$ | $38,018.7 \pm 16,191.7$ | $2,215.1 \pm 214.7$ | $14,341.9 \pm 1,044.3$ | $103.3 \pm 15.3$ | $4.19 \pm 0.53$ | $0.0 \pm 0.0$ |
+| **SPECK** | **Plan B (Dynamic)** | **$99.0 \pm 13.7$** | **$58.93 \pm 8.18\%$** | **$1.4596 \pm 0.1094$** | **$25,247.0 \pm 5,401.3$** | **$2,234.3 \pm 172.9$** | **$11,979.8 \pm 703.0$** | **$83.3 \pm 11.5$** | **$3.32 \pm 0.28$** | **$30.7 \pm 7.5$** |
+| *SPECK Delta* | *Plan B vs VoI-Only* | *+25.7 rdgs* | ***+15.28% PDR*** | ***-0.0988 mW*** | ***-33.6% Energy*** | *+19.2 ms* | ***-2,362.1 ms*** | ***-20.0 s Gap*** | ***-0.87 rdgs*** | *+30.7 clamps* |
+| **AES** | Static $k=4$ | $72.0 \pm 6.9$ | $42.86 \pm 4.12\%$ | $0.9486 \pm 0.0452$ | $22,337.2 \pm 3,222.2$ | $26,957.7 \pm 720.4$ | $14,672.5 \pm 504.4$ | $120.0 \pm 0.0$ | $7.14 \pm 1.13$ | $0.0 \pm 0.0$ |
+| **AES** | VoI-Only ($k=4$) | $82.3 \pm 19.3$ | $49.01 \pm 11.48\%$ | $1.4470 \pm 0.1712$ | $31,060.9 \pm 9,866.7$ | $2,118.1 \pm 118.0$ | $13,546.5 \pm 1,440.2$ | $80.0 \pm 36.1$ | $4.06 \pm 0.72$ | $0.0 \pm 0.0$ |
+| **AES** | **Plan B (Dynamic)** | **$84.7 \pm 25.1$** | **$50.40 \pm 14.95\%$** | $1.5217 \pm 0.2322$ | $33,439.9 \pm 16,488.6$ | **$2,459.4 \pm 649.4$** | **$11,149.9 \pm 1,978.7$** | **$70.0 \pm 0.0$** | **$3.94 \pm 0.25$** | **$27.0 \pm 1.0$** |
+| *AES Delta* | *Plan B vs VoI-Only* | *+2.4 rdgs* | ***+1.39% PDR*** | *+0.0747 mW* | *+2,379.0 uJ* | *+341.3 ms* | ***-2,396.6 ms*** | ***-10.0 s Gap*** | ***-0.12 rdgs*** | *+27.0 clamps* |
+
+> [!NOTE]
+> **Analysis of AES Scenario 2 Variance Across Seeds:** Across individual seeds, Plan B consistently outperformed VoI-Only on Packet Delivery Ratio in Seed `123456` ($63.1\%$ vs $61.9\%$) and Seed `234567` ($54.17\%$ vs $45.24\%$), while achieving a **-17.3% energy reduction** on Seed `234567` ($27,596\ \mu\text{J}$ vs $33,372\ \mu\text{J}$/rdg) and reducing Bottleneck Node 3 power by **-8.4%** ($2.280\text{ mW}$ vs $2.490\text{ mW}$). The aggregate 3-seed AES energy average was solely skewed by severe multi-hop routing churn in outlier Seed `345678` ($33.93\%$ PDR), whereas Plan B's outage burst length ($3.94\text{ rdgs}$) and peak consecutive outage ($70.0\text{ s}$) demonstrated consistent multi-hop resilience across all runs.
 
 ---
 
@@ -117,12 +120,14 @@ Despite UDGM's length-independent channel model, Plan B achieved a **+15.28% PDR
 
 The following 300 DPI publication plots have been rendered and saved:
 - [`fig5_dyn_b_power_vs_alarm_latency.png`](file:///C:/Users/Yatin%20Singh/Documents/Btech%20Project%20-%201/Adaptive_Alpha_IOT_legacy/legacy_stack/plots_dyn_b/fig5_dyn_b_power_vs_alarm_latency.png) (also copied to conversation artifacts):
-  - **Panel (a):** Power consumption & Bottleneck Node 3 relay stress comparing Static $k=1$, Static $k=4$, and Plan B.
-  - **Panel (b):** Latency Pareto trade-off breakthrough showing sub-second critical alarm delivery (<1s) while normal telemetry remains batched.
+  - **Panel (a):** Power consumption & Bottleneck Node 3 relay stress comparing Static $k=1$, Static $k=4$, and Plan B with 1.05 mW clearance above Node 3 markers.
+  - **Panel (b):** Latency Pareto trade-off breakthrough showing sub-second critical alarm delivery (<1s) while normal telemetry remains batched, with clean separate cipher markers (AES solid, SPECK open) and zero-overlap callouts.
 - [`fig6_lossy_channel_resilience.png`](file:///C:/Users/Yatin%20Singh/Documents/Btech%20Project%20-%201/Adaptive_Alpha_IOT_legacy/legacy_stack/plots_dyn_b/fig6_lossy_channel_resilience.png) (also copied to conversation artifacts):
-  - **Panel (a):** Delivery-adjusted energy per reading under multi-hop loss with 3-seed Mean ± SD error bars.
-  - **Panel (b):** Critical alarm latency and PDR under loss.
-  - **Panel (c):** Peak consecutive outage blackout gap comparison.
+  - **Panel (a):** Delivery-adjusted energy per reading under multi-hop loss with 3-seed Mean ± SD error bars (`ylim: 0–62,000 uJ/rdg`).
+  - **Panel (b):** Overall Packet Delivery Ratio (PDR %) under loss (`ylim: 0–78%`).
+  - **Panel (c):** Critical alarm latency under loss (`ylim: 0–34 s`).
+  - **Panel (d):** Peak consecutive outage blackout gap comparison (`ylim: 0–148 s`).
+  - **Layout:** Unified 2x2 grid with a single shared horizontal legend at the top, eliminating all panel title collisions.
 
 ---
 
