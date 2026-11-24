@@ -1,0 +1,309 @@
+{
+  "pdr": 65.48,
+  "delivered": 110,
+  "total_expected": 168,
+  "tx_packet_count": 73,
+  "mean_model_b_mw": 1.1119,
+  "mean_cpu_mw": 0.2253,
+  "mean_tx_mw": 0.2177,
+  "mean_rx_mw": 0.5089,
+  "tot_energy_uj_reading": 16981.91,
+  "mean_alarm_lat_ms": 1771.0,
+  "mean_norm_lat_ms": 13397.0,
+  "node3_model_b_mw": 1.9692,
+  "node4_model_b_mw": 0.9134,
+  "node8_model_b_mw": 1.1706,
+  "leaf_nodes": [],
+  "relay_nodes": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "mean_leaf_mw": 0.0,
+  "mean_relay_mw": 1.1119,
+  "mean_leaf_rx_mw": 0.0,
+  "mean_relay_rx_mw": 0.5089,
+  "dyn_stats": {
+    "2": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 407,
+      "last_etx": 295,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "3": {
+      "alarm": 2,
+      "etx_cap": 5,
+      "cap4": 0,
+      "aoi": 0,
+      "end": 0,
+      "max_etx": 315,
+      "last_etx": 250,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "4": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 487,
+      "last_etx": 307,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "5": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 489,
+      "last_etx": 346,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "6": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 429,
+      "last_etx": 322,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "7": {
+      "alarm": 2,
+      "etx_cap": 3,
+      "cap4": 1,
+      "aoi": 0,
+      "end": 0,
+      "max_etx": 429,
+      "last_etx": 201,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "8": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 413,
+      "last_etx": 278,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "9": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 509,
+      "last_etx": 318,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "10": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 402,
+      "last_etx": 194,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "12": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 462,
+      "last_etx": 367,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "11": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 494,
+      "last_etx": 270,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "13": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 390,
+      "last_etx": 277,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "14": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 440,
+      "last_etx": 390,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "15": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 461,
+      "last_etx": 427,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    }
+  },
+  "node_powers": {
+    "2": {
+      "cpu_mw": 0.2079,
+      "tx_mw": 0.1608,
+      "rx_mw": 0.5095,
+      "lpm_mw": 0.1573,
+      "total_mw": 1.0354,
+      "model_b_total_mw": 1.0382
+    },
+    "3": {
+      "cpu_mw": 0.4443,
+      "tx_mw": 0.4966,
+      "rx_mw": 0.8683,
+      "lpm_mw": 0.1543,
+      "total_mw": 1.9635,
+      "model_b_total_mw": 1.9692
+    },
+    "4": {
+      "cpu_mw": 0.1853,
+      "tx_mw": 0.1299,
+      "rx_mw": 0.4382,
+      "lpm_mw": 0.1575,
+      "total_mw": 0.9109,
+      "model_b_total_mw": 0.9134
+    },
+    "5": {
+      "cpu_mw": 0.1274,
+      "tx_mw": 0.0824,
+      "rx_mw": 0.3656,
+      "lpm_mw": 0.1583,
+      "total_mw": 0.7337,
+      "model_b_total_mw": 0.7354
+    },
+    "6": {
+      "cpu_mw": 0.1962,
+      "tx_mw": 0.1452,
+      "rx_mw": 0.4677,
+      "lpm_mw": 0.1574,
+      "total_mw": 0.9665,
+      "model_b_total_mw": 0.9691
+    },
+    "7": {
+      "cpu_mw": 0.3737,
+      "tx_mw": 0.399,
+      "rx_mw": 0.7876,
+      "lpm_mw": 0.1552,
+      "total_mw": 1.7153,
+      "model_b_total_mw": 1.7202
+    },
+    "8": {
+      "cpu_mw": 0.2625,
+      "tx_mw": 0.2298,
+      "rx_mw": 0.5183,
+      "lpm_mw": 0.1566,
+      "total_mw": 1.1671,
+      "model_b_total_mw": 1.1706
+    },
+    "9": {
+      "cpu_mw": 0.3877,
+      "tx_mw": 0.6137,
+      "rx_mw": 0.6168,
+      "lpm_mw": 0.155,
+      "total_mw": 1.7731,
+      "model_b_total_mw": 1.7782
+    },
+    "10": {
+      "cpu_mw": 0.2519,
+      "tx_mw": 0.1894,
+      "rx_mw": 0.5595,
+      "lpm_mw": 0.1567,
+      "total_mw": 1.1575,
+      "model_b_total_mw": 1.1608
+    },
+    "11": {
+      "cpu_mw": 0.1688,
+      "tx_mw": 0.1214,
+      "rx_mw": 0.4255,
+      "lpm_mw": 0.1578,
+      "total_mw": 0.8735,
+      "model_b_total_mw": 0.8758
+    },
+    "12": {
+      "cpu_mw": 0.1062,
+      "tx_mw": 0.0749,
+      "rx_mw": 0.3549,
+      "lpm_mw": 0.1585,
+      "total_mw": 0.6945,
+      "model_b_total_mw": 0.696
+    },
+    "13": {
+      "cpu_mw": 0.188,
+      "tx_mw": 0.1723,
+      "rx_mw": 0.4509,
+      "lpm_mw": 0.1575,
+      "total_mw": 0.9687,
+      "model_b_total_mw": 0.9712
+    },
+    "14": {
+      "cpu_mw": 0.1371,
+      "tx_mw": 0.1409,
+      "rx_mw": 0.3717,
+      "lpm_mw": 0.1581,
+      "total_mw": 0.8079,
+      "model_b_total_mw": 0.8097
+    },
+    "15": {
+      "cpu_mw": 0.1174,
+      "tx_mw": 0.092,
+      "rx_mw": 0.3897,
+      "lpm_mw": 0.1584,
+      "total_mw": 0.7575,
+      "model_b_total_mw": 0.7591
+    }
+  },
+  "run_id": "diag2_lossy_planb_hyst_aes_s345678",
+  "elapsed_wall_s": 142.9
+}

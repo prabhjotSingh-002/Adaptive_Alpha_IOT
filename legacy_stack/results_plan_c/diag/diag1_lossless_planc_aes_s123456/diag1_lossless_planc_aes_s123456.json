@@ -1,0 +1,310 @@
+{
+  "pdr": 86.9,
+  "delivered": 146,
+  "total_expected": 168,
+  "tx_packet_count": 70,
+  "mean_model_b_mw": 0.8409,
+  "mean_cpu_mw": 0.1751,
+  "mean_tx_mw": 0.1189,
+  "mean_rx_mw": 0.387,
+  "tot_energy_uj_reading": 9675.76,
+  "mean_alarm_lat_ms": 899.8,
+  "mean_norm_lat_ms": 13895.7,
+  "node3_model_b_mw": 1.3423,
+  "node4_model_b_mw": 0.8399,
+  "node8_model_b_mw": 0.8788,
+  "leaf_nodes": [
+    5,
+    12,
+    14,
+    15
+  ],
+  "relay_nodes": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13
+  ],
+  "mean_leaf_mw": 0.4952,
+  "mean_relay_mw": 0.9791,
+  "mean_leaf_rx_mw": 0.1719,
+  "mean_relay_rx_mw": 0.473,
+  "dyn_stats": {
+    "2": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 286,
+      "last_etx": 136,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "4": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 398,
+      "last_etx": 205,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "3": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 202,
+      "last_etx": 128,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "6": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 324,
+      "last_etx": 141,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "5": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 510,
+      "last_etx": 308,
+      "leaf_mode": 1,
+      "sleep_cycles": 1
+    },
+    "7": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 258,
+      "last_etx": 128,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "8": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 346,
+      "last_etx": 156,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "9": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 398,
+      "last_etx": 168,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "10": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 462,
+      "last_etx": 219,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "11": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 398,
+      "last_etx": 209,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "12": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 505,
+      "last_etx": 505,
+      "leaf_mode": 1,
+      "sleep_cycles": 1
+    },
+    "13": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 398,
+      "last_etx": 236,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "14": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 462,
+      "last_etx": 302,
+      "leaf_mode": 1,
+      "sleep_cycles": 1
+    },
+    "15": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 500,
+      "last_etx": 381,
+      "leaf_mode": 1,
+      "sleep_cycles": 1
+    }
+  },
+  "node_powers": {
+    "2": {
+      "cpu_mw": 0.2262,
+      "tx_mw": 0.1804,
+      "rx_mw": 0.5,
+      "lpm_mw": 0.157,
+      "total_mw": 1.0637,
+      "model_b_total_mw": 1.0667
+    },
+    "3": {
+      "cpu_mw": 0.3055,
+      "tx_mw": 0.2538,
+      "rx_mw": 0.623,
+      "lpm_mw": 0.156,
+      "total_mw": 1.3383,
+      "model_b_total_mw": 1.3423
+    },
+    "4": {
+      "cpu_mw": 0.1727,
+      "tx_mw": 0.1066,
+      "rx_mw": 0.4006,
+      "lpm_mw": 0.1577,
+      "total_mw": 0.8376,
+      "model_b_total_mw": 0.8399
+    },
+    "5": {
+      "cpu_mw": 0.1171,
+      "tx_mw": 0.064,
+      "rx_mw": 0.1684,
+      "lpm_mw": 0.1584,
+      "total_mw": 0.508,
+      "model_b_total_mw": 0.5096
+    },
+    "6": {
+      "cpu_mw": 0.2089,
+      "tx_mw": 0.1442,
+      "rx_mw": 0.6331,
+      "lpm_mw": 0.1572,
+      "total_mw": 1.1434,
+      "model_b_total_mw": 1.1461
+    },
+    "7": {
+      "cpu_mw": 0.2534,
+      "tx_mw": 0.1747,
+      "rx_mw": 0.5464,
+      "lpm_mw": 0.1567,
+      "total_mw": 1.1313,
+      "model_b_total_mw": 1.1346
+    },
+    "8": {
+      "cpu_mw": 0.1939,
+      "tx_mw": 0.1053,
+      "rx_mw": 0.4196,
+      "lpm_mw": 0.1574,
+      "total_mw": 0.8763,
+      "model_b_total_mw": 0.8788
+    },
+    "9": {
+      "cpu_mw": 0.1839,
+      "tx_mw": 0.1533,
+      "rx_mw": 0.4243,
+      "lpm_mw": 0.1576,
+      "total_mw": 0.919,
+      "model_b_total_mw": 0.9214
+    },
+    "10": {
+      "cpu_mw": 0.1758,
+      "tx_mw": 0.0841,
+      "rx_mw": 0.3945,
+      "lpm_mw": 0.1577,
+      "total_mw": 0.812,
+      "model_b_total_mw": 0.8143
+    },
+    "11": {
+      "cpu_mw": 0.1531,
+      "tx_mw": 0.0901,
+      "rx_mw": 0.396,
+      "lpm_mw": 0.158,
+      "total_mw": 0.7971,
+      "model_b_total_mw": 0.7991
+    },
+    "12": {
+      "cpu_mw": 0.0869,
+      "tx_mw": 0.0196,
+      "rx_mw": 0.1593,
+      "lpm_mw": 0.1588,
+      "total_mw": 0.4245,
+      "model_b_total_mw": 0.4257
+    },
+    "13": {
+      "cpu_mw": 0.1543,
+      "tx_mw": 0.1412,
+      "rx_mw": 0.3926,
+      "lpm_mw": 0.1579,
+      "total_mw": 0.846,
+      "model_b_total_mw": 0.848
+    },
+    "14": {
+      "cpu_mw": 0.1119,
+      "tx_mw": 0.077,
+      "rx_mw": 0.1761,
+      "lpm_mw": 0.1584,
+      "total_mw": 0.5234,
+      "model_b_total_mw": 0.525
+    },
+    "15": {
+      "cpu_mw": 0.1073,
+      "tx_mw": 0.0697,
+      "rx_mw": 0.1837,
+      "lpm_mw": 0.1585,
+      "total_mw": 0.5191,
+      "model_b_total_mw": 0.5206
+    }
+  },
+  "run_id": "diag1_lossless_planc_aes_s123456",
+  "elapsed_wall_s": 165.6
+}

@@ -1,0 +1,320 @@
+{
+  "pdr": 61.31,
+  "delivered": 103,
+  "total_expected": 168,
+  "tx_packet_count": 73,
+  "mean_model_b_mw": 1.1536,
+  "mean_cpu_mw": 0.2341,
+  "mean_tx_mw": 0.239,
+  "mean_rx_mw": 0.5205,
+  "tot_energy_uj_reading": 18816.16,
+  "mean_alarm_lat_ms": 1568.5,
+  "mean_norm_lat_ms": 13510.7,
+  "max_consecutive_missing": 12,
+  "max_consecutive_missing_s": 120,
+  "mean_outage_burst_len": 3.82,
+  "node3_model_b_mw": 1.714,
+  "node4_model_b_mw": 0.8782,
+  "node8_model_b_mw": 1.0545,
+  "leaf_nodes": [],
+  "relay_nodes": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "mean_leaf_mw": 0.0,
+  "mean_relay_mw": 1.1536,
+  "mean_leaf_rx_mw": 0.0,
+  "mean_relay_rx_mw": 0.5205,
+  "total_alarm_flushes": 28,
+  "total_etx_cap_flushes": 12,
+  "total_cap4_flushes": 24,
+  "total_aoi_flushes": 0,
+  "total_end_flushes": 9,
+  "nodes_etx_ge_192_count": 14,
+  "min_max_etx": 309,
+  "max_max_etx": 500,
+  "dyn_stats": {
+    "2": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 384,
+      "last_etx": 252,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "3": {
+      "alarm": 2,
+      "etx_cap": 5,
+      "cap4": 0,
+      "aoi": 0,
+      "end": 0,
+      "max_etx": 315,
+      "last_etx": 200,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "4": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 487,
+      "last_etx": 259,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "5": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 489,
+      "last_etx": 359,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "6": {
+      "alarm": 2,
+      "etx_cap": 1,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 0,
+      "max_etx": 309,
+      "last_etx": 280,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "7": {
+      "alarm": 2,
+      "etx_cap": 2,
+      "cap4": 1,
+      "aoi": 0,
+      "end": 0,
+      "max_etx": 486,
+      "last_etx": 486,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "8": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 413,
+      "last_etx": 307,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "9": {
+      "alarm": 2,
+      "etx_cap": 1,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 0,
+      "max_etx": 353,
+      "last_etx": 335,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "10": {
+      "alarm": 2,
+      "etx_cap": 3,
+      "cap4": 1,
+      "aoi": 0,
+      "end": 0,
+      "max_etx": 439,
+      "last_etx": 218,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "12": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 474,
+      "last_etx": 425,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "11": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 500,
+      "last_etx": 430,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "13": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 424,
+      "last_etx": 313,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "14": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 474,
+      "last_etx": 343,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "15": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 493,
+      "last_etx": 456,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    }
+  },
+  "node_powers": {
+    "2": {
+      "cpu_mw": 0.274,
+      "tx_mw": 0.2721,
+      "rx_mw": 0.6273,
+      "lpm_mw": 0.0032,
+      "total_mw": 1.1768,
+      "model_b_total_mw": 1.3335
+    },
+    "3": {
+      "cpu_mw": 0.384,
+      "tx_mw": 0.3984,
+      "rx_mw": 0.7716,
+      "lpm_mw": 0.0032,
+      "total_mw": 1.5572,
+      "model_b_total_mw": 1.714
+    },
+    "4": {
+      "cpu_mw": 0.1762,
+      "tx_mw": 0.1187,
+      "rx_mw": 0.4233,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.7214,
+      "model_b_total_mw": 0.8782
+    },
+    "5": {
+      "cpu_mw": 0.1264,
+      "tx_mw": 0.0878,
+      "rx_mw": 0.3668,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.5843,
+      "model_b_total_mw": 0.741
+    },
+    "6": {
+      "cpu_mw": 0.2563,
+      "tx_mw": 0.2463,
+      "rx_mw": 0.5656,
+      "lpm_mw": 0.0032,
+      "total_mw": 1.0715,
+      "model_b_total_mw": 1.2283
+    },
+    "7": {
+      "cpu_mw": 0.3914,
+      "tx_mw": 0.4237,
+      "rx_mw": 0.8041,
+      "lpm_mw": 0.0032,
+      "total_mw": 1.6224,
+      "model_b_total_mw": 1.7792
+    },
+    "8": {
+      "cpu_mw": 0.233,
+      "tx_mw": 0.1873,
+      "rx_mw": 0.4741,
+      "lpm_mw": 0.0032,
+      "total_mw": 0.8977,
+      "model_b_total_mw": 1.0545
+    },
+    "9": {
+      "cpu_mw": 0.2613,
+      "tx_mw": 0.3387,
+      "rx_mw": 0.544,
+      "lpm_mw": 0.0032,
+      "total_mw": 1.1472,
+      "model_b_total_mw": 1.3039
+    },
+    "10": {
+      "cpu_mw": 0.2622,
+      "tx_mw": 0.2084,
+      "rx_mw": 0.5866,
+      "lpm_mw": 0.0032,
+      "total_mw": 1.0603,
+      "model_b_total_mw": 1.2171
+    },
+    "11": {
+      "cpu_mw": 0.329,
+      "tx_mw": 0.5054,
+      "rx_mw": 0.5144,
+      "lpm_mw": 0.0032,
+      "total_mw": 1.3521,
+      "model_b_total_mw": 1.5089
+    },
+    "12": {
+      "cpu_mw": 0.1179,
+      "tx_mw": 0.099,
+      "rx_mw": 0.366,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.5861,
+      "model_b_total_mw": 0.7429
+    },
+    "13": {
+      "cpu_mw": 0.2006,
+      "tx_mw": 0.2097,
+      "rx_mw": 0.4608,
+      "lpm_mw": 0.0032,
+      "total_mw": 0.8743,
+      "model_b_total_mw": 1.031
+    },
+    "14": {
+      "cpu_mw": 0.1393,
+      "tx_mw": 0.1418,
+      "rx_mw": 0.3866,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.671,
+      "model_b_total_mw": 0.8277
+    },
+    "15": {
+      "cpu_mw": 0.126,
+      "tx_mw": 0.1091,
+      "rx_mw": 0.3953,
+      "lpm_mw": 0.0033,
+      "total_mw": 0.6337,
+      "model_b_total_mw": 0.7904
+    }
+  },
+  "run_id": "s2_lossy_speck_planb_hyst_s345678",
+  "elapsed_wall_s": 188.5
+}

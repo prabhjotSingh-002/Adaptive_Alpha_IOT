@@ -1,0 +1,310 @@
+{
+  "pdr": 56.55,
+  "delivered": 95,
+  "total_expected": 168,
+  "tx_packet_count": 73,
+  "mean_model_b_mw": 1.0089,
+  "mean_cpu_mw": 0.2186,
+  "mean_tx_mw": 0.204,
+  "mean_rx_mw": 0.4263,
+  "tot_energy_uj_reading": 17840.84,
+  "mean_alarm_lat_ms": 1624.5,
+  "mean_norm_lat_ms": 12400.9,
+  "node3_model_b_mw": 1.8543,
+  "node4_model_b_mw": 1.3737,
+  "node8_model_b_mw": 1.5989,
+  "leaf_nodes": [
+    5,
+    10,
+    12,
+    14,
+    15
+  ],
+  "relay_nodes": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    11,
+    13
+  ],
+  "mean_leaf_mw": 0.5574,
+  "mean_relay_mw": 1.2597,
+  "mean_leaf_rx_mw": 0.1888,
+  "mean_relay_rx_mw": 0.5582,
+  "dyn_stats": {
+    "2": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 393,
+      "last_etx": 213,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "3": {
+      "alarm": 2,
+      "etx_cap": 3,
+      "cap4": 1,
+      "aoi": 0,
+      "end": 0,
+      "max_etx": 416,
+      "last_etx": 236,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "4": {
+      "alarm": 2,
+      "etx_cap": 3,
+      "cap4": 1,
+      "aoi": 0,
+      "end": 0,
+      "max_etx": 372,
+      "last_etx": 285,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "5": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 457,
+      "last_etx": 343,
+      "leaf_mode": 1,
+      "sleep_cycles": 1
+    },
+    "6": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 443,
+      "last_etx": 336,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "7": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 456,
+      "last_etx": 369,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "8": {
+      "alarm": 2,
+      "etx_cap": 3,
+      "cap4": 1,
+      "aoi": 0,
+      "end": 0,
+      "max_etx": 494,
+      "last_etx": 377,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "9": {
+      "alarm": 2,
+      "etx_cap": 1,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 0,
+      "max_etx": 500,
+      "last_etx": 336,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "10": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 499,
+      "last_etx": 370,
+      "leaf_mode": 1,
+      "sleep_cycles": 1
+    },
+    "12": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 480,
+      "last_etx": 480,
+      "leaf_mode": 1,
+      "sleep_cycles": 1
+    },
+    "11": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 485,
+      "last_etx": 308,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "13": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 500,
+      "last_etx": 286,
+      "leaf_mode": 0,
+      "sleep_cycles": 0
+    },
+    "14": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 497,
+      "last_etx": 400,
+      "leaf_mode": 1,
+      "sleep_cycles": 1
+    },
+    "15": {
+      "alarm": 2,
+      "etx_cap": 0,
+      "cap4": 2,
+      "aoi": 0,
+      "end": 1,
+      "max_etx": 481,
+      "last_etx": 418,
+      "leaf_mode": 1,
+      "sleep_cycles": 1
+    }
+  },
+  "node_powers": {
+    "2": {
+      "cpu_mw": 0.2545,
+      "tx_mw": 0.2266,
+      "rx_mw": 0.6077,
+      "lpm_mw": 0.1567,
+      "total_mw": 1.2454,
+      "model_b_total_mw": 1.2487
+    },
+    "3": {
+      "cpu_mw": 0.406,
+      "tx_mw": 0.4493,
+      "rx_mw": 0.839,
+      "lpm_mw": 0.1547,
+      "total_mw": 1.849,
+      "model_b_total_mw": 1.8543
+    },
+    "4": {
+      "cpu_mw": 0.3021,
+      "tx_mw": 0.2971,
+      "rx_mw": 0.6145,
+      "lpm_mw": 0.1561,
+      "total_mw": 1.3697,
+      "model_b_total_mw": 1.3737
+    },
+    "5": {
+      "cpu_mw": 0.116,
+      "tx_mw": 0.0617,
+      "rx_mw": 0.1809,
+      "lpm_mw": 0.1584,
+      "total_mw": 0.5171,
+      "model_b_total_mw": 0.5186
+    },
+    "6": {
+      "cpu_mw": 0.2796,
+      "tx_mw": 0.2781,
+      "rx_mw": 0.5776,
+      "lpm_mw": 0.1563,
+      "total_mw": 1.2916,
+      "model_b_total_mw": 1.2953
+    },
+    "7": {
+      "cpu_mw": 0.259,
+      "tx_mw": 0.2229,
+      "rx_mw": 0.4934,
+      "lpm_mw": 0.1566,
+      "total_mw": 1.1319,
+      "model_b_total_mw": 1.1353
+    },
+    "8": {
+      "cpu_mw": 0.3665,
+      "tx_mw": 0.5137,
+      "rx_mw": 0.5588,
+      "lpm_mw": 0.1552,
+      "total_mw": 1.5942,
+      "model_b_total_mw": 1.5989
+    },
+    "9": {
+      "cpu_mw": 0.2096,
+      "tx_mw": 0.1912,
+      "rx_mw": 0.4622,
+      "lpm_mw": 0.1572,
+      "total_mw": 1.0202,
+      "model_b_total_mw": 1.023
+    },
+    "10": {
+      "cpu_mw": 0.1795,
+      "tx_mw": 0.1,
+      "rx_mw": 0.2302,
+      "lpm_mw": 0.1576,
+      "total_mw": 0.6674,
+      "model_b_total_mw": 0.6697
+    },
+    "11": {
+      "cpu_mw": 0.195,
+      "tx_mw": 0.1596,
+      "rx_mw": 0.4771,
+      "lpm_mw": 0.1574,
+      "total_mw": 0.9892,
+      "model_b_total_mw": 0.9918
+    },
+    "12": {
+      "cpu_mw": 0.129,
+      "tx_mw": 0.1115,
+      "rx_mw": 0.1867,
+      "lpm_mw": 0.1582,
+      "total_mw": 0.5854,
+      "model_b_total_mw": 0.5872
+    },
+    "13": {
+      "cpu_mw": 0.1488,
+      "tx_mw": 0.1137,
+      "rx_mw": 0.3937,
+      "lpm_mw": 0.158,
+      "total_mw": 0.8142,
+      "model_b_total_mw": 0.8162
+    },
+    "14": {
+      "cpu_mw": 0.1196,
+      "tx_mw": 0.0947,
+      "rx_mw": 0.1757,
+      "lpm_mw": 0.1583,
+      "total_mw": 0.5483,
+      "model_b_total_mw": 0.55
+    },
+    "15": {
+      "cpu_mw": 0.0948,
+      "tx_mw": 0.036,
+      "rx_mw": 0.1705,
+      "lpm_mw": 0.1587,
+      "total_mw": 0.4599,
+      "model_b_total_mw": 0.4613
+    }
+  },
+  "run_id": "diag4_lossy_planc_combined_aes_s345678",
+  "elapsed_wall_s": 183.2
+}

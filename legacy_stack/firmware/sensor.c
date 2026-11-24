@@ -20,6 +20,25 @@ static uint16_t stat_end = 0;
 static uint16_t stat_max_etx = 0;
 static uint16_t stat_last_etx = 0;
 #endif
+
+#if ENABLE_LEAF_RDC_SLEEP
+#include "net/uip-ds6-route.h"
+#include "net/netstack.h"
+#include "sys/ctimer.h"
+static struct ctimer leaf_sleep_timer;
+static uint8_t is_leaf_sleeping = 0;
+static uint8_t zero_route_ticks = 0;
+static uint8_t leaf_mode_active = 0;
+static uint16_t stat_sleep_cycles = 0;
+
+static void leaf_sleep_timer_cb(void *ptr) {
+  (void)ptr;
+  if(leaf_mode_active) {
+    is_leaf_sleeping = 1;
+    NETSTACK_RDC.off(0);
+  }
+}
+#endif
 #include <stdio.h>
 #include <string.h>
 
@@ -121,6 +140,34 @@ PROCESS_THREAD(sensor_process, ev, data)
 
     printf("RSLAB,%u,ENERGY_RAW,%lu,%lu,0,%lu,%lu\n", (unsigned)node_id, cpu, lpm, tx, rx);
 
+#if ENABLE_LEAF_RDC_SLEEP
+    if(seconds_elapsed >= 110 && (readings_sent >= 4 || batch_counter > 1)) {
+      rpl_dag_t *curr_dag = rpl_get_any_dag();
+      int nroutes = uip_ds6_route_num_routes();
+      bool has_parent = (curr_dag != NULL && curr_dag->joined && curr_dag->preferred_parent != NULL);
+
+      if(nroutes == 0 && has_parent) {
+        if(zero_route_ticks < 255) zero_route_ticks++;
+        if(zero_route_ticks >= 2) {
+          leaf_mode_active = 1;
+          if(!is_leaf_sleeping) {
+            is_leaf_sleeping = 1;
+            stat_sleep_cycles++;
+            NETSTACK_RDC.off(0);
+          }
+        }
+      } else {
+        zero_route_ticks = 0;
+        leaf_mode_active = 0;
+        if(is_leaf_sleeping) {
+          is_leaf_sleeping = 0;
+          ctimer_stop(&leaf_sleep_timer);
+          NETSTACK_RDC.on();
+        }
+      }
+    }
+#endif
+
     /* 2. Sensor Reading Generation (Post-Warmup Window) */
     if(seconds_elapsed >= LAB_WARMUP_S && readings_sent < LAB_TOTAL_READINGS) {
       lab_reading rd;
@@ -162,6 +209,13 @@ PROCESS_THREAD(sensor_process, ev, data)
 
       /* Flush batch if capacity reached or all readings generated */
       if(do_flush) {
+#if ENABLE_LEAF_RDC_SLEEP
+        if(is_leaf_sleeping) {
+          is_leaf_sleeping = 0;
+          ctimer_stop(&leaf_sleep_timer);
+          NETSTACK_RDC.on();
+        }
+#endif
         lab_batch batch;
         if(lab_build_batch(&agg_queue, batch_counter++, &batch)) {
           batch.sender = (uint16_t)node_id;
@@ -188,18 +242,42 @@ PROCESS_THREAD(sensor_process, ev, data)
             dyn_ctx.buf_cnt = agg_queue.count;
             dyn_ctx.first_ts_ms = 0;
 #endif
+#if ENABLE_LEAF_RDC_SLEEP
+            if(leaf_mode_active) {
+              /* Post-TX guard: keep awake for 5.0s to allow CSMA retries, fragments & ACK */
+              ctimer_set(&leaf_sleep_timer, CLOCK_SECOND * 5, leaf_sleep_timer_cb, NULL);
+            }
+#endif
           } else {
             printf("RSLAB,%u,ERR_ENCODE\n", (unsigned)node_id);
+#if ENABLE_LEAF_RDC_SLEEP
+            if(leaf_mode_active) {
+              is_leaf_sleeping = 1;
+              NETSTACK_RDC.off(0);
+            }
+#endif
           }
         } else {
           printf("RSLAB,%u,ERR_BUILD\n", (unsigned)node_id);
+#if ENABLE_LEAF_RDC_SLEEP
+          if(leaf_mode_active) {
+            is_leaf_sleeping = 1;
+            NETSTACK_RDC.off(0);
+          }
+#endif
         }
       }
 
 #if ENABLE_DYN_BATCH
       if(readings_sent >= LAB_TOTAL_READINGS && agg_queue.count == 0) {
+#if ENABLE_LEAF_RDC_SLEEP
+        printf("RSLAB,%u,DYN_STATS,alarm=%u,etx_cap=%u,cap4=%u,aoi=%u,end=%u,max_etx=%u,last_etx=%u,leaf_mode=%u,sleep_cycles=%u\n",
+               (unsigned)node_id, stat_alarm, stat_etx_cap, stat_cap4, stat_aoi, stat_end, stat_max_etx, stat_last_etx,
+               (unsigned)leaf_mode_active, (unsigned)stat_sleep_cycles);
+#else
         printf("RSLAB,%u,DYN_STATS,alarm=%u,etx_cap=%u,cap4=%u,aoi=%u,end=%u,max_etx=%u,last_etx=%u\n",
                (unsigned)node_id, stat_alarm, stat_etx_cap, stat_cap4, stat_aoi, stat_end, stat_max_etx, stat_last_etx);
+#endif
       }
 #endif
     }

@@ -27,3 +27,7 @@ results/dashboard-deps/
 *_bin
 generated-conf.h
 mustafa_benchmarks/**/build/
+
+# Plan C raw testlogs (track JSON summaries and per-run results)
+legacy_stack/results_plan_c/**/*.testlog
+

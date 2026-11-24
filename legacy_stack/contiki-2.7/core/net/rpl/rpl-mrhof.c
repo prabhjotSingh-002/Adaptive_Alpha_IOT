@@ -81,7 +81,11 @@ rpl_of_t rpl_mrhof = {
  * The rank must differ more than 1/PARENT_SWITCH_THRESHOLD_DIV in order
  * to switch preferred parent.
  */
-#define PARENT_SWITCH_THRESHOLD_DIV	2
+#ifdef ENABLE_MRHOF_HYST
+#define PARENT_SWITCH_THRESHOLD_DIV	1   /* 1.0 ETX (128 raw) hysteresis to stop central-cluster flapping */
+#else
+#define PARENT_SWITCH_THRESHOLD_DIV	2   /* Contiki 2.7 default: 0.5 ETX (64 raw) */
+#endif
 
 typedef uint16_t rpl_path_metric_t;
 
