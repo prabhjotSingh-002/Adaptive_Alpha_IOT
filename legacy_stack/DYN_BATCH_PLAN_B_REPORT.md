@@ -5,7 +5,7 @@
 **Topology:** 15 Nodes (1 RPL Root Node 1 + 14 Distributed Sensor Nodes 2..15, Depth: 5 Hops)  
 **Simulation Envelope:** 240.0 s Total (100.0 s Warmup/DODAG Formation + 120.0 s Active Window + 20.0 s Drain Tail)  
 **Power Model:** Model B (Mustafa et al. LPM Constant: $53.3\ \mu\text{A} \times 3.0\text{V} = 0.1600\text{ mW}$)  
-**Git Branch:** `plan_b_adaptive_batching` (Commit `0084b45`)
+**Git Branch:** `plan_b_adaptive_batching` (Commit `82c093e`)
 
 ---
 

@@ -97,7 +97,7 @@ def plot_fig5(summary: dict):
         saving_pct = ((pwr_k1_mean[i] - pwr_pb_mean[i]) / pwr_k1_mean[i]) * 100.0
         fnd_ratio = s1[ciphers[i]]["dyn_b"]["fnd_lifetime_ratio"]
         ax1.text(x[i] + width, pwr_pb_mean[i] / 2.0, f"-{saving_pct:.1f}%\n({fnd_ratio:.2f}× FND)",
-                 ha="center", va="center", fontsize=7.8, fontweight="bold", color="white")
+                 ha="center", va="center", fontsize=6.8, fontweight="bold", color="white")
     
     ax1.set_ylabel("Power Consumption (mW)")
     ax1.set_title("(a) Power Consumption & Relay Stress (15 Nodes, Lossless)", pad=12)
