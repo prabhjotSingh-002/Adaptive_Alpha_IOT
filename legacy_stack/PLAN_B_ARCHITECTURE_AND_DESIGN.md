@@ -19,9 +19,9 @@ However, static aggregation introduces two critical systemic liabilities:
 In energy-constrained wireless sensor networks, the optimal batching problem can be formulated as minimizing average transmission power subject to hard latency and freshness constraints:
 $$\min_{k_t \in \{1, 2, 4\}} \lim_{T \to \infty} \frac{1}{T} \sum_{t=0}^{T-1} \mathbb{E}\left[ P_{\text{tx}}(k_t) \right]$$
 $$\text{subject to} \quad L_{\text{alarm}} \le L_{\max}^{\text{alarm}} \ (\approx 1.0\text{ s}), \quad \text{AoI}_i(t) \le \Delta t_{\text{AoI}} \ (35.0\text{ s}), \quad \forall i$$
-While stochastic network optimization often addresses such problems using online Lyapunov Drift-Plus-Penalty (DPP) frameworks with virtual delay queues $Z(t)$ (e.g., Zou et al., IEEE TCE 2026), implementing continuous floating-point drift calculations and dynamic multipliers on an 8 MHz, 16-bit MSP430 MCU introduces prohibitive computational overhead and memory instability.
+While stochastic network optimization often addresses such problems using online Lyapunov Drift-Plus-Penalty (DPP) frameworks with virtual delay queues $Z(t)$ (e.g., Neely, 2010), implementing continuous floating-point drift calculations and dynamic multipliers on an 8 MHz, 16-bit MSP430 MCU introduces prohibitive computational overhead and memory instability.
 
-Instead, Plan B implements a **deterministic, rule-based 3-Gate dual-threshold controller** operating strictly with integer arithmetic and 18 bytes of RAM. This provides the exact operational benefits of the theoretical optimization (guaranteed sub-second alarm delivery and bounded queuing age) without runtime solver overhead. Full stochastic Lyapunov DPP integration with formal queue convergence bounds is established as an important avenue for future work.
+Instead, Plan B implements a **deterministic, rule-based 3-Gate dual-threshold controller** operating strictly with integer arithmetic and 12 bytes of core RAM state (plus 10 bytes of diagnostic telemetry counters). This provides the exact operational benefits of the theoretical optimization (guaranteed sub-second alarm delivery and bounded queuing age) without runtime solver overhead. Full stochastic Lyapunov DPP integration with formal queue convergence bounds is established as an important avenue for future work.
 
 ---
 
@@ -93,18 +93,23 @@ typedef struct {
   uint8_t  k_cap;           /* 1 B: Active batch cap (2 or 4) */
   uint8_t  initialized;     /* 1 B: Initialization flag */
   uint8_t  last_was_alarm;  /* 1 B: Anomaly flag */
-} dyn_batch_ctx_t;          /* Total: 18 Bytes RAM (with 16-bit alignment) */
+} dyn_batch_ctx_t;          /* Total: 12 Bytes RAM (with 16-bit MSP430 alignment) */
 ```
 
 ### Static Memory Allocation Audit (`msp430-size`)
 
+The Zolertia Z1 ELF binaries were audited under the exact simulation build flags (`QUEUEBUF_CONF_NUM=8` for sensors, `QUEUEBUF_CONF_NUM=4` for root):
+
 | Component | Text (Flash) | Data (RAM) | BSS (RAM) | Total RAM | Free Stack Headroom | Stability Margin |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **AES-128 Static $k=4$** | 45,845 B | 246 B | 5,878 B | 6,124 B | 2,068 B | Safe (>500 B) |
-| **AES-128 Plan B (Fixed)** | 46,275 B | 246 B | 5,900 B | **6,146 B** | **2,046 B** | **Safe (+22 B delta)** |
-| **SPECK-64 Static $k=4$** | 45,851 B | 246 B | 5,878 B | 6,124 B | 2,068 B | Safe (>500 B) |
-| **SPECK-64 Plan B (Fixed)** | 46,281 B | 246 B | 5,900 B | **6,146 B** | **2,046 B** | **Safe (+22 B delta)** |
-| **Root Gateway (`root.z1`)** | 45,517 B | 242 B | 6,318 B | 6,560 B | 1,632 B | Untouched (0 B) |
+| **AES-128 Static $k=4$** | 46,315 B | 246 B | 6,734 B | 6,980 B | 1,212 B | Safe (>500 B) |
+| **AES-128 Plan B (Fixed)** | 46,413 B | 246 B | 6,756 B | **7,002 B** | **1,190 B** | **Safe (+22 B delta)** |
+| **SPECK-64 Static $k=4$** | 43,189 B | 246 B | 6,558 B | 6,804 B | 1,388 B | Safe (>500 B) |
+| **SPECK-64 Plan B (Fixed)** | 43,287 B | 246 B | 6,580 B | **6,826 B** | **1,366 B** | **Safe (+22 B delta)** |
+| **Root Gateway (`root.z1`)** | 45,987 B | 242 B | 6,318 B | 6,560 B | 1,632 B | Untouched (0 B) |
+
+> [!NOTE]
+> The **+22 B** static BSS allocation consists of the **12-byte** `dyn_batch_ctx_t` core controller state plus **10 bytes** of end-of-window diagnostic telemetry counters (`5 × uint16_t`). Sensor nodes utilize `QUEUEBUF_CONF_NUM=8` to prevent relay buffer starvation, leaving a healthy **1,190 B** (AES) and **1,366 B** (SPECK) of free stack headroom, well above the 500 B crash threshold.
 
 ---
 

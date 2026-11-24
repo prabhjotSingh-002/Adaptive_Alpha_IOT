@@ -28,18 +28,18 @@ Static packet batching ($k=4$) provides substantial radio energy savings in low-
 
 ## 2. Memory Footprint & MSP430 Headroom
 
-Static memory allocation was audited using `msp430-size` on compiled Zolertia Z1 ELF binaries inside the Contiki Docker build container:
+Static memory allocation was audited using `msp430-size` on compiled Zolertia Z1 ELF binaries under the exact simulation build flags (`QUEUEBUF_CONF_NUM=8` for sensors, `QUEUEBUF_CONF_NUM=4` for root):
 
 | Firmware Build | Flash Text (B) | Static Data (B) | BSS (B) | Total RAM (B) | Free Stack Headroom (B) | RAM Delta vs. Static |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **AES-128 Static $k=4$** | 45,845 | 246 | 5,878 | 6,124 | 2,068 B | Baseline |
-| **AES-128 Plan B (Fixed)** | 46,275 | 246 | 5,900 | **6,146** | **2,046 B** | **+22 B** |
-| **SPECK-64/128 Static $k=4$** | 45,851 | 246 | 5,878 | 6,124 | 2,068 B | Baseline |
-| **SPECK-64/128 Plan B (Fixed)** | 46,281 | 246 | 5,900 | **6,146** | **2,046 B** | **+22 B** |
-| **RPL Root Gateway (`root.z1`)** | 45,517 | 242 | 6,318 | 6,560 | 1,632 B | 0 B (Untouched) |
+| **AES-128 Static $k=4$** | 46,315 | 246 | 6,734 | 6,980 | 1,212 B | Baseline |
+| **AES-128 Plan B (Fixed)** | 46,413 | 246 | 6,756 | **7,002** | **1,190 B** | **+22 B** |
+| **SPECK-64/128 Static $k=4$** | 43,189 | 246 | 6,558 | 6,804 | 1,388 B | Baseline |
+| **SPECK-64/128 Plan B (Fixed)** | 43,287 | 246 | 6,580 | **6,826** | **1,366 B** | **+22 B** |
+| **RPL Root Gateway (`root.z1`)** | 45,987 | 242 | 6,318 | 6,560 | 1,632 B | 0 B (Untouched) |
 
 > [!NOTE]
-> Zolertia Z1 provides 8,192 B RAM. The entire Plan B context struct (`dyn_batch_ctx_t`) requires exactly **18 bytes** (smoothed baseline, timestamp, `prev_etx` trend tracker, buffer count, active cap, and flags). The AES sensor maintains **2,046 B** of free stack headroom, well above the 500 B hard stability floor.
+> Zolertia Z1 provides 8,192 B RAM. The entire Plan B context struct (`dyn_batch_ctx_t`) requires exactly **12 bytes** on MSP430 (`int16_t x_baseline` [2 B], `uint32_t first_ts_ms` [4 B], `uint16_t prev_etx` [2 B], and 4 byte fields: `buf_cnt`, `k_cap`, `initialized`, `last_was_alarm` [4 B] with 16-bit alignment). The **+22 B** total static BSS delta consists of this **12 B** core controller state plus **10 B** of end-of-window diagnostic telemetry counters (`g_dyn_alarm_count`, `g_dyn_etx_cap_count`, `g_dyn_cap_count`, `g_dyn_aoi_count`, `g_dyn_end_count` at 2 B each). With `QUEUEBUF_CONF_NUM=8`, AES-128 maintains **1,190 B** of free stack headroom (and SPECK-64 maintains **1,366 B**), well above the 500 B hard stability floor.
 
 ---
 

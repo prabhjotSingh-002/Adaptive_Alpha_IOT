@@ -93,11 +93,11 @@ def plot_fig5(summary: dict):
         ax1.text(x[i],         n3_k4[i] + 0.08, f"{n3_k4[i]:.2f}", ha="center", va="bottom", fontsize=8.5, color=C_NODE3, fontweight="bold")
         ax1.text(x[i] + width, n3_pb[i] + 0.08, f"{n3_pb[i]:.2f}", ha="center", va="bottom", fontsize=8.5, color=C_NODE3, fontweight="bold")
         
-        # Annotate savings inside the Plan B bar
+        # Annotate savings inside the Plan B bar with compact font
         saving_pct = ((pwr_k1_mean[i] - pwr_pb_mean[i]) / pwr_k1_mean[i]) * 100.0
         fnd_ratio = s1[ciphers[i]]["dyn_b"]["fnd_lifetime_ratio"]
         ax1.text(x[i] + width, pwr_pb_mean[i] / 2.0, f"-{saving_pct:.1f}%\n({fnd_ratio:.2f}× FND)",
-                 ha="center", va="center", fontsize=9.0, fontweight="bold", color="white")
+                 ha="center", va="center", fontsize=7.8, fontweight="bold", color="white")
     
     ax1.set_ylabel("Power Consumption (mW)")
     ax1.set_title("(a) Power Consumption & Relay Stress (15 Nodes, Lossless)", pad=12)
@@ -158,9 +158,9 @@ def plot_fig5(summary: dict):
                  bbox=dict(boxstyle="round,pad=0.35", fc="#eafaf1", ec=C_PLAN_B, lw=1.4, alpha=0.95),
                  arrowprops=dict(arrowstyle="->", color=C_PLAN_B, lw=1.4))
 
-    # Sub-Second VoI Zone
+    # Sub-Second VoI Zone (Shifted to x=3.2 to avoid overlap with Static k=1 marker at x=1.0)
     ax2.axhspan(0, 1.0, color="#d5f5e3", alpha=0.45, zorder=1)
-    ax2.text(0.4, 0.35, "Sub-Second VoI Zone (< 1.0s)", fontsize=9, color="#145a32", fontweight="bold")
+    ax2.text(3.2, 0.35, "Sub-Second VoI Zone (< 1.0s)", fontsize=9, color="#145a32", fontweight="bold")
     
     # Legend construction: Clean separate mode entries and cipher indicators
     leg_handles = [
@@ -213,12 +213,12 @@ def plot_fig6(summary: dict):
             ax1.text(r.get_x() + r.get_width()/2.0, y_pos, f"{val:.0f}",
                      ha="center", va="bottom", fontsize=8.5, fontweight="bold")
 
-    # Net saving callout vs VoI-Only on SPECK
+    # Net saving callout vs VoI-Only on SPECK (Arrow target adjusted to avoid 25247 label)
     speck_voi_e = s2["speck"]["voi_only"]["tot_energy_uj_reading"]["mean"]
     speck_pb_e  = s2["speck"]["dyn_b"]["tot_energy_uj_reading"]["mean"]
     saving = ((speck_voi_e - speck_pb_e) / speck_voi_e) * 100.0
-    ax1.annotate(f"-{saving:.1f}% Energy", xy=(x[1] + width, speck_pb_e + s2["speck"]["dyn_b"]["tot_energy_uj_reading"]["std"]),
-                 xytext=(x[1] + width + 0.16, 46000),
+    ax1.annotate(f"-{saving:.1f}% Energy", xy=(x[1] + width + 0.08, speck_pb_e + s2["speck"]["dyn_b"]["tot_energy_uj_reading"]["std"] + 2400),
+                 xytext=(x[1] + width + 0.22, 47000),
                  ha="center", fontsize=9.2, fontweight="bold", color="#145a32",
                  bbox=dict(boxstyle="round,pad=0.25", fc="#eafaf1", ec=C_PLAN_B, lw=1.2),
                  arrowprops=dict(arrowstyle="->", color=C_PLAN_B, lw=1.3))
